@@ -1,0 +1,728 @@
+{
+  "analyses": {
+    "doordash.com": {
+      "domain": "doordash.com",
+      "analyzed_at": "2025-12-30T21:52:45.534622",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.doordash.com/"
+    },
+    "ubereats.com": {
+      "domain": "ubereats.com",
+      "analyzed_at": "2025-12-30T21:52:47.751667",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [
+        "merchants.ubereats.com",
+        "uber.com"
+      ],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "grubhub.com": {
+      "domain": "grubhub.com",
+      "analyzed_at": "2025-12-30T21:52:50.351715",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "postmates.com": {
+      "domain": "postmates.com",
+      "analyzed_at": "2025-12-30T21:52:52.742662",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 1,
+        "convenience": 2
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [
+        "facebook.com",
+        "help.uber.com",
+        "instagram.com",
+        "itunes.apple.com",
+        "play.google.com",
+        "postmates.com",
+        "privacy.uber.com",
+        "twitter.com",
+        "uber.com"
+      ],
+      "risk_score": 12,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience"
+      ]
+    },
+    "seamless.com": {
+      "domain": "seamless.com",
+      "analyzed_at": "2025-12-30T21:52:55.188923",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "sephora.com": {
+      "domain": "sephora.com",
+      "analyzed_at": "2025-12-30T21:52:57.597667",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2
+      },
+      "marketing_tactics": {},
+      "promoted_products": [
+        "The Latest Lineup",
+        "New DIOR Addict Eau de Parfums",
+        "New Saie CitySet Setting Spray"
+      ],
+      "related_domains": [
+        "community.sephora.com"
+      ],
+      "risk_score": 8,
+      "justification": [
+        "Uses behavioral manipulation: discounts"
+      ]
+    },
+    "ulta.com": {
+      "domain": "ulta.com",
+      "analyzed_at": "2025-12-30T21:53:00.138725",
+      "accessible": true,
+      "health_hazards": {
+        "ultra_processed": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 5,
+        "convenience": 1,
+        "addiction_language": 1
+      },
+      "marketing_tactics": {
+        "scarcity": 1,
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Face",
+        "Lips",
+        "Eyes",
+        "Nails",
+        "Makeup Brushes & Tools",
+        "Body Makeup",
+        "Makeup Palettes",
+        "Makeup Bags & Organizers",
+        "Cleansers",
+        "Moisturizers"
+      ],
+      "related_domains": [
+        "apps.apple.com",
+        "beautyservices.ulta.com",
+        "careers.ulta.com",
+        "d.comenity.net",
+        "facebook.com",
+        "instagram.com",
+        "pinterest.com",
+        "play.google.com",
+        "storead.ulta.com",
+        "tiktok.com",
+        "twitter.com",
+        "ulta.com",
+        "youtube.com"
+      ],
+      "risk_score": 37,
+      "justification": [
+        "Promotes health hazards: ultra_processed",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: scarcity, personalization"
+      ]
+    },
+    "sephora.ai": {
+      "domain": "sephora.ai",
+      "analyzed_at": "2025-12-30T21:53:02.636417",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x79611da38c10>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+    },
+    "sephora.app": {
+      "domain": "sephora.app",
+      "analyzed_at": "2025-12-30T21:53:14.686740",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x79611da6d950>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+    },
+    "sephora.biz": {
+      "domain": "sephora.biz",
+      "analyzed_at": "2025-12-30T21:53:31.755879",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x79611da6f810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+    },
+    "nestle.com": {
+      "domain": "nestle.com",
+      "analyzed_at": "2025-12-30T21:53:43.880581",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
+    },
+    "nestle.ca": {
+      "domain": "nestle.ca",
+      "analyzed_at": "2025-12-30T21:53:46.386321",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 2
+      },
+      "behavioral_hazards": {},
+      "marketing_tactics": {
+        "social_proof": 1,
+        "personalization": 1
+      },
+      "promoted_products": [
+        "You may also like"
+      ],
+      "related_domains": [
+        "corporate.nestle.ca",
+        "faitavecnestle.ca",
+        "madewithnestle.ca",
+        "maisonperrier.fr",
+        "nestlebaby.ca",
+        "perrier.com",
+        "purina.ca",
+        "sanpellegrino.com",
+        "startwell.nestle.ca"
+      ],
+      "risk_score": 15,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Employs aggressive marketing: social_proof, personalization"
+      ]
+    },
+    "nestle.co.uk": {
+      "domain": "nestle.co.uk",
+      "analyzed_at": "2025-12-30T21:53:49.453183",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.co.uk"
+    },
+    "nespresso.com": {
+      "domain": "nespresso.com",
+      "analyzed_at": "2025-12-30T21:53:51.976025",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2,
+        "convenience": 1
+      },
+      "marketing_tactics": {
+        "scarcity": 1,
+        "personalization": 1
+      },
+      "promoted_products": [],
+      "related_domains": [
+        "nespresso.com"
+      ],
+      "risk_score": 18,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience",
+        "Employs aggressive marketing: scarcity, personalization"
+      ]
+    },
+    "gerber.com": {
+      "domain": "gerber.com",
+      "analyzed_at": "2025-12-30T21:53:54.605544",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 3,
+        "convenience": 1,
+        "addiction_language": 1
+      },
+      "marketing_tactics": {
+        "scarcity": 1,
+        "personalization": 2
+      },
+      "promoted_products": [
+        "Compare Products",
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "DC",
+        "Delaware",
+        "MyGerber",
+        "Sign up for MyGerber",
+        "For A Parent-Friendly World",
+        "Customer Care",
+        "Products"
+      ],
+      "related_domains": [
+        "business.gerber.com",
+        "facebook.com",
+        "gerber.com",
+        "gerberchildrenswear.com",
+        "gerberlife.com",
+        "goodstartbaby.com",
+        "instagram.com",
+        "m.me",
+        "medical.gerber.com",
+        "nestlejobs.com",
+        "nestleusa.com",
+        "news.gerber.com",
+        "parents.gerber.com",
+        "tiktok.com",
+        "wa.me",
+        "youtube.com"
+      ],
+      "risk_score": 35,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: scarcity, personalization"
+      ]
+    },
+    "deliveroo.com": {
+      "domain": "deliveroo.com",
+      "analyzed_at": "2025-12-30T21:56:43.908471",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2,
+        "convenience": 2,
+        "upselling": 1
+      },
+      "marketing_tactics": {
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Discover Deliveroo",
+        "Legal",
+        "Help",
+        "Take Deliveroo with you"
+      ],
+      "related_domains": [
+        "careers.deliveroo.co.uk",
+        "corporate.deliveroo.co.uk",
+        "deliveroo.co.uk",
+        "deliveroo.design",
+        "deliveroo.engineering",
+        "deliveroo.onelink.me",
+        "deliveroostudents.co.uk",
+        "facebook.com",
+        "instagram.com",
+        "par.deliveroo.net",
+        "restaurants.deliveroo.com",
+        "twitter.com",
+        "uk.deliveroo.news"
+      ],
+      "risk_score": 23,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience, upselling",
+        "Employs aggressive marketing: personalization"
+      ]
+    },
+    "delivery.com": {
+      "domain": "delivery.com",
+      "analyzed_at": "2025-12-30T21:56:46.348580",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": []
+    },
+    "caviar.com": {
+      "domain": "caviar.com",
+      "analyzed_at": "2025-12-30T21:56:48.869581",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 1
+      },
+      "behavioral_hazards": {
+        "impulsive_ordering": 1,
+        "discounts": 1,
+        "convenience": 1,
+        "upselling": 1,
+        "addiction_language": 2
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Deviled Quail Eggs with Caviar",
+        "Blini with Buckwheat",
+        "Mini Caviar Pies",
+        "Mini Potato Rosti / Caviar & Cr\u00e8me Fra\u00eeche",
+        "Twice-Cooked Potatoes with Caviar",
+        "Toast Points"
+      ],
+      "related_domains": [
+        "google.com",
+        "shopify.com"
+      ],
+      "risk_score": 36,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language",
+        "Employs aggressive marketing: social_proof, personalization"
+      ]
+    },
+    "trycaviar.com": {
+      "domain": "trycaviar.com",
+      "analyzed_at": "2025-12-30T21:56:51.522717",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.trycaviar.com/"
+    },
+    "instacart.com": {
+      "domain": "instacart.com",
+      "analyzed_at": "2025-12-30T21:56:53.724986",
+      "accessible": true,
+      "health_hazards": {
+        "fast_food": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 6,
+        "convenience": 2,
+        "upselling": 1,
+        "addiction_language": 2
+      },
+      "marketing_tactics": {
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Choose what you want",
+        "See real-time updates",
+        "Get your items same-day",
+        "1 billion products",
+        "1 billion products",
+        "80,000 stores",
+        "80,000 stores",
+        "14,000 cities",
+        "14,000 cities",
+        "Millions of orders"
+      ],
+      "related_domains": [
+        "ads.instacart.com",
+        "docs.instacart.com",
+        "facebook.com",
+        "instacart.app.link",
+        "instacart.careers",
+        "instacart.com",
+        "instagram.com",
+        "itunes.apple.com",
+        "pinterest.com",
+        "play.google.com",
+        "shoppers.instacart.com",
+        "twitter.com"
+      ],
+      "risk_score": 46,
+      "justification": [
+        "Promotes health hazards: fast_food",
+        "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+        "Employs aggressive marketing: personalization",
+        "MODERATE RISK: Several concerning patterns detected"
+      ]
+    },
+    "sephora.ca": {
+      "domain": "sephora.ca",
+      "analyzed_at": "2025-12-30T21:56:57.407211",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2
+      },
+      "marketing_tactics": {},
+      "promoted_products": [
+        "The Latest Lineup",
+        "New DIOR Addict Eau de Parfums",
+        "New Saie CitySet Setting Spray"
+      ],
+      "related_domains": [
+        "community.sephora.com"
+      ],
+      "risk_score": 8,
+      "justification": [
+        "Uses behavioral manipulation: discounts"
+      ]
+    },
+    "sephora.co": {
+      "domain": "sephora.co",
+      "analyzed_at": "2025-12-30T21:57:00.453168",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x77623fe72dd0>, 'Connection to sephora.co timed out. (connect timeout=10)'))"
+    },
+    "sephora.co.ca": {
+      "domain": "sephora.co.ca",
+      "analyzed_at": "2025-12-30T21:57:12.492742",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    },
+    "sephora.co.uk": {
+      "domain": "sephora.co.uk",
+      "analyzed_at": "2025-12-30T21:57:15.210678",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 4,
+        "convenience": 2,
+        "upselling": 1,
+        "addiction_language": 3
+      },
+      "marketing_tactics": {
+        "social_proof": 2,
+        "scarcity": 2,
+        "personalization": 2
+      },
+      "promoted_products": [
+        "My account",
+        "My orders",
+        "Catalogue",
+        "My offers",
+        "Make an appointment",
+        "Personal information",
+        "My communications",
+        "Need help ?"
+      ],
+      "related_domains": [
+        "connect.studentbeans.com",
+        "facebook.com",
+        "instagram.com",
+        "lvmh.com",
+        "rangeme.com",
+        "sephora.co.uk",
+        "tiktok.com",
+        "youtube.com"
+      ],
+      "risk_score": 58,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, personalization",
+        "MODERATE RISK: Several concerning patterns detected"
+      ]
+    },
+    "sephora.dev": {
+      "domain": "sephora.dev",
+      "analyzed_at": "2025-12-30T21:57:18.182865",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [
+        "We also offer",
+        "Domain Backorders",
+        "Domain Registration",
+        "Business Phone Systems",
+        "Domain Name Reseller"
+      ],
+      "related_domains": [
+        "yay.com"
+      ],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: discounts"
+      ]
+    },
+    "purina.com": {
+      "domain": "purina.com",
+      "analyzed_at": "2025-12-30T21:57:20.422373",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 4,
+        "convenience": 1,
+        "addiction_language": 1
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Dog Food",
+        "Specialty Food",
+        "Foods by Life Stage",
+        "Dog Treats",
+        "Specialty Treats",
+        "Brands",
+        "Other Products",
+        "Information",
+        "Cat Food",
+        "Specialty Foods"
+      ],
+      "related_domains": [
+        "facebook.com",
+        "instagram.com",
+        "myfancyfeast.com",
+        "mypurina.onelink.me",
+        "nestlejobs.com",
+        "newscenter.purina.com",
+        "petfinder.com",
+        "petivity.com",
+        "policies.google.com",
+        "purinainstitute.com",
+        "shop.purina.com",
+        "youtube.com"
+      ],
+      "risk_score": 30,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: social_proof, personalization"
+      ]
+    },
+    "gerber.ai": {
+      "domain": "gerber.ai",
+      "analyzed_at": "2025-12-30T21:57:23.101011",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+    },
+    "gerber.app": {
+      "domain": "gerber.app",
+      "analyzed_at": "2025-12-30T21:57:25.196529",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)\")))"
+    },
+    "gerber.biz": {
+      "domain": "gerber.biz",
+      "analyzed_at": "2025-12-30T21:57:27.311264",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": []
+    },
+    "gerber.ca": {
+      "domain": "gerber.ca",
+      "analyzed_at": "2025-12-30T21:57:29.734728",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "upselling": 1
+      },
+      "marketing_tactics": {
+        "social_proof": 1
+      },
+      "promoted_products": [
+        "Home",
+        "About",
+        "Contact",
+        "In Session with Dr G",
+        "Home",
+        "About",
+        "Contact",
+        "In Session with Dr G"
+      ],
+      "related_domains": [],
+      "risk_score": 7,
+      "justification": [
+        "Uses behavioral manipulation: upselling",
+        "Employs aggressive marketing: social_proof"
+      ]
+    }
+  },
+  "last_updated": "2025-12-30T21:57:32.643495"
+}

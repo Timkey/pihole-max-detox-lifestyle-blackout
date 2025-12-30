@@ -1,53 +1,222 @@
-# Quick Reference - Scripts Usage
+# Scripts Guide
 
-## Directory Structure
+## Shell Scripts (Recommended)
+
+Convenient wrapper scripts that run Python code inside Docker with external DNS.
+
+### Quick Start
+```bash
+./start.sh                    # Start Docker container
+./full-workflow.sh            # Complete maintenance workflow
+./stop.sh                     # Stop container
+```
+
+### Individual Scripts
+```bash
+./analyze.sh                  # Analyze domains for hazards
+./check-variations.sh         # Check for TLD variations
+./add-variations.sh           # Add verified variations
+./apply-recommendations.sh    # Apply cached recommendations
+./generate-ultra.sh           # Regenerate master blocklist
+./shell.sh                    # Enter container shell
+```
+
+### Full Workflow (Interactive)
+```bash
+./full-workflow.sh
+```
+Steps through:
+1. Domain analysis with caching
+2. Review recommendations
+3. Apply changes (optional)
+4. Check TLD variations
+5. Add variations (optional)
+6. Regenerate ultra list
+7. Git commit (optional)
+
+---
+
+## Python Scripts (Direct)
+
+Run inside Docker container to bypass Pi-hole DNS.
+
+### Directory Structure
 ```
 /
 ├── lists/         → Blocklist files (food.txt, cosmetics.txt, etc.)
 ├── scripts/       → Maintenance Python scripts
-└── README.md      → Full documentation
+├── research/      → Analysis reports and data (auto-generated)
+└── *.sh           → Shell wrapper scripts
 ```
 
 ## Common Commands
 
 ### Regenerate Master List
 ```bash
-cd scripts
-python3 generate_ultra.py
+docker exec -it pihole-blocklist-analyzer python3 scripts/generate_ultra.py
+# Or use shell script:
+./generate-ultra.sh
 ```
 Output: `lists/blackout-ultra.txt`
 
 ### Check for Missing Domain Variations
 ```bash
-cd scripts
-python3 check_domain_variations.py
+docker exec -it pihole-blocklist-analyzer python3 scripts/check_domain_variations.py
+# Or:
+./check-variations.sh
 ```
 Shows missing .com, .org, .net, .ca, .co.uk variations
 
 ### Auto-Add Domain Variations
 ```bash
-cd scripts
-python3 add_domain_variations.py
+docker exec -it pihole-blocklist-analyzer python3 scripts/add_domain_variations.py
+# Or:
+./add-variations.sh
 ```
-Adds verified TLD variations to lists/food.txt, lists/cosmetics.txt, lists/conglomerates.txt
+Adds verified TLD variations to category lists
+
+### Analyze Domain Content
+```bash
+docker exec -it pihole-blocklist-analyzer python3 scripts/analyze_domains.py
+# Or:
+./analyze.sh
+```
+Analyzes websites for:
+- Health hazards
+- Behavioral manipulation tactics
+- Marketing patterns
+- Risk scores (0-100)
+- Related domains to consider
+
+Generates `research/recommendations.json`
+
+### Apply Recommendations
+```bash
+docker exec -it pihole-blocklist-analyzer python3 scripts/apply_recommendations.py
+# Or:
+./apply-recommendations.sh              # Interactive
+./apply-recommendations.sh --dry-run    # Preview only
+./apply-recommendations.sh --yes        # Auto-apply
+```
+
+Processes recommendations:
+- Adds high-risk related domains
+- Removes low-risk domains (<30 score)
+
+## Script Arguments
+
+### analyze_domains.py
+```bash
+python3 scripts/analyze_domains.py           # Analyze all categories
+```
+
+### apply_recommendations.py
+```bash
+python3 scripts/apply_recommendations.py --dry-run    # Preview changes
+python3 scripts/apply_recommendations.py --yes        # Skip confirmation
+python3 scripts/apply_recommendations.py --additions  # Only additions
+python3 scripts/apply_recommendations.py --removals   # Only removals
+```
+
+## Caching
+
+### Domain Verification Cache
+File: `lists/.domain_cache.json`
+- Stores DNS lookup results
+- Permanent cache (verified/not_found)
+- Shared by check_domain_variations.py and add_domain_variations.py
+
+### Analysis Cache  
+File: `research/analysis_cache.json`
+- Stores domain content analysis
+- 30-day expiry (configurable)
+- Used by analyze_domains.py
+
+### Recommendations
+File: `research/recommendations.json`
+- Pending additions/removals
+- Status tracking (pending/applied)
+- Processed by apply_recommendations.py
+
+## Workflow Examples
+
+### Daily Monitoring
+```bash
+./start.sh
+./analyze.sh                      # Uses cache, fast
+./apply-recommendations.sh        # Review and apply
+./generate-ultra.sh               # Update master
+git add . && git commit -m "Daily update" && git push
+./stop.sh
+```
+
+### Weekly Deep Check
+```bash
+./start.sh
+./full-workflow.sh               # Interactive, handles everything
+./stop.sh
+```
+
+### Quick TLD Expansion
+```bash
+./start.sh
+./check-variations.sh
+./add-variations.sh
+./generate-ultra.sh
+./stop.sh
+```
+
+## Troubleshooting
+
+### Pi-hole blocking analysis
+✅ Use Docker container with external DNS (./start.sh)
+
+### Cache issues
+```bash
+# Clear domain cache
+rm lists/.domain_cache.json
+
+# Clear analysis cache  
+rm research/analysis_cache.json
+
+# Clear recommendations
+rm research/recommendations.json
+```
+
+### Permission errors
+```bash
+chmod +x *.sh
+chmod +x scripts/*.py
+```
+
+### Container not found
+```bash
+./start.sh    # Starts container automatically
+```
+- Marketing patterns
+- Risk scores and justifications
+- Related domains to add
 
 ### Complete Workflow
 ```bash
 cd scripts
 
-# 1. Check what's missing
+# 1. Research: Analyze current domains
+python3 analyze_domains.py
+
+# 2. Check what's missing
 python3 check_domain_variations.py
 
-# 2. Add variations (if desired)
+# 3. Add variations (if desired)
 python3 add_domain_variations.py
 
-# 3. Regenerate master list
+# 4. Regenerate master list
 python3 generate_ultra.py
 
-# 4. Commit changes
+# 5. Commit changes
 cd ..
-git add lists/
-git commit -m "Update blocklists with new domain variations"
+git add lists/ research/
+git commit -m "Update blocklists with new domain variations and research"
 git push
 ```
 
