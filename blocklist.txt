@@ -1,0 +1,26 @@
+# MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
+# Pi-hole gravity blocklist for unhealthy lifestyle choices and financial blackholes
+# 
+# This list blocks domains associated with:
+# - Food delivery services
+# - Ultra-processed food companies
+# - Unhealthy lifestyle enablers
+#
+# To use this list, add the following URL to your Pi-hole gravity settings:
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blocklist.txt
+
+# --- FOOD DELIVERY & AGGREGATORS ---
+doordash.com
+www.doordash.com
+api.doordash.com
+drive.doordash.com
+ubereats.com
+www.ubereats.com
+api.ubereats.com
+grubhub.com
+api.grubhub.com
+
+# --- ULTRA-PROCESSED FOOD GIANTS ---
+mcdonalds.com
+www.mcdonalds.com
+api.mcdonalds.com
