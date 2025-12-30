@@ -1,0 +1,60 @@
+# CONGLOMERATES.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
+# The "Nuclear" list - Major conglomerates (Nestle, Unilever, etc.)
+#
+# Add this list to Pi-hole:
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/conglomerates.txt
+
+# --- NESTLE ---
+nestle.com
+www.nestle.com
+nestle.ca
+nestle.co.uk
+nespresso.com
+www.nespresso.com
+gerber.com
+www.gerber.com
+purina.com
+www.purina.com
+
+# --- UNILEVER ---
+unilever.com
+www.unilever.com
+unileverusa.com
+www.unileverusa.com
+axe.com
+www.axe.com
+dove.com
+www.dove.com
+hellmanns.com
+www.hellmanns.com
+
+# --- PROCTER & GAMBLE ---
+pg.com
+www.pg.com
+us.pg.com
+gillette.com
+www.gillette.com
+tide.com
+www.tide.com
+pantene.com
+www.pantene.com
+
+# --- COCA-COLA COMPANY ---
+coca-cola.com
+www.coca-cola.com
+cocacola.com
+www.cocacola.com
+sprite.com
+www.sprite.com
+fanta.com
+www.fanta.com
+
+# --- PEPSICO ---
+pepsico.com
+www.pepsico.com
+pepsi.com
+www.pepsi.com
+fritolay.com
+www.fritolay.com
+gatorade.com
+www.gatorade.com

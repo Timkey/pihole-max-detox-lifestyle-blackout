@@ -1,0 +1,37 @@
+# FOOD.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
+# Fast food, delivery services, and unhealthy snacks
+#
+# Add this list to Pi-hole:
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/food.txt
+
+# --- FOOD DELIVERY & AGGREGATORS ---
+doordash.com
+www.doordash.com
+api.doordash.com
+drive.doordash.com
+ubereats.com
+www.ubereats.com
+api.ubereats.com
+grubhub.com
+api.grubhub.com
+postmates.com
+www.postmates.com
+
+# --- ULTRA-PROCESSED FOOD GIANTS ---
+mcdonalds.com
+www.mcdonalds.com
+api.mcdonalds.com
+burgerking.com
+www.burgerking.com
+kfc.com
+www.kfc.com
+tacobell.com
+www.tacobell.com
+pizzahut.com
+www.pizzahut.com
+dominos.com
+www.dominos.com
+subway.com
+www.subway.com
+wendys.com
+www.wendys.com

@@ -1,0 +1,108 @@
+# BLACKOUT-ULTRA.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
+# Master blocklist - includes ALL domains from all categories
+#
+# This is the "nuclear option" - blocks everything in one list
+# Add this list to Pi-hole:
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blackout-ultra.txt
+#
+# CATEGORIES INCLUDED:
+# - Food delivery & fast food (food.txt)
+# - Beauty & cosmetics (cosmetics.txt)
+# - Major conglomerates (conglomerates.txt)
+
+# --- ALL DOMAINS (SORTED) ---
+api.doordash.com
+api.grubhub.com
+api.mcdonalds.com
+api.ubereats.com
+axe.com
+beautybay.com
+burgerking.com
+clinique.com
+coca-cola.com
+cocacola.com
+covergirl.com
+cultbeauty.com
+dominos.com
+doordash.com
+dove.com
+drive.doordash.com
+esteelauder.com
+fanta.com
+fritolay.com
+gatorade.com
+gerber.com
+gillette.com
+grubhub.com
+hellmanns.com
+kfc.com
+loreal.com
+maccosmetics.com
+maybelline.com
+mcdonalds.com
+nespresso.com
+nestle.ca
+nestle.co.uk
+nestle.com
+pantene.com
+pepsi.com
+pepsico.com
+pg.com
+pizzahut.com
+postmates.com
+purina.com
+revlon.com
+sephora.com
+sprite.com
+subway.com
+tacobell.com
+tide.com
+ubereats.com
+ulta.com
+unilever.com
+unileverusa.com
+us.pg.com
+wendys.com
+www.axe.com
+www.beautybay.com
+www.burgerking.com
+www.clinique.com
+www.coca-cola.com
+www.cocacola.com
+www.covergirl.com
+www.cultbeauty.com
+www.dominos.com
+www.doordash.com
+www.dove.com
+www.esteelauder.com
+www.fanta.com
+www.fritolay.com
+www.gatorade.com
+www.gerber.com
+www.gillette.com
+www.hellmanns.com
+www.kfc.com
+www.loreal.com
+www.maccosmetics.com
+www.maybelline.com
+www.mcdonalds.com
+www.nespresso.com
+www.nestle.com
+www.pantene.com
+www.pepsi.com
+www.pepsico.com
+www.pg.com
+www.pizzahut.com
+www.postmates.com
+www.purina.com
+www.revlon.com
+www.sephora.com
+www.sprite.com
+www.subway.com
+www.tacobell.com
+www.tide.com
+www.ubereats.com
+www.ulta.com
+www.unilever.com
+www.unileverusa.com
+www.wendys.com

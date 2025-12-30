@@ -1,0 +1,35 @@
+# COSMETICS.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
+# Beauty brands and predatory cosmetic promoters
+#
+# Add this list to Pi-hole:
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/cosmetics.txt
+
+# --- MAJOR BEAUTY RETAILERS ---
+sephora.com
+www.sephora.com
+ulta.com
+www.ulta.com
+
+# --- LUXURY BEAUTY BRANDS ---
+loreal.com
+www.loreal.com
+esteelauder.com
+www.esteelauder.com
+clinique.com
+www.clinique.com
+maccosmetics.com
+www.maccosmetics.com
+
+# --- MASS MARKET BEAUTY ---
+maybelline.com
+www.maybelline.com
+covergirl.com
+www.covergirl.com
+revlon.com
+www.revlon.com
+
+# --- ONLINE BEAUTY RETAILERS ---
+beautybay.com
+www.beautybay.com
+cultbeauty.com
+www.cultbeauty.com
