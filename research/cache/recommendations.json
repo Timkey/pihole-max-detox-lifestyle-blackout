@@ -103,6 +103,310 @@
       "source": "sephora.dev",
       "detected_at": "2025-12-30T22:31:31.502099",
       "status": "pending"
+    },
+    {
+      "domain": "app.adjust.com",
+      "category": "Food & Delivery",
+      "reason": "Found via skipthedishes.com analysis, appears to be related service",
+      "source": "skipthedishes.com",
+      "detected_at": "2025-12-30T22:44:57.241878",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.justeattakeaway.com",
+      "category": "Food & Delivery",
+      "reason": "Found via skipthedishes.com analysis, appears to be related service",
+      "source": "skipthedishes.com",
+      "detected_at": "2025-12-30T22:44:57.241915",
+      "status": "pending"
+    },
+    {
+      "domain": "couriers.skipthedishes.com",
+      "category": "Food & Delivery",
+      "reason": "Found via skipthedishes.com analysis, appears to be related service",
+      "source": "skipthedishes.com",
+      "detected_at": "2025-12-30T22:44:57.241922",
+      "status": "pending"
+    },
+    {
+      "domain": "owners.slicelife.com",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.com analysis, appears to be related service",
+      "source": "slice.com",
+      "detected_at": "2025-12-30T22:59:53.964128",
+      "status": "pending"
+    },
+    {
+      "domain": "podcasts.apple.com",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.com analysis, appears to be related service",
+      "source": "slice.com",
+      "detected_at": "2025-12-30T22:59:53.964140",
+      "status": "pending"
+    },
+    {
+      "domain": "spaceship.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.ai analysis, appears to be related service",
+      "source": "caviar.ai",
+      "detected_at": "2025-12-30T23:00:01.427865",
+      "status": "pending"
+    },
+    {
+      "domain": "pinterest.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.ca analysis, appears to be related service",
+      "source": "caviar.ca",
+      "detected_at": "2025-12-30T23:00:16.625222",
+      "status": "pending"
+    },
+    {
+      "domain": "caviarsociety.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.co.uk analysis, appears to be related service",
+      "source": "caviar.co.uk",
+      "detected_at": "2025-12-30T23:00:33.247009",
+      "status": "pending"
+    },
+    {
+      "domain": "firstcaviar.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.co.uk analysis, appears to be related service",
+      "source": "caviar.co.uk",
+      "detected_at": "2025-12-30T23:00:33.247033",
+      "status": "pending"
+    },
+    {
+      "domain": "goo.gl",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.co.uk analysis, appears to be related service",
+      "source": "caviar.co.uk",
+      "detected_at": "2025-12-30T23:00:33.247042",
+      "status": "pending"
+    },
+    {
+      "domain": "markys.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.us analysis, appears to be related service",
+      "source": "caviar.us",
+      "detected_at": "2025-12-30T23:00:48.782760",
+      "status": "pending"
+    },
+    {
+      "domain": "markyshelpdesk.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.us analysis, appears to be related service",
+      "source": "caviar.us",
+      "detected_at": "2025-12-30T23:00:48.782980",
+      "status": "pending"
+    },
+    {
+      "domain": "resy.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.us analysis, appears to be related service",
+      "source": "caviar.us",
+      "detected_at": "2025-12-30T23:00:48.782996",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.onelink.me",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.co.uk analysis, appears to be related service",
+      "source": "deliveroo.co.uk",
+      "detected_at": "2025-12-30T23:01:41.887214",
+      "status": "pending"
+    },
+    {
+      "domain": "sudos.com",
+      "category": "Food & Delivery",
+      "reason": "Found via delivery.ai analysis, appears to be related service",
+      "source": "delivery.ai",
+      "detected_at": "2025-12-30T23:02:25.702652",
+      "status": "pending"
+    },
+    {
+      "domain": "sedo.com",
+      "category": "Food & Delivery",
+      "reason": "Found via delivery.co analysis, appears to be related service",
+      "source": "delivery.co",
+      "detected_at": "2025-12-30T23:02:34.284383",
+      "status": "pending"
+    },
+    {
+      "domain": "trustpilot.com",
+      "category": "Food & Delivery",
+      "reason": "Found via foodpanda.app analysis, appears to be related service",
+      "source": "foodpanda.app",
+      "detected_at": "2025-12-30T23:04:33.348139",
+      "status": "pending"
+    },
+    {
+      "domain": "login.seamless.ai",
+      "category": "Food & Delivery",
+      "reason": "Found via seamless.ai analysis, appears to be related service",
+      "source": "seamless.ai",
+      "detected_at": "2025-12-30T23:14:00.250539",
+      "status": "pending"
+    },
+    {
+      "domain": "preferences.seamless.ai",
+      "category": "Food & Delivery",
+      "reason": "Found via seamless.ai analysis, appears to be related service",
+      "source": "seamless.ai",
+      "detected_at": "2025-12-30T23:14:00.250569",
+      "status": "pending"
+    },
+    {
+      "domain": "seamlessaistatus.com",
+      "category": "Food & Delivery",
+      "reason": "Found via seamless.ai analysis, appears to be related service",
+      "source": "seamless.ai",
+      "detected_at": "2025-12-30T23:14:00.250574",
+      "status": "pending"
+    },
+    {
+      "domain": "namesilo.com",
+      "category": "Food & Delivery",
+      "reason": "Found via skipthedishes.net analysis, appears to be related service",
+      "source": "skipthedishes.net",
+      "detected_at": "2025-12-30T23:15:41.392158",
+      "status": "pending"
+    },
+    {
+      "domain": "corusent.com",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.ca analysis, appears to be related service",
+      "source": "slice.ca",
+      "detected_at": "2025-12-30T23:15:55.474334",
+      "status": "pending"
+    },
+    {
+      "domain": "flavournetwork.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.ca analysis, appears to be related service",
+      "source": "slice.ca",
+      "detected_at": "2025-12-30T23:15:55.474363",
+      "status": "pending"
+    },
+    {
+      "domain": "globalnews.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.ca analysis, appears to be related service",
+      "source": "slice.ca",
+      "detected_at": "2025-12-30T23:15:55.474369",
+      "status": "pending"
+    },
+    {
+      "domain": "globaltv.com",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.ca analysis, appears to be related service",
+      "source": "slice.ca",
+      "detected_at": "2025-12-30T23:15:55.474373",
+      "status": "pending"
+    },
+    {
+      "domain": "homenetwork.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via slice.ca analysis, appears to be related service",
+      "source": "slice.ca",
+      "detected_at": "2025-12-30T23:15:55.474378",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos-ks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.com analysis, appears to be related service",
+      "source": "dominos.com",
+      "detected_at": "2025-12-30T23:18:57.199829",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos-pizza.ro",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.com analysis, appears to be related service",
+      "source": "dominos.com",
+      "detected_at": "2025-12-30T23:18:57.199849",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.ae",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.com analysis, appears to be related service",
+      "source": "dominos.com",
+      "detected_at": "2025-12-30T23:18:57.199857",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.at",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.com analysis, appears to be related service",
+      "source": "dominos.com",
+      "detected_at": "2025-12-30T23:18:57.199864",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.bg",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.com analysis, appears to be related service",
+      "source": "dominos.com",
+      "detected_at": "2025-12-30T23:18:57.199870",
+      "status": "pending"
+    },
+    {
+      "domain": "letwendysknow.com",
+      "category": "Food & Delivery",
+      "reason": "Found via wendys.com analysis, appears to be related service",
+      "source": "wendys.com",
+      "detected_at": "2025-12-30T23:19:12.523632",
+      "status": "pending"
+    },
+    {
+      "domain": "apps.apple.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.com analysis, appears to be related service",
+      "source": "carlsjr.com",
+      "detected_at": "2025-12-30T23:19:59.276543",
+      "status": "pending"
+    },
+    {
+      "domain": "buyatab.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.com analysis, appears to be related service",
+      "source": "carlsjr.com",
+      "detected_at": "2025-12-30T23:19:59.276575",
+      "status": "pending"
+    },
+    {
+      "domain": "carlsjr-appinstall.onelink.me",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.com analysis, appears to be related service",
+      "source": "carlsjr.com",
+      "detected_at": "2025-12-30T23:19:59.276580",
+      "status": "pending"
+    },
+    {
+      "domain": "carlsjrfranchising.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.com analysis, appears to be related service",
+      "source": "carlsjr.com",
+      "detected_at": "2025-12-30T23:19:59.276585",
+      "status": "pending"
+    },
+    {
+      "domain": "ckefranchise.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.com analysis, appears to be related service",
+      "source": "carlsjr.com",
+      "detected_at": "2025-12-30T23:19:59.276589",
+      "status": "pending"
+    },
+    {
+      "domain": "hardeesfranchising.com",
+      "category": "Food & Delivery",
+      "reason": "Found via hardees.com analysis, appears to be related service",
+      "source": "hardees.com",
+      "detected_at": "2025-12-30T23:20:02.258167",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -145,7 +449,87 @@
       "risk_score": 11,
       "detected_at": "2025-12-30T22:31:31.502048",
       "status": "pending"
+    },
+    {
+      "domain": "slice.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (26/100), may not warrant blocking",
+      "risk_score": 26,
+      "detected_at": "2025-12-30T22:59:53.964071",
+      "status": "pending"
+    },
+    {
+      "domain": "caviar.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T23:00:01.427816",
+      "status": "pending"
+    },
+    {
+      "domain": "caviar.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (25/100), may not warrant blocking",
+      "risk_score": 25,
+      "detected_at": "2025-12-30T23:00:33.246786",
+      "status": "pending"
+    },
+    {
+      "domain": "delivery.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (16/100), may not warrant blocking",
+      "risk_score": 16,
+      "detected_at": "2025-12-30T23:02:25.702602",
+      "status": "pending"
+    },
+    {
+      "domain": "delivery.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (15/100), may not warrant blocking",
+      "risk_score": 15,
+      "detected_at": "2025-12-30T23:02:34.284333",
+      "status": "pending"
+    },
+    {
+      "domain": "foodpanda.app",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-30T23:04:33.348087",
+      "status": "pending"
+    },
+    {
+      "domain": "postmates.biz",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-30T23:13:34.679621",
+      "status": "pending"
+    },
+    {
+      "domain": "postmates.net",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-30T23:13:55.884947",
+      "status": "pending"
+    },
+    {
+      "domain": "skipthedishes.net",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2025-12-30T23:15:41.392128",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-30T23:18:57.199790",
+      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-30T22:31:43.819996"
+  "last_updated": "2025-12-30T23:20:16.678884"
 }

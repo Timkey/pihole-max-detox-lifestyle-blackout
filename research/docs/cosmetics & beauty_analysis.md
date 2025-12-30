@@ -1,12 +1,12 @@
 # Cosmetics & Beauty - Content Analysis Report
 
-**Generated:** 2025-12-30 22:31:31
+**Generated:** 2025-12-30 22:45:58
 
-**Domains Analyzed:** 10
+**Domains Analyzed:** 15
 
 ## Summary
 
-- **Accessible domains:** 5/10
+- **Accessible domains:** 5/15
 - **Average Risk Score:** 14.4/100
 
 ## Hazard Clusters
@@ -121,4 +121,24 @@
 - `yay.com`
 
 ---
+
+### sephora.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))
+
+### sephora.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+
+### sephora.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)")))
+
+### sephora.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))
+
+### sephora.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))
 

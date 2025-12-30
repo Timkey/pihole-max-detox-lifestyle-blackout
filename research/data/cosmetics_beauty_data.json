@@ -175,5 +175,70 @@
       "Employs aggressive marketing: personalization"
     ],
     "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
+  },
+  {
+    "domain": "sephora.info",
+    "analyzed_at": "2025-12-30T22:44:57.379970",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.net",
+    "analyzed_at": "2025-12-30T22:45:09.420908",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+  },
+  {
+    "domain": "sephora.org",
+    "analyzed_at": "2025-12-30T22:45:31.544483",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "sephora.uk",
+    "analyzed_at": "2025-12-30T22:45:33.960598",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.us",
+    "analyzed_at": "2025-12-30T22:45:46.009020",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))"
   }
 ]
