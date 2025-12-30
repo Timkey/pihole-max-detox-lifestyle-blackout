@@ -17,6 +17,10 @@ import time
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
 RESEARCH_DIR = Path(__file__).parent.parent / 'research'
+REPORTS_DIR = RESEARCH_DIR / 'reports'
+DATA_DIR = RESEARCH_DIR / 'data'
+CACHE_DIR = RESEARCH_DIR / 'cache'
+DOCS_DIR = RESEARCH_DIR / 'docs'
 ANALYSIS_CACHE_FILE = 'analysis_cache.json'
 RECOMMENDATIONS_FILE = 'recommendations.json'
 TIMEOUT = 10
@@ -510,7 +514,7 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
 
 def generate_html_report(category_name, results):
     """Generate interactive HTML report with charts."""
-    report_path = RESEARCH_DIR / f"{category_name.lower()}_analysis.html"
+    report_path = REPORTS_DIR / f"{category_name.lower()}_analysis.html"
     
     # Prepare data
     accessible = [r for r in results if r['accessible']]
@@ -806,7 +810,7 @@ def generate_html_report(category_name, results):
 
 def generate_markdown_report(category_name, results):
     """Generate markdown research report."""
-    report_path = RESEARCH_DIR / f"{category_name.lower()}_analysis.md"
+    report_path = DOCS_DIR / f"{category_name.lower()}_analysis.md"
     
     with open(report_path, 'w') as f:
         f.write(f"# {category_name} - Content Analysis Report\n\n")
@@ -893,9 +897,15 @@ def main():
     print("DOMAIN CONTENT ANALYSIS TOOL (with caching)")
     print("Analyzing website content for health and behavioral hazards\n")
     
+    # Ensure directories exist
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    DOCS_DIR.mkdir(parents=True, exist_ok=True)
+    
     # Initialize cache and recommendations
-    cache = AnalysisCache(RESEARCH_DIR / ANALYSIS_CACHE_FILE)
-    recommendations = RecommendationEngine(RESEARCH_DIR / RECOMMENDATIONS_FILE)
+    cache = AnalysisCache(CACHE_DIR / ANALYSIS_CACHE_FILE)
+    recommendations = RecommendationEngine(CACHE_DIR / RECOMMENDATIONS_FILE)
     
     # Load all existing domains to avoid duplicate recommendations
     all_existing_domains = set()
@@ -920,9 +930,10 @@ def main():
             existing_domains=all_existing_domains
         )
         generate_markdown_report(category_name, results)
+        generate_html_report(category_name, results)
         
         # Save JSON for programmatic access
-        json_path = RESEARCH_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
+        json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
         with open(json_path, 'w') as f:
             json.dump(results, f, indent=2)
         
@@ -938,13 +949,15 @@ def main():
     print(f"\n{'='*60}")
     print("ANALYSIS COMPLETE")
     print(f"{'='*60}")
-    print(f"Research reports saved to: {RESEARCH_DIR}")
+    print(f"HTML Reports: {REPORTS_DIR}")
+    print(f"Markdown Docs: {DOCS_DIR}")
+    print(f"JSON Data: {DATA_DIR}")
     
     if rec_summary['additions'] > 0 or rec_summary['removals'] > 0:
         print(f"\n📋 RECOMMENDATIONS:")
         print(f"   Additions: {rec_summary['additions']} new domains to consider")
         print(f"   Removals: {rec_summary['removals']} domains with low risk scores")
-        print(f"\n   Review: {RESEARCH_DIR / RECOMMENDATIONS_FILE}")
+        print(f"\n   Review: {CACHE_DIR / RECOMMENDATIONS_FILE}")
         print(f"   Apply: python3 apply_recommendations.py")
     
     print("\nUse these reports to:")

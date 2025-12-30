@@ -11,6 +11,7 @@ from datetime import datetime
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
 RESEARCH_DIR = Path(__file__).parent.parent / 'research'
+CACHE_DIR = RESEARCH_DIR / 'cache'
 RECOMMENDATIONS_FILE = 'recommendations.json'
 
 CATEGORY_MAP = {
@@ -22,7 +23,7 @@ CATEGORY_MAP = {
 
 def load_recommendations():
     """Load recommendations from file."""
-    rec_file = RESEARCH_DIR / RECOMMENDATIONS_FILE
+    rec_file = CACHE_DIR / RECOMMENDATIONS_FILE
     if not rec_file.exists():
         print(f"❌ No recommendations file found: {rec_file}")
         print("   Run: python3 analyze_domains.py first")
@@ -34,7 +35,7 @@ def load_recommendations():
 
 def save_recommendations(recommendations):
     """Save updated recommendations."""
-    rec_file = RESEARCH_DIR / RECOMMENDATIONS_FILE
+    rec_file = CACHE_DIR / RECOMMENDATIONS_FILE
     recommendations['last_updated'] = datetime.now().isoformat()
     with open(rec_file, 'w') as f:
         json.dump(recommendations, f, indent=2)

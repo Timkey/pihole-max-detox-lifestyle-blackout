@@ -1,6 +1,6 @@
 # Food & Delivery - Content Analysis Report
 
-**Generated:** 2025-12-30 22:08:46
+**Generated:** 2025-12-30 22:25:56
 
 **Domains Analyzed:** 5
 

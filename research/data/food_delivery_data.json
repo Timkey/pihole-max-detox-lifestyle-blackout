@@ -1,7 +1,7 @@
 [
   {
     "domain": "doordash.com",
-    "analyzed_at": "2025-12-30T22:08:34.212360",
+    "analyzed_at": "2025-12-30T22:25:44.128712",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -14,7 +14,7 @@
   },
   {
     "domain": "ubereats.com",
-    "analyzed_at": "2025-12-30T22:08:36.447827",
+    "analyzed_at": "2025-12-30T22:25:46.360702",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -37,7 +37,7 @@
   },
   {
     "domain": "grubhub.com",
-    "analyzed_at": "2025-12-30T22:08:39.382282",
+    "analyzed_at": "2025-12-30T22:25:48.841466",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -54,7 +54,7 @@
   },
   {
     "domain": "postmates.com",
-    "analyzed_at": "2025-12-30T22:08:41.699896",
+    "analyzed_at": "2025-12-30T22:25:51.245418",
     "accessible": true,
     "health_hazards": {
       "addictive": 1
@@ -88,7 +88,7 @@
   },
   {
     "domain": "seamless.com",
-    "analyzed_at": "2025-12-30T22:08:44.452629",
+    "analyzed_at": "2025-12-30T22:25:53.907927",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {

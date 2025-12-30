@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi-hole Blocklist Analysis Reports</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .stats {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .stats h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-label {
+            opacity: 0.9;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Blocklist Analysis Reports</h1>
+            <p>Interactive visualization of health and behavioral hazards in blocked domains</p>
+        </div>
+
+        <div class="stats">
+            <h3>Project Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">2157</div>
+                    <div class="stat-label">Blocked Domains</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">DNS Verified</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">Daily</div>
+                    <div class="stat-label">Updates</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <a href="research/reports/food & delivery_analysis.html" class="card">
+                <div class="card-icon">🍔</div>
+                <h2>Food & Delivery</h2>
+                <p>Analysis of fast food chains, delivery platforms, and ultra-processed food marketers. Tracks impulsive ordering patterns, urgency tactics, and convenience exploitation.</p>
+                <div class="card-footer">
+                    <span style="color: #e74c3c; font-weight: bold;">806 Domains</span>
+                    <span class="btn">View Report →</span>
+                </div>
+            </a>
+
+            <a href="research/reports/cosmetics & beauty_analysis.html" class="card">
+                <div class="card-icon">💄</div>
+                <h2>Cosmetics & Beauty</h2>
+                <p>Analysis of beauty retailers and cosmetics brands. Identifies insecurity-driven marketing, manufactured wants, and overconsumption patterns.</p>
+                <div class="card-footer">
+                    <span style="color: #e74c3c; font-weight: bold;">96 Domains</span>
+                    <span class="btn">View Report →</span>
+                </div>
+            </a>
+
+            <a href="research/reports/conglomerates_analysis.html" class="card">
+                <div class="card-icon">🏢</div>
+                <h2>Conglomerates</h2>
+                <p>Analysis of major multinational corporations (Nestlé, Unilever, P&G, Coca-Cola, PepsiCo). Tracks market dominance and choice manipulation.</p>
+                <div class="card-footer">
+                    <span style="color: #e74c3c; font-weight: bold;">199 Domains</span>
+                    <span class="btn">View Report →</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>
+                <strong>MAX-DETOX-LIFESTYLE-BLACKOUT</strong><br>
+                Reclaiming autonomy over digital life and breaking free from engineered consumption<br>
+                <a href="https://github.com/Timkey/pihole-max-detox-lifestyle-blackout" target="_blank">View on GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

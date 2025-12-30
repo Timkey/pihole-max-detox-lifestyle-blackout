@@ -1,7 +1,7 @@
 [
   {
     "domain": "sephora.com",
-    "analyzed_at": "2025-12-30T22:08:46.849415",
+    "analyzed_at": "2025-12-30T22:25:56.385876",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -14,7 +14,7 @@
   },
   {
     "domain": "ulta.com",
-    "analyzed_at": "2025-12-30T22:08:49.825396",
+    "analyzed_at": "2025-12-30T22:25:58.874425",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -27,7 +27,7 @@
   },
   {
     "domain": "sephora.ai",
-    "analyzed_at": "2025-12-30T22:08:52.245733",
+    "analyzed_at": "2025-12-30T22:26:01.198928",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -36,11 +36,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7ada8a010310>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+    "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
   },
   {
     "domain": "sephora.app",
-    "analyzed_at": "2025-12-30T22:09:04.419458",
+    "analyzed_at": "2025-12-30T22:26:13.255012",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -49,11 +49,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7ada897ad6d0>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+    "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
   },
   {
     "domain": "sephora.biz",
-    "analyzed_at": "2025-12-30T22:09:16.448100",
+    "analyzed_at": "2025-12-30T22:26:25.292706",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -62,6 +62,6 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7ada897a8590>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+    "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
   }
 ]

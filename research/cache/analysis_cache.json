@@ -2,7 +2,7 @@
   "analyses": {
     "doordash.com": {
       "domain": "doordash.com",
-      "analyzed_at": "2025-12-30T22:08:34.212360",
+      "analyzed_at": "2025-12-30T22:25:44.128712",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -15,7 +15,7 @@
     },
     "ubereats.com": {
       "domain": "ubereats.com",
-      "analyzed_at": "2025-12-30T22:08:36.447827",
+      "analyzed_at": "2025-12-30T22:25:46.360702",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
@@ -38,7 +38,7 @@
     },
     "grubhub.com": {
       "domain": "grubhub.com",
-      "analyzed_at": "2025-12-30T22:08:39.382282",
+      "analyzed_at": "2025-12-30T22:25:48.841466",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
@@ -55,7 +55,7 @@
     },
     "postmates.com": {
       "domain": "postmates.com",
-      "analyzed_at": "2025-12-30T22:08:41.699896",
+      "analyzed_at": "2025-12-30T22:25:51.245418",
       "accessible": true,
       "health_hazards": {
         "addictive": 1
@@ -89,7 +89,7 @@
     },
     "seamless.com": {
       "domain": "seamless.com",
-      "analyzed_at": "2025-12-30T22:08:44.452629",
+      "analyzed_at": "2025-12-30T22:25:53.907927",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
@@ -106,7 +106,7 @@
     },
     "sephora.com": {
       "domain": "sephora.com",
-      "analyzed_at": "2025-12-30T22:08:46.849415",
+      "analyzed_at": "2025-12-30T22:25:56.385876",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -119,7 +119,7 @@
     },
     "ulta.com": {
       "domain": "ulta.com",
-      "analyzed_at": "2025-12-30T22:08:49.825396",
+      "analyzed_at": "2025-12-30T22:25:58.874425",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -132,7 +132,7 @@
     },
     "sephora.ai": {
       "domain": "sephora.ai",
-      "analyzed_at": "2025-12-30T22:08:52.245733",
+      "analyzed_at": "2025-12-30T22:26:01.198928",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -141,11 +141,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7ada8a010310>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
     },
     "sephora.app": {
       "domain": "sephora.app",
-      "analyzed_at": "2025-12-30T22:09:04.419458",
+      "analyzed_at": "2025-12-30T22:26:13.255012",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -154,11 +154,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7ada897ad6d0>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
     },
     "sephora.biz": {
       "domain": "sephora.biz",
-      "analyzed_at": "2025-12-30T22:09:16.448100",
+      "analyzed_at": "2025-12-30T22:26:25.292706",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -167,11 +167,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7ada897a8590>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
     },
     "nestle.com": {
       "domain": "nestle.com",
-      "analyzed_at": "2025-12-30T22:09:28.573038",
+      "analyzed_at": "2025-12-30T22:26:37.495451",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -184,7 +184,7 @@
     },
     "nestle.ca": {
       "domain": "nestle.ca",
-      "analyzed_at": "2025-12-30T22:09:31.070830",
+      "analyzed_at": "2025-12-30T22:26:40.036651",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -197,7 +197,7 @@
     },
     "nestle.co.uk": {
       "domain": "nestle.co.uk",
-      "analyzed_at": "2025-12-30T22:09:33.719153",
+      "analyzed_at": "2025-12-30T22:26:42.790855",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -210,7 +210,7 @@
     },
     "nespresso.com": {
       "domain": "nespresso.com",
-      "analyzed_at": "2025-12-30T22:09:36.242572",
+      "analyzed_at": "2025-12-30T22:26:45.292963",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -223,7 +223,7 @@
     },
     "gerber.com": {
       "domain": "gerber.com",
-      "analyzed_at": "2025-12-30T22:09:38.559407",
+      "analyzed_at": "2025-12-30T22:26:47.752565",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -235,5 +235,5 @@
       "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
     }
   },
-  "last_updated": "2025-12-30T22:09:41.259598"
+  "last_updated": "2025-12-30T22:26:50.515992"
 }

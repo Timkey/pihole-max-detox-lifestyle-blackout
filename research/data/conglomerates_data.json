@@ -1,7 +1,7 @@
 [
   {
     "domain": "nestle.com",
-    "analyzed_at": "2025-12-30T22:09:28.573038",
+    "analyzed_at": "2025-12-30T22:26:37.495451",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -14,7 +14,7 @@
   },
   {
     "domain": "nestle.ca",
-    "analyzed_at": "2025-12-30T22:09:31.070830",
+    "analyzed_at": "2025-12-30T22:26:40.036651",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -27,7 +27,7 @@
   },
   {
     "domain": "nestle.co.uk",
-    "analyzed_at": "2025-12-30T22:09:33.719153",
+    "analyzed_at": "2025-12-30T22:26:42.790855",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -40,7 +40,7 @@
   },
   {
     "domain": "nespresso.com",
-    "analyzed_at": "2025-12-30T22:09:36.242572",
+    "analyzed_at": "2025-12-30T22:26:45.292963",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -53,7 +53,7 @@
   },
   {
     "domain": "gerber.com",
-    "analyzed_at": "2025-12-30T22:09:38.559407",
+    "analyzed_at": "2025-12-30T22:26:47.752565",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},

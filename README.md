@@ -1,5 +1,14 @@
 # MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
 
+## 📊 Interactive Analysis Reports
+
+**View live reports:** [https://timkey.github.io/pihole-max-detox-lifestyle-blackout/](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/)
+
+Interactive HTML reports with charts and visualizations:
+- 🍔 [Food & Delivery Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/food%20&%20delivery_analysis.html)
+- 💄 [Cosmetics & Beauty Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/cosmetics%20&%20beauty_analysis.html)
+- 🏢 [Conglomerates Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/conglomerates_analysis.html)
+
 ## Introduction
 
 **MAX-DETOX-LIFESTYLE-BLACKOUT** is a curated collection of domain blocklists designed for [Pi-hole](https://pi-hole.net/), a network-level ad and content blocker. These lists go beyond traditional ad blocking—they target websites and services that promote unhealthy consumption patterns, impulsive spending, and manufactured wants.
