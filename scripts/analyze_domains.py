@@ -13,6 +13,7 @@ from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse, urljoin
 import time
+import argparse
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -448,7 +449,7 @@ def load_domains_from_list(category_file):
     return domains
 
 
-def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None):
+def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False):
     """Analyze a sample of domains from a category."""
     print(f"\n{'='*60}")
     print(f"Analyzing Category: {category_name}")
@@ -457,11 +458,17 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
     domains = load_domains_from_list(category_file)
     print(f"Found {len(domains)} unique base domains")
     
-    if cache:
+    if cache and not force_reanalysis:
         cached_count = sum(1 for d in domains if cache.is_cached(d))
         print(f"Cached: {cached_count}, Need analysis: {len(domains) - cached_count}")
+    elif force_reanalysis:
+        print(f"🔄 Force reanalysis mode: ignoring cache")
     
-    print(f"Analyzing up to {sample_size} domains...\n")
+    if sample_size == -1:
+        print(f"Analyzing ALL {len(domains)} domains...\n")
+        sample_size = len(domains)
+    else:
+        print(f"Analyzing up to {sample_size} domains...\n")
     
     results = []
     analyzed_count = 0
@@ -471,8 +478,8 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
         if analyzed_count >= sample_size:
             break
         
-        # Check cache first
-        if cache and cache.is_cached(domain):
+        # Check cache first (unless force reanalysis)
+        if cache and cache.is_cached(domain) and not force_reanalysis:
             print(f"{domain}... ✓ Using cached analysis")
             result = cache.get_analysis(domain)
             results.append(result)
@@ -894,8 +901,62 @@ def generate_markdown_report(category_name, results):
 
 def main():
     """Main analysis function."""
-    print("DOMAIN CONTENT ANALYSIS TOOL (with caching)")
-    print("Analyzing website content for health and behavioral hazards\n")
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(
+        description='Analyze domain content for health and behavioral hazards',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  %(prog)s                           # Analyze 5 domains per category (default)
+  %(prog)s --sample-size 10          # Analyze 10 domains per category
+  %(prog)s --all                     # Analyze ALL domains (slow)
+  %(prog)s --force                   # Ignore cache, reanalyze everything
+  %(prog)s --category food           # Only analyze food category
+  %(prog)s --all --force             # Full reanalysis of everything
+        """
+    )
+    parser.add_argument(
+        '--sample-size', '-n',
+        type=int,
+        default=5,
+        help='Number of domains to analyze per category (default: 5)'
+    )
+    parser.add_argument(
+        '--all', '-a',
+        action='store_true',
+        help='Analyze ALL domains in each category (ignores --sample-size)'
+    )
+    parser.add_argument(
+        '--force', '-f',
+        action='store_true',
+        help='Force reanalysis, ignore existing cache'
+    )
+    parser.add_argument(
+        '--category', '-c',
+        choices=['food', 'cosmetics', 'conglomerates'],
+        help='Only analyze specific category'
+    )
+    parser.add_argument(
+        '--no-cache',
+        action='store_true',
+        help='Disable caching entirely (same as --force but don\'t save results)'
+    )
+    
+    args = parser.parse_args()
+    
+    # Determine sample size
+    sample_size = -1 if args.all else args.sample_size
+    force_reanalysis = args.force or args.no_cache
+    use_cache = not args.no_cache
+    
+    print("DOMAIN CONTENT ANALYSIS TOOL")
+    print("="*60)
+    print(f"Sample size: {'ALL' if sample_size == -1 else sample_size} domains per category")
+    print(f"Cache mode: {'DISABLED' if args.no_cache else 'FORCE REANALYSIS' if args.force else 'ENABLED'}")
+    if args.category:
+        print(f"Category filter: {args.category}")
+    print("="*60)
+    print()
     
     # Ensure directories exist
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
@@ -904,7 +965,7 @@ def main():
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     
     # Initialize cache and recommendations
-    cache = AnalysisCache(CACHE_DIR / ANALYSIS_CACHE_FILE)
+    cache = AnalysisCache(CACHE_DIR / ANALYSIS_CACHE_FILE) if use_cache else None
     recommendations = RecommendationEngine(CACHE_DIR / RECOMMENDATIONS_FILE)
     
     # Load all existing domains to avoid duplicate recommendations
@@ -914,20 +975,28 @@ def main():
         domains = load_domains_from_list(cat_file)
         all_existing_domains.update(domains)
     
-    categories = [
-        ('Food & Delivery', 'food.txt'),
-        ('Cosmetics & Beauty', 'cosmetics.txt'),
-        ('Conglomerates', 'conglomerates.txt')
+    # Define all categories
+    all_categories = [
+        ('Food & Delivery', 'food.txt', 'food'),
+        ('Cosmetics & Beauty', 'cosmetics.txt', 'cosmetics'),
+        ('Conglomerates', 'conglomerates.txt', 'conglomerates')
     ]
     
-    for category_name, category_file in categories:
+    # Filter by category if specified
+    if args.category:
+        categories = [(name, file, key) for name, file, key in all_categories if key == args.category]
+    else:
+        categories = all_categories
+    
+    for category_name, category_file, _ in categories:
         results = analyze_category(
             category_name, 
             category_file, 
-            sample_size=5,
+            sample_size=sample_size,
             cache=cache,
             recommendations=recommendations,
-            existing_domains=all_existing_domains
+            existing_domains=all_existing_domains,
+            force_reanalysis=force_reanalysis
         )
         generate_markdown_report(category_name, results)
         generate_html_report(category_name, results)
@@ -940,7 +1009,8 @@ def main():
         print(f"✓ Data saved to: {json_path}")
     
     # Save cache and recommendations
-    cache.save_cache()
+    if cache:
+        cache.save_cache()
     recommendations.save_recommendations()
     
     # Show summary

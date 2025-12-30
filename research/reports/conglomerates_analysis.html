@@ -102,16 +102,16 @@
 <body>
     <div class="header">
         <h1>Conglomerates - Content Analysis</h1>
-        <p>Generated: 2025-12-30 22:31:43</p>
+        <p>Generated: 2025-12-30 22:46:29</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <div class="stat-value">10</div>
+            <div class="stat-value">15</div>
             <div class="stat-label">Domains Analyzed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">2</div>
+            <div class="stat-value">3</div>
             <div class="stat-label">Successfully Accessed</div>
         </div>
         <div class="stat-card">
@@ -163,6 +163,11 @@
         
         <div class="domain-item">
             <span class="domain-name">gerber.ca</span>
+            <span class="risk-badge risk-low">0/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">gerber.dev</span>
             <span class="risk-badge risk-low">0/100</span>
         </div>
         
@@ -241,11 +246,11 @@
         new Chart(document.getElementById('riskChart'), {
             type: 'bar',
             data: {
-                labels: ['nespresso.com', 'gerber.ca'],
+                labels: ['nespresso.com', 'gerber.ca', 'gerber.dev'],
                 datasets: [{
                     label: 'Risk Score',
-                    data: [0, 0],
-                    backgroundColor: ["'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
+                    data: [0, 0, 0],
+                    backgroundColor: ["'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
                     borderWidth: 2
                 }]
             },
