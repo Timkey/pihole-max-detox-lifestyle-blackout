@@ -1,0 +1,233 @@
+{
+  "analyses": {
+    "doordash.com": {
+      "domain": "doordash.com",
+      "analyzed_at": "2025-12-30T22:01:16.754299",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.doordash.com/"
+    },
+    "ubereats.com": {
+      "domain": "ubereats.com",
+      "analyzed_at": "2025-12-30T22:01:18.954880",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [
+        "merchants.ubereats.com",
+        "uber.com"
+      ],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "grubhub.com": {
+      "domain": "grubhub.com",
+      "analyzed_at": "2025-12-30T22:01:21.492421",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "postmates.com": {
+      "domain": "postmates.com",
+      "analyzed_at": "2025-12-30T22:01:23.885587",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 1,
+        "convenience": 2
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [
+        "facebook.com",
+        "help.uber.com",
+        "instagram.com",
+        "itunes.apple.com",
+        "play.google.com",
+        "postmates.com",
+        "privacy.uber.com",
+        "twitter.com",
+        "uber.com"
+      ],
+      "risk_score": 12,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience"
+      ]
+    },
+    "seamless.com": {
+      "domain": "seamless.com",
+      "analyzed_at": "2025-12-30T22:01:26.413643",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ]
+    },
+    "sephora.com": {
+      "domain": "sephora.com",
+      "analyzed_at": "2025-12-30T22:01:28.845028",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2
+      },
+      "marketing_tactics": {},
+      "promoted_products": [
+        "The Latest Lineup",
+        "New DIOR Addict Eau de Parfums",
+        "New Saie CitySet Setting Spray"
+      ],
+      "related_domains": [
+        "community.sephora.com"
+      ],
+      "risk_score": 8,
+      "justification": [
+        "Uses behavioral manipulation: discounts"
+      ]
+    },
+    "ulta.com": {
+      "domain": "ulta.com",
+      "analyzed_at": "2025-12-30T22:01:31.329409",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": []
+    },
+    "sephora.ai": {
+      "domain": "sephora.ai",
+      "analyzed_at": "2025-12-30T22:01:33.656648",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x751ef8209d50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+    },
+    "sephora.app": {
+      "domain": "sephora.app",
+      "analyzed_at": "2025-12-30T22:01:45.705465",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x751ef8211c50>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+    },
+    "sephora.biz": {
+      "domain": "sephora.biz",
+      "analyzed_at": "2025-12-30T22:01:57.752336",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x751ef83bf610>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+    },
+    "nestle.com": {
+      "domain": "nestle.com",
+      "analyzed_at": "2025-12-30T22:02:09.945339",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
+    },
+    "nestle.ca": {
+      "domain": "nestle.ca",
+      "analyzed_at": "2025-12-30T22:02:12.457912",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/"
+    },
+    "nestle.co.uk": {
+      "domain": "nestle.co.uk",
+      "analyzed_at": "2025-12-30T22:02:15.203225",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.co.uk"
+    },
+    "nespresso.com": {
+      "domain": "nespresso.com",
+      "analyzed_at": "2025-12-30T22:02:17.930937",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": []
+    },
+    "gerber.com": {
+      "domain": "gerber.com",
+      "analyzed_at": "2025-12-30T22:02:20.283902",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
+    }
+  },
+  "last_updated": "2025-12-30T22:02:22.968127"
+}

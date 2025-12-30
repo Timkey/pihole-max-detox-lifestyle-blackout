@@ -1,0 +1,20 @@
+services:
+  blocklist-analyzer:
+    build: .
+    container_name: pihole-blocklist-analyzer
+    # Use external DNS servers (Google and Cloudflare) - NOT your Pi-hole
+    dns:
+      - 8.8.8.8      # Google DNS
+      - 1.1.1.1      # Cloudflare DNS
+      - 8.8.4.4      # Google DNS (secondary)
+    # Mount project directories (relative paths)
+    volumes:
+      - ./scripts:/workspace/scripts
+      - ./lists:/workspace/lists
+      - ./research:/workspace/research
+    # Keep container running for interactive use
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    # Optionally set network mode (use bridge to ensure DNS override works)
+    network_mode: bridge

@@ -1,0 +1,514 @@
+{
+  "analyses": {
+    "doordash.com": {
+      "domain": "doordash.com",
+      "analyzed_at": "2025-12-30T22:25:44.128712",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.doordash.com/"
+    },
+    "ubereats.com": {
+      "domain": "ubereats.com",
+      "analyzed_at": "2025-12-30T22:25:46.360702",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {
+        "fomo": 1
+      },
+      "promoted_products": [],
+      "related_domains": [
+        "merchants.ubereats.com",
+        "uber.com"
+      ],
+      "risk_score": 7,
+      "justification": [
+        "Uses behavioral manipulation: convenience",
+        "Employs aggressive marketing: fomo"
+      ],
+      "seo_metadata": "uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats app and support local restaurants. uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats"
+    },
+    "grubhub.com": {
+      "domain": "grubhub.com",
+      "analyzed_at": "2025-12-30T22:25:48.841466",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ],
+      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+    },
+    "postmates.com": {
+      "domain": "postmates.com",
+      "analyzed_at": "2025-12-30T22:25:51.245418",
+      "accessible": true,
+      "health_hazards": {
+        "addictive": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 1,
+        "convenience": 2
+      },
+      "marketing_tactics": {
+        "fomo": 1
+      },
+      "promoted_products": [],
+      "related_domains": [
+        "facebook.com",
+        "help.uber.com",
+        "instagram.com",
+        "itunes.apple.com",
+        "play.google.com",
+        "postmates.com",
+        "privacy.uber.com",
+        "twitter.com",
+        "uber.com"
+      ],
+      "risk_score": 18,
+      "justification": [
+        "Promotes health hazards: addictive",
+        "Uses behavioral manipulation: discounts, convenience",
+        "Employs aggressive marketing: fomo"
+      ],
+      "seo_metadata": "postmates: food delivery, groceries, alcohol - anything from anywhere order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city. download the app now to get everything you crave, on-demand. postmates: food delivery, groceries, alcohol - anything from anywhere order delivery or pickup from more than 600,000 restaurants, retailers, grocers, and more all across your city. download the app now to get everything you crave, on-demand. postmates: foo"
+    },
+    "seamless.com": {
+      "domain": "seamless.com",
+      "analyzed_at": "2025-12-30T22:25:53.907927",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "convenience": 1
+      },
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 4,
+      "justification": [
+        "Uses behavioral manipulation: convenience"
+      ],
+      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+    },
+    "sephora.com": {
+      "domain": "sephora.com",
+      "analyzed_at": "2025-12-30T22:25:56.385876",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "ulta.com": {
+      "domain": "ulta.com",
+      "analyzed_at": "2025-12-30T22:25:58.874425",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "sephora.ai": {
+      "domain": "sephora.ai",
+      "analyzed_at": "2025-12-30T22:26:01.198928",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+    },
+    "sephora.app": {
+      "domain": "sephora.app",
+      "analyzed_at": "2025-12-30T22:26:13.255012",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+    },
+    "sephora.biz": {
+      "domain": "sephora.biz",
+      "analyzed_at": "2025-12-30T22:26:25.292706",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+    },
+    "nestle.com": {
+      "domain": "nestle.com",
+      "analyzed_at": "2025-12-30T22:26:37.495451",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
+    },
+    "nestle.ca": {
+      "domain": "nestle.ca",
+      "analyzed_at": "2025-12-30T22:26:40.036651",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/"
+    },
+    "nestle.co.uk": {
+      "domain": "nestle.co.uk",
+      "analyzed_at": "2025-12-30T22:26:42.790855",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.nestle.co.uk"
+    },
+    "nespresso.com": {
+      "domain": "nespresso.com",
+      "analyzed_at": "2025-12-30T22:26:45.292963",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "gerber.com": {
+      "domain": "gerber.com",
+      "analyzed_at": "2025-12-30T22:26:47.752565",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
+    },
+    "deliveroo.com": {
+      "domain": "deliveroo.com",
+      "analyzed_at": "2025-12-30T22:30:56.430016",
+      "accessible": true,
+      "health_hazards": {
+        "fast_food": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 3,
+        "convenience": 2,
+        "upselling": 1
+      },
+      "marketing_tactics": {
+        "scarcity": 1,
+        "fomo": 2,
+        "personalization": 1
+      },
+      "promoted_products": [
+        "Discover Deliveroo",
+        "Legal",
+        "Help",
+        "Take Deliveroo with you"
+      ],
+      "related_domains": [
+        "careers.deliveroo.co.uk",
+        "corporate.deliveroo.co.uk",
+        "deliveroo.co.uk",
+        "deliveroo.design",
+        "deliveroo.engineering",
+        "deliveroo.onelink.me",
+        "deliveroostudents.co.uk",
+        "facebook.com",
+        "instagram.com",
+        "par.deliveroo.net",
+        "restaurants.deliveroo.com",
+        "twitter.com",
+        "uk.deliveroo.news"
+      ],
+      "risk_score": 39,
+      "justification": [
+        "Promotes health hazards: fast_food",
+        "Uses behavioral manipulation: discounts, convenience, upselling",
+        "Employs aggressive marketing: scarcity, fomo, personalization"
+      ],
+      "seo_metadata": "deliveroo - food, groceries, pharmacy, gifts & more. delivered in a tap. from food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. all in as little as 30 minutes. download our app or order online.  deliveroo the best local restaurants and takeaways are here to deliver. order on deliveroo today!"
+    },
+    "delivery.com": {
+      "domain": "delivery.com",
+      "analyzed_at": "2025-12-30T22:30:58.917124",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    },
+    "caviar.com": {
+      "domain": "caviar.com",
+      "analyzed_at": "2025-12-30T22:31:01.420501",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "trycaviar.com": {
+      "domain": "trycaviar.com",
+      "analyzed_at": "2025-12-30T22:31:03.637356",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.trycaviar.com/"
+    },
+    "instacart.com": {
+      "domain": "instacart.com",
+      "analyzed_at": "2025-12-30T22:31:05.853336",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "sephora.ca": {
+      "domain": "sephora.ca",
+      "analyzed_at": "2025-12-30T22:31:09.356516",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    },
+    "sephora.co": {
+      "domain": "sephora.co",
+      "analyzed_at": "2025-12-30T22:31:12.185148",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x732e20a47ad0>, 'Connection to sephora.co timed out. (connect timeout=10)'))"
+    },
+    "sephora.co.ca": {
+      "domain": "sephora.co.ca",
+      "analyzed_at": "2025-12-30T22:31:24.221526",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    },
+    "sephora.co.uk": {
+      "domain": "sephora.co.uk",
+      "analyzed_at": "2025-12-30T22:31:26.742660",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 5,
+        "convenience": 2,
+        "upselling": 2,
+        "addiction_language": 3
+      },
+      "marketing_tactics": {
+        "social_proof": 2,
+        "scarcity": 2,
+        "fomo": 1,
+        "personalization": 2
+      },
+      "promoted_products": [
+        "My account",
+        "My orders",
+        "Catalogue",
+        "My offers",
+        "Make an appointment",
+        "Personal information",
+        "My communications",
+        "Need help ?"
+      ],
+      "related_domains": [
+        "connect.studentbeans.com",
+        "facebook.com",
+        "instagram.com",
+        "lvmh.com",
+        "rangeme.com",
+        "sephora.co.uk",
+        "tiktok.com",
+        "youtube.com"
+      ],
+      "risk_score": 61,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, fomo, personalization",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora."
+    },
+    "sephora.dev": {
+      "domain": "sephora.dev",
+      "analyzed_at": "2025-12-30T22:31:29.337452",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {
+        "discounts": 2
+      },
+      "marketing_tactics": {
+        "personalization": 1
+      },
+      "promoted_products": [
+        "We also offer",
+        "Domain Backorders",
+        "Domain Registration",
+        "Business Phone Systems",
+        "Domain Name Reseller"
+      ],
+      "related_domains": [
+        "yay.com"
+      ],
+      "risk_score": 11,
+      "justification": [
+        "Uses behavioral manipulation: discounts",
+        "Employs aggressive marketing: personalization"
+      ],
+      "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
+    },
+    "purina.com": {
+      "domain": "purina.com",
+      "analyzed_at": "2025-12-30T22:31:31.622838",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "403 Client Error: Forbidden for url: https://www.purina.com/"
+    },
+    "gerber.ai": {
+      "domain": "gerber.ai",
+      "analyzed_at": "2025-12-30T22:31:34.154073",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+    },
+    "gerber.app": {
+      "domain": "gerber.app",
+      "analyzed_at": "2025-12-30T22:31:36.407640",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)\")))"
+    },
+    "gerber.biz": {
+      "domain": "gerber.biz",
+      "analyzed_at": "2025-12-30T22:31:38.533866",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    },
+    "gerber.ca": {
+      "domain": "gerber.ca",
+      "analyzed_at": "2025-12-30T22:31:40.941893",
+      "accessible": true,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "seo_metadata": ""
+    }
+  },
+  "last_updated": "2025-12-30T22:31:43.775991"
+}

@@ -1,0 +1,407 @@
+{
+  "additions": [
+    {
+      "domain": "merchants.ubereats.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ubereats.com analysis, appears to be related service",
+      "source": "ubereats.com",
+      "detected_at": "2025-12-30T21:52:50.351702",
+      "status": "pending"
+    },
+    {
+      "domain": "uber.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ubereats.com analysis, appears to be related service",
+      "source": "ubereats.com",
+      "detected_at": "2025-12-30T21:52:50.351705",
+      "status": "pending"
+    },
+    {
+      "domain": "facebook.com",
+      "category": "Food & Delivery",
+      "reason": "Found via postmates.com analysis, appears to be related service",
+      "source": "postmates.com",
+      "detected_at": "2025-12-30T21:52:55.188881",
+      "status": "pending"
+    },
+    {
+      "domain": "help.uber.com",
+      "category": "Food & Delivery",
+      "reason": "Found via postmates.com analysis, appears to be related service",
+      "source": "postmates.com",
+      "detected_at": "2025-12-30T21:52:55.188887",
+      "status": "pending"
+    },
+    {
+      "domain": "instagram.com",
+      "category": "Food & Delivery",
+      "reason": "Found via postmates.com analysis, appears to be related service",
+      "source": "postmates.com",
+      "detected_at": "2025-12-30T21:52:55.188901",
+      "status": "pending"
+    },
+    {
+      "domain": "itunes.apple.com",
+      "category": "Food & Delivery",
+      "reason": "Found via postmates.com analysis, appears to be related service",
+      "source": "postmates.com",
+      "detected_at": "2025-12-30T21:52:55.188906",
+      "status": "pending"
+    },
+    {
+      "domain": "play.google.com",
+      "category": "Food & Delivery",
+      "reason": "Found via postmates.com analysis, appears to be related service",
+      "source": "postmates.com",
+      "detected_at": "2025-12-30T21:52:55.188910",
+      "status": "pending"
+    },
+    {
+      "domain": "community.sephora.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.com analysis, appears to be related service",
+      "source": "sephora.com",
+      "detected_at": "2025-12-30T21:53:00.138702",
+      "status": "pending"
+    },
+    {
+      "domain": "apps.apple.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via ulta.com analysis, appears to be related service",
+      "source": "ulta.com",
+      "detected_at": "2025-12-30T21:53:02.636312",
+      "status": "pending"
+    },
+    {
+      "domain": "beautyservices.ulta.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via ulta.com analysis, appears to be related service",
+      "source": "ulta.com",
+      "detected_at": "2025-12-30T21:53:02.636349",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.ulta.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via ulta.com analysis, appears to be related service",
+      "source": "ulta.com",
+      "detected_at": "2025-12-30T21:53:02.636377",
+      "status": "pending"
+    },
+    {
+      "domain": "d.comenity.net",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via ulta.com analysis, appears to be related service",
+      "source": "ulta.com",
+      "detected_at": "2025-12-30T21:53:02.636387",
+      "status": "pending"
+    },
+    {
+      "domain": "corporate.nestle.ca",
+      "category": "Conglomerates",
+      "reason": "Found via nestle.ca analysis, appears to be related service",
+      "source": "nestle.ca",
+      "detected_at": "2025-12-30T21:53:49.453134",
+      "status": "pending"
+    },
+    {
+      "domain": "faitavecnestle.ca",
+      "category": "Conglomerates",
+      "reason": "Found via nestle.ca analysis, appears to be related service",
+      "source": "nestle.ca",
+      "detected_at": "2025-12-30T21:53:49.453146",
+      "status": "pending"
+    },
+    {
+      "domain": "madewithnestle.ca",
+      "category": "Conglomerates",
+      "reason": "Found via nestle.ca analysis, appears to be related service",
+      "source": "nestle.ca",
+      "detected_at": "2025-12-30T21:53:49.453152",
+      "status": "pending"
+    },
+    {
+      "domain": "maisonperrier.fr",
+      "category": "Conglomerates",
+      "reason": "Found via nestle.ca analysis, appears to be related service",
+      "source": "nestle.ca",
+      "detected_at": "2025-12-30T21:53:49.453158",
+      "status": "pending"
+    },
+    {
+      "domain": "nestlebaby.ca",
+      "category": "Conglomerates",
+      "reason": "Found via nestle.ca analysis, appears to be related service",
+      "source": "nestle.ca",
+      "detected_at": "2025-12-30T21:53:49.453164",
+      "status": "pending"
+    },
+    {
+      "domain": "business.gerber.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-30T21:53:57.608692",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberchildrenswear.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-30T21:53:57.608739",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberlife.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-30T21:53:57.608746",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.deliveroo.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T21:56:46.348548",
+      "status": "pending"
+    },
+    {
+      "domain": "corporate.deliveroo.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T21:56:46.348557",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.design",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T21:56:46.348562",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.engineering",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T21:56:46.348567",
+      "status": "pending"
+    },
+    {
+      "domain": "google.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.com analysis, appears to be related service",
+      "source": "caviar.com",
+      "detected_at": "2025-12-30T21:56:51.522671",
+      "status": "pending"
+    },
+    {
+      "domain": "shopify.com",
+      "category": "Food & Delivery",
+      "reason": "Found via caviar.com analysis, appears to be related service",
+      "source": "caviar.com",
+      "detected_at": "2025-12-30T21:56:51.522700",
+      "status": "pending"
+    },
+    {
+      "domain": "ads.instacart.com",
+      "category": "Food & Delivery",
+      "reason": "Found via instacart.com analysis, appears to be related service",
+      "source": "instacart.com",
+      "detected_at": "2025-12-30T21:56:57.333409",
+      "status": "pending"
+    },
+    {
+      "domain": "docs.instacart.com",
+      "category": "Food & Delivery",
+      "reason": "Found via instacart.com analysis, appears to be related service",
+      "source": "instacart.com",
+      "detected_at": "2025-12-30T21:56:57.333438",
+      "status": "pending"
+    },
+    {
+      "domain": "instacart.app.link",
+      "category": "Food & Delivery",
+      "reason": "Found via instacart.com analysis, appears to be related service",
+      "source": "instacart.com",
+      "detected_at": "2025-12-30T21:56:57.333448",
+      "status": "pending"
+    },
+    {
+      "domain": "instacart.careers",
+      "category": "Food & Delivery",
+      "reason": "Found via instacart.com analysis, appears to be related service",
+      "source": "instacart.com",
+      "detected_at": "2025-12-30T21:56:57.333453",
+      "status": "pending"
+    },
+    {
+      "domain": "connect.studentbeans.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T21:57:18.182820",
+      "status": "pending"
+    },
+    {
+      "domain": "lvmh.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T21:57:18.182850",
+      "status": "pending"
+    },
+    {
+      "domain": "rangeme.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T21:57:18.182854",
+      "status": "pending"
+    },
+    {
+      "domain": "yay.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.dev analysis, appears to be related service",
+      "source": "sephora.dev",
+      "detected_at": "2025-12-30T21:57:20.311515",
+      "status": "pending"
+    },
+    {
+      "domain": "myfancyfeast.com",
+      "category": "Conglomerates",
+      "reason": "Found via purina.com analysis, appears to be related service",
+      "source": "purina.com",
+      "detected_at": "2025-12-30T21:57:23.100978",
+      "status": "pending"
+    },
+    {
+      "domain": "mypurina.onelink.me",
+      "category": "Conglomerates",
+      "reason": "Found via purina.com analysis, appears to be related service",
+      "source": "purina.com",
+      "detected_at": "2025-12-30T21:57:23.100991",
+      "status": "pending"
+    },
+    {
+      "domain": "nestlejobs.com",
+      "category": "Conglomerates",
+      "reason": "Found via purina.com analysis, appears to be related service",
+      "source": "purina.com",
+      "detected_at": "2025-12-30T21:57:23.100997",
+      "status": "pending"
+    }
+  ],
+  "removals": [
+    {
+      "domain": "ubereats.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-30T21:52:50.351679",
+      "status": "pending"
+    },
+    {
+      "domain": "grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-30T21:52:52.742610",
+      "status": "pending"
+    },
+    {
+      "domain": "postmates.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-30T21:52:55.188850",
+      "status": "pending"
+    },
+    {
+      "domain": "seamless.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-30T21:52:57.522877",
+      "status": "pending"
+    },
+    {
+      "domain": "sephora.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-30T21:53:00.138657",
+      "status": "pending"
+    },
+    {
+      "domain": "nestle.ca",
+      "category": "Conglomerates",
+      "reason": "Low risk score (15/100), may not warrant blocking",
+      "risk_score": 15,
+      "detected_at": "2025-12-30T21:53:49.453093",
+      "status": "pending"
+    },
+    {
+      "domain": "nespresso.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-30T21:53:54.605508",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (23/100), may not warrant blocking",
+      "risk_score": 23,
+      "detected_at": "2025-12-30T21:56:46.348515",
+      "status": "pending"
+    },
+    {
+      "domain": "delivery.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (0/100), may not warrant blocking",
+      "risk_score": 0,
+      "detected_at": "2025-12-30T21:56:48.869542",
+      "status": "pending"
+    },
+    {
+      "domain": "sephora.ca",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-30T21:57:00.453116",
+      "status": "pending"
+    },
+    {
+      "domain": "sephora.dev",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-30T21:57:20.311481",
+      "status": "pending"
+    },
+    {
+      "domain": "gerber.biz",
+      "category": "Conglomerates",
+      "reason": "Low risk score (0/100), may not warrant blocking",
+      "risk_score": 0,
+      "detected_at": "2025-12-30T21:57:29.734690",
+      "status": "pending"
+    },
+    {
+      "domain": "gerber.ca",
+      "category": "Conglomerates",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-30T21:57:32.562520",
+      "status": "pending"
+    }
+  ],
+  "last_updated": "2025-12-30T21:57:32.688891"
+}

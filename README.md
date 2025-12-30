@@ -1,5 +1,14 @@
 # MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
 
+## 📊 Interactive Analysis Reports
+
+**View live reports:** [https://timkey.github.io/pihole-max-detox-lifestyle-blackout/](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/)
+
+Interactive HTML reports with charts and visualizations:
+- 🍔 [Food & Delivery Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/food%20&%20delivery_analysis.html)
+- 💄 [Cosmetics & Beauty Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/cosmetics%20&%20beauty_analysis.html)
+- 🏢 [Conglomerates Analysis](https://timkey.github.io/pihole-max-detox-lifestyle-blackout/research/reports/conglomerates_analysis.html)
+
 ## Introduction
 
 **MAX-DETOX-LIFESTYLE-BLACKOUT** is a curated collection of domain blocklists designed for [Pi-hole](https://pi-hole.net/), a network-level ad and content blocker. These lists go beyond traditional ad blocking—they target websites and services that promote unhealthy consumption patterns, impulsive spending, and manufactured wants.
@@ -42,9 +51,46 @@ This is not just about blocking websites—it's about reclaiming autonomy over y
 ├── scripts/                       # Maintenance scripts
 │   ├── generate_ultra.py          # Regenerate blackout-ultra.txt
 │   ├── check_domain_variations.py # Check for missing domain TLDs
-│   └── add_domain_variations.py   # Auto-add verified domain variations
+│   ├── add_domain_variations.py   # Auto-add verified domain variations
+│   └── analyze_domains.py         # Content analysis & research tool
+├── research/                      # Analysis reports (auto-generated)
+│   ├── food_&_delivery_analysis.md
+│   ├── cosmetics_&_beauty_analysis.md
+│   └── conglomerates_analysis.md
 └── .gitignore                     # Git configuration
 ```
+
+### Docker Setup (Recommended)
+
+Since your Pi-hole blocks domains in the blocklist, run analysis scripts in a Docker container with external DNS:
+
+```bash
+# Build and start the container
+exec/start.sh
+
+# Run analysis scripts inside container (bypasses Pi-hole DNS)
+exec/analyze.sh
+
+# Or run the complete workflow
+exec/full-workflow.sh
+
+# Stop container when done
+exec/stop.sh
+```
+
+**Quick commands:**
+```bash
+exec/analyze.sh                      # Analyze domains for hazards
+exec/check-variations.sh             # Check for TLD variations  
+exec/add-variations.sh               # Add verified variations
+exec/apply-recommendations.sh        # Apply cached recommendations
+exec/generate-ultra.sh               # Regenerate master blocklist
+exec/shell.sh                        # Enter container shell
+```
+
+The container uses Google DNS (8.8.8.8) and Cloudflare DNS (1.1.1.1) instead of your Pi-hole.
+
+**Note for macOS users:** The start script automatically configures Colima to mount `/Volumes/mnt` for access to your project files.
 
 ### Maintenance Scripts
 
@@ -84,10 +130,30 @@ Usage:
 cd scripts
 python3 add_domain_variations.py
 ```
-- Generates blackout-ultra.txt with proper headers
 
-To regenerate after updating category files:
+**`analyze_domains.py`** - Content analysis and research tool
+- Fetches and analyzes website content from blocklisted domains
+- Identifies health hazards (ultra-processed foods, sugar, additives)
+- Detects behavioral manipulation tactics (urgency, FOMO, discounts)
+- Extracts promoted products and related domains
+- Generates risk scores (0-100) and blocking justifications
+- Creates detailed markdown reports in research/ directory
+
+Usage:
 ```bash
+cd scripts
+python3 analyze_domains.py
+```
+
+Output: Generates analysis reports for each category with:
+- **Hazard clusters** - Aggregated health and behavioral risks
+- **Risk scores** - Quantified danger levels per domain
+- **Justifications** - Evidence-based blocking rationale
+- **Related domains** - New domains to consider adding
+
+---
+
+## Blocklist Details
 python3 generate_ultra.py
 ```
 
