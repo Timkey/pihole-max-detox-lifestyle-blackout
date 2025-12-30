@@ -63,5 +63,117 @@
     "risk_score": 0,
     "justification": [],
     "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.ca",
+    "analyzed_at": "2025-12-30T22:31:09.356516",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "sephora.co",
+    "analyzed_at": "2025-12-30T22:31:12.185148",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x732e20a47ad0>, 'Connection to sephora.co timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.co.ca",
+    "analyzed_at": "2025-12-30T22:31:24.221526",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.co.uk",
+    "analyzed_at": "2025-12-30T22:31:26.742660",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 5,
+      "convenience": 2,
+      "upselling": 2,
+      "addiction_language": 3
+    },
+    "marketing_tactics": {
+      "social_proof": 2,
+      "scarcity": 2,
+      "fomo": 1,
+      "personalization": 2
+    },
+    "promoted_products": [
+      "My account",
+      "My orders",
+      "Catalogue",
+      "My offers",
+      "Make an appointment",
+      "Personal information",
+      "My communications",
+      "Need help ?"
+    ],
+    "related_domains": [
+      "connect.studentbeans.com",
+      "facebook.com",
+      "instagram.com",
+      "lvmh.com",
+      "rangeme.com",
+      "sephora.co.uk",
+      "tiktok.com",
+      "youtube.com"
+    ],
+    "risk_score": 61,
+    "justification": [
+      "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+      "Employs aggressive marketing: social_proof, scarcity, fomo, personalization",
+      "MODERATE RISK: Several concerning patterns detected"
+    ],
+    "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora."
+  },
+  {
+    "domain": "sephora.dev",
+    "analyzed_at": "2025-12-30T22:31:29.337452",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 2
+    },
+    "marketing_tactics": {
+      "personalization": 1
+    },
+    "promoted_products": [
+      "We also offer",
+      "Domain Backorders",
+      "Domain Registration",
+      "Business Phone Systems",
+      "Domain Name Reseller"
+    ],
+    "related_domains": [
+      "yay.com"
+    ],
+    "risk_score": 11,
+    "justification": [
+      "Uses behavioral manipulation: discounts",
+      "Employs aggressive marketing: personalization"
+    ],
+    "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
   }
 ]

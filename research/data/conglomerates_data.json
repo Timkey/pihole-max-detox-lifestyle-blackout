@@ -63,5 +63,70 @@
     "risk_score": 0,
     "justification": [],
     "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
+  },
+  {
+    "domain": "purina.com",
+    "analyzed_at": "2025-12-30T22:31:31.622838",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.purina.com/"
+  },
+  {
+    "domain": "gerber.ai",
+    "analyzed_at": "2025-12-30T22:31:34.154073",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "gerber.app",
+    "analyzed_at": "2025-12-30T22:31:36.407640",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "gerber.biz",
+    "analyzed_at": "2025-12-30T22:31:38.533866",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "gerber.ca",
+    "analyzed_at": "2025-12-30T22:31:40.941893",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
   }
 ]

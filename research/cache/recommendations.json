@@ -39,6 +39,70 @@
       "source": "postmates.com",
       "detected_at": "2025-12-30T22:25:53.907915",
       "status": "pending"
+    },
+    {
+      "domain": "careers.deliveroo.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T22:30:58.917073",
+      "status": "pending"
+    },
+    {
+      "domain": "corporate.deliveroo.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T22:30:58.917100",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.design",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T22:30:58.917106",
+      "status": "pending"
+    },
+    {
+      "domain": "deliveroo.engineering",
+      "category": "Food & Delivery",
+      "reason": "Found via deliveroo.com analysis, appears to be related service",
+      "source": "deliveroo.com",
+      "detected_at": "2025-12-30T22:30:58.917110",
+      "status": "pending"
+    },
+    {
+      "domain": "connect.studentbeans.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T22:31:29.337386",
+      "status": "pending"
+    },
+    {
+      "domain": "lvmh.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T22:31:29.337426",
+      "status": "pending"
+    },
+    {
+      "domain": "rangeme.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.co.uk analysis, appears to be related service",
+      "source": "sephora.co.uk",
+      "detected_at": "2025-12-30T22:31:29.337434",
+      "status": "pending"
+    },
+    {
+      "domain": "yay.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via sephora.dev analysis, appears to be related service",
+      "source": "sephora.dev",
+      "detected_at": "2025-12-30T22:31:31.502099",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -73,7 +137,15 @@
       "risk_score": 4,
       "detected_at": "2025-12-30T22:25:56.258471",
       "status": "pending"
+    },
+    {
+      "domain": "sephora.dev",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T22:31:31.502048",
+      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-30T22:26:50.554823"
+  "last_updated": "2025-12-30T22:31:43.819996"
 }

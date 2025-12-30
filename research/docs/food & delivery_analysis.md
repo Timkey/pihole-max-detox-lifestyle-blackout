@@ -1,28 +1,32 @@
 # Food & Delivery - Content Analysis Report
 
-**Generated:** 2025-12-30 22:25:56
+**Generated:** 2025-12-30 22:31:09
 
-**Domains Analyzed:** 5
+**Domains Analyzed:** 10
 
 ## Summary
 
-- **Accessible domains:** 4/5
-- **Average Risk Score:** 8.2/100
+- **Accessible domains:** 7/10
+- **Average Risk Score:** 10.3/100
 
 ## Hazard Clusters
 
 ### Health Hazards
 
 - **addictive**: 1 occurrences
+- **fast_food**: 1 occurrences
 
 ### Behavioral Hazards
 
-- **convenience**: 5 occurrences
-- **discounts**: 1 occurrences
+- **convenience**: 7 occurrences
+- **discounts**: 4 occurrences
+- **upselling**: 1 occurrences
 
 ### Marketing Tactics
 
-- **fomo**: 2 occurrences
+- **fomo**: 4 occurrences
+- **scarcity**: 1 occurrences
+- **personalization**: 1 occurrences
 
 ## Individual Domain Analysis
 
@@ -87,6 +91,58 @@
 **Justification for Blocking:**
 
 - Uses behavioral manipulation: convenience
+
+---
+
+### deliveroo.com
+
+**Risk Score:** 39/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts, convenience, upselling
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- Discover Deliveroo
+- Legal
+- Help
+- Take Deliveroo with you
+
+**Related Domains Found:**
+
+- `careers.deliveroo.co.uk`
+- `corporate.deliveroo.co.uk`
+- `deliveroo.co.uk`
+- `deliveroo.design`
+- `deliveroo.engineering`
+- `deliveroo.onelink.me`
+- `deliveroostudents.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `par.deliveroo.net`
+
+---
+
+### delivery.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### caviar.com
+
+**Risk Score:** 0/100
+
+---
+
+### trycaviar.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.trycaviar.com/
+
+### instacart.com
+
+**Risk Score:** 0/100
 
 ---
 

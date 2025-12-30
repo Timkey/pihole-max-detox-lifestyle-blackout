@@ -102,24 +102,24 @@
 <body>
     <div class="header">
         <h1>Cosmetics & Beauty - Content Analysis</h1>
-        <p>Generated: 2025-12-30 22:26:37</p>
+        <p>Generated: 2025-12-30 22:31:31</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <div class="stat-value">5</div>
+            <div class="stat-value">10</div>
             <div class="stat-label">Domains Analyzed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">2</div>
+            <div class="stat-value">5</div>
             <div class="stat-label">Successfully Accessed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">0.0</div>
+            <div class="stat-value">14.4</div>
             <div class="stat-label">Average Risk Score</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">0</div>
+            <div class="stat-value">1</div>
             <div class="stat-label">High Risk Domains</div>
         </div>
     </div>
@@ -157,12 +157,27 @@
         <h2>Highest Risk Domains</h2>
         
         <div class="domain-item">
+            <span class="domain-name">sephora.co.uk</span>
+            <span class="risk-badge risk-high">61/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">sephora.dev</span>
+            <span class="risk-badge risk-low">11/100</span>
+        </div>
+        
+        <div class="domain-item">
             <span class="domain-name">sephora.com</span>
             <span class="risk-badge risk-low">0/100</span>
         </div>
         
         <div class="domain-item">
             <span class="domain-name">ulta.com</span>
+            <span class="risk-badge risk-low">0/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">sephora.ca</span>
             <span class="risk-badge risk-low">0/100</span>
         </div>
         
@@ -195,9 +210,9 @@
         new Chart(document.getElementById('behavioralChart'), {
             type: 'doughnut',
             data: {
-                labels: [],
+                labels: ['discounts', 'convenience', 'upselling', 'addiction_language'],
                 datasets: [{
-                    data: [],
+                    data: [7, 2, 2, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
                         'rgba(54, 162, 235, 0.7)',
@@ -218,10 +233,10 @@
         new Chart(document.getElementById('marketingChart'), {
             type: 'bar',
             data: {
-                labels: [],
+                labels: ['social_proof', 'scarcity', 'fomo', 'personalization'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [],
+                    data: [2, 2, 1, 3],
                     backgroundColor: 'rgba(52, 152, 219, 0.7)',
                     borderColor: 'rgba(52, 152, 219, 1)',
                     borderWidth: 2
@@ -241,11 +256,11 @@
         new Chart(document.getElementById('riskChart'), {
             type: 'bar',
             data: {
-                labels: ['sephora.com', 'ulta.com'],
+                labels: ['sephora.co.uk', 'sephora.dev', 'sephora.com', 'ulta.com', 'sephora.ca'],
                 datasets: [{
                     label: 'Risk Score',
-                    data: [0, 0],
-                    backgroundColor: ["'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
+                    data: [61, 11, 0, 0, 0],
+                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
                     borderWidth: 2
                 }]
             },
