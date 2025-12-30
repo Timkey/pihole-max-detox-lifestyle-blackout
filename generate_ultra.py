@@ -69,6 +69,8 @@ def generate_ultra_file():
     script_dir = Path(__file__).parent
     all_blocks = []
     total_domains = 0
+    seen_domains = set()  # Track domains globally to detect duplicates
+    duplicate_count = 0
     
     print(f"Generating {OUTPUT_FILE}...")
     print(f"Working directory: {script_dir}")
@@ -84,8 +86,25 @@ def generate_ultra_file():
         total_domains += domain_count
         all_blocks.extend(blocks)
     
+    # Check for cross-block duplicates
+    print(f"\nChecking for duplicates across all blocks...")
+    for block in all_blocks:
+        for domain in block['domains']:
+            domain_lower = domain.lower()
+            if domain_lower in seen_domains:
+                duplicate_count += 1
+                print(f"  Duplicate found: {domain}")
+            seen_domains.add(domain_lower)
+    
+    unique_domain_count = len(seen_domains)
+    
     print(f"\nTotal blocks: {len(all_blocks)}")
-    print(f"Total domains: {total_domains}")
+    print(f"Total domains (with duplicates): {total_domains}")
+    print(f"Unique domains: {unique_domain_count}")
+    if duplicate_count > 0:
+        print(f"⚠️  Duplicates found: {duplicate_count} (domains appear in multiple blocks)")
+    else:
+        print(f"✓ No duplicates detected")
     
     # Write to output file
     output_path = script_dir / OUTPUT_FILE
@@ -98,6 +117,7 @@ def generate_ultra_file():
                 f.write(domain + '\n')
     
     print(f"\n✓ Successfully generated {OUTPUT_FILE}")
+    print(f"  Output: {output_path}")
     print(f"  Output: {output_path}")
 
 
