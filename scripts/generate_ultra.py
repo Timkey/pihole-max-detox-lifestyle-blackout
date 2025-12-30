@@ -10,6 +10,7 @@ from pathlib import Path
 import re
 
 # Configuration
+LISTS_DIR = Path(__file__).parent.parent / 'lists'
 CATEGORY_FILES = ['food.txt', 'cosmetics.txt', 'conglomerates.txt']
 OUTPUT_FILE = 'blackout-ultra.txt'
 HEADER = """# BLACKOUT-ULTRA.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
@@ -17,7 +18,7 @@ HEADER = """# BLACKOUT-ULTRA.TXT - MAX-DETOX-LIFESTYLE-BLACKOUT v1.0
 #
 # This is the "nuclear option" - blocks everything in one list
 # Add this list to Pi-hole:
-# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blackout-ultra.txt
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/blackout-ultra.txt
 #
 # CATEGORIES INCLUDED:
 # - Food delivery & fast food (food.txt)
@@ -66,18 +67,17 @@ def extract_blocks_with_domains(filepath):
 
 def generate_ultra_file():
     """Generate the blackout-ultra.txt file from all category files."""
-    script_dir = Path(__file__).parent
     all_blocks = []
     total_domains = 0
     seen_domains = set()  # Track domains globally to detect duplicates
     duplicate_count = 0
     
     print(f"Generating {OUTPUT_FILE}...")
-    print(f"Working directory: {script_dir}")
+    print(f"Working directory: {LISTS_DIR}")
     
     # Extract blocks from each category file
     for category_file in CATEGORY_FILES:
-        filepath = script_dir / category_file
+        filepath = LISTS_DIR / category_file
         print(f"Reading {category_file}...")
         blocks = extract_blocks_with_domains(filepath)
         
@@ -107,7 +107,7 @@ def generate_ultra_file():
         print(f"✓ No duplicates detected")
     
     # Write to output file
-    output_path = script_dir / OUTPUT_FILE
+    output_path = LISTS_DIR / OUTPUT_FILE
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(HEADER)
         

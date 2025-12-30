@@ -3,7 +3,7 @@
 #
 # This is the "nuclear option" - blocks everything in one list
 # Add this list to Pi-hole:
-# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blackout-ultra.txt
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/blackout-ultra.txt
 #
 # CATEGORIES INCLUDED:
 # - Food delivery & fast food (food.txt)

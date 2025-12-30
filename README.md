@@ -32,22 +32,58 @@ This is not just about blocking websites—it's about reclaiming autonomy over y
 
 ```
 / (root)
-├── README.md             # Complete documentation and guide
-├── food.txt              # Fast food & delivery blocklist (28 domains)
-├── cosmetics.txt         # Beauty & cosmetics blocklist (22 domains)
-├── conglomerates.txt     # Major conglomerates blocklist (45 domains)
-├── blackout-ultra.txt    # Master combined list (95 domains, 11 blocks)
-├── generate_ultra.py     # Script to regenerate blackout-ultra.txt
-└── .gitignore            # Git configuration
+├── README.md                      # Complete documentation and guide
+├── lists/                         # Blocklist files
+│   ├── food.txt                   # Fast food & delivery blocklist
+│   ├── cosmetics.txt              # Beauty & cosmetics blocklist
+│   ├── conglomerates.txt          # Major conglomerates blocklist
+│   ├── blackout-ultra.txt         # Master combined list
+│   └── .domain_cache.json         # Domain verification cache (auto-generated)
+├── scripts/                       # Maintenance scripts
+│   ├── generate_ultra.py          # Regenerate blackout-ultra.txt
+│   ├── check_domain_variations.py # Check for missing domain TLDs
+│   └── add_domain_variations.py   # Auto-add verified domain variations
+└── .gitignore                     # Git configuration
 ```
 
-### Maintenance
+### Maintenance Scripts
 
-The `generate_ultra.py` script automatically:
-- Reads all category files (food.txt, cosmetics.txt, conglomerates.txt)
+**`generate_ultra.py`** - Regenerates the master blocklist
+- Reads all category files from lists/
 - Extracts domains while preserving block organization
 - Removes duplicates within each block
 - Sorts domains alphabetically (case-insensitive)
+- Generates lists/blackout-ultra.txt
+
+Usage:
+```bash
+cd scripts
+python3 generate_ultra.py
+```
+
+**`check_domain_variations.py`** - Discovers missing domain TLDs
+- Checks for .com, .org, .net, .co.uk, .ca, etc. variations
+- Uses DNS lookups to verify domains actually exist
+- Caches results to avoid redundant checks
+- Shows which domains are missing from your lists
+
+Usage:
+```bash
+cd scripts
+python3 check_domain_variations.py
+```
+
+**`add_domain_variations.py`** - Automatically adds verified TLD variations
+- Finds and adds missing domain variations to category files
+- Uses cached DNS verification results
+- Maintains alphabetical sorting within blocks
+- Shows real-time progress with cache hit statistics
+
+Usage:
+```bash
+cd scripts
+python3 add_domain_variations.py
+```
 - Generates blackout-ultra.txt with proper headers
 
 To regenerate after updating category files:
@@ -68,7 +104,7 @@ Blocks domains for food delivery services and major fast food chains that enable
 
 **Pi-hole URL:**
 ```
-https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/food.txt
+https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/food.txt
 ```
 
 **Use Case**: Block late-night delivery temptations, save money on overpriced delivery fees, encourage home cooking
@@ -87,7 +123,7 @@ Blocks beauty and cosmetics retailers that drive spending through manufactured i
 
 **Pi-hole URL:**
 ```
-https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/cosmetics.txt
+https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/cosmetics.txt
 ```
 
 **Use Case**: Reduce beauty marketing exposure, break impulse cosmetics purchases, focus on essentials
@@ -108,7 +144,7 @@ Blocks major multinational conglomerates and their vast networks of subsidiary b
 
 **Pi-hole URL:**
 ```
-https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/conglomerates.txt
+https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/conglomerates.txt
 ```
 
 **Use Case**: Reduce exposure to mega-corporations, support local/independent alternatives, break brand loyalty cycles
@@ -124,7 +160,7 @@ A unified blocklist containing all domains from food, cosmetics, and conglomerat
 
 **Pi-hole URL:**
 ```
-https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blackout-ultra.txt
+https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/blackout-ultra.txt
 ```
 
 **Use Case**: One-click comprehensive blocking, easiest to maintain, automatic updates include all categories
@@ -161,10 +197,10 @@ https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/mai
 
    **Available blocklist URLs:**
    ```
-   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/food.txt
-   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/cosmetics.txt
-   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/conglomerates.txt
-   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/blackout-ultra.txt
+   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/food.txt
+   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/cosmetics.txt
+   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/conglomerates.txt
+   https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/blackout-ultra.txt
    ```
 
 #### 4. **Update Gravity**

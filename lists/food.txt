@@ -2,7 +2,7 @@
 # Fast food, delivery services, and unhealthy snacks
 #
 # Add this list to Pi-hole:
-# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/food.txt
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/food.txt
 
 # --- FOOD DELIVERY & AGGREGATORS ---
 doordash.com

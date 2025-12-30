@@ -2,7 +2,7 @@
 # The "Nuclear" list - Major conglomerates (Nestle, Unilever, etc.)
 #
 # Add this list to Pi-hole:
-# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/conglomerates.txt
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/conglomerates.txt
 
 # --- NESTLE ---
 nestle.com

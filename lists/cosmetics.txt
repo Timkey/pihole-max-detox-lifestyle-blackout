@@ -2,7 +2,7 @@
 # Beauty brands and predatory cosmetic promoters
 #
 # Add this list to Pi-hole:
-# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/cosmetics.txt
+# https://raw.githubusercontent.com/Timkey/pihole-max-detox-lifestyle-blackout/main/lists/cosmetics.txt
 
 # --- MAJOR BEAUTY RETAILERS ---
 sephora.com
