@@ -18,6 +18,7 @@ import random
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
+import threading
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -28,6 +29,13 @@ CACHE_DIR = RESEARCH_DIR / 'cache'
 DOCS_DIR = RESEARCH_DIR / 'docs'
 ANALYSIS_CACHE_FILE = 'analysis_cache.json'
 RECOMMENDATIONS_FILE = 'recommendations.json'
+
+# Test mode directories (separate from production)
+TEST_DATA_DIR = DATA_DIR / 'test'
+TEST_CACHE_DIR = CACHE_DIR / 'test'
+TEST_REPORTS_DIR = REPORTS_DIR / 'test'
+TEST_MODE = False  # Global flag set by command line args
+
 TIMEOUT = 10
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 USE_PLAYWRIGHT = True  # Enable Playwright fallback for JS-heavy sites
@@ -41,9 +49,18 @@ USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
 ]
 
-# Global Playwright instance (reused across requests for performance)
-PLAYWRIGHT_INSTANCE = None
-BROWSER_INSTANCE = None
+# Thread-local storage for Playwright instances (each thread gets its own)
+_thread_local = threading.local()
+
+def get_playwright_instances():
+    """Get or create thread-local Playwright instances."""
+    if not hasattr(_thread_local, 'playwright'):
+        _thread_local.playwright = sync_playwright().start()
+        _thread_local.browser = _thread_local.playwright.chromium.launch(
+            headless=True,
+            args=['--no-sandbox', '--disable-dev-shm-usage']
+        )
+    return _thread_local.playwright, _thread_local.browser
 
 # Hazard keyword categories
 HEALTH_HAZARDS = {
@@ -297,21 +314,16 @@ class DomainAnalyzer:
     
     def _fetch_with_playwright(self):
         """Fallback fetch using Playwright for JavaScript-heavy sites."""
-        global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
-        
         try:
-            # Initialize Playwright and Browser if needed (reuse for performance)
-            if PLAYWRIGHT_INSTANCE is None:
-                PLAYWRIGHT_INSTANCE = sync_playwright().start()
-                BROWSER_INSTANCE = PLAYWRIGHT_INSTANCE.chromium.launch(
-                    headless=True,
-                    args=['--no-sandbox', '--disable-dev-shm-usage']
-                )
+            # Get thread-local Playwright and Browser instances
+            playwright, browser = get_playwright_instances()
             
-            # Create new page
-            context = BROWSER_INSTANCE.new_context(
+            # Create new page with extra stealth settings
+            context = browser.new_context(
                 user_agent=random.choice(USER_AGENTS),
                 viewport={'width': 1920, 'height': 1080},
+                ignore_https_errors=True,  # Ignore SSL certificate errors
+                java_script_enabled=True,
             )
             page = context.new_page()
             
@@ -319,20 +331,49 @@ class DomainAnalyzer:
             page.route('**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,mp4,webm,mp3}', 
                       lambda route: route.abort())
             
-            # Navigate and wait for content to load (increased timeout)
+            # Navigate and wait for content to load with multiple strategies
             try:
-                page.goto(self.url, wait_until='domcontentloaded', timeout=20000)
-                # Wait a bit for dynamic content (shorter wait)
-                page.wait_for_timeout(3000)
+                # First attempt: domcontentloaded (fast)
+                response = page.goto(self.url, wait_until='domcontentloaded', timeout=15000)
+                
+                # If we got a redirect or no content, wait for network to settle
+                if response and (response.status >= 300 or not page.content()):
+                    page.wait_for_load_state('networkidle', timeout=10000)
+                else:
+                    # Just wait a bit for any dynamic content
+                    page.wait_for_timeout(2000)
+                    
             except PlaywrightTimeout:
-                # If networkidle times out, try with just domcontentloaded
+                # Timeout is ok - try to get whatever content is there
+                pass
+            except Exception as nav_error:
+                # Handle navigation errors (redirects, cert errors, etc.)
+                if "ERR_CERT" in str(nav_error) or "ERR_CONNECTION" in str(nav_error):
+                    self.analysis['error'] = f'Playwright error: {str(nav_error)[:100]}'
+                    context.close()
+                    return False
+                # For other errors, try to continue
                 pass
             
-            # Extract HTML
-            html = page.content()
+            # Try to get content multiple times if navigating
+            html = None
+            for attempt in range(3):
+                try:
+                    html = page.content()
+                    if html and len(html) > 100:
+                        break
+                    page.wait_for_timeout(1000)
+                except Exception:
+                    if attempt == 2:
+                        raise
             
             # Cleanup
             context.close()
+            
+            if not html or len(html) < 100:
+                self.analysis['error'] = 'Playwright: No content retrieved'
+                self.analysis['accessible'] = False
+                return False
             
             # Parse with BeautifulSoup
             self.content = html
@@ -356,7 +397,11 @@ class DomainAnalyzer:
             self.analysis['error'] = 'Playwright timeout (15s)'
             return False
         except Exception as e:
-            self.analysis['error'] = f'Playwright error: {str(e)}'
+            error_msg = str(e)
+            # Shorten very long error messages
+            if len(error_msg) > 200:
+                error_msg = error_msg[:200] + '...'
+            self.analysis['error'] = f'Playwright error: {error_msg}'
             return False
     
     def analyze_text_content(self):
@@ -2222,8 +2267,34 @@ Examples:
         default=5,
         help='Number of concurrent workers for parallel mode (default: 5)'
     )
+    parser.add_argument(
+        '--test', '-t',
+        action='store_true',
+        help='Test mode: use separate test directories for data/cache/reports (doesn\'t affect production)'
+    )
     
     args = parser.parse_args()
+    
+    # Set global test mode flag
+    global TEST_MODE, DATA_DIR, CACHE_DIR, REPORTS_DIR, DOCS_DIR
+    if args.test:
+        TEST_MODE = True
+        # Switch to test directories
+        DATA_DIR = TEST_DATA_DIR
+        CACHE_DIR = TEST_CACHE_DIR
+        REPORTS_DIR = TEST_REPORTS_DIR
+        DOCS_DIR = RESEARCH_DIR / 'docs' / 'test'
+        
+        # Create test directories if they don't exist
+        TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+        (RESEARCH_DIR / 'docs' / 'test').mkdir(parents=True, exist_ok=True)
+        
+        print(f"🧪 TEST MODE ENABLED")
+        print(f"   Data: {DATA_DIR}")
+        print(f"   Cache: {CACHE_DIR}")
+        print(f"   Reports: {REPORTS_DIR}\n")
     
     # Determine sample size
     sample_size = -1 if args.all else args.sample_size
@@ -2330,16 +2401,15 @@ Examples:
 
 
 def cleanup_playwright():
-    """Cleanup Playwright resources."""
-    global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
-    if BROWSER_INSTANCE:
+    """Cleanup thread-local Playwright resources."""
+    if hasattr(_thread_local, 'browser'):
         try:
-            BROWSER_INSTANCE.close()
+            _thread_local.browser.close()
         except:
             pass
-    if PLAYWRIGHT_INSTANCE:
+    if hasattr(_thread_local, 'playwright'):
         try:
-            PLAYWRIGHT_INSTANCE.stop()
+            _thread_local.playwright.stop()
         except:
             pass
 

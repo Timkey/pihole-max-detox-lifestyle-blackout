@@ -5,10 +5,13 @@ This is much faster than full reanalysis since we already have related_domains.
 """
 
 import json
+import argparse
 from pathlib import Path
 
 # Paths
-DATA_DIR = Path(__file__).parent.parent / 'research' / 'data'
+RESEARCH_DIR = Path(__file__).parent.parent / 'research'
+DATA_DIR = RESEARCH_DIR / 'data'
+TEST_DATA_DIR = DATA_DIR / 'test'
 
 def recalculate_scores(category_file):
     """Recalculate enabler scores for a category using existing data."""
@@ -130,6 +133,26 @@ if __name__ == '__main__':
     print("\n╔═══════════════════════════════════════════════════════════════════╗")
     print("║  RECALCULATING ENABLER SCORES (no re-scraping needed)            ║")
     print("╚═══════════════════════════════════════════════════════════════════╝")
+    
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(
+        description='Recalculate enabler scores using existing data'
+    )
+    parser.add_argument(
+        '--test', '-t',
+        action='store_true',
+        help='Test mode: use separate test directories for data (doesn\'t affect production)'
+    )
+    
+    args = parser.parse_args()
+    
+    # Set data directory based on test mode
+    global DATA_DIR
+    if args.test:
+        DATA_DIR = TEST_DATA_DIR
+        TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        print(f"🧪 TEST MODE ENABLED")
+        print(f"   Data: {DATA_DIR}\n")
     
     categories = [
         'food_delivery_data.json',

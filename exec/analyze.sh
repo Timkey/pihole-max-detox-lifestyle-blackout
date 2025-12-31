@@ -9,6 +9,7 @@
 #   ./analyze.sh --force             # Force reanalysis, ignore cache
 #   ./analyze.sh --category food     # Only analyze food category
 #   ./analyze.sh --all --force       # Full reanalysis of everything
+#   ./analyze.sh --test              # Test mode: use research/data/test/ (doesn't affect production)
 
 set -e
 
