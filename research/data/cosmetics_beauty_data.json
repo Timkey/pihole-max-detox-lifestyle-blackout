@@ -1,111 +1,7 @@
 [
   {
-    "domain": "sephora.com",
-    "analyzed_at": "2025-12-30T22:25:56.385876",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "ulta.com",
-    "analyzed_at": "2025-12-30T22:25:58.874425",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "sephora.ai",
-    "analyzed_at": "2025-12-30T22:26:01.198928",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "sephora.app",
-    "analyzed_at": "2025-12-30T22:26:13.255012",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "sephora.biz",
-    "analyzed_at": "2025-12-30T22:26:25.292706",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "sephora.ca",
-    "analyzed_at": "2025-12-30T22:31:09.356516",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "sephora.co",
-    "analyzed_at": "2025-12-30T22:31:12.185148",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x732e20a47ad0>, 'Connection to sephora.co timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "sephora.co.ca",
-    "analyzed_at": "2025-12-30T22:31:24.221526",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
     "domain": "sephora.co.uk",
-    "analyzed_at": "2025-12-30T22:31:26.742660",
+    "analyzed_at": "2025-12-31T12:21:44.511115",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -149,36 +45,47 @@
     "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora."
   },
   {
-    "domain": "sephora.dev",
-    "analyzed_at": "2025-12-30T22:31:29.337452",
+    "domain": "ulta.co",
+    "analyzed_at": "2025-12-31T00:47:07.865819",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "clinique.ai",
+    "analyzed_at": "2025-12-31T00:47:34.667776",
     "accessible": true,
     "health_hazards": {},
-    "behavioral_hazards": {
-      "discounts": 2
-    },
-    "marketing_tactics": {
-      "personalization": 1
-    },
-    "promoted_products": [
-      "We also offer",
-      "Domain Backorders",
-      "Domain Registration",
-      "Business Phone Systems",
-      "Domain Name Reseller"
-    ],
-    "related_domains": [
-      "yay.com"
-    ],
-    "risk_score": 11,
-    "justification": [
-      "Uses behavioral manipulation: discounts",
-      "Employs aggressive marketing: personalization"
-    ],
-    "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
   },
   {
-    "domain": "sephora.info",
-    "analyzed_at": "2025-12-30T22:44:57.379970",
+    "domain": "sephora.com",
+    "analyzed_at": "2025-12-31T12:26:26.451591",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "maccosmetics.com",
+    "analyzed_at": "2025-12-31T00:47:32.391735",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -187,11 +94,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))"
+    "error": "403 Client Error: Forbidden for url: https://www.maccosmetics.com/"
   },
   {
-    "domain": "sephora.net",
-    "analyzed_at": "2025-12-30T22:45:09.420908",
+    "domain": "clinique.ca",
+    "analyzed_at": "2025-12-31T00:47:37.287379",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -200,11 +107,24 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+    "error": "403 Client Error: Forbidden for url: https://www.clinique.ca/"
   },
   {
-    "domain": "sephora.org",
-    "analyzed_at": "2025-12-30T22:45:31.544483",
+    "domain": "ulta.com",
+    "analyzed_at": "2025-12-31T12:26:26.451790",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "clinique.com",
+    "analyzed_at": "2025-12-31T00:47:29.847308",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -213,11 +133,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)\")))"
+    "error": "403 Client Error: Forbidden for url: https://www.clinique.com/"
   },
   {
-    "domain": "sephora.uk",
-    "analyzed_at": "2025-12-30T22:45:33.960598",
+    "domain": "sephora.co",
+    "analyzed_at": "2025-12-31T12:20:14.563925",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -226,20 +146,7 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "sephora.us",
-    "analyzed_at": "2025-12-30T22:45:46.009020",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
   },
   {
     "domain": "ulta.ai",
@@ -255,8 +162,21 @@
     "error": "HTTPSConnectionPool(host='ulta.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ulta.ai', port=443) at 0x78b29ab07c90>, 'Connection to ulta.ai timed out. (connect timeout=10)'))"
   },
   {
-    "domain": "ulta.app",
-    "analyzed_at": "2025-12-31T00:47:03.471995",
+    "domain": "sephora.ca",
+    "analyzed_at": "2025-12-31T12:20:12.293138",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "sephora.us",
+    "analyzed_at": "2025-12-30T22:45:46.009020",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -265,7 +185,46 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.org",
+    "analyzed_at": "2025-12-30T22:45:31.544483",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "esteelauder.com",
+    "analyzed_at": "2025-12-31T00:47:27.496903",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.com/"
+  },
+  {
+    "domain": "loreal.com",
+    "analyzed_at": "2025-12-31T00:47:25.077380",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
   },
   {
     "domain": "ulta.biz",
@@ -281,8 +240,8 @@
     "error": "HTTPSConnectionPool(host='ulta.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
   },
   {
-    "domain": "ulta.co",
-    "analyzed_at": "2025-12-31T00:47:07.865819",
+    "domain": "ulta.app",
+    "analyzed_at": "2025-12-31T00:47:03.471995",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -294,8 +253,8 @@
     "error": "Insufficient content (possible bot detection or JS-rendered page)"
   },
   {
-    "domain": "ulta.co.uk",
-    "analyzed_at": "2025-12-31T00:47:12.377943",
+    "domain": "sephora.co.ca",
+    "analyzed_at": "2025-12-31T12:21:41.498455",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -304,7 +263,124 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='ulta.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://sephora.co.ca/\nCall log:\n  - navigating to \"https://sephora.co.ca/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "domain": "clinique.co.ca",
+    "analyzed_at": "2025-12-31T00:47:39.579397",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.uk",
+    "analyzed_at": "2025-12-30T22:45:33.960598",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "esteelauder.co.ca",
+    "analyzed_at": "2025-12-31T00:47:51.366414",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.ai",
+    "analyzed_at": "2025-12-31T12:26:26.452065",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "esteelauder.ca",
+    "analyzed_at": "2025-12-31T00:47:49.119774",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.ca/"
+  },
+  {
+    "domain": "sephora.biz",
+    "analyzed_at": "2025-12-31T12:26:26.452544",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: 'NoneType' object has no attribute 'new_context'"
+  },
+  {
+    "domain": "sephora.app",
+    "analyzed_at": "2025-12-31T12:26:26.452317",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "esteelauder.ai",
+    "analyzed_at": "2025-12-31T00:47:46.761121",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "ulta.org",
+    "analyzed_at": "2025-12-31T00:47:17.465365",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
   },
   {
     "domain": "ulta.io",
@@ -327,8 +403,21 @@
     "seo_metadata": "custom software development | enterprise applications | ulta.io ulta.io builds custom software and enterprise applications for startups to fortune 500 companies. turn your software vision into reality. contact us today. custom software development | enterprise applications | ulta.io ulta.io builds custom software and enterprise applications for startups to fortune 500 companies. turn your software vision into reality. contact us today. ulta.io custom software development | enterprise application"
   },
   {
-    "domain": "ulta.org",
-    "analyzed_at": "2025-12-31T00:47:17.465365",
+    "domain": "sephora.info",
+    "analyzed_at": "2025-12-30T22:44:57.379970",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "clinique.io",
+    "analyzed_at": "2025-12-31T00:47:44.290648",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -362,6 +451,47 @@
     "seo_metadata": "ulta.uk\u00a0-\u00a0this website is for sale!\u00a0-\u00a0ulta resources and information. this website is for sale! ulta.uk is your first and best source for all of the information you\u2019re looking for. from general topics to more of what you would expect to find here, ulta.uk has it all. we hope you find what you are searching for!"
   },
   {
+    "domain": "sephora.dev",
+    "analyzed_at": "2025-12-31T12:21:47.380503",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 2
+    },
+    "marketing_tactics": {
+      "personalization": 1
+    },
+    "promoted_products": [
+      "We also offer",
+      "Domain Backorders",
+      "Domain Registration",
+      "Business Phone Systems",
+      "Domain Name Reseller"
+    ],
+    "related_domains": [
+      "yay.com"
+    ],
+    "risk_score": 11,
+    "justification": [
+      "Uses behavioral manipulation: discounts",
+      "Employs aggressive marketing: personalization"
+    ],
+    "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
+  },
+  {
+    "domain": "ulta.co.uk",
+    "analyzed_at": "2025-12-31T00:47:12.377943",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='ulta.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+  },
+  {
     "domain": "ulta.us",
     "analyzed_at": "2025-12-31T00:47:23.021246",
     "accessible": false,
@@ -375,21 +505,8 @@
     "error": "HTTPSConnectionPool(host='ulta.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
   },
   {
-    "domain": "loreal.com",
-    "analyzed_at": "2025-12-31T00:47:25.077380",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "esteelauder.com",
-    "analyzed_at": "2025-12-31T00:47:27.496903",
+    "domain": "sephora.net",
+    "analyzed_at": "2025-12-30T22:45:09.420908",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -398,72 +515,7 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.com/"
-  },
-  {
-    "domain": "clinique.com",
-    "analyzed_at": "2025-12-31T00:47:29.847308",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.clinique.com/"
-  },
-  {
-    "domain": "maccosmetics.com",
-    "analyzed_at": "2025-12-31T00:47:32.391735",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.maccosmetics.com/"
-  },
-  {
-    "domain": "clinique.ai",
-    "analyzed_at": "2025-12-31T00:47:34.667776",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "clinique.ca",
-    "analyzed_at": "2025-12-31T00:47:37.287379",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.clinique.ca/"
-  },
-  {
-    "domain": "clinique.co.ca",
-    "analyzed_at": "2025-12-31T00:47:39.579397",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    "error": "HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
   },
   {
     "domain": "clinique.co.uk",
@@ -477,58 +529,6 @@
     "risk_score": 0,
     "justification": [],
     "error": "403 Client Error: Forbidden for url: https://www.clinique.co.uk/"
-  },
-  {
-    "domain": "clinique.io",
-    "analyzed_at": "2025-12-31T00:47:44.290648",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "esteelauder.ai",
-    "analyzed_at": "2025-12-31T00:47:46.761121",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "esteelauder.ca",
-    "analyzed_at": "2025-12-31T00:47:49.119774",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.ca/"
-  },
-  {
-    "domain": "esteelauder.co.ca",
-    "analyzed_at": "2025-12-31T00:47:51.366414",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
   },
   {
     "domain": "esteelauder.co.uk",

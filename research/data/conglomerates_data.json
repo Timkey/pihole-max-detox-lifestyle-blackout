@@ -1,7 +1,33 @@
 [
   {
-    "domain": "nestle.com",
-    "analyzed_at": "2025-12-30T22:26:37.495451",
+    "domain": "nespresso.ai",
+    "analyzed_at": "2025-12-31T00:53:47.983097",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "nestle.net",
+    "analyzed_at": "2025-12-31T00:55:18.408984",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "nestle.ai",
+    "analyzed_at": "2025-12-31T00:54:19.808267",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -13,8 +39,8 @@
     "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
   },
   {
-    "domain": "nestle.ca",
-    "analyzed_at": "2025-12-30T22:26:40.036651",
+    "domain": "nestle.com",
+    "analyzed_at": "2025-12-31T12:24:11.910043",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -23,11 +49,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/"
+    "error": "Playwright: Insufficient content (326 chars)"
   },
   {
-    "domain": "nestle.co.uk",
-    "analyzed_at": "2025-12-30T22:26:42.790855",
+    "domain": "nespresso.us",
+    "analyzed_at": "2025-12-31T00:54:17.684871",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -36,11 +62,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.nestle.co.uk"
+    "error": "HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)\")))"
   },
   {
-    "domain": "nespresso.com",
-    "analyzed_at": "2025-12-30T22:26:45.292963",
+    "domain": "nestle.app",
+    "analyzed_at": "2025-12-31T00:54:22.423944",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -52,9 +78,9 @@
     "seo_metadata": ""
   },
   {
-    "domain": "gerber.com",
-    "analyzed_at": "2025-12-30T22:26:47.752565",
-    "accessible": false,
+    "domain": "nestle.ca",
+    "analyzed_at": "2025-12-31T12:24:11.911208",
+    "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
@@ -62,12 +88,14 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
+    "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/",
+    "method": "playwright",
+    "seo_metadata": "this site is temporarily unavailable | nestl\u00e9 "
   },
   {
-    "domain": "purina.com",
-    "analyzed_at": "2025-12-30T22:31:31.622838",
-    "accessible": false,
+    "domain": "nespresso.uk",
+    "analyzed_at": "2025-12-31T00:54:14.832347",
+    "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
@@ -75,11 +103,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.purina.com/"
+    "seo_metadata": ""
   },
   {
     "domain": "gerber.ai",
-    "analyzed_at": "2025-12-30T22:31:34.154073",
+    "analyzed_at": "2025-12-31T12:24:16.813650",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -88,24 +116,11 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+    "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/\nCall log:\n  - navigating to \"https://gerber.ai/\", waiting until \"domcontentloaded\"\n"
   },
   {
-    "domain": "gerber.app",
-    "analyzed_at": "2025-12-30T22:31:36.407640",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "gerber.biz",
-    "analyzed_at": "2025-12-30T22:31:38.533866",
+    "domain": "gerber.org",
+    "analyzed_at": "2025-12-31T00:53:21.406125",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -117,21 +132,8 @@
     "error": "Insufficient content (possible bot detection or JS-rendered page)"
   },
   {
-    "domain": "gerber.ca",
-    "analyzed_at": "2025-12-30T22:31:40.941893",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "gerber.co.uk",
-    "analyzed_at": "2025-12-30T22:45:58.193125",
+    "domain": "purina.com",
+    "analyzed_at": "2025-12-31T12:24:16.274934",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -140,46 +142,7 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://gerber.co.uk/"
-  },
-  {
-    "domain": "gerber.dev",
-    "analyzed_at": "2025-12-30T22:46:00.331658",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "gerber.info",
-    "analyzed_at": "2025-12-30T22:46:02.510931",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "gerber.io",
-    "analyzed_at": "2025-12-30T22:46:14.541124",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
   },
   {
     "domain": "gerber.net",
@@ -195,8 +158,8 @@
     "error": "HTTPSConnectionPool(host='gerber.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.net'. (_ssl.c:1016)\")))"
   },
   {
-    "domain": "gerber.org",
-    "analyzed_at": "2025-12-31T00:53:21.406125",
+    "domain": "gerber.info",
+    "analyzed_at": "2025-12-30T22:46:02.510931",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -205,7 +168,46 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "nespresso.org",
+    "analyzed_at": "2025-12-31T00:54:12.705435",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "nespresso.net",
+    "analyzed_at": "2025-12-31T00:54:10.573031",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "gerber.us",
+    "analyzed_at": "2025-12-31T00:53:25.934512",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))"
   },
   {
     "domain": "gerber.uk",
@@ -244,8 +246,8 @@
     "seo_metadata": "gerber.uk"
   },
   {
-    "domain": "gerber.us",
-    "analyzed_at": "2025-12-31T00:53:25.934512",
+    "domain": "gerber.app",
+    "analyzed_at": "2025-12-31T12:24:18.736362",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -254,163 +256,7 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nespresso.ai",
-    "analyzed_at": "2025-12-31T00:53:47.983097",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "nespresso.biz",
-    "analyzed_at": "2025-12-31T00:53:50.079582",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nespresso.ca",
-    "analyzed_at": "2025-12-31T00:54:02.112993",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.co",
-    "analyzed_at": "2025-12-31T00:54:04.226404",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.co.uk",
-    "analyzed_at": "2025-12-31T00:54:06.349879",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.info",
-    "analyzed_at": "2025-12-31T00:54:08.456404",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.net",
-    "analyzed_at": "2025-12-31T00:54:10.573031",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.org",
-    "analyzed_at": "2025-12-31T00:54:12.705435",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.uk",
-    "analyzed_at": "2025-12-31T00:54:14.832347",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "nespresso.us",
-    "analyzed_at": "2025-12-31T00:54:17.684871",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nestle.ai",
-    "analyzed_at": "2025-12-31T00:54:19.808267",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
-  },
-  {
-    "domain": "nestle.app",
-    "analyzed_at": "2025-12-31T00:54:22.423944",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
   },
   {
     "domain": "nestle.biz",
@@ -426,8 +272,8 @@
     "error": "HTTPSConnectionPool(host='nestle.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.biz', port=443) at 0x78b29a7a1590>, 'Connection to nestle.biz timed out. (connect timeout=10)'))"
   },
   {
-    "domain": "nestle.co",
-    "analyzed_at": "2025-12-31T00:54:37.476951",
+    "domain": "gerber.io",
+    "analyzed_at": "2025-12-30T22:46:14.541124",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -436,46 +282,7 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nestle.co.ca",
-    "analyzed_at": "2025-12-31T00:54:49.513863",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "nestle.dev",
-    "analyzed_at": "2025-12-31T00:54:52.008038",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "nestle.info",
-    "analyzed_at": "2025-12-31T00:54:54.340101",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))"
+    "error": "HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))"
   },
   {
     "domain": "nestle.io",
@@ -491,8 +298,8 @@
     "error": "HTTPSConnectionPool(host='nestle.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.io', port=443) at 0x78b29a85e890>, 'Connection to nestle.io timed out. (connect timeout=10)'))"
   },
   {
-    "domain": "nestle.net",
-    "analyzed_at": "2025-12-31T00:55:18.408984",
+    "domain": "nestle.co.uk",
+    "analyzed_at": "2025-12-31T12:24:11.914196",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -501,7 +308,252 @@
     "related_domains": [],
     "risk_score": 0,
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))"
+    "error": "Playwright: Insufficient content (332 chars)"
+  },
+  {
+    "domain": "nestle.info",
+    "analyzed_at": "2025-12-31T00:54:54.340101",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "gerber.com",
+    "analyzed_at": "2025-12-31T12:24:11.917295",
+    "accessible": true,
+    "health_hazards": {
+      "sugar": 1,
+      "fast_food": 1
+    },
+    "behavioral_hazards": {
+      "discounts": 3,
+      "convenience": 1,
+      "upselling": 1,
+      "addiction_language": 1
+    },
+    "marketing_tactics": {
+      "scarcity": 1,
+      "fomo": 1,
+      "personalization": 2
+    },
+    "promoted_products": [
+      "Compare Products",
+      "Alabama",
+      "Alaska",
+      "Arizona",
+      "Arkansas",
+      "California",
+      "Colorado",
+      "Connecticut",
+      "DC",
+      "Delaware",
+      "MyGerber",
+      "Sign up for MyGerber",
+      "For A Parent-Friendly World",
+      "Customer Care",
+      "Products"
+    ],
+    "related_domains": [
+      "business.gerber.com",
+      "facebook.com",
+      "gerber.com",
+      "gerberchildrenswear.com",
+      "gerberlife.com",
+      "goodstartbaby.com",
+      "instagram.com",
+      "m.me",
+      "medical.gerber.com",
+      "nestlejobs.com",
+      "nestleusa.com",
+      "news.gerber.com",
+      "parents.gerber.com",
+      "tiktok.com",
+      "wa.me",
+      "youtube.com"
+    ],
+    "risk_score": 42,
+    "justification": [
+      "Promotes health hazards: sugar, fast_food",
+      "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+      "Employs aggressive marketing: scarcity, fomo, personalization",
+      "MODERATE RISK: Several concerning patterns detected"
+    ],
+    "seo_metadata": "gerber | shop baby food, get support and connect with experts | gerber gerber - a leader in early childhood nutrition for more than 90 years gerber, gerber baby, gerber food, gerber baby food, gerber foods gerber | shop baby food, get support and connect with experts gerber - a leader in early childhood nutrition for more than 90 years gerber.com"
+  },
+  {
+    "domain": "nespresso.com",
+    "analyzed_at": "2025-12-31T12:24:11.917052",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/\nCall log:\n  - navigating to \"https://nespresso.com/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "domain": "nestle.dev",
+    "analyzed_at": "2025-12-31T00:54:52.008038",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "nespresso.co",
+    "analyzed_at": "2025-12-31T00:54:04.226404",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "nespresso.ca",
+    "analyzed_at": "2025-12-31T00:54:02.112993",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "nestle.co.ca",
+    "analyzed_at": "2025-12-31T00:54:49.513863",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "gerber.co.uk",
+    "analyzed_at": "2025-12-30T22:45:58.193125",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://gerber.co.uk/"
+  },
+  {
+    "domain": "nespresso.co.uk",
+    "analyzed_at": "2025-12-31T00:54:06.349879",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "gerber.ca",
+    "analyzed_at": "2025-12-31T12:24:20.364219",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "nespresso.biz",
+    "analyzed_at": "2025-12-31T00:53:50.079582",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "nespresso.info",
+    "analyzed_at": "2025-12-31T00:54:08.456404",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "gerber.dev",
+    "analyzed_at": "2025-12-30T22:46:00.331658",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "nestle.co",
+    "analyzed_at": "2025-12-31T00:54:37.476951",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "gerber.biz",
+    "analyzed_at": "2025-12-31T12:24:18.981797",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright: Insufficient content (20 chars)"
   },
   {
     "domain": "nestle.org",

@@ -14,6 +14,10 @@ from datetime import datetime
 from urllib.parse import urlparse, urljoin
 import time
 import argparse
+import random
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -26,6 +30,20 @@ ANALYSIS_CACHE_FILE = 'analysis_cache.json'
 RECOMMENDATIONS_FILE = 'recommendations.json'
 TIMEOUT = 10
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+USE_PLAYWRIGHT = True  # Enable Playwright fallback for JS-heavy sites
+MIN_CONTENT_LENGTH = 500  # Minimum text length to consider content sufficient
+
+# Multiple User-Agent strings for rotation
+USER_AGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+]
+
+# Global Playwright instance (reused across requests for performance)
+PLAYWRIGHT_INSTANCE = None
+BROWSER_INSTANCE = None
 
 # Hazard keyword categories
 HEALTH_HAZARDS = {
@@ -54,11 +72,12 @@ MARKETING_TACTICS = {
 
 
 class AnalysisCache:
-    """Manages cached analysis results."""
+    """Manages cached analysis results (thread-safe)."""
     
     def __init__(self, cache_file):
         self.cache_file = Path(cache_file)
         self.cache = self._load_cache()
+        self._lock = Lock()  # Thread safety for concurrent writes
     
     def _load_cache(self):
         """Load cache from file."""
@@ -73,10 +92,11 @@ class AnalysisCache:
         return {'analyses': {}, 'last_updated': None}
     
     def save_cache(self):
-        """Save cache to file."""
-        self.cache['last_updated'] = datetime.now().isoformat()
-        with open(self.cache_file, 'w') as f:
-            json.dump(self.cache, f, indent=2)
+        """Save cache to file (thread-safe)."""
+        with self._lock:
+            self.cache['last_updated'] = datetime.now().isoformat()
+            with open(self.cache_file, 'w') as f:
+                json.dump(self.cache, f, indent=2)
     
     def get_analysis(self, domain):
         """Get cached analysis for domain."""
@@ -96,16 +116,18 @@ class AnalysisCache:
         return age.days < max_age_days
     
     def store_analysis(self, domain, analysis):
-        """Store analysis result."""
-        self.cache['analyses'][domain] = analysis
+        """Store analysis result (thread-safe)."""
+        with self._lock:
+            self.cache['analyses'][domain] = analysis
 
 
 class RecommendationEngine:
-    """Manages domain recommendations for additions and removals."""
+    """Manages domain recommendations for additions and removals (thread-safe)."""
     
     def __init__(self, recommendations_file):
         self.rec_file = Path(recommendations_file)
         self.recommendations = self._load_recommendations()
+        self._lock = Lock()  # Thread safety for concurrent updates
     
     def _load_recommendations(self):
         """Load recommendations from file."""
@@ -122,14 +144,15 @@ class RecommendationEngine:
         }
     
     def save_recommendations(self):
-        """Save recommendations to file."""
-        self.recommendations['last_updated'] = datetime.now().isoformat()
-        with open(self.rec_file, 'w') as f:
-            json.dump(self.recommendations, f, indent=2)
-        print(f"\n✓ Recommendations saved to: {self.rec_file}")
+        """Save recommendations to file (thread-safe)."""
+        with self._lock:
+            self.recommendations['last_updated'] = datetime.now().isoformat()
+            with open(self.rec_file, 'w') as f:
+                json.dump(self.recommendations, f, indent=2)
+            print(f"\n✓ Recommendations saved to: {self.rec_file}")
     
     def add_addition_recommendation(self, domain, category, reason, source_domain=None):
-        """Recommend adding a domain."""
+        """Recommend adding a domain (thread-safe)."""
         # Skip common third-party domains
         skip_domains = {
             'facebook.com', 'twitter.com', 'instagram.com', 'youtube.com',
@@ -149,15 +172,16 @@ class RecommendationEngine:
             'status': 'pending'
         }
         
-        # Check if already recommended
-        for existing in self.recommendations['additions']:
-            if existing['domain'] == domain:
-                return  # Already recommended
-        
-        self.recommendations['additions'].append(rec)
+        # Check if already recommended (with lock)
+        with self._lock:
+            for existing in self.recommendations['additions']:
+                if existing['domain'] == domain:
+                    return  # Already recommended
+            
+            self.recommendations['additions'].append(rec)
     
     def add_removal_recommendation(self, domain, category, reason, risk_score):
-        """Recommend removing a domain."""
+        """Recommend removing a domain (thread-safe)."""
         # Only recommend removal if we successfully analyzed the domain
         # Don't recommend removal if analysis failed (no content)
         if risk_score is None or risk_score == 0:
@@ -172,12 +196,13 @@ class RecommendationEngine:
             'status': 'pending'
         }
         
-        # Check if already recommended
-        for existing in self.recommendations['removals']:
-            if existing['domain'] == domain:
-                return
-        
-        self.recommendations['removals'].append(rec)
+        # Check if already recommended (with lock)
+        with self._lock:
+            for existing in self.recommendations['removals']:
+                if existing['domain'] == domain:
+                    return
+            
+            self.recommendations['removals'].append(rec)
     
     def get_summary(self):
         """Get recommendations summary."""
@@ -211,26 +236,54 @@ class DomainAnalyzer:
         }
     
     def fetch_content(self):
-        """Fetch website content with better bot evasion."""
+        """Fetch website content with hybrid approach: requests first, Playwright fallback."""
+        # Add random delay to avoid rate limiting
+        time.sleep(random.uniform(1, 2))
+        
+        # Try fast method first (requests)
+        success = self._fetch_with_requests()
+        if success:
+            return True
+        
+        # If requests failed or returned insufficient content, try Playwright
+        if USE_PLAYWRIGHT:
+            print(f"  → Playwright fallback for {self.domain}...", end=' ')
+            return self._fetch_with_playwright()
+        
+        return False
+    
+    def _fetch_with_requests(self):
+        """Fast fetch using requests library."""
         try:
+            # Create session with realistic headers
+            session = requests.Session()
             headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'User-Agent': random.choice(USER_AGENTS),
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Language': 'en-US,en;q=0.9',
                 'Accept-Encoding': 'gzip, deflate, br',
                 'DNT': '1',
                 'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1'
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'none',
+                'Sec-Fetch-User': '?1',
+                'Cache-Control': 'max-age=0',
             }
-            response = requests.get(self.url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
+            
+            response = session.get(self.url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
             response.raise_for_status()
             self.content = response.text
             self.soup = BeautifulSoup(self.content, 'html.parser')
             
-            # Check if we actually got content
+            # Check if we actually got sufficient content
+            for script in self.soup(['script', 'style']):
+                script.decompose()
             text = self.soup.get_text(strip=True)
-            if len(text) < 100:
-                self.analysis['error'] = 'Insufficient content (possible bot detection or JS-rendered page)'
+            
+            if len(text) < MIN_CONTENT_LENGTH:
+                self.analysis['error'] = f'Insufficient content ({len(text)} chars, needs {MIN_CONTENT_LENGTH}+)'
                 self.analysis['accessible'] = False
                 return False
             
@@ -238,6 +291,70 @@ class DomainAnalyzer:
             return True
         except Exception as e:
             self.analysis['error'] = str(e)
+            return False
+    
+    def _fetch_with_playwright(self):
+        """Fallback fetch using Playwright for JavaScript-heavy sites."""
+        global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
+        
+        try:
+            # Initialize Playwright and Browser if needed (reuse for performance)
+            if PLAYWRIGHT_INSTANCE is None:
+                PLAYWRIGHT_INSTANCE = sync_playwright().start()
+                BROWSER_INSTANCE = PLAYWRIGHT_INSTANCE.chromium.launch(
+                    headless=True,
+                    args=['--no-sandbox', '--disable-dev-shm-usage']
+                )
+            
+            # Create new page
+            context = BROWSER_INSTANCE.new_context(
+                user_agent=random.choice(USER_AGENTS),
+                viewport={'width': 1920, 'height': 1080},
+            )
+            page = context.new_page()
+            
+            # Block images/fonts/media for speed (we only need text)
+            page.route('**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,mp4,webm,mp3}', 
+                      lambda route: route.abort())
+            
+            # Navigate and wait for content to load (increased timeout)
+            try:
+                page.goto(self.url, wait_until='domcontentloaded', timeout=20000)
+                # Wait a bit for dynamic content (shorter wait)
+                page.wait_for_timeout(3000)
+            except PlaywrightTimeout:
+                # If networkidle times out, try with just domcontentloaded
+                pass
+            
+            # Extract HTML
+            html = page.content()
+            
+            # Cleanup
+            context.close()
+            
+            # Parse with BeautifulSoup
+            self.content = html
+            self.soup = BeautifulSoup(self.content, 'html.parser')
+            
+            # Check content
+            for script in self.soup(['script', 'style']):
+                script.decompose()
+            text = self.soup.get_text(strip=True)
+            
+            if len(text) < MIN_CONTENT_LENGTH:
+                self.analysis['error'] = f'Playwright: Insufficient content ({len(text)} chars)'
+                self.analysis['accessible'] = False
+                return False
+            
+            self.analysis['accessible'] = True
+            self.analysis['method'] = 'playwright'
+            return True
+            
+        except PlaywrightTimeout:
+            self.analysis['error'] = 'Playwright timeout (15s)'
+            return False
+        except Exception as e:
+            self.analysis['error'] = f'Playwright error: {str(e)}'
             return False
     
     def analyze_text_content(self):
@@ -449,8 +566,58 @@ def load_domains_from_list(category_file):
     return domains
 
 
-def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False):
-    """Analyze a sample of domains from a category."""
+def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recommendations, existing_domains):
+    """Worker function for parallel domain analysis (thread-safe)."""
+    # Check cache first (unless force reanalysis)
+    if cache and cache.is_cached(domain) and not force_reanalysis:
+        result = cache.get_analysis(domain)
+        print(f"{domain}... ✓ Using cached analysis")
+    else:
+        analyzer = DomainAnalyzer(domain)
+        result = analyzer.analyze()
+        
+        if cache:
+            cache.store_analysis(domain, result)  # Thread-safe
+    
+    # Process recommendations (thread-safe)
+    if recommendations and result['accessible']:
+        # Check if domain should be removed (low risk score)
+        if result['risk_score'] < 30:
+            recommendations.add_removal_recommendation(
+                domain,
+                category_name,
+                f"Low risk score ({result['risk_score']}/100), may not warrant blocking",
+                result['risk_score']
+            )
+        
+        # Check for related domains to add
+        for related_domain in result.get('related_domains', [])[:5]:  # Top 5 only
+            # Check if it's not already in any list
+            if existing_domains and related_domain not in existing_domains:
+                recommendations.add_addition_recommendation(
+                    related_domain,
+                    category_name,
+                    f"Found via {domain} analysis, appears to be related service",
+                    domain
+                )
+    
+    return result
+
+
+def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False, parallel=False, max_workers=5):
+    """Analyze a sample of domains from a category.
+    
+    Args:
+        category_name: Name of the category
+        category_file: Filename of the blocklist
+        sample_size: Number of domains to analyze (-1 for all)
+        cache: AnalysisCache instance
+        recommendations: RecommendationEngine instance
+        existing_domains: Set of domains already in blocklists
+        force_reanalysis: Ignore cache
+        parallel: Enable parallel processing
+        max_workers: Number of concurrent threads (default 5)
+    """
     print(f"\n{'='*60}")
     print(f"Analyzing Category: {category_name}")
     print(f"{'='*60}")
@@ -470,78 +637,109 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
     else:
         print(f"Analyzing up to {sample_size} domains...\n")
     
-    results = []
-    analyzed_count = 0
+    # Limit to sample size
+    domains_to_analyze = domains[:sample_size]
     
-    # Analyze sample
+    if parallel:
+        print(f"⚡ Parallel mode: {max_workers} workers\n")
+        results = analyze_parallel(
+            domains_to_analyze,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains,
+            max_workers
+        )
+    else:
+        results = analyze_sequential(
+            domains_to_analyze,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains
+        )
+    
+    return results
+
+
+def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
+    """Sequential domain analysis (original method)."""
+    results = []
+    
     for domain in domains:
-        if analyzed_count >= sample_size:
-            break
+        result = analyze_domain_worker(
+            domain,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains
+        )
+        results.append(result)
+    
+    return results
+
+
+def analyze_parallel(domains, cache, force_reanalysis, category_name, recommendations, existing_domains, max_workers):
+    """Parallel domain analysis using ThreadPoolExecutor."""
+    results = []
+    completed = 0
+    total = len(domains)
+    
+    # Use ThreadPoolExecutor for concurrent analysis
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all tasks
+        future_to_domain = {
+            executor.submit(
+                analyze_domain_worker,
+                domain,
+                cache,
+                force_reanalysis,
+                category_name,
+                recommendations,
+                existing_domains
+            ): domain
+            for domain in domains
+        }
         
-        # Check cache first (unless force reanalysis)
-        if cache and cache.is_cached(domain) and not force_reanalysis:
-            print(f"{domain}... ✓ Using cached analysis")
-            result = cache.get_analysis(domain)
-            results.append(result)
-        else:
-            analyzer = DomainAnalyzer(domain)
-            result = analyzer.analyze()
-            results.append(result)
-            
-            if cache:
-                cache.store_analysis(domain, result)
-            
-            analyzed_count += 1
-            time.sleep(2)  # Rate limiting
-        
-        # Process recommendations
-        if recommendations and result['accessible']:
-            # Check if domain should be removed (low risk score)
-            if result['risk_score'] < 30:
-                recommendations.add_removal_recommendation(
-                    domain,
-                    category_name,
-                    f"Low risk score ({result['risk_score']}/100), may not warrant blocking",
-                    result['risk_score']
-                )
-            
-            # Check for related domains to add
-            for related_domain in result.get('related_domains', [])[:5]:  # Top 5 only
-                # Check if it's not already in any list
-                if existing_domains and related_domain not in existing_domains:
-                    recommendations.add_addition_recommendation(
-                        related_domain,
-                        category_name,
-                        f"Found via {domain} analysis, appears to be related service",
-                        domain
-                    )
+        # Process completed tasks as they finish
+        for future in as_completed(future_to_domain):
+            domain = future_to_domain[future]
+            try:
+                result = future.result()
+                results.append(result)
+                completed += 1
+                
+                # Progress indicator
+                if completed % 10 == 0 or completed == total:
+                    print(f"Progress: {completed}/{total} domains analyzed ({completed/total*100:.1f}%)")
+                    
+            except Exception as e:
+                print(f"❌ Error analyzing {domain}: {e}")
+                # Create error result
+                results.append({
+                    'domain': domain,
+                    'analyzed_at': datetime.now().isoformat(),
+                    'accessible': False,
+                    'error': str(e),
+                    'risk_score': 0
+                })
     
     return results
 
 
 def generate_html_report(category_name, results):
-    """Generate interactive HTML report with charts."""
+    """Generate interactive HTML report with embedded data."""
     report_path = REPORTS_DIR / f"{category_name.lower()}_analysis.html"
     
-    # Prepare data
-    accessible = [r for r in results if r['accessible']]
-    avg_risk = sum(r['risk_score'] for r in accessible) / len(accessible) if accessible else 0
+    # Data file path (relative to report) - still save JSON for external access
+    data_filename = f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
     
-    # Aggregate hazards
-    health_hazards = {}
-    behavioral_hazards = {}
-    marketing_tactics = {}
-    
-    for result in accessible:
-        for hazard, count in result.get('health_hazards', {}).items():
-            health_hazards[hazard] = health_hazards.get(hazard, 0) + count
-        for hazard, count in result.get('behavioral_hazards', {}).items():
-            behavioral_hazards[hazard] = behavioral_hazards.get(hazard, 0) + count
-        for tactic, count in result.get('marketing_tactics', {}).items():
-            marketing_tactics[tactic] = marketing_tactics.get(tactic, 0) + count
-    
-    # Sort domains by risk score
-    top_risks = sorted(accessible, key=lambda x: x['risk_score'], reverse=True)[:10]
+    # Embed data directly in HTML to avoid CORS issues
+    import json
+    embedded_data = json.dumps(results, indent=2)
     
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
@@ -551,6 +749,9 @@ def generate_html_report(category_name, results):
     <title>{category_name} - Analysis Report</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
+        * {{
+            box-sizing: border-box;
+        }}
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             max-width: 1400px;
@@ -558,15 +759,97 @@ def generate_html_report(category_name, results):
             padding: 20px;
             background: #f5f5f5;
         }}
+        .nav-bar {{
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }}
+        .nav-links {{
+            display: flex;
+            gap: 15px;
+        }}
+        .nav-link {{
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }}
+        .nav-link:hover {{
+            background: #764ba2;
+        }}
+        .nav-link.home {{
+            background: #27ae60;
+        }}
+        .nav-link.home:hover {{
+            background: #229954;
+        }}
         .header {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 30px;
+            position: relative;
         }}
         .header h1 {{
             margin: 0 0 10px 0;
+        }}
+        .header .timestamp {{
+            opacity: 0.9;
+            font-size: 0.9em;
+        }}
+        .controls {{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        .controls h3 {{
+            margin-top: 0;
+        }}
+        .filter-group {{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }}
+        .filter-btn {{
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }}
+        .filter-btn:hover {{
+            background: #f0f0ff;
+        }}
+        .filter-btn.active {{
+            background: #667eea;
+            color: white;
+        }}
+        .search-box {{
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }}
+        .search-box:focus {{
+            outline: none;
+            border-color: #667eea;
         }}
         .stats {{
             display: grid;
@@ -610,12 +893,28 @@ def generate_html_report(category_name, results):
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }}
+        .domain-list h2 {{
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }}
+        .domain-count {{
+            font-size: 0.6em;
+            color: #666;
+            font-weight: normal;
+        }}
         .domain-item {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px;
             border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }}
+        .domain-item:hover {{
+            background: #f9f9f9;
         }}
         .domain-item:last-child {{
             border-bottom: none;
@@ -623,196 +922,490 @@ def generate_html_report(category_name, results):
         .domain-name {{
             font-weight: 500;
             color: #333;
+            flex: 1;
         }}
+        .domain-details {{
+            display: none;
+            padding: 15px;
+            background: #f5f5f5;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }}
+        .domain-details.show {{
+            display: block;
+        }}
+        .hazard-tags {{
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }}
+        .hazard-tag {{
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            background: #e3f2fd;
+            color: #1976d2;
+        }}
+        .hazard-tag.health {{ background: #ffebee; color: #c62828; }}
+        .hazard-tag.behavioral {{ background: #fff3e0; color: #e65100; }}
+        .hazard-tag.marketing {{ background: #e8f5e9; color: #2e7d32; }}
         .risk-badge {{
             padding: 5px 15px;
             border-radius: 20px;
             font-weight: bold;
             color: white;
+            margin-left: 10px;
         }}
         .risk-high {{ background: #e74c3c; }}
         .risk-medium {{ background: #f39c12; }}
         .risk-low {{ background: #27ae60; }}
+        .risk-none {{ background: #95a5a6; }}
         .grid-2 {{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-bottom: 30px;
         }}
+        .loading {{
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }}
+        .error {{
+            background: #ffebee;
+            color: #c62828;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }}
         @media (max-width: 768px) {{
             .grid-2 {{ grid-template-columns: 1fr; }}
+            .nav-bar {{ flex-direction: column; gap: 10px; }}
+            .nav-links {{ width: 100%; justify-content: center; }}
         }}
     </style>
 </head>
 <body>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-link home">🏠 Home</a>
+            <a href="food & delivery_analysis.html" class="nav-link">Food & Delivery</a>
+            <a href="cosmetics & beauty_analysis.html" class="nav-link">Cosmetics</a>
+            <a href="conglomerates_analysis.html" class="nav-link">Conglomerates</a>
+        </div>
+    </nav>
+
     <div class="header">
         <h1>{category_name} - Content Analysis</h1>
-        <p>Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</p>
+        <p class="timestamp" id="timestamp">Loading...</p>
     </div>
 
-    <div class="stats">
-        <div class="stat-card">
-            <div class="stat-value">{len(results)}</div>
-            <div class="stat-label">Domains Analyzed</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{len(accessible)}</div>
-            <div class="stat-label">Successfully Accessed</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{avg_risk:.1f}</div>
-            <div class="stat-label">Average Risk Score</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">{len([r for r in accessible if r['risk_score'] > 50])}</div>
-            <div class="stat-label">High Risk Domains</div>
-        </div>
+    <div id="loading" class="loading">
+        <h2>Loading analysis data...</h2>
+        <p>Please wait while we fetch the results</p>
     </div>
 
-    <div class="grid-2">
-        <div class="chart-container">
-            <h2>Health Hazards Detected</h2>
-            <div class="chart-wrapper">
-                <canvas id="healthChart"></canvas>
+    <div id="error" class="error" style="display: none;">
+        <h2>Error Loading Data</h2>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div class="controls">
+            <h3>Filter Domains</h3>
+            <input type="text" class="search-box" id="searchBox" placeholder="Search domains...">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All Domains</button>
+                <button class="filter-btn" data-filter="high">High Risk (50+)</button>
+                <button class="filter-btn" data-filter="medium">Medium Risk (30-49)</button>
+                <button class="filter-btn" data-filter="low">Low Risk (< 30)</button>
+                <button class="filter-btn" data-filter="failed">Failed Access</button>
             </div>
         </div>
-        <div class="chart-container">
-            <h2>Behavioral Manipulation</h2>
-            <div class="chart-wrapper">
-                <canvas id="behavioralChart"></canvas>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalDomains">0</div>
+                <div class="stat-label">Domains Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="accessibleDomains">0</div>
+                <div class="stat-label">Successfully Accessed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgRisk">0</div>
+                <div class="stat-label">Average Risk Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="highRiskDomains">0</div>
+                <div class="stat-label">High Risk Domains</div>
             </div>
         </div>
-    </div>
 
-    <div class="chart-container">
-        <h2>Marketing Tactics Distribution</h2>
-        <div class="chart-wrapper">
-            <canvas id="marketingChart"></canvas>
+        <div class="grid-2">
+            <div class="chart-container">
+                <h2>Health Hazards Detected</h2>
+                <div class="chart-wrapper">
+                    <canvas id="healthChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2>Behavioral Manipulation</h2>
+                <div class="chart-wrapper">
+                    <canvas id="behavioralChart"></canvas>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="chart-container">
-        <h2>Top Risk Scores</h2>
-        <div class="chart-wrapper">
-            <canvas id="riskChart"></canvas>
+        <div class="chart-container">
+            <h2>Marketing Tactics Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="marketingChart"></canvas>
+            </div>
         </div>
-    </div>
 
-    <div class="domain-list">
-        <h2>Highest Risk Domains</h2>
-        {''.join([f'''
-        <div class="domain-item">
-            <span class="domain-name">{r['domain']}</span>
-            <span class="risk-badge {'risk-high' if r['risk_score'] > 50 else 'risk-medium' if r['risk_score'] > 30 else 'risk-low'}">{r['risk_score']}/100</span>
+        <div class="chart-container">
+            <h2>Risk Score Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="riskChart"></canvas>
+            </div>
         </div>
-        ''' for r in top_risks])}
+
+        <div class="domain-list">
+            <h2>Domain Details <span class="domain-count" id="domainCount"></span></h2>
+            <div id="domainListContainer"></div>
+        </div>
     </div>
 
     <script>
-        // Health Hazards Chart
-        new Chart(document.getElementById('healthChart'), {{
-            type: 'bar',
-            data: {{
-                labels: {list(health_hazards.keys())},
-                datasets: [{{
-                    label: 'Occurrences',
-                    data: {list(health_hazards.values())},
-                    backgroundColor: 'rgba(231, 76, 60, 0.7)',
-                    borderColor: 'rgba(231, 76, 60, 1)',
-                    borderWidth: 2
-                }}]
-            }},
-            options: {{
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {{
-                    legend: {{ display: false }}
-                }}
-            }}
+        let allData = [];
+        let currentFilter = 'all';
+        let searchQuery = '';
+
+        // Embedded data to avoid CORS issues when opening locally
+        allData = {embedded_data};
+        
+        // Initialize page immediately with embedded data
+        document.addEventListener('DOMContentLoaded', () => {{
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            initializePage(allData);
         }});
 
-        // Behavioral Hazards Chart
-        new Chart(document.getElementById('behavioralChart'), {{
-            type: 'doughnut',
-            data: {{
-                labels: {list(behavioral_hazards.keys())},
-                datasets: [{{
-                    data: {list(behavioral_hazards.values())},
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.7)',
-                        'rgba(54, 162, 235, 0.7)',
-                        'rgba(255, 206, 86, 0.7)',
-                        'rgba(75, 192, 192, 0.7)',
-                        'rgba(153, 102, 255, 0.7)',
-                        'rgba(255, 159, 64, 0.7)'
-                    ]
-                }}]
-            }},
-            options: {{
-                responsive: true,
-                maintainAspectRatio: false
+        function initializePage(data) {{
+            // Update timestamp
+            if (data.length > 0 && data[0].analyzed_at) {{
+                const date = new Date(data[0].analyzed_at);
+                document.getElementById('timestamp').textContent = 
+                    `Generated: ${{date.toLocaleString()}}`;
             }}
-        }});
 
-        // Marketing Tactics Chart
-        new Chart(document.getElementById('marketingChart'), {{
-            type: 'bar',
-            data: {{
-                labels: {list(marketing_tactics.keys())},
-                datasets: [{{
-                    label: 'Occurrences',
-                    data: {list(marketing_tactics.values())},
-                    backgroundColor: 'rgba(52, 152, 219, 0.7)',
-                    borderColor: 'rgba(52, 152, 219, 1)',
-                    borderWidth: 2
-                }}]
-            }},
-            options: {{
-                responsive: true,
-                maintainAspectRatio: false,
-                indexAxis: 'y',
-                plugins: {{
-                    legend: {{ display: false }}
-                }}
-            }}
-        }});
+            // Calculate stats
+            const accessible = data.filter(d => d.accessible);
+            const avgRisk = accessible.length > 0
+                ? (accessible.reduce((sum, d) => sum + d.risk_score, 0) / accessible.length).toFixed(1)
+                : 0;
+            const highRisk = accessible.filter(d => d.risk_score > 50).length;
 
-        // Risk Scores Chart
-        new Chart(document.getElementById('riskChart'), {{
-            type: 'bar',
-            data: {{
-                labels: {[r['domain'] for r in top_risks]},
-                datasets: [{{
-                    label: 'Risk Score',
-                    data: {[r['risk_score'] for r in top_risks]},
-                    backgroundColor: {[f"'rgba(231, 76, 60, 0.7)'" if r['risk_score'] > 50 else f"'rgba(243, 156, 18, 0.7)'" if r['risk_score'] > 30 else "'rgba(46, 204, 113, 0.7)'" for r in top_risks]},
-                    borderWidth: 2
-                }}]
-            }},
-            options: {{
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {{
-                    y: {{
-                        beginAtZero: true,
-                        max: 100
-                    }}
+            document.getElementById('totalDomains').textContent = data.length;
+            document.getElementById('accessibleDomains').textContent = accessible.length;
+            document.getElementById('avgRisk').textContent = avgRisk;
+            document.getElementById('highRiskDomains').textContent = highRisk;
+
+            // Aggregate hazards
+            const healthHazards = {{}};
+            const behavioralHazards = {{}};
+            const marketingTactics = {{}};
+
+            accessible.forEach(result => {{
+                Object.entries(result.health_hazards || {{}}).forEach(([key, val]) => {{
+                    healthHazards[key] = (healthHazards[key] || 0) + val;
+                }});
+                Object.entries(result.behavioral_hazards || {{}}).forEach(([key, val]) => {{
+                    behavioralHazards[key] = (behavioralHazards[key] || 0) + val;
+                }});
+                Object.entries(result.marketing_tactics || {{}}).forEach(([key, val]) => {{
+                    marketingTactics[key] = (marketingTactics[key] || 0) + val;
+                }});
+            }});
+
+            // Create charts
+            createHealthChart(healthHazards);
+            createBehavioralChart(behavioralHazards);
+            createMarketingChart(marketingTactics);
+            createRiskChart(accessible);
+
+            // Render domain list
+            renderDomainList(data);
+
+            // Setup filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {{
+                btn.addEventListener('click', () => {{
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderDomainList(data);
+                }});
+            }});
+
+            // Setup search
+            document.getElementById('searchBox').addEventListener('input', (e) => {{
+                searchQuery = e.target.value.toLowerCase();
+                renderDomainList(data);
+            }});
+        }}
+
+        function createHealthChart(data) {{
+            const ctx = document.getElementById('healthChart').getContext('2d');
+            new Chart(ctx, {{
+                type: 'bar',
+                data: {{
+                    labels: Object.keys(data),
+                    datasets: [{{
+                        label: 'Occurrences',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(231, 76, 60, 0.7)',
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        borderWidth: 2
+                    }}]
                 }},
-                plugins: {{
-                    legend: {{ display: false }}
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{ legend: {{ display: false }} }}
                 }}
+            }});
+        }}
+
+        function createBehavioralChart(data) {{
+            const ctx = document.getElementById('behavioralChart').getContext('2d');
+            new Chart(ctx, {{
+                type: 'doughnut',
+                data: {{
+                    labels: Object.keys(data),
+                    datasets: [{{
+                        data: Object.values(data),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)',
+                            'rgba(75, 192, 192, 0.7)',
+                            'rgba(153, 102, 255, 0.7)',
+                            'rgba(255, 159, 64, 0.7)'
+                        ]
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false
+                }}
+            }});
+        }}
+
+        function createMarketingChart(data) {{
+            const ctx = document.getElementById('marketingChart').getContext('2d');
+            new Chart(ctx, {{
+                type: 'bar',
+                data: {{
+                    labels: Object.keys(data),
+                    datasets: [{{
+                        label: 'Occurrences',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
+                        borderColor: 'rgba(52, 152, 219, 1)',
+                        borderWidth: 2
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {{ legend: {{ display: false }} }}
+                }}
+            }});
+        }}
+
+        function createRiskChart(data) {{
+            const ctx = document.getElementById('riskChart').getContext('2d');
+            const sorted = data.sort((a, b) => b.risk_score - a.risk_score).slice(0, 15);
+            new Chart(ctx, {{
+                type: 'bar',
+                data: {{
+                    labels: sorted.map(d => d.domain),
+                    datasets: [{{
+                        label: 'Risk Score',
+                        data: sorted.map(d => d.risk_score),
+                        backgroundColor: sorted.map(d => 
+                            d.risk_score > 50 ? 'rgba(231, 76, 60, 0.7)' :
+                            d.risk_score > 30 ? 'rgba(243, 156, 18, 0.7)' :
+                            'rgba(46, 204, 113, 0.7)'
+                        ),
+                        borderWidth: 2
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {{
+                        y: {{ beginAtZero: true, max: 100 }}
+                    }},
+                    plugins: {{ legend: {{ display: false }} }}
+                }}
+            }});
+        }}
+
+        function filterDomains(data) {{
+            let filtered = data;
+
+            // Apply risk filter
+            if (currentFilter === 'high') {{
+                filtered = filtered.filter(d => d.accessible && d.risk_score >= 50);
+            }} else if (currentFilter === 'medium') {{
+                filtered = filtered.filter(d => d.accessible && d.risk_score >= 30 && d.risk_score < 50);
+            }} else if (currentFilter === 'low') {{
+                filtered = filtered.filter(d => d.accessible && d.risk_score < 30);
+            }} else if (currentFilter === 'failed') {{
+                filtered = filtered.filter(d => !d.accessible);
             }}
-        }});
+
+            // Apply search filter
+            if (searchQuery) {{
+                filtered = filtered.filter(d => d.domain.toLowerCase().includes(searchQuery));
+            }}
+
+            return filtered;
+        }}
+
+        function renderDomainList(data) {{
+            const filtered = filterDomains(data);
+            const container = document.getElementById('domainListContainer');
+            document.getElementById('domainCount').textContent = `(${{filtered.length}} domains)`;
+
+            container.innerHTML = filtered.map((domain, index) => {{
+                const riskClass = domain.risk_score >= 50 ? 'risk-high' :
+                                 domain.risk_score >= 30 ? 'risk-medium' :
+                                 domain.risk_score > 0 ? 'risk-low' : 'risk-none';
+                
+                let hazardTags = '';
+                if (domain.accessible) {{
+                    const health = Object.keys(domain.health_hazards || {{}}).map(h => 
+                        `<span class="hazard-tag health">${{h}}</span>`
+                    ).join('');
+                    const behavioral = Object.keys(domain.behavioral_hazards || {{}}).map(h => 
+                        `<span class="hazard-tag behavioral">${{h}}</span>`
+                    ).join('');
+                    const marketing = Object.keys(domain.marketing_tactics || {{}}).map(h => 
+                        `<span class="hazard-tag marketing">${{h}}</span>`
+                    ).join('');
+                    
+                    if (health || behavioral || marketing) {{
+                        hazardTags = `<div class="hazard-tags">${{health}}${{behavioral}}${{marketing}}</div>`;
+                    }}
+                }}
+
+                const detailsHtml = domain.accessible ? `
+                    <div class="domain-details" id="details-${{index}}">
+                        ${{hazardTags}}
+                        ${{domain.justification && domain.justification.length > 0 ? `
+                            <strong>Justification:</strong>
+                            <ul>${{domain.justification.map(j => `<li>${{j}}</li>`).join('')}}</ul>
+                        ` : ''}}
+                        ${{domain.method ? `<p><em>Analysis method: ${{domain.method}}</em></p>` : ''}}
+                    </div>
+                ` : `
+                    <div class="domain-details" id="details-${{index}}">
+                        <p><strong>Error:</strong> ${{domain.error || 'Unknown error'}}</p>
+                    </div>
+                `;
+
+                return `
+                    <div class="domain-item" onclick="toggleDetails(${{index}})">
+                        <span class="domain-name">${{domain.domain}}</span>
+                        <span class="risk-badge ${{riskClass}}">${{domain.risk_score}}/100</span>
+                    </div>
+                    ${{detailsHtml}}
+                `;
+            }}).join('');
+        }}
+
+        function toggleDetails(index) {{
+            const details = document.getElementById(`details-${{index}}`);
+            details.classList.toggle('show');
+        }}
     </script>
 </body>
 </html>
 """
+    
     
     with open(report_path, 'w') as f:
         f.write(html_content)
     
     print(f"✓ HTML Report saved to: {report_path}")
     return report_path
+
+
+def generate_summary_stats():
+    """Generate summary statistics from all JSON data files"""
+    try:
+        all_data = []
+        categories = {}
+        
+        # Load all JSON data files
+        for json_file in DATA_DIR.glob('*_data.json'):
+            with open(json_file, 'r') as f:
+                data = json.load(f)
+                all_data.extend(data)
+                # Extract category name from filename
+                cat_name = json_file.stem.replace('_data', '')
+                categories[cat_name] = len(data)
+        
+        if not all_data:
+            return
+        
+        # Calculate aggregate statistics
+        total = len(all_data)
+        accessible = [d for d in all_data if d.get('accessible', False)]
+        accessible_count = len(accessible)
+        
+        avg_risk = sum(d.get('risk_score', 0) for d in accessible) / accessible_count if accessible_count > 0 else 0
+        access_rate = (accessible_count / total * 100) if total > 0 else 0
+        high_risk = sum(1 for d in accessible if d.get('risk_score', 0) >= 50)
+        
+        summary = {
+            'total_domains': total,
+            'accessible_count': accessible_count,
+            'avg_risk_score': round(avg_risk, 1),
+            'access_rate': round(access_rate, 0),
+            'high_risk_count': high_risk,
+            'categories': categories,
+            'generated_at': datetime.now().isoformat()
+        }
+        
+        # Save summary JSON file
+        summary_path = DATA_DIR / 'summary.json'
+        with open(summary_path, 'w') as f:
+            json.dump(summary, f, indent=2)
+        
+        print(f"✓ Summary statistics saved to: {summary_path}")
+        
+        # Auto-update index.html with latest stats
+        try:
+            import subprocess
+            update_script = Path(__file__).parent / 'update_index.py'
+            if update_script.exists():
+                result = subprocess.run(['python3', str(update_script)], 
+                                      capture_output=True, text=True, timeout=5)
+                if result.returncode == 0:
+                    print("✓ Index.html automatically updated with latest stats")
+        except Exception as e:
+            print(f"Note: Could not auto-update index.html: {e}")
+            print("      Run: python3 scripts/update_index.py")
+            
+    except Exception as e:
+        print(f"Warning: Could not generate summary stats: {e}")
 
 
 def generate_markdown_report(category_name, results):
@@ -941,6 +1534,17 @@ Examples:
         action='store_true',
         help='Disable caching entirely (same as --force but don\'t save results)'
     )
+    parser.add_argument(
+        '--parallel', '-p',
+        action='store_true',
+        help='Enable parallel processing for faster analysis'
+    )
+    parser.add_argument(
+        '--workers', '-w',
+        type=int,
+        default=5,
+        help='Number of concurrent workers for parallel mode (default: 5)'
+    )
     
     args = parser.parse_args()
     
@@ -948,11 +1552,14 @@ Examples:
     sample_size = -1 if args.all else args.sample_size
     force_reanalysis = args.force or args.no_cache
     use_cache = not args.no_cache
+    parallel = args.parallel
+    max_workers = args.workers
     
     print("DOMAIN CONTENT ANALYSIS TOOL")
     print("="*60)
     print(f"Sample size: {'ALL' if sample_size == -1 else sample_size} domains per category")
     print(f"Cache mode: {'DISABLED' if args.no_cache else 'FORCE REANALYSIS' if args.force else 'ENABLED'}")
+    print(f"Processing mode: {'PARALLEL (' + str(max_workers) + ' workers)' if parallel else 'SEQUENTIAL'}")
     if args.category:
         print(f"Category filter: {args.category}")
     print("="*60)
@@ -996,7 +1603,9 @@ Examples:
             cache=cache,
             recommendations=recommendations,
             existing_domains=all_existing_domains,
-            force_reanalysis=force_reanalysis
+            force_reanalysis=force_reanalysis,
+            parallel=parallel,
+            max_workers=max_workers
         )
         generate_markdown_report(category_name, results)
         generate_html_report(category_name, results)
@@ -1012,6 +1621,12 @@ Examples:
     if cache:
         cache.save_cache()
     recommendations.save_recommendations()
+    
+    # Generate summary statistics for index page
+    generate_summary_stats()
+    
+    # Cleanup Playwright resources
+    cleanup_playwright()
     
     # Show summary
     rec_summary = recommendations.get_summary()
@@ -1037,5 +1652,28 @@ Examples:
     print("- Generate justifications for Pi-hole users")
 
 
+def cleanup_playwright():
+    """Cleanup Playwright resources."""
+    global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
+    if BROWSER_INSTANCE:
+        try:
+            BROWSER_INSTANCE.close()
+        except:
+            pass
+    if PLAYWRIGHT_INSTANCE:
+        try:
+            PLAYWRIGHT_INSTANCE.stop()
+        except:
+            pass
+
+
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\nInterrupted by user")
+        cleanup_playwright()
+    except Exception as e:
+        print(f"\n\nError: {e}")
+        cleanup_playwright()
+        raise

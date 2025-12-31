@@ -2,7 +2,7 @@
   "analyses": {
     "doordash.com": {
       "domain": "doordash.com",
-      "analyzed_at": "2025-12-30T22:57:49.772026",
+      "analyzed_at": "2025-12-31T12:37:44.372612",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -11,41 +11,108 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.doordash.com/"
+      "error": "Playwright: Insufficient content (331 chars)"
     },
     "ubereats.com": {
       "domain": "ubereats.com",
-      "analyzed_at": "2025-12-30T22:57:51.979508",
-      "accessible": true,
-      "health_hazards": {},
-      "behavioral_hazards": {},
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "seo_metadata": ""
-    },
-    "grubhub.com": {
-      "domain": "grubhub.com",
-      "analyzed_at": "2025-12-30T22:25:48.841466",
+      "analyzed_at": "2025-12-31T12:37:49.786789",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
-        "convenience": 1
+        "discounts": 1,
+        "convenience": 2
       },
-      "marketing_tactics": {},
+      "marketing_tactics": {
+        "fomo": 1
+      },
       "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 4,
-      "justification": [
-        "Uses behavioral manipulation: convenience"
+      "related_domains": [
+        "about.ubereats.com",
+        "apps.apple.com",
+        "auth.uber.com",
+        "facebook.com",
+        "help.uber.com",
+        "instagram.com",
+        "merchants.ubereats.com",
+        "play.google.com",
+        "policies.google.com",
+        "privacy.uber.com",
+        "twitter.com",
+        "uber.com",
+        "ubereats.com"
       ],
-      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+      "risk_score": 15,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience",
+        "Employs aggressive marketing: fomo"
+      ],
+      "error": "Insufficient content (378 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats app and support local restaurants. uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats"
+    },
+    "grubhub.com": {
+      "domain": "grubhub.com",
+      "analyzed_at": "2025-12-31T12:35:53.588543",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 1,
+        "addictive": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 6,
+        "convenience": 4,
+        "addiction_language": 2
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "scarcity": 2,
+        "fomo": 2
+      },
+      "promoted_products": [
+        "Pickup or delivery from restaurants near you",
+        "Manage Consent Preferences",
+        "Performance Cookies",
+        "Order in the App",
+        "Something for everyone",
+        "Delivery or pickup",
+        "Save with Grubhub+",
+        "Strictly Necessary Cookies",
+        "Sale of Personal Data"
+      ],
+      "related_domains": [
+        "about.grubhub.com",
+        "bytes.grubhub.com",
+        "careers.grubhub.com",
+        "cookiepedia.co.uk",
+        "corporate.grubhub.com",
+        "driver.grubhub.com",
+        "facebook.com",
+        "get.grubhub.com",
+        "grubhub.cashstar.com",
+        "grubhub.com",
+        "instagram.com",
+        "investors.grubhub.com",
+        "lp.grubhub.com",
+        "onetrust.com",
+        "onsite.grubhub.com",
+        "twitter.com",
+        "youtube.com"
+      ],
+      "risk_score": 64,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food, addictive",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, fomo",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (219 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "food delivery | restaurant takeout | order food online | grubhub the best restaurants near you deliver with grubhub! order delivery or takeout from national chains and local favorites! help support your neighborhood restaurants. the best restaurants near you deliver with grubhub! order delivery or takeout from national chains and local favorites! help support your neighborhood restaurants. grubhub"
     },
     "postmates.com": {
       "domain": "postmates.com",
-      "analyzed_at": "2025-12-30T22:25:51.245418",
+      "analyzed_at": "2025-12-31T12:13:51.070362",
       "accessible": true,
       "health_hazards": {
         "addictive": 1
@@ -79,24 +146,64 @@
     },
     "seamless.com": {
       "domain": "seamless.com",
-      "analyzed_at": "2025-12-30T22:25:53.907927",
+      "analyzed_at": "2025-12-31T12:13:53.095396",
       "accessible": true,
-      "health_hazards": {},
-      "behavioral_hazards": {
-        "convenience": 1
+      "health_hazards": {
+        "fast_food": 1,
+        "addictive": 1
       },
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 4,
-      "justification": [
-        "Uses behavioral manipulation: convenience"
+      "behavioral_hazards": {
+        "discounts": 4,
+        "convenience": 2,
+        "addiction_language": 3
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "scarcity": 1,
+        "fomo": 1
+      },
+      "promoted_products": [
+        "Restaurants near you, delivered fast",
+        "Manage Consent Preferences",
+        "Performance Cookies",
+        "Get Perks in the app",
+        "Sign in",
+        "Satisfy any craving",
+        "Support local restaurants impacted by the pandemic",
+        "Cash in on Perks",
+        "Strictly Necessary Cookies",
+        "Sale of Personal Data"
       ],
-      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+      "related_domains": [
+        "app.appsflyer.com",
+        "careers.grubhub.com",
+        "cookiepedia.co.uk",
+        "corporate.grubhub.com",
+        "driver.grubhub.com",
+        "facebook.com",
+        "get.grubhub.com",
+        "instagram.com",
+        "investors.grubhub.com",
+        "onetrust.com",
+        "seamless.cashstar.com",
+        "seamless.com",
+        "twitter.com",
+        "youtube.com"
+      ],
+      "risk_score": 51,
+      "justification": [
+        "Promotes health hazards: fast_food, addictive",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, fomo",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (219 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "seamless | food delivery from restaurants near you ~ order online online food ordering from your local favorites for takeout or delivery. support your local restaurants with seamless and find coupons, reviews, and more! online food ordering from your local favorites for takeout or delivery. support your local restaurants with seamless and find coupons, reviews, and more! seamless"
     },
     "sephora.com": {
       "domain": "sephora.com",
-      "analyzed_at": "2025-12-30T22:25:56.385876",
+      "analyzed_at": "2025-12-31T12:26:26.451591",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -109,7 +216,7 @@
     },
     "ulta.com": {
       "domain": "ulta.com",
-      "analyzed_at": "2025-12-30T22:25:58.874425",
+      "analyzed_at": "2025-12-31T12:26:26.451790",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -122,7 +229,7 @@
     },
     "sephora.ai": {
       "domain": "sephora.ai",
-      "analyzed_at": "2025-12-30T22:26:01.198928",
+      "analyzed_at": "2025-12-31T12:26:26.452065",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -131,11 +238,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))"
+      "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     },
     "sephora.app": {
       "domain": "sephora.app",
-      "analyzed_at": "2025-12-30T22:26:13.255012",
+      "analyzed_at": "2025-12-31T12:26:26.452317",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -144,11 +251,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))"
+      "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     },
     "sephora.biz": {
       "domain": "sephora.biz",
-      "analyzed_at": "2025-12-30T22:26:25.292706",
+      "analyzed_at": "2025-12-31T12:26:26.452544",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -157,11 +264,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))"
+      "error": "Playwright error: 'NoneType' object has no attribute 'new_context'"
     },
     "nestle.com": {
       "domain": "nestle.com",
-      "analyzed_at": "2025-12-30T22:26:37.495451",
+      "analyzed_at": "2025-12-31T12:24:11.910043",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -170,37 +277,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
+      "error": "Playwright: Insufficient content (326 chars)"
     },
     "nestle.ca": {
       "domain": "nestle.ca",
-      "analyzed_at": "2025-12-30T22:26:40.036651",
-      "accessible": false,
-      "health_hazards": {},
-      "behavioral_hazards": {},
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/"
-    },
-    "nestle.co.uk": {
-      "domain": "nestle.co.uk",
-      "analyzed_at": "2025-12-30T22:26:42.790855",
-      "accessible": false,
-      "health_hazards": {},
-      "behavioral_hazards": {},
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.nestle.co.uk"
-    },
-    "nespresso.com": {
-      "domain": "nespresso.com",
-      "analyzed_at": "2025-12-30T22:26:45.292963",
+      "analyzed_at": "2025-12-31T12:24:11.911208",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -209,11 +290,13 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "seo_metadata": ""
+      "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/",
+      "method": "playwright",
+      "seo_metadata": "this site is temporarily unavailable | nestl\u00e9 "
     },
-    "gerber.com": {
-      "domain": "gerber.com",
-      "analyzed_at": "2025-12-30T22:26:47.752565",
+    "nestle.co.uk": {
+      "domain": "nestle.co.uk",
+      "analyzed_at": "2025-12-31T12:24:11.914196",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -222,11 +305,87 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.gerber.com"
+      "error": "Playwright: Insufficient content (332 chars)"
+    },
+    "nespresso.com": {
+      "domain": "nespresso.com",
+      "analyzed_at": "2025-12-31T12:24:11.917052",
+      "accessible": false,
+      "health_hazards": {},
+      "behavioral_hazards": {},
+      "marketing_tactics": {},
+      "promoted_products": [],
+      "related_domains": [],
+      "risk_score": 0,
+      "justification": [],
+      "error": "Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/\nCall log:\n  - navigating to \"https://nespresso.com/\", waiting until \"domcontentloaded\"\n"
+    },
+    "gerber.com": {
+      "domain": "gerber.com",
+      "analyzed_at": "2025-12-31T12:24:11.917295",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 3,
+        "convenience": 1,
+        "upselling": 1,
+        "addiction_language": 1
+      },
+      "marketing_tactics": {
+        "scarcity": 1,
+        "fomo": 1,
+        "personalization": 2
+      },
+      "promoted_products": [
+        "Compare Products",
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "DC",
+        "Delaware",
+        "MyGerber",
+        "Sign up for MyGerber",
+        "For A Parent-Friendly World",
+        "Customer Care",
+        "Products"
+      ],
+      "related_domains": [
+        "business.gerber.com",
+        "facebook.com",
+        "gerber.com",
+        "gerberchildrenswear.com",
+        "gerberlife.com",
+        "goodstartbaby.com",
+        "instagram.com",
+        "m.me",
+        "medical.gerber.com",
+        "nestlejobs.com",
+        "nestleusa.com",
+        "news.gerber.com",
+        "parents.gerber.com",
+        "tiktok.com",
+        "wa.me",
+        "youtube.com"
+      ],
+      "risk_score": 42,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+        "Employs aggressive marketing: scarcity, fomo, personalization",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "seo_metadata": "gerber | shop baby food, get support and connect with experts | gerber gerber - a leader in early childhood nutrition for more than 90 years gerber, gerber baby, gerber food, gerber baby food, gerber foods gerber | shop baby food, get support and connect with experts gerber - a leader in early childhood nutrition for more than 90 years gerber.com"
     },
     "deliveroo.com": {
       "domain": "deliveroo.com",
-      "analyzed_at": "2025-12-30T22:30:56.430016",
+      "analyzed_at": "2025-12-31T12:13:59.495460",
       "accessible": true,
       "health_hazards": {
         "fast_food": 1
@@ -272,20 +431,50 @@
     },
     "delivery.com": {
       "domain": "delivery.com",
-      "analyzed_at": "2025-12-30T22:30:58.917124",
-      "accessible": false,
-      "health_hazards": {},
-      "behavioral_hazards": {},
+      "analyzed_at": "2025-12-31T12:14:01.383742",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 2,
+        "fast_food": 2
+      },
+      "behavioral_hazards": {
+        "discounts": 2,
+        "convenience": 4,
+        "addiction_language": 3
+      },
       "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+      "promoted_products": [
+        "Find Favorites and Discover New Ones",
+        "Free, Easy, and Essential",
+        "Earn Points and Get Rewards",
+        "Connect with us",
+        "For Local Businesses",
+        "About Us",
+        "Delivery Points",
+        "Browse By Cuisine",
+        "Browse By City"
+      ],
+      "related_domains": [
+        "adasitecompliancetools.com",
+        "blog.delivery.com",
+        "deliverycom.formstack.com",
+        "facebook.com",
+        "instagram.com",
+        "twitter.com"
+      ],
+      "risk_score": 48,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (0 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "delivery.com: food delivery, alcohol, laundry & grocery get delivery from local favorite restaurants, liquor stores, grocery stores and laundromats near you. order online for delivery or takeout. every order earns points. download the app for promos. delivery.com: food delivery, alcohol, laundry & grocery | delivery.com"
     },
     "caviar.com": {
       "domain": "caviar.com",
-      "analyzed_at": "2025-12-30T22:31:01.420501",
+      "analyzed_at": "2025-12-31T12:14:07.749580",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -298,7 +487,7 @@
     },
     "trycaviar.com": {
       "domain": "trycaviar.com",
-      "analyzed_at": "2025-12-30T22:31:03.637356",
+      "analyzed_at": "2025-12-31T12:14:09.596897",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -307,11 +496,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.trycaviar.com/"
+      "error": "Playwright: Insufficient content (335 chars)"
     },
     "instacart.com": {
       "domain": "instacart.com",
-      "analyzed_at": "2025-12-30T22:31:05.853336",
+      "analyzed_at": "2025-12-31T12:14:14.571248",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -324,7 +513,7 @@
     },
     "sephora.ca": {
       "domain": "sephora.ca",
-      "analyzed_at": "2025-12-30T22:31:09.356516",
+      "analyzed_at": "2025-12-31T12:20:12.293138",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -337,7 +526,7 @@
     },
     "sephora.co": {
       "domain": "sephora.co",
-      "analyzed_at": "2025-12-30T22:31:12.185148",
+      "analyzed_at": "2025-12-31T12:20:14.563925",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -346,11 +535,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x732e20a47ad0>, 'Connection to sephora.co timed out. (connect timeout=10)'))"
+      "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
     },
     "sephora.co.ca": {
       "domain": "sephora.co.ca",
-      "analyzed_at": "2025-12-30T22:31:24.221526",
+      "analyzed_at": "2025-12-31T12:21:41.498455",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -359,11 +548,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+      "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://sephora.co.ca/\nCall log:\n  - navigating to \"https://sephora.co.ca/\", waiting until \"domcontentloaded\"\n"
     },
     "sephora.co.uk": {
       "domain": "sephora.co.uk",
-      "analyzed_at": "2025-12-30T22:31:26.742660",
+      "analyzed_at": "2025-12-31T12:21:44.511115",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
@@ -408,7 +597,7 @@
     },
     "sephora.dev": {
       "domain": "sephora.dev",
-      "analyzed_at": "2025-12-30T22:31:29.337452",
+      "analyzed_at": "2025-12-31T12:21:47.380503",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
@@ -436,7 +625,7 @@
     },
     "purina.com": {
       "domain": "purina.com",
-      "analyzed_at": "2025-12-30T22:31:31.622838",
+      "analyzed_at": "2025-12-31T12:24:16.274934",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -445,11 +634,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.purina.com/"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
     },
     "gerber.ai": {
       "domain": "gerber.ai",
-      "analyzed_at": "2025-12-30T22:31:34.154073",
+      "analyzed_at": "2025-12-31T12:24:16.813650",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -458,11 +647,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+      "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/\nCall log:\n  - navigating to \"https://gerber.ai/\", waiting until \"domcontentloaded\"\n"
     },
     "gerber.app": {
       "domain": "gerber.app",
-      "analyzed_at": "2025-12-30T22:31:36.407640",
+      "analyzed_at": "2025-12-31T12:24:18.736362",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -471,11 +660,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)\")))"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
     },
     "gerber.biz": {
       "domain": "gerber.biz",
-      "analyzed_at": "2025-12-30T22:31:38.533866",
+      "analyzed_at": "2025-12-31T12:24:18.981797",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -484,11 +673,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+      "error": "Playwright: Insufficient content (20 chars)"
     },
     "gerber.ca": {
       "domain": "gerber.ca",
-      "analyzed_at": "2025-12-30T22:31:40.941893",
+      "analyzed_at": "2025-12-31T12:24:20.364219",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -501,7 +690,7 @@
     },
     "gopuff.com": {
       "domain": "gopuff.com",
-      "analyzed_at": "2025-12-30T22:44:43.683438",
+      "analyzed_at": "2025-12-31T12:01:22.741651",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -510,11 +699,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.gopuff.com/"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "menulog.com": {
       "domain": "menulog.com",
-      "analyzed_at": "2025-12-30T22:44:45.955712",
+      "analyzed_at": "2025-12-31T12:01:22.916971",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -523,11 +712,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "HTTPSConnectionPool(host='menulog.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab88de9f80 (otid=0x70ab88de78a0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "just-eat.com": {
       "domain": "just-eat.com",
-      "analyzed_at": "2025-12-30T22:44:49.663555",
+      "analyzed_at": "2025-12-31T12:01:23.224575",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -536,11 +725,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.just-eat.co.uk:443/"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "justeat.com": {
       "domain": "justeat.com",
-      "analyzed_at": "2025-12-30T22:44:51.875126",
+      "analyzed_at": "2025-12-31T12:01:24.690233",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -549,11 +738,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.just-eat.co.uk:443/"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab8819bc00 (otid=0x70ab8819db60) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "skipthedishes.com": {
       "domain": "skipthedishes.com",
-      "analyzed_at": "2025-12-30T22:44:54.135813",
+      "analyzed_at": "2025-12-31T12:01:24.784303",
       "accessible": true,
       "health_hazards": {
         "sugar": 1,
@@ -566,20 +755,20 @@
       },
       "marketing_tactics": {
         "scarcity": 1,
-        "fomo": 2,
+        "fomo": 3,
         "personalization": 1
       },
       "promoted_products": [
         "More Choice",
         "Seamless delivery",
         "Take time back in your day",
+        "Order delivery or pickup from popular places.",
         "Unlock a world of exclusive perks and VIP experiences.",
         "Give the Gift of Skip",
         "Flexible meal perks for your team",
         "Download Our App",
         "Deliver with Skip",
-        "Partner with Skip",
-        "Careers at Skip"
+        "Partner with Skip"
       ],
       "related_domains": [
         "app.adjust.com",
@@ -593,12 +782,14 @@
         "wghq.adj.st",
         "x.com"
       ],
-      "risk_score": 37,
+      "risk_score": 40,
       "justification": [
         "Promotes health hazards: sugar, fast_food",
         "Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language",
         "Employs aggressive marketing: scarcity, fomo, personalization"
       ],
+      "error": "403 Client Error: Forbidden for url: https://www.skipthedishes.com/",
+      "method": "playwright",
       "seo_metadata": "skip | online delivery | food, groceries, alcohol and more! get the food you want delivered, fast. order food delivery & take out from the best restaurants near you. skip has over 30,000 restaurants nationwide. place your order now. skip | online delivery | food, groceries, alcohol and more! get the food you want delivered, fast. order food delivery & take out from the best restaurants near you. skip has over 30,000 restaurants nationwide. place your order now. skip the dishes"
     },
     "sephora.info": {
@@ -733,7 +924,7 @@
     },
     "foodpanda.com": {
       "domain": "foodpanda.com",
-      "analyzed_at": "2025-12-30T22:57:32.087597",
+      "analyzed_at": "2025-12-31T12:01:25.255742",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -742,12 +933,12 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.foodpanda.com/"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "swiggy.com": {
       "domain": "swiggy.com",
-      "analyzed_at": "2025-12-30T22:57:34.289121",
-      "accessible": true,
+      "analyzed_at": "2025-12-31T12:01:25.378654",
+      "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
       "marketing_tactics": {},
@@ -755,11 +946,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "seo_metadata": ""
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "zomato.com": {
       "domain": "zomato.com",
-      "analyzed_at": "2025-12-30T22:57:37.098981",
+      "analyzed_at": "2025-12-31T12:01:28.514258",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -772,7 +963,7 @@
     },
     "eatstreet.com": {
       "domain": "eatstreet.com",
-      "analyzed_at": "2025-12-30T22:59:45.583190",
+      "analyzed_at": "2025-12-31T12:01:28.544722",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -781,11 +972,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+      "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>\n\tExpected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>"
     },
     "bitesquad.com": {
       "domain": "bitesquad.com",
-      "analyzed_at": "2025-12-30T22:59:48.294211",
+      "analyzed_at": "2025-12-31T12:01:29.003453",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -17171,5 +17362,5 @@
       "error": "HTTPSConnectionPool(host='pepsico.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pepsico.us'. (_ssl.c:1016)\")))"
     }
   },
-  "last_updated": "2025-12-31T01:08:30.066240"
+  "last_updated": "2025-12-31T12:45:07.407114"
 }

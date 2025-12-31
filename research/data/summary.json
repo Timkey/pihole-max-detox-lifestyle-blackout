@@ -1,0 +1,13 @@
+{
+  "total_domains": 1101,
+  "accessible_count": 280,
+  "avg_risk_score": 8.7,
+  "access_rate": 25.0,
+  "high_risk_count": 10,
+  "categories": {
+    "cosmetics_beauty": 96,
+    "conglomerates": 199,
+    "food_delivery": 806
+  },
+  "generated_at": "2025-12-31T12:45:08.489381"
+}

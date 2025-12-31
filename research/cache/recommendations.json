@@ -1391,6 +1391,214 @@
       "source": "fritolay.com",
       "detected_at": "2025-12-31T01:05:20.923708",
       "status": "pending"
+    },
+    {
+      "domain": "about.ubereats.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ubereats.com analysis, appears to be related service",
+      "source": "ubereats.com",
+      "detected_at": "2025-12-31T11:50:51.431226",
+      "status": "pending"
+    },
+    {
+      "domain": "about.grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Found via grubhub.com analysis, appears to be related service",
+      "source": "grubhub.com",
+      "detected_at": "2025-12-31T11:50:59.547762",
+      "status": "pending"
+    },
+    {
+      "domain": "bytes.grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Found via grubhub.com analysis, appears to be related service",
+      "source": "grubhub.com",
+      "detected_at": "2025-12-31T11:50:59.547800",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Found via grubhub.com analysis, appears to be related service",
+      "source": "grubhub.com",
+      "detected_at": "2025-12-31T11:50:59.547822",
+      "status": "pending"
+    },
+    {
+      "domain": "cookiepedia.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via grubhub.com analysis, appears to be related service",
+      "source": "grubhub.com",
+      "detected_at": "2025-12-31T11:50:59.547843",
+      "status": "pending"
+    },
+    {
+      "domain": "corporate.grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Found via grubhub.com analysis, appears to be related service",
+      "source": "grubhub.com",
+      "detected_at": "2025-12-31T11:50:59.547865",
+      "status": "pending"
+    },
+    {
+      "domain": "app.appsflyer.com",
+      "category": "Food & Delivery",
+      "reason": "Found via seamless.com analysis, appears to be related service",
+      "source": "seamless.com",
+      "detected_at": "2025-12-31T11:51:08.822231",
+      "status": "pending"
+    },
+    {
+      "domain": "driver.grubhub.com",
+      "category": "Food & Delivery",
+      "reason": "Found via seamless.com analysis, appears to be related service",
+      "source": "seamless.com",
+      "detected_at": "2025-12-31T11:51:08.822353",
+      "status": "pending"
+    },
+    {
+      "domain": "adasitecompliancetools.com",
+      "category": "Food & Delivery",
+      "reason": "Found via delivery.com analysis, appears to be related service",
+      "source": "delivery.com",
+      "detected_at": "2025-12-31T11:51:17.888145",
+      "status": "pending"
+    },
+    {
+      "domain": "blog.delivery.com",
+      "category": "Food & Delivery",
+      "reason": "Found via delivery.com analysis, appears to be related service",
+      "source": "delivery.com",
+      "detected_at": "2025-12-31T11:51:17.888183",
+      "status": "pending"
+    },
+    {
+      "domain": "deliverycom.formstack.com",
+      "category": "Food & Delivery",
+      "reason": "Found via delivery.com analysis, appears to be related service",
+      "source": "delivery.com",
+      "detected_at": "2025-12-31T11:51:17.888204",
+      "status": "pending"
+    },
+    {
+      "domain": "deliver.gopuff.com",
+      "category": "Food & Delivery",
+      "reason": "Found via gopuff.com analysis, appears to be related service",
+      "source": "gopuff.com",
+      "detected_at": "2025-12-31T11:59:55.889090",
+      "status": "pending"
+    },
+    {
+      "domain": "help.gopuff.com",
+      "category": "Food & Delivery",
+      "reason": "Found via gopuff.com analysis, appears to be related service",
+      "source": "gopuff.com",
+      "detected_at": "2025-12-31T11:59:55.889123",
+      "status": "pending"
+    },
+    {
+      "domain": "10bis.co.il",
+      "category": "Food & Delivery",
+      "reason": "Found via just-eat.com analysis, appears to be related service",
+      "source": "just-eat.com",
+      "detected_at": "2025-12-31T12:00:17.523740",
+      "status": "pending"
+    },
+    {
+      "domain": "app.convercent.com",
+      "category": "Food & Delivery",
+      "reason": "Found via just-eat.com analysis, appears to be related service",
+      "source": "just-eat.com",
+      "detected_at": "2025-12-31T12:00:17.523796",
+      "status": "pending"
+    },
+    {
+      "domain": "bistro.sk",
+      "category": "Food & Delivery",
+      "reason": "Found via just-eat.com analysis, appears to be related service",
+      "source": "just-eat.com",
+      "detected_at": "2025-12-31T12:00:17.523823",
+      "status": "pending"
+    },
+    {
+      "domain": "business.just-eat.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via just-eat.com analysis, appears to be related service",
+      "source": "just-eat.com",
+      "detected_at": "2025-12-31T12:00:17.523849",
+      "status": "pending"
+    },
+    {
+      "domain": "appgallery.huawei.com",
+      "category": "Food & Delivery",
+      "reason": "Found via foodpanda.com analysis, appears to be related service",
+      "source": "foodpanda.com",
+      "detected_at": "2025-12-31T12:00:37.034580",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.foodpanda.com",
+      "category": "Food & Delivery",
+      "reason": "Found via foodpanda.com analysis, appears to be related service",
+      "source": "foodpanda.com",
+      "detected_at": "2025-12-31T12:00:37.034629",
+      "status": "pending"
+    },
+    {
+      "domain": "foodpanda.co.th",
+      "category": "Food & Delivery",
+      "reason": "Found via foodpanda.com analysis, appears to be related service",
+      "source": "foodpanda.com",
+      "detected_at": "2025-12-31T12:00:37.034651",
+      "status": "pending"
+    },
+    {
+      "domain": "geteatstreet.com",
+      "category": "Food & Delivery",
+      "reason": "Found via eatstreet.com analysis, appears to be related service",
+      "source": "eatstreet.com",
+      "detected_at": "2025-12-31T12:00:54.071396",
+      "status": "pending"
+    },
+    {
+      "domain": "gethelp.eatstreet.com",
+      "category": "Food & Delivery",
+      "reason": "Found via eatstreet.com analysis, appears to be related service",
+      "source": "eatstreet.com",
+      "detected_at": "2025-12-31T12:00:54.071453",
+      "status": "pending"
+    },
+    {
+      "domain": "business.gerber.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252790",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberchildrenswear.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252834",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberlife.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252861",
+      "status": "pending"
+    },
+    {
+      "domain": "auth.uber.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ubereats.com analysis, appears to be related service",
+      "source": "ubereats.com",
+      "detected_at": "2025-12-31T12:35:53.588476",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -2105,7 +2313,39 @@
       "risk_score": 7,
       "detected_at": "2025-12-31T01:07:00.274773",
       "status": "pending"
+    },
+    {
+      "domain": "gopuff.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T11:59:55.889060",
+      "status": "pending"
+    },
+    {
+      "domain": "just-eat.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (22/100), may not warrant blocking",
+      "risk_score": 22,
+      "detected_at": "2025-12-31T12:00:17.523693",
+      "status": "pending"
+    },
+    {
+      "domain": "justeat.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (22/100), may not warrant blocking",
+      "risk_score": 22,
+      "detected_at": "2025-12-31T12:00:24.571744",
+      "status": "pending"
+    },
+    {
+      "domain": "foodpanda.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (14/100), may not warrant blocking",
+      "risk_score": 14,
+      "detected_at": "2025-12-31T12:00:37.034547",
+      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-31T01:08:30.354325"
+  "last_updated": "2025-12-31T12:45:08.401800"
 }

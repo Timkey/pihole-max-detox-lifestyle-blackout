@@ -6,6 +6,9 @@
     <title>Cosmetics & Beauty - Analysis Report</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             max-width: 1400px;
@@ -13,15 +16,97 @@
             padding: 20px;
             background: #f5f5f5;
         }
+        .nav-bar {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-link {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: #764ba2;
+        }
+        .nav-link.home {
+            background: #27ae60;
+        }
+        .nav-link.home:hover {
+            background: #229954;
+        }
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 30px;
+            position: relative;
         }
         .header h1 {
             margin: 0 0 10px 0;
+        }
+        .header .timestamp {
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .controls h3 {
+            margin-top: 0;
+        }
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover {
+            background: #f0f0ff;
+        }
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        .search-box {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
         }
         .stats {
             display: grid;
@@ -65,12 +150,28 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .domain-list h2 {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .domain-count {
+            font-size: 0.6em;
+            color: #666;
+            font-weight: normal;
+        }
         .domain-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px;
             border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .domain-item:hover {
+            background: #f9f9f9;
         }
         .domain-item:last-child {
             border-bottom: none;
@@ -78,231 +179,1796 @@
         .domain-name {
             font-weight: 500;
             color: #333;
+            flex: 1;
         }
+        .domain-details {
+            display: none;
+            padding: 15px;
+            background: #f5f5f5;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .domain-details.show {
+            display: block;
+        }
+        .hazard-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .hazard-tag {
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        .hazard-tag.health { background: #ffebee; color: #c62828; }
+        .hazard-tag.behavioral { background: #fff3e0; color: #e65100; }
+        .hazard-tag.marketing { background: #e8f5e9; color: #2e7d32; }
         .risk-badge {
             padding: 5px 15px;
             border-radius: 20px;
             font-weight: bold;
             color: white;
+            margin-left: 10px;
         }
         .risk-high { background: #e74c3c; }
         .risk-medium { background: #f39c12; }
         .risk-low { background: #27ae60; }
+        .risk-none { background: #95a5a6; }
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-bottom: 30px;
         }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
         @media (max-width: 768px) {
             .grid-2 { grid-template-columns: 1fr; }
+            .nav-bar { flex-direction: column; gap: 10px; }
+            .nav-links { width: 100%; justify-content: center; }
         }
     </style>
 </head>
 <body>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-link home">🏠 Home</a>
+            <a href="food & delivery_analysis.html" class="nav-link">Food & Delivery</a>
+            <a href="cosmetics & beauty_analysis.html" class="nav-link">Cosmetics</a>
+            <a href="conglomerates_analysis.html" class="nav-link">Conglomerates</a>
+        </div>
+    </nav>
+
     <div class="header">
         <h1>Cosmetics & Beauty - Content Analysis</h1>
-        <p>Generated: 2025-12-31 00:53:21</p>
+        <p class="timestamp" id="timestamp">Loading...</p>
     </div>
 
-    <div class="stats">
-        <div class="stat-card">
-            <div class="stat-value">96</div>
-            <div class="stat-label">Domains Analyzed</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">28</div>
-            <div class="stat-label">Successfully Accessed</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">4.1</div>
-            <div class="stat-label">Average Risk Score</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-value">1</div>
-            <div class="stat-label">High Risk Domains</div>
-        </div>
+    <div id="loading" class="loading">
+        <h2>Loading analysis data...</h2>
+        <p>Please wait while we fetch the results</p>
     </div>
 
-    <div class="grid-2">
-        <div class="chart-container">
-            <h2>Health Hazards Detected</h2>
-            <div class="chart-wrapper">
-                <canvas id="healthChart"></canvas>
+    <div id="error" class="error" style="display: none;">
+        <h2>Error Loading Data</h2>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div class="controls">
+            <h3>Filter Domains</h3>
+            <input type="text" class="search-box" id="searchBox" placeholder="Search domains...">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All Domains</button>
+                <button class="filter-btn" data-filter="high">High Risk (50+)</button>
+                <button class="filter-btn" data-filter="medium">Medium Risk (30-49)</button>
+                <button class="filter-btn" data-filter="low">Low Risk (< 30)</button>
+                <button class="filter-btn" data-filter="failed">Failed Access</button>
             </div>
         </div>
-        <div class="chart-container">
-            <h2>Behavioral Manipulation</h2>
-            <div class="chart-wrapper">
-                <canvas id="behavioralChart"></canvas>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalDomains">0</div>
+                <div class="stat-label">Domains Analyzed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="accessibleDomains">0</div>
+                <div class="stat-label">Successfully Accessed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgRisk">0</div>
+                <div class="stat-label">Average Risk Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="highRiskDomains">0</div>
+                <div class="stat-label">High Risk Domains</div>
             </div>
         </div>
-    </div>
 
-    <div class="chart-container">
-        <h2>Marketing Tactics Distribution</h2>
-        <div class="chart-wrapper">
-            <canvas id="marketingChart"></canvas>
+        <div class="grid-2">
+            <div class="chart-container">
+                <h2>Health Hazards Detected</h2>
+                <div class="chart-wrapper">
+                    <canvas id="healthChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2>Behavioral Manipulation</h2>
+                <div class="chart-wrapper">
+                    <canvas id="behavioralChart"></canvas>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="chart-container">
-        <h2>Top Risk Scores</h2>
-        <div class="chart-wrapper">
-            <canvas id="riskChart"></canvas>
+        <div class="chart-container">
+            <h2>Marketing Tactics Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="marketingChart"></canvas>
+            </div>
         </div>
-    </div>
 
-    <div class="domain-list">
-        <h2>Highest Risk Domains</h2>
-        
-        <div class="domain-item">
-            <span class="domain-name">sephora.co.uk</span>
-            <span class="risk-badge risk-high">61/100</span>
+        <div class="chart-container">
+            <h2>Risk Score Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="riskChart"></canvas>
+            </div>
         </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">sephora.dev</span>
-            <span class="risk-badge risk-low">11/100</span>
+
+        <div class="domain-list">
+            <h2>Domain Details <span class="domain-count" id="domainCount"></span></h2>
+            <div id="domainListContainer"></div>
         </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">ulta.uk</span>
-            <span class="risk-badge risk-low">11/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">maccosmetics.info</span>
-            <span class="risk-badge risk-low">10/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">covergirl.com</span>
-            <span class="risk-badge risk-low">10/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">ulta.io</span>
-            <span class="risk-badge risk-low">7/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">covergirl.ca</span>
-            <span class="risk-badge risk-low">3/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">cultbeauty.co.uk</span>
-            <span class="risk-badge risk-low">3/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">sephora.com</span>
-            <span class="risk-badge risk-low">0/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">ulta.com</span>
-            <span class="risk-badge risk-low">0/100</span>
-        </div>
-        
     </div>
 
     <script>
-        // Health Hazards Chart
-        new Chart(document.getElementById('healthChart'), {
-            type: 'bar',
-            data: {
-                labels: ['fast_food'],
-                datasets: [{
-                    label: 'Occurrences',
-                    data: [2],
-                    backgroundColor: 'rgba(231, 76, 60, 0.7)',
-                    borderColor: 'rgba(231, 76, 60, 1)',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { display: false }
-                }
-            }
+        let allData = [];
+        let currentFilter = 'all';
+        let searchQuery = '';
+
+        // Embedded data to avoid CORS issues when opening locally
+        allData = [
+  {
+    "domain": "sephora.co.uk",
+    "analyzed_at": "2025-12-31T12:21:44.511115",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 5,
+      "convenience": 2,
+      "upselling": 2,
+      "addiction_language": 3
+    },
+    "marketing_tactics": {
+      "social_proof": 2,
+      "scarcity": 2,
+      "fomo": 1,
+      "personalization": 2
+    },
+    "promoted_products": [
+      "My account",
+      "My orders",
+      "Catalogue",
+      "My offers",
+      "Make an appointment",
+      "Personal information",
+      "My communications",
+      "Need help ?"
+    ],
+    "related_domains": [
+      "connect.studentbeans.com",
+      "facebook.com",
+      "instagram.com",
+      "lvmh.com",
+      "rangeme.com",
+      "sephora.co.uk",
+      "tiktok.com",
+      "youtube.com"
+    ],
+    "risk_score": 61,
+    "justification": [
+      "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
+      "Employs aggressive marketing: social_proof, scarcity, fomo, personalization",
+      "MODERATE RISK: Several concerning patterns detected"
+    ],
+    "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora."
+  },
+  {
+    "domain": "ulta.co",
+    "analyzed_at": "2025-12-31T00:47:07.865819",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "clinique.ai",
+    "analyzed_at": "2025-12-31T00:47:34.667776",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "sephora.com",
+    "analyzed_at": "2025-12-31T12:26:26.451591",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "maccosmetics.com",
+    "analyzed_at": "2025-12-31T00:47:32.391735",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.maccosmetics.com/"
+  },
+  {
+    "domain": "clinique.ca",
+    "analyzed_at": "2025-12-31T00:47:37.287379",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.clinique.ca/"
+  },
+  {
+    "domain": "ulta.com",
+    "analyzed_at": "2025-12-31T12:26:26.451790",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "clinique.com",
+    "analyzed_at": "2025-12-31T00:47:29.847308",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.clinique.com/"
+  },
+  {
+    "domain": "sephora.co",
+    "analyzed_at": "2025-12-31T12:20:14.563925",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "ulta.ai",
+    "analyzed_at": "2025-12-31T00:46:51.435027",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='ulta.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ulta.ai', port=443) at 0x78b29ab07c90>, 'Connection to ulta.ai timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.ca",
+    "analyzed_at": "2025-12-31T12:20:12.293138",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "sephora.us",
+    "analyzed_at": "2025-12-30T22:45:46.009020",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "sephora.org",
+    "analyzed_at": "2025-12-30T22:45:31.544483",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "esteelauder.com",
+    "analyzed_at": "2025-12-31T00:47:27.496903",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.com/"
+  },
+  {
+    "domain": "loreal.com",
+    "analyzed_at": "2025-12-31T00:47:25.077380",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "ulta.biz",
+    "analyzed_at": "2025-12-31T00:47:05.809068",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='ulta.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "ulta.app",
+    "analyzed_at": "2025-12-31T00:47:03.471995",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "sephora.co.ca",
+    "analyzed_at": "2025-12-31T12:21:41.498455",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://sephora.co.ca/\nCall log:\n  - navigating to \"https://sephora.co.ca/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "domain": "clinique.co.ca",
+    "analyzed_at": "2025-12-31T00:47:39.579397",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.uk",
+    "analyzed_at": "2025-12-30T22:45:33.960598",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "esteelauder.co.ca",
+    "analyzed_at": "2025-12-31T00:47:51.366414",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.ai",
+    "analyzed_at": "2025-12-31T12:26:26.452065",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "esteelauder.ca",
+    "analyzed_at": "2025-12-31T00:47:49.119774",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.ca/"
+  },
+  {
+    "domain": "sephora.biz",
+    "analyzed_at": "2025-12-31T12:26:26.452544",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: 'NoneType' object has no attribute 'new_context'"
+  },
+  {
+    "domain": "sephora.app",
+    "analyzed_at": "2025-12-31T12:26:26.452317",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "esteelauder.ai",
+    "analyzed_at": "2025-12-31T00:47:46.761121",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "ulta.org",
+    "analyzed_at": "2025-12-31T00:47:17.465365",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "ulta.io",
+    "analyzed_at": "2025-12-31T00:47:14.706977",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 1
+    },
+    "marketing_tactics": {
+      "personalization": 1
+    },
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 7,
+    "justification": [
+      "Uses behavioral manipulation: discounts",
+      "Employs aggressive marketing: personalization"
+    ],
+    "seo_metadata": "custom software development | enterprise applications | ulta.io ulta.io builds custom software and enterprise applications for startups to fortune 500 companies. turn your software vision into reality. contact us today. custom software development | enterprise applications | ulta.io ulta.io builds custom software and enterprise applications for startups to fortune 500 companies. turn your software vision into reality. contact us today. ulta.io custom software development | enterprise application"
+  },
+  {
+    "domain": "sephora.info",
+    "analyzed_at": "2025-12-30T22:44:57.379970",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "clinique.io",
+    "analyzed_at": "2025-12-31T00:47:44.290648",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "ulta.uk",
+    "analyzed_at": "2025-12-31T00:47:20.115693",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 2
+    },
+    "marketing_tactics": {
+      "social_proof": 1
+    },
+    "promoted_products": [],
+    "related_domains": [
+      "sedo.com"
+    ],
+    "risk_score": 11,
+    "justification": [
+      "Uses behavioral manipulation: discounts",
+      "Employs aggressive marketing: social_proof"
+    ],
+    "seo_metadata": "ulta.uk\u00a0-\u00a0this website is for sale!\u00a0-\u00a0ulta resources and information. this website is for sale! ulta.uk is your first and best source for all of the information you\u2019re looking for. from general topics to more of what you would expect to find here, ulta.uk has it all. we hope you find what you are searching for!"
+  },
+  {
+    "domain": "sephora.dev",
+    "analyzed_at": "2025-12-31T12:21:47.380503",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 2
+    },
+    "marketing_tactics": {
+      "personalization": 1
+    },
+    "promoted_products": [
+      "We also offer",
+      "Domain Backorders",
+      "Domain Registration",
+      "Business Phone Systems",
+      "Domain Name Reseller"
+    ],
+    "related_domains": [
+      "yay.com"
+    ],
+    "risk_score": 11,
+    "justification": [
+      "Uses behavioral manipulation: discounts",
+      "Employs aggressive marketing: personalization"
+    ],
+    "seo_metadata": "domain name registration - sephora.dev yay.com offers affordable domain registration and business cloud phone systems. search for your ideal domain name today."
+  },
+  {
+    "domain": "ulta.co.uk",
+    "analyzed_at": "2025-12-31T00:47:12.377943",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='ulta.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "ulta.us",
+    "analyzed_at": "2025-12-31T00:47:23.021246",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='ulta.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "sephora.net",
+    "analyzed_at": "2025-12-30T22:45:09.420908",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+  },
+  {
+    "domain": "clinique.co.uk",
+    "analyzed_at": "2025-12-31T00:47:42.103724",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.clinique.co.uk/"
+  },
+  {
+    "domain": "esteelauder.co.uk",
+    "analyzed_at": "2025-12-31T00:47:53.986294",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.esteelauder.co.uk/"
+  },
+  {
+    "domain": "loreal.ca",
+    "analyzed_at": "2025-12-31T00:47:56.324397",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "loreal.co",
+    "analyzed_at": "2025-12-31T00:47:58.702796",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "loreal.co.uk",
+    "analyzed_at": "2025-12-31T00:48:01.022970",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "loreal.io",
+    "analyzed_at": "2025-12-31T00:48:03.411547",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "404 Client Error: Not Found for url: https://loreal.io/"
+  },
+  {
+    "domain": "maccosmetics.ca",
+    "analyzed_at": "2025-12-31T00:48:05.558451",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://maccosmetics.ca/"
+  },
+  {
+    "domain": "maccosmetics.co",
+    "analyzed_at": "2025-12-31T00:48:07.653322",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "maccosmetics.co.ca",
+    "analyzed_at": "2025-12-31T00:48:09.981799",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='maccosmetics.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "maccosmetics.co.uk",
+    "analyzed_at": "2025-12-31T00:48:12.544021",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.maccosmetics.co.uk/"
+  },
+  {
+    "domain": "maccosmetics.info",
+    "analyzed_at": "2025-12-31T00:48:14.882289",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "upselling": 1
+    },
+    "marketing_tactics": {
+      "social_proof": 1,
+      "fomo": 1
+    },
+    "promoted_products": [
+      "Bitly LinksCustomize, share, and track links",
+      "Bitly CodesDynamic solutions to fit every business need",
+      "RetailEnhance customer engagement",
+      "Consumer Packaged GoodsConnect directly with consumers",
+      "Media & EntertainmentCreate interactive experiences",
+      "Tech Software & HardwareImprove product education",
+      "HospitalityStreamline guest services",
+      "Pricing (pre q3 2024)",
+      "Want to create a short link?",
+      "Did you know? Custom domainsget 2.3xmore clicks!"
+    ],
+    "related_domains": [
+      "bitly.com",
+      "dev.bitly.com",
+      "facebook.com",
+      "instagram.com",
+      "linkedin.com",
+      "mkt-static.bitly.com",
+      "security.bitly.com",
+      "support.bitly.com",
+      "twitter.com"
+    ],
+    "risk_score": 10,
+    "justification": [
+      "Uses behavioral manipulation: upselling",
+      "Employs aggressive marketing: social_proof, fomo"
+    ],
+    "seo_metadata": "custom domain by bitly custom domain by bitly bitly"
+  },
+  {
+    "domain": "maccosmetics.us",
+    "analyzed_at": "2025-12-31T00:48:17.286951",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "maybelline.com",
+    "analyzed_at": "2025-12-31T00:48:19.602827",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "covergirl.com",
+    "analyzed_at": "2025-12-31T00:48:22.054120",
+    "accessible": true,
+    "health_hazards": {
+      "fast_food": 1
+    },
+    "behavioral_hazards": {
+      "upselling": 1
+    },
+    "marketing_tactics": {
+      "scarcity": 1
+    },
+    "promoted_products": [],
+    "related_domains": [
+      "coty.com",
+      "cotyconsumeraffairs.com",
+      "facebook.com",
+      "instagram.com",
+      "pl.pinterest.com",
+      "tiktok.com",
+      "twitter.com",
+      "youtube.com"
+    ],
+    "risk_score": 10,
+    "justification": [
+      "Promotes health hazards: fast_food",
+      "Uses behavioral manipulation: upselling",
+      "Employs aggressive marketing: scarcity"
+    ],
+    "seo_metadata": "makeup and beauty products, makeup tips, try on looks and more | covergirl\u00ae face and eye makeup, lipstick, makeup tools and pro tips. check out our covergirl collections including trublend, outlast, blast and more. makeup and beauty products, makeup tips, try on looks and more | covergirl\u00ae face and eye makeup, lipstick, makeup tools and pro tips. check out our covergirl collections including trublend, outlast, blast and more."
+  },
+  {
+    "domain": "revlon.com",
+    "analyzed_at": "2025-12-31T00:48:24.695719",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "covergirl.ai",
+    "analyzed_at": "2025-12-31T00:48:27.048370",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='covergirl.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.ai', port=443) at 0x78b29a45e2d0>, 'Connection to covergirl.ai timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "covergirl.ca",
+    "analyzed_at": "2025-12-31T00:48:39.093453",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {
+      "fomo": 1
+    },
+    "promoted_products": [],
+    "related_domains": [
+      "coty.com",
+      "cotyconsumeraffairs.com",
+      "covergirl.cotyconsumeraffairs.com",
+      "facebook.com",
+      "instagram.com",
+      "pl.pinterest.com",
+      "tiktok.com",
+      "twitter.com",
+      "youtube.com"
+    ],
+    "risk_score": 3,
+    "justification": [
+      "Employs aggressive marketing: fomo"
+    ],
+    "seo_metadata": "makeup and beauty products, makeup tips, try on looks and more | covergirl\u00ae face and eye makeup, lipstick, makeup tools and pro tips. check out our covergirl collections including trublend, outlast, blast and more. makeup and beauty products, makeup tips, try on looks and more | covergirl\u00ae face and eye makeup, lipstick, makeup tools and pro tips. check out our covergirl collections including trublend, outlast, blast and more."
+  },
+  {
+    "domain": "covergirl.co",
+    "analyzed_at": "2025-12-31T00:48:41.448075",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "covergirl.io",
+    "analyzed_at": "2025-12-31T00:48:43.760853",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "covergirl.net",
+    "analyzed_at": "2025-12-31T00:48:46.853721",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='covergirl.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.net', port=443) at 0x78b29a8c1390>, 'Connection to covergirl.net timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "covergirl.org",
+    "analyzed_at": "2025-12-31T00:48:59.030171",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "covergirl.uk",
+    "analyzed_at": "2025-12-31T00:49:01.347887",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='covergirl.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'covergirl.uk'. (_ssl.c:1016)\")))"
+  },
+  {
+    "domain": "covergirl.us",
+    "analyzed_at": "2025-12-31T00:49:03.713626",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='covergirl.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.us', port=443) at 0x78b29a8c27d0>, 'Connection to covergirl.us timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "maybelline.ai",
+    "analyzed_at": "2025-12-31T00:49:25.762364",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "maybelline.ca",
+    "analyzed_at": "2025-12-31T00:49:28.084105",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "maybelline.co",
+    "analyzed_at": "2025-12-31T00:49:30.598061",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "maybelline.co.ca",
+    "analyzed_at": "2025-12-31T00:49:32.981945",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='maybelline.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "maybelline.co.uk",
+    "analyzed_at": "2025-12-31T00:49:35.600828",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "maybelline.io",
+    "analyzed_at": "2025-12-31T00:49:37.915439",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "revlon.ai",
+    "analyzed_at": "2025-12-31T00:49:40.238714",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "revlon.app",
+    "analyzed_at": "2025-12-31T00:49:42.546217",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.app', port=443) at 0x78b29a5e55d0>, 'Connection to revlon.app timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.biz",
+    "analyzed_at": "2025-12-31T00:49:54.600678",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.biz', port=443) at 0x78b29a465150>, 'Connection to revlon.biz timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.ca",
+    "analyzed_at": "2025-12-31T00:50:06.631773",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "revlon.co",
+    "analyzed_at": "2025-12-31T00:50:09.573171",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.co', port=443) at 0x78b29a8c0710>, 'Connection to revlon.co timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.co.ca",
+    "analyzed_at": "2025-12-31T00:50:21.625147",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "revlon.co.uk",
+    "analyzed_at": "2025-12-31T00:50:24.333502",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "revlon.info",
+    "analyzed_at": "2025-12-31T00:50:26.778409",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.info', port=443) at 0x78b29b168250>, 'Connection to revlon.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.net",
+    "analyzed_at": "2025-12-31T00:50:38.823626",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.net', port=443) at 0x78b299d8f790>, 'Connection to revlon.net timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.org",
+    "analyzed_at": "2025-12-31T00:50:50.857140",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.org', port=443) at 0x78b29a443fd0>, 'Connection to revlon.org timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.uk",
+    "analyzed_at": "2025-12-31T00:51:02.890519",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.uk', port=443) at 0x78b29a6df210>, 'Connection to revlon.uk timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "revlon.us",
+    "analyzed_at": "2025-12-31T00:51:14.923387",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='revlon.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.us', port=443) at 0x78b29a45e150>, 'Connection to revlon.us timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "beautybay.com",
+    "analyzed_at": "2025-12-31T00:51:26.968750",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "cultbeauty.com",
+    "analyzed_at": "2025-12-31T00:51:29.129394",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": "\u0088\u0001\u0000@\u00ac\u009d\u00f3z\u00a5\f\u008bi\u00b67\u001a\u00f1\u00ae|\u00fd \u00e4\u00f9\u00a4,\u00b3\\tv\u0098\u00f8\u00e6\u0005u\u00be\u00f1\u0091em\u0014a\u00f4d\u008d\u00f3aa\u00ac\u0006:mv5\u00008\u0000\b"
+  },
+  {
+    "domain": "beautybay.biz",
+    "analyzed_at": "2025-12-31T00:51:31.368592",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.ca",
+    "analyzed_at": "2025-12-31T00:51:33.661495",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "beautybay.co",
+    "analyzed_at": "2025-12-31T00:51:36.340097",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "beautybay.co.uk",
+    "analyzed_at": "2025-12-31T00:51:38.673925",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.info",
+    "analyzed_at": "2025-12-31T00:51:40.968610",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.io",
+    "analyzed_at": "2025-12-31T00:51:43.251979",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.net",
+    "analyzed_at": "2025-12-31T00:51:45.526659",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+  },
+  {
+    "domain": "beautybay.org",
+    "analyzed_at": "2025-12-31T00:51:47.867007",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.uk",
+    "analyzed_at": "2025-12-31T00:51:50.121139",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "beautybay.us",
+    "analyzed_at": "2025-12-31T00:51:52.395002",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='beautybay.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+  },
+  {
+    "domain": "cultbeauty.biz",
+    "analyzed_at": "2025-12-31T00:51:54.694167",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.biz', port=443) at 0x78b29a465490>, 'Connection to cultbeauty.biz timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.ca",
+    "analyzed_at": "2025-12-31T00:52:06.732754",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.ca', port=443) at 0x78b29a6ddc10>, 'Connection to cultbeauty.ca timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.co.uk",
+    "analyzed_at": "2025-12-31T00:52:18.772616",
+    "accessible": true,
+    "health_hazards": {
+      "fast_food": 1
+    },
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 3,
+    "justification": [
+      "Promotes health hazards: fast_food"
+    ],
+    "seo_metadata": "\u0088\u0001\u0000@\u00ac\u009d\u00f3z\u00a5\f\u008bi\u00b67\u001a\u00f1\u00ae|\u00fd \u00e4\u00f9\u00a4,\u00b3\\t\u0016\u0096\u00f8\u00e6\u0005\u00a5\u001b\u001fy\u00f6f\u0011fm\u00f68\u001f\u0014\u00e4j\u00a0\u00f3fw\u00038\u0000\b"
+  },
+  {
+    "domain": "cultbeauty.dev",
+    "analyzed_at": "2025-12-31T00:52:21.024922",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.dev', port=443) at 0x78b29a810790>, 'Connection to cultbeauty.dev timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.info",
+    "analyzed_at": "2025-12-31T00:52:33.067916",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.info', port=443) at 0x78b29a7a1150>, 'Connection to cultbeauty.info timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.net",
+    "analyzed_at": "2025-12-31T00:52:45.105884",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.net', port=443) at 0x78b29a4675d0>, 'Connection to cultbeauty.net timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.uk",
+    "analyzed_at": "2025-12-31T00:52:57.145878",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.uk', port=443) at 0x78b29a8c00d0>, 'Connection to cultbeauty.uk timed out. (connect timeout=10)'))"
+  },
+  {
+    "domain": "cultbeauty.us",
+    "analyzed_at": "2025-12-31T00:53:09.182460",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "justification": [],
+    "error": "HTTPSConnectionPool(host='cultbeauty.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.us', port=443) at 0x78b29a9723d0>, 'Connection to cultbeauty.us timed out. (connect timeout=10)'))"
+  }
+];
+        
+        // Initialize page immediately with embedded data
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            initializePage(allData);
         });
 
-        // Behavioral Hazards Chart
-        new Chart(document.getElementById('behavioralChart'), {
-            type: 'doughnut',
-            data: {
-                labels: ['discounts', 'convenience', 'upselling', 'addiction_language'],
-                datasets: [{
-                    data: [10, 2, 4, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.7)',
-                        'rgba(54, 162, 235, 0.7)',
-                        'rgba(255, 206, 86, 0.7)',
-                        'rgba(75, 192, 192, 0.7)',
-                        'rgba(153, 102, 255, 0.7)',
-                        'rgba(255, 159, 64, 0.7)'
-                    ]
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false
+        function initializePage(data) {
+            // Update timestamp
+            if (data.length > 0 && data[0].analyzed_at) {
+                const date = new Date(data[0].analyzed_at);
+                document.getElementById('timestamp').textContent = 
+                    `Generated: ${date.toLocaleString()}`;
             }
-        });
 
-        // Marketing Tactics Chart
-        new Chart(document.getElementById('marketingChart'), {
-            type: 'bar',
-            data: {
-                labels: ['social_proof', 'scarcity', 'fomo', 'personalization'],
-                datasets: [{
-                    label: 'Occurrences',
-                    data: [4, 3, 3, 4],
-                    backgroundColor: 'rgba(52, 152, 219, 0.7)',
-                    borderColor: 'rgba(52, 152, 219, 1)',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                indexAxis: 'y',
-                plugins: {
-                    legend: { display: false }
-                }
-            }
-        });
+            // Calculate stats
+            const accessible = data.filter(d => d.accessible);
+            const avgRisk = accessible.length > 0
+                ? (accessible.reduce((sum, d) => sum + d.risk_score, 0) / accessible.length).toFixed(1)
+                : 0;
+            const highRisk = accessible.filter(d => d.risk_score > 50).length;
 
-        // Risk Scores Chart
-        new Chart(document.getElementById('riskChart'), {
-            type: 'bar',
-            data: {
-                labels: ['sephora.co.uk', 'sephora.dev', 'ulta.uk', 'maccosmetics.info', 'covergirl.com', 'ulta.io', 'covergirl.ca', 'cultbeauty.co.uk', 'sephora.com', 'ulta.com'],
-                datasets: [{
-                    label: 'Risk Score',
-                    data: [61, 11, 11, 10, 10, 7, 3, 3, 0, 0],
-                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 100
-                    }
+            document.getElementById('totalDomains').textContent = data.length;
+            document.getElementById('accessibleDomains').textContent = accessible.length;
+            document.getElementById('avgRisk').textContent = avgRisk;
+            document.getElementById('highRiskDomains').textContent = highRisk;
+
+            // Aggregate hazards
+            const healthHazards = {};
+            const behavioralHazards = {};
+            const marketingTactics = {};
+
+            accessible.forEach(result => {
+                Object.entries(result.health_hazards || {}).forEach(([key, val]) => {
+                    healthHazards[key] = (healthHazards[key] || 0) + val;
+                });
+                Object.entries(result.behavioral_hazards || {}).forEach(([key, val]) => {
+                    behavioralHazards[key] = (behavioralHazards[key] || 0) + val;
+                });
+                Object.entries(result.marketing_tactics || {}).forEach(([key, val]) => {
+                    marketingTactics[key] = (marketingTactics[key] || 0) + val;
+                });
+            });
+
+            // Create charts
+            createHealthChart(healthHazards);
+            createBehavioralChart(behavioralHazards);
+            createMarketingChart(marketingTactics);
+            createRiskChart(accessible);
+
+            // Render domain list
+            renderDomainList(data);
+
+            // Setup filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderDomainList(data);
+                });
+            });
+
+            // Setup search
+            document.getElementById('searchBox').addEventListener('input', (e) => {
+                searchQuery = e.target.value.toLowerCase();
+                renderDomainList(data);
+            });
+        }
+
+        function createHealthChart(data) {
+            const ctx = document.getElementById('healthChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        label: 'Occurrences',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(231, 76, 60, 0.7)',
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        borderWidth: 2
+                    }]
                 },
-                plugins: {
-                    legend: { display: false }
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
                 }
+            });
+        }
+
+        function createBehavioralChart(data) {
+            const ctx = document.getElementById('behavioralChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        data: Object.values(data),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.7)',
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(255, 206, 86, 0.7)',
+                            'rgba(75, 192, 192, 0.7)',
+                            'rgba(153, 102, 255, 0.7)',
+                            'rgba(255, 159, 64, 0.7)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        function createMarketingChart(data) {
+            const ctx = document.getElementById('marketingChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data),
+                    datasets: [{
+                        label: 'Occurrences',
+                        data: Object.values(data),
+                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
+                        borderColor: 'rgba(52, 152, 219, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function createRiskChart(data) {
+            const ctx = document.getElementById('riskChart').getContext('2d');
+            const sorted = data.sort((a, b) => b.risk_score - a.risk_score).slice(0, 15);
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sorted.map(d => d.domain),
+                    datasets: [{
+                        label: 'Risk Score',
+                        data: sorted.map(d => d.risk_score),
+                        backgroundColor: sorted.map(d => 
+                            d.risk_score > 50 ? 'rgba(231, 76, 60, 0.7)' :
+                            d.risk_score > 30 ? 'rgba(243, 156, 18, 0.7)' :
+                            'rgba(46, 204, 113, 0.7)'
+                        ),
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true, max: 100 }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+        }
+
+        function filterDomains(data) {
+            let filtered = data;
+
+            // Apply risk filter
+            if (currentFilter === 'high') {
+                filtered = filtered.filter(d => d.accessible && d.risk_score >= 50);
+            } else if (currentFilter === 'medium') {
+                filtered = filtered.filter(d => d.accessible && d.risk_score >= 30 && d.risk_score < 50);
+            } else if (currentFilter === 'low') {
+                filtered = filtered.filter(d => d.accessible && d.risk_score < 30);
+            } else if (currentFilter === 'failed') {
+                filtered = filtered.filter(d => !d.accessible);
             }
-        });
+
+            // Apply search filter
+            if (searchQuery) {
+                filtered = filtered.filter(d => d.domain.toLowerCase().includes(searchQuery));
+            }
+
+            return filtered;
+        }
+
+        function renderDomainList(data) {
+            const filtered = filterDomains(data);
+            const container = document.getElementById('domainListContainer');
+            document.getElementById('domainCount').textContent = `(${filtered.length} domains)`;
+
+            container.innerHTML = filtered.map((domain, index) => {
+                const riskClass = domain.risk_score >= 50 ? 'risk-high' :
+                                 domain.risk_score >= 30 ? 'risk-medium' :
+                                 domain.risk_score > 0 ? 'risk-low' : 'risk-none';
+                
+                let hazardTags = '';
+                if (domain.accessible) {
+                    const health = Object.keys(domain.health_hazards || {}).map(h => 
+                        `<span class="hazard-tag health">${h}</span>`
+                    ).join('');
+                    const behavioral = Object.keys(domain.behavioral_hazards || {}).map(h => 
+                        `<span class="hazard-tag behavioral">${h}</span>`
+                    ).join('');
+                    const marketing = Object.keys(domain.marketing_tactics || {}).map(h => 
+                        `<span class="hazard-tag marketing">${h}</span>`
+                    ).join('');
+                    
+                    if (health || behavioral || marketing) {
+                        hazardTags = `<div class="hazard-tags">${health}${behavioral}${marketing}</div>`;
+                    }
+                }
+
+                const detailsHtml = domain.accessible ? `
+                    <div class="domain-details" id="details-${index}">
+                        ${hazardTags}
+                        ${domain.justification && domain.justification.length > 0 ? `
+                            <strong>Justification:</strong>
+                            <ul>${domain.justification.map(j => `<li>${j}</li>`).join('')}</ul>
+                        ` : ''}
+                        ${domain.method ? `<p><em>Analysis method: ${domain.method}</em></p>` : ''}
+                    </div>
+                ` : `
+                    <div class="domain-details" id="details-${index}">
+                        <p><strong>Error:</strong> ${domain.error || 'Unknown error'}</p>
+                    </div>
+                `;
+
+                return `
+                    <div class="domain-item" onclick="toggleDetails(${index})">
+                        <span class="domain-name">${domain.domain}</span>
+                        <span class="risk-badge ${riskClass}">${domain.risk_score}/100</span>
+                    </div>
+                    ${detailsHtml}
+                `;
+            }).join('');
+        }
+
+        function toggleDetails(index) {
+            const details = document.getElementById(`details-${index}`);
+            details.classList.toggle('show');
+        }
     </script>
 </body>
 </html>
