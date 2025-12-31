@@ -49,7 +49,7 @@ BROWSER_INSTANCE = None
 HEALTH_HAZARDS = {
     'ultra_processed': ['processed', 'artificial', 'preservatives', 'additives', 'high sodium', 'trans fat', 'deep fried'],
     'sugar': ['sugar', 'sweetened', 'syrup', 'candy', 'dessert', 'sweet'],
-    'fast_food': ['fast food', 'quick', 'instant', 'ready to eat', 'convenience'],
+    'fast_food': ['fast food', 'quick meal', 'quick service', 'quick bite', 'instant meal', 'ready to eat', 'convenience food'],
     'addictive': ['crave', 'craving', 'addictive', 'cant resist', "can't stop"],
     'nutrition_poor': ['empty calories', 'low nutrition', 'junk food']
 }
@@ -232,6 +232,8 @@ class DomainAnalyzer:
             'promoted_products': [],
             'related_domains': [],
             'risk_score': 0,
+            'enabler_risk_bonus': 0,
+            'high_risk_links': [],
             'justification': []
         }
     
@@ -491,8 +493,12 @@ class DomainAnalyzer:
         
         self.analysis['related_domains'] = sorted(list(related))[:20]  # Max 20
     
-    def calculate_risk_score(self):
-        """Calculate overall risk score (0-100)."""
+    def calculate_risk_score(self, all_domain_scores=None):
+        """Calculate overall risk score (0-100) with enabler bonus.
+        
+        Args:
+            all_domain_scores: Dict of {domain: risk_score} for enabler detection
+        """
         score = 0
         
         # Health hazards (30 points max)
@@ -506,6 +512,28 @@ class DomainAnalyzer:
         # Marketing tactics (30 points max)
         marketing_count = sum(self.analysis['marketing_tactics'].values())
         score += min(marketing_count * 3, 30)
+        
+        # Enabler/Facilitator bonus: sites linking to high-risk domains
+        # (marketplaces, delivery platforms that enable harmful services)
+        enabler_bonus = 0
+        high_risk_links = []
+        
+        if all_domain_scores and self.analysis['related_domains']:
+            for related_domain in self.analysis['related_domains']:
+                # Check if this related domain has a high risk score
+                related_score = all_domain_scores.get(related_domain, 0)
+                if related_score >= 50:  # High risk threshold
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+            
+            # Add enabler bonus: 5 points per high-risk link (max 20 points)
+            if high_risk_links:
+                enabler_bonus = min(len(high_risk_links) * 5, 20)
+                self.analysis['enabler_risk_bonus'] = enabler_bonus
+                self.analysis['high_risk_links'] = high_risk_links
+                score += enabler_bonus
         
         self.analysis['risk_score'] = min(score, 100)
     
@@ -525,6 +553,14 @@ class DomainAnalyzer:
             tactics = ', '.join(self.analysis['marketing_tactics'].keys())
             reasons.append(f"Employs aggressive marketing: {tactics}")
         
+        # Enabler/Facilitator justification
+        if self.analysis.get('enabler_risk_bonus', 0) > 0:
+            high_risk_count = len(self.analysis.get('high_risk_links', []))
+            reasons.append(f"ENABLER: Links to {high_risk_count} high-risk domain(s) (+{self.analysis['enabler_risk_bonus']} points)")
+            # List the high-risk domains being enabled
+            for link in self.analysis.get('high_risk_links', [])[:3]:  # Show top 3
+                reasons.append(f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+        
         if self.analysis['risk_score'] > 70:
             reasons.append("HIGH RISK: Multiple concerning patterns detected")
         elif self.analysis['risk_score'] > 40:
@@ -532,8 +568,12 @@ class DomainAnalyzer:
         
         self.analysis['justification'] = reasons
     
-    def analyze(self):
-        """Run complete analysis."""
+    def analyze(self, all_domain_scores=None):
+        """Run complete analysis.
+        
+        Args:
+            all_domain_scores: Dict of {domain: risk_score} for enabler detection
+        """
         print(f"Analyzing {self.domain}...", end=' ')
         
         if not self.fetch_content():
@@ -543,10 +583,11 @@ class DomainAnalyzer:
         self.analyze_text_content()
         self.extract_products()
         self.find_related_domains()
-        self.calculate_risk_score()
+        self.calculate_risk_score(all_domain_scores)
         self.generate_justification()
         
-        print(f"✓ Risk Score: {self.analysis['risk_score']}/100")
+        enabler_note = f" (+{self.analysis['enabler_risk_bonus']} enabler)" if self.analysis.get('enabler_risk_bonus', 0) > 0 else ""
+        print(f"✓ Risk Score: {self.analysis['risk_score']}/100{enabler_note}")
         return self.analysis
 
 
@@ -665,9 +706,11 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
 
 
 def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
-    """Sequential domain analysis (original method)."""
+    """Sequential domain analysis with two-pass enabler scoring."""
     results = []
     
+    # Pass 1: Get base scores
+    print("Pass 1/2: Analyzing base risk scores...")
     for domain in domains:
         result = analyze_domain_worker(
             domain,
@@ -679,16 +722,107 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
         )
         results.append(result)
     
+    # Pass 2: Add enabler bonuses
+    print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
+    domain_scores = {r['domain']: r.get('risk_score', 0) for r in results}
+    
+    # Build reverse index: which domains are mentioned by others
+    mentioned_by = {}  # domain -> [(mentioning_domain, mentioning_score)]
+    for result in results:
+        if result.get('accessible') and result.get('related_domains'):
+            for related_domain in result.get('related_domains', []):
+                if related_domain not in mentioned_by:
+                    mentioned_by[related_domain] = []
+                mentioned_by[related_domain].append({
+                    'domain': result['domain'],
+                    'risk_score': result.get('risk_score', 0)
+                })
+    
+    enabler_updates = 0
+    for result in results:
+        high_risk_links = []
+        facilitated_domains = []
+        
+        # RELATIONSHIP 1: Parent → Child (current logic)
+        # Check if this domain links to high-risk domains
+        if result.get('accessible') and result.get('related_domains'):
+            for related_domain in result.get('related_domains', []):
+                related_score = domain_scores.get(related_domain, 0)
+                if related_score >= 50:  # High risk threshold
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+        
+        # RELATIONSHIP 2: Child → Parent (new logic)
+        # Check if other domains link to THIS domain (inverse relationship)
+        if result['domain'] in mentioned_by:
+            for mentioner in mentioned_by[result['domain']]:
+                # Any domain mentioning this one contributes to its enabler score
+                # Lower threshold (20) to catch more restaurants
+                if mentioner['risk_score'] >= 20:
+                    facilitated_domains.append(mentioner)
+        
+        # Calculate combined enabler bonus
+        enabler_bonus = 0
+        
+        # Bonus from linking TO high-risk domains (Parent → Child)
+        if high_risk_links:
+            enabler_bonus += min(len(high_risk_links) * 5, 20)
+        
+        # Bonus from being linked BY other domains (Child → Parent)
+        if facilitated_domains:
+            # Each facilitated domain contributes: (its_risk_score / 10) points, max 30 total
+            facilitator_bonus = min(sum(d['risk_score'] for d in facilitated_domains) // 10, 30)
+            enabler_bonus += facilitator_bonus
+        
+        # Apply bonus if any enabler relationship exists
+        if enabler_bonus > 0:
+            old_score = result['risk_score']
+            result['enabler_risk_bonus'] = enabler_bonus
+            result['high_risk_links'] = high_risk_links
+            result['facilitated_domains'] = facilitated_domains
+            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            
+            # Update justification
+            if 'justification' not in result:
+                result['justification'] = []
+            
+            # Add Parent → Child explanation
+            if high_risk_links:
+                result['justification'].insert(0, f"ENABLER (Outbound): Links to {len(high_risk_links)} high-risk domain(s) (+{min(len(high_risk_links) * 5, 20)} points)")
+                for link in high_risk_links[:3]:
+                    result['justification'].insert(1, f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+            
+            # Add Child → Parent explanation
+            if facilitated_domains:
+                facilitator_bonus = min(sum(d['risk_score'] for d in facilitated_domains) // 10, 30)
+                result['justification'].insert(0, f"FACILITATOR (Inbound): Used by {len(facilitated_domains)} domain(s) (+{facilitator_bonus} points)")
+                for domain in sorted(facilitated_domains, key=lambda x: x['risk_score'], reverse=True)[:3]:
+                    result['justification'].insert(1, f"  ← Enables: {domain['domain']} (risk: {domain['risk_score']})")
+            
+            if cache:
+                cache.store_analysis(result['domain'], result)
+            
+            enabler_updates += 1
+            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+    
+    if enabler_updates > 0:
+        print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
+    else:
+        print(f"✓ No enabler relationships detected\n")
+    
     return results
 
 
 def analyze_parallel(domains, cache, force_reanalysis, category_name, recommendations, existing_domains, max_workers):
-    """Parallel domain analysis using ThreadPoolExecutor."""
+    """Parallel domain analysis using ThreadPoolExecutor with two-pass scoring."""
     results = []
     completed = 0
     total = len(domains)
     
-    # Use ThreadPoolExecutor for concurrent analysis
+    # PASS 1: Analyze all domains to get base scores
+    print("Pass 1/2: Analyzing base risk scores...")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
         future_to_domain = {
@@ -726,6 +860,97 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                     'error': str(e),
                     'risk_score': 0
                 })
+    
+    # PASS 2: Recalculate scores with enabler bonuses
+    print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
+    domain_scores = {r['domain']: r.get('risk_score', 0) for r in results}
+    
+    # Build reverse index: which domains are mentioned by others
+    mentioned_by = {}  # domain -> [(mentioning_domain, mentioning_score)]
+    for result in results:
+        if result.get('accessible') and result.get('related_domains'):
+            for related_domain in result.get('related_domains', []):
+                if related_domain not in mentioned_by:
+                    mentioned_by[related_domain] = []
+                mentioned_by[related_domain].append({
+                    'domain': result['domain'],
+                    'risk_score': result.get('risk_score', 0)
+                })
+    
+    enabler_updates = 0
+    for result in results:
+        high_risk_links = []
+        facilitated_domains = []
+        
+        # RELATIONSHIP 1: Parent → Child (current logic)
+        # Check if this domain links to high-risk domains
+        if result.get('accessible') and result.get('related_domains'):
+            for related_domain in result.get('related_domains', []):
+                related_score = domain_scores.get(related_domain, 0)
+                if related_score >= 50:  # High risk threshold
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+        
+        # RELATIONSHIP 2: Child → Parent (new logic)
+        # Check if other domains link to THIS domain (inverse relationship)
+        if result['domain'] in mentioned_by:
+            for mentioner in mentioned_by[result['domain']]:
+                # Any domain mentioning this one contributes to its enabler score
+                # Lower threshold (20) to catch more restaurants
+                if mentioner['risk_score'] >= 20:
+                    facilitated_domains.append(mentioner)
+        
+        # Calculate combined enabler bonus
+        enabler_bonus = 0
+        
+        # Bonus from linking TO high-risk domains (Parent → Child)
+        if high_risk_links:
+            enabler_bonus += min(len(high_risk_links) * 5, 20)
+        
+        # Bonus from being linked BY other domains (Child → Parent)
+        if facilitated_domains:
+            # Each facilitated domain contributes: (its_risk_score / 10) points, max 30 total
+            facilitator_bonus = min(sum(d['risk_score'] for d in facilitated_domains) // 10, 30)
+            enabler_bonus += facilitator_bonus
+        
+        # Apply bonus if any enabler relationship exists
+        if enabler_bonus > 0:
+            old_score = result['risk_score']
+            result['enabler_risk_bonus'] = enabler_bonus
+            result['high_risk_links'] = high_risk_links
+            result['facilitated_domains'] = facilitated_domains
+            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            
+            # Update justification
+            if 'justification' not in result:
+                result['justification'] = []
+            
+            # Add Parent → Child explanation
+            if high_risk_links:
+                result['justification'].insert(0, f"ENABLER (Outbound): Links to {len(high_risk_links)} high-risk domain(s) (+{min(len(high_risk_links) * 5, 20)} points)")
+                for link in high_risk_links[:3]:
+                    result['justification'].insert(1, f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+            
+            # Add Child → Parent explanation
+            if facilitated_domains:
+                facilitator_bonus = min(sum(d['risk_score'] for d in facilitated_domains) // 10, 30)
+                result['justification'].insert(0, f"FACILITATOR (Inbound): Used by {len(facilitated_domains)} domain(s) (+{facilitator_bonus} points)")
+                for domain in sorted(facilitated_domains, key=lambda x: x['risk_score'], reverse=True)[:3]:
+                    result['justification'].insert(1, f"  ← Enables: {domain['domain']} (risk: {domain['risk_score']})")
+            
+            # Update cache with new score
+            if cache:
+                cache.store_analysis(result['domain'], result)
+            
+            enabler_updates += 1
+            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+    
+    if enabler_updates > 0:
+        print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
+    else:
+        print(f"✓ No enabler relationships detected\n")
     
     return results
 
@@ -850,6 +1075,47 @@ def generate_html_report(category_name, results):
         .search-box:focus {{
             outline: none;
             border-color: #667eea;
+        }}
+        .collapsible-section {{
+            margin: 20px 0;
+        }}
+        .section-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            transition: background 0.3s;
+        }}
+        .section-header:hover {{
+            background: #e9ecef;
+        }}
+        .section-header h2 {{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }}
+        .toggle-icon {{
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            transition: transform 0.3s;
+        }}
+        .toggle-icon.expanded {{
+            transform: rotate(90deg);
+        }}
+        .section-content {{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }}
+        .section-content.expanded {{
+            max-height: 2000px;
+            padding-top: 15px;
         }}
         .stats {{
             display: grid;
@@ -982,8 +1248,88 @@ def generate_html_report(category_name, results):
         }}
         @media (max-width: 768px) {{
             .grid-2 {{ grid-template-columns: 1fr; }}
-            .nav-bar {{ flex-direction: column; gap: 10px; }}
-            .nav-links {{ width: 100%; justify-content: center; }}
+            .nav-bar {{ 
+                flex-direction: column; 
+                gap: 10px;
+                padding: 15px;
+            }}
+            .nav-links {{ 
+                width: 100%; 
+                flex-direction: column;
+                gap: 10px;
+            }}
+            .nav-links a {{
+                text-align: center;
+                padding: 10px;
+            }}
+            body {{ padding: 10px; }}
+            h1 {{ font-size: 24px; }}
+            h2 {{ font-size: 20px; }}
+            .stats {{
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }}
+            .stat-card {{ padding: 15px; }}
+            .stat-value {{ font-size: 1.5em; }}
+            .chart-container {{ margin-bottom: 15px; }}
+            .controls {{ padding: 15px; }}
+            .filter-group {{
+                flex-direction: column;
+                gap: 8px;
+            }}
+            .filter-btn {{
+                width: 100%;
+                padding: 12px;
+                font-size: 14px;
+            }}
+            .search-box {{ font-size: 16px; }} /* Prevents zoom on iOS */
+            .section-content > div {{
+                grid-template-columns: 1fr !important;
+            }}
+            .section-content #failedDomainsContainer {{ max-height: 300px; }}
+            .domain-list > div:first-child {{
+                flex-direction: column;
+                gap: 10px;
+                align-items: stretch !important;
+            }}
+            .domain-list > div:first-child > div {{
+                justify-content: space-between;
+                overflow-x: auto;
+            }}
+            .domain-list > div:first-child button {{
+                font-size: 12px !important;
+                padding: 8px 10px !important;
+            }}
+            .domain-item {{ padding: 15px; }}
+            .domain-item h3 {{
+                font-size: 16px;
+                word-break: break-word;
+            }}
+            .hazard-tag {{
+                font-size: 11px;
+                padding: 3px 8px;
+            }}
+            .risk-badge {{
+                padding: 4px 10px;
+                font-size: 12px;
+            }}
+        }}
+        @media (max-width: 480px) {{
+            body {{ padding: 5px; }}
+            h1 {{ font-size: 20px; }}
+            h2 {{ font-size: 18px; }}
+            .stats {{ grid-template-columns: 1fr; }}
+            .stat-value {{ font-size: 1.8em; }}
+            .domain-count {{
+                display: block;
+                margin-top: 5px;
+                font-size: 14px;
+            }}
+            .filter-btn {{ padding: 10px; }}
+            .domain-list > div:first-child button {{
+                font-size: 11px !important;
+                padding: 6px 8px !important;
+            }}
         }}
     </style>
 </head>
@@ -1073,26 +1419,105 @@ def generate_html_report(category_name, results):
             </div>
         </div>
 
+        <section class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('failedSection')">
+                <h2>
+                    <span class="toggle-icon" id="failedToggle">▶</span>
+                    Failed Analysis <span class="domain-count" id="failedCount"></span>
+                </h2>
+                <span style="color: #666; font-size: 14px;">Click to expand/collapse</span>
+            </div>
+            <div class="section-content" id="failedSection">
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 20px; margin-bottom: 20px;">
+                    <div class="chart-container">
+                        <h3>Error Distribution</h3>
+                        <div class="chart-wrapper">
+                            <canvas id="failedChart"></canvas>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <p style="color: #666; margin: 0 0 15px 0;">Domains that could not be successfully analyzed</p>
+                        <div id="failedDomainsContainer" style="flex: 1; overflow-y: auto; max-height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="domain-list">
-            <h2>Domain Details <span class="domain-count" id="domainCount"></span></h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                <h2>Domain Details <span class="domain-count" id="domainCount"></span></h2>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <span style="color: #666; font-size: 14px;">Sort by:</span>
+                    <button class="filter-btn" id="sortScoreDesc" data-sort="score-desc" style="padding: 6px 12px; font-size: 14px;">Score ↓</button>
+                    <button class="filter-btn" id="sortScoreAsc" data-sort="score-asc" style="padding: 6px 12px; font-size: 14px;">Score ↑</button>
+                    <button class="filter-btn" id="sortAlphaAsc" data-sort="alpha-asc" style="padding: 6px 12px; font-size: 14px;">A-Z</button>
+                    <button class="filter-btn" id="sortAlphaDesc" data-sort="alpha-desc" style="padding: 6px 12px; font-size: 14px;">Z-A</button>
+                </div>
+            </div>
             <div id="domainListContainer"></div>
         </div>
     </div>
 
     <script>
-        let allData = [];
+        let allData = null;
         let currentFilter = 'all';
         let searchQuery = '';
-
-        // Embedded data to avoid CORS issues when opening locally
-        allData = {embedded_data};
+        let currentSort = 'score-desc'; // score-desc, score-asc, alpha-asc, alpha-desc
         
-        // Initialize page immediately with embedded data
-        document.addEventListener('DOMContentLoaded', () => {{
+        // Store chart instances for updates
+        let healthChart = null;
+        let behavioralChart = null;
+        let marketingChart = null;
+        let riskChart = null;
+        let failedChart = null;
+
+        // Try to load JSON dynamically, fallback to embedded data
+        const embeddedData = {embedded_data};
+        
+        document.addEventListener('DOMContentLoaded', async () => {{
+            // Check if we're viewing via file:// protocol
+            const isFileProtocol = window.location.protocol === 'file:';
+            
+            if (!isFileProtocol) {{
+                try {{
+                    // Try loading from JSON file (works with web server or GitHub Pages)
+                    const response = await fetch('../data/{data_filename}');
+                    if (response.ok) {{
+                        allData = await response.json();
+                        console.log('%c✓ Loaded fresh data from JSON file', 'color: green; font-weight: bold');
+                        console.log('%cJSON updates will be reflected automatically!', 'color: green');
+                    }} else {{
+                        throw new Error('JSON fetch failed');
+                    }}
+                }} catch (error) {{
+                    // Fallback to embedded data
+                    allData = embeddedData;
+                    console.log('%c⚠ Using embedded data (fetch failed)', 'color: orange; font-weight: bold');
+                }}
+            }} else {{
+                // Skip fetch attempt for file:// protocol to avoid console errors
+                allData = embeddedData;
+                console.log('%c📄 Viewing locally - using embedded data', 'color: blue; font-weight: bold');
+                console.log('%cTip: View via web server for automatic JSON updates', 'color: #666');
+            }}
+            
             document.getElementById('loading').style.display = 'none';
             document.getElementById('content').style.display = 'block';
             initializePage(allData);
         }});
+
+        function toggleSection(sectionId) {{
+            const section = document.getElementById(sectionId);
+            const toggle = document.getElementById(sectionId.replace('Section', 'Toggle'));
+            
+            if (section.classList.contains('expanded')) {{
+                section.classList.remove('expanded');
+                toggle.classList.remove('expanded');
+            }} else {{
+                section.classList.add('expanded');
+                toggle.classList.add('expanded');
+            }}
+        }}
 
         function initializePage(data) {{
             // Update timestamp
@@ -1137,6 +1562,11 @@ def generate_html_report(category_name, results):
             createMarketingChart(marketingTactics);
             createRiskChart(accessible);
 
+            // Render failed domains section with chart
+            const failedDomains = data.filter(d => !d.accessible);
+            createFailedChart(failedDomains);
+            renderFailedDomains(data);
+
             // Render domain list
             renderDomainList(data);
 
@@ -1146,20 +1576,90 @@ def generate_html_report(category_name, results):
                     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     currentFilter = btn.dataset.filter;
-                    renderDomainList(data);
+                    
+                    // Update failed domains display based on filter
+                    if (currentFilter === 'failed') {{
+                        renderFailedDomains(data);
+                    }}
+                    
+                    updateChartsAndList(data);
                 }});
             }});
 
             // Setup search
             document.getElementById('searchBox').addEventListener('input', (e) => {{
                 searchQuery = e.target.value.toLowerCase();
-                renderDomainList(data);
+                updateChartsAndList(data);
             }});
+            
+            // Setup sort buttons
+            document.querySelectorAll('[data-sort]').forEach(btn => {{
+                btn.addEventListener('click', () => {{
+                    document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentSort = btn.dataset.sort;
+                    renderDomainList(data);
+                }});
+            }});
+            
+            // Set initial sort button active state
+            document.getElementById('sortScoreDesc').classList.add('active');
+        }}
+        
+        function updateChartsAndList(data) {{
+            const filtered = filterDomains(data);
+            
+            // Recalculate aggregated hazards from filtered data
+            const accessible = filtered.filter(d => d.accessible);
+            const healthHazards = {{}};
+            const behavioralHazards = {{}};
+            const marketingTactics = {{}};
+
+            accessible.forEach(result => {{
+                Object.entries(result.health_hazards || {{}}).forEach(([key, val]) => {{
+                    healthHazards[key] = (healthHazards[key] || 0) + val;
+                }});
+                Object.entries(result.behavioral_hazards || {{}}).forEach(([key, val]) => {{
+                    behavioralHazards[key] = (behavioralHazards[key] || 0) + val;
+                }});
+                Object.entries(result.marketing_tactics || {{}}).forEach(([key, val]) => {{
+                    marketingTactics[key] = (marketingTactics[key] || 0) + val;
+                }});
+            }});
+            
+            // Update charts with filtered data
+            updateChart(healthChart, healthHazards);
+            updateChart(behavioralChart, behavioralHazards);
+            updateChart(marketingChart, marketingTactics);
+            updateRiskChart(riskChart, accessible);
+            
+            // Update domain list
+            renderDomainList(data);
+        }}
+        
+        function updateChart(chart, newData) {{
+            if (!chart) return;
+            chart.data.labels = Object.keys(newData);
+            chart.data.datasets[0].data = Object.values(newData);
+            chart.update();
+        }}
+        
+        function updateRiskChart(chart, accessibleData) {{
+            if (!chart) return;
+            const sorted = accessibleData.sort((a, b) => b.risk_score - a.risk_score).slice(0, 15);
+            chart.data.labels = sorted.map(d => d.domain);
+            chart.data.datasets[0].data = sorted.map(d => d.risk_score);
+            chart.data.datasets[0].backgroundColor = sorted.map(d => 
+                d.risk_score > 50 ? 'rgba(231, 76, 60, 0.7)' :
+                d.risk_score > 30 ? 'rgba(243, 156, 18, 0.7)' :
+                'rgba(46, 204, 113, 0.7)'
+            );
+            chart.update();
         }}
 
         function createHealthChart(data) {{
             const ctx = document.getElementById('healthChart').getContext('2d');
-            new Chart(ctx, {{
+            healthChart = new Chart(ctx, {{
                 type: 'bar',
                 data: {{
                     labels: Object.keys(data),
@@ -1181,7 +1681,7 @@ def generate_html_report(category_name, results):
 
         function createBehavioralChart(data) {{
             const ctx = document.getElementById('behavioralChart').getContext('2d');
-            new Chart(ctx, {{
+            behavioralChart = new Chart(ctx, {{
                 type: 'doughnut',
                 data: {{
                     labels: Object.keys(data),
@@ -1206,7 +1706,7 @@ def generate_html_report(category_name, results):
 
         function createMarketingChart(data) {{
             const ctx = document.getElementById('marketingChart').getContext('2d');
-            new Chart(ctx, {{
+            marketingChart = new Chart(ctx, {{
                 type: 'bar',
                 data: {{
                     labels: Object.keys(data),
@@ -1230,7 +1730,7 @@ def generate_html_report(category_name, results):
         function createRiskChart(data) {{
             const ctx = document.getElementById('riskChart').getContext('2d');
             const sorted = data.sort((a, b) => b.risk_score - a.risk_score).slice(0, 15);
-            new Chart(ctx, {{
+            riskChart = new Chart(ctx, {{
                 type: 'bar',
                 data: {{
                     labels: sorted.map(d => d.domain),
@@ -1252,6 +1752,64 @@ def generate_html_report(category_name, results):
                         y: {{ beginAtZero: true, max: 100 }}
                     }},
                     plugins: {{ legend: {{ display: false }} }}
+                }}
+            }});
+        }}
+
+        function createFailedChart(failedDomains) {{
+            if (failedChart) {{
+                failedChart.destroy();
+            }}
+            
+            // Categorize errors
+            const errorCategories = {{}};
+            failedDomains.forEach(domain => {{
+                const error = domain.error || 'Unknown error';
+                let category = 'Other';
+                
+                if (error.includes('Timeout') || error.includes('timeout')) {{
+                    category = 'Timeout';
+                }} else if (error.includes('Insufficient content')) {{
+                    category = 'Insufficient Content';
+                }} else if (error.includes('thread') || error.includes('greenlet')) {{
+                    category = 'Threading Issue';
+                }} else if (error.includes('DNS') || error.includes('resolve')) {{
+                    category = 'DNS/Network';
+                }} else if (error.includes('SSL') || error.includes('certificate')) {{
+                    category = 'SSL/Certificate';
+                }} else if (error.includes('Connection refused') || error.includes('ECONNREFUSED')) {{
+                    category = 'Connection Refused';
+                }}
+                
+                errorCategories[category] = (errorCategories[category] || 0) + 1;
+            }});
+
+            const ctx = document.getElementById('failedChart').getContext('2d');
+            failedChart = new Chart(ctx, {{
+                type: 'doughnut',
+                data: {{
+                    labels: Object.keys(errorCategories),
+                    datasets: [{{
+                        data: Object.values(errorCategories),
+                        backgroundColor: [
+                            'rgba(231, 76, 60, 0.7)',
+                            'rgba(230, 126, 34, 0.7)',
+                            'rgba(241, 196, 15, 0.7)',
+                            'rgba(52, 152, 219, 0.7)',
+                            'rgba(155, 89, 182, 0.7)',
+                            'rgba(149, 165, 166, 0.7)'
+                        ],
+                        borderWidth: 2
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{
+                        legend: {{
+                            position: 'bottom'
+                        }}
+                    }}
                 }}
             }});
         }}
@@ -1278,8 +1836,98 @@ def generate_html_report(category_name, results):
             return filtered;
         }}
 
+        function renderFailedDomains(data) {{
+            const failed = data.filter(d => !d.accessible);
+            const container = document.getElementById('failedDomainsContainer');
+            document.getElementById('failedCount').textContent = `(${{failed.length}} domains)`;
+            
+            if (failed.length === 0) {{
+                container.innerHTML = '<p style="color: #666; padding: 20px; text-align: center;">No failed analyses - all domains were successfully analyzed!</p>';
+                return;
+            }}
+            
+            // Categorize errors
+            const errorCategories = {{}};
+            failed.forEach(domain => {{
+                const error = domain.error || 'Unknown error';
+                let category = 'Other';
+                
+                if (error.includes('Timeout') || error.includes('timeout')) {{
+                    category = 'Timeout';
+                }} else if (error.includes('Insufficient content')) {{
+                    category = 'Insufficient Content';
+                }} else if (error.includes('thread') || error.includes('greenlet')) {{
+                    category = 'Threading Issue';
+                }} else if (error.includes('DNS') || error.includes('resolve')) {{
+                    category = 'DNS/Network';
+                }} else if (error.includes('SSL') || error.includes('certificate')) {{
+                    category = 'SSL/Certificate';
+                }} else if (error.includes('Connection refused') || error.includes('ECONNREFUSED')) {{
+                    category = 'Connection Refused';
+                }}
+                
+                if (!errorCategories[category]) {{
+                    errorCategories[category] = [];
+                }}
+                errorCategories[category].push(domain);
+            }});
+            
+            // Render by category
+            let html = '<div style="display: grid; gap: 20px;">';
+            
+            Object.keys(errorCategories).sort().forEach(category => {{
+                const domains = errorCategories[category];
+                html += `
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #e74c3c;">
+                        <h3 style="margin: 0 0 10px 0; color: #e74c3c; font-size: 16px;">
+                            ${{category}} (${{domains.length}})
+                        </h3>
+                        <div style="display: grid; gap: 10px;">
+                `;
+                
+                domains.forEach(domain => {{
+                    const errorMsg = (domain.error || 'Unknown error').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    html += `
+                        <div style="background: white; padding: 10px 15px; border-radius: 5px; border: 1px solid #dee2e6;">
+                            <div style="display: flex; justify-content: space-between; align-items: start;">
+                                <div style="flex: 1;">
+                                    <strong style="color: #2c3e50;">${{domain.domain}}</strong>
+                                    <div style="font-size: 12px; color: #7f8c8d; margin-top: 5px; font-family: monospace;">
+                                        ${{errorMsg.length > 150 ? errorMsg.substring(0, 150) + '...' : errorMsg}}
+                                    </div>
+                                </div>
+                                <span style="font-size: 11px; color: #95a5a6; white-space: nowrap; margin-left: 10px;">
+                                    ${{new Date(domain.analyzed_at).toLocaleDateString()}}
+                                </span>
+                            </div>
+                        </div>
+                    `;
+                }});
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            }});
+            
+            html += '</div>';
+            container.innerHTML = html;
+        }}
+
         function renderDomainList(data) {{
-            const filtered = filterDomains(data);
+            let filtered = filterDomains(data);
+            
+            // Apply sorting
+            if (currentSort === 'score-desc') {{
+                filtered.sort((a, b) => b.risk_score - a.risk_score);
+            }} else if (currentSort === 'score-asc') {{
+                filtered.sort((a, b) => a.risk_score - b.risk_score);
+            }} else if (currentSort === 'alpha-asc') {{
+                filtered.sort((a, b) => a.domain.localeCompare(b.domain));
+            }} else if (currentSort === 'alpha-desc') {{
+                filtered.sort((a, b) => b.domain.localeCompare(a.domain));
+            }}
+            
             const container = document.getElementById('domainListContainer');
             document.getElementById('domainCount').textContent = `(${{filtered.length}} domains)`;
 
@@ -1374,6 +2022,32 @@ def generate_summary_stats():
         access_rate = (accessible_count / total * 100) if total > 0 else 0
         high_risk = sum(1 for d in accessible if d.get('risk_score', 0) >= 50)
         
+        # Load DNS verification stats from cache if available
+        dns_stats = {}
+        lists_dir = Path(__file__).parent.parent / 'lists'
+        dns_cache_file = lists_dir / '.domain_cache.json'
+        if dns_cache_file.exists():
+            try:
+                with open(dns_cache_file, 'r') as f:
+                    cache_data = json.load(f)
+                    dns_stats = {
+                        'verified_domains': len(cache_data.get('verified', {})),
+                        'unverified_domains': len(cache_data.get('not_found', {})),
+                        'total_dns_checked': len(cache_data.get('verified', {})) + len(cache_data.get('not_found', {})),
+                        'last_dns_check': cache_data.get('last_updated')
+                    }
+            except Exception as e:
+                print(f"Note: Could not load DNS cache stats: {e}")
+        
+        # Calculate blocklist statistics
+        blocklist_stats = {}
+        for list_file in ['food.txt', 'cosmetics.txt', 'conglomerates.txt', 'blackout-ultra.txt']:
+            list_path = lists_dir / list_file
+            if list_path.exists():
+                with open(list_path, 'r') as f:
+                    domains = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+                    blocklist_stats[list_file.replace('.txt', '')] = len(domains)
+        
         summary = {
             'total_domains': total,
             'accessible_count': accessible_count,
@@ -1381,6 +2055,8 @@ def generate_summary_stats():
             'access_rate': round(access_rate, 0),
             'high_risk_count': high_risk,
             'categories': categories,
+            'dns_verification': dns_stats,
+            'blocklists': blocklist_stats,
             'generated_at': datetime.now().isoformat()
         }
         
@@ -1418,8 +2094,9 @@ def generate_markdown_report(category_name, results):
         f.write(f"**Domains Analyzed:** {len(results)}\n\n")
         
         # Summary statistics
-        avg_risk = sum(r['risk_score'] for r in results if r['accessible']) / len([r for r in results if r['accessible']]) if results else 0
-        accessible_count = sum(1 for r in results if r['accessible'])
+        accessible_results = [r for r in results if r['accessible']]
+        avg_risk = sum(r['risk_score'] for r in accessible_results) / len(accessible_results) if accessible_results else 0
+        accessible_count = len(accessible_results)
         
         f.write("## Summary\n\n")
         f.write(f"- **Accessible domains:** {accessible_count}/{len(results)}\n")

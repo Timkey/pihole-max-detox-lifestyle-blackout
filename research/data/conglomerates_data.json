@@ -1,7 +1,7 @@
 [
   {
-    "domain": "nespresso.ai",
-    "analyzed_at": "2025-12-31T00:53:47.983097",
+    "domain": "purina.com",
+    "analyzed_at": "2025-12-31T17:05:24.086143",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -9,105 +9,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "nestle.net",
-    "analyzed_at": "2025-12-31T00:55:18.408984",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nestle.ai",
-    "analyzed_at": "2025-12-31T00:54:19.808267",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.nestle.com/"
-  },
-  {
-    "domain": "nestle.com",
-    "analyzed_at": "2025-12-31T12:24:11.910043",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Playwright: Insufficient content (326 chars)"
-  },
-  {
-    "domain": "nespresso.us",
-    "analyzed_at": "2025-12-31T00:54:17.684871",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nestle.app",
-    "analyzed_at": "2025-12-31T00:54:22.423944",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: 'NoneType' object has no attribute 'new_context'"
   },
   {
     "domain": "nestle.ca",
-    "analyzed_at": "2025-12-31T12:24:11.911208",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.madewithnestle.ca/",
-    "method": "playwright",
-    "seo_metadata": "this site is temporarily unavailable | nestl\u00e9 "
-  },
-  {
-    "domain": "nespresso.uk",
-    "analyzed_at": "2025-12-31T00:54:14.832347",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "gerber.ai",
-    "analyzed_at": "2025-12-31T12:24:16.813650",
+    "analyzed_at": "2025-12-31T17:05:24.084673",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -115,139 +24,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) suspended active started main>"
+  },
+  {
+    "domain": "gerber.ai",
+    "analyzed_at": "2025-12-31T17:05:24.086454",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "error": "Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/\nCall log:\n  - navigating to \"https://gerber.ai/\", waiting until \"domcontentloaded\"\n"
   },
   {
-    "domain": "gerber.org",
-    "analyzed_at": "2025-12-31T00:53:21.406125",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "purina.com",
-    "analyzed_at": "2025-12-31T12:24:16.274934",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
-  },
-  {
-    "domain": "gerber.net",
-    "analyzed_at": "2025-12-30T22:46:26.587131",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.net'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "gerber.info",
-    "analyzed_at": "2025-12-30T22:46:02.510931",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nespresso.org",
-    "analyzed_at": "2025-12-31T00:54:12.705435",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.net",
-    "analyzed_at": "2025-12-31T00:54:10.573031",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "gerber.us",
-    "analyzed_at": "2025-12-31T00:53:25.934512",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "gerber.uk",
-    "analyzed_at": "2025-12-31T00:53:23.838430",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {
-      "discounts": 2
-    },
-    "marketing_tactics": {},
-    "promoted_products": [
-      "This domain name isavailable to purchase",
-      "Make an offer"
-    ],
-    "related_domains": [
-      "PapillonLandscape.co.uk",
-      "alvariummcr.co.uk",
-      "dslsource.co.uk",
-      "eastbournehalf.co.uk",
-      "kjglobal.co.uk",
-      "minorityperspective.co.uk",
-      "outragefightwear.co.uk",
-      "rdap.uk",
-      "smokeytails.co.uk",
-      "steamboat.co.uk",
-      "thecuban.co.uk",
-      "thefriendlybench.co.uk",
-      "webber.domains",
-      "webber.uk",
-      "whois.uk"
-    ],
-    "risk_score": 8,
-    "justification": [
-      "Uses behavioral manipulation: discounts"
-    ],
-    "seo_metadata": "gerber.uk"
-  },
-  {
     "domain": "gerber.app",
-    "analyzed_at": "2025-12-31T12:24:18.736362",
+    "analyzed_at": "2025-12-31T17:05:24.086833",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -255,140 +54,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>"
-  },
-  {
-    "domain": "nestle.biz",
-    "analyzed_at": "2025-12-31T00:54:25.444047",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.biz', port=443) at 0x78b29a7a1590>, 'Connection to nestle.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "gerber.io",
-    "analyzed_at": "2025-12-30T22:46:14.541124",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nestle.io",
-    "analyzed_at": "2025-12-31T00:55:06.370141",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.io', port=443) at 0x78b29a85e890>, 'Connection to nestle.io timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nestle.co.uk",
-    "analyzed_at": "2025-12-31T12:24:11.914196",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Playwright: Insufficient content (332 chars)"
-  },
-  {
-    "domain": "nestle.info",
-    "analyzed_at": "2025-12-31T00:54:54.340101",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "gerber.com",
-    "analyzed_at": "2025-12-31T12:24:11.917295",
-    "accessible": true,
-    "health_hazards": {
-      "sugar": 1,
-      "fast_food": 1
-    },
-    "behavioral_hazards": {
-      "discounts": 3,
-      "convenience": 1,
-      "upselling": 1,
-      "addiction_language": 1
-    },
-    "marketing_tactics": {
-      "scarcity": 1,
-      "fomo": 1,
-      "personalization": 2
-    },
-    "promoted_products": [
-      "Compare Products",
-      "Alabama",
-      "Alaska",
-      "Arizona",
-      "Arkansas",
-      "California",
-      "Colorado",
-      "Connecticut",
-      "DC",
-      "Delaware",
-      "MyGerber",
-      "Sign up for MyGerber",
-      "For A Parent-Friendly World",
-      "Customer Care",
-      "Products"
-    ],
-    "related_domains": [
-      "business.gerber.com",
-      "facebook.com",
-      "gerber.com",
-      "gerberchildrenswear.com",
-      "gerberlife.com",
-      "goodstartbaby.com",
-      "instagram.com",
-      "m.me",
-      "medical.gerber.com",
-      "nestlejobs.com",
-      "nestleusa.com",
-      "news.gerber.com",
-      "parents.gerber.com",
-      "tiktok.com",
-      "wa.me",
-      "youtube.com"
-    ],
-    "risk_score": 42,
-    "justification": [
-      "Promotes health hazards: sugar, fast_food",
-      "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
-      "Employs aggressive marketing: scarcity, fomo, personalization",
-      "MODERATE RISK: Several concerning patterns detected"
-    ],
-    "seo_metadata": "gerber | shop baby food, get support and connect with experts | gerber gerber - a leader in early childhood nutrition for more than 90 years gerber, gerber baby, gerber food, gerber baby food, gerber foods gerber | shop baby food, get support and connect with experts gerber - a leader in early childhood nutrition for more than 90 years gerber.com"
+    "error": "Playwright error: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://gerber.app/\nCall log:\n  - navigating to \"https://gerber.app/\", waiting until \"domcontentloaded\"\n"
   },
   {
     "domain": "nespresso.com",
-    "analyzed_at": "2025-12-31T12:24:11.917052",
+    "analyzed_at": "2025-12-31T17:05:24.085428",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -396,12 +69,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "error": "Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/\nCall log:\n  - navigating to \"https://nespresso.com/\", waiting until \"domcontentloaded\"\n"
   },
   {
-    "domain": "nestle.dev",
-    "analyzed_at": "2025-12-31T00:54:52.008038",
+    "domain": "gerber.biz",
+    "analyzed_at": "2025-12-31T17:05:27.965618",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -409,51 +84,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "nespresso.co",
-    "analyzed_at": "2025-12-31T00:54:04.226404",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nespresso.ca",
-    "analyzed_at": "2025-12-31T00:54:02.112993",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "nestle.co.ca",
-    "analyzed_at": "2025-12-31T00:54:49.513863",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "gerber.co.uk",
-    "analyzed_at": "2025-12-30T22:45:58.193125",
+    "analyzed_at": "2025-12-31T17:05:28.424832",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -461,25 +99,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://gerber.co.uk/"
-  },
-  {
-    "domain": "nespresso.co.uk",
-    "analyzed_at": "2025-12-31T00:54:06.349879",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)\")))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "gerber.ca",
-    "analyzed_at": "2025-12-31T12:24:20.364219",
+    "analyzed_at": "2025-12-31T17:05:28.287314",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -487,38 +114,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
-  },
-  {
-    "domain": "nespresso.biz",
-    "analyzed_at": "2025-12-31T00:53:50.079582",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nespresso.info",
-    "analyzed_at": "2025-12-31T00:54:08.456404",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)\")))"
   },
   {
     "domain": "gerber.dev",
-    "analyzed_at": "2025-12-30T22:46:00.331658",
+    "analyzed_at": "2025-12-31T17:05:29.519949",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.net",
+    "analyzed_at": "2025-12-31T17:05:30.738049",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.com",
+    "analyzed_at": "2025-12-31T17:05:24.085828",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -526,12 +159,316 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "403 Client Error: Forbidden for url: https://www.gerber.com",
+    "method": "playwright",
+    "seo_metadata": "this site is temporarily unavailable | nestl\u00e9 "
+  },
+  {
+    "domain": "nestle.com",
+    "analyzed_at": "2025-12-31T17:05:24.084225",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright: Insufficient content (326 chars)"
+  },
+  {
+    "domain": "gerber.uk",
+    "analyzed_at": "2025-12-31T17:05:31.515550",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.org",
+    "analyzed_at": "2025-12-31T17:05:30.803149",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.co.uk",
+    "analyzed_at": "2025-12-31T17:05:24.085085",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright: Insufficient content (332 chars)"
+  },
+  {
+    "domain": "nespresso.ai",
+    "analyzed_at": "2025-12-31T17:05:33.188776",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.ca",
+    "analyzed_at": "2025-12-31T17:05:33.421379",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.co",
+    "analyzed_at": "2025-12-31T17:05:33.502904",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.co.uk",
+    "analyzed_at": "2025-12-31T17:05:33.629689",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.info",
+    "analyzed_at": "2025-12-31T17:05:34.372427",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.net",
+    "analyzed_at": "2025-12-31T17:05:34.625616",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.org",
+    "analyzed_at": "2025-12-31T17:05:34.925932",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.uk",
+    "analyzed_at": "2025-12-31T17:05:35.027377",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.us",
+    "analyzed_at": "2025-12-31T17:05:35.988006",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.ai",
+    "analyzed_at": "2025-12-31T17:05:36.552988",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.app",
+    "analyzed_at": "2025-12-31T17:05:37.007834",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
+  },
+  {
+    "domain": "nestle.co.ca",
+    "analyzed_at": "2025-12-31T17:05:39.844814",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.io",
+    "analyzed_at": "2025-12-31T17:05:30.319433",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.dev",
+    "analyzed_at": "2025-12-31T17:05:41.139362",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nespresso.biz",
+    "analyzed_at": "2025-12-31T17:05:33.301750",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.biz",
+    "analyzed_at": "2025-12-31T17:05:37.184740",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "nestle.co",
-    "analyzed_at": "2025-12-31T00:54:37.476951",
+    "analyzed_at": "2025-12-31T17:05:37.521973",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -539,12 +476,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "gerber.biz",
-    "analyzed_at": "2025-12-31T12:24:18.981797",
+    "domain": "nestle.info",
+    "analyzed_at": "2025-12-31T17:05:41.565956",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -552,12 +491,59 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Playwright: Insufficient content (20 chars)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.io",
+    "analyzed_at": "2025-12-31T17:05:42.121297",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.us",
+    "analyzed_at": "2025-12-31T17:05:32.694828",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "nestle.net",
+    "analyzed_at": "2025-12-31T17:05:42.676986",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "nestle.org",
-    "analyzed_at": "2025-12-31T00:55:30.443328",
+    "analyzed_at": "2025-12-31T17:05:44.496636",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -565,25 +551,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.org', port=443) at 0x78b29a6de5d0>, 'Connection to nestle.org timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "nestle.uk",
-    "analyzed_at": "2025-12-31T00:55:42.476211",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "nestle.us",
-    "analyzed_at": "2025-12-31T00:55:44.925581",
+    "analyzed_at": "2025-12-31T17:05:48.578761",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -591,38 +566,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='nestle.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.us', port=443) at 0x78b29aa651d0>, 'Connection to nestle.us timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "purina.ai",
-    "analyzed_at": "2025-12-31T00:55:56.964176",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "purina.ca",
-    "analyzed_at": "2025-12-31T00:55:59.279236",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.purina.ca/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "purina.co",
-    "analyzed_at": "2025-12-31T00:56:02.002890",
+    "analyzed_at": "2025-12-31T17:05:53.749445",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -630,59 +581,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='purina.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.co', port=443) at 0x78b29a85ee90>, 'Connection to purina.co timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "purina.co.uk",
-    "analyzed_at": "2025-12-31T00:56:14.048423",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {
-      "discounts": 2,
-      "upselling": 1
-    },
-    "marketing_tactics": {
-      "fomo": 2,
-      "personalization": 2
-    },
-    "promoted_products": [
-      "Shop Purina",
-      "Newsletters",
-      "Contact us",
-      "Shop Purina",
-      "Where to buy",
-      "Purina Cares",
-      "Here for you and your pets",
-      "Finding a pet",
-      "Sign up to our free pet-parenting newsletters!",
-      "Join over 500,000 other pet owners",
-      "Oops!",
-      "Thinking about getting a puppy?",
-      "Thank you!"
-    ],
-    "related_domains": [
-      "api.whatsapp.com",
-      "direct.purina.co.uk",
-      "facebook.com",
-      "instagram.com",
-      "policies.google.com",
-      "purina.co.uk",
-      "twitter.com",
-      "vetcentre.purina.co.uk",
-      "yourpurina.tbw-apps.net",
-      "youtube.com"
-    ],
-    "risk_score": 24,
-    "justification": [
-      "Uses behavioral manipulation: discounts, upselling",
-      "Employs aggressive marketing: fomo, personalization"
-    ],
-    "seo_metadata": "purina uk: your pet, our passion | purina uk at purina, we have been helping pets live healthy, happy lives for over 85 years. visit us to find out more about us and how we can help care for your pet. purina: your pet, our passion at purina, we have been helping pets live healthy, happy lives for over 85 years. visit us to find out more about us and how we can help care for your pet."
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "purina.net",
-    "analyzed_at": "2025-12-31T00:56:16.363748",
+    "analyzed_at": "2025-12-31T17:05:56.253430",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -690,12 +596,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='purina.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.net', port=443) at 0x78b29a341810>, 'Connection to purina.net timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "purina.uk",
-    "analyzed_at": "2025-12-31T00:56:28.394918",
+    "domain": "nestle.uk",
+    "analyzed_at": "2025-12-31T17:05:48.456398",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -703,12 +611,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='purina.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "purina.us",
-    "analyzed_at": "2025-12-31T00:56:31.003733",
+    "domain": "purina.ai",
+    "analyzed_at": "2025-12-31T17:05:52.810055",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -716,12 +626,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.purina.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "purina.ca",
+    "analyzed_at": "2025-12-31T17:05:53.585732",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "unilever.com",
-    "analyzed_at": "2025-12-31T00:56:33.679995",
+    "analyzed_at": "2025-12-31T17:06:07.329285",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -729,12 +656,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.unilever.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "purina.uk",
+    "analyzed_at": "2025-12-31T17:06:00.386486",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "unileverusa.com",
-    "analyzed_at": "2025-12-31T00:56:35.881686",
+    "analyzed_at": "2025-12-31T17:06:10.245820",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -742,12 +686,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.unileverusa.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "axe.com",
-    "analyzed_at": "2025-12-31T00:56:38.092999",
+    "analyzed_at": "2025-12-31T17:06:14.139910",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -755,12 +701,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.axe.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "purina.us",
+    "analyzed_at": "2025-12-31T17:06:05.048085",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.com",
-    "analyzed_at": "2025-12-31T00:56:40.364194",
+    "analyzed_at": "2025-12-31T17:06:15.495312",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -768,12 +731,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.dove.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "hellmanns.com",
-    "analyzed_at": "2025-12-31T00:56:42.730849",
+    "analyzed_at": "2025-12-31T17:06:19.050977",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -781,12 +746,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.hellmanns.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "axe.ai",
-    "analyzed_at": "2025-12-31T00:56:44.931589",
+    "domain": "purina.co.uk",
+    "analyzed_at": "2025-12-31T17:05:54.709518",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -794,25 +761,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://axe.ai/"
-  },
-  {
-    "domain": "axe.app",
-    "analyzed_at": "2025-12-31T00:56:47.036677",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.godaddy.com/forsale/axe.app"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "axe.ca",
-    "analyzed_at": "2025-12-31T00:56:50.774558",
+    "analyzed_at": "2025-12-31T17:06:25.512081",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -820,12 +776,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.axe.com/ca/en/home.html/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "axe.co",
-    "analyzed_at": "2025-12-31T00:56:52.968435",
+    "domain": "axe.ai",
+    "analyzed_at": "2025-12-31T17:06:21.467112",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -833,25 +791,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "axe.dev",
-    "analyzed_at": "2025-12-31T00:56:55.311698",
-    "accessible": true,
+    "domain": "axe.app",
+    "analyzed_at": "2025-12-31T17:06:22.238438",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "axe.io",
-    "analyzed_at": "2025-12-31T00:56:58.162689",
+    "analyzed_at": "2025-12-31T17:06:30.869512",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -859,12 +821,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "axe.net",
-    "analyzed_at": "2025-12-31T00:57:00.406164",
+    "analyzed_at": "2025-12-31T17:06:36.465424",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -872,12 +836,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "axe.org",
-    "analyzed_at": "2025-12-31T00:57:02.722239",
+    "domain": "axe.dev",
+    "analyzed_at": "2025-12-31T17:06:26.834262",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -885,12 +851,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "axe.co",
+    "analyzed_at": "2025-12-31T17:06:26.767794",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "axe.uk",
-    "analyzed_at": "2025-12-31T00:57:05.114396",
+    "analyzed_at": "2025-12-31T17:06:43.353369",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -898,29 +881,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='axe.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'axe.uk'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "axe.us",
-    "analyzed_at": "2025-12-31T00:57:07.199721",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.axe.us/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.ai",
-    "analyzed_at": "2025-12-31T00:57:09.437322",
+    "analyzed_at": "2025-12-31T17:06:47.406199",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 2
     },
@@ -929,16 +899,77 @@
     "related_domains": [
       "spaceship.com"
     ],
-    "risk_score": 11,
+    "risk_score": 8,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts"
     ],
     "seo_metadata": "dove.ai for sale | spaceship.com dove.ai is for sale on spaceship. secure checkout and quick transfer. see all purchase options. no hidden fees. buy dove.ai | spaceship own dove.ai today. secure checkout and guided transfer support. no hidden fees. spaceship buy dove.ai | spaceship own dove.ai today. secure checkout and guided transfer support. no hidden fees."
   },
   {
+    "domain": "axe.us",
+    "analyzed_at": "2025-12-31T17:06:43.551357",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "axe.org",
+    "analyzed_at": "2025-12-31T17:06:37.376212",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "dove.biz",
+    "analyzed_at": "2025-12-31T17:06:47.928821",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "dove.co",
+    "analyzed_at": "2025-12-31T17:06:48.948025",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
     "domain": "dove.app",
-    "analyzed_at": "2025-12-31T00:57:12.135620",
+    "analyzed_at": "2025-12-31T17:06:47.837172",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -961,6 +992,8 @@
       "top.domains"
     ],
     "risk_score": 11,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: discounts, convenience",
       "Employs aggressive marketing: social_proof"
@@ -968,8 +1001,8 @@
     "seo_metadata": "dove dot app: premium domain name (buy now) - dove.app dove dot app is a premium domain name for sale\u00a0\u00a0\u00a0"
   },
   {
-    "domain": "dove.biz",
-    "analyzed_at": "2025-12-31T00:57:14.776002",
+    "domain": "dove.co.uk",
+    "analyzed_at": "2025-12-31T17:06:49.373477",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -977,12 +1010,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://forsale.dynadot.com/forsale/dove.biz?drefid=2071"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.ca",
-    "analyzed_at": "2025-12-31T00:57:17.472801",
+    "analyzed_at": "2025-12-31T17:06:48.714745",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -990,25 +1025,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.dove.com/ca/en/home.html/"
-  },
-  {
-    "domain": "dove.co",
-    "analyzed_at": "2025-12-31T00:57:19.656782",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='dove.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.co.ca",
-    "analyzed_at": "2025-12-31T00:57:21.817851",
+    "analyzed_at": "2025-12-31T17:06:49.352796",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1016,38 +1040,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='dove.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "dove.co.uk",
-    "analyzed_at": "2025-12-31T00:57:24.704202",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='dove.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "dove.info",
-    "analyzed_at": "2025-12-31T00:57:26.791604",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.io",
-    "analyzed_at": "2025-12-31T00:57:29.110893",
+    "analyzed_at": "2025-12-31T17:06:49.987405",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1055,12 +1055,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
+  },
+  {
+    "domain": "dove.info",
+    "analyzed_at": "2025-12-31T17:06:49.608057",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "dove.org",
-    "analyzed_at": "2025-12-31T00:57:31.398009",
+    "analyzed_at": "2025-12-31T17:06:50.701134",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1068,51 +1085,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
-    "domain": "dove.us",
-    "analyzed_at": "2025-12-31T00:57:33.529831",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.dove.com/us/home.html/"
-  },
-  {
-    "domain": "hellmanns.biz",
-    "analyzed_at": "2025-12-31T00:57:35.735904",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='hellmanns.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hellmanns.biz', port=443) at 0x78b29a6fe050>, 'Connection to hellmanns.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "hellmanns.ca",
-    "analyzed_at": "2025-12-31T00:57:57.896246",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.hellmanns.com/ca/en/home.html/"
-  },
-  {
     "domain": "hellmanns.co.uk",
-    "analyzed_at": "2025-12-31T00:58:00.091696",
+    "analyzed_at": "2025-12-31T17:06:51.590992",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1120,12 +1100,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='hellmanns.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "dove.us",
+    "analyzed_at": "2025-12-31T17:06:50.877512",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "hellmanns.net",
-    "analyzed_at": "2025-12-31T00:58:02.175869",
+    "analyzed_at": "2025-12-31T17:06:51.809067",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1133,25 +1130,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "hellmanns.org",
-    "analyzed_at": "2025-12-31T00:58:04.524220",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://hellmanns.org/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "hellmanns.us",
-    "analyzed_at": "2025-12-31T00:58:06.667904",
+    "analyzed_at": "2025-12-31T17:06:52.533530",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1159,12 +1145,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.hellmanns.com/us/en/home.html/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "unilever.app",
-    "analyzed_at": "2025-12-31T00:58:08.869751",
+    "domain": "hellmanns.ca",
+    "analyzed_at": "2025-12-31T17:06:51.584989",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1172,25 +1160,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.app', port=443): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPSConnection(host='unilever.app', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
-  },
-  {
-    "domain": "unilever.biz",
-    "analyzed_at": "2025-12-31T00:58:20.918814",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.biz', port=443) at 0x78b29a340590>, 'Connection to unilever.biz timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "unilever.ca",
-    "analyzed_at": "2025-12-31T00:58:32.954149",
+    "analyzed_at": "2025-12-31T17:06:54.752352",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1198,12 +1175,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.unilever.ca/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gerber.info",
+    "analyzed_at": "2025-12-31T17:05:30.155255",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
+  },
+  {
+    "domain": "unilever.co.ca",
+    "analyzed_at": "2025-12-31T17:06:54.889413",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "unilever.co",
-    "analyzed_at": "2025-12-31T00:58:35.321403",
+    "analyzed_at": "2025-12-31T17:06:54.885679",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1221,38 +1230,59 @@
       "x.com"
     ],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": "unilever colombia | unilever en unilever satisfacemos las necesidades cotidianas con marcas que ayudan a las personas a sentirse bien, verse bien y aprovechar mejor la vida. unilever colombia | unilever en unilever satisfacemos las necesidades cotidianas con marcas que ayudan a las personas a sentirse bien, verse bien y aprovechar mejor la vida. unilever"
   },
   {
-    "domain": "unilever.co.ca",
-    "analyzed_at": "2025-12-31T00:58:37.785864",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
     "domain": "unilever.co.uk",
-    "analyzed_at": "2025-12-31T00:58:40.269437",
-    "accessible": false,
+    "analyzed_at": "2025-12-31T17:06:56.835226",
+    "accessible": true,
     "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.unilever.co.uk/"
+    "behavioral_hazards": {
+      "discounts": 1,
+      "upselling": 1
+    },
+    "marketing_tactics": {
+      "scarcity": 2
+    },
+    "promoted_products": [
+      "Unilever in the UK",
+      "Innovation and R&D",
+      "Closing The Loop On Plastic",
+      "Climate & Nature",
+      "Responsible Business",
+      "The challenges of using recycled plastic and how we\u2019re responding",
+      "Top takeaways from Unilever CEO\u2019s interview with JP Morgan",
+      "How Unilever is supporting In Kind Direct to tackle hygiene poverty",
+      "Unilever sells Graze to Katjes International",
+      "How Unilever is building meaningful impact through sports partnerships"
+    ],
+    "related_domains": [
+      "careers.unilever.com",
+      "facebook.com",
+      "instagram.com",
+      "linkedin.com",
+      "notices.unilever.com",
+      "unilever.co.uk",
+      "unilevernotices.com",
+      "wiop.unilever.co.uk",
+      "x.com",
+      "youtube.com"
+    ],
+    "risk_score": 14,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [
+      "Uses behavioral manipulation: discounts, upselling",
+      "Employs aggressive marketing: scarcity"
+    ],
+    "seo_metadata": "unilever uk & ireland | unilever at unilever we meet everyday needs for nutrition, hygiene and personal care with brands that help people feel good, look good and get more out of life. unilever uk & ireland | unilever at unilever we meet everyday needs for nutrition, hygiene and personal care with brands that help people feel good, look good and get more out of life. unilever"
   },
   {
-    "domain": "unilever.io",
-    "analyzed_at": "2025-12-31T00:58:42.448803",
+    "domain": "hellmanns.org",
+    "analyzed_at": "2025-12-31T17:06:51.906965",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1260,38 +1290,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "unilever.net",
-    "analyzed_at": "2025-12-31T00:58:44.781456",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.net', port=443) at 0x78b29aa67e50>, 'Connection to unilever.net timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "unilever.org",
-    "analyzed_at": "2025-12-31T00:58:56.821595",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.org', port=443) at 0x78b29a17ab90>, 'Connection to unilever.org timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "unilever.us",
-    "analyzed_at": "2025-12-31T00:59:08.863427",
+    "analyzed_at": "2025-12-31T17:06:58.858711",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1299,42 +1305,65 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='unilever.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "unilever.io",
+    "analyzed_at": "2025-12-31T17:06:56.933918",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {
+      "discounts": 1
+    },
+    "marketing_tactics": {},
+    "promoted_products": [
+      "Get this domain"
+    ],
+    "related_domains": [
+      "trustpilot.com"
+    ],
+    "risk_score": 4,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [
+      "Uses behavioral manipulation: discounts"
+    ],
+    "error": "Insufficient content (0 chars, needs 500+)",
+    "method": "playwright",
+    "seo_metadata": "unilever.io forsale lander"
   },
   {
     "domain": "pg.com",
-    "analyzed_at": "2025-12-31T00:59:10.944339",
+    "analyzed_at": "2025-12-31T17:06:59.746011",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "us.pg.com",
-    "analyzed_at": "2025-12-31T00:59:14.686996",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
+    "risk_score": 2,
+    "enabler_risk_bonus": 2,
+    "high_risk_links": [],
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)",
+      "  \u2190 Enables: gillette.com (risk: 29)"
+    ],
+    "seo_metadata": "",
+    "facilitated_domains": [
+      {
+        "domain": "gillette.com",
+        "risk_score": 29
+      }
+    ]
   },
   {
     "domain": "gillette.com",
-    "analyzed_at": "2025-12-31T00:59:18.217859",
+    "analyzed_at": "2025-12-31T17:07:02.322612",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 3,
       "convenience": 1,
@@ -1364,21 +1393,75 @@
       "us.pg.com",
       "youtube.com"
     ],
-    "risk_score": 32,
+    "risk_score": 29,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts, convenience, addiction_language",
       "Employs aggressive marketing: scarcity, fomo"
     ],
     "seo_metadata": "men's razors & shaving products | gillette\u00ae experience an exceptional shave with gillette men's razors, engineered to give you a comfortably smooth shave every time. shop shaving products & more! fan razor | gillette\u00ae personalize a razor for the sports fan in your life. get a custom printed nfl or nascar logo on a gillette proshield\u2122 razor."
   },
   {
+    "domain": "us.pg.com",
+    "analyzed_at": "2025-12-31T17:07:00.250487",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 2,
+    "enabler_risk_bonus": 2,
+    "high_risk_links": [],
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)",
+      "  \u2190 Enables: gillette.com (risk: 29)"
+    ],
+    "seo_metadata": "",
+    "facilitated_domains": [
+      {
+        "domain": "gillette.com",
+        "risk_score": 29
+      }
+    ]
+  },
+  {
+    "domain": "unilever.biz",
+    "analyzed_at": "2025-12-31T17:06:54.192785",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "unilever.app",
+    "analyzed_at": "2025-12-31T17:06:54.057040",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
     "domain": "tide.com",
-    "analyzed_at": "2025-12-31T00:59:20.835447",
+    "analyzed_at": "2025-12-31T17:07:03.968465",
     "accessible": true,
     "health_hazards": {
-      "sugar": 2,
-      "fast_food": 1
+      "sugar": 2
     },
     "behavioral_hazards": {
       "discounts": 2
@@ -1420,17 +1503,34 @@
       "us.pg.com",
       "youtube.com"
     ],
-    "risk_score": 20,
+    "risk_score": 17,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: sugar, fast_food",
+      "Promotes health hazards: sugar",
       "Uses behavioral manipulation: discounts",
       "Employs aggressive marketing: personalization"
     ],
     "seo_metadata": "laundry detergent and fabric care products - tide visit tide for the greatest in laundry products. with powders, liquids and pacs on offer; learn about stain removal, fabric care, and more from tide! tide, laundry detergent, he detergent, stain removal, instant stain remover, remove stains, liquid detergent, washing powder, tide pods laundry detergent and fabric care products - tide visit tide for the greatest in laundry products. with powders, liquids and pacs on offer; learn about stain remova"
   },
   {
+    "domain": "gillette.ai",
+    "analyzed_at": "2025-12-31T17:07:04.250911",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
     "domain": "pantene.com",
-    "analyzed_at": "2025-12-31T00:59:23.033169",
+    "analyzed_at": "2025-12-31T17:07:04.219264",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -1478,27 +1578,16 @@
       "pantene.de"
     ],
     "risk_score": 8,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: discounts, addiction_language"
     ],
     "seo_metadata": "pantene en-us get shiny, healthy looking hair with pantene shampoos, conditioners, styling products and hair treatments, designed to meet your hair's individual needs. hair products for all hair types. get shiny, healthy looking hair with pantene shampoos, conditioners, styling products and hair treatments, designed to meet your hair's individual needs."
   },
   {
-    "domain": "gillette.ai",
-    "analyzed_at": "2025-12-31T00:59:25.256075",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
     "domain": "gillette.ca",
-    "analyzed_at": "2025-12-31T00:59:27.570019",
+    "analyzed_at": "2025-12-31T17:07:05.782042",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1506,12 +1595,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
+    "domain": "gillette.io",
+    "analyzed_at": "2025-12-31T17:07:06.098349",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "unilever.net",
+    "analyzed_at": "2025-12-31T17:06:57.077215",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
     "domain": "gillette.co.uk",
-    "analyzed_at": "2025-12-31T00:59:30.255610",
+    "analyzed_at": "2025-12-31T17:07:06.052149",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -1521,27 +1642,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 4,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: discounts"
     ],
-    "seo_metadata": "\u0088\u0000\u0000@\n\u00a4,\u000fq\u00a4\u0091j_\u00a9\u0005fz\u00f6\u00008\u0000\b"
-  },
-  {
-    "domain": "gillette.io",
-    "analyzed_at": "2025-12-31T00:59:33.244615",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "seo_metadata": ""
   },
   {
     "domain": "gillette.net",
-    "analyzed_at": "2025-12-31T00:59:35.571324",
+    "analyzed_at": "2025-12-31T17:07:07.309239",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1549,12 +1659,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "unilever.org",
+    "analyzed_at": "2025-12-31T17:06:57.440222",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pantene.net",
+    "analyzed_at": "2025-12-31T17:07:08.804162",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "gillette.org",
-    "analyzed_at": "2025-12-31T00:59:38.030000",
+    "analyzed_at": "2025-12-31T17:07:07.319890",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1562,29 +1704,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='gillette.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gillette.org'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "gillette.uk",
-    "analyzed_at": "2025-12-31T00:59:40.381721",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gillette.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gillette.uk', port=443) at 0x78b299d25c50>, 'Connection to gillette.uk timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://gillette.org/\nCall log:\n  - navigating to \"https://gillette.org/\", waiting until \"domcontentloaded\"\n"
   },
   {
     "domain": "pantene.ca",
-    "analyzed_at": "2025-12-31T01:00:02.433335",
+    "analyzed_at": "2025-12-31T17:07:08.180869",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 2,
       "addiction_language": 1
@@ -1621,9 +1750,10 @@
       "pantene.com.ph",
       "pantene.com.tr"
     ],
-    "risk_score": 21,
+    "risk_score": 18,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts, addiction_language",
       "Employs aggressive marketing: social_proof, personalization"
     ],
@@ -1631,7 +1761,7 @@
   },
   {
     "domain": "pantene.co.uk",
-    "analyzed_at": "2025-12-31T01:00:05.421640",
+    "analyzed_at": "2025-12-31T17:07:08.642238",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1643,25 +1773,14 @@
       "termsandconditions.pg.com"
     ],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": "haircode.uk: timeless hair tips, modern hair trends, best hair products discover top hair products, expert tips, and the latest trends to keep your hair looking fabulous between salon visits. your ultimate hair care resource! haircode.uk: timeless hair tips, modern hair trends, best hair products discover top hair products, expert tips, and the latest trends to keep your hair looking fabulous between salon visits. your ultimate hair care resource!"
   },
   {
-    "domain": "pantene.net",
-    "analyzed_at": "2025-12-31T01:00:08.108359",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
     "domain": "pantene.org",
-    "analyzed_at": "2025-12-31T01:00:10.435466",
+    "analyzed_at": "2025-12-31T17:07:09.170240",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -1709,14 +1828,16 @@
       "pantene.de"
     ],
     "risk_score": 8,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: discounts, addiction_language"
     ],
     "seo_metadata": "pantene en-us get shiny, healthy looking hair with pantene shampoos, conditioners, styling products and hair treatments, designed to meet your hair's individual needs. hair products for all hair types. get shiny, healthy looking hair with pantene shampoos, conditioners, styling products and hair treatments, designed to meet your hair's individual needs."
   },
   {
-    "domain": "pg.ai",
-    "analyzed_at": "2025-12-31T01:00:13.362476",
+    "domain": "hellmanns.biz",
+    "analyzed_at": "2025-12-31T17:06:51.196787",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1724,12 +1845,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pg.ai', port=443): Read timed out. (read timeout=10)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "pg.app",
-    "analyzed_at": "2025-12-31T01:00:25.783132",
+    "domain": "pg.co.ca",
+    "analyzed_at": "2025-12-31T17:07:11.463272",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1737,25 +1860,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "pg.biz",
-    "analyzed_at": "2025-12-31T01:00:29.866939",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='pg.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pg.ca",
-    "analyzed_at": "2025-12-31T01:00:33.628975",
+    "analyzed_at": "2025-12-31T17:07:11.123179",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1763,12 +1875,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
-    "domain": "pg.co.ca",
-    "analyzed_at": "2025-12-31T01:00:37.747715",
+    "domain": "pg.app",
+    "analyzed_at": "2025-12-31T17:07:10.677332",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1776,29 +1890,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "pg.co.uk",
-    "analyzed_at": "2025-12-31T01:00:40.287067",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Exceeded 30 redirects."
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pg.io",
-    "analyzed_at": "2025-12-31T01:00:45.549715",
+    "analyzed_at": "2025-12-31T17:07:12.569658",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 2,
       "addiction_language": 1
@@ -1816,16 +1917,17 @@
     "related_domains": [
       "playgendary.com"
     ],
-    "risk_score": 15,
+    "risk_score": 12,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts, addiction_language"
     ],
     "seo_metadata": ""
   },
   {
-    "domain": "pg.net",
-    "analyzed_at": "2025-12-31T01:00:48.006399",
+    "domain": "pg.biz",
+    "analyzed_at": "2025-12-31T17:07:10.910998",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1833,27 +1935,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pg.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pg.net'. (_ssl.c:1016)\")))"
+    "error": "Playwright error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://pg.biz/\nCall log:\n  - navigating to \"https://pg.biz/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "domain": "pg.net",
+    "analyzed_at": "2025-12-31T17:07:13.184613",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pg.co.uk",
+    "analyzed_at": "2025-12-31T17:07:11.583980",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pg.org",
-    "analyzed_at": "2025-12-31T01:00:50.680504",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [
-      "every.org"
-    ],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": "pgo give 10% or more of the revenue from your next film, project, or company to support the public good. pgo give 10% or more of the revenue from your next film, project, or company to support the public good."
-  },
-  {
-    "domain": "pg.uk",
-    "analyzed_at": "2025-12-31T01:00:53.495083",
+    "analyzed_at": "2025-12-31T17:07:14.266178",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1861,16 +1980,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pg.uk', port=443) at 0x78b299b8fe90>, 'Connection to pg.uk timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "tide.ai",
-    "analyzed_at": "2025-12-31T01:01:15.532525",
+    "analyzed_at": "2025-12-31T17:07:15.138027",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 2
     },
@@ -1879,29 +1998,17 @@
     "related_domains": [
       "spaceship.com"
     ],
-    "risk_score": 11,
+    "risk_score": 8,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts"
     ],
     "seo_metadata": "tide.ai for sale | spaceship.com tide.ai is for sale on spaceship. secure checkout and quick transfer. see all purchase options. no hidden fees. buy tide.ai | spaceship own tide.ai today. secure checkout and guided transfer support. no hidden fees. spaceship buy tide.ai | spaceship own tide.ai today. secure checkout and guided transfer support. no hidden fees."
   },
   {
-    "domain": "tide.app",
-    "analyzed_at": "2025-12-31T01:01:18.114313",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
     "domain": "tide.ca",
-    "analyzed_at": "2025-12-31T01:01:20.942673",
+    "analyzed_at": "2025-12-31T17:07:15.898514",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1909,38 +2016,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "tide.co",
-    "analyzed_at": "2025-12-31T01:01:23.482931",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "tide.co.uk",
-    "analyzed_at": "2025-12-31T01:01:25.782959",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
     "domain": "tide.io",
-    "analyzed_at": "2025-12-31T01:01:28.133661",
+    "analyzed_at": "2025-12-31T17:07:17.091652",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1948,12 +2031,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "tide.co",
+    "analyzed_at": "2025-12-31T17:07:16.072098",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "tide.co.uk",
+    "analyzed_at": "2025-12-31T17:07:17.054210",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "seo_metadata": ""
   },
   {
     "domain": "tide.net",
-    "analyzed_at": "2025-12-31T01:01:30.264259",
+    "analyzed_at": "2025-12-31T17:07:18.839326",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1961,25 +2076,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "tide.org",
-    "analyzed_at": "2025-12-31T01:01:32.402296",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "tide.uk",
-    "analyzed_at": "2025-12-31T01:01:35.327958",
+    "analyzed_at": "2025-12-31T17:07:18.908374",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -1987,12 +2091,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
-    "domain": "us.pg.ai",
-    "analyzed_at": "2025-12-31T01:01:37.838628",
+    "domain": "tide.org",
+    "analyzed_at": "2025-12-31T17:07:18.906378",
+    "accessible": true,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "seo_metadata": ""
+  },
+  {
+    "domain": "tide.app",
+    "analyzed_at": "2025-12-31T17:07:15.775958",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2000,12 +2121,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='us.pg.ai', port=443): Read timed out. (read timeout=10)"
+    "error": "Playwright: Insufficient content (122 chars)"
+  },
+  {
+    "domain": "pg.ai",
+    "analyzed_at": "2025-12-31T17:07:09.212633",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gillette.uk",
+    "analyzed_at": "2025-12-31T17:07:08.110289",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "us.pg.co.ca",
-    "analyzed_at": "2025-12-31T01:01:52.373576",
+    "analyzed_at": "2025-12-31T17:07:20.452772",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2013,90 +2166,104 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='us.pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "us.pg.uk",
-    "analyzed_at": "2025-12-31T01:01:54.857148",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='us.pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='us.pg.uk', port=443) at 0x78b299b1c1d0>, 'Connection to us.pg.uk timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.com",
-    "analyzed_at": "2025-12-31T01:02:16.907520",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:21.762315",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "cocacola.com",
-    "analyzed_at": "2025-12-31T01:02:19.579205",
-    "accessible": true,
+    "domain": "us.pg.ai",
+    "analyzed_at": "2025-12-31T17:07:19.438205",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "sprite.com",
-    "analyzed_at": "2025-12-31T01:02:22.190641",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:24.430212",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pg.uk",
+    "analyzed_at": "2025-12-31T17:07:14.822387",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fanta.com",
-    "analyzed_at": "2025-12-31T01:02:25.491968",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:30.166352",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "us.pg.uk",
+    "analyzed_at": "2025-12-31T17:07:20.811883",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.ai",
-    "analyzed_at": "2025-12-31T01:02:28.334362",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "coca-cola.biz",
-    "analyzed_at": "2025-12-31T01:02:30.889941",
+    "analyzed_at": "2025-12-31T17:07:32.438357",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2104,48 +2271,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='coca-cola.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.biz', port=443) at 0x78b29a226610>, 'Connection to coca-cola.biz timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.ca",
-    "analyzed_at": "2025-12-31T01:02:42.923087",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:33.365439",
+    "accessible": false,
     "health_hazards": {},
-    "behavioral_hazards": {
-      "discounts": 2
-    },
-    "marketing_tactics": {
-      "fomo": 1
-    },
-    "promoted_products": [
-      "Flag Bearer Sweepstakes",
-      "Future Careers Academy",
-      "Create your Star Wars\u00c2\u00ae Hologram",
-      "About us",
-      "Need help?",
-      "Legal"
-    ],
-    "related_domains": [
-      "coca-cola.com",
-      "coca-colacompany.com",
-      "facebook.com",
-      "instagram.com",
-      "privacyportal.onetrust.com",
-      "shop-cocacola.com",
-      "x.com",
-      "youtube.com"
-    ],
-    "risk_score": 11,
-    "justification": [
-      "Uses behavioral manipulation: discounts",
-      "Employs aggressive marketing: fomo"
-    ],
-    "seo_metadata": "home page | coca-cola ca welcome to the home page of coca-cola canada. discover our brands, product information, and the latest updates from the coca-cola company. home page | coca-cola ca welcome to the home page of coca-cola canada. discover our brands, product information, and the latest updates from the coca-cola company. coca-cola home page | coca-cola ca welcome to the home page of coca-cola canada. discover our brands, product information, and the latest updates from the coca-cola company"
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "coca-cola.biz",
+    "analyzed_at": "2025-12-31T17:07:33.155733",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.co.ca",
-    "analyzed_at": "2025-12-31T01:02:45.742072",
+    "analyzed_at": "2025-12-31T17:07:35.526204",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2153,25 +2316,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='coca-cola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.co.uk",
-    "analyzed_at": "2025-12-31T01:02:48.230372",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:36.564576",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.io",
-    "analyzed_at": "2025-12-31T01:02:50.949576",
+    "analyzed_at": "2025-12-31T17:07:41.495221",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2179,12 +2346,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='coca-cola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.io', port=443) at 0x78b299b1f490>, 'Connection to coca-cola.io timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "coca-cola.net",
-    "analyzed_at": "2025-12-31T01:03:02.982580",
+    "analyzed_at": "2025-12-31T17:07:42.399500",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2192,25 +2361,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='coca-cola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.net', port=443) at 0x78b299a37910>, 'Connection to coca-cola.net timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "coca-cola.org",
-    "analyzed_at": "2025-12-31T01:03:15.015163",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='coca-cola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.org', port=443) at 0x78b299a42150>, 'Connection to coca-cola.org timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.ai",
-    "analyzed_at": "2025-12-31T01:03:27.048611",
+    "analyzed_at": "2025-12-31T17:07:44.898350",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2218,25 +2376,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.ai', port=443) at 0x78b299a43f10>, 'Connection to cocacola.ai timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "coca-cola.org",
+    "analyzed_at": "2025-12-31T17:07:44.355526",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.app",
-    "analyzed_at": "2025-12-31T01:03:39.091014",
-    "accessible": true,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "seo_metadata": ""
-  },
-  {
-    "domain": "cocacola.ca",
-    "analyzed_at": "2025-12-31T01:03:41.758879",
+    "analyzed_at": "2025-12-31T17:07:44.961059",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2244,12 +2406,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.co.ca",
-    "analyzed_at": "2025-12-31T01:03:44.187934",
+    "analyzed_at": "2025-12-31T17:07:47.766468",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2257,25 +2421,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.co.uk",
-    "analyzed_at": "2025-12-31T01:03:46.673882",
-    "accessible": true,
+    "analyzed_at": "2025-12-31T17:07:52.682621",
+    "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "seo_metadata": ""
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.io",
-    "analyzed_at": "2025-12-31T01:03:49.285082",
+    "analyzed_at": "2025-12-31T17:07:54.367827",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2283,12 +2451,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.io', port=443) at 0x78b299a54f90>, 'Connection to cocacola.io timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.net",
-    "analyzed_at": "2025-12-31T01:04:01.339182",
+    "analyzed_at": "2025-12-31T17:07:55.949891",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2296,12 +2466,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.net', port=443) at 0x78b29a2e9e50>, 'Connection to cocacola.net timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "cocacola.org",
-    "analyzed_at": "2025-12-31T01:04:13.373792",
+    "analyzed_at": "2025-12-31T17:07:55.962467",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2309,12 +2481,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='cocacola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.org', port=443) at 0x78b299a1e590>, 'Connection to cocacola.org timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fanta.ai",
-    "analyzed_at": "2025-12-31T01:04:25.416555",
+    "analyzed_at": "2025-12-31T17:07:56.857743",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2322,25 +2496,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "fanta.biz",
-    "analyzed_at": "2025-12-31T01:04:27.503499",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='fanta.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fanta.biz', port=443) at 0x78b299a02390>, 'Connection to fanta.biz timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fanta.ca",
-    "analyzed_at": "2025-12-31T01:04:39.532705",
+    "analyzed_at": "2025-12-31T17:08:03.778246",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2348,12 +2511,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='fanta.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fanta.ca'. (_ssl.c:1016)\")))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fanta.co",
-    "analyzed_at": "2025-12-31T01:04:41.801594",
+    "analyzed_at": "2025-12-31T17:08:05.915376",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2361,12 +2526,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "fanta.net",
+    "analyzed_at": "2025-12-31T17:08:07.311800",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fanta.co.uk",
-    "analyzed_at": "2025-12-31T01:04:44.150206",
+    "analyzed_at": "2025-12-31T17:08:07.265238",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2374,12 +2556,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
-    "domain": "fanta.net",
-    "analyzed_at": "2025-12-31T01:04:47.328633",
+    "domain": "fanta.biz",
+    "analyzed_at": "2025-12-31T17:07:59.077211",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2387,12 +2571,29 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://fanta.net/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "cocacola.com",
+    "analyzed_at": "2025-12-31T17:07:23.333291",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
   },
   {
     "domain": "sprite.ca",
-    "analyzed_at": "2025-12-31T01:04:49.712339",
+    "analyzed_at": "2025-12-31T17:08:08.279951",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -2425,40 +2626,16 @@
       "youtube.com"
     ],
     "risk_score": 12,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: discounts, upselling"
     ],
     "seo_metadata": "sprite computers"
   },
   {
-    "domain": "sprite.co.uk",
-    "analyzed_at": "2025-12-31T01:04:53.947187",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "523 Server Error: <none> for url: https://omniscot.com/"
-  },
-  {
-    "domain": "sprite.io",
-    "analyzed_at": "2025-12-31T01:04:56.707754",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
     "domain": "sprite.net",
-    "analyzed_at": "2025-12-31T01:05:02.765695",
+    "analyzed_at": "2025-12-31T17:08:10.192590",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2466,12 +2643,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
     "domain": "sprite.org",
-    "analyzed_at": "2025-12-31T01:05:05.596421",
+    "analyzed_at": "2025-12-31T17:08:10.274848",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2479,25 +2658,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
-    "domain": "sprite.uk",
-    "analyzed_at": "2025-12-31T01:05:09.250267",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "523 Server Error: <none> for url: https://omniscot.com/"
-  },
-  {
     "domain": "pepsico.com",
-    "analyzed_at": "2025-12-31T01:05:12.670895",
+    "analyzed_at": "2025-12-31T17:08:11.744546",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -2524,48 +2692,61 @@
       "youtube.com"
     ],
     "risk_score": 4,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: addiction_language"
     ],
     "seo_metadata": "pepsico | food and drinks to smile about experience the taste and energy of pepsico. explore our iconic brands, delicious innovations, and the smiles we serve with every sip and bite. pepsico | food and drinks to smile about experience the taste and energy of pepsico. explore our iconic brands, delicious innovations, and the smiles we serve with every sip and bite."
   },
   {
-    "domain": "pepsi.com",
-    "analyzed_at": "2025-12-31T01:05:15.230712",
-    "accessible": true,
-    "health_hazards": {
-      "sugar": 1
-    },
-    "behavioral_hazards": {
-      "discounts": 1
-    },
+    "domain": "sprite.co.uk",
+    "analyzed_at": "2025-12-31T17:08:08.585803",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
     "marketing_tactics": {},
-    "promoted_products": [
-      "PEPSI MAX CHERRY",
-      "PEPSI MAX MANGO",
-      "PEPSI MAX LIME",
-      "PEPSI MAX NO CAFFEINE",
-      "DIET PEPSI",
-      "Pepsi Zero Sugar Strawberry and Cream",
-      "Pepsi Zero Sugar Cream Soda"
-    ],
-    "related_domains": [
-      "facebook.com",
-      "instagram.com",
-      "pepsicoprivacypolicy.com",
-      "twitter.com",
-      "youtube.com"
-    ],
-    "risk_score": 7,
-    "justification": [
-      "Promotes health hazards: sugar",
-      "Uses behavioral manipulation: discounts"
-    ],
-    "seo_metadata": "pepsi uk | official site explore pepsi max, diet pepsi and new flavours. maximum taste with sugar free options. ingredients and nutritional info. pepsi cola, pepsi drinks, pepsi max, pepsi uk, pepsi beverages, pepsi brand uk"
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "sprite.uk",
+    "analyzed_at": "2025-12-31T17:08:10.286827",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "sprite.io",
+    "analyzed_at": "2025-12-31T17:08:09.693150",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "fritolay.com",
-    "analyzed_at": "2025-12-31T01:05:18.250723",
+    "analyzed_at": "2025-12-31T17:08:12.654515",
     "accessible": true,
     "health_hazards": {
       "sugar": 1
@@ -2603,6 +2784,8 @@
       "tostitos.com"
     ],
     "risk_score": 18,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Promotes health hazards: sugar",
       "Uses behavioral manipulation: upselling, addiction_language",
@@ -2612,7 +2795,7 @@
   },
   {
     "domain": "gatorade.com",
-    "analyzed_at": "2025-12-31T01:05:20.923732",
+    "analyzed_at": "2025-12-31T17:08:13.271265",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2620,64 +2803,50 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://www.gatorade.com/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "fritolay.ai",
-    "analyzed_at": "2025-12-31T01:05:23.410801",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
+    "domain": "pepsi.com",
+    "analyzed_at": "2025-12-31T17:08:11.975687",
+    "accessible": true,
+    "health_hazards": {
+      "sugar": 1
+    },
+    "behavioral_hazards": {
+      "discounts": 1
+    },
     "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "fritolay.app",
-    "analyzed_at": "2025-12-31T01:05:25.740958",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='fritolay.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritolay.app', port=443) at 0x78b29a159bd0>, 'Connection to fritolay.app timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "fritolay.biz",
-    "analyzed_at": "2025-12-31T01:05:37.781835",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='fritolay.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritolay.biz', port=443) at 0x78b29a159ed0>, 'Connection to fritolay.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "fritolay.ca",
-    "analyzed_at": "2025-12-31T01:05:49.967657",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='fritolay.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
+    "promoted_products": [
+      "PEPSI MAX CHERRY",
+      "PEPSI MAX MANGO",
+      "PEPSI MAX LIME",
+      "PEPSI MAX NO CAFFEINE",
+      "DIET PEPSI",
+      "Pepsi Zero Sugar Strawberry and Cream",
+      "Pepsi Zero Sugar Cream Soda"
+    ],
+    "related_domains": [
+      "facebook.com",
+      "instagram.com",
+      "pepsicoprivacypolicy.com",
+      "twitter.com",
+      "youtube.com"
+    ],
+    "risk_score": 7,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [
+      "Promotes health hazards: sugar",
+      "Uses behavioral manipulation: discounts"
+    ],
+    "seo_metadata": "pepsi uk | official site explore pepsi max, diet pepsi and new flavours. maximum taste with sugar free options. ingredients and nutritional info. pepsi cola, pepsi drinks, pepsi max, pepsi uk, pepsi beverages, pepsi brand uk"
   },
   {
     "domain": "fritolay.co.uk",
-    "analyzed_at": "2025-12-31T01:05:58.132975",
+    "analyzed_at": "2025-12-31T17:08:14.915451",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2685,12 +2854,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "fritolay.info",
-    "analyzed_at": "2025-12-31T01:06:00.462956",
+    "domain": "fritolay.ca",
+    "analyzed_at": "2025-12-31T17:08:14.848730",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2698,38 +2869,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='fritolay.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritolay.info', port=443) at 0x78b29a0b2bd0>, 'Connection to fritolay.info timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "fritolay.us",
-    "analyzed_at": "2025-12-31T01:06:12.611721",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='fritolay.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))"
-  },
-  {
-    "domain": "gatorade.ai",
-    "analyzed_at": "2025-12-31T01:06:17.798973",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gatorade.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gatorade.ai'. (_ssl.c:1016)\")))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "gatorade.ca",
-    "analyzed_at": "2025-12-31T01:06:20.151577",
+    "analyzed_at": "2025-12-31T17:08:17.036025",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2737,12 +2884,59 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
+    "domain": "cocacola.ca",
+    "analyzed_at": "2025-12-31T17:07:46.813253",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "gatorade.ai",
+    "analyzed_at": "2025-12-31T17:08:16.973714",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "fritolay.ai",
+    "analyzed_at": "2025-12-31T17:08:14.232694",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright: Insufficient content (0 chars)"
+  },
+  {
     "domain": "gatorade.co.uk",
-    "analyzed_at": "2025-12-31T01:06:22.502847",
+    "analyzed_at": "2025-12-31T17:08:18.669881",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2750,12 +2944,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
     "seo_metadata": ""
   },
   {
     "domain": "gatorade.io",
-    "analyzed_at": "2025-12-31T01:06:24.928157",
+    "analyzed_at": "2025-12-31T17:08:18.950399",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2763,29 +2959,16 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "gatorade.net",
-    "analyzed_at": "2025-12-31T01:06:27.245117",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='gatorade.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gatorade.net', port=443) at 0x78b29a15bfd0>, 'Connection to gatorade.net timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "gatorade.org",
-    "analyzed_at": "2025-12-31T01:06:39.889109",
+    "analyzed_at": "2025-12-31T17:08:19.950416",
     "accessible": true,
-    "health_hazards": {
-      "fast_food": 1
-    },
+    "health_hazards": {},
     "behavioral_hazards": {
       "discounts": 2
     },
@@ -2794,16 +2977,17 @@
     "related_domains": [
       "spaceship.com"
     ],
-    "risk_score": 11,
+    "risk_score": 8,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
-      "Promotes health hazards: fast_food",
       "Uses behavioral manipulation: discounts"
     ],
     "seo_metadata": "gatorade.org for sale | spaceship.com gatorade.org is for sale on spaceship. secure checkout and quick transfer. see all purchase options. no hidden fees. buy gatorade.org | spaceship own gatorade.org today. secure checkout and guided transfer support. no hidden fees. spaceship buy gatorade.org | spaceship own gatorade.org today. secure checkout and guided transfer support. no hidden fees."
   },
   {
     "domain": "gatorade.us",
-    "analyzed_at": "2025-12-31T01:06:42.454580",
+    "analyzed_at": "2025-12-31T17:08:20.066715",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2811,12 +2995,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "403 Client Error: Forbidden for url: https://gatorade.us/cgi-sys/suspendedpage.cgi"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsi.ai",
-    "analyzed_at": "2025-12-31T01:06:45.182467",
+    "analyzed_at": "2025-12-31T17:08:21.261641",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2824,38 +3010,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "439 Client Error: status code 439 for url: https://pepsi.ai/"
-  },
-  {
-    "domain": "pepsi.app",
-    "analyzed_at": "2025-12-31T01:06:47.351409",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "pepsi.ca",
-    "analyzed_at": "2025-12-31T01:06:49.691360",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsi.co",
-    "analyzed_at": "2025-12-31T01:06:52.402785",
+    "analyzed_at": "2025-12-31T17:08:22.580187",
     "accessible": true,
     "health_hazards": {},
     "behavioral_hazards": {
@@ -2889,6 +3051,8 @@
       "twitter.com"
     ],
     "risk_score": 10,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Uses behavioral manipulation: upselling",
       "Employs aggressive marketing: social_proof, fomo"
@@ -2896,8 +3060,8 @@
     "seo_metadata": "custom domain by bitly custom domain by bitly bitly"
   },
   {
-    "domain": "pepsi.co.ca",
-    "analyzed_at": "2025-12-31T01:06:54.948929",
+    "domain": "fritolay.app",
+    "analyzed_at": "2025-12-31T17:08:14.614903",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -2905,12 +3069,119 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsi.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.ca",
+    "analyzed_at": "2025-12-31T17:08:22.554367",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "fritolay.biz",
+    "analyzed_at": "2025-12-31T17:08:14.615173",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.app",
+    "analyzed_at": "2025-12-31T17:08:22.021150",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright: Insufficient content (0 chars)"
+  },
+  {
+    "domain": "fritolay.us",
+    "analyzed_at": "2025-12-31T17:08:15.967808",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "fritolay.info",
+    "analyzed_at": "2025-12-31T17:08:15.585163",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.io",
+    "analyzed_at": "2025-12-31T17:08:26.489319",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.co.ca",
+    "analyzed_at": "2025-12-31T17:08:26.309406",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsi.co.uk",
-    "analyzed_at": "2025-12-31T01:06:57.513477",
+    "analyzed_at": "2025-12-31T17:08:26.373655",
     "accessible": true,
     "health_hazards": {
       "sugar": 1
@@ -2936,6 +3207,8 @@
       "youtube.com"
     ],
     "risk_score": 7,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [
       "Promotes health hazards: sugar",
       "Uses behavioral manipulation: discounts"
@@ -2943,73 +3216,8 @@
     "seo_metadata": "pepsi uk | official site explore pepsi max, diet pepsi and new flavours. maximum taste with sugar free options. ingredients and nutritional info. pepsi cola, pepsi drinks, pepsi max, pepsi uk, pepsi beverages, pepsi brand uk"
   },
   {
-    "domain": "pepsi.info",
-    "analyzed_at": "2025-12-31T01:07:00.274863",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsi.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pepsi.info', port=443) at 0x78b29a5d0b10>, 'Connection to pepsi.info timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "pepsi.io",
-    "analyzed_at": "2025-12-31T01:07:12.389403",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsi.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pepsi.io'. (_ssl.c:1016)\")))"
-  },
-  {
-    "domain": "pepsi.net",
-    "analyzed_at": "2025-12-31T01:07:14.509658",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsi.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pepsi.net', port=443) at 0x78b29a5d1350>, 'Connection to pepsi.net timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "pepsi.org",
-    "analyzed_at": "2025-12-31T01:07:26.652557",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsi.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pepsi.org', port=443) at 0x78b299c0fb10>, 'Connection to pepsi.org timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "pepsi.us",
-    "analyzed_at": "2025-12-31T01:07:38.795109",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
     "domain": "pepsico.ai",
-    "analyzed_at": "2025-12-31T01:07:41.412524",
+    "analyzed_at": "2025-12-31T17:08:27.859337",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3017,12 +3225,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.app",
-    "analyzed_at": "2025-12-31T01:07:43.737280",
+    "analyzed_at": "2025-12-31T17:08:28.611867",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3030,12 +3240,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "pepsico.biz",
-    "analyzed_at": "2025-12-31T01:07:46.061521",
+    "domain": "gatorade.net",
+    "analyzed_at": "2025-12-31T17:08:19.070371",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3043,38 +3255,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsico.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pepsico.biz', port=443) at 0x78b29a2e1550>, 'Connection to pepsico.biz timed out. (connect timeout=10)'))"
-  },
-  {
-    "domain": "pepsico.ca",
-    "analyzed_at": "2025-12-31T01:07:58.208576",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
-  },
-  {
-    "domain": "pepsico.co",
-    "analyzed_at": "2025-12-31T01:08:01.076373",
-    "accessible": false,
-    "health_hazards": {},
-    "behavioral_hazards": {},
-    "marketing_tactics": {},
-    "promoted_products": [],
-    "related_domains": [],
-    "risk_score": 0,
-    "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.co.uk",
-    "analyzed_at": "2025-12-31T01:08:04.182827",
+    "analyzed_at": "2025-12-31T17:08:33.119449",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3082,12 +3270,44 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsico.ca",
+    "analyzed_at": "2025-12-31T17:08:29.772600",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsico.co",
+    "analyzed_at": "2025-12-31T17:08:30.201012",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.dev",
-    "analyzed_at": "2025-12-31T01:08:06.769147",
+    "analyzed_at": "2025-12-31T17:08:36.220767",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3095,12 +3315,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "401 Client Error: Unauthorized for url: https://pepsico.dev/"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
-    "domain": "pepsico.info",
-    "analyzed_at": "2025-12-31T01:08:08.922230",
+    "domain": "pepsi.info",
+    "analyzed_at": "2025-12-31T17:08:26.430423",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3108,12 +3330,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "Insufficient content (possible bot detection or JS-rendered page)"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.io",
-    "analyzed_at": "2025-12-31T01:08:12.487476",
+    "analyzed_at": "2025-12-31T17:08:36.909733",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3121,12 +3345,74 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsico.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.us",
+    "analyzed_at": "2025-12-31T17:08:27.636384",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.org",
+    "analyzed_at": "2025-12-31T17:08:27.513323",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsico.info",
+    "analyzed_at": "2025-12-31T17:08:36.876928",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsico.biz",
+    "analyzed_at": "2025-12-31T17:08:28.964000",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.org",
-    "analyzed_at": "2025-12-31T01:08:14.810063",
+    "analyzed_at": "2025-12-31T17:08:37.759143",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3134,12 +3420,14 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsico.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pepsico.org', port=443) at 0x78b299c0f750>, 'Connection to pepsico.org timed out. (connect timeout=10)'))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
   },
   {
     "domain": "pepsico.us",
-    "analyzed_at": "2025-12-31T01:08:26.982919",
+    "analyzed_at": "2025-12-31T17:08:38.641966",
     "accessible": false,
     "health_hazards": {},
     "behavioral_hazards": {},
@@ -3147,7 +3435,24 @@
     "promoted_products": [],
     "related_domains": [],
     "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
     "justification": [],
-    "error": "HTTPSConnectionPool(host='pepsico.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pepsico.us'. (_ssl.c:1016)\")))"
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>\n\tExpected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>"
+  },
+  {
+    "domain": "pepsi.net",
+    "analyzed_at": "2025-12-31T17:08:27.149323",
+    "accessible": false,
+    "health_hazards": {},
+    "behavioral_hazards": {},
+    "marketing_tactics": {},
+    "promoted_products": [],
+    "related_domains": [],
+    "risk_score": 0,
+    "enabler_risk_bonus": 0,
+    "high_risk_links": [],
+    "justification": [],
+    "error": "Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content."
   }
 ]
