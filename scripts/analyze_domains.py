@@ -49,7 +49,7 @@ BROWSER_INSTANCE = None
 HEALTH_HAZARDS = {
     'ultra_processed': ['processed', 'artificial', 'preservatives', 'additives', 'high sodium', 'trans fat', 'deep fried'],
     'sugar': ['sugar', 'sweetened', 'syrup', 'candy', 'dessert', 'sweet'],
-    'fast_food': ['fast food', 'quick', 'instant', 'ready to eat', 'convenience'],
+    'fast_food': ['fast food', 'quick meal', 'quick service', 'quick bite', 'instant meal', 'ready to eat', 'convenience food'],
     'addictive': ['crave', 'craving', 'addictive', 'cant resist', "can't stop"],
     'nutrition_poor': ['empty calories', 'low nutrition', 'junk food']
 }
@@ -232,6 +232,8 @@ class DomainAnalyzer:
             'promoted_products': [],
             'related_domains': [],
             'risk_score': 0,
+            'enabler_risk_bonus': 0,
+            'high_risk_links': [],
             'justification': []
         }
     
@@ -491,8 +493,12 @@ class DomainAnalyzer:
         
         self.analysis['related_domains'] = sorted(list(related))[:20]  # Max 20
     
-    def calculate_risk_score(self):
-        """Calculate overall risk score (0-100)."""
+    def calculate_risk_score(self, all_domain_scores=None):
+        """Calculate overall risk score (0-100) with enabler bonus.
+        
+        Args:
+            all_domain_scores: Dict of {domain: risk_score} for enabler detection
+        """
         score = 0
         
         # Health hazards (30 points max)
@@ -506,6 +512,28 @@ class DomainAnalyzer:
         # Marketing tactics (30 points max)
         marketing_count = sum(self.analysis['marketing_tactics'].values())
         score += min(marketing_count * 3, 30)
+        
+        # Enabler/Facilitator bonus: sites linking to high-risk domains
+        # (marketplaces, delivery platforms that enable harmful services)
+        enabler_bonus = 0
+        high_risk_links = []
+        
+        if all_domain_scores and self.analysis['related_domains']:
+            for related_domain in self.analysis['related_domains']:
+                # Check if this related domain has a high risk score
+                related_score = all_domain_scores.get(related_domain, 0)
+                if related_score >= 50:  # High risk threshold
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+            
+            # Add enabler bonus: 5 points per high-risk link (max 20 points)
+            if high_risk_links:
+                enabler_bonus = min(len(high_risk_links) * 5, 20)
+                self.analysis['enabler_risk_bonus'] = enabler_bonus
+                self.analysis['high_risk_links'] = high_risk_links
+                score += enabler_bonus
         
         self.analysis['risk_score'] = min(score, 100)
     
@@ -525,6 +553,14 @@ class DomainAnalyzer:
             tactics = ', '.join(self.analysis['marketing_tactics'].keys())
             reasons.append(f"Employs aggressive marketing: {tactics}")
         
+        # Enabler/Facilitator justification
+        if self.analysis.get('enabler_risk_bonus', 0) > 0:
+            high_risk_count = len(self.analysis.get('high_risk_links', []))
+            reasons.append(f"ENABLER: Links to {high_risk_count} high-risk domain(s) (+{self.analysis['enabler_risk_bonus']} points)")
+            # List the high-risk domains being enabled
+            for link in self.analysis.get('high_risk_links', [])[:3]:  # Show top 3
+                reasons.append(f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+        
         if self.analysis['risk_score'] > 70:
             reasons.append("HIGH RISK: Multiple concerning patterns detected")
         elif self.analysis['risk_score'] > 40:
@@ -532,8 +568,12 @@ class DomainAnalyzer:
         
         self.analysis['justification'] = reasons
     
-    def analyze(self):
-        """Run complete analysis."""
+    def analyze(self, all_domain_scores=None):
+        """Run complete analysis.
+        
+        Args:
+            all_domain_scores: Dict of {domain: risk_score} for enabler detection
+        """
         print(f"Analyzing {self.domain}...", end=' ')
         
         if not self.fetch_content():
@@ -543,10 +583,11 @@ class DomainAnalyzer:
         self.analyze_text_content()
         self.extract_products()
         self.find_related_domains()
-        self.calculate_risk_score()
+        self.calculate_risk_score(all_domain_scores)
         self.generate_justification()
         
-        print(f"✓ Risk Score: {self.analysis['risk_score']}/100")
+        enabler_note = f" (+{self.analysis['enabler_risk_bonus']} enabler)" if self.analysis.get('enabler_risk_bonus', 0) > 0 else ""
+        print(f"✓ Risk Score: {self.analysis['risk_score']}/100{enabler_note}")
         return self.analysis
 
 
@@ -665,9 +706,11 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
 
 
 def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
-    """Sequential domain analysis (original method)."""
+    """Sequential domain analysis with two-pass enabler scoring."""
     results = []
     
+    # Pass 1: Get base scores
+    print("Pass 1/2: Analyzing base risk scores...")
     for domain in domains:
         result = analyze_domain_worker(
             domain,
@@ -679,16 +722,57 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
         )
         results.append(result)
     
+    # Pass 2: Add enabler bonuses
+    print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
+    domain_scores = {r['domain']: r.get('risk_score', 0) for r in results}
+    
+    enabler_updates = 0
+    for result in results:
+        if result.get('accessible') and result.get('related_domains'):
+            high_risk_links = []
+            for related_domain in result.get('related_domains', []):
+                related_score = domain_scores.get(related_domain, 0)
+                if related_score >= 50:
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+            
+            if high_risk_links:
+                enabler_bonus = min(len(high_risk_links) * 5, 20)
+                old_score = result['risk_score']
+                result['enabler_risk_bonus'] = enabler_bonus
+                result['high_risk_links'] = high_risk_links
+                result['risk_score'] = min(old_score + enabler_bonus, 100)
+                
+                if 'justification' not in result:
+                    result['justification'] = []
+                result['justification'].insert(0, f"ENABLER: Links to {len(high_risk_links)} high-risk domain(s) (+{enabler_bonus} points)")
+                for link in high_risk_links[:3]:
+                    result['justification'].insert(1, f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+                
+                if cache:
+                    cache.store_analysis(result['domain'], result)
+                
+                enabler_updates += 1
+                print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+    
+    if enabler_updates > 0:
+        print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
+    else:
+        print(f"✓ No enabler relationships detected\n")
+    
     return results
 
 
 def analyze_parallel(domains, cache, force_reanalysis, category_name, recommendations, existing_domains, max_workers):
-    """Parallel domain analysis using ThreadPoolExecutor."""
+    """Parallel domain analysis using ThreadPoolExecutor with two-pass scoring."""
     results = []
     completed = 0
     total = len(domains)
     
-    # Use ThreadPoolExecutor for concurrent analysis
+    # PASS 1: Analyze all domains to get base scores
+    print("Pass 1/2: Analyzing base risk scores...")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all tasks
         future_to_domain = {
@@ -726,6 +810,50 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                     'error': str(e),
                     'risk_score': 0
                 })
+    
+    # PASS 2: Recalculate scores with enabler bonuses
+    print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
+    domain_scores = {r['domain']: r.get('risk_score', 0) for r in results}
+    
+    enabler_updates = 0
+    for result in results:
+        if result.get('accessible') and result.get('related_domains'):
+            # Check if any related domains are high-risk
+            high_risk_links = []
+            for related_domain in result.get('related_domains', []):
+                related_score = domain_scores.get(related_domain, 0)
+                if related_score >= 50:  # High risk threshold
+                    high_risk_links.append({
+                        'domain': related_domain,
+                        'risk_score': related_score
+                    })
+            
+            if high_risk_links:
+                # Add enabler bonus
+                enabler_bonus = min(len(high_risk_links) * 5, 20)
+                old_score = result['risk_score']
+                result['enabler_risk_bonus'] = enabler_bonus
+                result['high_risk_links'] = high_risk_links
+                result['risk_score'] = min(old_score + enabler_bonus, 100)
+                
+                # Update justification
+                if 'justification' not in result:
+                    result['justification'] = []
+                result['justification'].insert(0, f"ENABLER: Links to {len(high_risk_links)} high-risk domain(s) (+{enabler_bonus} points)")
+                for link in high_risk_links[:3]:  # Show top 3
+                    result['justification'].insert(1, f"  → Facilitates: {link['domain']} (risk: {link['risk_score']})")
+                
+                # Update cache with new score
+                if cache:
+                    cache.store_analysis(result['domain'], result)
+                
+                enabler_updates += 1
+                print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+    
+    if enabler_updates > 0:
+        print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
+    else:
+        print(f"✓ No enabler relationships detected\n")
     
     return results
 

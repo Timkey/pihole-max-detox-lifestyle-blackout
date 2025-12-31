@@ -1,9 +1,9 @@
 {
   "total_domains": 1101,
-  "accessible_count": 280,
-  "avg_risk_score": 8.7,
-  "access_rate": 25.0,
-  "high_risk_count": 10,
+  "accessible_count": 180,
+  "avg_risk_score": 8.1,
+  "access_rate": 16.0,
+  "high_risk_count": 4,
   "categories": {
     "cosmetics_beauty": 96,
     "conglomerates": 199,
@@ -21,5 +21,5 @@
     "conglomerates": 385,
     "blackout-ultra": 2157
   },
-  "generated_at": "2025-12-31T15:14:02.347520"
+  "generated_at": "2025-12-31T17:09:56.322261"
 }

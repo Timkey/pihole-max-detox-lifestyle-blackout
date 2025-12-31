@@ -1599,62 +1599,6 @@
       "source": "ubereats.com",
       "detected_at": "2025-12-31T12:35:53.588476",
       "status": "pending"
-    },
-    {
-      "domain": "kelloggs.co.uk",
-      "category": "Food & Delivery",
-      "reason": "Found via pringles.com analysis, appears to be related service",
-      "source": "pringles.com",
-      "detected_at": "2025-12-31T16:10:34.102005",
-      "status": "pending"
-    },
-    {
-      "domain": "kelloggs.ie",
-      "category": "Food & Delivery",
-      "reason": "Found via pringles.com analysis, appears to be related service",
-      "source": "pringles.com",
-      "detected_at": "2025-12-31T16:10:34.102045",
-      "status": "pending"
-    },
-    {
-      "domain": "poptopia.pringles.com",
-      "category": "Food & Delivery",
-      "reason": "Found via pringles.com analysis, appears to be related service",
-      "source": "pringles.com",
-      "detected_at": "2025-12-31T16:10:34.102072",
-      "status": "pending"
-    },
-    {
-      "domain": "nestlecesomni.my.salesforce-sites.com",
-      "category": "Food & Delivery",
-      "reason": "Found via kitkat.co.uk analysis, appears to be related service",
-      "source": "kitkat.co.uk",
-      "detected_at": "2025-12-31T16:11:54.804720",
-      "status": "pending"
-    },
-    {
-      "domain": "goodnes.com",
-      "category": "Food & Delivery",
-      "reason": "Found via digiorno.com analysis, appears to be related service",
-      "source": "digiorno.com",
-      "detected_at": "2025-12-31T16:14:29.548801",
-      "status": "pending"
-    },
-    {
-      "domain": "nestleusa.com",
-      "category": "Food & Delivery",
-      "reason": "Found via digiorno.com analysis, appears to be related service",
-      "source": "digiorno.com",
-      "detected_at": "2025-12-31T16:14:29.548865",
-      "status": "pending"
-    },
-    {
-      "domain": "careers.unilever.com",
-      "category": "Conglomerates",
-      "reason": "Found via unilever.co.uk analysis, appears to be related service",
-      "source": "unilever.co.uk",
-      "detected_at": "2025-12-31T17:06:58.858504",
-      "status": "pending"
     }
   ],
   "removals": [
@@ -2401,63 +2345,7 @@
       "risk_score": 14,
       "detected_at": "2025-12-31T12:00:37.034547",
       "status": "pending"
-    },
-    {
-      "domain": "kfc.co.uk",
-      "category": "Food & Delivery",
-      "reason": "Low risk score (27/100), may not warrant blocking",
-      "risk_score": 27,
-      "detected_at": "2025-12-31T16:04:18.680219",
-      "status": "pending"
-    },
-    {
-      "domain": "pringles.com",
-      "category": "Food & Delivery",
-      "reason": "Low risk score (7/100), may not warrant blocking",
-      "risk_score": 7,
-      "detected_at": "2025-12-31T16:10:34.101969",
-      "status": "pending"
-    },
-    {
-      "domain": "kitkat.co.uk",
-      "category": "Food & Delivery",
-      "reason": "Low risk score (6/100), may not warrant blocking",
-      "risk_score": 6,
-      "detected_at": "2025-12-31T16:11:54.804594",
-      "status": "pending"
-    },
-    {
-      "domain": "digiorno.com",
-      "category": "Food & Delivery",
-      "reason": "Low risk score (12/100), may not warrant blocking",
-      "risk_score": 12,
-      "detected_at": "2025-12-31T16:14:29.548761",
-      "status": "pending"
-    },
-    {
-      "domain": "unilever.co.uk",
-      "category": "Conglomerates",
-      "reason": "Low risk score (14/100), may not warrant blocking",
-      "risk_score": 14,
-      "detected_at": "2025-12-31T17:06:58.858470",
-      "status": "pending"
-    },
-    {
-      "domain": "unilever.io",
-      "category": "Conglomerates",
-      "reason": "Low risk score (4/100), may not warrant blocking",
-      "risk_score": 4,
-      "detected_at": "2025-12-31T17:07:02.322476",
-      "status": "pending"
-    },
-    {
-      "domain": "gillette.com",
-      "category": "Conglomerates",
-      "reason": "Low risk score (29/100), may not warrant blocking",
-      "risk_score": 29,
-      "detected_at": "2025-12-31T17:07:04.219106",
-      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-31T17:09:56.148594"
+  "last_updated": "2025-12-31T15:35:04.177263"
 }

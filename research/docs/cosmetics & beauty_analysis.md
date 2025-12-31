@@ -1,23 +1,22 @@
 # Cosmetics & Beauty - Content Analysis Report
 
-**Generated:** 2025-12-31 15:14:00
+**Generated:** 2025-12-31 17:05:22
 
 **Domains Analyzed:** 96
 
 ## Summary
 
-- **Accessible domains:** 28/96
-- **Average Risk Score:** 4.1/100
+- **Accessible domains:** 20/96
+- **Average Risk Score:** 5.2/100
 
 ## Hazard Clusters
 
 ### Health Hazards
 
-- **fast_food**: 2 occurrences
 
 ### Behavioral Hazards
 
-- **discounts**: 10 occurrences
+- **discounts**: 8 occurrences
 - **upselling**: 4 occurrences
 - **addiction_language**: 3 occurrences
 - **convenience**: 2 occurrences
@@ -25,35 +24,11 @@
 ### Marketing Tactics
 
 - **personalization**: 4 occurrences
-- **social_proof**: 4 occurrences
+- **social_proof**: 3 occurrences
 - **scarcity**: 3 occurrences
 - **fomo**: 3 occurrences
 
 ## Individual Domain Analysis
-
-### clinique.ai
-
-**Risk Score:** 0/100
-
----
-
-### maccosmetics.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.maccosmetics.com/
-
-### sephora.com
-
-**Risk Score:** 0/100
-
----
-
-### clinique.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.ca/
-
-### clinique.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.com/
 
 ### ulta.com
 
@@ -61,45 +36,17 @@
 
 ---
 
-### ulta.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ulta.ai', port=443) at 0x78b29ab07c90>, 'Connection to ulta.ai timed out. (connect timeout=10)'))
-
-### sephora.co
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### sephora.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))
-
-### esteelauder.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.com/
-
 ### sephora.ca
 
 **Risk Score:** 0/100
 
 ---
 
-### loreal.com
+### sephora.com
 
 **Risk Score:** 0/100
 
 ---
-
-### ulta.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sephora.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))
-
-### clinique.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
 ### sephora.co.ca
 
@@ -107,80 +54,6 @@
 Call log:
   - navigating to "https://sephora.co.ca/", waiting until "domcontentloaded"
 
-
-### sephora.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))
-
-### sephora.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)")))
-
-### esteelauder.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### sephora.ai
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### esteelauder.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.ca/
-
-### sephora.biz
-
-❌ **Not accessible:** Playwright error: 'NoneType' object has no attribute 'new_context'
-
-### sephora.app
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### esteelauder.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### ulta.org
-
-**Risk Score:** 0/100
-
----
-
-### ulta.io
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: personalization
-
----
-
-### ulta.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### clinique.io
-
-**Risk Score:** 0/100
-
----
-
-### ulta.uk
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `sedo.com`
-
----
 
 ### sephora.dev
 
@@ -205,28 +78,14 @@ Call log:
 
 ---
 
-### ulta.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### sephora.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-
-### clinique.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.co.uk/
-
-### ulta.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
 ### sephora.co.uk
 
-**Risk Score:** 61/100
+**Risk Score:** 66/100
 
 **Justification for Blocking:**
 
+- ENABLER: Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: sephora.co.uk (risk: 61)
 - Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: social_proof, scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
@@ -252,27 +111,210 @@ Call log:
 
 ---
 
+### sephora.org
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.app
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.app
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.info
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.io
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+---
+
+### sephora.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
 ### ulta.co
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.org
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### ulta.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### loreal.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### esteelauder.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### maccosmetics.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.co.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### clinique.io
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### esteelauder.co.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### esteelauder.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### esteelauder.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### esteelauder.co.uk
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.co.uk/
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### loreal.ca
 
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### maccosmetics.ca
+
 **Risk Score:** 0/100
 
 ---
 
-### loreal.co
+### maccosmetics.co.ca
 
-**Risk Score:** 0/100
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
----
-
-### loreal.co.uk
+### maccosmetics.co.uk
 
 **Risk Score:** 0/100
 
@@ -280,23 +322,27 @@ Call log:
 
 ### loreal.io
 
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://loreal.io/
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
-### maccosmetics.ca
+### loreal.co
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://maccosmetics.ca/
+**Risk Score:** 0/100
+
+---
 
 ### maccosmetics.co
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
-### maccosmetics.co.ca
+### loreal.co.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='maccosmetics.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+**Risk Score:** 0/100
 
-### maccosmetics.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.maccosmetics.co.uk/
+---
 
 ### maccosmetics.info
 
@@ -331,21 +377,16 @@ Call log:
 
 ### maccosmetics.us
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### maybelline.com
-
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### covergirl.com
 
-**Risk Score:** 10/100
+**Risk Score:** 7/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: fast_food
 - Uses behavioral manipulation: upselling
 - Employs aggressive marketing: scarcity
 
@@ -362,15 +403,23 @@ Call log:
 
 ---
 
-### revlon.com
+### maybelline.com
 
 **Risk Score:** 0/100
 
 ---
 
-### covergirl.ai
+### covergirl.io
 
-❌ **Not accessible:** HTTPSConnectionPool(host='covergirl.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.ai', port=443) at 0x78b29a45e2d0>, 'Connection to covergirl.ai timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### revlon.com
+
+**Risk Score:** 0/100
+
+---
 
 ### covergirl.ca
 
@@ -396,31 +445,33 @@ Call log:
 
 ### covergirl.co
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### covergirl.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### covergirl.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='covergirl.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.net', port=443) at 0x78b29a8c1390>, 'Connection to covergirl.net timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### covergirl.org
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### covergirl.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='covergirl.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'covergirl.uk'. (_ssl.c:1016)")))
-
-### covergirl.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='covergirl.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='covergirl.us', port=443) at 0x78b29a8c27d0>, 'Connection to covergirl.us timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### maybelline.ai
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### maybelline.co.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### maybelline.ca
 
@@ -434,10 +485,6 @@ Call log:
 
 ---
 
-### maybelline.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='maybelline.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
 ### maybelline.co.uk
 
 **Risk Score:** 0/100
@@ -446,19 +493,21 @@ Call log:
 
 ### maybelline.io
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.ai
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
-### revlon.app
+### covergirl.ai
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.app', port=443) at 0x78b29a5e55d0>, 'Connection to revlon.app timed out. (connect timeout=10)'))
-
-### revlon.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.biz', port=443) at 0x78b29a465150>, 'Connection to revlon.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.ca
 
@@ -466,13 +515,17 @@ Call log:
 
 ---
 
-### revlon.co
+### covergirl.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.co', port=443) at 0x78b29a8c0710>, 'Connection to revlon.co timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.co.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.co.uk
 
@@ -480,115 +533,181 @@ Call log:
 
 ---
 
+### revlon.app
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### revlon.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### revlon.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### covergirl.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
 ### revlon.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.info', port=443) at 0x78b29b168250>, 'Connection to revlon.info timed out. (connect timeout=10)'))
-
-### revlon.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.net', port=443) at 0x78b299d8f790>, 'Connection to revlon.net timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.org', port=443) at 0x78b29a443fd0>, 'Connection to revlon.org timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### revlon.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.uk', port=443) at 0x78b29a6df210>, 'Connection to revlon.uk timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### revlon.us
 
-❌ **Not accessible:** HTTPSConnectionPool(host='revlon.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='revlon.us', port=443) at 0x78b29a45e150>, 'Connection to revlon.us timed out. (connect timeout=10)'))
-
-### beautybay.com
-
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.com
 
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.biz
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.ca
 
-**Risk Score:** 0/100
-
----
-
-### beautybay.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.co.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### beautybay.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.io
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
-
-### beautybay.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### beautybay.us
 
-❌ **Not accessible:** HTTPSConnectionPool(host='beautybay.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.biz
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.biz', port=443) at 0x78b29a465490>, 'Connection to cultbeauty.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### beautybay.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.ca', port=443) at 0x78b29a6ddc10>, 'Connection to cultbeauty.ca timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.co.uk
 
-**Risk Score:** 3/100
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
-**Justification for Blocking:**
+### beautybay.com
 
-- Promotes health hazards: fast_food
-
----
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.dev
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.dev', port=443) at 0x78b29a810790>, 'Connection to cultbeauty.dev timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.info', port=443) at 0x78b29a7a1150>, 'Connection to cultbeauty.info timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.net', port=443) at 0x78b29a4675d0>, 'Connection to cultbeauty.net timed out. (connect timeout=10)'))
-
-### cultbeauty.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.uk', port=443) at 0x78b29a8c00d0>, 'Connection to cultbeauty.uk timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
 
 ### cultbeauty.us
 
-❌ **Not accessible:** HTTPSConnectionPool(host='cultbeauty.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cultbeauty.us', port=443) at 0x78b29a9723d0>, 'Connection to cultbeauty.us timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### cultbeauty.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
+	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+
+### sephora.net
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
 
