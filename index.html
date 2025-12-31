@@ -160,6 +160,14 @@
                     <div class="stat-value" id="highRisk">-</div>
                     <div class="stat-label">High Risk Domains</div>
                 </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="dnsVerified">-</div>
+                    <div class="stat-label">DNS Verified</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="blocklistTotal">-</div>
+                    <div class="stat-label">Total Blocklisted</div>
+                </div>
             </div>
         </div>
 
@@ -217,7 +225,19 @@
     "conglomerates": 199,
     "food_delivery": 806
   },
-  "generated_at": "2025-12-31T12:40:35.980996"
+  "dns_verification": {
+    "verified_domains": 1895,
+    "unverified_domains": 866,
+    "total_dns_checked": 2761,
+    "last_dns_check": "2025-12-30T19:42:30.058223"
+  },
+  "blocklists": {
+    "food": 1585,
+    "cosmetics": 187,
+    "conglomerates": 385,
+    "blackout-ultra": 2157
+  },
+  "generated_at": "2025-12-31T15:14:02.347520"
 };
 
         function loadStatistics() {
@@ -226,6 +246,21 @@
             document.getElementById('avgRisk').textContent = statsData.avg_risk_score;
             document.getElementById('accessRate').textContent = statsData.access_rate + '%';
             document.getElementById('highRisk').textContent = statsData.high_risk_count;
+            
+            // DNS verification stats
+            if (statsData.dns_verification && statsData.dns_verification.verified_domains) {
+                document.getElementById('dnsVerified').textContent = statsData.dns_verification.verified_domains;
+            } else {
+                document.getElementById('dnsVerified').textContent = '0';
+            }
+            
+            // Blocklist total
+            if (statsData.blocklists) {
+                const total = Object.values(statsData.blocklists).reduce((sum, val) => sum + val, 0);
+                document.getElementById('blocklistTotal').textContent = total;
+            } else {
+                document.getElementById('blocklistTotal').textContent = '-';
+            }
 
             // Update category counts
             const catMap = {

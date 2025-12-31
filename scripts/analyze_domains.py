@@ -1374,6 +1374,32 @@ def generate_summary_stats():
         access_rate = (accessible_count / total * 100) if total > 0 else 0
         high_risk = sum(1 for d in accessible if d.get('risk_score', 0) >= 50)
         
+        # Load DNS verification stats from cache if available
+        dns_stats = {}
+        lists_dir = Path(__file__).parent.parent / 'lists'
+        dns_cache_file = lists_dir / '.domain_cache.json'
+        if dns_cache_file.exists():
+            try:
+                with open(dns_cache_file, 'r') as f:
+                    cache_data = json.load(f)
+                    dns_stats = {
+                        'verified_domains': len(cache_data.get('verified', {})),
+                        'unverified_domains': len(cache_data.get('not_found', {})),
+                        'total_dns_checked': len(cache_data.get('verified', {})) + len(cache_data.get('not_found', {})),
+                        'last_dns_check': cache_data.get('last_updated')
+                    }
+            except Exception as e:
+                print(f"Note: Could not load DNS cache stats: {e}")
+        
+        # Calculate blocklist statistics
+        blocklist_stats = {}
+        for list_file in ['food.txt', 'cosmetics.txt', 'conglomerates.txt', 'blackout-ultra.txt']:
+            list_path = lists_dir / list_file
+            if list_path.exists():
+                with open(list_path, 'r') as f:
+                    domains = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+                    blocklist_stats[list_file.replace('.txt', '')] = len(domains)
+        
         summary = {
             'total_domains': total,
             'accessible_count': accessible_count,
@@ -1381,6 +1407,8 @@ def generate_summary_stats():
             'access_rate': round(access_rate, 0),
             'high_risk_count': high_risk,
             'categories': categories,
+            'dns_verification': dns_stats,
+            'blocklists': blocklist_stats,
             'generated_at': datetime.now().isoformat()
         }
         
@@ -1418,8 +1446,9 @@ def generate_markdown_report(category_name, results):
         f.write(f"**Domains Analyzed:** {len(results)}\n\n")
         
         # Summary statistics
-        avg_risk = sum(r['risk_score'] for r in results if r['accessible']) / len([r for r in results if r['accessible']]) if results else 0
-        accessible_count = sum(1 for r in results if r['accessible'])
+        accessible_results = [r for r in results if r['accessible']]
+        avg_risk = sum(r['risk_score'] for r in accessible_results) / len(accessible_results) if accessible_results else 0
+        accessible_count = len(accessible_results)
         
         f.write("## Summary\n\n")
         f.write(f"- **Accessible domains:** {accessible_count}/{len(results)}\n")

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Smart domain variation checker with caching
+Smart domain variation checker with caching and parallel processing
 Caches verified domains to avoid repeated DNS lookups
 """
 
@@ -9,6 +9,7 @@ import json
 import time
 from pathlib import Path
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -18,6 +19,7 @@ COMMON_TLDS = [
     'co.uk', 'ca', 'us', 'uk', 'biz', 'info', 'dev',
     'co.ca'
 ]
+DEFAULT_WORKERS = 8
 
 
 class DomainCache:
@@ -153,8 +155,8 @@ def find_variations(base, current_tld, existing_domains, cache):
     return found_variations, dns_checks, cache_hits
 
 
-def scan_file_for_variations(filepath, cache):
-    """Scan a blocklist file and find missing domain variations."""
+def scan_file_for_variations(filepath, cache, workers=DEFAULT_WORKERS):
+    """Scan a blocklist file and find missing domain variations with parallel processing."""
     print(f"\n{'='*60}")
     print(f"Scanning: {filepath.name}")
     print(f"{'='*60}")
@@ -174,28 +176,46 @@ def scan_file_for_variations(filepath, cache):
                     base_domains.add((base, tld))
     
     print(f"Found {len(existing_domains)} existing domains")
-    print(f"Found {len(base_domains)} unique bases to check\n")
+    print(f"Found {len(base_domains)} unique bases to check")
+    print(f"⚡ Using {workers} parallel workers\n")
     
-    # Check for variations
+    # Check for variations in parallel
     new_domains = []
     checked = set()
     total_dns_checks = 0
     total_cache_hits = 0
     
-    for base, tld in sorted(base_domains):
-        if base in checked:
-            continue
-        checked.add(base)
-        
-        print(f"  Checking {base}.* ", end='', flush=True)
-        
+    def check_base_domain(base_tld_tuple):
+        """Check a single base domain for variations."""
+        base, tld = base_tld_tuple
         variations, dns_checks, cache_hits = find_variations(base, tld, existing_domains, cache)
-        new_domains.extend(variations)
-        total_dns_checks += dns_checks
-        total_cache_hits += cache_hits
+        return base, variations, dns_checks, cache_hits
+    
+    # Process base domains in parallel
+    unique_bases = [(base, tld) for base, tld in sorted(base_domains) if base not in checked]
+    
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(check_base_domain, base_tld): base_tld for base_tld in unique_bases}
         
-        if variations:
-            print(f"✓ Found {len(variations)} new ({dns_checks} DNS, {cache_hits} cached)")
+        completed = 0
+        for future in as_completed(futures):
+            base_tld = futures[future]
+            base, _ = base_tld
+            checked.add(base)
+            completed += 1
+            
+            try:
+                base_name, variations, dns_checks, cache_hits = future.result()
+                new_domains.extend(variations)
+                total_dns_checks += dns_checks
+                total_cache_hits += cache_hits
+                
+                if variations:
+                    print(f"  [{completed}/{len(unique_bases)}] {base_name}.* ✓ Found {len(variations)} new ({dns_checks} DNS, {cache_hits} cached)")
+                elif completed % 10 == 0:
+                    print(f"  [{completed}/{len(unique_bases)}] Progress...")
+            except Exception as e:
+                print(f"  {base}.* ✗ Error: {e}")
         else:
             print(f"✗ None ({dns_checks} DNS, {cache_hits} cached)")
     
@@ -210,13 +230,20 @@ def scan_file_for_variations(filepath, cache):
 
 def main():
     """Main function to scan all category files."""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Check for domain variations with parallel processing')
+    parser.add_argument('--workers', type=int, default=DEFAULT_WORKERS, help='Number of parallel workers')
+    args = parser.parse_args()
+    
     category_files = ['food.txt', 'cosmetics.txt', 'conglomerates.txt']
     
     # Initialize cache (in lists directory)
     cache = DomainCache(LISTS_DIR / CACHE_FILE)
     stats = cache.get_stats()
     
-    print("SMART DOMAIN VARIATION SCANNER (with caching)")
+    print("SMART DOMAIN VARIATION SCANNER (with caching and parallel processing)")
+    print(f"Workers: {args.workers}")
     print(f"Cache stats: {stats['verified']} verified, {stats['not_found']} not found")
     print("="*60)
     
@@ -228,7 +255,7 @@ def main():
             print(f"⚠️  {filename} not found, skipping...")
             continue
         
-        new_domains = scan_file_for_variations(filepath, cache)
+        new_domains = scan_file_for_variations(filepath, cache, workers=args.workers)
         
         if new_domains:
             all_findings[filename] = new_domains

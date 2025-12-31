@@ -1,6 +1,6 @@
 # Food & Delivery - Content Analysis Report
 
-**Generated:** 2025-12-31 12:45:06
+**Generated:** 2025-12-31 15:14:00
 
 **Domains Analyzed:** 806
 
@@ -36,17 +36,624 @@
 
 ## Individual Domain Analysis
 
-### papajohns.uk
+### kfc.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.uk', port=443) at 0x78b29a6049d0>, 'Connection to papajohns.uk timed out. (connect timeout=10)'))
+**Risk Score:** 4/100
 
-### subway.co
+**Justification for Blocking:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='subway.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.co'. (_ssl.c:1016)")))
+- Uses behavioral manipulation: discounts
 
-### papajohns.org
+**Sample Products/Services:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.org', port=443) at 0x78b29a655450>, 'Connection to papajohns.org timed out. (connect timeout=10)'))
+- ð¨âð©âð§Kids Fun Club
+- ð°Key Financial Consulting
+- ðï¸Keen Fitness Community
+- ðKnowledge for Careers
+- ð¿Keep Future Clean
+
+**Related Domains Found:**
+
+- `telderi.ru`
+
+---
+
+### ubereats.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### burgerking.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### kfc.dev
+
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://kfc.dev/
+
+### ubereats.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+
+### kfc.co.uk
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+
+**Sample Products/Services:**
+
+- £0.00
+- Find a Restaurant & Order Online for Takeaway or Delivery
+- Quick links
+- OUR MENU
+- ORDER ONLINE
+
+**Related Domains Found:**
+
+- `careers.kfc.co.uk`
+- `facebook.com`
+- `help.kfc.co.uk`
+- `instagram.com`
+- `kfcshop.co.uk`
+- `privacy.kfc.co.uk`
+- `snapchat.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### burgerking.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### trycaviar.us
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.trycaviar.com/users/sign_up?referral_code=hgw963
+
+### gopuff.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
+
+### kfc.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='kfc.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### dominos.us
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### instacart.com
+
+**Risk Score:** 0/100
+
+---
+
+### slicelife.com
+
+**Risk Score:** 0/100
+
+---
+
+### swiggy.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### menulog.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab88de9f80 (otid=0x70ab88de78a0) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
+
+### kfc.co
+
+**Risk Score:** 0/100
+
+---
+
+### burgerking.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.dev', port=443) at 0x78b29ab79990>, 'Connection to burgerking.dev timed out. (connect timeout=10)'))
+
+### trycaviar.com
+
+❌ **Not accessible:** Playwright: Insufficient content (335 chars)
+
+### swiggy.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### kfc.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='kfc.ca', port=443): Read timed out. (read timeout=10)
+
+### swiggy.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='swiggy.net', port=443) at 0x7d7bd898b290>, 'Connection to swiggy.net timed out. (connect timeout=10)'))
+
+### kfc.biz
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### burgerking.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.info', port=443) at 0x78b29abee510>, 'Connection to burgerking.info timed out. (connect timeout=10)'))
+
+### swiggy.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.io', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='swiggy.io', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### kfc.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dominos.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### swiggy.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### delivery.com
+
+**Risk Score:** 48/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Find Favorites and Discover New Ones
+- Free, Easy, and Essential
+- Earn Points and Get Rewards
+- Connect with us
+- For Local Businesses
+
+**Related Domains Found:**
+
+- `adasitecompliancetools.com`
+- `blog.delivery.com`
+- `deliverycom.formstack.com`
+- `facebook.com`
+- `instagram.com`
+- `twitter.com`
+
+---
+
+### kfc.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### burgerking.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### deliveroo.com
+
+**Risk Score:** 39/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts, convenience, upselling
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- Discover Deliveroo
+- Legal
+- Help
+- Take Deliveroo with you
+
+**Related Domains Found:**
+
+- `careers.deliveroo.co.uk`
+- `corporate.deliveroo.co.uk`
+- `deliveroo.co.uk`
+- `deliveroo.design`
+- `deliveroo.engineering`
+- `deliveroo.onelink.me`
+- `deliveroostudents.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `par.deliveroo.net`
+
+---
+
+### foodpanda.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
+
+### swiggy.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### caviar.com
+
+**Risk Score:** 0/100
+
+---
+
+### jimmyjohns.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='jimmyjohns.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jimmyjohns.us', port=443) at 0x78b29a882550>, 'Connection to jimmyjohns.us timed out. (connect timeout=10)'))
+
+### swiggy.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### jimmyjohns.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='jimmyjohns.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jimmyjohns.org', port=443) at 0x78b29a81d710>, 'Connection to jimmyjohns.org timed out. (connect timeout=10)'))
+
+### burgerking.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.net', port=443) at 0x78b29aba5e50>, 'Connection to burgerking.net timed out. (connect timeout=10)'))
+
+### swiggy.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### jimmyjohns.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dominos.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dominos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dominos.org', port=443) at 0x78b29a8dfb90>, 'Connection to dominos.org timed out. (connect timeout=10)'))
+
+### swiggy.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='swiggy.ai', port=443) at 0x7d7bd8980350>, 'Connection to swiggy.ai timed out. (connect timeout=10)'))
+
+### jimmyjohns.ca
+
+**Risk Score:** 50/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Congrats! You have earnedpoints
+
+**Related Domains Found:**
+
+- `foodtastic.ca`
+- `jimmyjohns.ca`
+- `orders.jimmyjohns.ca`
+
+---
+
+### burgerking.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.org', port=443) at 0x78b29abefc50>, 'Connection to burgerking.org timed out. (connect timeout=10)'))
+
+### slicelife.org
+
+**Risk Score:** 0/100
+
+---
+
+### jimmyjohns.biz
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### slicelife.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='slicelife.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### hardees.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hardees.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.uk', port=443) at 0x78b29a5e6cd0>, 'Connection to hardees.uk timed out. (connect timeout=10)'))
+
+### burgerking.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.uk', port=443) at 0x78b29abeca50>, 'Connection to burgerking.uk timed out. (connect timeout=10)'))
+
+### burgerking.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### slicelife.co
+
+❌ **Not accessible:** 525 Server Error: <none> for url: https://slicelife.co/
+
+### dominos.net
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `wordpress.org`
+
+---
+
+### burgerking.app
+
+**Risk Score:** 0/100
+
+---
+
+### slicelife.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='slicelife.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'slicelife.ca'. (_ssl.c:1016)")))
+
+### hardees.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hardees.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.us', port=443) at 0x78b29a5dfa90>, 'Connection to hardees.us timed out. (connect timeout=10)'))
+
+### burgerking.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.us', port=443) at 0x78b29ab7a710>, 'Connection to burgerking.us timed out. (connect timeout=10)'))
+
+### burgerking.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### slice.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='slice.us', port=443): Read timed out. (read timeout=10)
+
+### doordash.com
+
+❌ **Not accessible:** Playwright: Insufficient content (331 chars)
+
+### bostonpizza.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.us', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.us', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### slice.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='slice.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='slice.uk', port=443) at 0x7d7bd8980090>, 'Connection to slice.uk timed out. (connect timeout=10)'))
+
+### in-n-out.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### ubereats.com
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `about.ubereats.com`
+- `apps.apple.com`
+- `auth.uber.com`
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `merchants.ubereats.com`
+- `play.google.com`
+- `policies.google.com`
+- `privacy.uber.com`
+
+---
+
+### carlsjr.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### bostonpizza.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### slice.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dominos.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### bostonpizza.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### slice.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-out.app
+
+**Risk Score:** 0/100
+
+---
+
+### carlsjr.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### bostonpizza.co
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### slice.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.com
+
+**Risk Score:** 64/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food, addictive
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Pickup or delivery from restaurants near you
+- Manage Consent Preferences
+- Performance Cookies
+- Order in the App
+- Something for everyone
+
+**Related Domains Found:**
+
+- `about.grubhub.com`
+- `bytes.grubhub.com`
+- `careers.grubhub.com`
+- `cookiepedia.co.uk`
+- `corporate.grubhub.com`
+- `driver.grubhub.com`
+- `facebook.com`
+- `get.grubhub.com`
+- `grubhub.cashstar.com`
+- `grubhub.com`
+
+---
+
+### bostonpizza.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+
+### slice.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-out.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.biz', port=443) at 0x78b29ab354d0>, 'Connection to in-n-out.biz timed out. (connect timeout=10)'))
+
+### seamless.com
+
+**Risk Score:** 51/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Restaurants near you, delivered fast
+- Manage Consent Preferences
+- Performance Cookies
+- Get Perks in the app
+- Sign in
+
+**Related Domains Found:**
+
+- `app.appsflyer.com`
+- `careers.grubhub.com`
+- `cookiepedia.co.uk`
+- `corporate.grubhub.com`
+- `driver.grubhub.com`
+- `facebook.com`
+- `get.grubhub.com`
+- `instagram.com`
+- `investors.grubhub.com`
+- `onetrust.com`
+
+---
+
+### carlsjr.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.biz', port=443) at 0x78b29a9b96d0>, 'Connection to carlsjr.biz timed out. (connect timeout=10)'))
+
+### postmates.com
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
+- `postmates.com`
+- `privacy.uber.com`
+- `twitter.com`
+- `uber.com`
+
+---
+
+### bostonpizza.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.biz', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.biz', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### slice.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='brandexperience.enginegroup.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='brandexperience.enginegroup.com', port=443): Failed to resolve 'brandexperience.enginegroup.com' ([Errno -2] Name or service not known)"))
+
+### dominos.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dominos.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dominos.dev', port=443) at 0x78b29a903790>, 'Connection to dominos.dev timed out. (connect timeout=10)'))
+
+### bostonpizza.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### slice.ca
 
@@ -74,9 +681,684 @@
 
 ---
 
-### foodpanda.us
+### in-n-out.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### carlsjr.ca
 
 **Risk Score:** 0/100
+
+---
+
+### arbys.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### slice.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### arbys.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='arbys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='arbys.net', port=443) at 0x78b29a8dba10>, 'Connection to arbys.net timed out. (connect timeout=10)'))
+
+### slice.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='slice.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
+
+### in-n-out.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### carlsjr.co.uk
+
+**Risk Score:** 20/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Quick Links
+- Help
+- Legal
+
+**Related Domains Found:**
+
+- `carlsjr.app.pepperhq.com`
+- `facebook.com`
+- `feedback.sentimentsearch.com`
+- `harri.com`
+- `instagram.com`
+- `jackchristian.com.au`
+- `menus.tenkites.com`
+- `tiktok.com`
+
+---
+
+### arbys.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### skipthedishes.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/?utm_source=skipthedishes.uk&utm_medium=microsites&utm_campaign=microsites
+
+### dominos.co.uk
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: scarcity
+
+**Sample Products/Services:**
+
+- Enter your postcode
+
+**Related Domains Found:**
+
+- `corporate.dominos.co.uk`
+- `dominos.co.uk`
+- `dominosuk.page.link`
+- `facebook.com`
+- `instagram.com`
+- `investors.dominos.co.uk`
+- `tiktok.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### arbys.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### skipthedishes.org
+
+❌ **Not accessible:** 502 Server Error: Bad Gateway for url: https://skipthedishes.org/
+
+### in-n-out.co.uk
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: urgency, discounts, addiction_language
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- Servicing Made Simple
+- Sign up for our newsletter and future offers
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `inoautocentres.co.uk`
+- `linkedin.com`
+- `trustpilot.com`
+- `twitter.com`
+- `uk.trustpilot.com`
+
+---
+
+### carlsjr.info
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: upselling
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- Bitly LinksCustomize, share, and track links
+- Bitly CodesDynamic solutions to fit every business need
+- RetailEnhance customer engagement
+- Consumer Packaged GoodsConnect directly with consumers
+- Media & EntertainmentCreate interactive experiences
+
+**Related Domains Found:**
+
+- `bitly.com`
+- `dev.bitly.com`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `mkt-static.bitly.com`
+- `security.bitly.com`
+- `support.bitly.com`
+- `twitter.com`
+
+---
+
+### arbys.ca
+
+**Risk Score:** 50/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Congrats! You have earnedpoints
+
+---
+
+### skipthedishes.net
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `namesilo.com`
+- `sedo.com`
+
+---
+
+### arbys.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='arbys.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'arbys.biz'. (_ssl.c:1016)")))
+
+### skipthedishes.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-out.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.info', port=443) at 0x78b29a9b90d0>, 'Connection to in-n-out.info timed out. (connect timeout=10)'))
+
+### carlsjr.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.net', port=443) at 0x78b29a6dc490>, 'Connection to carlsjr.net timed out. (connect timeout=10)'))
+
+### arbys.ai
+
+**Risk Score:** 0/100
+
+---
+
+### skipthedishes.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='skipthedishes.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='skipthedishes.info', port=443) at 0x7d7bd8824d10>, 'Connection to skipthedishes.info timed out. (connect timeout=10)'))
+
+### dominos.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dominos.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### krispykreme.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### skipthedishes.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-out.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### carlsjr.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.org', port=443) at 0x78b29a6de6d0>, 'Connection to carlsjr.org timed out. (connect timeout=10)'))
+
+### timhortons.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### skipthedishes.ca
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Unlock a world of exclusive perks and VIP experiences.
+- Give the Gift of Skip
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
+
+---
+
+### dunkin.app
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `dunkinmerch.com`
+
+---
+
+### starbucks.com
+
+**Risk Score:** 48/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Related Domains Found:**
+
+- `about.starbucks.com`
+- `alumni.starbucks.com`
+- `archive.starbucks.com`
+- `athome.starbucks.com`
+- `careers.starbucks.com`
+- `content-prod-live.cert.starbucks.com`
+- `customerservice.starbucks.com`
+- `facebook.com`
+- `instagram.com`
+- `investor.starbucks.com`
+
+---
+
+### skipthedishes.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='skipthedishes.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='skipthedishes.app', port=443) at 0x7d7bd8faf650>, 'Connection to skipthedishes.app timed out. (connect timeout=10)'))
+
+### in-n-out.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### carlsjr.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.uk', port=443) at 0x78b29aba6710>, 'Connection to carlsjr.uk timed out. (connect timeout=10)'))
+
+### dunkin.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))
+
+### skipthedishes.ai
+
+**Risk Score:** 0/100
+
+---
+
+### dominos.ca
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### dunkindonuts.com
+
+**Risk Score:** 0/100
+
+---
+
+### seamless.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-out.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.uk', port=443) at 0x78b29aa2a1d0>, 'Connection to in-n-out.uk timed out. (connect timeout=10)'))
+
+### carlsjr.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.us', port=443) at 0x78b29a9a1590>, 'Connection to carlsjr.us timed out. (connect timeout=10)'))
+
+### bostonpizza.com
+
+**Risk Score:** 46/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- READY TO ENJOY SOME BP AT HOME?
+- Restaurants
+- about
+- legal
+
+**Related Domains Found:**
+
+- `bostonpizza.cashstar.com`
+- `bostonpizzafranchise.com`
+- `bostons.com`
+- `bostons.com.mx`
+- `bpincomefund.com`
+- `careers.bostonpizza.ca`
+- `facebook.com`
+- `instagram.com`
+- `order.bostonpizza.com`
+- `pizzagravy.ca`
+
+---
+
+### seamless.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzanova.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### seamless.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='seamless.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='seamless.org', port=443) at 0x7d7bd8659010>, 'Connection to seamless.org timed out. (connect timeout=10)'))
+
+### in-n-out.us
+
+**Risk Score:** 40/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Home
+- menu
+- Kids menu
+- Recipescopycat recipeshomemade recipes
+- copycat recipes
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `pinterest.com`
+
+---
+
+### chick-fil-a.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.ai', port=443) at 0x78b29a9a1410>, 'Connection to chick-fil-a.ai timed out. (connect timeout=10)'))
+
+### pizza73.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### seamless.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='seamless.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'seamless.net'. (_ssl.c:1016)")))
+
+### dominos.biz
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `google.com`
+
+---
+
+### papamurphys.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.papamurphys.com/
+
+### seamless.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### in-n-outburger.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='in-n-outburger.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-outburger.biz', port=443) at 0x78b29a9035d0>, 'Connection to in-n-outburger.biz timed out. (connect timeout=10)'))
+
+### chick-fil-a.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.app', port=443) at 0x78b29abec950>, 'Connection to chick-fil-a.app timed out. (connect timeout=10)'))
+
+### marcos.com
+
+**Risk Score:** 44/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- You Might Also Like...
+- Saved Cards:
+- THANK YOU, {{CUSTOMER_FIRST_NAME}}
+- ORDER SUMMARY
+- Order Number
+
+**Related Domains Found:**
+
+- `ciaonet.com`
+- `facebook.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `marcos.com`
+- `marcossliceofsupport.com`
+- `nutritionix.com`
+- `play.google.com`
+- `twitter.com`
+
+---
+
+### seamless.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='seamless.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### littlecaesars.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### seamless.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='seamless.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='seamless.dev', port=443) at 0x7d7bd8a0ced0>, 'Connection to seamless.dev timed out. (connect timeout=10)'))
+
+### innout.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chick-fil-a.ca
+
+**Risk Score:** 0/100
+
+---
+
+### papajohns.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.papajohns.co.uk/?utm_source=papajohns.com&utm_medium=referral
+
+### seamless.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### dominos.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### moes.com
+
+❌ **Not accessible:** 429 Client Error: Too Many Requests for url: https://www.moes.com/
+
+### seamless.co
+
+**Risk Score:** 0/100
+
+---
+
+### innout.app
+
+**Risk Score:** 0/100
+
+---
+
+### chick-fil-a.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### qdoba.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com:443/
+
+### seamless.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotle.com
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, convenience
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- DOWNLOAD OUR APP
+- CONNECT WITH US
+
+**Related Domains Found:**
+
+- `chipotle.com`
+- `chipotlegoods.com`
+- `community.chipotle.com`
+- `facebook.com`
+- `instagram.com`
+- `ir.chipotle.com`
+- `itunes.apple.com`
+- `jobs.chipotle.com`
+- `locations.chipotle.com`
+- `newsroom.chipotle.com`
+
+---
+
+### seamless.ai
+
+**Risk Score:** 60/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed, fast_food
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Prospector
+- Buyer Intent
+- Job Changes
+- Data Enrichment
+- CRM
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `login.seamless.ai`
+- `preferences.seamless.ai`
+- `seamlessaistatus.com`
+- `tiktok.com`
+- `twitter.com`
+- `videoask.com`
+- `youtube.com`
+
+---
+
+### innout.biz
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chick-fil-a.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotlemexicangrill.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.com', port=443) at 0x78b29aa21090>, 'Connection to chipotlemexicangrill.com timed out. (connect timeout=10)'))
+
+### postmates.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='postmates.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### dominos.ai
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
 
 ---
 
@@ -114,629 +1396,365 @@
 
 ---
 
-### zomato.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### papajohns.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://papajohns.co.uk/
-
-### slice.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### foodpanda.org
-
-❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.org/
-
-### subway.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='subway.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### burgerking.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### papajohns.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### slice.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='slice.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### foodpanda.net
-
-❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.net/
-
-### chick-fil-a.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.uk', port=443) at 0x78b29a5b4c10>, 'Connection to chick-fil-a.uk timed out. (connect timeout=10)'))
-
-### subway.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='www.subway.com', port=443): Read timed out. (read timeout=10)
-
-### chipotlemexicangrill.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.com', port=443) at 0x78b29aa21090>, 'Connection to chipotlemexicangrill.com timed out. (connect timeout=10)'))
-
-### zomato.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### papajohns.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.co', port=443) at 0x78b29a605b50>, 'Connection to papajohns.co timed out. (connect timeout=10)'))
-
-### skipthedishes.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/?utm_source=skipthedishes.uk&utm_medium=microsites&utm_campaign=microsites
-
-### foodpanda.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tech.foodora.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='tech.foodora.com', port=443): Failed to resolve 'tech.foodora.com' ([Errno -2] Name or service not known)"))
-
-### chickfila.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.ca', port=443) at 0x78b29a9a3150>, 'Connection to chickfila.ca timed out. (connect timeout=10)'))
-
-### carlsjr.co.uk
-
-**Risk Score:** 20/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: discounts, addiction_language
-- Employs aggressive marketing: scarcity, fomo
-
-**Sample Products/Services:**
-
-- Quick Links
-- Help
-- Legal
-
-**Related Domains Found:**
-
-- `carlsjr.app.pepperhq.com`
-- `facebook.com`
-- `feedback.sentimentsearch.com`
-- `harri.com`
-- `instagram.com`
-- `jackchristian.com.au`
-- `menus.tenkites.com`
-- `tiktok.com`
-
----
-
-### papajohns.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://papajohns.ca/
-
-### skipthedishes.org
-
-❌ **Not accessible:** 502 Server Error: Bad Gateway for url: https://skipthedishes.org/
-
-### foodpanda.info
-
-❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.info/
-
-### chipotlemexicangrill.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.info', port=443) at 0x78b29a955650>, 'Connection to chipotlemexicangrill.info timed out. (connect timeout=10)'))
-
-### subway.info
-
-❌ **Not accessible:** 439 Client Error: status code 439 for url: https://subway.info/
-
-### chipotle.com
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: impulsive_ordering, convenience
-- Employs aggressive marketing: fomo
-
-**Sample Products/Services:**
-
-- DOWNLOAD OUR APP
-- CONNECT WITH US
-
-**Related Domains Found:**
-
-- `chipotle.com`
-- `chipotlegoods.com`
-- `community.chipotle.com`
-- `facebook.com`
-- `instagram.com`
-- `ir.chipotle.com`
-- `itunes.apple.com`
-- `jobs.chipotle.com`
-- `locations.chipotle.com`
-- `newsroom.chipotle.com`
-
----
-
-### zomato.co.uk
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/uk/goodbye
-
-### papajohns.app
-
-**Risk Score:** 0/100
-
----
-
-### skipthedishes.net
-
-**Risk Score:** 3/100
-
-**Justification for Blocking:**
-
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `namesilo.com`
-- `sedo.com`
-
----
-
-### foodpanda.co
-
-❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.co/
-
-### burgerking.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.info', port=443) at 0x78b29abee510>, 'Connection to burgerking.info timed out. (connect timeout=10)'))
-
-### papajohns.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'papajohns.ai'. (_ssl.c:1016)")))
-
-### skipthedishes.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### foodpanda.ca
-
-**Risk Score:** 0/100
-
----
-
-### subway.io
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://subway.io/
-
-### qdoba.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com:443/
-
-### tacobell.com
-
-**Risk Score:** 0/100
-
----
-
-### pandaexpress.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### skipthedishes.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='skipthedishes.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='skipthedishes.info', port=443) at 0x7d7bd8824d10>, 'Connection to skipthedishes.info timed out. (connect timeout=10)'))
-
-### foodpanda.biz
-
-❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.biz/
-
-### chipotle.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pandaexpress.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### skipthedishes.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### foodpanda.app
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `trustpilot.com`
-
----
-
-### subway.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### bostonpizza.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.us', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.us', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### moes.com
-
-❌ **Not accessible:** 429 Client Error: Too Many Requests for url: https://www.moes.com/
-
-### pandaexpress.ca
+### postmates.net
 
 **Risk Score:** 18/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Sample Products/Services:**
-
-- Find Your Panda
-- Order NowOrder
-- Our FoodOur Philosophy
-- Our Philosophy
-- Our Locations
-
-**Related Domains Found:**
-
-- `community.pandaexpress.com`
-- `pandacareers.com`
-- `pandacares.org`
-- `pandaexpress.ca`
-- `pandaexpress.com`
-- `pandarg.com`
-- `privacyportal.onetrust.com`
-
----
-
-### skipthedishes.ca
-
-**Risk Score:** 37/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- More Choice
-- Seamless delivery
-- Take time back in your day
-- Unlock a world of exclusive perks and VIP experiences.
-- Give the Gift of Skip
-
-**Related Domains Found:**
-
-- `app.adjust.com`
-- `careers.justeattakeaway.com`
-- `couriers.skipthedishes.com`
-- `facebook.com`
-- `instagram.com`
-- `restaurants.skipthedishes.com`
-- `secretsauce.skipthedishes.com`
-- `tiktok.com`
-- `wghq.adj.st`
-- `x.com`
-
----
-
-### foodpanda.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### tacobell.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.co.uk', port=443) at 0x78b29a675890>, 'Connection to tacobell.co.uk timed out. (connect timeout=10)'))
-
-### burgerking.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.dev', port=443) at 0x78b29ab79990>, 'Connection to burgerking.dev timed out. (connect timeout=10)'))
-
-### pizzahut.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pandaexpress.biz
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- Our Menu
-- Privacy PolicyTerms and ConditionsDMCA ComplianceCopyright Notice
-- Terms and Conditions
-- DMCA Compliance
-- Copyright Notice
-
-**Related Domains Found:**
-
-- `pandaexpress.biz`
-
----
-
-### skipthedishes.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='skipthedishes.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='skipthedishes.app', port=443) at 0x7d7bd8faf650>, 'Connection to skipthedishes.app timed out. (connect timeout=10)'))
-
-### eatstreet.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chick-fil-a.ca
-
-**Risk Score:** 0/100
-
----
-
-### subway.org
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://subway.org/
-
-### bostonpizza.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.org', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.org', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### papajohns.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.papajohns.co.uk/?utm_source=papajohns.com&utm_medium=referral
-
-### pandaexpress.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### skipthedishes.ai
-
-**Risk Score:** 0/100
-
----
-
-### eatstreet.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### carlsjr.info
-
-**Risk Score:** 10/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: upselling
-- Employs aggressive marketing: social_proof, fomo
-
-**Sample Products/Services:**
-
-- Bitly LinksCustomize, share, and track links
-- Bitly CodesDynamic solutions to fit every business need
-- RetailEnhance customer engagement
-- Consumer Packaged GoodsConnect directly with consumers
-- Media & EntertainmentCreate interactive experiences
-
-**Related Domains Found:**
-
-- `bitly.com`
-- `dev.bitly.com`
-- `facebook.com`
-- `instagram.com`
-- `linkedin.com`
-- `mkt-static.bitly.com`
-- `security.bitly.com`
-- `support.bitly.com`
-- `twitter.com`
-
----
-
-### dominos.com
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
+- Promotes health hazards: addictive
 - Uses behavioral manipulation: discounts, convenience
-
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
+- Employs aggressive marketing: fomo
 
 **Related Domains Found:**
 
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
+- `postmates.com`
+- `privacy.uber.com`
+- `twitter.com`
+- `uber.com`
 
 ---
 
-### moes.us
+### innout.ca
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### seamless.us
+### chick-fil-a.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.io', port=443) at 0x78b29aba4ad0>, 'Connection to chick-fil-a.io timed out. (connect timeout=10)'))
+
+### jimmyjohns.com
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### eatstreet.net
+### postmates.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='postmates.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### sonicdrivein.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.sonicdrivein.com/
+
+### postmates.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://postmates.co.uk/
+
+### innout.co
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### tacobell.ai
+### chick-fil-a.net
 
-**Risk Score:** 0/100
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.net', port=443) at 0x78b29a6dd250>, 'Connection to chick-fil-a.net timed out. (connect timeout=10)'))
 
----
-
-### littlecaesars.com
+### sonicdriveinn.com
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### moes.uk
+### postmates.co
 
-**Risk Score:** 8/100
+❌ **Not accessible:** HTTPSConnectionPool(host='postmates.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='postmates.co', port=443) at 0x7d7bd8aa2990>, 'Connection to postmates.co timed out. (connect timeout=10)'))
+
+### chipotlemexicangrill.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.us', port=443) at 0x78b29a8dc850>, 'Connection to chipotlemexicangrill.us timed out. (connect timeout=10)'))
+
+### in-n-outburger.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### postmates.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='postmates.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+
+### innout.co.uk
+
+**Risk Score:** 11/100
 
 **Justification for Blocking:**
 
+- Promotes health hazards: fast_food
 - Uses behavioral manipulation: discounts
 
-**Sample Products/Services:**
-
-- This domain name isavailable to purchase
-- Make an offer
-
 **Related Domains Found:**
 
-- `PapillonLandscape.co.uk`
-- `alvariummcr.co.uk`
-- `dslsource.co.uk`
-- `eastbournehalf.co.uk`
-- `kjglobal.co.uk`
-- `minorityperspective.co.uk`
-- `outragefightwear.co.uk`
-- `rdap.uk`
-- `smokeytails.co.uk`
-- `steamboat.co.uk`
+- `spaceship.com`
 
 ---
-
-### seamless.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### eatstreet.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### chick-fil-a.org
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.org', port=443) at 0x78b29ab79010>, 'Connection to chick-fil-a.org timed out. (connect timeout=10)'))
 
-### burgerking.co.uk
+### in-n-out.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### postmates.biz
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
+- `postmates.com`
+- `privacy.uber.com`
+- `twitter.com`
+- `uber.com`
+
+---
+
+### innout.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### postmates.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### innout.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='innout.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='innout.info', port=443) at 0x78b29a551550>, 'Connection to innout.info timed out. (connect timeout=10)'))
+
+### dunkin.biz
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chick-fil-a.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.uk', port=443) at 0x78b29a5b4c10>, 'Connection to chick-fil-a.uk timed out. (connect timeout=10)'))
+
+### shakeshack.com
 
 **Risk Score:** 0/100
 
 ---
 
-### subway.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='www.subway.com', port=443): Read timed out. (read timeout=10)
-
-### moes.org
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: fomo
-
-**Sample Products/Services:**
-
-- OUR SOLUTION
-- PARTNER EXPECTATIONS
-- MISSION
-- VISION
-- VALUES
-
-**Related Domains Found:**
-
-- `directories.onepercentfortheplanet.org`
-
----
-
-### seamless.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='seamless.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='seamless.org', port=443) at 0x7d7bd8659010>, 'Connection to seamless.org timed out. (connect timeout=10)'))
-
-### eatstreet.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='eatstreet.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'eatstreet.ca'. (_ssl.c:1016)")))
-
-### chick-fil-a.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.app', port=443) at 0x78b29abec950>, 'Connection to chick-fil-a.app timed out. (connect timeout=10)'))
-
-### tacobell.app
+### postmates.ai
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### chickfila.org
+### chipotlemexicangrill.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.org', port=443) at 0x78b29a9a3e10>, 'Connection to chickfila.org timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.org', port=443) at 0x78b29a902b10>, 'Connection to chipotlemexicangrill.org timed out. (connect timeout=10)'))
 
-### marcos.com
+### fiveguys.com
+
+**Risk Score:** 0/100
+
+---
+
+### menulog.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/?utm_source=menulog.uk&utm_medium=microsites&utm_campaign=microsites
+
+### innout.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkin.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkin.co', port=443) at 0x78b29a54d1d0>, 'Connection to dunkin.co timed out. (connect timeout=10)'))
+
+### chick-fil-a.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.us', port=443) at 0x78b29aba7290>, 'Connection to chick-fil-a.us timed out. (connect timeout=10)'))
+
+### whitecastle.com
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### menulog.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkin.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### hardees.com
+
+**Risk Score:** 34/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- FEATURED MENU
+- Cinnamon 'N' Raisin Biscuit 2 Pack
+- Homestyle Loaded Breakfast Burrito
+- Super Bacon Biscuit
+- Holly Jolly Sparkler
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `buyatab.com`
+- `facebook.com`
+- `hardees.com`
+- `hardeesfranchising.com`
+- `instagram.com`
+- `order.hardees.com`
+- `play.google.com`
+- `privacy.ckr.com`
+- `twitter.com`
+
+---
+
+### menulog.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='menulog.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+
+### innout.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chickfila.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### carlsjr.com
 
 **Risk Score:** 44/100
 
 **Justification for Blocking:**
 
-- Uses behavioral manipulation: urgency, discounts, convenience, addiction_language
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
 
 **Sample Products/Services:**
 
-- You Might Also Like...
-- Saved Cards:
-- THANK YOU, {{CUSTOMER_FIRST_NAME}}
-- ORDER SUMMARY
-- Order Number
+- FEATURED FLAVORS
+- Cali XL
+- Cali XL Combo
+- BYOB - Build Your Own Bag
+- Churro Hand-Scooped Ice-Cream Shake
 
 **Related Domains Found:**
 
-- `ciaonet.com`
+- `apps.apple.com`
+- `buyatab.com`
+- `carlsjr-appinstall.onelink.me`
+- `carlsjrfranchising.com`
+- `ckefranchise.com`
 - `facebook.com`
 - `instagram.com`
-- `itunes.apple.com`
-- `marcos.com`
-- `marcossliceofsupport.com`
-- `nutritionix.com`
+- `order.carlsjr.com`
 - `play.google.com`
-- `twitter.com`
+- `privacy.ckr.com`
 
 ---
 
-### moes.net
+### menulog.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotlemexicangrill.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.net', port=443) at 0x78b29aa901d0>, 'Connection to chipotlemexicangrill.net timed out. (connect timeout=10)'))
+
+### jackinthebox.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='jackinthebox.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jackinthebox.com', port=443) at 0x7d7bd8adcd10>, 'Connection to jackinthebox.com timed out. (connect timeout=10)'))
+
+### justeat.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.us', port=443) at 0x7d7bd89e9190>, 'Connection to justeat.us timed out. (connect timeout=10)'))
+
+### innout.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chickfila.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.biz', port=443) at 0x78b29a6dc9d0>, 'Connection to chickfila.biz timed out. (connect timeout=10)'))
+
+### popeyeschicken.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'popeyeschicken.com'. (_ssl.c:1016)")))
+
+### justeat.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyes.com
 
 **Risk Score:** 0/100
 
 ---
 
-### seamless.net
+### justeat.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='seamless.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'seamless.net'. (_ssl.c:1016)")))
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.net', port=443) at 0x7d7bd89e8b90>, 'Connection to justeat.net timed out. (connect timeout=10)'))
 
-### doordash.us
+### innout.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chickfila.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.ca', port=443) at 0x78b29a9a3150>, 'Connection to chickfila.ca timed out. (connect timeout=10)'))
+
+### chick-fil-a.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.com', port=443) at 0x7d7bd8fbc390>, 'Connection to chick-fil-a.com timed out. (connect timeout=10)'))
+
+### justeat.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotlemexicangrill.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.info', port=443) at 0x78b29a955650>, 'Connection to chipotlemexicangrill.info timed out. (connect timeout=10)'))
+
+### chickfila.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='chickfila.com', port=443): Failed to resolve 'chickfila.com' ([Errno -5] No address associated with hostname)"))
+
+### justeat.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.info', port=443) at 0x7d7bd899e110>, 'Connection to justeat.info timed out. (connect timeout=10)'))
+
+### innout.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chickfila.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.co.uk', port=443) at 0x78b29abec7d0>, 'Connection to chickfila.co.uk timed out. (connect timeout=10)'))
+
+### arbys.com
 
 **Risk Score:** 0/100
 
 ---
 
-### burgerking.co.ca
+### justeat.co.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk:443/
 
 ### wendys.com
 
@@ -772,336 +1790,288 @@
 
 ---
 
-### moes.io
+### justeat.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.co', port=443) at 0x7d7bd89a56d0>, 'Connection to justeat.co timed out. (connect timeout=10)'))
+
+### jackinthebox.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='jackinthebox.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+
+### chickfila.info
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### seamless.io
+### subway.com
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='www.subway.com', port=443): Read timed out. (read timeout=10)
 
-### doordash.uk
+### justeat.ca
 
-**Risk Score:** 0/100
-
----
-
-### papamurphys.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.papamurphys.com/
-
-### moes.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### seamless.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='seamless.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### doordash.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chick-fil-a.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.net', port=443) at 0x78b29a6dd250>, 'Connection to chick-fil-a.net timed out. (connect timeout=10)'))
-
-### arbys.com
-
-**Risk Score:** 0/100
-
----
-
-### moes.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://moes.co.uk/
-
-### seamless.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='seamless.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='seamless.dev', port=443) at 0x7d7bd8a0ced0>, 'Connection to seamless.dev timed out. (connect timeout=10)'))
-
-### doordash.io
-
-❌ **Not accessible:** 400 Client Error: Bad Request for url: https://www.facebook.com/
-
-### timhortons.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizza73.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### moes.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### seamless.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### doordash.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='smtp.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='smtp.google.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-
-### chickfila.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.co.uk', port=443) at 0x78b29abec7d0>, 'Connection to chickfila.co.uk timed out. (connect timeout=10)'))
-
-### starbucks.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.org', port=443) at 0x78b29a676a90>, 'Connection to starbucks.org timed out. (connect timeout=10)'))
-
-### chickfila.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='chickfila.com', port=443): Failed to resolve 'chickfila.com' ([Errno -5] No address associated with hostname)"))
-
-### slice.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='slice.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='slice.uk', port=443) at 0x7d7bd8980090>, 'Connection to slice.uk timed out. (connect timeout=10)'))
-
-### moes.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### seamless.co
-
-**Risk Score:** 0/100
-
----
-
-### doordash.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### reeses.com
-
-**Risk Score:** 0/100
-
----
-
-### starbucks.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.uk', port=443) at 0x78b29a7a0090>, 'Connection to starbucks.uk timed out. (connect timeout=10)'))
-
-### slice.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='slice.us', port=443): Read timed out. (read timeout=10)
-
-### shakeshack.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.io', port=443) at 0x78b29a907410>, 'Connection to shakeshack.io timed out. (connect timeout=10)'))
-
-### moes.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='moes.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='moes.biz', port=443) at 0x78b29a49e910>, 'Connection to moes.biz timed out. (connect timeout=10)'))
-
-### seamless.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### doordash.ca
-
-**Risk Score:** 0/100
-
----
-
-### chick-fil-a.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.io', port=443) at 0x78b29aba4ad0>, 'Connection to chick-fil-a.io timed out. (connect timeout=10)'))
-
-### tacobell.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.net', port=443) at 0x78b29a5a5f90>, 'Connection to tacobell.net timed out. (connect timeout=10)'))
-
-### chick-fil-a.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.com', port=443) at 0x7d7bd8fbc390>, 'Connection to chick-fil-a.com timed out. (connect timeout=10)'))
-
-### shakeshack.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.info', port=443) at 0x78b29a5dd190>, 'Connection to shakeshack.info timed out. (connect timeout=10)'))
-
-### moes.app
-
-❌ **Not accessible:** HTTPConnectionPool(host='fxdomain.info', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='fxdomain.info', port=80): Failed to resolve 'fxdomain.info' ([Errno -2] Name or service not known)"))
-
-### seamless.ai
-
-**Risk Score:** 60/100
+**Risk Score:** 37/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: ultra_processed, fast_food
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
 
 **Sample Products/Services:**
 
-- Prospector
-- Buyer Intent
-- Job Changes
-- Data Enrichment
-- CRM
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Unlock a world of exclusive perks and VIP experiences.
+- Give the Gift of Skip
 
 **Related Domains Found:**
 
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
 - `facebook.com`
 - `instagram.com`
-- `login.seamless.ai`
-- `preferences.seamless.ai`
-- `seamlessaistatus.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
 - `tiktok.com`
-- `twitter.com`
-- `videoask.com`
-- `youtube.com`
+- `wghq.adj.st`
+- `x.com`
 
 ---
 
-### doordash.biz
+### chipotlemexicangrill.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.co.uk', port=443) at 0x78b29a5a4890>, 'Connection to chipotlemexicangrill.co.uk timed out. (connect timeout=10)'))
+
+### dominos.com
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### justeat.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.biz', port=443) at 0x7d7bd89a4710>, 'Connection to justeat.biz timed out. (connect timeout=10)'))
+
+### jackinthebox.biz
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### kitkat.com
+### chickfila.net
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kitkat.co.uk
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.net', port=443) at 0x78b29ab50450>, 'Connection to chickfila.net timed out. (connect timeout=10)'))
 
-### starbucks.us
+### pizzahut.com
 
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.us', port=443) at 0x78b29a675450>, 'Connection to starbucks.us timed out. (connect timeout=10)'))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### ubereats.ai
+### justeat.app
 
-❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+❌ **Not accessible:** HTTPSConnectionPool(host='justeat.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.app', port=443) at 0x7d7bd899e810>, 'Connection to justeat.app timed out. (connect timeout=10)'))
 
-### slicelife.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='slicelife.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'slicelife.ca'. (_ssl.c:1016)")))
-
-### shakeshack.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://shakeshack.co.uk/
-
-### moes.ai
+### tacobell.com
 
 **Risk Score:** 0/100
 
 ---
 
-### postmates.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='postmates.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### doordash.app
+### justeat.ai
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### sonicdriveinn.com
+### jackinthebox.ca
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### ubereats.co
+### chickfila.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.org', port=443) at 0x78b29a9a3e10>, 'Connection to chickfila.org timed out. (connect timeout=10)'))
 
-### shakeshack.co
+### kfc.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kfc.com/
+
+### just-eat.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.us', port=443) at 0x7d7bd89451d0>, 'Connection to just-eat.us timed out. (connect timeout=10)'))
+
+### chipotlemexicangrill.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.biz', port=443) at 0x78b29a901fd0>, 'Connection to chipotlemexicangrill.biz timed out. (connect timeout=10)'))
+
+### burgerking.com
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### mcdonalds.us
+### just-eat.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.us', port=443) at 0x78b29a97df10>, 'Connection to mcdonalds.us timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.uk', port=443) at 0x7d7bd8932910>, 'Connection to just-eat.uk timed out. (connect timeout=10)'))
 
-### postmates.net
+### jackinthebox.co
 
-**Risk Score:** 18/100
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-**Justification for Blocking:**
+### chickfila.uk
 
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: fomo
+❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.uk', port=443) at 0x78b29aba7710>, 'Connection to chickfila.uk timed out. (connect timeout=10)'))
 
-**Related Domains Found:**
+### mcdonalds.com
 
-- `facebook.com`
-- `help.uber.com`
-- `instagram.com`
-- `itunes.apple.com`
-- `play.google.com`
-- `postmates.com`
-- `privacy.uber.com`
-- `twitter.com`
-- `uber.com`
+**Risk Score:** 0/100
 
 ---
 
-### doordash.ai
+### just-eat.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='doordash.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doordash.ai', port=443) at 0x7d7bd88e3a90>, 'Connection to doordash.ai timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
 
-### carlsjr.biz
+### zomato.us
 
-❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.biz', port=443) at 0x78b29a9b96d0>, 'Connection to carlsjr.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/united-states/goodbye
+
+### just-eat.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.net', port=443) at 0x7d7bd89332d0>, 'Connection to just-eat.net timed out. (connect timeout=10)'))
+
+### jackinthebox.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chickfila.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### zomato.uk
+
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/uk/goodbye
+
+### just-eat.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.dev', port=443) at 0x7d7bd892be10>, 'Connection to just-eat.dev timed out. (connect timeout=10)'))
+
+### chipotle.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### zomato.org
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='zomato.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'zomato.org'. (_ssl.c:1016)")))
 
-### cheetos.ai
+### just-eat.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/
+
+### jackinthebox.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotle.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### zomato.io
 
 **Risk Score:** 0/100
 
 ---
 
-### subway.biz
+### just-eat.co
 
-❌ **Not accessible:** HTTPSConnectionPool(host='subway.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.biz'. (_ssl.c:1016)")))
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.co', port=443) at 0x7d7bd8921910>, 'Connection to just-eat.co timed out. (connect timeout=10)'))
 
-### shakeshack.ca
+### zomato.co.uk
 
-**Risk Score:** 26/100
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/uk/goodbye
+
+### just-eat.ca
+
+**Risk Score:** 37/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: discounts, upselling
-- Employs aggressive marketing: scarcity, fomo
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
 
 **Sample Products/Services:**
 
-- Be the first to know the latest Shake Shack Canada updates
-- Black Truffle Burger
-- Black Truffle Shack Stack
-- Black Truffle 'Shroom Burger
-- 'Shroom Burger™
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Unlock a world of exclusive perks and VIP experiences.
+- Give the Gift of Skip
 
 **Related Domains Found:**
 
-- `cdn.shakeshack.ca`
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
 - `facebook.com`
 - `instagram.com`
-- `linkedin.com`
-- `order.shakeshack.ca`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
 - `tiktok.com`
+- `wghq.adj.st`
 - `x.com`
 
 ---
 
-### mcdonalds.net
+### jackinthebox.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.net', port=443) at 0x78b29a49ea90>, 'Connection to mcdonalds.net timed out. (connect timeout=10)'))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### postmates.io
+### chipotle.biz
 
-❌ **Not accessible:** HTTPSConnectionPool(host='postmates.io', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### delivery.uk
+### zomato.co
 
-❌ **Not accessible:** HTTPSConnectionPool(host='delivery.uk', port=443): Read timed out. (read timeout=10)
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### just-eat.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.biz', port=443) at 0x7d7bd8943550>, 'Connection to just-eat.biz timed out. (connect timeout=10)'))
+
+### chipotle.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.uk', port=443) at 0x78b29a957a90>, 'Connection to chipotle.uk timed out. (connect timeout=10)'))
+
+### zomato.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### just-eat.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.app', port=443) at 0x7d7bd8a6d2d0>, 'Connection to just-eat.app timed out. (connect timeout=10)'))
+
+### jackinthebox.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### chipotle.ca
 
@@ -1132,217 +2102,40 @@
 
 ---
 
-### tacobell.io
+### zomato.app
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### jimmyjohns.com
+### just-eat.ai
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.ai', port=443) at 0x7d7bd8930810>, 'Connection to just-eat.ai timed out. (connect timeout=10)'))
 
-### ubereats.io
+### ubereats.us
 
 **Risk Score:** 0/100
 
 ---
 
-### shakeshack.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
-
-### mcdonalds.io
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://mcdonalds.io/
-
-### postmates.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://postmates.co.uk/
-
-### delivery.org
+### instacart.uk
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### cheetos.ca
+### jackinthebox.us
 
-**Risk Score:** 13/100
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotle.co
+
+**Risk Score:** 11/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: sugar
+- Promotes health hazards: fast_food
 - Uses behavioral manipulation: discounts
-- Employs aggressive marketing: fomo
-
-**Sample Products/Services:**
-
-- CHEETOS CRUNCHY®FLAMIN' HOT®Wings
-- CHEETOS CRUNCHY®Sweet 'N' Spicy Chili Meatballs
-- Chester’s Best Pumpkin Pie
-- Tasty RewardsTMMembers!
 
 **Related Domains Found:**
 
-- `contact.pepsico.com`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.ca`
-- `pepsicojobs.com`
-- `shop.snackstoyoucanada.ca`
-- `tastyrewards.ca`
-- `tastyrewards.com`
-- `x.com`
-- `youtube.com`
-
----
-
-### subway.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='subway.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.ca'. (_ssl.c:1016)")))
-
-### pizzanova.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### shakeshack.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.app', port=443) at 0x78b29a98c7d0>, 'Connection to shakeshack.app timed out. (connect timeout=10)'))
-
-### mcdonalds.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.dev', port=443) at 0x78b29a44c710>, 'Connection to mcdonalds.dev timed out. (connect timeout=10)'))
-
-### postmates.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='postmates.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='postmates.co', port=443) at 0x7d7bd8aa2990>, 'Connection to postmates.co timed out. (connect timeout=10)'))
-
-### delivery.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chipotle.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.info', port=443) at 0x78b29aa91d90>, 'Connection to chipotle.info timed out. (connect timeout=10)'))
-
-### burgerking.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.us', port=443) at 0x78b29ab7a710>, 'Connection to burgerking.us timed out. (connect timeout=10)'))
-
-### tacobell.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.info', port=443) at 0x78b29a5a5550>, 'Connection to tacobell.info timed out. (connect timeout=10)'))
-
-### ubereats.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ubereats.net', port=443) at 0x7d7bd88d28d0>, 'Connection to ubereats.net timed out. (connect timeout=10)'))
-
-### shakeshack.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### mcdonalds.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### postmates.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='postmates.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
-
-### delivery.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='delivery.info', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='delivery.info', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### cheetos.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.info', port=443) at 0x78b29a29d8d0>, 'Connection to cheetos.info timed out. (connect timeout=10)'))
-
-### chipotle.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### bostonpizza.com
-
-**Risk Score:** 46/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- READY TO ENJOY SOME BP AT HOME?
-- Restaurants
-- about
-- legal
-
-**Related Domains Found:**
-
-- `bostonpizza.cashstar.com`
-- `bostonpizzafranchise.com`
-- `bostons.com`
-- `bostons.com.mx`
-- `bpincomefund.com`
-- `careers.bostonpizza.ca`
-- `facebook.com`
-- `instagram.com`
-- `order.bostonpizza.com`
-- `pizzagravy.ca`
-
----
-
-### qdoba.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### mcdonalds.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### postmates.biz
-
-**Risk Score:** 18/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: fomo
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `help.uber.com`
-- `instagram.com`
-- `itunes.apple.com`
-- `play.google.com`
-- `postmates.com`
-- `privacy.uber.com`
-- `twitter.com`
-- `uber.com`
-
----
-
-### delivery.co
-
-**Risk Score:** 15/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `sedo.com`
-
----
-
-### carlsjr.ca
-
-**Risk Score:** 0/100
+- `spaceship.com`
 
 ---
 
@@ -1350,291 +2143,25 @@
 
 ❌ **Not accessible:** 403 Client Error: Forbidden for url: https://ubereats.org/
 
-### qdoba.org
+### instacart.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='instacart.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='instacart.org', port=443) at 0x7d7bd894cdd0>, 'Connection to instacart.org timed out. (connect timeout=10)'))
+
+### chipotle.org
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### mcdonalds.co
+### ubereats.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.co', port=443) at 0x78b29a49f850>, 'Connection to mcdonalds.co timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='ubereats.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ubereats.net', port=443) at 0x7d7bd88d28d0>, 'Connection to ubereats.net timed out. (connect timeout=10)'))
 
-### postmates.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### delivery.ca
-
-**Risk Score:** 0/100
-
----
-
-### cheetos.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.net', port=443) at 0x78b29a29ac90>, 'Connection to cheetos.net timed out. (connect timeout=10)'))
-
-### timhortons.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.biz', port=443) at 0x78b29a6f5fd0>, 'Connection to timhortons.biz timed out. (connect timeout=10)'))
-
-### dunkindonuts.com
-
-**Risk Score:** 0/100
-
----
-
-### qdoba.net
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### mcdonalds.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mcdonalds.ca'. (_ssl.c:1016)")))
-
-### postmates.ai
+### instacart.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### delivery.app
+### jimmyjohns.app
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### burgerking.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.uk', port=443) at 0x78b29abeca50>, 'Connection to burgerking.uk timed out. (connect timeout=10)'))
-
-### swiggy.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='swiggy.net', port=443) at 0x7d7bd898b290>, 'Connection to swiggy.net timed out. (connect timeout=10)'))
-
-### qdoba.info
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### mcdonalds.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.ai', port=443) at 0x78b29a97c490>, 'Connection to mcdonalds.ai timed out. (connect timeout=10)'))
-
-### menulog.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/?utm_source=menulog.uk&utm_medium=microsites&utm_campaign=microsites
-
-### delivery.ai
-
-**Risk Score:** 16/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Related Domains Found:**
-
-- `sudos.com`
-
----
-
-### dunkin.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))
-
-### cheetos.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.org', port=443) at 0x78b29a2990d0>, 'Connection to cheetos.org timed out. (connect timeout=10)'))
-
-### timhortons.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### swiggy.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### qdoba.dev
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### marcos.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### menulog.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### deliveroo.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### carlsjr.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.us', port=443) at 0x78b29a9a1590>, 'Connection to carlsjr.us timed out. (connect timeout=10)'))
-
-### burgerking.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.org', port=443) at 0x78b29abefc50>, 'Connection to burgerking.org timed out. (connect timeout=10)'))
-
-### qdoba.co
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### marcos.uk
-
-**Risk Score:** 0/100
-
----
-
-### menulog.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='menulog.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
-
-### deliveroo.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.uk', port=443) at 0x7d7bd8a84610>, 'Connection to deliveroo.uk timed out. (connect timeout=10)'))
-
-### cheetos.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.us', port=443) at 0x78b29a291e10>, 'Connection to cheetos.us timed out. (connect timeout=10)'))
-
-### starbucks.com
-
-**Risk Score:** 48/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
-- Employs aggressive marketing: fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Related Domains Found:**
-
-- `about.starbucks.com`
-- `alumni.starbucks.com`
-- `archive.starbucks.com`
-- `athome.starbucks.com`
-- `careers.starbucks.com`
-- `content-prod-live.cert.starbucks.com`
-- `customerservice.starbucks.com`
-- `facebook.com`
-- `instagram.com`
-- `investor.starbucks.com`
-
----
-
-### timhortons.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### chickfila.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### swiggy.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### qdoba.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='www.qdoba.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.qdoba.ca', port=443) at 0x78b29a98ee50>, 'Connection to www.qdoba.ca timed out. (connect timeout=10)'))
-
-### marcos.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### menulog.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### deliveroo.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.org', port=443) at 0x7d7bd8a92890>, 'Connection to deliveroo.org timed out. (connect timeout=10)'))
-
-### burgerking.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.sonicdrivein.com/
-
-### qdoba.biz
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
-
-### marcos.io
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- ~
-
-**Related Domains Found:**
-
-- `linkedin.com`
-- `mailhide.io`
-- `twitter.com`
-
----
-
-### justeat.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.us', port=443) at 0x7d7bd89e9190>, 'Connection to justeat.us timed out. (connect timeout=10)'))
-
-### chips-ahoy.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chips-ahoy.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chips-ahoy.ca', port=443) at 0x78b29a290b10>, 'Connection to chips-ahoy.ca timed out. (connect timeout=10)'))
-
-### timhortons.co.uk
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `joinourteam.timhortons.co.uk`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### trycaviar.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.trycaviar.com/users/sign_up?referral_code=hgw963
-
-### qdoba.app
-
-❌ **Not accessible:** 439 Client Error: status code 439 for url: https://qdoba.app/
-
-### marcos.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### justeat.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chipotle.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.uk', port=443) at 0x78b29a957a90>, 'Connection to chipotle.uk timed out. (connect timeout=10)'))
-
-### popeyeschicken.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.us', port=443) at 0x78b29a8f5e50>, 'Connection to popeyeschicken.us timed out. (connect timeout=10)'))
-
-### marcos.dev
-
-**Risk Score:** 0/100
-
----
-
-### justeat.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.net', port=443) at 0x7d7bd89e8b90>, 'Connection to justeat.net timed out. (connect timeout=10)'))
 
 ### chipotle.co.uk
 
@@ -1659,23 +2186,665 @@
 
 ---
 
-### chipsahoy.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipsahoy.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipsahoy.ca', port=443) at 0x78b29aa53750>, 'Connection to chipsahoy.ca timed out. (connect timeout=10)'))
-
-### timhortons.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'timhortons.net'. (_ssl.c:1016)")))
-
-### ubereats.us
+### ubereats.io
 
 **Risk Score:** 0/100
 
 ---
 
-### popeyeschicken.uk
+### instacart.co
 
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.uk', port=443) at 0x78b29a5de850>, 'Connection to popeyeschicken.uk timed out. (connect timeout=10)'))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### chipotle.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.info', port=443) at 0x78b29aa91d90>, 'Connection to chipotle.info timed out. (connect timeout=10)'))
+
+### instacart.ca
+
+**Risk Score:** 0/100
+
+---
+
+### instacart.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkin.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dunkin.net'. (_ssl.c:1016)")))
+
+### chipotle.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='grubhub.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='grubhub.uk', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### chipotle.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.net', port=443) at 0x78b29aa4e310>, 'Connection to chipotle.net timed out. (connect timeout=10)'))
+
+### grubhub.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkin.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkin.org', port=443) at 0x78b29a5c4e10>, 'Connection to dunkin.org timed out. (connect timeout=10)'))
+
+### grubhub.info
+
+**Risk Score:** 0/100
+
+---
+
+### grubhub.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='grubhub.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='grubhub.co.uk', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### dunkin.uk
+
+❌ **Not accessible:** 521 Server Error: <none> for url: https://dunkin.uk/
+
+### grubhub.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkindonuts.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.ai', port=443) at 0x78b29a5c7050>, 'Connection to dunkindonuts.ai timed out. (connect timeout=10)'))
+
+### grubhub.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### grubhub.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dunkindonuts.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.app', port=443) at 0x78b29a5d0a50>, 'Connection to dunkindonuts.app timed out. (connect timeout=10)'))
+
+### gopuff.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.us', port=443) at 0x7d7bd8928350>, 'Connection to gopuff.us timed out. (connect timeout=10)'))
+
+### gopuff.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.uk', port=443) at 0x7d7bd8a3f290>, 'Connection to gopuff.uk timed out. (connect timeout=10)'))
+
+### dunkindonuts.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.biz', port=443) at 0x78b29a5c6090>, 'Connection to dunkindonuts.biz timed out. (connect timeout=10)'))
+
+### gopuff.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.org', port=443) at 0x7d7bd8967410>, 'Connection to gopuff.org timed out. (connect timeout=10)'))
+
+### gopuff.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.net', port=443) at 0x7d7bd8965610>, 'Connection to gopuff.net timed out. (connect timeout=10)'))
+
+### dunkindonuts.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.co', port=443) at 0x78b29a906850>, 'Connection to dunkindonuts.co timed out. (connect timeout=10)'))
+
+### gopuff.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.io', port=443) at 0x7d7bd8a3b250>, 'Connection to gopuff.io timed out. (connect timeout=10)'))
+
+### gopuff.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.info', port=443) at 0x7d7bd8920510>, 'Connection to gopuff.info timed out. (connect timeout=10)'))
+
+### dunkindonuts.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dunkindonuts.co.uk'. (_ssl.c:1016)")))
+
+### gopuff.dev
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gopuff.dev/
+
+### gopuff.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.co.uk', port=443) at 0x7d7bd895a010>, 'Connection to gopuff.co.uk timed out. (connect timeout=10)'))
+
+### dunkindonuts.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### gopuff.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.co', port=443) at 0x7d7bd895acd0>, 'Connection to gopuff.co timed out. (connect timeout=10)'))
+
+### gopuff.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.ca', port=443) at 0x7d7bd895aa90>, 'Connection to gopuff.ca timed out. (connect timeout=10)'))
+
+### dunkindonuts.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.uk', port=443) at 0x78b29a953010>, 'Connection to dunkindonuts.uk timed out. (connect timeout=10)'))
+
+### gopuff.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.biz', port=443) at 0x7d7bd8923790>, 'Connection to gopuff.biz timed out. (connect timeout=10)'))
+
+### foodpanda.us
+
+**Risk Score:** 0/100
+
+---
+
+### fiveguys.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pandaexpress.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### foodpanda.org
+
+❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.org/
+
+### pandaexpress.ca
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Find Your Panda
+- Order NowOrder
+- Our FoodOur Philosophy
+- Our Philosophy
+- Our Locations
+
+**Related Domains Found:**
+
+- `community.pandaexpress.com`
+- `pandacareers.com`
+- `pandacares.org`
+- `pandaexpress.ca`
+- `pandaexpress.com`
+- `pandarg.com`
+- `privacyportal.onetrust.com`
+
+---
+
+### foodpanda.net
+
+❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.net/
+
+### fiveguys.biz
+
+**Risk Score:** 0/100
+
+---
+
+### pandaexpress.biz
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Our Menu
+- Privacy PolicyTerms and ConditionsDMCA ComplianceCopyright Notice
+- Terms and Conditions
+- DMCA Compliance
+- Copyright Notice
+
+**Related Domains Found:**
+
+- `pandaexpress.biz`
+
+---
+
+### foodpanda.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tech.foodora.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='tech.foodora.com', port=443): Failed to resolve 'tech.foodora.com' ([Errno -2] Name or service not known)"))
+
+### pandaexpress.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### foodpanda.info
+
+❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.info/
+
+### fiveguys.ca
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `careers.fiveguys.com`
+- `fiveguys-ca.cashstar.com`
+- `instagram.com`
+- `open.spotify.com`
+- `restaurants.fiveguys.ca`
+- `twitter.com`
+- `wbiprod.storedvalue.com`
+
+---
+
+### moes.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### foodpanda.co
+
+❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.co/
+
+### moes.uk
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- This domain name isavailable to purchase
+- Make an offer
+
+**Related Domains Found:**
+
+- `PapillonLandscape.co.uk`
+- `alvariummcr.co.uk`
+- `dslsource.co.uk`
+- `eastbournehalf.co.uk`
+- `kjglobal.co.uk`
+- `minorityperspective.co.uk`
+- `outragefightwear.co.uk`
+- `rdap.uk`
+- `smokeytails.co.uk`
+- `steamboat.co.uk`
+
+---
+
+### foodpanda.ca
+
+**Risk Score:** 0/100
+
+---
+
+### fiveguys.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fiveguys.co', port=443) at 0x78b29a54edd0>, 'Connection to fiveguys.co timed out. (connect timeout=10)'))
+
+### moes.org
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- OUR SOLUTION
+- PARTNER EXPECTATIONS
+- MISSION
+- VISION
+- VALUES
+
+**Related Domains Found:**
+
+- `directories.onepercentfortheplanet.org`
+
+---
+
+### foodpanda.biz
+
+❌ **Not accessible:** 530 Server Error: <none> for url: https://foodpanda.biz/
+
+### moes.net
+
+**Risk Score:** 0/100
+
+---
+
+### foodpanda.app
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### fiveguys.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### moes.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### foodpanda.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### moes.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### eatstreet.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### fiveguys.info
+
+**Risk Score:** 0/100
+
+---
+
+### moes.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://moes.co.uk/
+
+### eatstreet.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### moes.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### eatstreet.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### fiveguys.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fiveguys.net', port=443) at 0x78b29a5c5210>, 'Connection to fiveguys.net timed out. (connect timeout=10)'))
+
+### moes.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### eatstreet.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### moes.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='moes.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='moes.biz', port=443) at 0x78b29a49e910>, 'Connection to moes.biz timed out. (connect timeout=10)'))
+
+### eatstreet.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='eatstreet.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'eatstreet.ca'. (_ssl.c:1016)")))
+
+### fiveguys.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### moes.app
+
+❌ **Not accessible:** HTTPConnectionPool(host='fxdomain.info', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='fxdomain.info', port=80): Failed to resolve 'fxdomain.info' ([Errno -2] Name or service not known)"))
+
+### doordash.us
+
+**Risk Score:** 0/100
+
+---
+
+### moes.ai
+
+**Risk Score:** 0/100
+
+---
+
+### doordash.uk
+
+**Risk Score:** 0/100
+
+---
+
+### fiveguys.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
+
+### mcdonalds.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.us', port=443) at 0x78b29a97df10>, 'Connection to mcdonalds.us timed out. (connect timeout=10)'))
+
+### doordash.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### mcdonalds.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.net', port=443) at 0x78b29a49ea90>, 'Connection to mcdonalds.net timed out. (connect timeout=10)'))
+
+### doordash.io
+
+❌ **Not accessible:** 400 Client Error: Bad Request for url: https://www.facebook.com/
+
+### fiveguys.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.us', port=443): Read timed out. (read timeout=10)
+
+### mcdonalds.io
+
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://mcdonalds.io/
+
+### doordash.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='smtp.google.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='smtp.google.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+
+### mcdonalds.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.dev', port=443) at 0x78b29a44c710>, 'Connection to mcdonalds.dev timed out. (connect timeout=10)'))
+
+### doordash.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### hardees.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### mcdonalds.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### doordash.ca
+
+**Risk Score:** 0/100
+
+---
+
+### mcdonalds.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### doordash.biz
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### hardees.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hardees.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.biz', port=443) at 0x78b29aa70650>, 'Connection to hardees.biz timed out. (connect timeout=10)'))
+
+### mcdonalds.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.co', port=443) at 0x78b29a49f850>, 'Connection to mcdonalds.co timed out. (connect timeout=10)'))
+
+### doordash.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### mcdonalds.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mcdonalds.ca'. (_ssl.c:1016)")))
+
+### doordash.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='doordash.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doordash.ai', port=443) at 0x7d7bd88e3a90>, 'Connection to doordash.ai timed out. (connect timeout=10)'))
+
+### hardees.ca
+
+**Risk Score:** 0/100
+
+---
+
+### mcdonalds.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='mcdonalds.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='mcdonalds.ai', port=443) at 0x78b29a97c490>, 'Connection to mcdonalds.ai timed out. (connect timeout=10)'))
+
+### delivery.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='delivery.uk', port=443): Read timed out. (read timeout=10)
+
+### marcos.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### delivery.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### hardees.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### marcos.uk
+
+**Risk Score:** 0/100
+
+---
+
+### delivery.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### marcos.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### delivery.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='delivery.info', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='delivery.info', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+
+### hardees.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### marcos.io
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- ~
+
+**Related Domains Found:**
+
+- `linkedin.com`
+- `mailhide.io`
+- `twitter.com`
+
+---
+
+### delivery.co
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `sedo.com`
+
+---
+
+### marcos.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### delivery.ca
+
+**Risk Score:** 0/100
+
+---
+
+### hardees.info
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: upselling
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- Bitly LinksCustomize, share, and track links
+- Bitly CodesDynamic solutions to fit every business need
+- RetailEnhance customer engagement
+- Consumer Packaged GoodsConnect directly with consumers
+- Media & EntertainmentCreate interactive experiences
+
+**Related Domains Found:**
+
+- `bitly.com`
+- `dev.bitly.com`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `mkt-static.bitly.com`
+- `security.bitly.com`
+- `support.bitly.com`
+- `twitter.com`
+
+---
+
+### marcos.dev
+
+**Risk Score:** 0/100
+
+---
+
+### delivery.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### marcos.co.uk
 
@@ -1683,55 +2852,31 @@
 
 ---
 
-### justeat.io
+### delivery.ai
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+**Risk Score:** 16/100
 
-### deliveroo.ca
+**Justification for Blocking:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.ca', port=443) at 0x7d7bd8c0edd0>, 'Connection to deliveroo.ca timed out. (connect timeout=10)'))
+- Uses behavioral manipulation: discounts, convenience
 
-### chickfila.biz
+**Related Domains Found:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.biz', port=443) at 0x78b29a6dc9d0>, 'Connection to chickfila.biz timed out. (connect timeout=10)'))
+- `sudos.com`
 
-### deliveroo.biz
+---
 
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.biz', port=443) at 0x7d7bd8aeb210>, 'Connection to deliveroo.biz timed out. (connect timeout=10)'))
+### hardees.io
 
-### popeyeschicken.org
+**Risk Score:** 0/100
 
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='popeyeschicken.org', port=443): Failed to resolve 'popeyeschicken.org' ([Errno -3] Temporary failure in name resolution)"))
-
-### slice.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+---
 
 ### marcos.co
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### justeat.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.info', port=443) at 0x7d7bd899e110>, 'Connection to justeat.info timed out. (connect timeout=10)'))
-
-### deliveroo.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.co', port=443) at 0x7d7bd8cdf290>, 'Connection to deliveroo.co timed out. (connect timeout=10)'))
-
-### chipsahoy.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://chipsahoy.co.uk/
-
-### timhortons.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.org', port=443) at 0x78b29a6c4cd0>, 'Connection to timhortons.org timed out. (connect timeout=10)'))
-
-### deliveroo.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.app', port=443) at 0x7d7bd89d2c50>, 'Connection to deliveroo.app timed out. (connect timeout=10)'))
-
-### popeyeschicken.io
+### deliveroo.us
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
@@ -1739,29 +2884,90 @@
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### justeat.co.uk
+### deliveroo.uk
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk:443/
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.uk', port=443) at 0x7d7bd8a84610>, 'Connection to deliveroo.uk timed out. (connect timeout=10)'))
 
-### swiggy.io
+### hardees.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.io', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='swiggy.io', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### deliveroo.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### popeyeschicken.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='hardees.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.net', port=443) at 0x78b29a5ba190>, 'Connection to hardees.net timed out. (connect timeout=10)'))
 
 ### marcos.biz
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='marcos.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='marcos.biz', port=443) at 0x78b29a49fa10>, 'Connection to marcos.biz timed out. (connect timeout=10)'))
 
-### justeat.co
+### deliveroo.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.co', port=443) at 0x7d7bd89a56d0>, 'Connection to justeat.co timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.org', port=443) at 0x7d7bd8a92890>, 'Connection to deliveroo.org timed out. (connect timeout=10)'))
+
+### marcos.app
+
+**Risk Score:** 0/100
+
+---
+
+### burgerking.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.co', port=443) at 0x78b29ab53050>, 'Connection to burgerking.co timed out. (connect timeout=10)'))
+
+### marcos.ai
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### littlecaesars.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### littlecaesars.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### deliveroo.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.ca', port=443) at 0x7d7bd8c0edd0>, 'Connection to deliveroo.ca timed out. (connect timeout=10)'))
+
+### littlecaesars.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### deliveroo.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.biz', port=443) at 0x7d7bd8aeb210>, 'Connection to deliveroo.biz timed out. (connect timeout=10)'))
+
+### hardees.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hardees.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.org', port=443) at 0x78b29a5e4ed0>, 'Connection to hardees.org timed out. (connect timeout=10)'))
+
+### deliveroo.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.co', port=443) at 0x7d7bd8cdf290>, 'Connection to deliveroo.co timed out. (connect timeout=10)'))
+
+### deliveroo.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.app', port=443) at 0x7d7bd89d2c50>, 'Connection to deliveroo.app timed out. (connect timeout=10)'))
+
+### littlecaesars.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))
+
+### littlecaesars.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### deliveroo.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### deliveroo.co.uk
 
@@ -1794,13 +3000,9 @@
 
 ---
 
-### doritos.ai
+### littlecaesars.info
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### timhortons.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.uk', port=443) at 0x78b29a6c5450>, 'Connection to timhortons.uk timed out. (connect timeout=10)'))
 
 ### deliveroo.net
 
@@ -1865,123 +3067,15 @@
 
 ---
 
-### popeyeschicken.co.uk
+### littlecaesars.co.uk
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### marcos.app
-
-**Risk Score:** 0/100
-
----
-
-### justeat.ca
-
-**Risk Score:** 37/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- More Choice
-- Seamless delivery
-- Take time back in your day
-- Unlock a world of exclusive perks and VIP experiences.
-- Give the Gift of Skip
-
-**Related Domains Found:**
-
-- `app.adjust.com`
-- `careers.justeattakeaway.com`
-- `couriers.skipthedishes.com`
-- `facebook.com`
-- `instagram.com`
-- `restaurants.skipthedishes.com`
-- `secretsauce.skipthedishes.com`
-- `tiktok.com`
-- `wghq.adj.st`
-- `x.com`
-
----
-
-### burgerking.app
-
-**Risk Score:** 0/100
-
----
-
-### zomato.us
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/united-states/goodbye
-
-### popeyeschicken.co
+### littlecaesars.co
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### marcos.ai
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### justeat.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.biz', port=443) at 0x7d7bd89a4710>, 'Connection to justeat.biz timed out. (connect timeout=10)'))
-
-### doritos.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### timhortons.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### popeyeschicken.ca
-
-**Risk Score:** 0/100
-
----
-
-### littlecaesars.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### justeat.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='justeat.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='justeat.app', port=443) at 0x7d7bd899e810>, 'Connection to justeat.app timed out. (connect timeout=10)'))
-
-### chickfila.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.net', port=443) at 0x78b29ab50450>, 'Connection to chickfila.net timed out. (connect timeout=10)'))
-
-### popeyes.com
-
-**Risk Score:** 0/100
-
----
-
-### popeyeschicken.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.biz', port=443) at 0x78b29a97f690>, 'Connection to popeyeschicken.biz timed out. (connect timeout=10)'))
-
-### littlecaesars.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### justeat.ai
+### littlecaesars.ca
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
@@ -1989,15 +3083,9 @@
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### doritos.biz
+### littlecaesars.biz
 
-❌ **Not accessible:** HTTPSConnectionPool(host='doritos.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.biz', port=443) at 0x78b29a298890>, 'Connection to doritos.biz timed out. (connect timeout=10)'))
-
-### wendys.ai
-
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### caviar.co.uk
 
@@ -2029,81 +3117,21 @@
 
 ---
 
-### popeyes.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.uk', port=443) at 0x78b29a5d0c50>, 'Connection to popeyes.uk timed out. (connect timeout=10)'))
-
-### littlecaesars.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.us', port=443) at 0x7d7bd89451d0>, 'Connection to just-eat.us timed out. (connect timeout=10)'))
-
 ### caviar.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### chick-fil-a.info
+### littlecaesars.app
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### popeyeschicken.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'popeyeschicken.com'. (_ssl.c:1016)")))
+❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
 
 ### caviar.co
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='caviar.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='caviar.co', port=443) at 0x7d7bd92ac690>, 'Connection to caviar.co timed out. (connect timeout=10)'))
 
-### popeyes.net
+### littlecaesars.ai
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### littlecaesars.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1016)')))
-
-### slice.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.uk', port=443) at 0x7d7bd8932910>, 'Connection to just-eat.uk timed out. (connect timeout=10)'))
-
-### doritos.ca
-
-**Risk Score:** 10/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: fomo
-
-**Sample Products/Services:**
-
-- DORITOS COLLISIONS®Pizza and Cool Ranch®Flavoured Tortilla Chips
-- Tasty RewardsTMMembers!
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.ca`
-- `pepsicojobs.com`
-- `shop.snackstoyoucanada.ca`
-- `tastyrewards.com`
-- `tiktok.com`
-- `youtube.com`
-
----
-
-### wendys.app
-
-❌ **Not accessible:** 439 Client Error: status code 439 for url: https://wendys.app/
+❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='littlecaesars.ai', port=443) at 0x78b29a85cbd0>, 'Connection to littlecaesars.ai timed out. (connect timeout=10)'))
 
 ### caviar.ca
 
@@ -2133,163 +3161,31 @@
 
 ---
 
-### popeyes.io
+### caviar.biz
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### littlecaesars.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chickfila.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### chick-fil-a.co.uk
-
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** HTTPSConnectionPool(host='caviar.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='caviar.biz', port=443) at 0x7d7bd97691d0>, 'Connection to caviar.biz timed out. (connect timeout=10)'))
 
 ### caviar.org
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### jackinthebox.com
+### krispykreme.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='jackinthebox.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jackinthebox.com', port=443) at 0x7d7bd8adcd10>, 'Connection to jackinthebox.com timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'krispykreme.uk'. (_ssl.c:1016)")))
 
-### popeyes.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.info', port=443) at 0x78b29a81fa90>, 'Connection to popeyes.info timed out. (connect timeout=10)'))
-
-### littlecaesars.info
+### krispykreme.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### just-eat.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.net', port=443) at 0x7d7bd89332d0>, 'Connection to just-eat.net timed out. (connect timeout=10)'))
-
-### doritos.co.uk
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `facebook.com`
-- `instagram.com`
-- `pepsicoprivacypolicy.com`
-- `twitter.com`
-- `walkers.co.uk`
-- `youtube.com`
-
----
-
-### wendys.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='wendys.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'wendys.ca'. (_ssl.c:1016)")))
-
-### chickfila.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chickfila.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chickfila.uk', port=443) at 0x78b29aba7710>, 'Connection to chickfila.uk timed out. (connect timeout=10)'))
-
-### popeyes.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://popeyes.co.uk/
-
-### littlecaesars.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.dev', port=443) at 0x7d7bd892be10>, 'Connection to just-eat.dev timed out. (connect timeout=10)'))
-
-### carlsjr.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.uk', port=443) at 0x78b29aba6710>, 'Connection to carlsjr.uk timed out. (connect timeout=10)'))
-
-### carlsjr.com
-
-**Risk Score:** 44/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- FEATURED FLAVORS
-- Cali XL
-- Cali XL Combo
-- BYOB - Build Your Own Bag
-- Churro Hand-Scooped Ice-Cream Shake
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `buyatab.com`
-- `carlsjr-appinstall.onelink.me`
-- `carlsjrfranchising.com`
-- `ckefranchise.com`
-- `facebook.com`
-- `instagram.com`
-- `order.carlsjr.com`
-- `play.google.com`
-- `privacy.ckr.com`
-
----
-
-### popeyes.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### littlecaesars.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.just-eat.co.uk/
-
-### doritos.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='doritos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.net', port=443) at 0x78b29a27cb90>, 'Connection to doritos.net timed out. (connect timeout=10)'))
-
-### wendys.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### slicelife.com
+### krispykreme.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### popeyes.ai
+### krispykreme.co.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.ai', port=443) at 0x78b29a5d3b50>, 'Connection to popeyes.ai timed out. (connect timeout=10)'))
-
-### littlecaesars.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.co', port=443) at 0x7d7bd8921910>, 'Connection to just-eat.co timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
 ### slice.com
 
@@ -2323,83 +3219,13 @@
 
 ---
 
-### hardees.com
+### krispykreme.co
 
-**Risk Score:** 34/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- FEATURED MENU
-- Cinnamon 'N' Raisin Biscuit 2 Pack
-- Homestyle Loaded Breakfast Burrito
-- Super Bacon Biscuit
-- Holly Jolly Sparkler
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `buyatab.com`
-- `facebook.com`
-- `hardees.com`
-- `hardeesfranchising.com`
-- `instagram.com`
-- `order.hardees.com`
-- `play.google.com`
-- `privacy.ckr.com`
-- `twitter.com`
-
----
+❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
 
 ### bitesquad.net
 
 ❌ **Not accessible:** 401 Client Error: Unauthorized for url: https://bitesquad.net/
-
-### pizzanova.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
-
-### littlecaesars.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.ca
-
-**Risk Score:** 37/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- More Choice
-- Seamless delivery
-- Take time back in your day
-- Unlock a world of exclusive perks and VIP experiences.
-- Give the Gift of Skip
-
-**Related Domains Found:**
-
-- `app.adjust.com`
-- `careers.justeattakeaway.com`
-- `couriers.skipthedishes.com`
-- `facebook.com`
-- `instagram.com`
-- `restaurants.skipthedishes.com`
-- `secretsauce.skipthedishes.com`
-- `tiktok.com`
-- `wghq.adj.st`
-- `x.com`
-
----
 
 ### bitesquad.com
 
@@ -2407,70 +3233,34 @@
 
 ---
 
-### chick-fil-a.us
+### krispykreme.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.us', port=443) at 0x78b29aba7290>, 'Connection to chick-fil-a.us timed out. (connect timeout=10)'))
+**Risk Score:** 0/100
 
-### doritos.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='doritos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.org', port=443) at 0x78b29a21c9d0>, 'Connection to doritos.org timed out. (connect timeout=10)'))
-
-### wendys.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='wendys.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+---
 
 ### caviar.uk
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='caviar.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'caviar.uk'. (_ssl.c:1016)")))
 
-### pizzanova.net
+### dunkin.ai
 
-**Risk Score:** 24/100
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### caviar.ai
+
+**Risk Score:** 11/100
 
 **Justification for Blocking:**
 
 - Promotes health hazards: fast_food
-- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
-- Employs aggressive marketing: social_proof, personalization
-
-**Sample Products/Services:**
-
-- Theodore B:
-- Juice G:
-- Jenna S:
-- Lycan B:
-- Abigail G:
+- Uses behavioral manipulation: discounts
 
 **Related Domains Found:**
 
-- `catering.pizzanova.net`
-- `catersanmarcos.pizzanova.net`
-- `catersolanabeach.pizzanova.net`
-- `harbordrive.pizzanova.net`
-- `instagram.com`
-- `opentable.com`
-- `pizzanova.securetree.com`
-- `recruiting.paylocity.com`
-- `sanmarcos.pizzanova.net`
-- `solanabeach.pizzanova.net`
+- `spaceship.com`
 
 ---
-
-### littlecaesars.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
-
-### just-eat.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.biz', port=443) at 0x7d7bd8943550>, 'Connection to just-eat.biz timed out. (connect timeout=10)'))
-
-### caviar.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='caviar.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='caviar.biz', port=443) at 0x7d7bd97691d0>, 'Connection to caviar.biz timed out. (connect timeout=10)'))
-
-### carlsjr.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.net', port=443) at 0x78b29a6dc490>, 'Connection to carlsjr.net timed out. (connect timeout=10)'))
 
 ### eatstreet.com
 
@@ -2478,281 +3268,9 @@
 	Current:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>
 	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
 
-### whitecastle.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### slice.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizzanova.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### littlecaesars.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='littlecaesars.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='littlecaesars.ai', port=443) at 0x78b29a85cbd0>, 'Connection to littlecaesars.ai timed out. (connect timeout=10)'))
-
-### just-eat.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.app', port=443) at 0x7d7bd8a6d2d0>, 'Connection to just-eat.app timed out. (connect timeout=10)'))
-
-### doritos.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='doritos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.us', port=443) at 0x78b29a0b0b50>, 'Connection to doritos.us timed out. (connect timeout=10)'))
-
-### starbucks.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.info', port=443) at 0x78b29a955d50>, 'Connection to starbucks.info timed out. (connect timeout=10)'))
-
-### pizzanova.co
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### krispykreme.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'krispykreme.uk'. (_ssl.c:1016)")))
-
-### just-eat.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='just-eat.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='just-eat.ai', port=443) at 0x7d7bd8930810>, 'Connection to just-eat.ai timed out. (connect timeout=10)'))
-
-### carlsjr.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### starbucks.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.io', port=443) at 0x78b29a5b0490>, 'Connection to starbucks.io timed out. (connect timeout=10)'))
-
-### fiveguys.com
-
-**Risk Score:** 0/100
-
----
-
-### pizzanova.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzanova.ca', port=443) at 0x78b29a98da10>, 'Connection to pizzanova.ca timed out. (connect timeout=10)'))
-
-### krispykreme.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### instacart.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### fritos.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.biz', port=443) at 0x78b29b168cd0>, 'Connection to fritos.biz timed out. (connect timeout=10)'))
-
-### chipotle.co
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### foodpanda.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### pizzanova.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzanova.biz', port=443) at 0x78b29a5df050>, 'Connection to pizzanova.biz timed out. (connect timeout=10)'))
-
-### krispykreme.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### instacart.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='instacart.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='instacart.org', port=443) at 0x7d7bd894cdd0>, 'Connection to instacart.org timed out. (connect timeout=10)'))
-
-### skipthedishes.com
-
-**Risk Score:** 40/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- More Choice
-- Seamless delivery
-- Take time back in your day
-- Order delivery or pickup from popular places.
-- Unlock a world of exclusive perks and VIP experiences.
-
-**Related Domains Found:**
-
-- `app.adjust.com`
-- `careers.justeattakeaway.com`
-- `couriers.skipthedishes.com`
-- `facebook.com`
-- `instagram.com`
-- `restaurants.skipthedishes.com`
-- `secretsauce.skipthedishes.com`
-- `tiktok.com`
-- `wghq.adj.st`
-- `x.com`
-
----
-
-### carlsjr.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### starbucks.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.net', port=443) at 0x78b29a54f910>, 'Connection to starbucks.net timed out. (connect timeout=10)'))
-
-### shakeshack.com
-
-**Risk Score:** 0/100
-
----
-
-### swiggy.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### pizzahut.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### krispykreme.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### instacart.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### justeat.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab8819bc00 (otid=0x70ab8819db60) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### fritos.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### tacobell.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.org', port=443): Read timed out. (read timeout=10)
-
-### deliveroo.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.info', port=443) at 0x7d7bd8a3a550>, 'Connection to deliveroo.info timed out. (connect timeout=10)'))
-
-### pizzahut.org
-
-**Risk Score:** 0/100
-
----
-
-### krispykreme.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='krispykreme.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### instacart.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### wendys.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### slicelife.co
-
-❌ **Not accessible:** 525 Server Error: <none> for url: https://slicelife.co/
-
-### pizzahut.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### krispykreme.ca
-
-**Risk Score:** 0/100
-
----
-
-### instacart.ca
-
-**Risk Score:** 0/100
-
----
-
-### fritos.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.info', port=443) at 0x78b29a0b0a90>, 'Connection to fritos.info timed out. (connect timeout=10)'))
-
-### slicelife.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='slicelife.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### pizzahut.info
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
 ### krispykreme.ai
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### instacart.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### kfc.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kfc.com/
-
-### pizzahut.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzahut.dev', port=443) at 0x78b29a968390>, 'Connection to pizzahut.dev timed out. (connect timeout=10)'))
 
 ### kfc.us
 
@@ -2785,84 +3303,9 @@
 
 ---
 
-### grubhub.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gopuff.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab88ede4c0 (otid=0x70ab88de6280) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### fritos.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.net', port=443) at 0x78b29a0b3210>, 'Connection to fritos.net timed out. (connect timeout=10)'))
-
-### tacobell.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tacobell.uk'. (_ssl.c:1016)")))
-
-### wendys.net
-
-❌ **Not accessible:** 439 Client Error: status code 439 for url: https://wendys.net/
-
-### slicelife.org
-
-**Risk Score:** 0/100
-
----
-
-### instacart.com
-
-**Risk Score:** 0/100
-
----
-
-### pizzahut.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### caviar.ai
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
 ### kfc.uk
 
 ❌ **Not accessible:** 403 Client Error: Forbidden for url: https://kfc.uk/
-
-### grubhub.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='grubhub.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='grubhub.uk', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### menulog.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab88de9f80 (otid=0x70ab88de78a0) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### zomato.uk
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://www.zomato.com/uk/goodbye
-
-### trycaviar.com
-
-❌ **Not accessible:** Playwright: Insufficient content (335 chars)
-
-### pizzahut.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
 ### kfc.org
 
@@ -2897,27 +3340,44 @@
 
 ---
 
-### grubhub.org
+### swiggy.com
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
 
-### fritos.org
+### skipthedishes.com
 
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.org', port=443) at 0x78b29a0bd050>, 'Connection to fritos.org timed out. (connect timeout=10)'))
+**Risk Score:** 40/100
 
-### wendys.uk
+**Justification for Blocking:**
 
-**Risk Score:** 0/100
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Order delivery or pickup from popular places.
+- Unlock a world of exclusive perks and VIP experiences.
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
 
 ---
-
-### swiggy.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='swiggy.ai', port=443) at 0x7d7bd8980350>, 'Connection to swiggy.ai timed out. (connect timeout=10)'))
-
-### pizzahut.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzahut.co', port=443) at 0x78b29a5416d0>, 'Connection to pizzahut.co timed out. (connect timeout=10)'))
 
 ### kfc.net
 
@@ -2929,9 +3389,512 @@
 
 ---
 
-### grubhub.net
+### deliveroo.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='deliveroo.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='deliveroo.info', port=443) at 0x7d7bd8a3a550>, 'Connection to deliveroo.info timed out. (connect timeout=10)'))
+
+### justeat.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab8819bc00 (otid=0x70ab8819db60) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
+
+### kfc.io
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `sedo.com`
+
+---
+
+### zomato.com
+
+**Risk Score:** 0/100
+
+---
+
+### just-eat.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>
+	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
+
+### papajohns.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'papajohns.ai'. (_ssl.c:1016)")))
+
+### papajohns.app
+
+**Risk Score:** 0/100
+
+---
+
+### papajohns.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://papajohns.ca/
+
+### papajohns.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.co', port=443) at 0x78b29a605b50>, 'Connection to papajohns.co timed out. (connect timeout=10)'))
+
+### papajohns.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### papajohns.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://papajohns.co.uk/
+
+### papajohns.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.org', port=443) at 0x78b29a655450>, 'Connection to papajohns.org timed out. (connect timeout=10)'))
+
+### papajohns.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papajohns.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papajohns.uk', port=443) at 0x78b29a6049d0>, 'Connection to papajohns.uk timed out. (connect timeout=10)'))
+
+### papajohns.us
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### papamurphys.ca
+
+**Risk Score:** 21/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: social_proof, fomo, personalization
+
+**Sample Products/Services:**
+
+- MENU
+- CATERING
+- FUNDRAISING
+- FAQS & MEDIA ENQUIRIES
+- CONTACT US
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `papamurphys.prod.speeddine.com`
+
+---
+
+### papamurphys.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### papamurphys.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='papamurphys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papamurphys.net', port=443) at 0x78b29a9a2ed0>, 'Connection to papamurphys.net timed out. (connect timeout=10)'))
+
+### pizza73.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizza73.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizza73.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.biz', port=443) at 0x78b29ab86dd0>, 'Connection to pizza73.biz timed out. (connect timeout=10)'))
+
+### pizza73.ca
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizza73.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.co', port=443) at 0x78b29aa65d90>, 'Connection to pizza73.co timed out. (connect timeout=10)'))
+
+### pizza73.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+
+### pizza73.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizza73.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.net', port=443) at 0x78b29ab87850>, 'Connection to pizza73.net timed out. (connect timeout=10)'))
+
+### pizza73.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.org', port=443): Read timed out. (read timeout=10)
+
+### pizzahut.ai
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### pizzahut.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzahut.ca
+
+**Risk Score:** 0/100
+
+---
+
+### pizzahut.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzahut.co', port=443) at 0x78b29a5416d0>, 'Connection to pizzahut.co timed out. (connect timeout=10)'))
+
+### pizzahut.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### pizzahut.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzahut.dev
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzahut.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzahut.dev', port=443) at 0x78b29a968390>, 'Connection to pizzahut.dev timed out. (connect timeout=10)'))
+
+### pizzahut.info
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### pizzahut.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzahut.org
+
+**Risk Score:** 0/100
+
+---
+
+### pizzahut.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzanova.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzanova.biz', port=443) at 0x78b29a5df050>, 'Connection to pizzanova.biz timed out. (connect timeout=10)'))
+
+### pizzanova.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizzanova.ca', port=443) at 0x78b29a98da10>, 'Connection to pizzanova.ca timed out. (connect timeout=10)'))
+
+### pizzanova.co
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### pizzanova.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pizzanova.net
+
+**Risk Score:** 24/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: social_proof, personalization
+
+**Sample Products/Services:**
+
+- Theodore B:
+- Juice G:
+- Jenna S:
+- Lycan B:
+- Abigail G:
+
+**Related Domains Found:**
+
+- `catering.pizzanova.net`
+- `catersanmarcos.pizzanova.net`
+- `catersolanabeach.pizzanova.net`
+- `harbordrive.pizzanova.net`
+- `instagram.com`
+- `opentable.com`
+- `pizzanova.securetree.com`
+- `recruiting.paylocity.com`
+- `sanmarcos.pizzanova.net`
+- `solanabeach.pizzanova.net`
+
+---
+
+### pizzanova.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pizzanova.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+
+### popeyes.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.ai', port=443) at 0x78b29a5d3b50>, 'Connection to popeyes.ai timed out. (connect timeout=10)'))
+
+### popeyes.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyes.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://popeyes.co.uk/
+
+### popeyes.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.info', port=443) at 0x78b29a81fa90>, 'Connection to popeyes.info timed out. (connect timeout=10)'))
+
+### popeyes.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyes.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyes.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyes.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyes.uk', port=443) at 0x78b29a5d0c50>, 'Connection to popeyes.uk timed out. (connect timeout=10)'))
+
+### popeyeschicken.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.biz', port=443) at 0x78b29a97f690>, 'Connection to popeyeschicken.biz timed out. (connect timeout=10)'))
+
+### popeyeschicken.ca
+
+**Risk Score:** 0/100
+
+---
+
+### popeyeschicken.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyeschicken.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyeschicken.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyeschicken.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyeschicken.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='popeyeschicken.org', port=443): Failed to resolve 'popeyeschicken.org' ([Errno -3] Temporary failure in name resolution)"))
+
+### pandaexpress.co.uk
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### popeyeschicken.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.us', port=443) at 0x78b29a8f5e50>, 'Connection to popeyeschicken.us timed out. (connect timeout=10)'))
+
+### qdoba.app
+
+❌ **Not accessible:** 439 Client Error: status code 439 for url: https://qdoba.app/
+
+### qdoba.biz
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### qdoba.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='www.qdoba.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.qdoba.ca', port=443) at 0x78b29a98ee50>, 'Connection to www.qdoba.ca timed out. (connect timeout=10)'))
+
+### qdoba.co
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### qdoba.dev
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### qdoba.info
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### qdoba.net
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### qdoba.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### qdoba.us
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.qdoba.com
+
+### shakeshack.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### shakeshack.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.app', port=443) at 0x78b29a98c7d0>, 'Connection to shakeshack.app timed out. (connect timeout=10)'))
+
+### shakeshack.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+
+### shakeshack.ca
+
+**Risk Score:** 26/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, upselling
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Be the first to know the latest Shake Shack Canada updates
+- Black Truffle Burger
+- Black Truffle Shack Stack
+- Black Truffle 'Shroom Burger
+- 'Shroom Burger™
+
+**Related Domains Found:**
+
+- `cdn.shakeshack.ca`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `order.shakeshack.ca`
+- `tiktok.com`
+- `x.com`
+
+---
+
+### shakeshack.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### shakeshack.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://shakeshack.co.uk/
+
+### shakeshack.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.info', port=443) at 0x78b29a5dd190>, 'Connection to shakeshack.info timed out. (connect timeout=10)'))
+
+### shakeshack.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.io', port=443) at 0x78b29a907410>, 'Connection to shakeshack.io timed out. (connect timeout=10)'))
+
+### shakeshack.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.net', port=443) at 0x78b29a907250>, 'Connection to shakeshack.net timed out. (connect timeout=10)'))
+
+### shakeshack.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.org', port=443) at 0x78b29aa20710>, 'Connection to shakeshack.org timed out. (connect timeout=10)'))
+
+### shakeshack.uk
+
+**Risk Score:** 35/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Related Domains Found:**
+
+- `fruits.co`
+- `trustpilot.com`
+
+---
+
+### shakeshack.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.us', port=443) at 0x78b29aa216d0>, 'Connection to shakeshack.us timed out. (connect timeout=10)'))
+
+### sonicdrivein.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.ai', port=443) at 0x78b29a9f1f50>, 'Connection to sonicdrivein.ai timed out. (connect timeout=10)'))
+
+### sonicdrivein.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.ca', port=443) at 0x78b29a8c1690>, 'Connection to sonicdrivein.ca timed out. (connect timeout=10)'))
+
+### sonicdrivein.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### sonicdrivein.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.co.uk', port=443) at 0x78b29aa4f950>, 'Connection to sonicdrivein.co.uk timed out. (connect timeout=10)'))
+
+### sonicdrivein.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.info', port=443) at 0x78b29a8c3390>, 'Connection to sonicdrivein.info timed out. (connect timeout=10)'))
+
+### sonicdrivein.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.net', port=443) at 0x78b29a9f3650>, 'Connection to sonicdrivein.net timed out. (connect timeout=10)'))
+
+### sonicdrivein.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.org', port=443) at 0x78b29aa21c50>, 'Connection to sonicdrivein.org timed out. (connect timeout=10)'))
+
+### sonicdrivein.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.us', port=443) at 0x78b29a9c97d0>, 'Connection to sonicdrivein.us timed out. (connect timeout=10)'))
+
+### starbucks.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.ai', port=443) at 0x78b29aa655d0>, 'Connection to starbucks.ai timed out. (connect timeout=10)'))
+
+### starbucks.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.biz', port=443) at 0x78b29a9c9590>, 'Connection to starbucks.biz timed out. (connect timeout=10)'))
 
 ### starbucks.ca
 
@@ -2959,231 +3922,93 @@
 
 ---
 
-### burgerking.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizzahut.ca
-
-**Risk Score:** 0/100
-
----
-
-### kfc.io
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `sedo.com`
-
----
-
-### grubhub.info
-
-**Risk Score:** 0/100
-
----
-
 ### starbucks.co
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.co', port=443) at 0x78b29aa21b50>, 'Connection to starbucks.co timed out. (connect timeout=10)'))
-
-### swiggy.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizzahut.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### kfc.info
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- ð¨âð©âð§Kids Fun Club
-- ð°Key Financial Consulting
-- ðï¸Keen Fitness Community
-- ðKnowledge for Careers
-- ð¿Keep Future Clean
-
-**Related Domains Found:**
-
-- `telderi.ru`
-
----
-
-### grubhub.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='grubhub.co.uk', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='grubhub.co.uk', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### delivery.com
-
-**Risk Score:** 48/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Find Favorites and Discover New Ones
-- Free, Easy, and Essential
-- Earn Points and Get Rewards
-- Connect with us
-- For Local Businesses
-
-**Related Domains Found:**
-
-- `adasitecompliancetools.com`
-- `blog.delivery.com`
-- `deliverycom.formstack.com`
-- `facebook.com`
-- `instagram.com`
-- `twitter.com`
-
----
-
-### gopuff.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.biz', port=443) at 0x7d7bd8923790>, 'Connection to gopuff.biz timed out. (connect timeout=10)'))
-
-### tacobell.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.biz', port=443) at 0x78b29a54f110>, 'Connection to tacobell.biz timed out. (connect timeout=10)'))
-
-### zomato.io
-
-**Risk Score:** 0/100
-
----
-
-### deliveroo.com
-
-**Risk Score:** 39/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts, convenience, upselling
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- Discover Deliveroo
-- Legal
-- Help
-- Take Deliveroo with you
-
-**Related Domains Found:**
-
-- `careers.deliveroo.co.uk`
-- `corporate.deliveroo.co.uk`
-- `deliveroo.co.uk`
-- `deliveroo.design`
-- `deliveroo.engineering`
-- `deliveroo.onelink.me`
-- `deliveroostudents.co.uk`
-- `facebook.com`
-- `instagram.com`
-- `par.deliveroo.net`
-
----
-
-### pizzahut.ai
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### kfc.dev
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://kfc.dev/
-
-### grubhub.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### caviar.com
-
-**Risk Score:** 0/100
-
----
 
 ### starbucks.co.ca
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
-### swiggy.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### zomato.com
+### starbucks.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### pizza73.org
+### starbucks.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.org', port=443): Read timed out. (read timeout=10)
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.info', port=443) at 0x78b29a955d50>, 'Connection to starbucks.info timed out. (connect timeout=10)'))
 
-### kfc.co.uk
+### starbucks.io
 
-**Risk Score:** 30/100
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.io', port=443) at 0x78b29a5b0490>, 'Connection to starbucks.io timed out. (connect timeout=10)'))
 
-**Justification for Blocking:**
+### starbucks.net
 
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.net', port=443) at 0x78b29a54f910>, 'Connection to starbucks.net timed out. (connect timeout=10)'))
 
-**Sample Products/Services:**
+### starbucks.org
 
-- £0.00
-- Find a Restaurant & Order Online for Takeaway or Delivery
-- Quick links
-- OUR MENU
-- ORDER ONLINE
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.org', port=443) at 0x78b29a676a90>, 'Connection to starbucks.org timed out. (connect timeout=10)'))
 
-**Related Domains Found:**
+### starbucks.uk
 
-- `careers.kfc.co.uk`
-- `facebook.com`
-- `help.kfc.co.uk`
-- `instagram.com`
-- `kfcshop.co.uk`
-- `privacy.kfc.co.uk`
-- `snapchat.com`
-- `twitter.com`
-- `youtube.com`
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.uk', port=443) at 0x78b29a7a0090>, 'Connection to starbucks.uk timed out. (connect timeout=10)'))
+
+### starbucks.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.us', port=443) at 0x78b29a675450>, 'Connection to starbucks.us timed out. (connect timeout=10)'))
+
+### subway.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='subway.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.biz'. (_ssl.c:1016)")))
+
+### subway.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='subway.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.ca'. (_ssl.c:1016)")))
+
+### subway.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='subway.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'subway.co'. (_ssl.c:1016)")))
+
+### subway.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='subway.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### subway.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='www.subway.com', port=443): Read timed out. (read timeout=10)
+
+### subway.info
+
+❌ **Not accessible:** 439 Client Error: status code 439 for url: https://subway.info/
+
+### subway.io
+
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://subway.io/
+
+### subway.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### subway.org
+
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://subway.org/
+
+### tacobell.ai
+
+**Risk Score:** 0/100
 
 ---
 
-### grubhub.ca
+### tacobell.app
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### tacobell.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.biz', port=443) at 0x78b29a54f110>, 'Connection to tacobell.biz timed out. (connect timeout=10)'))
 
 ### tacobell.ca
 
@@ -3205,419 +4030,159 @@
 
 ---
 
-### tacobell.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.us', port=443) at 0x78b29a5a7150>, 'Connection to tacobell.us timed out. (connect timeout=10)'))
-
-### burgerking.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### burgerking.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.co', port=443) at 0x78b29ab53050>, 'Connection to burgerking.co timed out. (connect timeout=10)'))
-
-### pizza73.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.net', port=443) at 0x78b29ab87850>, 'Connection to pizza73.net timed out. (connect timeout=10)'))
-
-### kfc.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='kfc.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### grubhub.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### starbucks.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### swiggy.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='swiggy.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### pizza73.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### kfc.co
-
-**Risk Score:** 0/100
-
----
-
-### grubhub.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chickfila.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizza73.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
-
-### kfc.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='kfc.ca', port=443): Read timed out. (read timeout=10)
-
-### gopuff.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.us', port=443) at 0x7d7bd8928350>, 'Connection to gopuff.us timed out. (connect timeout=10)'))
-
-### swiggy.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizza73.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.co', port=443) at 0x78b29aa65d90>, 'Connection to pizza73.co timed out. (connect timeout=10)'))
-
-### kfc.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gopuff.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.uk', port=443) at 0x7d7bd8a3f290>, 'Connection to gopuff.uk timed out. (connect timeout=10)'))
-
-### sonicdrivein.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.org', port=443) at 0x78b29aa21c50>, 'Connection to sonicdrivein.org timed out. (connect timeout=10)'))
-
-### mcdonalds.com
-
-**Risk Score:** 0/100
-
----
-
-### pizza73.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### kfc.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gopuff.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.org', port=443) at 0x7d7bd8967410>, 'Connection to gopuff.org timed out. (connect timeout=10)'))
-
-### sonicdrivein.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.us', port=443) at 0x78b29a9c97d0>, 'Connection to sonicdrivein.us timed out. (connect timeout=10)'))
-
-### innout.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### pizza73.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pizza73.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pizza73.biz', port=443) at 0x78b29ab86dd0>, 'Connection to pizza73.biz timed out. (connect timeout=10)'))
-
-### kfc.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gopuff.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.net', port=443) at 0x7d7bd8965610>, 'Connection to gopuff.net timed out. (connect timeout=10)'))
-
-### doordash.com
-
-❌ **Not accessible:** Playwright: Insufficient content (331 chars)
-
-### pizza73.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jimmyjohns.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='jimmyjohns.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jimmyjohns.us', port=443) at 0x78b29a882550>, 'Connection to jimmyjohns.us timed out. (connect timeout=10)'))
-
-### gopuff.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.io', port=443) at 0x7d7bd8a3b250>, 'Connection to gopuff.io timed out. (connect timeout=10)'))
-
-### ubereats.com
-
-**Risk Score:** 15/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: fomo
-
-**Related Domains Found:**
-
-- `about.ubereats.com`
-- `apps.apple.com`
-- `auth.uber.com`
-- `facebook.com`
-- `help.uber.com`
-- `instagram.com`
-- `merchants.ubereats.com`
-- `play.google.com`
-- `policies.google.com`
-- `privacy.uber.com`
-
----
-
-### starbucks.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.ai', port=443) at 0x78b29aa655d0>, 'Connection to starbucks.ai timed out. (connect timeout=10)'))
-
-### pizza73.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jimmyjohns.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='jimmyjohns.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='jimmyjohns.org', port=443) at 0x78b29a81d710>, 'Connection to jimmyjohns.org timed out. (connect timeout=10)'))
-
-### gopuff.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.info', port=443) at 0x7d7bd8920510>, 'Connection to gopuff.info timed out. (connect timeout=10)'))
-
 ### tacobell.co
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tacobell.co'. (_ssl.c:1016)")))
 
-### in-n-out.com
+### tacobell.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.co.uk', port=443) at 0x78b29a675890>, 'Connection to tacobell.co.uk timed out. (connect timeout=10)'))
+
+### tacobell.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.info', port=443) at 0x78b29a5a5550>, 'Connection to tacobell.info timed out. (connect timeout=10)'))
+
+### tacobell.io
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### papamurphys.net
+### tacobell.net
 
-❌ **Not accessible:** HTTPSConnectionPool(host='papamurphys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='papamurphys.net', port=443) at 0x78b29a9a2ed0>, 'Connection to papamurphys.net timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.net', port=443) at 0x78b29a5a5f90>, 'Connection to tacobell.net timed out. (connect timeout=10)'))
 
-### jimmyjohns.co.uk
+### tacobell.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.org', port=443): Read timed out. (read timeout=10)
+
+### tacobell.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'tacobell.uk'. (_ssl.c:1016)")))
+
+### tacobell.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='tacobell.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tacobell.us', port=443) at 0x78b29a5a7150>, 'Connection to tacobell.us timed out. (connect timeout=10)'))
+
+### timhortons.ai
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### gopuff.dev
+### timhortons.biz
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gopuff.dev/
+❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.biz', port=443) at 0x78b29a6f5fd0>, 'Connection to timhortons.biz timed out. (connect timeout=10)'))
 
-### starbucks.biz
+### timhortons.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='starbucks.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='starbucks.biz', port=443) at 0x78b29a9c9590>, 'Connection to starbucks.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### carlsjr.org
+### timhortons.co.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='carlsjr.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='carlsjr.org', port=443) at 0x78b29a6de6d0>, 'Connection to carlsjr.org timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
-### seamless.com
+### timhortons.co.uk
 
-**Risk Score:** 51/100
+**Risk Score:** 8/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Restaurants near you, delivered fast
-- Manage Consent Preferences
-- Performance Cookies
-- Get Perks in the app
-- Sign in
-
-**Related Domains Found:**
-
-- `app.appsflyer.com`
-- `careers.grubhub.com`
-- `cookiepedia.co.uk`
-- `corporate.grubhub.com`
-- `driver.grubhub.com`
-- `facebook.com`
-- `get.grubhub.com`
-- `instagram.com`
-- `investors.grubhub.com`
-- `onetrust.com`
-
----
-
-### papamurphys.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jimmyjohns.ca
-
-**Risk Score:** 50/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Congrats! You have earnedpoints
-
-**Related Domains Found:**
-
-- `foodtastic.ca`
-- `jimmyjohns.ca`
-- `orders.jimmyjohns.ca`
-
----
-
-### gopuff.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.co.uk', port=443) at 0x7d7bd895a010>, 'Connection to gopuff.co.uk timed out. (connect timeout=10)'))
-
-### in-n-outburger.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### postmates.com
-
-**Risk Score:** 18/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: fomo
+- Uses behavioral manipulation: discounts
 
 **Related Domains Found:**
 
 - `facebook.com`
-- `help.uber.com`
 - `instagram.com`
-- `itunes.apple.com`
-- `play.google.com`
-- `postmates.com`
-- `privacy.uber.com`
+- `joinourteam.timhortons.co.uk`
 - `twitter.com`
-- `uber.com`
+- `youtube.com`
 
 ---
 
-### papamurphys.ca
+### timhortons.net
 
-**Risk Score:** 21/100
+❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'timhortons.net'. (_ssl.c:1016)")))
 
-**Justification for Blocking:**
+### timhortons.org
 
-- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
-- Employs aggressive marketing: social_proof, fomo, personalization
+❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.org', port=443) at 0x78b29a6c4cd0>, 'Connection to timhortons.org timed out. (connect timeout=10)'))
+
+### timhortons.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='timhortons.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='timhortons.uk', port=443) at 0x78b29a6c5450>, 'Connection to timhortons.uk timed out. (connect timeout=10)'))
+
+### timhortons.us
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### wendys.ai
+
+**Risk Score:** 0/100
+
+---
+
+### wendys.app
+
+❌ **Not accessible:** 439 Client Error: status code 439 for url: https://wendys.app/
+
+### wendys.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='wendys.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'wendys.ca'. (_ssl.c:1016)")))
+
+### wendys.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### wendys.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='wendys.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### wendys.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### wendys.net
+
+❌ **Not accessible:** 439 Client Error: status code 439 for url: https://wendys.net/
+
+### wendys.uk
+
+**Risk Score:** 0/100
+
+---
+
+### whitecastle.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### whitecastle.ca
+
+**Risk Score:** 0/100
 
 **Sample Products/Services:**
 
-- MENU
-- CATERING
-- FUNDRAISING
-- FAQS & MEDIA ENQUIRIES
-- CONTACT US
+- Contact Us
+- Pages
+- Social
 
 **Related Domains Found:**
 
-- `facebook.com`
-- `instagram.com`
-- `papamurphys.prod.speeddine.com`
+- `goo.gl`
+- `linkedin.com`
+- `twitter.com`
 
 ---
 
-### jimmyjohns.biz
+### whitecastle.co.uk
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### gopuff.co
+### whitecastle.dev
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.co', port=443) at 0x7d7bd895acd0>, 'Connection to gopuff.co timed out. (connect timeout=10)'))
+❌ **Not accessible:** 404 Client Error: Not Found for url: https://whitecastle.dev/
 
-### burgerking.net
+### whitecastle.info
 
-❌ **Not accessible:** HTTPSConnectionPool(host='burgerking.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='burgerking.net', port=443) at 0x78b29aba5e50>, 'Connection to burgerking.net timed out. (connect timeout=10)'))
-
-### papajohns.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jimmyjohns.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gopuff.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gopuff.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gopuff.ca', port=443) at 0x7d7bd895aa90>, 'Connection to gopuff.ca timed out. (connect timeout=10)'))
-
-### grubhub.com
-
-**Risk Score:** 64/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food, addictive
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Pickup or delivery from restaurants near you
-- Manage Consent Preferences
-- Performance Cookies
-- Order in the App
-- Something for everyone
-
-**Related Domains Found:**
-
-- `about.grubhub.com`
-- `bytes.grubhub.com`
-- `careers.grubhub.com`
-- `cookiepedia.co.uk`
-- `corporate.grubhub.com`
-- `driver.grubhub.com`
-- `facebook.com`
-- `get.grubhub.com`
-- `grubhub.cashstar.com`
-- `grubhub.com`
-
----
-
-### chick-fil-a.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chick-fil-a.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chick-fil-a.ai', port=443) at 0x78b29a9a1410>, 'Connection to chick-fil-a.ai timed out. (connect timeout=10)'))
-
-### chipotle.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### just-eat.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x70ab8812f440 (otid=0x70ab88de5650) current active started main>
-	Expected: <greenlet.greenlet object at 0x70ab8a099200 (otid=0x70ab88de7510) suspended active started main>
-
-### jackinthebox.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jackinthebox.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='whitecastle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='whitecastle.info', port=443) at 0x78b29aa73d10>, 'Connection to whitecastle.info timed out. (connect timeout=10)'))
 
 ### whitecastle.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jackinthebox.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jackinthebox.io
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
@@ -3625,37 +4190,13 @@
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='whitecastle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='whitecastle.net', port=443) at 0x78b29a5f0f90>, 'Connection to whitecastle.net timed out. (connect timeout=10)'))
 
-### jackinthebox.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jackinthebox.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
 ### whitecastle.org
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='whitecastle.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
 
-### jackinthebox.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### jackinthebox.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
 ### whitecastle.uk
 
 ❌ **Not accessible:** 439 Client Error: status code 439 for url: https://whitecastle.uk/
-
-### jackinthebox.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='jackinthebox.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
-
-### innout.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### whitecastle.us
 
@@ -3687,27 +4228,7 @@
 
 ---
 
-### innout.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### innout.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
 ### doritos.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### innout.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### innout.io
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
@@ -3741,109 +4262,6 @@
 
 ---
 
-### innout.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='innout.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='innout.info', port=443) at 0x78b29a551550>, 'Connection to innout.info timed out. (connect timeout=10)'))
-
-### kitkat.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### innout.co.uk
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### sonicdrivein.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### innout.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.co.uk', port=443) at 0x78b29aa4f950>, 'Connection to sonicdrivein.co.uk timed out. (connect timeout=10)'))
-
-### innout.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### hersheys.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hersheys.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
-
-### innout.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.info', port=443) at 0x78b29a8c3390>, 'Connection to sonicdrivein.info timed out. (connect timeout=10)'))
-
-### innout.app
-
-**Risk Score:** 0/100
-
----
-
-### whitecastle.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### innout.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.net', port=443) at 0x78b29a9f3650>, 'Connection to sonicdrivein.net timed out. (connect timeout=10)'))
-
-### in-n-outburger.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='in-n-outburger.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-outburger.biz', port=443) at 0x78b29a9035d0>, 'Connection to in-n-outburger.biz timed out. (connect timeout=10)'))
-
-### in-n-out.us
-
-**Risk Score:** 40/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Sample Products/Services:**
-
-- Home
-- menu
-- Kids menu
-- Recipescopycat recipeshomemade recipes
-- copycat recipes
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `pinterest.com`
-
----
-
-### kitkat.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kitkat.co.uk
-
 ### cheetos.com
 
 **Risk Score:** 0/100
@@ -3870,94 +4288,6 @@
 
 ---
 
-### in-n-out.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.uk', port=443) at 0x78b29aa2a1d0>, 'Connection to in-n-out.uk timed out. (connect timeout=10)'))
-
-### whitecastle.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='whitecastle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='whitecastle.info', port=443) at 0x78b29aa73d10>, 'Connection to whitecastle.info timed out. (connect timeout=10)'))
-
-### in-n-out.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.ai', port=443) at 0x78b29a9f1f50>, 'Connection to sonicdrivein.ai timed out. (connect timeout=10)'))
-
-### in-n-out.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### sonicdrivein.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sonicdrivein.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sonicdrivein.ca', port=443) at 0x78b29a8c1690>, 'Connection to sonicdrivein.ca timed out. (connect timeout=10)'))
-
-### in-n-out.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.info', port=443) at 0x78b29a9b90d0>, 'Connection to in-n-out.info timed out. (connect timeout=10)'))
-
-### fritos.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fritos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.us', port=443) at 0x78b29a0bedd0>, 'Connection to fritos.us timed out. (connect timeout=10)'))
-
-### in-n-out.co.uk
-
-**Risk Score:** 29/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: urgency, discounts, addiction_language
-- Employs aggressive marketing: social_proof, fomo
-
-**Sample Products/Services:**
-
-- Servicing Made Simple
-- Sign up for our newsletter and future offers
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `inoautocentres.co.uk`
-- `linkedin.com`
-- `trustpilot.com`
-- `twitter.com`
-- `uk.trustpilot.com`
-
----
-
-### whitecastle.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### in-n-out.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### whitecastle.ca
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- Contact Us
-- Pages
-- Social
-
-**Related Domains Found:**
-
-- `goo.gl`
-- `linkedin.com`
-- `twitter.com`
-
----
-
-### in-n-out.ca
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
 ### ruffles.com
 
 **Risk Score:** 0/100
@@ -3982,51 +4312,9 @@
 
 ---
 
-### in-n-out.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='in-n-out.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='in-n-out.biz', port=443) at 0x78b29ab354d0>, 'Connection to in-n-out.biz timed out. (connect timeout=10)'))
-
-### kitkat.org
-
-**Risk Score:** 0/100
-
----
-
-### shakeshack.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.net', port=443) at 0x78b29a907250>, 'Connection to shakeshack.net timed out. (connect timeout=10)'))
-
-### in-n-out.app
-
-**Risk Score:** 0/100
-
----
-
 ### pringles.com
 
 ❌ **Not accessible:** 405 Client Error: Method Not Allowed for url: https://www.pringles.com:443/
-
-### dominos.net
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `wordpress.org`
-
----
-
-### in-n-out.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### kitkat.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kitkat.us', port=443) at 0x78b29a15bad0>, 'Connection to kitkat.us timed out. (connect timeout=10)'))
-
-### hardees.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hardees.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.us', port=443) at 0x78b29a5dfa90>, 'Connection to hardees.us timed out. (connect timeout=10)'))
 
 ### fritos.com
 
@@ -4053,32 +4341,6 @@
 
 ---
 
-### dominos.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dominos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dominos.org', port=443) at 0x78b29a8dfb90>, 'Connection to dominos.org timed out. (connect timeout=10)'))
-
-### mars.com
-
-**Risk Score:** 0/100
-
----
-
-### hardees.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hardees.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.uk', port=443) at 0x78b29a5e6cd0>, 'Connection to hardees.uk timed out. (connect timeout=10)'))
-
-### kitkat.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### hardees.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hardees.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.org', port=443) at 0x78b29a5e4ed0>, 'Connection to hardees.org timed out. (connect timeout=10)'))
-
 ### sunchips.com
 
 **Risk Score:** 0/100
@@ -4102,22 +4364,6 @@
 - `sunchips.com`
 - `tiktok.com`
 - `x.com`
-
----
-
-### hardees.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hardees.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.net', port=443) at 0x78b29a5ba190>, 'Connection to hardees.net timed out. (connect timeout=10)'))
-
-### hardees.io
-
-**Risk Score:** 0/100
-
----
-
-### hersheys.org
-
-**Risk Score:** 0/100
 
 ---
 
@@ -4148,36 +4394,297 @@
 
 ---
 
-### hardees.info
+### oreo.com
+
+**Risk Score:** 0/100
+
+---
+
+### chips-ahoy.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chips-ahoy.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='chips-ahoy.com', port=443): Failed to resolve 'chips-ahoy.com' ([Errno -2] Name or service not known)"))
+
+### chipsahoy.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipsahoy.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipsahoy.com', port=443) at 0x78b29abb0110>, 'Connection to chipsahoy.com timed out. (connect timeout=10)'))
+
+### ritz.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='ritz.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ritz.com', port=443) at 0x78b29ab74b50>, 'Connection to ritz.com timed out. (connect timeout=10)'))
+
+### triscuit.com
+
+❌ **Not accessible:** HTTPSConnectionPool(host='triscuit.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='triscuit.com', port=443) at 0x78b29a875390>, 'Connection to triscuit.com timed out. (connect timeout=10)'))
+
+### wheat-thins.com
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof
+
+---
+
+### poptarts.com
+
+❌ **Not accessible:** 405 Client Error: Method Not Allowed for url: https://www.poptarts.com:443/
+
+### skittles.com
+
+**Risk Score:** 0/100
+
+---
+
+### m-ms.com
+
+**Risk Score:** 0/100
+
+---
+
+### mms.com
+
+**Risk Score:** 0/100
+
+---
+
+### snickers.com
+
+**Risk Score:** 0/100
+
+---
+
+### twix.com
+
+**Risk Score:** 0/100
+
+---
+
+### mars.com
+
+**Risk Score:** 0/100
+
+---
+
+### hersheys.com
+
+**Risk Score:** 0/100
+
+---
+
+### reeses.com
+
+**Risk Score:** 0/100
+
+---
+
+### kitkat.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kitkat.co.uk
+
+### cheetos.ai
+
+**Risk Score:** 0/100
+
+---
+
+### cheetos.ca
+
+**Risk Score:** 13/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- CHEETOS CRUNCHY®FLAMIN' HOT®Wings
+- CHEETOS CRUNCHY®Sweet 'N' Spicy Chili Meatballs
+- Chester’s Best Pumpkin Pie
+- Tasty RewardsTMMembers!
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `tastyrewards.ca`
+- `tastyrewards.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### cheetos.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.info', port=443) at 0x78b29a29d8d0>, 'Connection to cheetos.info timed out. (connect timeout=10)'))
+
+### cheetos.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.net', port=443) at 0x78b29a29ac90>, 'Connection to cheetos.net timed out. (connect timeout=10)'))
+
+### cheetos.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.org', port=443) at 0x78b29a2990d0>, 'Connection to cheetos.org timed out. (connect timeout=10)'))
+
+### cheetos.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cheetos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cheetos.us', port=443) at 0x78b29a291e10>, 'Connection to cheetos.us timed out. (connect timeout=10)'))
+
+### chips-ahoy.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chips-ahoy.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chips-ahoy.ca', port=443) at 0x78b29a290b10>, 'Connection to chips-ahoy.ca timed out. (connect timeout=10)'))
+
+### chipsahoy.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='chipsahoy.ca', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipsahoy.ca', port=443) at 0x78b29aa53750>, 'Connection to chipsahoy.ca timed out. (connect timeout=10)'))
+
+### chipsahoy.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://chipsahoy.co.uk/
+
+### doritos.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### doritos.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### doritos.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='doritos.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.biz', port=443) at 0x78b29a298890>, 'Connection to doritos.biz timed out. (connect timeout=10)'))
+
+### doritos.ca
 
 **Risk Score:** 10/100
 
 **Justification for Blocking:**
 
-- Uses behavioral manipulation: upselling
-- Employs aggressive marketing: social_proof, fomo
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
 
 **Sample Products/Services:**
 
-- Bitly LinksCustomize, share, and track links
-- Bitly CodesDynamic solutions to fit every business need
-- RetailEnhance customer engagement
-- Consumer Packaged GoodsConnect directly with consumers
-- Media & EntertainmentCreate interactive experiences
+- DORITOS COLLISIONS®Pizza and Cool Ranch®Flavoured Tortilla Chips
+- Tasty RewardsTMMembers!
 
 **Related Domains Found:**
 
-- `bitly.com`
-- `dev.bitly.com`
+- `contact.pepsico.com`
 - `facebook.com`
 - `instagram.com`
-- `linkedin.com`
-- `mkt-static.bitly.com`
-- `security.bitly.com`
-- `support.bitly.com`
-- `twitter.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `tastyrewards.com`
+- `tiktok.com`
+- `youtube.com`
 
 ---
+
+### doritos.co.uk
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsicoprivacypolicy.com`
+- `twitter.com`
+- `walkers.co.uk`
+- `youtube.com`
+
+---
+
+### doritos.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='doritos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.net', port=443) at 0x78b29a27cb90>, 'Connection to doritos.net timed out. (connect timeout=10)'))
+
+### doritos.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='doritos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.org', port=443) at 0x78b29a21c9d0>, 'Connection to doritos.org timed out. (connect timeout=10)'))
+
+### doritos.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='doritos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='doritos.us', port=443) at 0x78b29a0b0b50>, 'Connection to doritos.us timed out. (connect timeout=10)'))
+
+### fritos.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.biz', port=443) at 0x78b29b168cd0>, 'Connection to fritos.biz timed out. (connect timeout=10)'))
+
+### fritos.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### fritos.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.info', port=443) at 0x78b29a0b0a90>, 'Connection to fritos.info timed out. (connect timeout=10)'))
+
+### fritos.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.net', port=443) at 0x78b29a0b3210>, 'Connection to fritos.net timed out. (connect timeout=10)'))
+
+### fritos.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.org', port=443) at 0x78b29a0bd050>, 'Connection to fritos.org timed out. (connect timeout=10)'))
+
+### fritos.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fritos.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fritos.us', port=443) at 0x78b29a0bedd0>, 'Connection to fritos.us timed out. (connect timeout=10)'))
+
+### hersheys.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hersheys.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1016)')))
+
+### hersheys.ca
+
+❌ **Not accessible:** 406 Client Error: Not Acceptable for url: https://www.hersheyland.ca/
+
+### hersheys.org
+
+**Risk Score:** 0/100
+
+---
+
+### kitkat.ai
+
+**Risk Score:** 0/100
+
+---
+
+### popeyeschicken.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='popeyeschicken.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='popeyeschicken.uk', port=443) at 0x78b29a5de850>, 'Connection to popeyeschicken.uk timed out. (connect timeout=10)'))
+
+### kitkat.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### kitkat.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### kitkat.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.kitkat.co.uk
+
+### kitkat.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### kitkat.io
 
@@ -4201,534 +4708,23 @@
 
 ---
 
-### hardees.co.uk
+### kitkat.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### oreo.com
+### kitkat.org
 
 **Risk Score:** 0/100
 
 ---
 
-### hardees.co
+### kitkat.uk
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
 
-### hardees.ca
+### kitkat.us
 
-**Risk Score:** 0/100
-
----
-
-### chips-ahoy.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chips-ahoy.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='chips-ahoy.com', port=443): Failed to resolve 'chips-ahoy.com' ([Errno -2] Name or service not known)"))
-
-### hardees.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hardees.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hardees.biz', port=443) at 0x78b29aa70650>, 'Connection to hardees.biz timed out. (connect timeout=10)'))
-
-### kitkat.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### hardees.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.dev
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dominos.dev', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dominos.dev', port=443) at 0x78b29a903790>, 'Connection to dominos.dev timed out. (connect timeout=10)'))
-
-### chipsahoy.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipsahoy.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipsahoy.com', port=443) at 0x78b29abb0110>, 'Connection to chipsahoy.com timed out. (connect timeout=10)'))
-
-### fiveguys.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.us', port=443): Read timed out. (read timeout=10)
-
-### fiveguys.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
-
-### ritz.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ritz.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ritz.com', port=443) at 0x78b29ab74b50>, 'Connection to ritz.com timed out. (connect timeout=10)'))
-
-### fiveguys.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### fiveguys.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fiveguys.net', port=443) at 0x78b29a5c5210>, 'Connection to fiveguys.net timed out. (connect timeout=10)'))
-
-### triscuit.com
-
-❌ **Not accessible:** HTTPSConnectionPool(host='triscuit.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='triscuit.com', port=443) at 0x78b29a875390>, 'Connection to triscuit.com timed out. (connect timeout=10)'))
-
-### fiveguys.info
-
-**Risk Score:** 0/100
-
----
-
-### kitkat.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### slice.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='brandexperience.enginegroup.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='brandexperience.enginegroup.com', port=443): Failed to resolve 'brandexperience.enginegroup.com' ([Errno -2] Name or service not known)"))
-
-### fiveguys.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### wheat-thins.com
-
-**Risk Score:** 29/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, addictive
-- Uses behavioral manipulation: discounts, upselling, addiction_language
-- Employs aggressive marketing: social_proof
-
----
-
-### fiveguys.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='fiveguys.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fiveguys.co', port=443) at 0x78b29a54edd0>, 'Connection to fiveguys.co timed out. (connect timeout=10)'))
-
-### fiveguys.ca
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `careers.fiveguys.com`
-- `fiveguys-ca.cashstar.com`
-- `instagram.com`
-- `open.spotify.com`
-- `restaurants.fiveguys.ca`
-- `twitter.com`
-- `wbiprod.storedvalue.com`
-
----
-
-### zomato.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### poptarts.com
-
-❌ **Not accessible:** 405 Client Error: Method Not Allowed for url: https://www.poptarts.com:443/
-
-### fiveguys.biz
-
-**Risk Score:** 0/100
-
----
-
-### hersheys.com
-
-**Risk Score:** 0/100
-
----
-
-### kitkat.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### fiveguys.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### skittles.com
-
-**Risk Score:** 0/100
-
----
-
-### dunkindonuts.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.uk', port=443) at 0x78b29a953010>, 'Connection to dunkindonuts.uk timed out. (connect timeout=10)'))
-
-### dunkindonuts.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### m-ms.com
-
-**Risk Score:** 0/100
-
----
-
-### hersheys.ca
-
-❌ **Not accessible:** 406 Client Error: Not Acceptable for url: https://www.hersheyland.ca/
-
-### dunkindonuts.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dunkindonuts.co.uk'. (_ssl.c:1016)")))
-
-### kitkat.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.madewithnestle.ca/kit-kat.html
-
-### dunkindonuts.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.co', port=443) at 0x78b29a906850>, 'Connection to dunkindonuts.co timed out. (connect timeout=10)'))
-
-### mms.com
-
-**Risk Score:** 0/100
-
----
-
-### dunkindonuts.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.biz', port=443) at 0x78b29a5c6090>, 'Connection to dunkindonuts.biz timed out. (connect timeout=10)'))
-
-### dunkindonuts.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.app', port=443) at 0x78b29a5d0a50>, 'Connection to dunkindonuts.app timed out. (connect timeout=10)'))
-
-### snickers.com
-
-**Risk Score:** 0/100
-
----
-
-### dunkindonuts.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkindonuts.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkindonuts.ai', port=443) at 0x78b29a5c7050>, 'Connection to dunkindonuts.ai timed out. (connect timeout=10)'))
-
-### kitkat.ai
-
-**Risk Score:** 0/100
-
----
-
-### dunkin.uk
-
-❌ **Not accessible:** 521 Server Error: <none> for url: https://dunkin.uk/
-
-### twix.com
-
-**Risk Score:** 0/100
-
----
-
-### dunkin.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkin.org', port=443) at 0x78b29a5c4e10>, 'Connection to dunkin.org timed out. (connect timeout=10)'))
-
-### dunkin.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'dunkin.net'. (_ssl.c:1016)")))
-
-### dunkin.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### shakeshack.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.org', port=443) at 0x78b29aa20710>, 'Connection to shakeshack.org timed out. (connect timeout=10)'))
-
-### dunkin.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dunkin.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='dunkin.co', port=443) at 0x78b29a54d1d0>, 'Connection to dunkin.co timed out. (connect timeout=10)'))
-
-### shakeshack.uk
-
-**Risk Score:** 35/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts, upselling, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, personalization
-
-**Related Domains Found:**
-
-- `fruits.co`
-- `trustpilot.com`
-
----
-
-### dunkin.biz
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.co.uk
-
-**Risk Score:** 15/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: scarcity
-
-**Sample Products/Services:**
-
-- Enter your postcode
-
-**Related Domains Found:**
-
-- `corporate.dominos.co.uk`
-- `dominos.co.uk`
-- `dominosuk.page.link`
-- `facebook.com`
-- `instagram.com`
-- `investors.dominos.co.uk`
-- `tiktok.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### dominos.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dominos.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### dominos.us
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
-
-**Related Domains Found:**
-
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
-
----
-
-### dominos.ca
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
-
-**Related Domains Found:**
-
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
-
----
-
-### chipotle.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotle.net', port=443) at 0x78b29aa4e310>, 'Connection to chipotle.net timed out. (connect timeout=10)'))
-
-### shakeshack.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='shakeshack.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='shakeshack.us', port=443) at 0x78b29aa216d0>, 'Connection to shakeshack.us timed out. (connect timeout=10)'))
-
-### bostonpizza.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.net', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### dunkin.app
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `dunkinmerch.com`
-
----
-
-### bostonpizza.co
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### chipotle.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.ai
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### bostonpizza.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
-
-### whitecastle.dev
-
-❌ **Not accessible:** 404 Client Error: Not Found for url: https://whitecastle.dev/
-
-### bostonpizza.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='bostonpizza.biz', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='bostonpizza.biz', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
-
-### chipotlemexicangrill.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.org', port=443) at 0x78b29a902b10>, 'Connection to chipotlemexicangrill.org timed out. (connect timeout=10)'))
-
-### bostonpizza.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chipotle.us
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### arbys.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chipotlemexicangrill.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.biz', port=443) at 0x78b29a901fd0>, 'Connection to chipotlemexicangrill.biz timed out. (connect timeout=10)'))
-
-### arbys.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='arbys.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='arbys.net', port=443) at 0x78b29a8dba10>, 'Connection to arbys.net timed out. (connect timeout=10)'))
-
-### chipotlemexicangrill.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.net', port=443) at 0x78b29aa901d0>, 'Connection to chipotlemexicangrill.net timed out. (connect timeout=10)'))
-
-### arbys.co.uk
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### chipotlemexicangrill.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.co.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.co.uk', port=443) at 0x78b29a5a4890>, 'Connection to chipotlemexicangrill.co.uk timed out. (connect timeout=10)'))
-
-### arbys.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### arbys.ca
-
-**Risk Score:** 50/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Congrats! You have earnedpoints
-
----
-
-### chipotlemexicangrill.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='chipotlemexicangrill.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chipotlemexicangrill.us', port=443) at 0x78b29a8dc850>, 'Connection to chipotlemexicangrill.us timed out. (connect timeout=10)'))
-
-### arbys.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='arbys.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'arbys.biz'. (_ssl.c:1016)")))
-
-### dominos.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dunkin.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### arbys.ai
-
-**Risk Score:** 0/100
-
----
-
-### timhortons.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dominos.biz
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `google.com`
-
----
-
-### slice.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### krispykreme.com
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='kitkat.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='kitkat.us', port=443) at 0x78b29a15bad0>, 'Connection to kitkat.us timed out. (connect timeout=10)'))
 
 ### lays.ai
 
@@ -4911,6 +4907,10 @@
 **Risk Score:** 0/100
 
 ---
+
+### mars.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
 ### mars.us
 
@@ -5601,7 +5601,7 @@
 
 ---
 
-### mars.org
+### kitkat.ca
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.madewithnestle.ca/kit-kat.html
 

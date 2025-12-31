@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Add verified domain variations to blocklists (with caching)
+Add verified domain variations to blocklists (with caching and parallel processing)
 Automatically appends new domains, using cache to avoid redundant DNS lookups
 """
 
@@ -9,6 +9,7 @@ import json
 import time
 from pathlib import Path
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -18,6 +19,7 @@ COMMON_TLDS = [
     'co.uk', 'ca', 'us', 'uk', 'biz', 'info', 'dev',
     'co.ca'
 ]
+DEFAULT_WORKERS = 8
 
 
 class DomainCache:
@@ -105,8 +107,8 @@ def domain_exists(domain, cache):
         return False
 
 
-def add_variations_to_file(filepath, cache):
-    """Add TLD variations to a blocklist file."""
+def add_variations_to_file(filepath, cache, workers=DEFAULT_WORKERS):
+    """Add TLD variations to a blocklist file with parallel processing."""
     print(f"\n{'='*60}")
     print(f"Processing: {filepath.name}")
     print(f"{'='*60}")
@@ -130,22 +132,97 @@ def add_variations_to_file(filepath, cache):
                     blocks[current_block].append(line_stripped)
     
     print(f"Found {len(existing_domains)} existing domains in {len(blocks)} blocks")
+    print(f"⚡ Using {workers} parallel workers")
     
-    # Find new variations
+    # Find new variations using parallel processing
     new_domains_by_block = {}
     checked_bases = set()
-    dns_lookups = 0
-    cache_hits = 0
+    total_dns = 0
+    total_cache = 0
     
-    for block_name, domains in blocks.items():
-        new_domains_by_block[block_name] = []
+    def check_domain_for_block(block_domain_tuple):
+        """Check a domain for variations (parallel worker function)."""
+        block_name, domain = block_domain_tuple
         
-        for domain in domains:
-            # Skip subdomains
-            if domain.startswith('www.') or domain.startswith('api.') or domain.startswith('drive.'):
+        # Skip subdomains
+        if domain.startswith('www.') or domain.startswith('api.') or domain.startswith('drive.'):
+            return block_name, [], 0, 0
+        
+        result = extract_base_domain(domain)
+        if not result:
+            return block_name, [], 0, 0
+        
+        base, current_tld = result
+        
+        block_variations = []
+        dns_lookups = 0
+        cache_hits = 0
+        
+        for tld in COMMON_TLDS:
+            if tld == current_tld:
                 continue
             
+            test_domain = f"{base}.{tld}"
+            test_www = f"www.{test_domain}"
+            
+            # Skip if already exists
+            if test_domain.lower() in existing_domains:
+                continue
+            
+            # Check with cache
+            was_cached = cache.is_verified(test_domain) or cache.is_not_found(test_domain)
+            
+            if domain_exists(test_domain, cache):
+                block_variations.append(test_domain)
+                
+                # Add www variant
+                if test_www.lower() not in existing_domains:
+                    was_www_cached = cache.is_verified(test_www) or cache.is_not_found(test_www)
+                    if domain_exists(test_www, cache):
+                        block_variations.append(test_www)
+                    if not was_www_cached:
+                        dns_lookups += 1
+            
+            if was_cached:
+                cache_hits += 1
+            else:
+                dns_lookups += 1
+        
+        return block_name, block_variations, dns_lookups, cache_hits
+    
+    # Prepare work items
+    work_items = []
+    for block_name, domains in blocks.items():
+        new_domains_by_block[block_name] = []
+        for domain in domains:
             result = extract_base_domain(domain)
+            if result:
+                base, _ = result
+                if base not in checked_bases:
+                    checked_bases.add(base)
+                    work_items.append((block_name, domain))
+    
+    # Process in parallel
+    print(f"Checking {len(work_items)} base domains...")
+    
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(check_domain_for_block, item): item for item in work_items}
+        
+        completed = 0
+        for future in as_completed(futures):
+            completed += 1
+            try:
+                block_name, variations, dns, cache_count = future.result()
+                if variations:
+                    new_domains_by_block[block_name].extend(variations)
+                    print(f"  [{completed}/{len(work_items)}] ✓ {len(variations)} new ({dns} DNS, {cache_count} cached)")
+                elif completed % 20 == 0:
+                    print(f"  [{completed}/{len(work_items)}] Progress...")
+                
+                total_dns += dns
+                total_cache += cache_count
+            except Exception as e:
+                print(f"  Error: {e}")
             if not result:
                 continue
             
@@ -242,13 +319,20 @@ def add_variations_to_file(filepath, cache):
 
 def main():
     """Main function."""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Add domain variations with parallel processing')
+    parser.add_argument('--workers', type=int, default=DEFAULT_WORKERS, help='Number of parallel workers')
+    args = parser.parse_args()
+    
     category_files = ['food.txt', 'cosmetics.txt', 'conglomerates.txt']
     
     # Initialize cache (in lists directory)
     cache = DomainCache(LISTS_DIR / CACHE_FILE)
     
-    print("AUTOMATIC DOMAIN VARIATION ADDER (with caching)")
-    print("Adding verified TLD variations to all blocklists\n")
+    print(f"AUTOMATIC DOMAIN VARIATION ADDER (with caching and parallel processing)")
+    print(f"Workers: {args.workers}")
+    print(f"Adding verified TLD variations to all blocklists\n")
     
     total_added = 0
     
@@ -258,7 +342,7 @@ def main():
             print(f"⚠️  {filename} not found, skipping...")
             continue
         
-        added = add_variations_to_file(filepath, cache)
+        added = add_variations_to_file(filepath, cache, workers=args.workers)
         total_added += added
     
     # Save cache
@@ -270,7 +354,21 @@ def main():
     print(f"Total domains added: {total_added}")
     
     if total_added > 0:
-        print(f"\nNext step: Run python3 generate_ultra.py to update blackout-ultra.txt")
+        print(f"\nNext steps:")
+        print(f"1. Run: python3 generate_ultra.py (update blackout-ultra.txt)")
+        print(f"2. Run: python3 analyze_domains.py (update statistics)")
+        
+        # Auto-update statistics
+        try:
+            import subprocess
+            print(f"\nAuto-updating summary statistics...")
+            analyze_script = Path(__file__).parent / 'analyze_domains.py'
+            result = subprocess.run(['python3', str(analyze_script), '--update-stats-only'],
+                                  capture_output=True, text=True, timeout=10)
+            if result.returncode == 0:
+                print("✓ Statistics updated")
+        except:
+            pass
 
 
 if __name__ == '__main__':

@@ -17362,5 +17362,5 @@
       "error": "HTTPSConnectionPool(host='pepsico.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pepsico.us'. (_ssl.c:1016)\")))"
     }
   },
-  "last_updated": "2025-12-31T12:45:07.407114"
+  "last_updated": "2025-12-31T15:14:01.170615"
 }

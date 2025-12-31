@@ -1,6 +1,6 @@
 # Conglomerates - Content Analysis Report
 
-**Generated:** 2025-12-31 12:45:06
+**Generated:** 2025-12-31 15:14:00
 
 **Domains Analyzed:** 199
 
@@ -25,48 +25,162 @@
 
 ### Marketing Tactics
 
-- **fomo**: 6 occurrences
 - **personalization**: 6 occurrences
+- **fomo**: 6 occurrences
 - **social_proof**: 4 occurrences
 - **scarcity**: 3 occurrences
 
 ## Individual Domain Analysis
 
-### nespresso.ai
+### gillette.io
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### nestle.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))
-
-### nestle.ai
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.nestle.com/
-
-### nestle.com
-
-❌ **Not accessible:** Playwright: Insufficient content (326 chars)
-
-### nespresso.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)")))
-
-### nestle.app
+### cocacola.app
 
 **Risk Score:** 0/100
 
 ---
 
-### nestle.ca
+### gerber.ca
 
 **Risk Score:** 0/100
 
 ---
 
-### nespresso.uk
+### gillette.co.uk
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+---
+
+### gerber.org
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### axe.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.com/ca/en/home.html/
+
+### cocacola.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.ai', port=443) at 0x78b299a43f10>, 'Connection to cocacola.ai timed out. (connect timeout=10)'))
+
+### axe.app
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.godaddy.com/forsale/axe.app
+
+### gerber.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (20 chars)
+
+### gillette.ca
 
 **Risk Score:** 0/100
+
+---
+
+### gerber.dev
+
+**Risk Score:** 0/100
+
+---
+
+### coca-cola.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.org', port=443) at 0x78b299a42150>, 'Connection to coca-cola.org timed out. (connect timeout=10)'))
+
+### axe.ai
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://axe.ai/
+
+### coca-cola.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.net', port=443) at 0x78b299a37910>, 'Connection to coca-cola.net timed out. (connect timeout=10)'))
+
+### gillette.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### hellmanns.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/
+
+### pantene.com
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+
+**Sample Products/Services:**
+
+- REGION/COUNTRY
+- pro-vitamin
+- Curl Define & Shine Leave-On Conditioner
+- Shampoo
+- Daily Scalp & Root Serum
+
+**Related Domains Found:**
+
+- `Pantene.com.co`
+- `enviedeplus.be`
+- `epithimies.gr`
+- `facebook.com`
+- `instagram.com`
+- `pantene.ca`
+- `pantene.cl`
+- `pantene.co.id`
+- `pantene.co.th`
+- `pantene.co.uk`
+
+---
+
+### coca-cola.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### dove.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/
+
+### tide.com
+
+**Risk Score:** 20/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- How to Remove Stains
+- How to Do Laundry
+- Washing Different Fabrics and Colors
+- Washing Machine 101
+- Contact Us
+
+**Related Domains Found:**
+
+- `bbb.org`
+- `bouncefresh.com`
+- `downy.com`
+- `facebook.com`
+- `goodhousekeeping.com`
+- `junkfoodclothing.com`
+- `mrclean.com`
+- `pg.com`
+- `pgcareers.com`
+- `pgeveryday.com`
 
 ---
 
@@ -77,9 +191,13 @@ Call log:
   - navigating to "https://gerber.ai/", waiting until "domcontentloaded"
 
 
-### gerber.org
+### coca-cola.co.ca
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### axe.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.com/
 
 ### purina.com
 
@@ -87,51 +205,69 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>
 	Expected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>
 
-### gerber.net
+### nespresso.co
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.net'. (_ssl.c:1016)")))
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)")))
 
-### gerber.info
+### gillette.com
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))
+**Risk Score:** 32/100
 
-### nespresso.org
+**Justification for Blocking:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)")))
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo
 
-### nespresso.net
+**Sample Products/Services:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)")))
+- Enjoy a hot towel shave with our Heated Razor Starter Kit or Bugatti Special Edition Heated.
+- GILLETTELABS
+- For that someone special
+- Sign up for Gillette emails to receive exclusive offers and updates.
+- Explore
 
-### gerber.us
+**Related Domains Found:**
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))
+- `facebook.com`
+- `instagram.com`
+- `pg.com`
+- `pg.xecurify.com`
+- `pgcareers.com`
+- `preferencecenter.pg.com`
+- `privacypolicy.pg.com`
+- `us.pg.com`
+- `youtube.com`
 
-### gerber.uk
+---
 
-**Risk Score:** 8/100
+### coca-cola.ca
+
+**Risk Score:** 11/100
 
 **Justification for Blocking:**
 
 - Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
 
 **Sample Products/Services:**
 
-- This domain name isavailable to purchase
-- Make an offer
+- Flag Bearer Sweepstakes
+- Future Careers Academy
+- Create your Star WarsÂ® Hologram
+- About us
+- Need help?
 
 **Related Domains Found:**
 
-- `PapillonLandscape.co.uk`
-- `alvariummcr.co.uk`
-- `dslsource.co.uk`
-- `eastbournehalf.co.uk`
-- `kjglobal.co.uk`
-- `minorityperspective.co.uk`
-- `outragefightwear.co.uk`
-- `rdap.uk`
-- `smokeytails.co.uk`
-- `steamboat.co.uk`
+- `coca-cola.com`
+- `coca-colacompany.com`
+- `facebook.com`
+- `instagram.com`
+- `privacyportal.onetrust.com`
+- `shop-cocacola.com`
+- `x.com`
+- `youtube.com`
 
 ---
 
@@ -141,25 +277,231 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>
 	Expected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>
 
-### nestle.biz
+### unileverusa.com
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.biz', port=443) at 0x78b29a7a1590>, 'Connection to nestle.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unileverusa.com/
 
-### gerber.io
+### us.pg.com
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))
+**Risk Score:** 0/100
+
+---
+
+### coca-cola.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.biz', port=443) at 0x78b29a226610>, 'Connection to coca-cola.biz timed out. (connect timeout=10)'))
+
+### unilever.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.com/
+
+### pg.com
+
+**Risk Score:** 0/100
+
+---
+
+### coca-cola.ai
+
+**Risk Score:** 0/100
+
+---
+
+### purina.us
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.purina.com/
+
+### unilever.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
+
+### fanta.com
+
+**Risk Score:** 0/100
+
+---
+
+### purina.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='purina.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
+
+### unilever.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.org', port=443) at 0x78b29a17ab90>, 'Connection to unilever.org timed out. (connect timeout=10)'))
+
+### sprite.com
+
+**Risk Score:** 0/100
+
+---
+
+### purina.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='purina.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.net', port=443) at 0x78b29a341810>, 'Connection to purina.net timed out. (connect timeout=10)'))
+
+### unilever.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.net', port=443) at 0x78b29aa67e50>, 'Connection to unilever.net timed out. (connect timeout=10)'))
+
+### cocacola.com
+
+**Risk Score:** 0/100
+
+---
+
+### purina.co.uk
+
+**Risk Score:** 24/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, upselling
+- Employs aggressive marketing: fomo, personalization
+
+**Sample Products/Services:**
+
+- Shop Purina
+- Newsletters
+- Contact us
+- Shop Purina
+- Where to buy
+
+**Related Domains Found:**
+
+- `api.whatsapp.com`
+- `direct.purina.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `policies.google.com`
+- `purina.co.uk`
+- `twitter.com`
+- `vetcentre.purina.co.uk`
+- `yourpurina.tbw-apps.net`
+- `youtube.com`
+
+---
+
+### unilever.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### coca-cola.com
+
+**Risk Score:** 0/100
+
+---
+
+### purina.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='purina.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.co', port=443) at 0x78b29a85ee90>, 'Connection to purina.co timed out. (connect timeout=10)'))
+
+### unilever.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.co.uk/
+
+### us.pg.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='us.pg.uk', port=443) at 0x78b299b1c1d0>, 'Connection to us.pg.uk timed out. (connect timeout=10)'))
+
+### purina.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.purina.ca/
+
+### unilever.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### nestle.com
+
+❌ **Not accessible:** Playwright: Insufficient content (326 chars)
+
+### us.pg.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### unilever.co
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `careers.unilever.es`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `notices.unilever.com`
+- `unilever.co`
+- `unilever.com`
+- `unilevernotices.com`
+- `x.com`
+
+---
+
+### nestle.ca
+
+**Risk Score:** 0/100
+
+---
+
+### us.pg.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.ai', port=443): Read timed out. (read timeout=10)
+
+### unilever.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.ca/
+
+### tide.uk
+
+**Risk Score:** 0/100
+
+---
+
+### unilever.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.biz', port=443) at 0x78b29a340590>, 'Connection to unilever.biz timed out. (connect timeout=10)'))
+
+### tide.org
+
+**Risk Score:** 0/100
+
+---
+
+### nestle.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))
 
 ### nestle.io
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='nestle.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.io', port=443) at 0x78b29a85e890>, 'Connection to nestle.io timed out. (connect timeout=10)'))
 
+### unilever.app
+
+❌ **Not accessible:** HTTPSConnectionPool(host='unilever.app', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='unilever.app', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+
+### tide.net
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
 ### nestle.co.uk
 
 ❌ **Not accessible:** Playwright: Insufficient content (332 chars)
 
+### nestle.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.org', port=443) at 0x78b29a6de5d0>, 'Connection to nestle.org timed out. (connect timeout=10)'))
+
 ### nestle.info
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))
+
+### hellmanns.us
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/us/en/home.html/
+
+### coca-cola.io
+
+❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.io', port=443) at 0x78b299b1f490>, 'Connection to coca-cola.io timed out. (connect timeout=10)'))
 
 ### gerber.com
 
@@ -195,6 +537,10 @@ Call log:
 
 ---
 
+### tide.io
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
 ### nespresso.com
 
 ❌ **Not accessible:** Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/
@@ -206,185 +552,57 @@ Call log:
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### nespresso.co
+### hellmanns.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)")))
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://hellmanns.org/
 
-### nespresso.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)")))
-
-### nestle.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### gerber.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gerber.co.uk/
-
-### nespresso.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)")))
-
-### gerber.ca
+### tide.co.uk
 
 **Risk Score:** 0/100
 
 ---
-
-### nespresso.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))
-
-### nespresso.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)")))
-
-### gerber.dev
-
-**Risk Score:** 0/100
-
----
-
-### nestle.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))
-
-### gerber.biz
-
-❌ **Not accessible:** Playwright: Insufficient content (20 chars)
-
-### nestle.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.org', port=443) at 0x78b29a6de5d0>, 'Connection to nestle.org timed out. (connect timeout=10)'))
 
 ### nestle.uk
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='nestle.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
 
-### nestle.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.us', port=443) at 0x78b29aa651d0>, 'Connection to nestle.us timed out. (connect timeout=10)'))
-
-### purina.ai
+### hellmanns.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### purina.ca
+### nestle.co.ca
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.purina.ca/
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
-### purina.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='purina.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.co', port=443) at 0x78b29a85ee90>, 'Connection to purina.co timed out. (connect timeout=10)'))
-
-### purina.co.uk
-
-**Risk Score:** 24/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, upselling
-- Employs aggressive marketing: fomo, personalization
-
-**Sample Products/Services:**
-
-- Shop Purina
-- Newsletters
-- Contact us
-- Shop Purina
-- Where to buy
-
-**Related Domains Found:**
-
-- `api.whatsapp.com`
-- `direct.purina.co.uk`
-- `facebook.com`
-- `instagram.com`
-- `policies.google.com`
-- `purina.co.uk`
-- `twitter.com`
-- `vetcentre.purina.co.uk`
-- `yourpurina.tbw-apps.net`
-- `youtube.com`
-
----
-
-### purina.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='purina.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='purina.net', port=443) at 0x78b29a341810>, 'Connection to purina.net timed out. (connect timeout=10)'))
-
-### purina.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='purina.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### purina.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.purina.com/
-
-### unilever.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.com/
-
-### unileverusa.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unileverusa.com/
-
-### axe.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.com/
-
-### dove.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/
-
-### hellmanns.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/
-
-### axe.ai
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://axe.ai/
-
-### axe.app
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.godaddy.com/forsale/axe.app
-
-### axe.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.com/ca/en/home.html/
-
-### axe.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### axe.dev
+### tide.co
 
 **Risk Score:** 0/100
 
 ---
 
-### axe.io
+### hellmanns.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='hellmanns.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
+
+### tide.ca
+
+**Risk Score:** 0/100
+
+---
+
+### hellmanns.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/ca/en/home.html/
+
+### tide.app
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### axe.net
+### hellmanns.biz
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='hellmanns.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hellmanns.biz', port=443) at 0x78b29a6fe050>, 'Connection to hellmanns.biz timed out. (connect timeout=10)'))
 
-### axe.org
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### axe.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='axe.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'axe.uk'. (_ssl.c:1016)")))
-
-### axe.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.us/
-
-### dove.ai
+### tide.ai
 
 **Risk Score:** 11/100
 
@@ -398,6 +616,215 @@ Call log:
 - `spaceship.com`
 
 ---
+
+### nestle.ai
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.nestle.com/
+
+### nespresso.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)")))
+
+### dove.us
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/us/home.html/
+
+### purina.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pg.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pg.uk', port=443) at 0x78b299b8fe90>, 'Connection to pg.uk timed out. (connect timeout=10)'))
+
+### nestle.app
+
+**Risk Score:** 0/100
+
+---
+
+### nespresso.uk
+
+**Risk Score:** 0/100
+
+---
+
+### dove.org
+
+**Risk Score:** 0/100
+
+---
+
+### pg.org
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `every.org`
+
+---
+
+### nespresso.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)")))
+
+### dove.io
+
+**Risk Score:** 0/100
+
+---
+
+### pg.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pg.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pg.net'. (_ssl.c:1016)")))
+
+### nestle.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.biz', port=443) at 0x78b29a7a1590>, 'Connection to nestle.biz timed out. (connect timeout=10)'))
+
+### gerber.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gerber.co.uk/
+
+### dove.info
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### pg.io
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food
+- Uses behavioral manipulation: discounts, addiction_language
+
+**Sample Products/Services:**
+
+- ABOUTPG.io
+- Online games onPG.io
+- Unsure what game to play?
+- Popular this week
+- We use cookies
+
+**Related Domains Found:**
+
+- `playgendary.com`
+
+---
+
+### dove.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dove.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
+
+### pg.co.uk
+
+❌ **Not accessible:** Exceeded 30 redirects.
+
+### sprite.ca
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, upselling
+
+**Sample Products/Services:**
+
+- Home
+- News!
+- About Us
+- Contact Us
+- Home
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `pinterest.com`
+- `sprite.ca`
+- `twitter.com`
+- `vimeo.com`
+- `youtube.com`
+
+---
+
+### dove.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dove.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### pg.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### fanta.net
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://fanta.net/
+
+### dove.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='dove.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
+
+### pg.ca
+
+**Risk Score:** 0/100
+
+---
+
+### nespresso.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)")))
+
+### nespresso.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)")))
+
+### fanta.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### dove.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/ca/en/home.html/
+
+### nespresso.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))
+
+### pg.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='pg.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
+
+### nestle.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))
+
+### fanta.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### dove.biz
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://forsale.dynadot.com/forsale/dove.biz?drefid=2071
+
+### pg.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### nespresso.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)")))
+
+### nespresso.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### fanta.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='fanta.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fanta.ca'. (_ssl.c:1016)")))
 
 ### dove.app
 
@@ -422,202 +849,30 @@ Call log:
 
 ---
 
-### dove.biz
+### pg.ai
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://forsale.dynadot.com/forsale/dove.biz?drefid=2071
+❌ **Not accessible:** HTTPSConnectionPool(host='pg.ai', port=443): Read timed out. (read timeout=10)
 
-### dove.ca
+### fanta.biz
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/ca/en/home.html/
+❌ **Not accessible:** HTTPSConnectionPool(host='fanta.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fanta.biz', port=443) at 0x78b299a02390>, 'Connection to fanta.biz timed out. (connect timeout=10)'))
 
-### dove.co
+### dove.ai
 
-❌ **Not accessible:** HTTPSConnectionPool(host='dove.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
-
-### dove.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dove.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### dove.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='dove.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### dove.info
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### dove.io
-
-**Risk Score:** 0/100
-
----
-
-### dove.org
-
-**Risk Score:** 0/100
-
----
-
-### dove.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.dove.com/us/home.html/
-
-### hellmanns.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hellmanns.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hellmanns.biz', port=443) at 0x78b29a6fe050>, 'Connection to hellmanns.biz timed out. (connect timeout=10)'))
-
-### hellmanns.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/ca/en/home.html/
-
-### hellmanns.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='hellmanns.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### hellmanns.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### hellmanns.org
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://hellmanns.org/
-
-### hellmanns.us
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.hellmanns.com/us/en/home.html/
-
-### unilever.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.app', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='unilever.app', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-
-### unilever.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.biz', port=443) at 0x78b29a340590>, 'Connection to unilever.biz timed out. (connect timeout=10)'))
-
-### unilever.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.ca/
-
-### unilever.co
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `careers.unilever.es`
-- `facebook.com`
-- `instagram.com`
-- `linkedin.com`
-- `notices.unilever.com`
-- `unilever.co`
-- `unilever.com`
-- `unilevernotices.com`
-- `x.com`
-
----
-
-### unilever.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### unilever.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.unilever.co.uk/
-
-### unilever.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### unilever.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.net', port=443) at 0x78b29aa67e50>, 'Connection to unilever.net timed out. (connect timeout=10)'))
-
-### unilever.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='unilever.org', port=443) at 0x78b29a17ab90>, 'Connection to unilever.org timed out. (connect timeout=10)'))
-
-### unilever.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='unilever.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### pg.com
-
-**Risk Score:** 0/100
-
----
-
-### us.pg.com
-
-**Risk Score:** 0/100
-
----
-
-### gillette.com
-
-**Risk Score:** 32/100
+**Risk Score:** 11/100
 
 **Justification for Blocking:**
 
 - Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo
-
-**Sample Products/Services:**
-
-- Enjoy a hot towel shave with our Heated Razor Starter Kit or Bugatti Special Edition Heated.
-- GILLETTELABS
-- For that someone special
-- Sign up for Gillette emails to receive exclusive offers and updates.
-- Explore
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `pg.com`
-- `pg.xecurify.com`
-- `pgcareers.com`
-- `preferencecenter.pg.com`
-- `privacypolicy.pg.com`
-- `us.pg.com`
-- `youtube.com`
-
----
-
-### tide.com
-
-**Risk Score:** 20/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar, fast_food
 - Uses behavioral manipulation: discounts
-- Employs aggressive marketing: personalization
-
-**Sample Products/Services:**
-
-- How to Remove Stains
-- How to Do Laundry
-- Washing Different Fabrics and Colors
-- Washing Machine 101
-- Contact Us
 
 **Related Domains Found:**
 
-- `bbb.org`
-- `bouncefresh.com`
-- `downy.com`
-- `facebook.com`
-- `goodhousekeeping.com`
-- `junkfoodclothing.com`
-- `mrclean.com`
-- `pg.com`
-- `pgcareers.com`
-- `pgeveryday.com`
+- `spaceship.com`
 
 ---
 
-### pantene.com
+### pantene.org
 
 **Risk Score:** 8/100
 
@@ -648,41 +903,85 @@ Call log:
 
 ---
 
-### gillette.ai
+### fanta.ai
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### gillette.ca
+### axe.us
 
-**Risk Score:** 0/100
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.axe.us/
 
----
+### pantene.net
 
-### gillette.co.uk
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-**Risk Score:** 4/100
+### gerber.uk
+
+**Risk Score:** 8/100
 
 **Justification for Blocking:**
 
 - Uses behavioral manipulation: discounts
 
+**Sample Products/Services:**
+
+- This domain name isavailable to purchase
+- Make an offer
+
+**Related Domains Found:**
+
+- `PapillonLandscape.co.uk`
+- `alvariummcr.co.uk`
+- `dslsource.co.uk`
+- `eastbournehalf.co.uk`
+- `kjglobal.co.uk`
+- `minorityperspective.co.uk`
+- `outragefightwear.co.uk`
+- `rdap.uk`
+- `smokeytails.co.uk`
+- `steamboat.co.uk`
+
 ---
 
-### gillette.io
+### nespresso.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)")))
+
+### cocacola.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.org', port=443) at 0x78b299a1e590>, 'Connection to cocacola.org timed out. (connect timeout=10)'))
+
+### axe.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='axe.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'axe.uk'. (_ssl.c:1016)")))
+
+### pantene.co.uk
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `preferencecenter.pg.com`
+- `privacypolicy.pg.com`
+- `termsandconditions.pg.com`
+
+---
+
+### gerber.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.net'. (_ssl.c:1016)")))
+
+### nestle.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.us', port=443) at 0x78b29aa651d0>, 'Connection to nestle.us timed out. (connect timeout=10)'))
+
+### cocacola.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.net', port=443) at 0x78b29a2e9e50>, 'Connection to cocacola.net timed out. (connect timeout=10)'))
+
+### axe.org
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gillette.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### gillette.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gillette.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gillette.org'. (_ssl.c:1016)")))
-
-### gillette.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gillette.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gillette.uk', port=443) at 0x78b299d25c50>, 'Connection to gillette.uk timed out. (connect timeout=10)'))
 
 ### pantene.ca
 
@@ -716,292 +1015,29 @@ Call log:
 
 ---
 
-### pantene.co.uk
+### gerber.io
 
-**Risk Score:** 0/100
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))
 
-**Related Domains Found:**
+### gerber.us
 
-- `preferencecenter.pg.com`
-- `privacypolicy.pg.com`
-- `termsandconditions.pg.com`
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))
 
----
+### gerber.info
 
-### pantene.net
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+### cocacola.io
 
-### pantene.org
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.io', port=443) at 0x78b299a54f90>, 'Connection to cocacola.io timed out. (connect timeout=10)'))
 
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, addiction_language
-
-**Sample Products/Services:**
-
-- REGION/COUNTRY
-- pro-vitamin
-- Curl Define & Shine Leave-On Conditioner
-- Shampoo
-- Daily Scalp & Root Serum
-
-**Related Domains Found:**
-
-- `Pantene.com.co`
-- `enviedeplus.be`
-- `epithimies.gr`
-- `facebook.com`
-- `instagram.com`
-- `pantene.ca`
-- `pantene.cl`
-- `pantene.co.id`
-- `pantene.co.th`
-- `pantene.co.uk`
-
----
-
-### pg.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pg.ai', port=443): Read timed out. (read timeout=10)
-
-### pg.app
+### axe.net
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### pg.biz
+### gillette.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='pg.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1016)')))
-
-### pg.ca
-
-**Risk Score:** 0/100
-
----
-
-### pg.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### pg.co.uk
-
-❌ **Not accessible:** Exceeded 30 redirects.
-
-### pg.io
-
-**Risk Score:** 15/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts, addiction_language
-
-**Sample Products/Services:**
-
-- ABOUTPG.io
-- Online games onPG.io
-- Unsure what game to play?
-- Popular this week
-- We use cookies
-
-**Related Domains Found:**
-
-- `playgendary.com`
-
----
-
-### pg.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pg.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pg.net'. (_ssl.c:1016)")))
-
-### pg.org
-
-**Risk Score:** 0/100
-
-**Related Domains Found:**
-
-- `every.org`
-
----
-
-### pg.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='pg.uk', port=443) at 0x78b299b8fe90>, 'Connection to pg.uk timed out. (connect timeout=10)'))
-
-### tide.ai
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### tide.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### tide.ca
-
-**Risk Score:** 0/100
-
----
-
-### tide.co
-
-**Risk Score:** 0/100
-
----
-
-### tide.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### tide.io
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### tide.net
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### tide.org
-
-**Risk Score:** 0/100
-
----
-
-### tide.uk
-
-**Risk Score:** 0/100
-
----
-
-### us.pg.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.ai', port=443): Read timed out. (read timeout=10)
-
-### us.pg.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### us.pg.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='us.pg.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='us.pg.uk', port=443) at 0x78b299b1c1d0>, 'Connection to us.pg.uk timed out. (connect timeout=10)'))
-
-### coca-cola.com
-
-**Risk Score:** 0/100
-
----
-
-### cocacola.com
-
-**Risk Score:** 0/100
-
----
-
-### sprite.com
-
-**Risk Score:** 0/100
-
----
-
-### fanta.com
-
-**Risk Score:** 0/100
-
----
-
-### coca-cola.ai
-
-**Risk Score:** 0/100
-
----
-
-### coca-cola.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.biz', port=443) at 0x78b29a226610>, 'Connection to coca-cola.biz timed out. (connect timeout=10)'))
-
-### coca-cola.ca
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: fomo
-
-**Sample Products/Services:**
-
-- Flag Bearer Sweepstakes
-- Future Careers Academy
-- Create your Star WarsÂ® Hologram
-- About us
-- Need help?
-
-**Related Domains Found:**
-
-- `coca-cola.com`
-- `coca-colacompany.com`
-- `facebook.com`
-- `instagram.com`
-- `privacyportal.onetrust.com`
-- `shop-cocacola.com`
-- `x.com`
-- `youtube.com`
-
----
-
-### coca-cola.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### coca-cola.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### coca-cola.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.io', port=443) at 0x78b299b1f490>, 'Connection to coca-cola.io timed out. (connect timeout=10)'))
-
-### coca-cola.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.net', port=443) at 0x78b299a37910>, 'Connection to coca-cola.net timed out. (connect timeout=10)'))
-
-### coca-cola.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='coca-cola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='coca-cola.org', port=443) at 0x78b299a42150>, 'Connection to coca-cola.org timed out. (connect timeout=10)'))
-
-### cocacola.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.ai', port=443) at 0x78b299a43f10>, 'Connection to cocacola.ai timed out. (connect timeout=10)'))
-
-### cocacola.app
-
-**Risk Score:** 0/100
-
----
-
-### cocacola.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
-
-### cocacola.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+❌ **Not accessible:** HTTPSConnectionPool(host='gillette.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gillette.uk', port=443) at 0x78b299d25c50>, 'Connection to gillette.uk timed out. (connect timeout=10)'))
 
 ### cocacola.co.uk
 
@@ -1009,71 +1045,35 @@ Call log:
 
 ---
 
-### cocacola.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.io', port=443) at 0x78b299a54f90>, 'Connection to cocacola.io timed out. (connect timeout=10)'))
-
-### cocacola.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.net', port=443) at 0x78b29a2e9e50>, 'Connection to cocacola.net timed out. (connect timeout=10)'))
-
-### cocacola.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.org', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='cocacola.org', port=443) at 0x78b299a1e590>, 'Connection to cocacola.org timed out. (connect timeout=10)'))
-
-### fanta.ai
+### axe.io
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### fanta.biz
+### gillette.org
 
-❌ **Not accessible:** HTTPSConnectionPool(host='fanta.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='fanta.biz', port=443) at 0x78b299a02390>, 'Connection to fanta.biz timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='gillette.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gillette.org'. (_ssl.c:1016)")))
 
-### fanta.ca
+### cocacola.co.ca
 
-❌ **Not accessible:** HTTPSConnectionPool(host='fanta.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fanta.ca'. (_ssl.c:1016)")))
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
-### fanta.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### fanta.co.uk
+### axe.dev
 
 **Risk Score:** 0/100
 
 ---
 
-### fanta.net
+### gillette.net
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://fanta.net/
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### sprite.ca
+### axe.co
 
-**Risk Score:** 12/100
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-**Justification for Blocking:**
+### cocacola.ca
 
-- Uses behavioral manipulation: discounts, upselling
-
-**Sample Products/Services:**
-
-- Home
-- News!
-- About Us
-- Contact Us
-- Home
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `pinterest.com`
-- `sprite.ca`
-- `twitter.com`
-- `vimeo.com`
-- `youtube.com`
-
----
+❌ **Not accessible:** HTTPSConnectionPool(host='cocacola.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
 
 ### sprite.co.uk
 
