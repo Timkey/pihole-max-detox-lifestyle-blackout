@@ -1,13 +1,13 @@
-# Conglomerates - Content Analysis Report
+# conglomerates - Content Analysis Report
 
-**Generated:** 2025-12-31 17:09:55
+**Generated:** 2025-12-31 19:44:35
 
 **Domains Analyzed:** 199
 
 ## Summary
 
 - **Accessible domains:** 40/199
-- **Average Risk Score:** 5.2/100
+- **Average Risk Score:** 5.3/100
 
 ## Hazard Clusters
 
@@ -607,7 +607,12 @@ Call log:
 
 ### pg.com
 
-**Risk Score:** 0/100
+**Risk Score:** 2/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: gillette.com (risk: 29)
 
 ---
 
@@ -644,7 +649,12 @@ Call log:
 
 ### us.pg.com
 
-**Risk Score:** 0/100
+**Risk Score:** 2/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: gillette.com (risk: 29)
 
 ---
 

@@ -1,13 +1,13 @@
-# Cosmetics & Beauty - Content Analysis Report
+# cosmetics & beauty - Content Analysis Report
 
-**Generated:** 2025-12-31 17:05:22
+**Generated:** 2025-12-31 19:44:34
 
 **Domains Analyzed:** 96
 
 ## Summary
 
 - **Accessible domains:** 20/96
-- **Average Risk Score:** 5.2/100
+- **Average Risk Score:** 5.5/100
 
 ## Hazard Clusters
 
@@ -80,12 +80,14 @@ Call log:
 
 ### sephora.co.uk
 
-**Risk Score:** 66/100
+**Risk Score:** 72/100
 
 **Justification for Blocking:**
 
-- ENABLER: Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 61)
+- FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)
+-   ← Enables: sephora.co.uk (risk: 66)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: sephora.co.uk (risk: 66)
 - Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: social_proof, scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected

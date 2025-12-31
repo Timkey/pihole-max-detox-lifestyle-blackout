@@ -1,13 +1,13 @@
-# Food & Delivery - Content Analysis Report
+# food & delivery - Content Analysis Report
 
-**Generated:** 2025-12-31 16:16:02
+**Generated:** 2025-12-31 19:44:34
 
 **Domains Analyzed:** 806
 
 ## Summary
 
 - **Accessible domains:** 120/806
-- **Average Risk Score:** 9.5/100
+- **Average Risk Score:** 9.8/100
 
 ## Hazard Clusters
 
@@ -69,7 +69,12 @@
 
 ### ubereats.com
 
-**Risk Score:** 0/100
+**Risk Score:** 5/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
+-   ← Enables: wendys.com (risk: 56)
 
 ---
 
@@ -289,10 +294,14 @@
 
 ### deliveroo.co.uk
 
-**Risk Score:** 36/100
+**Risk Score:** 48/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 3 domain(s) (+12 points)
+-   ← Enables: deliveroo.com (risk: 33)
+-   ← Enables: deliveroo.net (risk: 36)
+-   ← Enables: wendys.com (risk: 56)
 - Uses behavioral manipulation: discounts, convenience, upselling
 - Employs aggressive marketing: scarcity, fomo, personalization
 
@@ -1471,12 +1480,14 @@
 
 ### wendys.com
 
-**Risk Score:** 56/100
+**Risk Score:** 61/100
 
 **Justification for Blocking:**
 
-- ENABLER: Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: wendys.com (risk: 51)
+- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
+-   ← Enables: wendys.com (risk: 56)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: wendys.com (risk: 56)
 - Promotes health hazards: sugar, addictive
 - Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: scarcity
@@ -1559,10 +1570,12 @@
 
 ### hardees.com
 
-**Risk Score:** 34/100
+**Risk Score:** 37/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: hardees.com (risk: 34)
 - Promotes health hazards: sugar
 - Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language
 - Employs aggressive marketing: scarcity, fomo, personalization
@@ -1751,10 +1764,12 @@
 
 ### starbucks.com
 
-**Risk Score:** 45/100
+**Risk Score:** 49/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: starbucks.com (risk: 45)
 - Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
 - Employs aggressive marketing: fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
@@ -1788,10 +1803,12 @@
 
 ### marcos.com
 
-**Risk Score:** 44/100
+**Risk Score:** 48/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: marcos.com (risk: 44)
 - Uses behavioral manipulation: urgency, discounts, convenience, addiction_language
 - Employs aggressive marketing: scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
@@ -2906,10 +2923,12 @@
 
 ### jimmyjohns.ca
 
-**Risk Score:** 47/100
+**Risk Score:** 51/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: jimmyjohns.ca (risk: 47)
 - Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
 - Employs aggressive marketing: scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected

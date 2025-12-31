@@ -1344,11 +1344,20 @@
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
-    "risk_score": 0,
-    "enabler_risk_bonus": 0,
+    "risk_score": 2,
+    "enabler_risk_bonus": 2,
     "high_risk_links": [],
-    "justification": [],
-    "seo_metadata": ""
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)",
+      "  \u2190 Enables: gillette.com (risk: 29)"
+    ],
+    "seo_metadata": "",
+    "facilitated_domains": [
+      {
+        "domain": "gillette.com",
+        "risk_score": 29
+      }
+    ]
   },
   {
     "domain": "gillette.com",
@@ -1402,11 +1411,20 @@
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
-    "risk_score": 0,
-    "enabler_risk_bonus": 0,
+    "risk_score": 2,
+    "enabler_risk_bonus": 2,
     "high_risk_links": [],
-    "justification": [],
-    "seo_metadata": ""
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)",
+      "  \u2190 Enables: gillette.com (risk: 29)"
+    ],
+    "seo_metadata": "",
+    "facilitated_domains": [
+      {
+        "domain": "gillette.com",
+        "risk_score": 29
+      }
+    ]
   },
   {
     "domain": "unilever.biz",

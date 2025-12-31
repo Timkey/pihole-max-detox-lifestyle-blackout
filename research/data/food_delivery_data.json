@@ -52,11 +52,20 @@
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
-    "risk_score": 0,
-    "enabler_risk_bonus": 0,
+    "risk_score": 5,
+    "enabler_risk_bonus": 5,
     "high_risk_links": [],
-    "justification": [],
-    "seo_metadata": ""
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)",
+      "  \u2190 Enables: wendys.com (risk: 56)"
+    ],
+    "seo_metadata": "",
+    "facilitated_domains": [
+      {
+        "domain": "wendys.com",
+        "risk_score": 56
+      }
+    ]
   },
   {
     "domain": "caviar.com",
@@ -591,14 +600,32 @@
       "twitter.com",
       "uk.deliveroo.news"
     ],
-    "risk_score": 36,
-    "enabler_risk_bonus": 0,
+    "risk_score": 48,
+    "enabler_risk_bonus": 12,
     "high_risk_links": [],
     "justification": [
+      "FACILITATOR (Inbound): Used by 3 domain(s) (+12 points)",
+      "  \u2190 Enables: deliveroo.com (risk: 33)",
+      "  \u2190 Enables: deliveroo.net (risk: 36)",
+      "  \u2190 Enables: wendys.com (risk: 56)",
       "Uses behavioral manipulation: discounts, convenience, upselling",
       "Employs aggressive marketing: scarcity, fomo, personalization"
     ],
-    "seo_metadata": "deliveroo - food, groceries, pharmacy, gifts & more. delivered in a tap. from food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. all in as little as 30 minutes. download our app or order online.  deliveroo the best local restaurants and takeaways are here to deliver. order on deliveroo today!"
+    "seo_metadata": "deliveroo - food, groceries, pharmacy, gifts & more. delivered in a tap. from food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. all in as little as 30 minutes. download our app or order online.  deliveroo the best local restaurants and takeaways are here to deliver. order on deliveroo today!",
+    "facilitated_domains": [
+      {
+        "domain": "deliveroo.com",
+        "risk_score": 33
+      },
+      {
+        "domain": "deliveroo.net",
+        "risk_score": 36
+      },
+      {
+        "domain": "wendys.com",
+        "risk_score": 56
+      }
+    ]
   },
   {
     "domain": "deliveroo.net",
@@ -1829,11 +1856,20 @@
     "marketing_tactics": {},
     "promoted_products": [],
     "related_domains": [],
-    "risk_score": 0,
-    "enabler_risk_bonus": 0,
+    "risk_score": 5,
+    "enabler_risk_bonus": 5,
     "high_risk_links": [],
-    "justification": [],
-    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>"
+    "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)",
+      "  \u2190 Enables: wendys.com (risk: 56)"
+    ],
+    "error": "Playwright error: Cannot switch to a different thread\n\tCurrent:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>\n\tExpected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>",
+    "facilitated_domains": [
+      {
+        "domain": "wendys.com",
+        "risk_score": 56
+      }
+    ]
   },
   {
     "domain": "just-eat.org",
@@ -3385,23 +3421,31 @@
       "wendys.com",
       "youtube.com"
     ],
-    "risk_score": 56,
-    "enabler_risk_bonus": 5,
+    "risk_score": 61,
+    "enabler_risk_bonus": 10,
     "high_risk_links": [
       {
         "domain": "wendys.com",
-        "risk_score": 51
+        "risk_score": 56
       }
     ],
     "justification": [
-      "ENABLER: Links to 1 high-risk domain(s) (+5 points)",
-      "  \u2192 Facilitates: wendys.com (risk: 51)",
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)",
+      "  \u2190 Enables: wendys.com (risk: 56)",
+      "ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)",
+      "  \u2192 Facilitates: wendys.com (risk: 56)",
       "Promotes health hazards: sugar, addictive",
       "Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language",
       "Employs aggressive marketing: scarcity",
       "MODERATE RISK: Several concerning patterns detected"
     ],
-    "seo_metadata": "wendy's | quality is our recipe\u00ae order drive-thru or delivery for food that's served fresh-made - like our homepage ;) see wendy's latest deals, featured menu items & more. we got you\u00ae your online destination to all things wendy\u2019s. ya welcome! score the wendy\u2019s you love anytime online! we're just an easy click away so what are you waiting for? wendy's"
+    "seo_metadata": "wendy's | quality is our recipe\u00ae order drive-thru or delivery for food that's served fresh-made - like our homepage ;) see wendy's latest deals, featured menu items & more. we got you\u00ae your online destination to all things wendy\u2019s. ya welcome! score the wendy\u2019s you love anytime online! we're just an easy click away so what are you waiting for? wendy's",
+    "facilitated_domains": [
+      {
+        "domain": "wendys.com",
+        "risk_score": 56
+      }
+    ]
   },
   {
     "domain": "popeyes.com",
@@ -3544,15 +3588,23 @@
       "twitter.com",
       "youtube.com"
     ],
-    "risk_score": 34,
-    "enabler_risk_bonus": 0,
+    "risk_score": 37,
+    "enabler_risk_bonus": 3,
     "high_risk_links": [],
     "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)",
+      "  \u2190 Enables: hardees.com (risk: 34)",
       "Promotes health hazards: sugar",
       "Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language",
       "Employs aggressive marketing: scarcity, fomo, personalization"
     ],
-    "seo_metadata": "hardee's come visit hardee's and understand why we have food for everyone. between our breakfast, lunch & dinner options, we have your favorites! home, hardee's"
+    "seo_metadata": "hardee's come visit hardee's and understand why we have food for everyone. between our breakfast, lunch & dinner options, we have your favorites! home, hardee's",
+    "facilitated_domains": [
+      {
+        "domain": "hardees.com",
+        "risk_score": 34
+      }
+    ]
   },
   {
     "domain": "fiveguys.com",
@@ -3959,15 +4011,23 @@
       "starbucksforlife.com",
       "wfpusa.org"
     ],
-    "risk_score": 45,
-    "enabler_risk_bonus": 0,
+    "risk_score": 49,
+    "enabler_risk_bonus": 4,
     "high_risk_links": [],
     "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)",
+      "  \u2190 Enables: starbucks.com (risk: 45)",
       "Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language",
       "Employs aggressive marketing: fomo, personalization",
       "MODERATE RISK: Several concerning patterns detected"
     ],
-    "seo_metadata": "starbucks coffee company more than just great coffee. explore the menu, sign up for starbucks\u00ae rewards, manage your gift card and more. starbucks coffee company more than just great coffee. explore the menu, sign up for starbucks\u00ae rewards, manage your gift card and more."
+    "seo_metadata": "starbucks coffee company more than just great coffee. explore the menu, sign up for starbucks\u00ae rewards, manage your gift card and more. starbucks coffee company more than just great coffee. explore the menu, sign up for starbucks\u00ae rewards, manage your gift card and more.",
+    "facilitated_domains": [
+      {
+        "domain": "starbucks.com",
+        "risk_score": 45
+      }
+    ]
   },
   {
     "domain": "chipotle.com",
@@ -4038,15 +4098,23 @@
       "play.google.com",
       "twitter.com"
     ],
-    "risk_score": 44,
-    "enabler_risk_bonus": 0,
+    "risk_score": 48,
+    "enabler_risk_bonus": 4,
     "high_risk_links": [],
     "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)",
+      "  \u2190 Enables: marcos.com (risk: 44)",
       "Uses behavioral manipulation: urgency, discounts, convenience, addiction_language",
       "Employs aggressive marketing: scarcity, fomo, personalization",
       "MODERATE RISK: Several concerning patterns detected"
     ],
-    "seo_metadata": "marco's pizza online ordering order marco's pizza delivery or carryout. enjoy fresh ingredients, scratch-made dough, and signature cheeses from one of america\u2019s fastest-growing pizza brands."
+    "seo_metadata": "marco's pizza online ordering order marco's pizza delivery or carryout. enjoy fresh ingredients, scratch-made dough, and signature cheeses from one of america\u2019s fastest-growing pizza brands.",
+    "facilitated_domains": [
+      {
+        "domain": "marcos.com",
+        "risk_score": 44
+      }
+    ]
   },
   {
     "domain": "timhortons.com",
@@ -6595,15 +6663,23 @@
       "jimmyjohns.ca",
       "orders.jimmyjohns.ca"
     ],
-    "risk_score": 47,
-    "enabler_risk_bonus": 0,
+    "risk_score": 51,
+    "enabler_risk_bonus": 4,
     "high_risk_links": [],
     "justification": [
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)",
+      "  \u2190 Enables: jimmyjohns.ca (risk: 47)",
       "Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language",
       "Employs aggressive marketing: scarcity, fomo, personalization",
       "MODERATE RISK: Several concerning patterns detected"
     ],
-    "seo_metadata": "\r\n\tjimmy john's\r\n order sandwiches for delivery or pickup and earn rewards with the jimmy john\u2019s\u2122 app.\r\n                    join jimmy john\u2019s rewards\u2122 to earn and redeem exclusive rewards at participating locations.\r\n                    terms and conditions apply. track your order and receive notifications when it\u2019s out for delivery or ready for pick up.\r\n                    sign in, find a location near you, place an order and enjoy the sandwich of sandwiches! not available in the us.\r\n        "
+    "seo_metadata": "\r\n\tjimmy john's\r\n order sandwiches for delivery or pickup and earn rewards with the jimmy john\u2019s\u2122 app.\r\n                    join jimmy john\u2019s rewards\u2122 to earn and redeem exclusive rewards at participating locations.\r\n                    terms and conditions apply. track your order and receive notifications when it\u2019s out for delivery or ready for pick up.\r\n                    sign in, find a location near you, place an order and enjoy the sandwich of sandwiches! not available in the us.\r\n        ",
+    "facilitated_domains": [
+      {
+        "domain": "jimmyjohns.ca",
+        "risk_score": 47
+      }
+    ]
   },
   {
     "domain": "jackinthebox.us",

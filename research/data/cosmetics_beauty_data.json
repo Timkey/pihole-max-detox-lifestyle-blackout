@@ -126,22 +126,30 @@
       "tiktok.com",
       "youtube.com"
     ],
-    "risk_score": 66,
-    "enabler_risk_bonus": 5,
+    "risk_score": 72,
+    "enabler_risk_bonus": 11,
     "high_risk_links": [
       {
         "domain": "sephora.co.uk",
-        "risk_score": 61
+        "risk_score": 66
       }
     ],
     "justification": [
-      "ENABLER: Links to 1 high-risk domain(s) (+5 points)",
-      "  \u2192 Facilitates: sephora.co.uk (risk: 61)",
+      "FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)",
+      "  \u2190 Enables: sephora.co.uk (risk: 66)",
+      "ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)",
+      "  \u2192 Facilitates: sephora.co.uk (risk: 66)",
       "Uses behavioral manipulation: discounts, convenience, upselling, addiction_language",
       "Employs aggressive marketing: social_proof, scarcity, fomo, personalization",
       "MODERATE RISK: Several concerning patterns detected"
     ],
-    "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora."
+    "seo_metadata": "sephora uk | beauty, makeup, skincare, haircare & fragrances we belong to something beautiful with over 500 makeup, fragrance, skin & hair brands, loyalty points & free birthday gifts at sephora.",
+    "facilitated_domains": [
+      {
+        "domain": "sephora.co.uk",
+        "risk_score": 66
+      }
+    ]
   },
   {
     "domain": "sephora.org",
