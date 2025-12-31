@@ -407,6 +407,990 @@
       "source": "hardees.com",
       "detected_at": "2025-12-30T23:20:02.258167",
       "status": "pending"
+    },
+    {
+      "domain": "community.pandaexpress.com",
+      "category": "Food & Delivery",
+      "reason": "Found via pandaexpress.com analysis, appears to be related service",
+      "source": "pandaexpress.com",
+      "detected_at": "2025-12-30T23:38:10.813458",
+      "status": "pending"
+    },
+    {
+      "domain": "pandacareers.com",
+      "category": "Food & Delivery",
+      "reason": "Found via pandaexpress.com analysis, appears to be related service",
+      "source": "pandaexpress.com",
+      "detected_at": "2025-12-30T23:38:10.813466",
+      "status": "pending"
+    },
+    {
+      "domain": "chipotlegoods.com",
+      "category": "Food & Delivery",
+      "reason": "Found via chipotle.com analysis, appears to be related service",
+      "source": "chipotle.com",
+      "detected_at": "2025-12-30T23:38:35.848366",
+      "status": "pending"
+    },
+    {
+      "domain": "community.chipotle.com",
+      "category": "Food & Delivery",
+      "reason": "Found via chipotle.com analysis, appears to be related service",
+      "source": "chipotle.com",
+      "detected_at": "2025-12-30T23:38:35.848378",
+      "status": "pending"
+    },
+    {
+      "domain": "ciaonet.com",
+      "category": "Food & Delivery",
+      "reason": "Found via marcos.com analysis, appears to be related service",
+      "source": "marcos.com",
+      "detected_at": "2025-12-30T23:38:48.624606",
+      "status": "pending"
+    },
+    {
+      "domain": "bostonpizza.cashstar.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bostonpizza.com analysis, appears to be related service",
+      "source": "bostonpizza.com",
+      "detected_at": "2025-12-30T23:38:59.241847",
+      "status": "pending"
+    },
+    {
+      "domain": "bostonpizzafranchise.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bostonpizza.com analysis, appears to be related service",
+      "source": "bostonpizza.com",
+      "detected_at": "2025-12-30T23:38:59.241894",
+      "status": "pending"
+    },
+    {
+      "domain": "bostons.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bostonpizza.com analysis, appears to be related service",
+      "source": "bostonpizza.com",
+      "detected_at": "2025-12-30T23:38:59.241907",
+      "status": "pending"
+    },
+    {
+      "domain": "bostons.com.mx",
+      "category": "Food & Delivery",
+      "reason": "Found via bostonpizza.com analysis, appears to be related service",
+      "source": "bostonpizza.com",
+      "detected_at": "2025-12-30T23:38:59.241919",
+      "status": "pending"
+    },
+    {
+      "domain": "bpincomefund.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bostonpizza.com analysis, appears to be related service",
+      "source": "bostonpizza.com",
+      "detected_at": "2025-12-30T23:38:59.241930",
+      "status": "pending"
+    },
+    {
+      "domain": "about.starbucks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.com analysis, appears to be related service",
+      "source": "starbucks.com",
+      "detected_at": "2025-12-30T23:39:07.022294",
+      "status": "pending"
+    },
+    {
+      "domain": "alumni.starbucks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.com analysis, appears to be related service",
+      "source": "starbucks.com",
+      "detected_at": "2025-12-30T23:39:07.022331",
+      "status": "pending"
+    },
+    {
+      "domain": "archive.starbucks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.com analysis, appears to be related service",
+      "source": "starbucks.com",
+      "detected_at": "2025-12-30T23:39:07.022341",
+      "status": "pending"
+    },
+    {
+      "domain": "athome.starbucks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.com analysis, appears to be related service",
+      "source": "starbucks.com",
+      "detected_at": "2025-12-30T23:39:07.022349",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.starbucks.com",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.com analysis, appears to be related service",
+      "source": "starbucks.com",
+      "detected_at": "2025-12-30T23:39:07.022358",
+      "status": "pending"
+    },
+    {
+      "domain": "carlsjr.app.pepperhq.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.co.uk analysis, appears to be related service",
+      "source": "carlsjr.co.uk",
+      "detected_at": "2025-12-30T23:43:12.088909",
+      "status": "pending"
+    },
+    {
+      "domain": "feedback.sentimentsearch.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.co.uk analysis, appears to be related service",
+      "source": "carlsjr.co.uk",
+      "detected_at": "2025-12-30T23:43:12.088926",
+      "status": "pending"
+    },
+    {
+      "domain": "harri.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.co.uk analysis, appears to be related service",
+      "source": "carlsjr.co.uk",
+      "detected_at": "2025-12-30T23:43:12.088931",
+      "status": "pending"
+    },
+    {
+      "domain": "bitly.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.info analysis, appears to be related service",
+      "source": "carlsjr.info",
+      "detected_at": "2025-12-30T23:43:14.491256",
+      "status": "pending"
+    },
+    {
+      "domain": "dev.bitly.com",
+      "category": "Food & Delivery",
+      "reason": "Found via carlsjr.info analysis, appears to be related service",
+      "source": "carlsjr.info",
+      "detected_at": "2025-12-30T23:43:14.491287",
+      "status": "pending"
+    },
+    {
+      "domain": "ir.chipotle.com",
+      "category": "Food & Delivery",
+      "reason": "Found via chipotle.co.uk analysis, appears to be related service",
+      "source": "chipotle.co.uk",
+      "detected_at": "2025-12-30T23:49:06.202572",
+      "status": "pending"
+    },
+    {
+      "domain": "jobs.chipotle.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via chipotle.co.uk analysis, appears to be related service",
+      "source": "chipotle.co.uk",
+      "detected_at": "2025-12-30T23:49:06.202604",
+      "status": "pending"
+    },
+    {
+      "domain": "newsroomeu.chipotle.com",
+      "category": "Food & Delivery",
+      "reason": "Found via chipotle.co.uk analysis, appears to be related service",
+      "source": "chipotle.co.uk",
+      "detected_at": "2025-12-30T23:49:06.202618",
+      "status": "pending"
+    },
+    {
+      "domain": "corporate.dominos.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.co.uk analysis, appears to be related service",
+      "source": "dominos.co.uk",
+      "detected_at": "2025-12-30T23:52:46.489969",
+      "status": "pending"
+    },
+    {
+      "domain": "dominosuk.page.link",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.co.uk analysis, appears to be related service",
+      "source": "dominos.co.uk",
+      "detected_at": "2025-12-30T23:52:46.490008",
+      "status": "pending"
+    },
+    {
+      "domain": "wordpress.org",
+      "category": "Food & Delivery",
+      "reason": "Found via dominos.net analysis, appears to be related service",
+      "source": "dominos.net",
+      "detected_at": "2025-12-30T23:53:06.001726",
+      "status": "pending"
+    },
+    {
+      "domain": "dunkinmerch.com",
+      "category": "Food & Delivery",
+      "reason": "Found via dunkin.app analysis, appears to be related service",
+      "source": "dunkin.app",
+      "detected_at": "2025-12-30T23:53:27.641301",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.fiveguys.com",
+      "category": "Food & Delivery",
+      "reason": "Found via fiveguys.ca analysis, appears to be related service",
+      "source": "fiveguys.ca",
+      "detected_at": "2025-12-30T23:55:57.456845",
+      "status": "pending"
+    },
+    {
+      "domain": "fiveguys-ca.cashstar.com",
+      "category": "Food & Delivery",
+      "reason": "Found via fiveguys.ca analysis, appears to be related service",
+      "source": "fiveguys.ca",
+      "detected_at": "2025-12-30T23:55:57.456905",
+      "status": "pending"
+    },
+    {
+      "domain": "open.spotify.com",
+      "category": "Food & Delivery",
+      "reason": "Found via fiveguys.ca analysis, appears to be related service",
+      "source": "fiveguys.ca",
+      "detected_at": "2025-12-30T23:55:57.456923",
+      "status": "pending"
+    },
+    {
+      "domain": "restaurants.fiveguys.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via fiveguys.ca analysis, appears to be related service",
+      "source": "fiveguys.ca",
+      "detected_at": "2025-12-30T23:55:57.456937",
+      "status": "pending"
+    },
+    {
+      "domain": "inoautocentres.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via in-n-out.co.uk analysis, appears to be related service",
+      "source": "in-n-out.co.uk",
+      "detected_at": "2025-12-30T23:58:33.198621",
+      "status": "pending"
+    },
+    {
+      "domain": "foodtastic.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via jimmyjohns.ca analysis, appears to be related service",
+      "source": "jimmyjohns.ca",
+      "detected_at": "2025-12-31T00:01:05.428300",
+      "status": "pending"
+    },
+    {
+      "domain": "orders.jimmyjohns.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via jimmyjohns.ca analysis, appears to be related service",
+      "source": "jimmyjohns.ca",
+      "detected_at": "2025-12-31T00:01:05.428336",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.kfc.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.co.uk analysis, appears to be related service",
+      "source": "kfc.co.uk",
+      "detected_at": "2025-12-31T00:02:25.001295",
+      "status": "pending"
+    },
+    {
+      "domain": "help.kfc.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.co.uk analysis, appears to be related service",
+      "source": "kfc.co.uk",
+      "detected_at": "2025-12-31T00:02:25.001347",
+      "status": "pending"
+    },
+    {
+      "domain": "kfcshop.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.co.uk analysis, appears to be related service",
+      "source": "kfc.co.uk",
+      "detected_at": "2025-12-31T00:02:25.001358",
+      "status": "pending"
+    },
+    {
+      "domain": "telderi.ru",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.info analysis, appears to be related service",
+      "source": "kfc.info",
+      "detected_at": "2025-12-31T00:02:29.497053",
+      "status": "pending"
+    },
+    {
+      "domain": "health-club.net",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.net analysis, appears to be related service",
+      "source": "kfc.net",
+      "detected_at": "2025-12-31T00:02:34.173988",
+      "status": "pending"
+    },
+    {
+      "domain": "igr.kerala.gov.in",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.org analysis, appears to be related service",
+      "source": "kfc.org",
+      "detected_at": "2025-12-31T00:02:37.258490",
+      "status": "pending"
+    },
+    {
+      "domain": "india.gov.in",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.org analysis, appears to be related service",
+      "source": "kfc.org",
+      "detected_at": "2025-12-31T00:02:37.258521",
+      "status": "pending"
+    },
+    {
+      "domain": "kerala.gov.in",
+      "category": "Food & Delivery",
+      "reason": "Found via kfc.org analysis, appears to be related service",
+      "source": "kfc.org",
+      "detected_at": "2025-12-31T00:02:37.258537",
+      "status": "pending"
+    },
+    {
+      "domain": "mailhide.io",
+      "category": "Food & Delivery",
+      "reason": "Found via marcos.io analysis, appears to be related service",
+      "source": "marcos.io",
+      "detected_at": "2025-12-31T00:04:25.328079",
+      "status": "pending"
+    },
+    {
+      "domain": "directories.onepercentfortheplanet.org",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.org analysis, appears to be related service",
+      "source": "moes.org",
+      "detected_at": "2025-12-31T00:06:23.674141",
+      "status": "pending"
+    },
+    {
+      "domain": "PapillonLandscape.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.uk analysis, appears to be related service",
+      "source": "moes.uk",
+      "detected_at": "2025-12-31T00:06:25.761434",
+      "status": "pending"
+    },
+    {
+      "domain": "alvariummcr.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.uk analysis, appears to be related service",
+      "source": "moes.uk",
+      "detected_at": "2025-12-31T00:06:25.761467",
+      "status": "pending"
+    },
+    {
+      "domain": "dslsource.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.uk analysis, appears to be related service",
+      "source": "moes.uk",
+      "detected_at": "2025-12-31T00:06:25.761478",
+      "status": "pending"
+    },
+    {
+      "domain": "eastbournehalf.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.uk analysis, appears to be related service",
+      "source": "moes.uk",
+      "detected_at": "2025-12-31T00:06:25.761487",
+      "status": "pending"
+    },
+    {
+      "domain": "kjglobal.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via moes.uk analysis, appears to be related service",
+      "source": "moes.uk",
+      "detected_at": "2025-12-31T00:06:25.761498",
+      "status": "pending"
+    },
+    {
+      "domain": "pandacares.org",
+      "category": "Food & Delivery",
+      "reason": "Found via pandaexpress.ca analysis, appears to be related service",
+      "source": "pandaexpress.ca",
+      "detected_at": "2025-12-31T00:06:36.564290",
+      "status": "pending"
+    },
+    {
+      "domain": "papamurphys.prod.speeddine.com",
+      "category": "Food & Delivery",
+      "reason": "Found via papamurphys.ca analysis, appears to be related service",
+      "source": "papamurphys.ca",
+      "detected_at": "2025-12-31T00:08:04.661995",
+      "status": "pending"
+    },
+    {
+      "domain": "catering.pizzanova.net",
+      "category": "Food & Delivery",
+      "reason": "Found via pizzanova.net analysis, appears to be related service",
+      "source": "pizzanova.net",
+      "detected_at": "2025-12-31T00:11:04.898625",
+      "status": "pending"
+    },
+    {
+      "domain": "catersanmarcos.pizzanova.net",
+      "category": "Food & Delivery",
+      "reason": "Found via pizzanova.net analysis, appears to be related service",
+      "source": "pizzanova.net",
+      "detected_at": "2025-12-31T00:11:04.898648",
+      "status": "pending"
+    },
+    {
+      "domain": "catersolanabeach.pizzanova.net",
+      "category": "Food & Delivery",
+      "reason": "Found via pizzanova.net analysis, appears to be related service",
+      "source": "pizzanova.net",
+      "detected_at": "2025-12-31T00:11:04.898654",
+      "status": "pending"
+    },
+    {
+      "domain": "harbordrive.pizzanova.net",
+      "category": "Food & Delivery",
+      "reason": "Found via pizzanova.net analysis, appears to be related service",
+      "source": "pizzanova.net",
+      "detected_at": "2025-12-31T00:11:04.898660",
+      "status": "pending"
+    },
+    {
+      "domain": "cdn.shakeshack.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via shakeshack.ca analysis, appears to be related service",
+      "source": "shakeshack.ca",
+      "detected_at": "2025-12-31T00:15:14.118402",
+      "status": "pending"
+    },
+    {
+      "domain": "order.shakeshack.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via shakeshack.ca analysis, appears to be related service",
+      "source": "shakeshack.ca",
+      "detected_at": "2025-12-31T00:15:14.118450",
+      "status": "pending"
+    },
+    {
+      "domain": "fruits.co",
+      "category": "Food & Delivery",
+      "reason": "Found via shakeshack.uk analysis, appears to be related service",
+      "source": "shakeshack.uk",
+      "detected_at": "2025-12-31T00:16:39.285846",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.starbucks.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.ca analysis, appears to be related service",
+      "source": "starbucks.ca",
+      "detected_at": "2025-12-31T00:19:45.528739",
+      "status": "pending"
+    },
+    {
+      "domain": "customerservice.starbucks.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.ca analysis, appears to be related service",
+      "source": "starbucks.ca",
+      "detected_at": "2025-12-31T00:19:45.528983",
+      "status": "pending"
+    },
+    {
+      "domain": "fr.starbucks.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via starbucks.ca analysis, appears to be related service",
+      "source": "starbucks.ca",
+      "detected_at": "2025-12-31T00:19:45.529008",
+      "status": "pending"
+    },
+    {
+      "domain": "joinourteam.timhortons.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via timhortons.co.uk analysis, appears to be related service",
+      "source": "timhortons.co.uk",
+      "detected_at": "2025-12-31T00:24:57.654733",
+      "status": "pending"
+    },
+    {
+      "domain": "cdc.gov",
+      "category": "Food & Delivery",
+      "reason": "Found via whitecastle.us analysis, appears to be related service",
+      "source": "whitecastle.us",
+      "detected_at": "2025-12-31T00:26:52.284016",
+      "status": "pending"
+    },
+    {
+      "domain": "clients.municipalimpact.com",
+      "category": "Food & Delivery",
+      "reason": "Found via whitecastle.us analysis, appears to be related service",
+      "source": "whitecastle.us",
+      "detected_at": "2025-12-31T00:26:52.284091",
+      "status": "pending"
+    },
+    {
+      "domain": "coronavirus.gov",
+      "category": "Food & Delivery",
+      "reason": "Found via whitecastle.us analysis, appears to be related service",
+      "source": "whitecastle.us",
+      "detected_at": "2025-12-31T00:26:52.284108",
+      "status": "pending"
+    },
+    {
+      "domain": "ibervilleparish.com",
+      "category": "Food & Delivery",
+      "reason": "Found via whitecastle.us analysis, appears to be related service",
+      "source": "whitecastle.us",
+      "detected_at": "2025-12-31T00:26:52.284121",
+      "status": "pending"
+    },
+    {
+      "domain": "laworks.net",
+      "category": "Food & Delivery",
+      "reason": "Found via whitecastle.us analysis, appears to be related service",
+      "source": "whitecastle.us",
+      "detected_at": "2025-12-31T00:26:52.284133",
+      "status": "pending"
+    },
+    {
+      "domain": "contact.pepsico.com",
+      "category": "Food & Delivery",
+      "reason": "Found via lays.com analysis, appears to be related service",
+      "source": "lays.com",
+      "detected_at": "2025-12-31T00:26:57.786584",
+      "status": "pending"
+    },
+    {
+      "domain": "cu1.pepsico.com",
+      "category": "Food & Delivery",
+      "reason": "Found via lays.com analysis, appears to be related service",
+      "source": "lays.com",
+      "detected_at": "2025-12-31T00:26:57.786639",
+      "status": "pending"
+    },
+    {
+      "domain": "laysfwc26countdown.com",
+      "category": "Food & Delivery",
+      "reason": "Found via lays.com analysis, appears to be related service",
+      "source": "lays.com",
+      "detected_at": "2025-12-31T00:26:57.786662",
+      "status": "pending"
+    },
+    {
+      "domain": "curator.io",
+      "category": "Food & Delivery",
+      "reason": "Found via cheetos.com analysis, appears to be related service",
+      "source": "cheetos.com",
+      "detected_at": "2025-12-31T00:27:00.666092",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsicojobs.com",
+      "category": "Food & Delivery",
+      "reason": "Found via cheetos.ca analysis, appears to be related service",
+      "source": "cheetos.ca",
+      "detected_at": "2025-12-31T00:28:51.487053",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsicoprivacypolicy.com",
+      "category": "Food & Delivery",
+      "reason": "Found via doritos.co.uk analysis, appears to be related service",
+      "source": "doritos.co.uk",
+      "detected_at": "2025-12-31T00:30:41.928698",
+      "status": "pending"
+    },
+    {
+      "domain": "atelierhyper.com",
+      "category": "Food & Delivery",
+      "reason": "Found via kitkat.io analysis, appears to be related service",
+      "source": "kitkat.io",
+      "detected_at": "2025-12-31T00:32:47.716169",
+      "status": "pending"
+    },
+    {
+      "domain": "google.ca",
+      "category": "Food & Delivery",
+      "reason": "Found via kitkat.io analysis, appears to be related service",
+      "source": "kitkat.io",
+      "detected_at": "2025-12-31T00:32:47.716213",
+      "status": "pending"
+    },
+    {
+      "domain": "marsfinance.com",
+      "category": "Food & Delivery",
+      "reason": "Found via mars.biz analysis, appears to be related service",
+      "source": "mars.biz",
+      "detected_at": "2025-12-31T00:34:28.807153",
+      "status": "pending"
+    },
+    {
+      "domain": "abebooks.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via poptarts.co.uk analysis, appears to be related service",
+      "source": "poptarts.co.uk",
+      "detected_at": "2025-12-31T00:36:59.572105",
+      "status": "pending"
+    },
+    {
+      "domain": "aboutamazon.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via poptarts.co.uk analysis, appears to be related service",
+      "source": "poptarts.co.uk",
+      "detected_at": "2025-12-31T00:36:59.572169",
+      "status": "pending"
+    },
+    {
+      "domain": "acx.com",
+      "category": "Food & Delivery",
+      "reason": "Found via poptarts.co.uk analysis, appears to be related service",
+      "source": "poptarts.co.uk",
+      "detected_at": "2025-12-31T00:36:59.572207",
+      "status": "pending"
+    },
+    {
+      "domain": "advertising.amazon.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via poptarts.co.uk analysis, appears to be related service",
+      "source": "poptarts.co.uk",
+      "detected_at": "2025-12-31T00:36:59.572224",
+      "status": "pending"
+    },
+    {
+      "domain": "affiliate-program.amazon.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Found via poptarts.co.uk analysis, appears to be related service",
+      "source": "poptarts.co.uk",
+      "detected_at": "2025-12-31T00:36:59.572237",
+      "status": "pending"
+    },
+    {
+      "domain": "porkbun.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ritz.app analysis, appears to be related service",
+      "source": "ritz.app",
+      "detected_at": "2025-12-31T00:40:01.037047",
+      "status": "pending"
+    },
+    {
+      "domain": "contactus.generalmills.com",
+      "category": "Food & Delivery",
+      "reason": "Found via totinos.com analysis, appears to be related service",
+      "source": "totinos.com",
+      "detected_at": "2025-12-31T00:45:11.310259",
+      "status": "pending"
+    },
+    {
+      "domain": "generalmills.com",
+      "category": "Food & Delivery",
+      "reason": "Found via totinos.com analysis, appears to be related service",
+      "source": "totinos.com",
+      "detected_at": "2025-12-31T00:45:11.310308",
+      "status": "pending"
+    },
+    {
+      "domain": "privacy.generalmills.com",
+      "category": "Food & Delivery",
+      "reason": "Found via totinos.com analysis, appears to be related service",
+      "source": "totinos.com",
+      "detected_at": "2025-12-31T00:45:11.310322",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.kraftheinz.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bagelbites.com analysis, appears to be related service",
+      "source": "bagelbites.com",
+      "detected_at": "2025-12-31T00:45:17.801293",
+      "status": "pending"
+    },
+    {
+      "domain": "contactus.kraftheinz.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bagelbites.com analysis, appears to be related service",
+      "source": "bagelbites.com",
+      "detected_at": "2025-12-31T00:45:17.801346",
+      "status": "pending"
+    },
+    {
+      "domain": "ir.kraftheinzcompany.com",
+      "category": "Food & Delivery",
+      "reason": "Found via bagelbites.com analysis, appears to be related service",
+      "source": "bagelbites.com",
+      "detected_at": "2025-12-31T00:45:17.801356",
+      "status": "pending"
+    },
+    {
+      "domain": "coty.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via covergirl.com analysis, appears to be related service",
+      "source": "covergirl.com",
+      "detected_at": "2025-12-31T00:48:24.695596",
+      "status": "pending"
+    },
+    {
+      "domain": "cotyconsumeraffairs.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via covergirl.com analysis, appears to be related service",
+      "source": "covergirl.com",
+      "detected_at": "2025-12-31T00:48:24.695664",
+      "status": "pending"
+    },
+    {
+      "domain": "pl.pinterest.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via covergirl.com analysis, appears to be related service",
+      "source": "covergirl.com",
+      "detected_at": "2025-12-31T00:48:24.695689",
+      "status": "pending"
+    },
+    {
+      "domain": "covergirl.cotyconsumeraffairs.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via covergirl.ca analysis, appears to be related service",
+      "source": "covergirl.ca",
+      "detected_at": "2025-12-31T00:48:41.448041",
+      "status": "pending"
+    },
+    {
+      "domain": "api.whatsapp.com",
+      "category": "Conglomerates",
+      "reason": "Found via purina.co.uk analysis, appears to be related service",
+      "source": "purina.co.uk",
+      "detected_at": "2025-12-31T00:56:16.363621",
+      "status": "pending"
+    },
+    {
+      "domain": "direct.purina.co.uk",
+      "category": "Conglomerates",
+      "reason": "Found via purina.co.uk analysis, appears to be related service",
+      "source": "purina.co.uk",
+      "detected_at": "2025-12-31T00:56:16.363691",
+      "status": "pending"
+    },
+    {
+      "domain": "policies.google.com",
+      "category": "Conglomerates",
+      "reason": "Found via purina.co.uk analysis, appears to be related service",
+      "source": "purina.co.uk",
+      "detected_at": "2025-12-31T00:56:16.363717",
+      "status": "pending"
+    },
+    {
+      "domain": "bsky.app",
+      "category": "Conglomerates",
+      "reason": "Found via dove.app analysis, appears to be related service",
+      "source": "dove.app",
+      "detected_at": "2025-12-31T00:57:14.775739",
+      "status": "pending"
+    },
+    {
+      "domain": "defi.app",
+      "category": "Conglomerates",
+      "reason": "Found via dove.app analysis, appears to be related service",
+      "source": "dove.app",
+      "detected_at": "2025-12-31T00:57:14.775937",
+      "status": "pending"
+    },
+    {
+      "domain": "foundation.app",
+      "category": "Conglomerates",
+      "reason": "Found via dove.app analysis, appears to be related service",
+      "source": "dove.app",
+      "detected_at": "2025-12-31T00:57:14.775964",
+      "status": "pending"
+    },
+    {
+      "domain": "gamma.app",
+      "category": "Conglomerates",
+      "reason": "Found via dove.app analysis, appears to be related service",
+      "source": "dove.app",
+      "detected_at": "2025-12-31T00:57:14.775976",
+      "status": "pending"
+    },
+    {
+      "domain": "godaddy.com",
+      "category": "Conglomerates",
+      "reason": "Found via dove.app analysis, appears to be related service",
+      "source": "dove.app",
+      "detected_at": "2025-12-31T00:57:14.775986",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.unilever.es",
+      "category": "Conglomerates",
+      "reason": "Found via unilever.co analysis, appears to be related service",
+      "source": "unilever.co",
+      "detected_at": "2025-12-31T00:58:37.785788",
+      "status": "pending"
+    },
+    {
+      "domain": "notices.unilever.com",
+      "category": "Conglomerates",
+      "reason": "Found via unilever.co analysis, appears to be related service",
+      "source": "unilever.co",
+      "detected_at": "2025-12-31T00:58:37.785849",
+      "status": "pending"
+    },
+    {
+      "domain": "pg.xecurify.com",
+      "category": "Conglomerates",
+      "reason": "Found via gillette.com analysis, appears to be related service",
+      "source": "gillette.com",
+      "detected_at": "2025-12-31T00:59:20.835307",
+      "status": "pending"
+    },
+    {
+      "domain": "pgcareers.com",
+      "category": "Conglomerates",
+      "reason": "Found via gillette.com analysis, appears to be related service",
+      "source": "gillette.com",
+      "detected_at": "2025-12-31T00:59:20.835413",
+      "status": "pending"
+    },
+    {
+      "domain": "bbb.org",
+      "category": "Conglomerates",
+      "reason": "Found via tide.com analysis, appears to be related service",
+      "source": "tide.com",
+      "detected_at": "2025-12-31T00:59:23.033062",
+      "status": "pending"
+    },
+    {
+      "domain": "bouncefresh.com",
+      "category": "Conglomerates",
+      "reason": "Found via tide.com analysis, appears to be related service",
+      "source": "tide.com",
+      "detected_at": "2025-12-31T00:59:23.033116",
+      "status": "pending"
+    },
+    {
+      "domain": "downy.com",
+      "category": "Conglomerates",
+      "reason": "Found via tide.com analysis, appears to be related service",
+      "source": "tide.com",
+      "detected_at": "2025-12-31T00:59:23.033132",
+      "status": "pending"
+    },
+    {
+      "domain": "goodhousekeeping.com",
+      "category": "Conglomerates",
+      "reason": "Found via tide.com analysis, appears to be related service",
+      "source": "tide.com",
+      "detected_at": "2025-12-31T00:59:23.033147",
+      "status": "pending"
+    },
+    {
+      "domain": "Pantene.com.co",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.com analysis, appears to be related service",
+      "source": "pantene.com",
+      "detected_at": "2025-12-31T00:59:25.255764",
+      "status": "pending"
+    },
+    {
+      "domain": "enviedeplus.be",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.com analysis, appears to be related service",
+      "source": "pantene.com",
+      "detected_at": "2025-12-31T00:59:25.256000",
+      "status": "pending"
+    },
+    {
+      "domain": "epithimies.gr",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.com analysis, appears to be related service",
+      "source": "pantene.com",
+      "detected_at": "2025-12-31T00:59:25.256036",
+      "status": "pending"
+    },
+    {
+      "domain": "preferencecenter.pg.com",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.co.uk analysis, appears to be related service",
+      "source": "pantene.co.uk",
+      "detected_at": "2025-12-31T01:00:08.108181",
+      "status": "pending"
+    },
+    {
+      "domain": "privacypolicy.pg.com",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.co.uk analysis, appears to be related service",
+      "source": "pantene.co.uk",
+      "detected_at": "2025-12-31T01:00:08.108297",
+      "status": "pending"
+    },
+    {
+      "domain": "termsandconditions.pg.com",
+      "category": "Conglomerates",
+      "reason": "Found via pantene.co.uk analysis, appears to be related service",
+      "source": "pantene.co.uk",
+      "detected_at": "2025-12-31T01:00:08.108324",
+      "status": "pending"
+    },
+    {
+      "domain": "playgendary.com",
+      "category": "Conglomerates",
+      "reason": "Found via pg.io analysis, appears to be related service",
+      "source": "pg.io",
+      "detected_at": "2025-12-31T01:00:48.006308",
+      "status": "pending"
+    },
+    {
+      "domain": "every.org",
+      "category": "Conglomerates",
+      "reason": "Found via pg.org analysis, appears to be related service",
+      "source": "pg.org",
+      "detected_at": "2025-12-31T01:00:53.495006",
+      "status": "pending"
+    },
+    {
+      "domain": "coca-colacompany.com",
+      "category": "Conglomerates",
+      "reason": "Found via coca-cola.ca analysis, appears to be related service",
+      "source": "coca-cola.ca",
+      "detected_at": "2025-12-31T01:02:45.741939",
+      "status": "pending"
+    },
+    {
+      "domain": "privacyportal.onetrust.com",
+      "category": "Conglomerates",
+      "reason": "Found via coca-cola.ca analysis, appears to be related service",
+      "source": "coca-cola.ca",
+      "detected_at": "2025-12-31T01:02:45.742036",
+      "status": "pending"
+    },
+    {
+      "domain": "design.pepsico.com",
+      "category": "Conglomerates",
+      "reason": "Found via pepsico.com analysis, appears to be related service",
+      "source": "pepsico.com",
+      "detected_at": "2025-12-31T01:05:15.230623",
+      "status": "pending"
+    },
+    {
+      "domain": "externalinnovation.pepsico.com",
+      "category": "Conglomerates",
+      "reason": "Found via pepsico.com analysis, appears to be related service",
+      "source": "pepsico.com",
+      "detected_at": "2025-12-31T01:05:15.230677",
+      "status": "pending"
+    },
+    {
+      "domain": "labs.pepsico.com",
+      "category": "Conglomerates",
+      "reason": "Found via pepsico.com analysis, appears to be related service",
+      "source": "pepsico.com",
+      "detected_at": "2025-12-31T01:05:15.230693",
+      "status": "pending"
+    },
+    {
+      "domain": "crackerjack.com",
+      "category": "Conglomerates",
+      "reason": "Found via fritolay.com analysis, appears to be related service",
+      "source": "fritolay.com",
+      "detected_at": "2025-12-31T01:05:20.923670",
+      "status": "pending"
+    },
+    {
+      "domain": "elaborposters.com",
+      "category": "Conglomerates",
+      "reason": "Found via fritolay.com analysis, appears to be related service",
+      "source": "fritolay.com",
+      "detected_at": "2025-12-31T01:05:20.923708",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -529,7 +1513,599 @@
       "risk_score": 12,
       "detected_at": "2025-12-30T23:18:57.199790",
       "status": "pending"
+    },
+    {
+      "domain": "chipotle.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T23:38:35.848314",
+      "status": "pending"
+    },
+    {
+      "domain": "bostonpizza.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-30T23:39:58.811640",
+      "status": "pending"
+    },
+    {
+      "domain": "carlsjr.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (20/100), may not warrant blocking",
+      "risk_score": 20,
+      "detected_at": "2025-12-30T23:43:12.088883",
+      "status": "pending"
+    },
+    {
+      "domain": "carlsjr.info",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-30T23:43:14.491206",
+      "status": "pending"
+    },
+    {
+      "domain": "chipotle.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-30T23:49:00.924490",
+      "status": "pending"
+    },
+    {
+      "domain": "chipotle.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T23:49:03.690771",
+      "status": "pending"
+    },
+    {
+      "domain": "chipotle.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-30T23:49:06.202515",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T23:52:34.337730",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-30T23:52:41.616276",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (15/100), may not warrant blocking",
+      "risk_score": 15,
+      "detected_at": "2025-12-30T23:52:46.489761",
+      "status": "pending"
+    },
+    {
+      "domain": "dominos.us",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-30T23:53:22.725832",
+      "status": "pending"
+    },
+    {
+      "domain": "hardees.info",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-30T23:57:12.425146",
+      "status": "pending"
+    },
+    {
+      "domain": "in-n-out.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (29/100), may not warrant blocking",
+      "risk_score": 29,
+      "detected_at": "2025-12-30T23:58:33.198585",
+      "status": "pending"
+    },
+    {
+      "domain": "innout.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-30T23:59:42.765137",
+      "status": "pending"
+    },
+    {
+      "domain": "kfc.info",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T00:02:29.497010",
+      "status": "pending"
+    },
+    {
+      "domain": "kfc.io",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:02:31.701672",
+      "status": "pending"
+    },
+    {
+      "domain": "kfc.org",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (22/100), may not warrant blocking",
+      "risk_score": 22,
+      "detected_at": "2025-12-31T00:02:37.258411",
+      "status": "pending"
+    },
+    {
+      "domain": "kfc.us",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:02:41.774113",
+      "status": "pending"
+    },
+    {
+      "domain": "marcos.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:03:55.741323",
+      "status": "pending"
+    },
+    {
+      "domain": "moes.org",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T00:06:23.674081",
+      "status": "pending"
+    },
+    {
+      "domain": "moes.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:06:25.761387",
+      "status": "pending"
+    },
+    {
+      "domain": "pandaexpress.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-31T00:06:36.564245",
+      "status": "pending"
+    },
+    {
+      "domain": "papamurphys.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (21/100), may not warrant blocking",
+      "risk_score": 21,
+      "detected_at": "2025-12-31T00:08:04.661925",
+      "status": "pending"
+    },
+    {
+      "domain": "pizzahut.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:09:37.338927",
+      "status": "pending"
+    },
+    {
+      "domain": "pizzahut.info",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:10:23.662583",
+      "status": "pending"
+    },
+    {
+      "domain": "pizzanova.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T00:10:59.935513",
+      "status": "pending"
+    },
+    {
+      "domain": "pizzanova.net",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (24/100), may not warrant blocking",
+      "risk_score": 24,
+      "detected_at": "2025-12-31T00:11:04.898589",
+      "status": "pending"
+    },
+    {
+      "domain": "shakeshack.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (26/100), may not warrant blocking",
+      "risk_score": 26,
+      "detected_at": "2025-12-31T00:15:14.118337",
+      "status": "pending"
+    },
+    {
+      "domain": "tacobell.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:22:37.832024",
+      "status": "pending"
+    },
+    {
+      "domain": "timhortons.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:24:57.654660",
+      "status": "pending"
+    },
+    {
+      "domain": "whitecastle.us",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T00:26:52.283965",
+      "status": "pending"
+    },
+    {
+      "domain": "lays.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2025-12-31T00:26:57.786515",
+      "status": "pending"
+    },
+    {
+      "domain": "wheat-thins.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (29/100), may not warrant blocking",
+      "risk_score": 29,
+      "detected_at": "2025-12-31T00:28:19.562273",
+      "status": "pending"
+    },
+    {
+      "domain": "cheetos.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (13/100), may not warrant blocking",
+      "risk_score": 13,
+      "detected_at": "2025-12-31T00:28:51.486760",
+      "status": "pending"
+    },
+    {
+      "domain": "doritos.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:30:39.226093",
+      "status": "pending"
+    },
+    {
+      "domain": "doritos.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T00:30:41.928599",
+      "status": "pending"
+    },
+    {
+      "domain": "kitkat.io",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T00:32:47.716114",
+      "status": "pending"
+    },
+    {
+      "domain": "lays.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (13/100), may not warrant blocking",
+      "risk_score": 13,
+      "detected_at": "2025-12-31T00:33:18.021800",
+      "status": "pending"
+    },
+    {
+      "domain": "lays.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:33:52.506495",
+      "status": "pending"
+    },
+    {
+      "domain": "mars.ai",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:34:19.506012",
+      "status": "pending"
+    },
+    {
+      "domain": "mars.biz",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T00:34:28.807077",
+      "status": "pending"
+    },
+    {
+      "domain": "mms.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:34:51.596677",
+      "status": "pending"
+    },
+    {
+      "domain": "ritz.app",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (20/100), may not warrant blocking",
+      "risk_score": 20,
+      "detected_at": "2025-12-31T00:40:01.036969",
+      "status": "pending"
+    },
+    {
+      "domain": "ruffles.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:41:20.393900",
+      "status": "pending"
+    },
+    {
+      "domain": "sunchips.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:42:43.090643",
+      "status": "pending"
+    },
+    {
+      "domain": "tostitos.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:43:11.470030",
+      "status": "pending"
+    },
+    {
+      "domain": "totinos.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (14/100), may not warrant blocking",
+      "risk_score": 14,
+      "detected_at": "2025-12-31T00:45:11.310199",
+      "status": "pending"
+    },
+    {
+      "domain": "totinos.biz",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (14/100), may not warrant blocking",
+      "risk_score": 14,
+      "detected_at": "2025-12-31T00:46:48.610396",
+      "status": "pending"
+    },
+    {
+      "domain": "totinos.info",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (14/100), may not warrant blocking",
+      "risk_score": 14,
+      "detected_at": "2025-12-31T00:46:51.022268",
+      "status": "pending"
+    },
+    {
+      "domain": "ulta.io",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T00:47:17.465300",
+      "status": "pending"
+    },
+    {
+      "domain": "ulta.uk",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:47:23.021179",
+      "status": "pending"
+    },
+    {
+      "domain": "maccosmetics.info",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:48:17.286864",
+      "status": "pending"
+    },
+    {
+      "domain": "covergirl.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T00:48:24.695510",
+      "status": "pending"
+    },
+    {
+      "domain": "covergirl.ca",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2025-12-31T00:48:41.447834",
+      "status": "pending"
+    },
+    {
+      "domain": "cultbeauty.co.uk",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2025-12-31T00:52:21.024759",
+      "status": "pending"
+    },
+    {
+      "domain": "gerber.uk",
+      "category": "Conglomerates",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:53:25.934364",
+      "status": "pending"
+    },
+    {
+      "domain": "purina.co.uk",
+      "category": "Conglomerates",
+      "reason": "Low risk score (24/100), may not warrant blocking",
+      "risk_score": 24,
+      "detected_at": "2025-12-31T00:56:16.363535",
+      "status": "pending"
+    },
+    {
+      "domain": "dove.ai",
+      "category": "Conglomerates",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:57:12.135537",
+      "status": "pending"
+    },
+    {
+      "domain": "dove.app",
+      "category": "Conglomerates",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T00:57:14.775685",
+      "status": "pending"
+    },
+    {
+      "domain": "tide.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (20/100), may not warrant blocking",
+      "risk_score": 20,
+      "detected_at": "2025-12-31T00:59:23.032994",
+      "status": "pending"
+    },
+    {
+      "domain": "pantene.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T00:59:25.255676",
+      "status": "pending"
+    },
+    {
+      "domain": "gillette.co.uk",
+      "category": "Conglomerates",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T00:59:33.244552",
+      "status": "pending"
+    },
+    {
+      "domain": "pantene.ca",
+      "category": "Conglomerates",
+      "reason": "Low risk score (21/100), may not warrant blocking",
+      "risk_score": 21,
+      "detected_at": "2025-12-31T01:00:05.421413",
+      "status": "pending"
+    },
+    {
+      "domain": "pantene.org",
+      "category": "Conglomerates",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2025-12-31T01:00:13.362303",
+      "status": "pending"
+    },
+    {
+      "domain": "pg.io",
+      "category": "Conglomerates",
+      "reason": "Low risk score (15/100), may not warrant blocking",
+      "risk_score": 15,
+      "detected_at": "2025-12-31T01:00:48.006216",
+      "status": "pending"
+    },
+    {
+      "domain": "tide.ai",
+      "category": "Conglomerates",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T01:01:18.114224",
+      "status": "pending"
+    },
+    {
+      "domain": "coca-cola.ca",
+      "category": "Conglomerates",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T01:02:45.741678",
+      "status": "pending"
+    },
+    {
+      "domain": "sprite.ca",
+      "category": "Conglomerates",
+      "reason": "Low risk score (12/100), may not warrant blocking",
+      "risk_score": 12,
+      "detected_at": "2025-12-31T01:04:53.947101",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsico.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T01:05:15.230558",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsi.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T01:05:18.250543",
+      "status": "pending"
+    },
+    {
+      "domain": "fritolay.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (18/100), may not warrant blocking",
+      "risk_score": 18,
+      "detected_at": "2025-12-31T01:05:20.923554",
+      "status": "pending"
+    },
+    {
+      "domain": "gatorade.org",
+      "category": "Conglomerates",
+      "reason": "Low risk score (11/100), may not warrant blocking",
+      "risk_score": 11,
+      "detected_at": "2025-12-31T01:06:42.454457",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsi.co",
+      "category": "Conglomerates",
+      "reason": "Low risk score (10/100), may not warrant blocking",
+      "risk_score": 10,
+      "detected_at": "2025-12-31T01:06:54.948832",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsi.co.uk",
+      "category": "Conglomerates",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T01:07:00.274773",
+      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-30T23:20:16.678884"
+  "last_updated": "2025-12-31T01:08:30.354325"
 }

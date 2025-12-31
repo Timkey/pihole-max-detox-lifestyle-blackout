@@ -102,20 +102,20 @@
 <body>
     <div class="header">
         <h1>Cosmetics & Beauty - Content Analysis</h1>
-        <p>Generated: 2025-12-30 22:31:31</p>
+        <p>Generated: 2025-12-31 00:53:21</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <div class="stat-value">10</div>
+            <div class="stat-value">96</div>
             <div class="stat-label">Domains Analyzed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">5</div>
+            <div class="stat-value">28</div>
             <div class="stat-label">Successfully Accessed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">14.4</div>
+            <div class="stat-value">4.1</div>
             <div class="stat-label">Average Risk Score</div>
         </div>
         <div class="stat-card">
@@ -167,17 +167,42 @@
         </div>
         
         <div class="domain-item">
+            <span class="domain-name">ulta.uk</span>
+            <span class="risk-badge risk-low">11/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">maccosmetics.info</span>
+            <span class="risk-badge risk-low">10/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">covergirl.com</span>
+            <span class="risk-badge risk-low">10/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">ulta.io</span>
+            <span class="risk-badge risk-low">7/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">covergirl.ca</span>
+            <span class="risk-badge risk-low">3/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">cultbeauty.co.uk</span>
+            <span class="risk-badge risk-low">3/100</span>
+        </div>
+        
+        <div class="domain-item">
             <span class="domain-name">sephora.com</span>
             <span class="risk-badge risk-low">0/100</span>
         </div>
         
         <div class="domain-item">
             <span class="domain-name">ulta.com</span>
-            <span class="risk-badge risk-low">0/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">sephora.ca</span>
             <span class="risk-badge risk-low">0/100</span>
         </div>
         
@@ -188,10 +213,10 @@
         new Chart(document.getElementById('healthChart'), {
             type: 'bar',
             data: {
-                labels: [],
+                labels: ['fast_food'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [],
+                    data: [2],
                     backgroundColor: 'rgba(231, 76, 60, 0.7)',
                     borderColor: 'rgba(231, 76, 60, 1)',
                     borderWidth: 2
@@ -212,7 +237,7 @@
             data: {
                 labels: ['discounts', 'convenience', 'upselling', 'addiction_language'],
                 datasets: [{
-                    data: [7, 2, 2, 3],
+                    data: [10, 2, 4, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
                         'rgba(54, 162, 235, 0.7)',
@@ -236,7 +261,7 @@
                 labels: ['social_proof', 'scarcity', 'fomo', 'personalization'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [2, 2, 1, 3],
+                    data: [4, 3, 3, 4],
                     backgroundColor: 'rgba(52, 152, 219, 0.7)',
                     borderColor: 'rgba(52, 152, 219, 1)',
                     borderWidth: 2
@@ -256,11 +281,11 @@
         new Chart(document.getElementById('riskChart'), {
             type: 'bar',
             data: {
-                labels: ['sephora.co.uk', 'sephora.dev', 'sephora.com', 'ulta.com', 'sephora.ca'],
+                labels: ['sephora.co.uk', 'sephora.dev', 'ulta.uk', 'maccosmetics.info', 'covergirl.com', 'ulta.io', 'covergirl.ca', 'cultbeauty.co.uk', 'sephora.com', 'ulta.com'],
                 datasets: [{
                     label: 'Risk Score',
-                    data: [61, 11, 0, 0, 0],
-                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
+                    data: [61, 11, 11, 10, 10, 7, 3, 3, 0, 0],
+                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
                     borderWidth: 2
                 }]
             },
