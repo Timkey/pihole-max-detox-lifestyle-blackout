@@ -1567,6 +1567,38 @@
       "source": "eatstreet.com",
       "detected_at": "2025-12-31T12:00:54.071453",
       "status": "pending"
+    },
+    {
+      "domain": "business.gerber.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252790",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberchildrenswear.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252834",
+      "status": "pending"
+    },
+    {
+      "domain": "gerberlife.com",
+      "category": "Conglomerates",
+      "reason": "Found via gerber.com analysis, appears to be related service",
+      "source": "gerber.com",
+      "detected_at": "2025-12-31T12:24:16.252861",
+      "status": "pending"
+    },
+    {
+      "domain": "auth.uber.com",
+      "category": "Food & Delivery",
+      "reason": "Found via ubereats.com analysis, appears to be related service",
+      "source": "ubereats.com",
+      "detected_at": "2025-12-31T12:35:53.588476",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -2315,5 +2347,5 @@
       "status": "pending"
     }
   ],
-  "last_updated": "2025-12-31T12:01:44.975482"
+  "last_updated": "2025-12-31T12:45:08.401800"
 }

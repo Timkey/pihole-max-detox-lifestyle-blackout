@@ -1,6 +1,6 @@
 # Cosmetics & Beauty - Content Analysis Report
 
-**Generated:** 2025-12-31 00:53:21
+**Generated:** 2025-12-31 12:45:06
 
 **Domains Analyzed:** 96
 
@@ -30,44 +30,6 @@
 - **fomo**: 3 occurrences
 
 ## Individual Domain Analysis
-
-### sephora.com
-
-**Risk Score:** 0/100
-
----
-
-### ulta.com
-
-**Risk Score:** 0/100
-
----
-
-### sephora.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.ai', port=443) at 0x7aafd0fd5e50>, 'Connection to sephora.ai timed out. (connect timeout=10)'))
-
-### sephora.app
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.app', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.app', port=443) at 0x7aafd0fd7150>, 'Connection to sephora.app timed out. (connect timeout=10)'))
-
-### sephora.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.biz', port=443) at 0x7aafd0fcf810>, 'Connection to sephora.biz timed out. (connect timeout=10)'))
-
-### sephora.ca
-
-**Risk Score:** 0/100
-
----
-
-### sephora.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.co', port=443) at 0x732e20a47ad0>, 'Connection to sephora.co timed out. (connect timeout=10)'))
-
-### sephora.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
 ### sephora.co.uk
 
@@ -100,6 +62,161 @@
 
 ---
 
+### ulta.co
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### clinique.ai
+
+**Risk Score:** 0/100
+
+---
+
+### sephora.com
+
+**Risk Score:** 0/100
+
+---
+
+### maccosmetics.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.maccosmetics.com/
+
+### clinique.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.ca/
+
+### ulta.com
+
+**Risk Score:** 0/100
+
+---
+
+### clinique.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.com/
+
+### sephora.co
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+### ulta.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='ulta.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ulta.ai', port=443) at 0x78b29ab07c90>, 'Connection to ulta.ai timed out. (connect timeout=10)'))
+
+### sephora.ca
+
+**Risk Score:** 0/100
+
+---
+
+### sephora.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))
+
+### sephora.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)")))
+
+### esteelauder.com
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.com/
+
+### loreal.com
+
+**Risk Score:** 0/100
+
+---
+
+### ulta.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='ulta.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### ulta.app
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### sephora.co.ca
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://sephora.co.ca/
+Call log:
+  - navigating to "https://sephora.co.ca/", waiting until "domcontentloaded"
+
+
+### clinique.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### sephora.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))
+
+### esteelauder.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### sephora.ai
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+### esteelauder.ca
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.ca/
+
+### sephora.biz
+
+❌ **Not accessible:** Playwright error: 'NoneType' object has no attribute 'new_context'
+
+### sephora.app
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+### esteelauder.ai
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### ulta.org
+
+**Risk Score:** 0/100
+
+---
+
+### ulta.io
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+---
+
+### sephora.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))
+
+### clinique.io
+
+**Risk Score:** 0/100
+
+---
+
+### ulta.uk
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `sedo.com`
+
+---
+
 ### sephora.dev
 
 **Risk Score:** 11/100
@@ -123,135 +240,21 @@
 
 ---
 
-### sephora.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.info', port=443) at 0x76638198ad50>, 'Connection to sephora.info timed out. (connect timeout=10)'))
-
-### sephora.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-
-### sephora.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'sephora.org'. (_ssl.c:1016)")))
-
-### sephora.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.uk', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.uk', port=443) at 0x766381990990>, 'Connection to sephora.uk timed out. (connect timeout=10)'))
-
-### sephora.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='sephora.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='sephora.us', port=443) at 0x766381992c50>, 'Connection to sephora.us timed out. (connect timeout=10)'))
-
-### ulta.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.ai', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='ulta.ai', port=443) at 0x78b29ab07c90>, 'Connection to ulta.ai timed out. (connect timeout=10)'))
-
-### ulta.app
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### ulta.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='ulta.biz', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### ulta.co
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
 ### ulta.co.uk
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='ulta.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1016)')))
-
-### ulta.io
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: personalization
-
----
-
-### ulta.org
-
-**Risk Score:** 0/100
-
----
-
-### ulta.uk
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `sedo.com`
-
----
 
 ### ulta.us
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='ulta.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
 
-### loreal.com
+### sephora.net
 
-**Risk Score:** 0/100
-
----
-
-### esteelauder.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.com/
-
-### clinique.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.com/
-
-### maccosmetics.com
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.maccosmetics.com/
-
-### clinique.ai
-
-**Risk Score:** 0/100
-
----
-
-### clinique.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.ca/
-
-### clinique.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='clinique.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+❌ **Not accessible:** HTTPSConnectionPool(host='sephora.net', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='sephora.net', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
 
 ### clinique.co.uk
 
 ❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.clinique.co.uk/
-
-### clinique.io
-
-**Risk Score:** 0/100
-
----
-
-### esteelauder.ai
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### esteelauder.ca
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.esteelauder.ca/
-
-### esteelauder.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='esteelauder.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
 
 ### esteelauder.co.uk
 

@@ -1,106 +1,111 @@
 # Conglomerates - Content Analysis Report
 
-**Generated:** 2025-12-31 01:08:29
+**Generated:** 2025-12-31 12:45:06
 
 **Domains Analyzed:** 199
 
 ## Summary
 
-- **Accessible domains:** 53/199
-- **Average Risk Score:** 4.8/100
+- **Accessible domains:** 54/199
+- **Average Risk Score:** 5.5/100
 
 ## Hazard Clusters
 
 ### Health Hazards
 
-- **fast_food**: 7 occurrences
-- **sugar**: 5 occurrences
+- **fast_food**: 8 occurrences
+- **sugar**: 6 occurrences
 
 ### Behavioral Hazards
 
-- **discounts**: 29 occurrences
-- **addiction_language**: 7 occurrences
-- **upselling**: 5 occurrences
-- **convenience**: 2 occurrences
+- **discounts**: 32 occurrences
+- **addiction_language**: 8 occurrences
+- **upselling**: 6 occurrences
+- **convenience**: 3 occurrences
 
 ### Marketing Tactics
 
-- **fomo**: 5 occurrences
-- **personalization**: 4 occurrences
+- **fomo**: 6 occurrences
+- **personalization**: 6 occurrences
 - **social_proof**: 4 occurrences
-- **scarcity**: 2 occurrences
+- **scarcity**: 3 occurrences
 
 ## Individual Domain Analysis
 
-### nestle.com
+### nespresso.ai
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+
+### nestle.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))
+
+### nestle.ai
 
 ❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.nestle.com/
 
-### nestle.ca
+### nestle.com
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.madewithnestle.ca/
+❌ **Not accessible:** Playwright: Insufficient content (326 chars)
 
-### nestle.co.uk
+### nespresso.us
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.nestle.co.uk
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)")))
 
-### nespresso.com
+### nestle.app
 
 **Risk Score:** 0/100
 
 ---
 
-### gerber.com
+### nestle.ca
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.gerber.com
+**Risk Score:** 0/100
 
-### purina.com
+---
 
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.purina.com/
+### nespresso.uk
+
+**Risk Score:** 0/100
+
+---
 
 ### gerber.ai
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/
+Call log:
+  - navigating to "https://gerber.ai/", waiting until "domcontentloaded"
 
-### gerber.app
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.app', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.app'. (_ssl.c:1016)")))
-
-### gerber.biz
+### gerber.org
 
 ❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
 
-### gerber.ca
+### purina.com
 
-**Risk Score:** 0/100
-
----
-
-### gerber.co.uk
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gerber.co.uk/
-
-### gerber.dev
-
-**Risk Score:** 0/100
-
----
-
-### gerber.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))
-
-### gerber.io
-
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>
 
 ### gerber.net
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='gerber.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'gerber.net'. (_ssl.c:1016)")))
 
-### gerber.org
+### gerber.info
 
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.info', port=443) at 0x7663813043d0>, 'Connection to gerber.info timed out. (connect timeout=10)'))
+
+### nespresso.org
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)")))
+
+### nespresso.net
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)")))
+
+### gerber.us
+
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))
 
 ### gerber.uk
 
@@ -130,89 +135,124 @@
 
 ---
 
-### gerber.us
+### gerber.app
 
-❌ **Not accessible:** HTTPSConnectionPool(host='gerber.us', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.us', port=443) at 0x78b29ab2e8d0>, 'Connection to gerber.us timed out. (connect timeout=10)'))
-
-### nespresso.ai
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ai', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016)')))
-
-### nespresso.biz
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))
-
-### nespresso.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)")))
-
-### nespresso.co
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)")))
-
-### nespresso.co.uk
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)")))
-
-### nespresso.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)")))
-
-### nespresso.net
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.net', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.net'. (_ssl.c:1016)")))
-
-### nespresso.org
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.org', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.org'. (_ssl.c:1016)")))
-
-### nespresso.uk
-
-**Risk Score:** 0/100
-
----
-
-### nespresso.us
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.us'. (_ssl.c:1016)")))
-
-### nestle.ai
-
-❌ **Not accessible:** 403 Client Error: Forbidden for url: https://www.nestle.com/
-
-### nestle.app
-
-**Risk Score:** 0/100
-
----
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x7f7a323310c0 (otid=0x7f7a3226eac0) current active started main>
+	Expected: <greenlet.greenlet object at 0x7f7a4b5a7180 (otid=0x7f7a4b5d3600) suspended active started main>
 
 ### nestle.biz
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='nestle.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.biz', port=443) at 0x78b29a7a1590>, 'Connection to nestle.biz timed out. (connect timeout=10)'))
 
-### nestle.co
+### gerber.io
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))
-
-### nestle.co.ca
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
-
-### nestle.dev
-
-❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
-
-### nestle.info
-
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))
+❌ **Not accessible:** HTTPSConnectionPool(host='gerber.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='gerber.io', port=443) at 0x766381305e90>, 'Connection to gerber.io timed out. (connect timeout=10)'))
 
 ### nestle.io
 
 ❌ **Not accessible:** HTTPSConnectionPool(host='nestle.io', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.io', port=443) at 0x78b29a85e890>, 'Connection to nestle.io timed out. (connect timeout=10)'))
 
-### nestle.net
+### nestle.co.uk
 
-❌ **Not accessible:** HTTPSConnectionPool(host='nestle.net', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.net', port=443) at 0x78b29a4a51d0>, 'Connection to nestle.net timed out. (connect timeout=10)'))
+❌ **Not accessible:** Playwright: Insufficient content (332 chars)
+
+### nestle.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.info', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.info', port=443) at 0x78b29a536450>, 'Connection to nestle.info timed out. (connect timeout=10)'))
+
+### gerber.com
+
+**Risk Score:** 42/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Compare Products
+- Alabama
+- Alaska
+- Arizona
+- Arkansas
+
+**Related Domains Found:**
+
+- `business.gerber.com`
+- `facebook.com`
+- `gerber.com`
+- `gerberchildrenswear.com`
+- `gerberlife.com`
+- `goodstartbaby.com`
+- `instagram.com`
+- `m.me`
+- `medical.gerber.com`
+- `nestlejobs.com`
+
+---
+
+### nespresso.com
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/
+Call log:
+  - navigating to "https://nespresso.com/", waiting until "domcontentloaded"
+
+
+### nestle.dev
+
+❌ **Not accessible:** Insufficient content (possible bot detection or JS-rendered page)
+
+### nespresso.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co'. (_ssl.c:1016)")))
+
+### nespresso.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.ca'. (_ssl.c:1016)")))
+
+### nestle.co.ca
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co.ca', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError(1, '[SSL] record layer failure (_ssl.c:1016)')))
+
+### gerber.co.uk
+
+❌ **Not accessible:** 403 Client Error: Forbidden for url: https://gerber.co.uk/
+
+### nespresso.co.uk
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.co.uk', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.co.uk'. (_ssl.c:1016)")))
+
+### gerber.ca
+
+**Risk Score:** 0/100
+
+---
+
+### nespresso.biz
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.biz', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nespresso.biz', port=443) at 0x78b29a4a5810>, 'Connection to nespresso.biz timed out. (connect timeout=10)'))
+
+### nespresso.info
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nespresso.info', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nespresso.info'. (_ssl.c:1016)")))
+
+### gerber.dev
+
+**Risk Score:** 0/100
+
+---
+
+### nestle.co
+
+❌ **Not accessible:** HTTPSConnectionPool(host='nestle.co', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='nestle.co', port=443) at 0x78b29aa64dd0>, 'Connection to nestle.co timed out. (connect timeout=10)'))
+
+### gerber.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (20 chars)
 
 ### nestle.org
 

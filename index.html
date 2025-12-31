@@ -125,6 +125,12 @@
             color: white;
             text-decoration: underline;
         }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -136,22 +142,23 @@
 
         <div class="stats">
             <h3>Project Statistics</h3>
-            <div class="stats-grid">
+            <div id="loading-stats" class="loading">Loading statistics...</div>
+            <div class="stats-grid" id="stats-grid" style="display: none;">
                 <div class="stat-item">
-                    <div class="stat-value">2157</div>
-                    <div class="stat-label">Blocked Domains</div>
+                    <div class="stat-value" id="totalDomains">-</div>
+                    <div class="stat-label">Analyzed Domains</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">3</div>
-                    <div class="stat-label">Categories</div>
+                    <div class="stat-value" id="avgRisk">-</div>
+                    <div class="stat-label">Average Risk Score</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">100%</div>
-                    <div class="stat-label">DNS Verified</div>
+                    <div class="stat-value" id="accessRate">-</div>
+                    <div class="stat-label">Access Success Rate</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">Daily</div>
-                    <div class="stat-label">Updates</div>
+                    <div class="stat-value" id="highRisk">-</div>
+                    <div class="stat-label">High Risk Domains</div>
                 </div>
             </div>
         </div>
@@ -162,7 +169,7 @@
                 <h2>Food & Delivery</h2>
                 <p>Analysis of fast food chains, delivery platforms, and ultra-processed food marketers. Tracks impulsive ordering patterns, urgency tactics, and convenience exploitation.</p>
                 <div class="card-footer">
-                    <span style="color: #e74c3c; font-weight: bold;">806 Domains</span>
+                    <span style="color: #e74c3c; font-weight: bold;" id="food-count">- Domains</span>
                     <span class="btn">View Report →</span>
                 </div>
             </a>
@@ -172,7 +179,7 @@
                 <h2>Cosmetics & Beauty</h2>
                 <p>Analysis of beauty retailers and cosmetics brands. Identifies insecurity-driven marketing, manufactured wants, and overconsumption patterns.</p>
                 <div class="card-footer">
-                    <span style="color: #e74c3c; font-weight: bold;">96 Domains</span>
+                    <span style="color: #e74c3c; font-weight: bold;" id="cosmetics-count">- Domains</span>
                     <span class="btn">View Report →</span>
                 </div>
             </a>
@@ -182,7 +189,7 @@
                 <h2>Conglomerates</h2>
                 <p>Analysis of major multinational corporations (Nestlé, Unilever, P&G, Coca-Cola, PepsiCo). Tracks market dominance and choice manipulation.</p>
                 <div class="card-footer">
-                    <span style="color: #e74c3c; font-weight: bold;">199 Domains</span>
+                    <span style="color: #e74c3c; font-weight: bold;" id="conglomerates-count">- Domains</span>
                     <span class="btn">View Report →</span>
                 </div>
             </a>
@@ -196,5 +203,50 @@
             </p>
         </div>
     </div>
+
+    <script>
+        // Embedded statistics data (generated from research/data/summary.json)
+        const statsData = {
+  "total_domains": 1101,
+  "accessible_count": 280,
+  "avg_risk_score": 8.7,
+  "access_rate": 25.0,
+  "high_risk_count": 10,
+  "categories": {
+    "cosmetics_beauty": 96,
+    "conglomerates": 199,
+    "food_delivery": 806
+  },
+  "generated_at": "2025-12-31T12:40:35.980996"
+};
+
+        function loadStatistics() {
+            // Update UI with embedded data
+            document.getElementById('totalDomains').textContent = statsData.total_domains;
+            document.getElementById('avgRisk').textContent = statsData.avg_risk_score;
+            document.getElementById('accessRate').textContent = statsData.access_rate + '%';
+            document.getElementById('highRisk').textContent = statsData.high_risk_count;
+
+            // Update category counts
+            const catMap = {
+                'food_delivery': 'food-count',
+                'cosmetics_beauty': 'cosmetics-count',
+                'conglomerates': 'conglomerates-count'
+            };
+            
+            for (const [catName, elemId] of Object.entries(catMap)) {
+                const count = statsData.categories[catName] || 0;
+                const elem = document.getElementById(elemId);
+                if (elem) elem.textContent = count + ' Domains';
+            }
+
+            // Show stats
+            document.getElementById('loading-stats').style.display = 'none';
+            document.getElementById('stats-grid').style.display = 'grid';
+        }
+
+        // Load on page ready
+        document.addEventListener('DOMContentLoaded', loadStatistics);
+    </script>
 </body>
 </html>
