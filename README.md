@@ -52,11 +52,24 @@ This is not just about blocking websites—it's about reclaiming autonomy over y
 │   ├── generate_ultra.py          # Regenerate blackout-ultra.txt
 │   ├── check_domain_variations.py # Check for missing domain TLDs
 │   ├── add_domain_variations.py   # Auto-add verified domain variations
-│   └── analyze_domains.py         # Content analysis & research tool
-├── research/                      # Analysis reports (auto-generated)
-│   ├── food_&_delivery_analysis.md
-│   ├── cosmetics_&_beauty_analysis.md
-│   └── conglomerates_analysis.md
+│   ├── analyze_domains.py         # Content analysis & research tool
+│   ├── recalculate_enabler_scores.py  # Recalculate enabler scoring
+│   ├── regenerate_reports.py      # Regenerate HTML/Markdown reports
+│   └── update_index.py            # Update index.html with stats
+├── research/                      # Analysis reports & data
+│   ├── data/                      # JSON analysis data
+│   │   ├── food_delivery_data.json
+│   │   ├── cosmetics_beauty_data.json
+│   │   ├── conglomerates_data.json
+│   │   └── summary.json           # Aggregated statistics
+│   ├── reports/                   # Interactive HTML reports
+│   │   ├── food & delivery_analysis.html
+│   │   ├── cosmetics & beauty_analysis.html
+│   │   └── conglomerates_analysis.html
+│   └── docs/                      # Markdown analysis reports
+│       ├── food & delivery_analysis.md
+│       ├── cosmetics & beauty_analysis.md
+│       └── conglomerates_analysis.md
 └── .gitignore                     # Git configuration
 ```
 
@@ -136,8 +149,11 @@ python3 add_domain_variations.py
 - Identifies health hazards (ultra-processed foods, sugar, additives)
 - Detects behavioral manipulation tactics (urgency, FOMO, discounts)
 - Extracts promoted products and related domains
+- **Bi-directional enabler scoring** - Detects platforms that facilitate access to high-risk brands
 - Generates risk scores (0-100) and blocking justifications
-- Creates detailed markdown reports in research/ directory
+- Creates interactive HTML reports with charts and filtering
+- Mobile-responsive reports with collapsible sections
+- Failed analysis tracking with error categorization
 
 Usage:
 ```bash
@@ -146,10 +162,37 @@ python3 analyze_domains.py
 ```
 
 Output: Generates analysis reports for each category with:
+- **Interactive HTML reports** - Charts, filters, sorting, mobile-friendly
 - **Hazard clusters** - Aggregated health and behavioral risks
 - **Risk scores** - Quantified danger levels per domain
+- **Enabler detection** - Platforms facilitating high-risk content
+- **Failed analysis section** - Categorized error tracking
 - **Justifications** - Evidence-based blocking rationale
 - **Related domains** - New domains to consider adding
+
+**New utility scripts:**
+
+**`recalculate_enabler_scores.py`** - Fast enabler score recalculation
+- Recalculates enabler scores without re-scraping websites
+- Uses existing related_domains data from JSON files
+- Updates scores in seconds vs 80-minute full reanalysis
+
+Usage:
+```bash
+cd scripts
+python3 recalculate_enabler_scores.py
+```
+
+**`regenerate_reports.py`** - Regenerate HTML/Markdown reports
+- Regenerates all analysis reports from existing JSON data
+- Updates HTML reports with latest data without re-analyzing
+- Useful after score recalculation or data updates
+
+Usage:
+```bash
+cd scripts
+python3 regenerate_reports.py
+```
 
 ---
 
