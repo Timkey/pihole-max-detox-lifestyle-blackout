@@ -14,6 +14,8 @@ from datetime import datetime
 from urllib.parse import urlparse, urljoin
 import time
 import argparse
+import random
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -26,6 +28,20 @@ ANALYSIS_CACHE_FILE = 'analysis_cache.json'
 RECOMMENDATIONS_FILE = 'recommendations.json'
 TIMEOUT = 10
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+USE_PLAYWRIGHT = True  # Enable Playwright fallback for JS-heavy sites
+MIN_CONTENT_LENGTH = 500  # Minimum text length to consider content sufficient
+
+# Multiple User-Agent strings for rotation
+USER_AGENTS = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
+]
+
+# Global Playwright instance (reused across requests for performance)
+PLAYWRIGHT_INSTANCE = None
+BROWSER_INSTANCE = None
 
 # Hazard keyword categories
 HEALTH_HAZARDS = {
@@ -211,26 +227,54 @@ class DomainAnalyzer:
         }
     
     def fetch_content(self):
-        """Fetch website content with better bot evasion."""
+        """Fetch website content with hybrid approach: requests first, Playwright fallback."""
+        # Add random delay to avoid rate limiting
+        time.sleep(random.uniform(1, 2))
+        
+        # Try fast method first (requests)
+        success = self._fetch_with_requests()
+        if success:
+            return True
+        
+        # If requests failed or returned insufficient content, try Playwright
+        if USE_PLAYWRIGHT:
+            print(f"  → Playwright fallback for {self.domain}...", end=' ')
+            return self._fetch_with_playwright()
+        
+        return False
+    
+    def _fetch_with_requests(self):
+        """Fast fetch using requests library."""
         try:
+            # Create session with realistic headers
+            session = requests.Session()
             headers = {
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'User-Agent': random.choice(USER_AGENTS),
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Language': 'en-US,en;q=0.9',
                 'Accept-Encoding': 'gzip, deflate, br',
                 'DNT': '1',
                 'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1'
+                'Upgrade-Insecure-Requests': '1',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'none',
+                'Sec-Fetch-User': '?1',
+                'Cache-Control': 'max-age=0',
             }
-            response = requests.get(self.url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
+            
+            response = session.get(self.url, headers=headers, timeout=TIMEOUT, allow_redirects=True)
             response.raise_for_status()
             self.content = response.text
             self.soup = BeautifulSoup(self.content, 'html.parser')
             
-            # Check if we actually got content
+            # Check if we actually got sufficient content
+            for script in self.soup(['script', 'style']):
+                script.decompose()
             text = self.soup.get_text(strip=True)
-            if len(text) < 100:
-                self.analysis['error'] = 'Insufficient content (possible bot detection or JS-rendered page)'
+            
+            if len(text) < MIN_CONTENT_LENGTH:
+                self.analysis['error'] = f'Insufficient content ({len(text)} chars, needs {MIN_CONTENT_LENGTH}+)'
                 self.analysis['accessible'] = False
                 return False
             
@@ -238,6 +282,70 @@ class DomainAnalyzer:
             return True
         except Exception as e:
             self.analysis['error'] = str(e)
+            return False
+    
+    def _fetch_with_playwright(self):
+        """Fallback fetch using Playwright for JavaScript-heavy sites."""
+        global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
+        
+        try:
+            # Initialize Playwright and Browser if needed (reuse for performance)
+            if PLAYWRIGHT_INSTANCE is None:
+                PLAYWRIGHT_INSTANCE = sync_playwright().start()
+                BROWSER_INSTANCE = PLAYWRIGHT_INSTANCE.chromium.launch(
+                    headless=True,
+                    args=['--no-sandbox', '--disable-dev-shm-usage']
+                )
+            
+            # Create new page
+            context = BROWSER_INSTANCE.new_context(
+                user_agent=random.choice(USER_AGENTS),
+                viewport={'width': 1920, 'height': 1080},
+            )
+            page = context.new_page()
+            
+            # Block images/fonts/media for speed (we only need text)
+            page.route('**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,mp4,webm,mp3}', 
+                      lambda route: route.abort())
+            
+            # Navigate and wait for content to load (increased timeout)
+            try:
+                page.goto(self.url, wait_until='domcontentloaded', timeout=20000)
+                # Wait a bit for dynamic content (shorter wait)
+                page.wait_for_timeout(3000)
+            except PlaywrightTimeout:
+                # If networkidle times out, try with just domcontentloaded
+                pass
+            
+            # Extract HTML
+            html = page.content()
+            
+            # Cleanup
+            context.close()
+            
+            # Parse with BeautifulSoup
+            self.content = html
+            self.soup = BeautifulSoup(self.content, 'html.parser')
+            
+            # Check content
+            for script in self.soup(['script', 'style']):
+                script.decompose()
+            text = self.soup.get_text(strip=True)
+            
+            if len(text) < MIN_CONTENT_LENGTH:
+                self.analysis['error'] = f'Playwright: Insufficient content ({len(text)} chars)'
+                self.analysis['accessible'] = False
+                return False
+            
+            self.analysis['accessible'] = True
+            self.analysis['method'] = 'playwright'
+            return True
+            
+        except PlaywrightTimeout:
+            self.analysis['error'] = 'Playwright timeout (15s)'
+            return False
+        except Exception as e:
+            self.analysis['error'] = f'Playwright error: {str(e)}'
             return False
     
     def analyze_text_content(self):
@@ -492,7 +600,7 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
                 cache.store_analysis(domain, result)
             
             analyzed_count += 1
-            time.sleep(2)  # Rate limiting
+            # No additional sleep here - delay is now in fetch_content()
         
         # Process recommendations
         if recommendations and result['accessible']:
@@ -1013,6 +1121,9 @@ Examples:
         cache.save_cache()
     recommendations.save_recommendations()
     
+    # Cleanup Playwright resources
+    cleanup_playwright()
+    
     # Show summary
     rec_summary = recommendations.get_summary()
     
@@ -1037,5 +1148,28 @@ Examples:
     print("- Generate justifications for Pi-hole users")
 
 
+def cleanup_playwright():
+    """Cleanup Playwright resources."""
+    global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
+    if BROWSER_INSTANCE:
+        try:
+            BROWSER_INSTANCE.close()
+        except:
+            pass
+    if PLAYWRIGHT_INSTANCE:
+        try:
+            PLAYWRIGHT_INSTANCE.stop()
+        except:
+            pass
+
+
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\nInterrupted by user")
+        cleanup_playwright()
+    except Exception as e:
+        print(f"\n\nError: {e}")
+        cleanup_playwright()
+        raise

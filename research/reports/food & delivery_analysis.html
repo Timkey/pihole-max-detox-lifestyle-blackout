@@ -102,24 +102,24 @@
 <body>
     <div class="header">
         <h1>Food & Delivery - Content Analysis</h1>
-        <p>Generated: 2025-12-31 00:46:51</p>
+        <p>Generated: 2025-12-31 11:51:27</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <div class="stat-value">806</div>
+            <div class="stat-value">10</div>
             <div class="stat-label">Domains Analyzed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">198</div>
+            <div class="stat-value">8</div>
             <div class="stat-label">Successfully Accessed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">9.4</div>
+            <div class="stat-value">28.6</div>
             <div class="stat-label">Average Risk Score</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">4</div>
+            <div class="stat-value">2</div>
             <div class="stat-label">High Risk Domains</div>
         </div>
     </div>
@@ -157,53 +157,43 @@
         <h2>Highest Risk Domains</h2>
         
         <div class="domain-item">
-            <span class="domain-name">caviar.ca</span>
-            <span class="risk-badge risk-high">79/100</span>
+            <span class="domain-name">grubhub.com</span>
+            <span class="risk-badge risk-high">64/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">caviar.us</span>
-            <span class="risk-badge risk-high">70/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">seamless.ai</span>
-            <span class="risk-badge risk-high">60/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">wendys.com</span>
+            <span class="domain-name">seamless.com</span>
             <span class="risk-badge risk-high">51/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">pandaexpress.com</span>
-            <span class="risk-badge risk-medium">50/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">arbys.ca</span>
-            <span class="risk-badge risk-medium">50/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">jimmyjohns.ca</span>
-            <span class="risk-badge risk-medium">50/100</span>
-        </div>
-        
-        <div class="domain-item">
-            <span class="domain-name">starbucks.com</span>
+            <span class="domain-name">delivery.com</span>
             <span class="risk-badge risk-medium">48/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">bostonpizza.com</span>
-            <span class="risk-badge risk-medium">46/100</span>
+            <span class="domain-name">deliveroo.com</span>
+            <span class="risk-badge risk-medium">33/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">carlsjr.com</span>
-            <span class="risk-badge risk-medium">44/100</span>
+            <span class="domain-name">postmates.com</span>
+            <span class="risk-badge risk-low">18/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">ubereats.com</span>
+            <span class="risk-badge risk-low">15/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">caviar.com</span>
+            <span class="risk-badge risk-low">0/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">instacart.com</span>
+            <span class="risk-badge risk-low">0/100</span>
         </div>
         
     </div>
@@ -213,10 +203,10 @@
         new Chart(document.getElementById('healthChart'), {
             type: 'bar',
             data: {
-                labels: ['addictive', 'fast_food', 'sugar', 'ultra_processed'],
+                labels: ['sugar', 'fast_food', 'addictive'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [15, 46, 22, 1],
+                    data: [3, 4, 3],
                     backgroundColor: 'rgba(231, 76, 60, 0.7)',
                     borderColor: 'rgba(231, 76, 60, 1)',
                     borderWidth: 2
@@ -235,9 +225,9 @@
         new Chart(document.getElementById('behavioralChart'), {
             type: 'doughnut',
             data: {
-                labels: ['convenience', 'discounts', 'upselling', 'impulsive_ordering', 'addiction_language', 'urgency'],
+                labels: ['discounts', 'convenience', 'addiction_language', 'upselling'],
                 datasets: [{
-                    data: [59, 138, 29, 23, 38, 9],
+                    data: [17, 16, 8, 1],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
                         'rgba(54, 162, 235, 0.7)',
@@ -258,10 +248,10 @@
         new Chart(document.getElementById('marketingChart'), {
             type: 'bar',
             data: {
-                labels: ['fomo', 'scarcity', 'personalization', 'social_proof'],
+                labels: ['fomo', 'social_proof', 'scarcity', 'personalization'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [57, 34, 31, 24],
+                    data: [7, 2, 3, 1],
                     backgroundColor: 'rgba(52, 152, 219, 0.7)',
                     borderColor: 'rgba(52, 152, 219, 1)',
                     borderWidth: 2
@@ -281,11 +271,11 @@
         new Chart(document.getElementById('riskChart'), {
             type: 'bar',
             data: {
-                labels: ['caviar.ca', 'caviar.us', 'seamless.ai', 'wendys.com', 'pandaexpress.com', 'arbys.ca', 'jimmyjohns.ca', 'starbucks.com', 'bostonpizza.com', 'carlsjr.com'],
+                labels: ['grubhub.com', 'seamless.com', 'delivery.com', 'deliveroo.com', 'postmates.com', 'ubereats.com', 'caviar.com', 'instacart.com'],
                 datasets: [{
                     label: 'Risk Score',
-                    data: [79, 70, 60, 51, 50, 50, 50, 48, 46, 44],
-                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(231, 76, 60, 0.7)'", "'rgba(231, 76, 60, 0.7)'", "'rgba(231, 76, 60, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'"],
+                    data: [64, 51, 48, 33, 18, 15, 0, 0],
+                    backgroundColor: ["'rgba(231, 76, 60, 0.7)'", "'rgba(231, 76, 60, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(243, 156, 18, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
                     borderWidth: 2
                 }]
             },

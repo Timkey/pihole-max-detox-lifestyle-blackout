@@ -2,7 +2,7 @@
   "analyses": {
     "doordash.com": {
       "domain": "doordash.com",
-      "analyzed_at": "2025-12-30T22:57:49.772026",
+      "analyzed_at": "2025-12-31T11:50:37.501329",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -11,41 +11,107 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.doordash.com/"
+      "error": "Playwright: Insufficient content (332 chars)"
     },
     "ubereats.com": {
       "domain": "ubereats.com",
-      "analyzed_at": "2025-12-30T22:57:51.979508",
-      "accessible": true,
-      "health_hazards": {},
-      "behavioral_hazards": {},
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "seo_metadata": ""
-    },
-    "grubhub.com": {
-      "domain": "grubhub.com",
-      "analyzed_at": "2025-12-30T22:25:48.841466",
+      "analyzed_at": "2025-12-31T11:50:43.581189",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {
-        "convenience": 1
+        "discounts": 1,
+        "convenience": 2
       },
-      "marketing_tactics": {},
+      "marketing_tactics": {
+        "fomo": 1
+      },
       "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 4,
-      "justification": [
-        "Uses behavioral manipulation: convenience"
+      "related_domains": [
+        "about.ubereats.com",
+        "apps.apple.com",
+        "facebook.com",
+        "help.uber.com",
+        "instagram.com",
+        "merchants.ubereats.com",
+        "play.google.com",
+        "policies.google.com",
+        "privacy.uber.com",
+        "twitter.com",
+        "uber.com",
+        "ubereats.com"
       ],
-      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+      "risk_score": 15,
+      "justification": [
+        "Uses behavioral manipulation: discounts, convenience",
+        "Employs aggressive marketing: fomo"
+      ],
+      "error": "Insufficient content (378 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats app and support local restaurants. uber eats | food delivery and takeaway | order online from restaurants near you find the best restaurants that deliver. get contactless delivery for restaurant takeaways, food shopping and more! order food online or in the uber eats"
+    },
+    "grubhub.com": {
+      "domain": "grubhub.com",
+      "analyzed_at": "2025-12-31T11:50:51.431295",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 1,
+        "fast_food": 1,
+        "addictive": 1
+      },
+      "behavioral_hazards": {
+        "discounts": 6,
+        "convenience": 4,
+        "addiction_language": 2
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "scarcity": 2,
+        "fomo": 2
+      },
+      "promoted_products": [
+        "Pickup or delivery from restaurants near you",
+        "Manage Consent Preferences",
+        "Performance Cookies",
+        "Order in the App",
+        "Something for everyone",
+        "Delivery or pickup",
+        "Save with Grubhub+",
+        "Strictly Necessary Cookies",
+        "Sale of Personal Data"
+      ],
+      "related_domains": [
+        "about.grubhub.com",
+        "bytes.grubhub.com",
+        "careers.grubhub.com",
+        "cookiepedia.co.uk",
+        "corporate.grubhub.com",
+        "driver.grubhub.com",
+        "facebook.com",
+        "get.grubhub.com",
+        "grubhub.cashstar.com",
+        "grubhub.com",
+        "instagram.com",
+        "investors.grubhub.com",
+        "lp.grubhub.com",
+        "onetrust.com",
+        "onsite.grubhub.com",
+        "twitter.com",
+        "youtube.com"
+      ],
+      "risk_score": 64,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food, addictive",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, fomo",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (219 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "food delivery | restaurant takeout | order food online | grubhub the best restaurants near you deliver with grubhub! order delivery or takeout from national chains and local favorites! help support your neighborhood restaurants. the best restaurants near you deliver with grubhub! order delivery or takeout from national chains and local favorites! help support your neighborhood restaurants. grubhub"
     },
     "postmates.com": {
       "domain": "postmates.com",
-      "analyzed_at": "2025-12-30T22:25:51.245418",
+      "analyzed_at": "2025-12-31T11:50:59.547953",
       "accessible": true,
       "health_hazards": {
         "addictive": 1
@@ -79,20 +145,60 @@
     },
     "seamless.com": {
       "domain": "seamless.com",
-      "analyzed_at": "2025-12-30T22:25:53.907927",
+      "analyzed_at": "2025-12-31T11:51:01.927141",
       "accessible": true,
-      "health_hazards": {},
-      "behavioral_hazards": {
-        "convenience": 1
+      "health_hazards": {
+        "fast_food": 1,
+        "addictive": 1
       },
-      "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 4,
-      "justification": [
-        "Uses behavioral manipulation: convenience"
+      "behavioral_hazards": {
+        "discounts": 4,
+        "convenience": 2,
+        "addiction_language": 3
+      },
+      "marketing_tactics": {
+        "social_proof": 1,
+        "scarcity": 1,
+        "fomo": 1
+      },
+      "promoted_products": [
+        "Restaurants near you, delivered fast",
+        "Manage Consent Preferences",
+        "Performance Cookies",
+        "Get Perks in the app",
+        "Sign in",
+        "Satisfy any craving",
+        "Support local restaurants impacted by the pandemic",
+        "Cash in on Perks",
+        "Strictly Necessary Cookies",
+        "Sale of Personal Data"
       ],
-      "seo_metadata": "\n        prepare your taste buds...\n     prepare your taste buds..."
+      "related_domains": [
+        "app.appsflyer.com",
+        "careers.grubhub.com",
+        "cookiepedia.co.uk",
+        "corporate.grubhub.com",
+        "driver.grubhub.com",
+        "facebook.com",
+        "get.grubhub.com",
+        "instagram.com",
+        "investors.grubhub.com",
+        "onetrust.com",
+        "seamless.cashstar.com",
+        "seamless.com",
+        "twitter.com",
+        "youtube.com"
+      ],
+      "risk_score": 51,
+      "justification": [
+        "Promotes health hazards: fast_food, addictive",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "Employs aggressive marketing: social_proof, scarcity, fomo",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (219 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "seamless | food delivery from restaurants near you ~ order online online food ordering from your local favorites for takeout or delivery. support your local restaurants with seamless and find coupons, reviews, and more! online food ordering from your local favorites for takeout or delivery. support your local restaurants with seamless and find coupons, reviews, and more! seamless"
     },
     "sephora.com": {
       "domain": "sephora.com",
@@ -226,18 +332,15 @@
     },
     "deliveroo.com": {
       "domain": "deliveroo.com",
-      "analyzed_at": "2025-12-30T22:30:56.430016",
+      "analyzed_at": "2025-12-31T11:51:08.822396",
       "accessible": true,
-      "health_hazards": {
-        "fast_food": 1
-      },
+      "health_hazards": {},
       "behavioral_hazards": {
         "discounts": 3,
         "convenience": 2,
         "upselling": 1
       },
       "marketing_tactics": {
-        "scarcity": 1,
         "fomo": 2,
         "personalization": 1
       },
@@ -262,30 +365,59 @@
         "twitter.com",
         "uk.deliveroo.news"
       ],
-      "risk_score": 39,
+      "risk_score": 33,
       "justification": [
-        "Promotes health hazards: fast_food",
         "Uses behavioral manipulation: discounts, convenience, upselling",
-        "Employs aggressive marketing: scarcity, fomo, personalization"
+        "Employs aggressive marketing: fomo, personalization"
       ],
       "seo_metadata": "deliveroo - food, groceries, pharmacy, gifts & more. delivered in a tap. from food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. all in as little as 30 minutes. download our app or order online.  deliveroo the best local restaurants and takeaways are here to deliver. order on deliveroo today!"
     },
     "delivery.com": {
       "domain": "delivery.com",
-      "analyzed_at": "2025-12-30T22:30:58.917124",
-      "accessible": false,
-      "health_hazards": {},
-      "behavioral_hazards": {},
+      "analyzed_at": "2025-12-31T11:51:11.344078",
+      "accessible": true,
+      "health_hazards": {
+        "sugar": 2,
+        "fast_food": 2
+      },
+      "behavioral_hazards": {
+        "discounts": 2,
+        "convenience": 4,
+        "addiction_language": 3
+      },
       "marketing_tactics": {},
-      "promoted_products": [],
-      "related_domains": [],
-      "risk_score": 0,
-      "justification": [],
-      "error": "Insufficient content (possible bot detection or JS-rendered page)"
+      "promoted_products": [
+        "Find Favorites and Discover New Ones",
+        "Free, Easy, and Essential",
+        "Earn Points and Get Rewards",
+        "Connect with us",
+        "For Local Businesses",
+        "About Us",
+        "Delivery Points",
+        "Browse By Cuisine",
+        "Browse By City"
+      ],
+      "related_domains": [
+        "adasitecompliancetools.com",
+        "blog.delivery.com",
+        "deliverycom.formstack.com",
+        "facebook.com",
+        "instagram.com",
+        "twitter.com"
+      ],
+      "risk_score": 48,
+      "justification": [
+        "Promotes health hazards: sugar, fast_food",
+        "Uses behavioral manipulation: discounts, convenience, addiction_language",
+        "MODERATE RISK: Several concerning patterns detected"
+      ],
+      "error": "Insufficient content (0 chars, needs 500+)",
+      "method": "playwright",
+      "seo_metadata": "delivery.com: food delivery, alcohol, laundry & grocery get delivery from local favorite restaurants, liquor stores, grocery stores and laundromats near you. order online for delivery or takeout. every order earns points. download the app for promos. delivery.com: food delivery, alcohol, laundry & grocery | delivery.com"
     },
     "caviar.com": {
       "domain": "caviar.com",
-      "analyzed_at": "2025-12-30T22:31:01.420501",
+      "analyzed_at": "2025-12-31T11:51:17.888239",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -298,7 +430,7 @@
     },
     "trycaviar.com": {
       "domain": "trycaviar.com",
-      "analyzed_at": "2025-12-30T22:31:03.637356",
+      "analyzed_at": "2025-12-31T11:51:19.629846",
       "accessible": false,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -307,11 +439,11 @@
       "related_domains": [],
       "risk_score": 0,
       "justification": [],
-      "error": "403 Client Error: Forbidden for url: https://www.trycaviar.com/"
+      "error": "Playwright: Insufficient content (335 chars)"
     },
     "instacart.com": {
       "domain": "instacart.com",
-      "analyzed_at": "2025-12-30T22:31:05.853336",
+      "analyzed_at": "2025-12-31T11:51:24.669571",
       "accessible": true,
       "health_hazards": {},
       "behavioral_hazards": {},
@@ -17171,5 +17303,5 @@
       "error": "HTTPSConnectionPool(host='pepsico.us', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pepsico.us'. (_ssl.c:1016)\")))"
     }
   },
-  "last_updated": "2025-12-31T01:08:30.066240"
+  "last_updated": "2025-12-31T11:51:27.629518"
 }

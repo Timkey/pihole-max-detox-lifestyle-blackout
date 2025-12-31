@@ -1,10 +1,14 @@
-FROM python:3.11-slim
+FROM mcr.microsoft.com/playwright/python:v1.40.0-jammy
 
 # Install required Python packages
 RUN pip install --no-cache-dir \
     requests \
     beautifulsoup4 \
-    lxml
+    lxml \
+    playwright
+
+# Install Playwright browsers (chromium only for speed/size)
+RUN playwright install chromium --with-deps
 
 # Set working directory
 WORKDIR /workspace
