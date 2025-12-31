@@ -17,6 +17,8 @@ Convenient wrapper scripts that run Python code inside Docker with external DNS.
 ./check-variations.sh         # Check for TLD variations
 ./add-variations.sh           # Add verified variations
 ./apply-recommendations.sh    # Apply cached recommendations
+./recalculate-enablers.sh     # Recalculate enabler scores
+./regenerate-reports.sh       # Regenerate HTML/Markdown reports
 ./generate-ultra.sh           # Regenerate master blocklist
 ./shell.sh                    # Enter container shell
 ```
@@ -82,13 +84,42 @@ docker exec -it pihole-blocklist-analyzer python3 scripts/analyze_domains.py
 ./analyze.sh
 ```
 Analyzes websites for:
-- Health hazards
-- Behavioral manipulation tactics
-- Marketing patterns
-- Risk scores (0-100)
+- Health hazards (ultra-processed foods, sugar, additives)
+- Behavioral manipulation tactics (urgency, FOMO, discounts)
+- Marketing patterns (limited offers, countdown timers)
+- **Bi-directional enabler scoring** (platforms facilitating high-risk brands)
+- Risk scores (0-100) with enabler bonuses
 - Related domains to consider
 
-Generates `research/recommendations.json`
+Generates:
+- **Interactive HTML reports** with charts, filters, sorting
+- **Mobile-responsive** layouts
+- **Failed analysis tracking** with error categorization
+- **Markdown reports** in research/docs/
+- **JSON data files** in research/data/
+
+### Recalculate Enabler Scores (Fast)
+```bash
+docker exec -it pihole-blocklist-analyzer python3 scripts/recalculate_enabler_scores.py
+# Or:
+./recalculate-enablers.sh
+```
+Fast recalculation of enabler scores without re-scraping:
+- Uses existing related_domains data
+- Bi-directional relationship detection
+- Completes in seconds vs 80-minute full reanalysis
+
+### Regenerate Reports
+```bash
+docker exec -it pihole-blocklist-analyzer python3 scripts/regenerate_reports.py
+# Or:
+./regenerate-reports.sh
+```
+Regenerates HTML and Markdown reports from existing JSON data:
+- Updates all category reports
+- Dynamic JSON loading with fallback
+- Mobile-responsive design
+- Useful after score recalculation
 
 ### Apply Recommendations
 ```bash

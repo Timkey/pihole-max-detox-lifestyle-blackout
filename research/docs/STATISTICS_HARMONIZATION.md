@@ -1,7 +1,79 @@
 # Statistics Harmonization - Complete
 
 ## Overview
-All domain-related statistics are now harmonized across the project with DNS verification tracking and parallel processing support.
+All domain-related statistics are now harmonized across the project with DNS verification tracking, parallel processing support, and bi-directional enabler scoring.
+
+## New Features ✨
+
+### Bi-Directional Enabler Scoring
+Implemented comprehensive enabler detection that tracks both directions of relationships:
+
+#### 1. Outbound (Parent → Child)
+- **Purpose**: Detect platforms linking TO high-risk domains
+- **Threshold**: Risk score ≥ 50
+- **Bonus**: +5 points per high-risk link (max +20)
+- **Example**: Platform linking to multiple high-risk brands
+
+#### 2. Inbound (Child → Parent) ✨ NEW
+- **Purpose**: Detect platforms that high-risk domains link TO
+- **Threshold**: Risk score ≥ 20 (lower to catch more facilitators)
+- **Bonus**: sum(facilitator_risk_scores) / 10 (max +30)
+- **Example**: Delivery platform mentioned by many restaurants
+
+#### Combined Scoring
+- **Maximum bonus**: +50 points (20 outbound + 30 inbound)
+- **Use case**: Delivery platforms get penalized for enabling access to unhealthy food brands
+- **Data fields**:
+  - `high_risk_links`: Array of domains this domain links to (≥50 risk)
+  - `facilitated_domains`: Array of domains linking to this domain (≥20 risk)
+  - `enabler_risk_bonus`: Total bonus from both directions
+
+#### Fast Recalculation
+**Script**: `scripts/recalculate_enabler_scores.py`
+- Recalculates scores without re-scraping websites
+- Uses existing `related_domains` data from JSON files
+- Builds reverse index (mentioned_by dictionary)
+- Updates all domains in seconds vs 80-minute full reanalysis
+
+**Example Results**:
+- deliveroo.co.uk: 36 → 48 (+12 from 3 facilitators)
+- ubereats.com: 0 → 5 (+5 from 1 facilitator)
+- wendys.com: 51 → 61 (+5 outbound + +5 inbound)
+
+### Interactive HTML Reports ✨ NEW
+Enhanced report generation with:
+
+#### Features
+- **Dynamic JSON Loading**: Reports try to fetch fresh JSON first, fallback to embedded data
+- **Mobile Responsive**: Optimized for phones, tablets, and desktops
+- **Interactive Charts**: All charts update when filters change
+- **Sorting Controls**: Score ↓↑, A-Z sorting for domain lists
+- **Collapsible Sections**: Failed analysis section folds to avoid obscuring main content
+- **Failed Analysis Tracking**: 
+  - Categorized error display (Timeout, Insufficient Content, Threading, DNS, SSL, etc.)
+  - Doughnut chart showing error distribution
+  - Scrollable error list with truncated messages
+
+#### Chart Types
+- Health Hazards: Bar chart
+- Behavioral Hazards: Doughnut chart
+- Marketing Tactics: Horizontal bar chart
+- Risk Score Distribution: Top 15 domains bar chart
+- Failed Analysis: Doughnut chart (error categories)
+
+#### Mobile Optimizations
+- Viewport-aware layouts (≤768px tablet, ≤480px mobile)
+- Touch-friendly buttons (16px min font, 44px min height)
+- Single-column layouts on small screens
+- Horizontal scroll for sort buttons
+- Word wrapping for long domain names
+
+### Report Regeneration ✨ NEW
+**Script**: `scripts/regenerate_reports.py`
+- Generates HTML and Markdown reports from existing JSON data
+- No web scraping required
+- Updates all three category reports
+- Useful after score recalculation or data updates
 
 ## Centralized Statistics (summary.json)
 
