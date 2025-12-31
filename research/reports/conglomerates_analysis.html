@@ -102,20 +102,20 @@
 <body>
     <div class="header">
         <h1>Conglomerates - Content Analysis</h1>
-        <p>Generated: 2025-12-30 22:46:29</p>
+        <p>Generated: 2025-12-31 01:08:29</p>
     </div>
 
     <div class="stats">
         <div class="stat-card">
-            <div class="stat-value">15</div>
+            <div class="stat-value">199</div>
             <div class="stat-label">Domains Analyzed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">3</div>
+            <div class="stat-value">53</div>
             <div class="stat-label">Successfully Accessed</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">0.0</div>
+            <div class="stat-value">4.8</div>
             <div class="stat-label">Average Risk Score</div>
         </div>
         <div class="stat-card">
@@ -157,18 +157,53 @@
         <h2>Highest Risk Domains</h2>
         
         <div class="domain-item">
-            <span class="domain-name">nespresso.com</span>
-            <span class="risk-badge risk-low">0/100</span>
+            <span class="domain-name">gillette.com</span>
+            <span class="risk-badge risk-medium">32/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">gerber.ca</span>
-            <span class="risk-badge risk-low">0/100</span>
+            <span class="domain-name">purina.co.uk</span>
+            <span class="risk-badge risk-low">24/100</span>
         </div>
         
         <div class="domain-item">
-            <span class="domain-name">gerber.dev</span>
-            <span class="risk-badge risk-low">0/100</span>
+            <span class="domain-name">pantene.ca</span>
+            <span class="risk-badge risk-low">21/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">tide.com</span>
+            <span class="risk-badge risk-low">20/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">fritolay.com</span>
+            <span class="risk-badge risk-low">18/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">pg.io</span>
+            <span class="risk-badge risk-low">15/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">sprite.ca</span>
+            <span class="risk-badge risk-low">12/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">dove.ai</span>
+            <span class="risk-badge risk-low">11/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">dove.app</span>
+            <span class="risk-badge risk-low">11/100</span>
+        </div>
+        
+        <div class="domain-item">
+            <span class="domain-name">tide.ai</span>
+            <span class="risk-badge risk-low">11/100</span>
         </div>
         
     </div>
@@ -178,10 +213,10 @@
         new Chart(document.getElementById('healthChart'), {
             type: 'bar',
             data: {
-                labels: [],
+                labels: ['fast_food', 'sugar'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [],
+                    data: [7, 5],
                     backgroundColor: 'rgba(231, 76, 60, 0.7)',
                     borderColor: 'rgba(231, 76, 60, 1)',
                     borderWidth: 2
@@ -200,9 +235,9 @@
         new Chart(document.getElementById('behavioralChart'), {
             type: 'doughnut',
             data: {
-                labels: [],
+                labels: ['discounts', 'upselling', 'convenience', 'addiction_language'],
                 datasets: [{
-                    data: [],
+                    data: [29, 5, 2, 7],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
                         'rgba(54, 162, 235, 0.7)',
@@ -223,10 +258,10 @@
         new Chart(document.getElementById('marketingChart'), {
             type: 'bar',
             data: {
-                labels: [],
+                labels: ['fomo', 'personalization', 'social_proof', 'scarcity'],
                 datasets: [{
                     label: 'Occurrences',
-                    data: [],
+                    data: [5, 4, 4, 2],
                     backgroundColor: 'rgba(52, 152, 219, 0.7)',
                     borderColor: 'rgba(52, 152, 219, 1)',
                     borderWidth: 2
@@ -246,11 +281,11 @@
         new Chart(document.getElementById('riskChart'), {
             type: 'bar',
             data: {
-                labels: ['nespresso.com', 'gerber.ca', 'gerber.dev'],
+                labels: ['gillette.com', 'purina.co.uk', 'pantene.ca', 'tide.com', 'fritolay.com', 'pg.io', 'sprite.ca', 'dove.ai', 'dove.app', 'tide.ai'],
                 datasets: [{
                     label: 'Risk Score',
-                    data: [0, 0, 0],
-                    backgroundColor: ["'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
+                    data: [32, 24, 21, 20, 18, 15, 12, 11, 11, 11],
+                    backgroundColor: ["'rgba(243, 156, 18, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'", "'rgba(46, 204, 113, 0.7)'"],
                     borderWidth: 2
                 }]
             },
