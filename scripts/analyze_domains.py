@@ -16,6 +16,8 @@ import time
 import argparse
 import random
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from threading import Lock
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -70,11 +72,12 @@ MARKETING_TACTICS = {
 
 
 class AnalysisCache:
-    """Manages cached analysis results."""
+    """Manages cached analysis results (thread-safe)."""
     
     def __init__(self, cache_file):
         self.cache_file = Path(cache_file)
         self.cache = self._load_cache()
+        self._lock = Lock()  # Thread safety for concurrent writes
     
     def _load_cache(self):
         """Load cache from file."""
@@ -89,10 +92,11 @@ class AnalysisCache:
         return {'analyses': {}, 'last_updated': None}
     
     def save_cache(self):
-        """Save cache to file."""
-        self.cache['last_updated'] = datetime.now().isoformat()
-        with open(self.cache_file, 'w') as f:
-            json.dump(self.cache, f, indent=2)
+        """Save cache to file (thread-safe)."""
+        with self._lock:
+            self.cache['last_updated'] = datetime.now().isoformat()
+            with open(self.cache_file, 'w') as f:
+                json.dump(self.cache, f, indent=2)
     
     def get_analysis(self, domain):
         """Get cached analysis for domain."""
@@ -112,16 +116,18 @@ class AnalysisCache:
         return age.days < max_age_days
     
     def store_analysis(self, domain, analysis):
-        """Store analysis result."""
-        self.cache['analyses'][domain] = analysis
+        """Store analysis result (thread-safe)."""
+        with self._lock:
+            self.cache['analyses'][domain] = analysis
 
 
 class RecommendationEngine:
-    """Manages domain recommendations for additions and removals."""
+    """Manages domain recommendations for additions and removals (thread-safe)."""
     
     def __init__(self, recommendations_file):
         self.rec_file = Path(recommendations_file)
         self.recommendations = self._load_recommendations()
+        self._lock = Lock()  # Thread safety for concurrent updates
     
     def _load_recommendations(self):
         """Load recommendations from file."""
@@ -138,14 +144,15 @@ class RecommendationEngine:
         }
     
     def save_recommendations(self):
-        """Save recommendations to file."""
-        self.recommendations['last_updated'] = datetime.now().isoformat()
-        with open(self.rec_file, 'w') as f:
-            json.dump(self.recommendations, f, indent=2)
-        print(f"\n✓ Recommendations saved to: {self.rec_file}")
+        """Save recommendations to file (thread-safe)."""
+        with self._lock:
+            self.recommendations['last_updated'] = datetime.now().isoformat()
+            with open(self.rec_file, 'w') as f:
+                json.dump(self.recommendations, f, indent=2)
+            print(f"\n✓ Recommendations saved to: {self.rec_file}")
     
     def add_addition_recommendation(self, domain, category, reason, source_domain=None):
-        """Recommend adding a domain."""
+        """Recommend adding a domain (thread-safe)."""
         # Skip common third-party domains
         skip_domains = {
             'facebook.com', 'twitter.com', 'instagram.com', 'youtube.com',
@@ -165,15 +172,16 @@ class RecommendationEngine:
             'status': 'pending'
         }
         
-        # Check if already recommended
-        for existing in self.recommendations['additions']:
-            if existing['domain'] == domain:
-                return  # Already recommended
-        
-        self.recommendations['additions'].append(rec)
+        # Check if already recommended (with lock)
+        with self._lock:
+            for existing in self.recommendations['additions']:
+                if existing['domain'] == domain:
+                    return  # Already recommended
+            
+            self.recommendations['additions'].append(rec)
     
     def add_removal_recommendation(self, domain, category, reason, risk_score):
-        """Recommend removing a domain."""
+        """Recommend removing a domain (thread-safe)."""
         # Only recommend removal if we successfully analyzed the domain
         # Don't recommend removal if analysis failed (no content)
         if risk_score is None or risk_score == 0:
@@ -188,12 +196,13 @@ class RecommendationEngine:
             'status': 'pending'
         }
         
-        # Check if already recommended
-        for existing in self.recommendations['removals']:
-            if existing['domain'] == domain:
-                return
-        
-        self.recommendations['removals'].append(rec)
+        # Check if already recommended (with lock)
+        with self._lock:
+            for existing in self.recommendations['removals']:
+                if existing['domain'] == domain:
+                    return
+            
+            self.recommendations['removals'].append(rec)
     
     def get_summary(self):
         """Get recommendations summary."""
@@ -557,8 +566,58 @@ def load_domains_from_list(category_file):
     return domains
 
 
-def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False):
-    """Analyze a sample of domains from a category."""
+def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recommendations, existing_domains):
+    """Worker function for parallel domain analysis (thread-safe)."""
+    # Check cache first (unless force reanalysis)
+    if cache and cache.is_cached(domain) and not force_reanalysis:
+        result = cache.get_analysis(domain)
+        print(f"{domain}... ✓ Using cached analysis")
+    else:
+        analyzer = DomainAnalyzer(domain)
+        result = analyzer.analyze()
+        
+        if cache:
+            cache.store_analysis(domain, result)  # Thread-safe
+    
+    # Process recommendations (thread-safe)
+    if recommendations and result['accessible']:
+        # Check if domain should be removed (low risk score)
+        if result['risk_score'] < 30:
+            recommendations.add_removal_recommendation(
+                domain,
+                category_name,
+                f"Low risk score ({result['risk_score']}/100), may not warrant blocking",
+                result['risk_score']
+            )
+        
+        # Check for related domains to add
+        for related_domain in result.get('related_domains', [])[:5]:  # Top 5 only
+            # Check if it's not already in any list
+            if existing_domains and related_domain not in existing_domains:
+                recommendations.add_addition_recommendation(
+                    related_domain,
+                    category_name,
+                    f"Found via {domain} analysis, appears to be related service",
+                    domain
+                )
+    
+    return result
+
+
+def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False, parallel=False, max_workers=5):
+    """Analyze a sample of domains from a category.
+    
+    Args:
+        category_name: Name of the category
+        category_file: Filename of the blocklist
+        sample_size: Number of domains to analyze (-1 for all)
+        cache: AnalysisCache instance
+        recommendations: RecommendationEngine instance
+        existing_domains: Set of domains already in blocklists
+        force_reanalysis: Ignore cache
+        parallel: Enable parallel processing
+        max_workers: Number of concurrent threads (default 5)
+    """
     print(f"\n{'='*60}")
     print(f"Analyzing Category: {category_name}")
     print(f"{'='*60}")
@@ -578,51 +637,95 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
     else:
         print(f"Analyzing up to {sample_size} domains...\n")
     
-    results = []
-    analyzed_count = 0
+    # Limit to sample size
+    domains_to_analyze = domains[:sample_size]
     
-    # Analyze sample
+    if parallel:
+        print(f"⚡ Parallel mode: {max_workers} workers\n")
+        results = analyze_parallel(
+            domains_to_analyze,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains,
+            max_workers
+        )
+    else:
+        results = analyze_sequential(
+            domains_to_analyze,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains
+        )
+    
+    return results
+
+
+def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
+    """Sequential domain analysis (original method)."""
+    results = []
+    
     for domain in domains:
-        if analyzed_count >= sample_size:
-            break
+        result = analyze_domain_worker(
+            domain,
+            cache,
+            force_reanalysis,
+            category_name,
+            recommendations,
+            existing_domains
+        )
+        results.append(result)
+    
+    return results
+
+
+def analyze_parallel(domains, cache, force_reanalysis, category_name, recommendations, existing_domains, max_workers):
+    """Parallel domain analysis using ThreadPoolExecutor."""
+    results = []
+    completed = 0
+    total = len(domains)
+    
+    # Use ThreadPoolExecutor for concurrent analysis
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all tasks
+        future_to_domain = {
+            executor.submit(
+                analyze_domain_worker,
+                domain,
+                cache,
+                force_reanalysis,
+                category_name,
+                recommendations,
+                existing_domains
+            ): domain
+            for domain in domains
+        }
         
-        # Check cache first (unless force reanalysis)
-        if cache and cache.is_cached(domain) and not force_reanalysis:
-            print(f"{domain}... ✓ Using cached analysis")
-            result = cache.get_analysis(domain)
-            results.append(result)
-        else:
-            analyzer = DomainAnalyzer(domain)
-            result = analyzer.analyze()
-            results.append(result)
-            
-            if cache:
-                cache.store_analysis(domain, result)
-            
-            analyzed_count += 1
-            # No additional sleep here - delay is now in fetch_content()
-        
-        # Process recommendations
-        if recommendations and result['accessible']:
-            # Check if domain should be removed (low risk score)
-            if result['risk_score'] < 30:
-                recommendations.add_removal_recommendation(
-                    domain,
-                    category_name,
-                    f"Low risk score ({result['risk_score']}/100), may not warrant blocking",
-                    result['risk_score']
-                )
-            
-            # Check for related domains to add
-            for related_domain in result.get('related_domains', [])[:5]:  # Top 5 only
-                # Check if it's not already in any list
-                if existing_domains and related_domain not in existing_domains:
-                    recommendations.add_addition_recommendation(
-                        related_domain,
-                        category_name,
-                        f"Found via {domain} analysis, appears to be related service",
-                        domain
-                    )
+        # Process completed tasks as they finish
+        for future in as_completed(future_to_domain):
+            domain = future_to_domain[future]
+            try:
+                result = future.result()
+                results.append(result)
+                completed += 1
+                
+                # Progress indicator
+                if completed % 10 == 0 or completed == total:
+                    print(f"Progress: {completed}/{total} domains analyzed ({completed/total*100:.1f}%)")
+                    
+            except Exception as e:
+                print(f"❌ Error analyzing {domain}: {e}")
+                # Create error result
+                results.append({
+                    'domain': domain,
+                    'analyzed_at': datetime.now().isoformat(),
+                    'accessible': False,
+                    'error': str(e),
+                    'risk_score': 0
+                })
     
     return results
 
@@ -1049,6 +1152,17 @@ Examples:
         action='store_true',
         help='Disable caching entirely (same as --force but don\'t save results)'
     )
+    parser.add_argument(
+        '--parallel', '-p',
+        action='store_true',
+        help='Enable parallel processing for faster analysis'
+    )
+    parser.add_argument(
+        '--workers', '-w',
+        type=int,
+        default=5,
+        help='Number of concurrent workers for parallel mode (default: 5)'
+    )
     
     args = parser.parse_args()
     
@@ -1056,11 +1170,14 @@ Examples:
     sample_size = -1 if args.all else args.sample_size
     force_reanalysis = args.force or args.no_cache
     use_cache = not args.no_cache
+    parallel = args.parallel
+    max_workers = args.workers
     
     print("DOMAIN CONTENT ANALYSIS TOOL")
     print("="*60)
     print(f"Sample size: {'ALL' if sample_size == -1 else sample_size} domains per category")
     print(f"Cache mode: {'DISABLED' if args.no_cache else 'FORCE REANALYSIS' if args.force else 'ENABLED'}")
+    print(f"Processing mode: {'PARALLEL (' + str(max_workers) + ' workers)' if parallel else 'SEQUENTIAL'}")
     if args.category:
         print(f"Category filter: {args.category}")
     print("="*60)
@@ -1104,7 +1221,9 @@ Examples:
             cache=cache,
             recommendations=recommendations,
             existing_domains=all_existing_domains,
-            force_reanalysis=force_reanalysis
+            force_reanalysis=force_reanalysis,
+            parallel=parallel,
+            max_workers=max_workers
         )
         generate_markdown_report(category_name, results)
         generate_html_report(category_name, results)
