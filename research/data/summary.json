@@ -1,25 +1,25 @@
 {
-  "total_domains": 1101,
-  "accessible_count": 180,
-  "avg_risk_score": 8.1,
-  "access_rate": 16.0,
-  "high_risk_count": 4,
+  "total_domains": 1260,
+  "accessible_count": 228,
+  "avg_risk_score": 10.3,
+  "access_rate": 18.0,
+  "high_risk_count": 15,
   "categories": {
-    "cosmetics_beauty": 96,
+    "cosmetics_beauty": 184,
     "conglomerates": 199,
-    "food_delivery": 806
+    "food_delivery": 877
   },
   "dns_verification": {
-    "verified_domains": 1895,
-    "unverified_domains": 866,
-    "total_dns_checked": 2761,
-    "last_dns_check": "2025-12-30T19:42:30.058223"
+    "verified_domains": 2100,
+    "unverified_domains": 1006,
+    "total_dns_checked": 3106,
+    "last_dns_check": "2025-12-31T21:50:09.686590"
   },
   "blocklists": {
-    "food": 1585,
-    "cosmetics": 187,
+    "food": 1724,
+    "cosmetics": 356,
     "conglomerates": 385,
-    "blackout-ultra": 2157
+    "blackout-ultra": 2465
   },
-  "generated_at": "2025-12-31T17:09:56.322261"
+  "generated_at": "2026-01-01T07:27:29.345108"
 }

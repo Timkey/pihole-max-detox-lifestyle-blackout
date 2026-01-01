@@ -1655,6 +1655,166 @@
       "source": "unilever.co.uk",
       "detected_at": "2025-12-31T17:06:58.858504",
       "status": "pending"
+    },
+    {
+      "domain": "drpeppersnapplegroup.com",
+      "category": "Food & Delivery",
+      "reason": "Found via drpepper.com analysis, appears to be related service",
+      "source": "drpepper.com",
+      "detected_at": "2025-12-31T21:45:39.030142",
+      "status": "pending"
+    },
+    {
+      "domain": "drpepperstore.com",
+      "category": "Food & Delivery",
+      "reason": "Found via drpepper.com analysis, appears to be related service",
+      "source": "drpepper.com",
+      "detected_at": "2025-12-31T21:45:39.030172",
+      "status": "pending"
+    },
+    {
+      "domain": "pepsicopartners.com",
+      "category": "Food & Delivery",
+      "reason": "Found via mountaindew.com analysis, appears to be related service",
+      "source": "mountaindew.com",
+      "detected_at": "2025-12-31T21:45:40.323405",
+      "status": "pending"
+    },
+    {
+      "domain": "fr.pinterest.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancomeusa.com analysis, appears to be related service",
+      "source": "lancomeusa.com",
+      "detected_at": "2025-12-31T21:45:52.467271",
+      "status": "pending"
+    },
+    {
+      "domain": "lancome-usa.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancomeusa.com analysis, appears to be related service",
+      "source": "lancomeusa.com",
+      "detected_at": "2025-12-31T21:45:52.467332",
+      "status": "pending"
+    },
+    {
+      "domain": "community.lancome.co.uk",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancome.com analysis, appears to be related service",
+      "source": "lancome.com",
+      "detected_at": "2025-12-31T21:45:52.798867",
+      "status": "pending"
+    },
+    {
+      "domain": "lancome.co.uk",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancome.com analysis, appears to be related service",
+      "source": "lancome.com",
+      "detected_at": "2025-12-31T21:45:52.798938",
+      "status": "pending"
+    },
+    {
+      "domain": "uk.romwe.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via romwe.com analysis, appears to be related service",
+      "source": "romwe.com",
+      "detected_at": "2025-12-31T21:45:54.120291",
+      "status": "pending"
+    },
+    {
+      "domain": "aboutcookies.org",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via zaful.com analysis, appears to be related service",
+      "source": "zaful.com",
+      "detected_at": "2025-12-31T21:45:54.560351",
+      "status": "pending"
+    },
+    {
+      "domain": "cart.zaful.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via zaful.com analysis, appears to be related service",
+      "source": "zaful.com",
+      "detected_at": "2025-12-31T21:45:54.560448",
+      "status": "pending"
+    },
+    {
+      "domain": "dmca.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via zaful.com analysis, appears to be related service",
+      "source": "zaful.com",
+      "detected_at": "2025-12-31T21:45:54.560476",
+      "status": "pending"
+    },
+    {
+      "domain": "onetrust.com",
+      "category": "Food & Delivery",
+      "reason": "Found via drpepper.co.uk analysis, appears to be related service",
+      "source": "drpepper.co.uk",
+      "detected_at": "2026-01-01T07:04:19.169527",
+      "status": "pending"
+    },
+    {
+      "domain": "cloudflare.com",
+      "category": "Food & Delivery",
+      "reason": "Found via monsterenergy.ca analysis, appears to be related service",
+      "source": "monsterenergy.ca",
+      "detected_at": "2026-01-01T07:05:09.916904",
+      "status": "pending"
+    },
+    {
+      "domain": "developers.cloudflare.com",
+      "category": "Food & Delivery",
+      "reason": "Found via monsterenergy.ca analysis, appears to be related service",
+      "source": "monsterenergy.ca",
+      "detected_at": "2026-01-01T07:05:09.916952",
+      "status": "pending"
+    },
+    {
+      "domain": "drive.google.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via chanel.dev analysis, appears to be related service",
+      "source": "chanel.dev",
+      "detected_at": "2026-01-01T07:13:50.166652",
+      "status": "pending"
+    },
+    {
+      "domain": "careers.loreal.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancome.ca analysis, appears to be related service",
+      "source": "lancome.ca",
+      "detected_at": "2026-01-01T07:20:48.040986",
+      "status": "pending"
+    },
+    {
+      "domain": "inside.chat",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via lancome.ca analysis, appears to be related service",
+      "source": "lancome.ca",
+      "detected_at": "2026-01-01T07:20:48.041029",
+      "status": "pending"
+    },
+    {
+      "domain": "pinterest.co.uk",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via yslbeauty.co.uk analysis, appears to be related service",
+      "source": "yslbeauty.co.uk",
+      "detected_at": "2026-01-01T07:21:51.050617",
+      "status": "pending"
+    },
+    {
+      "domain": "pinterest.fr",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via yslbeauty.ca analysis, appears to be related service",
+      "source": "yslbeauty.ca",
+      "detected_at": "2026-01-01T07:21:53.730041",
+      "status": "pending"
+    },
+    {
+      "domain": "asianbeautywholesale.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Found via yesstyle.co analysis, appears to be related service",
+      "source": "yesstyle.co",
+      "detected_at": "2026-01-01T07:26:11.836595",
+      "status": "pending"
     }
   ],
   "removals": [
@@ -2457,7 +2617,167 @@
       "risk_score": 29,
       "detected_at": "2025-12-31T17:07:04.219106",
       "status": "pending"
+    },
+    {
+      "domain": "drpepper.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (25/100), may not warrant blocking",
+      "risk_score": 25,
+      "detected_at": "2025-12-31T21:45:39.030112",
+      "status": "pending"
+    },
+    {
+      "domain": "redbull.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2025-12-31T21:45:39.712776",
+      "status": "pending"
+    },
+    {
+      "domain": "mountaindew.com",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2025-12-31T21:45:40.323338",
+      "status": "pending"
+    },
+    {
+      "domain": "romwe.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (22/100), may not warrant blocking",
+      "risk_score": 22,
+      "detected_at": "2025-12-31T21:45:54.120233",
+      "status": "pending"
+    },
+    {
+      "domain": "yesstyle.com",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2025-12-31T21:45:55.031319",
+      "status": "pending"
+    },
+    {
+      "domain": "drpepper.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (29/100), may not warrant blocking",
+      "risk_score": 29,
+      "detected_at": "2026-01-01T07:04:19.169476",
+      "status": "pending"
+    },
+    {
+      "domain": "mountaindew.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2026-01-01T07:08:30.726068",
+      "status": "pending"
+    },
+    {
+      "domain": "redbull.ca",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (6/100), may not warrant blocking",
+      "risk_score": 6,
+      "detected_at": "2026-01-01T07:09:35.879881",
+      "status": "pending"
+    },
+    {
+      "domain": "redbull.co",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2026-01-01T07:09:37.288092",
+      "status": "pending"
+    },
+    {
+      "domain": "redbull.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2026-01-01T07:09:38.582224",
+      "status": "pending"
+    },
+    {
+      "domain": "rockstarenergy.co.uk",
+      "category": "Food & Delivery",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2026-01-01T07:11:04.565932",
+      "status": "pending"
+    },
+    {
+      "domain": "chanel.dev",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (7/100), may not warrant blocking",
+      "risk_score": 7,
+      "detected_at": "2026-01-01T07:13:50.166609",
+      "status": "pending"
+    },
+    {
+      "domain": "lancome.io",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2026-01-01T07:21:03.065969",
+      "status": "pending"
+    },
+    {
+      "domain": "yslbeauty.net",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (3/100), may not warrant blocking",
+      "risk_score": 3,
+      "detected_at": "2026-01-01T07:21:52.370243",
+      "status": "pending"
+    },
+    {
+      "domain": "shein.app",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2026-01-01T07:25:50.177408",
+      "status": "pending"
+    },
+    {
+      "domain": "shein.ai",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2026-01-01T07:25:50.739079",
+      "status": "pending"
+    },
+    {
+      "domain": "shein.io",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (4/100), may not warrant blocking",
+      "risk_score": 4,
+      "detected_at": "2026-01-01T07:25:59.175979",
+      "status": "pending"
+    },
+    {
+      "domain": "zaful.app",
+      "category": "Cosmetics & Beauty",
+      "reason": "Low risk score (8/100), may not warrant blocking",
+      "risk_score": 8,
+      "detected_at": "2026-01-01T07:26:14.336418",
+      "status": "pending"
+    },
+    {
+      "domain": "pg.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (2/100), may not warrant blocking",
+      "risk_score": 2,
+      "detected_at": "2026-01-01T07:27:28.449446",
+      "status": "pending"
+    },
+    {
+      "domain": "us.pg.com",
+      "category": "Conglomerates",
+      "reason": "Low risk score (2/100), may not warrant blocking",
+      "risk_score": 2,
+      "detected_at": "2026-01-01T07:27:28.449500",
+      "status": "pending"
     }
   ],
-  "last_updated": "2025-12-31T17:09:56.148594"
+  "last_updated": "2026-01-01T07:27:29.040024"
 }

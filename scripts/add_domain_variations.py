@@ -192,6 +192,8 @@ def add_variations_to_file(filepath, cache, workers=DEFAULT_WORKERS):
     
     # Prepare work items
     work_items = []
+    total_dns = 0
+    total_cache = 0
     for block_name, domains in blocks.items():
         new_domains_by_block[block_name] = []
         for domain in domains:
@@ -223,54 +225,6 @@ def add_variations_to_file(filepath, cache, workers=DEFAULT_WORKERS):
                 total_cache += cache_count
             except Exception as e:
                 print(f"  Error: {e}")
-            if not result:
-                continue
-            
-            base, current_tld = result
-            
-            # Only check each base once globally
-            if base in checked_bases:
-                continue
-            checked_bases.add(base)
-            
-            print(f"  {base}.* ", end='', flush=True)
-            block_variations = []
-            
-            for tld in COMMON_TLDS:
-                if tld == current_tld:
-                    continue
-                
-                test_domain = f"{base}.{tld}"
-                test_www = f"www.{test_domain}"
-                
-                # Skip if already exists
-                if test_domain.lower() in existing_domains:
-                    continue
-                
-                # Check with cache
-                was_cached = cache.is_verified(test_domain) or cache.is_not_found(test_domain)
-                
-                if domain_exists(test_domain, cache):
-                    block_variations.append(test_domain)
-                    
-                    # Add www variant
-                    if test_www.lower() not in existing_domains:
-                        was_www_cached = cache.is_verified(test_www) or cache.is_not_found(test_www)
-                        if domain_exists(test_www, cache):
-                            block_variations.append(test_www)
-                        if not was_www_cached:
-                            dns_lookups += 1
-                
-                if was_cached:
-                    cache_hits += 1
-                else:
-                    dns_lookups += 1
-            
-            if block_variations:
-                print(f"✓ {len(block_variations)} ({dns_lookups-cache_hits} DNS, {cache_hits} cached)")
-                new_domains_by_block[block_name].extend(block_variations)
-            else:
-                print(f"✗")
     
     # Count new domains
     total_new = sum(len(domains) for domains in new_domains_by_block.values())
@@ -279,7 +233,7 @@ def add_variations_to_file(filepath, cache, workers=DEFAULT_WORKERS):
         print(f"\n✓ No new variations found")
         return 0
     
-    print(f"\nFound {total_new} new domains ({dns_lookups} DNS lookups, {cache_hits} cache hits)")
+    print(f"\nFound {total_new} new domains ({total_dns} DNS lookups, {total_cache} cache hits)")
     
     # Update file
     with open(filepath, 'r', encoding='utf-8') as f:

@@ -1,13 +1,13 @@
-# conglomerates - Content Analysis Report
+# Conglomerates - Content Analysis Report
 
-**Generated:** 2025-12-31 19:44:35
+**Generated:** 2026-01-01 07:27:28
 
 **Domains Analyzed:** 199
 
 ## Summary
 
 - **Accessible domains:** 40/199
-- **Average Risk Score:** 5.3/100
+- **Average Risk Score:** 5.4/100
 
 ## Hazard Clusters
 
@@ -31,23 +31,6 @@
 
 ## Individual Domain Analysis
 
-### purina.com
-
-❌ **Not accessible:** Playwright error: 'NoneType' object has no attribute 'new_context'
-
-### nestle.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) suspended active started main>
-
-### gerber.ai
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/
-Call log:
-  - navigating to "https://gerber.ai/", waiting until "domcontentloaded"
-
-
 ### gerber.app
 
 ❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://gerber.app/
@@ -55,41 +38,20 @@ Call log:
   - navigating to "https://gerber.app/", waiting until "domcontentloaded"
 
 
-### nespresso.com
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/
-Call log:
-  - navigating to "https://nespresso.com/", waiting until "domcontentloaded"
-
-
-### gerber.biz
+### gerber.io
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gerber.co.uk
+### gerber.info
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+### gerber.org
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### gerber.ca
-
-**Risk Score:** 0/100
-
----
-
-### gerber.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### gerber.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### gerber.com
@@ -98,9 +60,67 @@ Call log:
 
 ---
 
+### gerber.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### gerber.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### gerber.ai
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://gerber.ai/
+Call log:
+  - navigating to "https://gerber.ai/", waiting until "domcontentloaded"
+
+
+### gerber.dev
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### nestle.com
 
 ❌ **Not accessible:** Playwright: Insufficient content (326 chars)
+
+### gerber.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### nespresso.com
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://nespresso.com/
+Call log:
+  - navigating to "https://nespresso.com/", waiting until "domcontentloaded"
+
+
+### nestle.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) suspended active started main>
+
+### purina.com
+
+❌ **Not accessible:** Playwright error: 'NoneType' object has no attribute 'new_context'
+
+### gerber.ca
+
+**Risk Score:** 0/100
+
+---
+
+### nestle.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (332 chars)
 
 ### gerber.uk
 
@@ -108,20 +128,22 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gerber.org
+### gerber.us
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### nestle.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (332 chars)
 
 ### nespresso.ai
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### nespresso.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### nespresso.ca
@@ -184,30 +206,6 @@ Call log:
 
 ---
 
-### nestle.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### gerber.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### nestle.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### nespresso.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### nestle.biz
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -218,6 +216,18 @@ Call log:
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### nestle.co.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### nestle.dev
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### nestle.info
@@ -232,12 +242,6 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gerber.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### nestle.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -250,28 +254,16 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### nestle.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### purina.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### purina.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### nestle.uk
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### nestle.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### purina.ai
@@ -286,7 +278,19 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### unilever.com
+### purina.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### purina.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### purina.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
@@ -296,6 +300,18 @@ Call log:
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### purina.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.com
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### unileverusa.com
@@ -310,12 +326,6 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### purina.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### dove.com
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -326,18 +336,6 @@ Call log:
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### purina.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### axe.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### axe.ai
@@ -352,6 +350,24 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
+### axe.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### axe.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### axe.dev
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### axe.io
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -364,22 +380,22 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### axe.dev
+### axe.org
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### axe.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### axe.uk
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### axe.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### dove.ai
@@ -395,30 +411,6 @@ Call log:
 - `spaceship.com`
 
 ---
-
-### axe.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### axe.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### dove.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### dove.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### dove.app
 
@@ -443,10 +435,10 @@ Call log:
 
 ---
 
-### dove.co.uk
+### dove.biz
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### dove.ca
@@ -455,10 +447,28 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
+### dove.co
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### dove.co.ca
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### dove.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### dove.info
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### dove.io
@@ -467,23 +477,11 @@ Call log:
 
 ---
 
-### dove.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### dove.org
 
 **Risk Score:** 0/100
 
 ---
-
-### hellmanns.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### dove.us
 
@@ -491,16 +489,10 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### hellmanns.net
+### hellmanns.biz
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### hellmanns.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### hellmanns.ca
@@ -509,20 +501,46 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### unilever.ca
+### hellmanns.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### hellmanns.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gerber.info
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### unilever.co.ca
+### hellmanns.org
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### hellmanns.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.app
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### unilever.co
@@ -542,6 +560,12 @@ Call log:
 - `x.com`
 
 ---
+
+### unilever.co.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### unilever.co.uk
 
@@ -575,18 +599,6 @@ Call log:
 
 ---
 
-### hellmanns.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### unilever.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### unilever.io
 
 **Risk Score:** 4/100
@@ -605,12 +617,45 @@ Call log:
 
 ---
 
+### unilever.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.org
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### unilever.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### pg.com
 
-**Risk Score:** 2/100
+**Risk Score:** 4/100
 
 **Justification for Blocking:**
 
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: gillette.com (risk: 29)
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: gillette.com (risk: 29)
+
+---
+
+### us.pg.com
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: gillette.com (risk: 29)
 - FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
 -   ← Enables: gillette.com (risk: 29)
 
@@ -647,29 +692,6 @@ Call log:
 
 ---
 
-### us.pg.com
-
-**Risk Score:** 2/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
--   ← Enables: gillette.com (risk: 29)
-
----
-
-### unilever.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### unilever.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### tide.com
 
 **Risk Score:** 17/100
@@ -703,12 +725,6 @@ Call log:
 
 ---
 
-### gillette.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### pantene.com
 
 **Risk Score:** 8/100
@@ -740,23 +756,17 @@ Call log:
 
 ---
 
+### gillette.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### gillette.ca
 
 **Risk Score:** 0/100
 
 ---
-
-### gillette.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### unilever.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### gillette.co.uk
 
@@ -768,22 +778,16 @@ Call log:
 
 ---
 
+### gillette.io
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### gillette.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### unilever.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pantene.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### gillette.org
@@ -792,6 +796,12 @@ Call log:
 Call log:
   - navigating to "https://gillette.org/", waiting until "domcontentloaded"
 
+
+### gillette.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pantene.ca
 
@@ -836,6 +846,12 @@ Call log:
 
 ---
 
+### pantene.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### pantene.org
 
 **Risk Score:** 8/100
@@ -867,17 +883,24 @@ Call log:
 
 ---
 
-### hellmanns.biz
+### pg.ai
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pg.co.ca
+### pg.app
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pg.biz
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://pg.biz/
+Call log:
+  - navigating to "https://pg.biz/", waiting until "domcontentloaded"
+
 
 ### pg.ca
 
@@ -885,10 +908,16 @@ Call log:
 
 ---
 
-### pg.app
+### pg.co.ca
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pg.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pg.io
@@ -913,29 +942,22 @@ Call log:
 
 ---
 
-### pg.biz
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://pg.biz/
-Call log:
-  - navigating to "https://pg.biz/", waiting until "domcontentloaded"
-
-
 ### pg.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pg.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### pg.org
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pg.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### tide.ai
@@ -952,17 +974,15 @@ Call log:
 
 ---
 
+### tide.app
+
+❌ **Not accessible:** Playwright: Insufficient content (122 chars)
+
 ### tide.ca
 
 **Risk Score:** 0/100
 
 ---
-
-### tide.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### tide.co
 
@@ -976,17 +996,17 @@ Call log:
 
 ---
 
+### tide.io
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### tide.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### tide.uk
-
-**Risk Score:** 0/100
-
----
 
 ### tide.org
 
@@ -994,20 +1014,16 @@ Call log:
 
 ---
 
-### tide.app
+### tide.uk
 
-❌ **Not accessible:** Playwright: Insufficient content (122 chars)
+**Risk Score:** 0/100
 
-### pg.ai
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### gillette.uk
+### us.pg.ai
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### us.pg.co.ca
@@ -1016,28 +1032,26 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
+### us.pg.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### coca-cola.com
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### us.pg.ai
+### cocacola.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
 
 ### sprite.com
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pg.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### fanta.com
@@ -1046,28 +1060,22 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### us.pg.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### coca-cola.ai
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### coca-cola.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### coca-cola.biz
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### coca-cola.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### coca-cola.co.ca
@@ -1094,22 +1102,28 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### cocacola.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### coca-cola.org
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
+### cocacola.ai
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### cocacola.app
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### cocacola.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### cocacola.co.ca
@@ -1148,6 +1162,12 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
+### fanta.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### fanta.ca
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -1160,27 +1180,17 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### fanta.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### fanta.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### fanta.biz
+### fanta.net
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### cocacola.com
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
 
 ### sprite.ca
 
@@ -1210,6 +1220,18 @@ Call log:
 
 ---
 
+### sprite.co.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### sprite.io
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### sprite.net
 
 **Risk Score:** 0/100
@@ -1221,6 +1243,12 @@ Call log:
 **Risk Score:** 0/100
 
 ---
+
+### sprite.uk
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsico.com
 
@@ -1245,23 +1273,32 @@ Call log:
 
 ---
 
-### sprite.co.uk
+### pepsi.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+**Risk Score:** 7/100
 
-### sprite.uk
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts
 
-### sprite.io
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+- PEPSI MAX CHERRY
+- PEPSI MAX MANGO
+- PEPSI MAX LIME
+- PEPSI MAX NO CAFFEINE
+- DIET PEPSI
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `pepsicoprivacypolicy.com`
+- `twitter.com`
+- `youtube.com`
+
+---
 
 ### fritolay.com
 
@@ -1298,37 +1335,16 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pepsi.com
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- PEPSI MAX CHERRY
-- PEPSI MAX MANGO
-- PEPSI MAX LIME
-- PEPSI MAX NO CAFFEINE
-- DIET PEPSI
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `pepsicoprivacypolicy.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### fritolay.co.uk
+### fritolay.app
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### fritolay.biz
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### fritolay.ca
@@ -1337,16 +1353,22 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gatorade.ca
-
-**Risk Score:** 0/100
-
----
-
-### cocacola.ca
+### fritolay.co.uk
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### fritolay.info
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### fritolay.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### gatorade.ai
@@ -1355,9 +1377,11 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### fritolay.ai
+### gatorade.ca
 
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+**Risk Score:** 0/100
+
+---
 
 ### gatorade.co.uk
 
@@ -1369,6 +1393,12 @@ Call log:
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### gatorade.net
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### gatorade.org
@@ -1395,6 +1425,16 @@ Call log:
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pepsi.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pepsi.ca
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsi.co
@@ -1427,46 +1467,6 @@ Call log:
 - `twitter.com`
 
 ---
-
-### fritolay.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### fritolay.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.app
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### fritolay.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### fritolay.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsi.co.ca
 
@@ -1501,6 +1501,34 @@ Call log:
 
 ---
 
+### pepsi.info
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pepsi.io
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pepsi.net
+
+❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+
+### pepsi.org
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
+### pepsi.us
+
+❌ **Not accessible:** Playwright error: Cannot switch to a different thread
+	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
+	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
+
 ### pepsico.ai
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
@@ -1513,16 +1541,10 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### gatorade.net
+### pepsico.biz
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsico.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsico.ca
@@ -1537,34 +1559,16 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pepsico.dev
+### pepsico.co.uk
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
 	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pepsi.info
+### pepsico.dev
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsico.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsico.info
@@ -1573,10 +1577,10 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pepsico.biz
+### pepsico.io
 
 ❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
+	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsico.org
@@ -1591,7 +1595,7 @@ Call log:
 	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
 	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
-### pepsi.net
+### fritolay.ai
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 

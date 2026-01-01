@@ -13,10 +13,10 @@ RESEARCH_DIR = Path(__file__).parent.parent / 'research'
 DATA_DIR = RESEARCH_DIR / 'data'
 TEST_DATA_DIR = DATA_DIR / 'test'
 
-def recalculate_scores(category_file):
+def recalculate_scores(category_file, data_dir):
     """Recalculate enabler scores for a category using existing data."""
     
-    file_path = DATA_DIR / category_file
+    file_path = data_dir / category_file
     print(f"\n{'='*70}")
     print(f"Recalculating: {category_file}")
     print('='*70)
@@ -147,12 +147,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # Set data directory based on test mode
-    global DATA_DIR
     if args.test:
-        DATA_DIR = TEST_DATA_DIR
+        data_dir = TEST_DATA_DIR
         TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
         print(f"🧪 TEST MODE ENABLED")
-        print(f"   Data: {DATA_DIR}\n")
+        print(f"   Data: {data_dir}\n")
+    else:
+        data_dir = DATA_DIR
     
     categories = [
         'food_delivery_data.json',
@@ -164,7 +165,7 @@ if __name__ == '__main__':
     total_facilitators = 0
     
     for category in categories:
-        updates, facilitators = recalculate_scores(category)
+        updates, facilitators = recalculate_scores(category, data_dir)
         total_updates += updates
         total_facilitators += facilitators
     

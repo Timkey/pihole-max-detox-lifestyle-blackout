@@ -72,14 +72,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # Set directories based on test mode
-    global DATA_DIR
     if args.test:
-        DATA_DIR = TEST_DATA_DIR
         TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
         TEST_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
         TEST_DOCS_DIR.mkdir(parents=True, exist_ok=True)
         print(f"🧪 TEST MODE ENABLED")
-        print(f"   Data: {DATA_DIR}")
+        print(f"   Data: {TEST_DATA_DIR}")
         print(f"   Reports: {TEST_REPORTS_DIR}\n")
         
         # Update the analyze_domains module to use test directories
