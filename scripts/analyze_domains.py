@@ -876,11 +876,26 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
         
         # Apply bonus if any enabler relationship exists
         if enabler_bonus > 0:
-            old_score = result['risk_score']
+            # Recalculate base score from hazard counts (don't trust stored risk_score)
+            # This prevents accumulation if old enabler bonus was included
+            base_score = 0
+            
+            # Health hazards (30 points max)
+            health_count = sum(result.get('health_hazards', {}).values())
+            base_score += min(health_count * 3, 30)
+            
+            # Behavioral hazards (40 points max)
+            behavior_count = sum(result.get('behavioral_hazards', {}).values())
+            base_score += min(behavior_count * 4, 40)
+            
+            # Marketing tactics (30 points max)
+            marketing_count = sum(result.get('marketing_tactics', {}).values())
+            base_score += min(marketing_count * 3, 30)
+            
             result['enabler_risk_bonus'] = enabler_bonus
             result['high_risk_links'] = high_risk_links
             result['facilitated_domains'] = facilitated_domains
-            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            result['risk_score'] = min(base_score + enabler_bonus, 100)
             
             # Update justification
             if 'justification' not in result:
@@ -903,7 +918,7 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
                 cache.store_analysis(result['domain'], result)
             
             enabler_updates += 1
-            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+            print(f"  {result['domain']}: {base_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
     
     if enabler_updates > 0:
         print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
@@ -1043,11 +1058,26 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
         
         # Apply bonus if any enabler relationship exists
         if enabler_bonus > 0:
-            old_score = result['risk_score']
+            # Recalculate base score from hazard counts (don't trust stored risk_score)
+            # This prevents accumulation if old enabler bonus was included
+            base_score = 0
+            
+            # Health hazards (30 points max)
+            health_count = sum(result.get('health_hazards', {}).values())
+            base_score += min(health_count * 3, 30)
+            
+            # Behavioral hazards (40 points max)
+            behavior_count = sum(result.get('behavioral_hazards', {}).values())
+            base_score += min(behavior_count * 4, 40)
+            
+            # Marketing tactics (30 points max)
+            marketing_count = sum(result.get('marketing_tactics', {}).values())
+            base_score += min(marketing_count * 3, 30)
+            
             result['enabler_risk_bonus'] = enabler_bonus
             result['high_risk_links'] = high_risk_links
             result['facilitated_domains'] = facilitated_domains
-            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            result['risk_score'] = min(base_score + enabler_bonus, 100)
             
             # Update justification
             if 'justification' not in result:
@@ -1071,7 +1101,7 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                 cache.store_analysis(result['domain'], result)
             
             enabler_updates += 1
-            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+            print(f"  {result['domain']}: {base_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
     
     if enabler_updates > 0:
         print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
