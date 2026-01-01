@@ -917,7 +917,7 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
         # Generate incremental report every 10 domains or at end
         if i % 10 == 0 or i == len(domains):
             print(f"  💾 Checkpoint: {i}/{len(domains)} domains - generating incremental report...")
-            generate_incremental_report(category_name, results)
+            generate_incremental_report(category_name, results, category_domains=domains)
     
     # Pass 2: Add enabler bonuses
     print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
@@ -1078,7 +1078,7 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                     print(f"Progress: {completed}/{total} domains analyzed ({completed/total*100:.1f}%)")
                     # Generate incremental report at checkpoints
                     print(f"  💾 Checkpoint: Generating incremental report...")
-                    generate_incremental_report(category_name, results)
+                    generate_incremental_report(category_name, results, category_domains=domains)
                     
             except Exception as e:
                 print(f"❌ Error analyzing {domain}: {e}")
@@ -1213,8 +1213,8 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
     return results
 
 
-def generate_incremental_report(category_name, partial_results):
-    """Generate reports with partial results merged with cached data.
+def generate_incremental_report(category_name, partial_results, category_domains=None):
+    """Generate reports with partial results merged with cached data FOR THIS CATEGORY ONLY.
     
     This allows viewing progress during long analyses. New results overwrite
     cached ones, while domains not yet analyzed keep their cached data.
@@ -1222,6 +1222,7 @@ def generate_incremental_report(category_name, partial_results):
     Args:
         category_name: Name of the category
         partial_results: Results from current analysis run
+        category_domains: List of domains that belong to this category (for filtering)
     """
     # Load existing cache to get full dataset
     cache_file = CACHE_DIR / 'analysis_cache.json'
@@ -1236,15 +1237,27 @@ def generate_incremental_report(category_name, partial_results):
                 # Create a map of new results by domain
                 new_results_map = {r['domain']: r for r in partial_results}
                 
-                # Merge: use new results if available, otherwise use cache
+                # Get category domain set for filtering
+                if category_domains is None:
+                    # Fallback: just use partial results domains
+                    category_domain_set = set(r['domain'] for r in partial_results)
+                else:
+                    category_domain_set = set(category_domains)
+                
+                # Merge: ONLY include domains from this category
                 for domain, cached_result in cached_analyses.items():
+                    # Skip if not in this category
+                    if domain not in category_domain_set:
+                        continue
+                        
                     if domain in new_results_map:
+                        # Use fresh result
                         full_results.append(new_results_map[domain])
                     else:
                         # Keep cached result for domains not yet reanalyzed
                         full_results.append(cached_result)
                 
-                # Add any new domains that weren't in cache
+                # Add any new domains that weren't in cache (but are in category)
                 for result in partial_results:
                     if result['domain'] not in cached_analyses:
                         full_results.append(result)
