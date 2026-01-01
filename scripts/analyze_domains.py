@@ -95,6 +95,8 @@ class AnalysisCache:
         self.cache_file = Path(cache_file)
         self.cache = self._load_cache()
         self._lock = Lock()  # Thread safety for concurrent writes
+        self._save_counter = 0  # Track domains since last save
+        self._save_interval = 10  # Save every N domains
     
     def _load_cache(self):
         """Load cache from file."""
@@ -108,12 +110,23 @@ class AnalysisCache:
                 print("⚠️  Cache file corrupted, starting fresh")
         return {'analyses': {}, 'last_updated': None}
     
-    def save_cache(self):
-        """Save cache to file (thread-safe)."""
+    def save_cache(self, force=False):
+        """Save cache to file (thread-safe).
+        
+        Args:
+            force: If True, always save. If False, only save after interval.
+        """
         with self._lock:
-            self.cache['last_updated'] = datetime.now().isoformat()
-            with open(self.cache_file, 'w') as f:
-                json.dump(self.cache, f, indent=2)
+            self._save_counter += 1
+            
+            # Save every N domains or if forced
+            if force or self._save_counter >= self._save_interval:
+                self.cache['last_updated'] = datetime.now().isoformat()
+                with open(self.cache_file, 'w') as f:
+                    json.dump(self.cache, f, indent=2)
+                self._save_counter = 0
+                return True
+            return False
     
     def get_analysis(self, domain):
         """Get cached analysis for domain."""
@@ -133,9 +146,16 @@ class AnalysisCache:
         return age.days < max_age_days
     
     def store_analysis(self, domain, analysis):
-        """Store analysis result (thread-safe)."""
+        """Store analysis result and trigger incremental save (thread-safe).
+        
+        Returns:
+            bool: True if cache was saved to disk, False otherwise
+        """
         with self._lock:
             self.cache['analyses'][domain] = analysis
+        
+        # Trigger incremental save (happens outside lock)
+        return self.save_cache(force=False)
 
 
 class RecommendationEngine:
@@ -743,6 +763,74 @@ def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recomm
     return result
 
 
+def prioritize_domains(domains, cache, force_reanalysis):
+    """Sort domains by analysis characteristics for optimal parallel throughput.
+    
+    Priority order (fastest to slowest):
+    1. Cached requests successes (fast, no Playwright needed)
+    2. Cached Playwright successes (slower but reliable)
+    3. New domains (unknown, will try requests first)
+    4. Failed with reset trigger ready (worth retrying with requests)
+    5. Failed without reset (will skip requests, likely to timeout)
+    
+    This minimizes queue blocking by processing fast domains first.
+    """
+    if force_reanalysis:
+        # When forcing reanalysis, still use cache metadata for sorting
+        pass
+    
+    categorized = {
+        'requests_success': [],
+        'playwright_success': [],
+        'new_domains': [],
+        'reset_ready': [],
+        'reset_not_ready': []
+    }
+    
+    for domain in domains:
+        if not cache.is_cached(domain):
+            categorized['new_domains'].append(domain)
+            continue
+        
+        cached = cache.get_analysis(domain)
+        method = cached.get('method')
+        accessible = cached.get('accessible', False)
+        attempt_count = cached.get('attempt_count', 0)
+        last_attempt_date = cached.get('last_attempt_date')
+        
+        # Calculate if reset trigger is ready (every 3 attempts OR 10+ days)
+        days_since = None
+        if last_attempt_date:
+            try:
+                from datetime import datetime
+                last_attempt = datetime.fromisoformat(last_attempt_date)
+                days_since = (datetime.now() - last_attempt).days
+            except:
+                pass
+        
+        reset_ready = (attempt_count % 3 == 0) or (days_since and days_since >= 10)
+        
+        if accessible and method == 'requests':
+            categorized['requests_success'].append(domain)
+        elif accessible and method == 'playwright':
+            categorized['playwright_success'].append(domain)
+        elif not accessible and reset_ready:
+            categorized['reset_ready'].append(domain)
+        else:
+            categorized['reset_not_ready'].append(domain)
+    
+    # Combine in priority order
+    prioritized = (
+        categorized['requests_success'] +
+        categorized['playwright_success'] +
+        categorized['new_domains'] +
+        categorized['reset_ready'] +
+        categorized['reset_not_ready']
+    )
+    
+    return prioritized
+
+
 def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False, parallel=False, max_workers=5):
     """Analyze a sample of domains from a category.
     
@@ -776,6 +864,12 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
     else:
         print(f"Analyzing up to {sample_size} domains...\n")
     
+    # Smart domain prioritization for optimal throughput
+    # Sort domains by analysis characteristics to minimize blocking
+    if parallel and cache:
+        domains = prioritize_domains(domains, cache, force_reanalysis)
+        print("✓ Domains prioritized for optimal parallel processing")
+    
     # Limit to sample size
     domains_to_analyze = domains[:sample_size]
     
@@ -804,12 +898,12 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
 
 
 def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
-    """Sequential domain analysis with two-pass enabler scoring."""
+    """Sequential domain analysis with two-pass enabler scoring and incremental reports."""
     results = []
     
     # Pass 1: Get base scores
     print("Pass 1/2: Analyzing base risk scores...")
-    for domain in domains:
+    for i, domain in enumerate(domains, 1):
         result = analyze_domain_worker(
             domain,
             cache,
@@ -819,6 +913,11 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
             existing_domains
         )
         results.append(result)
+        
+        # Generate incremental report every 10 domains or at end
+        if i % 10 == 0 or i == len(domains):
+            print(f"  💾 Checkpoint: {i}/{len(domains)} domains - generating incremental report...")
+            generate_incremental_report(category_name, results)
     
     # Pass 2: Add enabler bonuses
     print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
@@ -977,6 +1076,9 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                 # Progress indicator
                 if completed % 10 == 0 or completed == total:
                     print(f"Progress: {completed}/{total} domains analyzed ({completed/total*100:.1f}%)")
+                    # Generate incremental report at checkpoints
+                    print(f"  💾 Checkpoint: Generating incremental report...")
+                    generate_incremental_report(category_name, results)
                     
             except Exception as e:
                 print(f"❌ Error analyzing {domain}: {e}")
@@ -1109,6 +1211,57 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
         print(f"✓ No enabler relationships detected\n")
     
     return results
+
+
+def generate_incremental_report(category_name, partial_results):
+    """Generate reports with partial results merged with cached data.
+    
+    This allows viewing progress during long analyses. New results overwrite
+    cached ones, while domains not yet analyzed keep their cached data.
+    
+    Args:
+        category_name: Name of the category
+        partial_results: Results from current analysis run
+    """
+    # Load existing cache to get full dataset
+    cache_file = CACHE_DIR / 'analysis_cache.json'
+    full_results = []
+    
+    if cache_file.exists():
+        try:
+            with open(cache_file, 'r') as f:
+                cache_data = json.load(f)
+                cached_analyses = cache_data.get('analyses', {})
+                
+                # Create a map of new results by domain
+                new_results_map = {r['domain']: r for r in partial_results}
+                
+                # Merge: use new results if available, otherwise use cache
+                for domain, cached_result in cached_analyses.items():
+                    if domain in new_results_map:
+                        full_results.append(new_results_map[domain])
+                    else:
+                        # Keep cached result for domains not yet reanalyzed
+                        full_results.append(cached_result)
+                
+                # Add any new domains that weren't in cache
+                for result in partial_results:
+                    if result['domain'] not in cached_analyses:
+                        full_results.append(result)
+                        
+        except Exception as e:
+            # If cache load fails, just use partial results
+            full_results = partial_results
+    else:
+        full_results = partial_results
+    
+    # Generate reports with merged data
+    # Use try-except to not interrupt analysis if report generation fails
+    try:
+        generate_markdown_report(category_name, full_results)
+        generate_html_report(category_name, full_results)
+    except Exception as e:
+        print(f"  ⚠️  Report generation warning: {e}")
 
 
 def generate_html_report(category_name, results):
@@ -2373,6 +2526,11 @@ Examples:
         help='Enable parallel processing for faster analysis'
     )
     parser.add_argument(
+        '--parallel-categories',
+        action='store_true',
+        help='Run all categories in parallel (experimental - high memory usage)'
+    )
+    parser.add_argument(
         '--workers', '-w',
         type=int,
         default=5,
@@ -2454,31 +2612,77 @@ Examples:
     else:
         categories = all_categories
     
-    for category_name, category_file, _ in categories:
-        results = analyze_category(
-            category_name, 
-            category_file, 
-            sample_size=sample_size,
-            cache=cache,
-            recommendations=recommendations,
-            existing_domains=all_existing_domains,
-            force_reanalysis=force_reanalysis,
-            parallel=parallel,
-            max_workers=max_workers
-        )
-        generate_markdown_report(category_name, results)
-        generate_html_report(category_name, results)
+    # Process categories
+    if args.parallel_categories and len(categories) > 1:
+        # Parallel category processing (experimental)
+        # Reduce per-category workers to avoid Playwright resource exhaustion
+        adjusted_workers = max(2, max_workers // len(categories))
+        print(f"⚡ PARALLEL CATEGORIES MODE: {len(categories)} categories × {adjusted_workers} workers each")
+        print(f"⚠️  High memory usage - monitoring recommended\n")
         
-        # Save JSON for programmatic access
-        json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
-        with open(json_path, 'w') as f:
-            json.dump(results, f, indent=2)
-        
-        print(f"✓ Data saved to: {json_path}")
+        all_results = {}
+        with ThreadPoolExecutor(max_workers=len(categories)) as executor:
+            future_to_category = {
+                executor.submit(
+                    analyze_category,
+                    category_name,
+                    category_file,
+                    sample_size=sample_size,
+                    cache=cache,
+                    recommendations=recommendations,
+                    existing_domains=all_existing_domains,
+                    force_reanalysis=force_reanalysis,
+                    parallel=parallel,
+                    max_workers=adjusted_workers
+                ): (category_name, category_file)
+                for category_name, category_file, _ in categories
+            }
+            
+            for future in as_completed(future_to_category):
+                category_name, category_file = future_to_category[future]
+                try:
+                    results = future.result()
+                    all_results[category_name] = results
+                    
+                    # Generate reports immediately
+                    generate_markdown_report(category_name, results)
+                    generate_html_report(category_name, results)
+                    
+                    # Save JSON
+                    json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
+                    with open(json_path, 'w') as f:
+                        json.dump(results, f, indent=2)
+                    print(f"✓ {category_name} complete - Data saved to: {json_path}")
+                    
+                except Exception as e:
+                    print(f"❌ Error processing {category_name}: {e}")
+    else:
+        # Sequential category processing (default)
+        for category_name, category_file, _ in categories:
+            results = analyze_category(
+                category_name, 
+                category_file, 
+                sample_size=sample_size,
+                cache=cache,
+                recommendations=recommendations,
+                existing_domains=all_existing_domains,
+                force_reanalysis=force_reanalysis,
+                parallel=parallel,
+                max_workers=max_workers
+            )
+            generate_markdown_report(category_name, results)
+            generate_html_report(category_name, results)
+            
+            # Save JSON for programmatic access
+            json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
+            with open(json_path, 'w') as f:
+                json.dump(results, f, indent=2)
+            
+            print(f"✓ Data saved to: {json_path}")
     
     # Save cache and recommendations
     if cache:
-        cache.save_cache()
+        cache.save_cache(force=True)  # Force final save
     recommendations.save_recommendations()
     
     # Generate summary statistics for index page
