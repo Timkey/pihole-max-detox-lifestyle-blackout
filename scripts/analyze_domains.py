@@ -234,11 +234,14 @@ class RecommendationEngine:
 class DomainAnalyzer:
     """Analyzes domain content for health and behavioral hazards."""
     
-    def __init__(self, domain):
+    def __init__(self, domain, cached_attempt_count=0, days_since_last_attempt=None):
         self.domain = domain
         self.url = f"https://{domain}" if not domain.startswith('http') else domain
         self.content = None
         self.soup = None
+        self.cached_attempt_count = cached_attempt_count
+        self.days_since_last_attempt = days_since_last_attempt
+        self.method_used = None  # Track which method succeeded
         self.analysis = {
             'domain': domain,
             'analyzed_at': datetime.now().isoformat(),
@@ -251,17 +254,41 @@ class DomainAnalyzer:
             'risk_score': 0,
             'enabler_risk_bonus': 0,
             'high_risk_links': [],
-            'justification': []
+            'justification': [],
+            'attempt_count': cached_attempt_count + 1,
+            'last_attempt_date': datetime.now().isoformat()
         }
     
-    def fetch_content(self):
-        """Fetch website content with hybrid approach: requests first, Playwright fallback."""
+    def fetch_content(self, cached_method=None):
+        """Fetch website content with hybrid approach: requests first, Playwright fallback.
+        
+        Args:
+            cached_method: Method used in previous attempt ('playwright', 'requests', or None)
+        """
         # Add random delay to avoid rate limiting
         time.sleep(random.uniform(1, 2))
+        
+        # Hybrid retry strategy: Try requests first if EITHER condition met:
+        # 1. Every 3 attempts (counter-based)
+        # 2. 10+ days since last attempt (time-based)
+        # Whichever triggers first gives domain a fresh chance
+        
+        should_try_requests_first = (
+            cached_method != 'playwright' or  # Never needed Playwright before
+            self.cached_attempt_count % 3 == 0 or  # Every 3rd attempt
+            (self.days_since_last_attempt is not None and self.days_since_last_attempt >= 10)  # 10+ days
+        )
+        
+        if not should_try_requests_first and USE_PLAYWRIGHT:
+            attempt_reason = "10+ days" if (self.days_since_last_attempt and self.days_since_last_attempt >= 10) else f"attempt #{self.cached_attempt_count + 1}"
+            print(f"  → Using Playwright ({attempt_reason}, skipping requests)...", end=' ')
+            return self._fetch_with_playwright()
         
         # Try fast method first (requests)
         success = self._fetch_with_requests()
         if success:
+            self.analysis['method'] = 'requests'
+            self.method_used = 'requests'
             return True
         
         # If requests failed or returned insufficient content, try Playwright
@@ -314,6 +341,7 @@ class DomainAnalyzer:
     
     def _fetch_with_playwright(self):
         """Fallback fetch using Playwright for JavaScript-heavy sites."""
+        context = None
         try:
             # Get thread-local Playwright and Browser instances
             playwright, browser = get_playwright_instances()
@@ -350,7 +378,6 @@ class DomainAnalyzer:
                 # Handle navigation errors (redirects, cert errors, etc.)
                 if "ERR_CERT" in str(nav_error) or "ERR_CONNECTION" in str(nav_error):
                     self.analysis['error'] = f'Playwright error: {str(nav_error)[:100]}'
-                    context.close()
                     return False
                 # For other errors, try to continue
                 pass
@@ -366,9 +393,6 @@ class DomainAnalyzer:
                 except Exception:
                     if attempt == 2:
                         raise
-            
-            # Cleanup
-            context.close()
             
             if not html or len(html) < 100:
                 self.analysis['error'] = 'Playwright: No content retrieved'
@@ -391,6 +415,7 @@ class DomainAnalyzer:
             
             self.analysis['accessible'] = True
             self.analysis['method'] = 'playwright'
+            self.method_used = 'playwright'
             return True
             
         except PlaywrightTimeout:
@@ -403,6 +428,13 @@ class DomainAnalyzer:
                 error_msg = error_msg[:200] + '...'
             self.analysis['error'] = f'Playwright error: {error_msg}'
             return False
+        finally:
+            # ALWAYS cleanup context, even on exceptions
+            if context:
+                try:
+                    context.close()
+                except:
+                    pass
     
     def analyze_text_content(self):
         """Extract and analyze text content."""
@@ -613,15 +645,16 @@ class DomainAnalyzer:
         
         self.analysis['justification'] = reasons
     
-    def analyze(self, all_domain_scores=None):
+    def analyze(self, all_domain_scores=None, cached_method=None):
         """Run complete analysis.
         
         Args:
             all_domain_scores: Dict of {domain: risk_score} for enabler detection
+            cached_method: Method used in previous attempt (for smart retry)
         """
         print(f"Analyzing {self.domain}...", end=' ')
         
-        if not self.fetch_content():
+        if not self.fetch_content(cached_method=cached_method):
             print("❌ Failed to access")
             return self.analysis
         
@@ -659,8 +692,28 @@ def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recomm
         result = cache.get_analysis(domain)
         print(f"{domain}... ✓ Using cached analysis")
     else:
-        analyzer = DomainAnalyzer(domain)
-        result = analyzer.analyze()
+        # Get cached metadata for smart retries
+        cached_method = None
+        cached_attempt_count = 0
+        days_since_last_attempt = None
+        
+        if cache and cache.is_cached(domain):
+            cached_data = cache.get_analysis(domain)
+            cached_method = cached_data.get('method')
+            cached_attempt_count = cached_data.get('attempt_count', 0)
+            last_attempt_date = cached_data.get('last_attempt_date')
+            
+            # Calculate days since last attempt for hybrid retry logic
+            if last_attempt_date:
+                try:
+                    last_attempt = datetime.fromisoformat(last_attempt_date)
+                    days_since_last_attempt = (datetime.now() - last_attempt).days
+                except:
+                    pass  # Invalid date format
+        
+        analyzer = DomainAnalyzer(domain, cached_attempt_count=cached_attempt_count, 
+                                 days_since_last_attempt=days_since_last_attempt)
+        result = analyzer.analyze(cached_method=cached_method)
         
         if cache:
             cache.store_analysis(domain, result)  # Thread-safe
@@ -866,6 +919,21 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
     completed = 0
     total = len(domains)
     
+    def cleanup_worker_resources():
+        """Cleanup thread-local Playwright resources for this worker."""
+        if hasattr(_thread_local, 'browser'):
+            try:
+                _thread_local.browser.close()
+                delattr(_thread_local, 'browser')
+            except:
+                pass
+        if hasattr(_thread_local, 'playwright'):
+            try:
+                _thread_local.playwright.stop()
+                delattr(_thread_local, 'playwright')
+            except:
+                pass
+    
     # PASS 1: Analyze all domains to get base scores
     print("Pass 1/2: Analyzing base risk scores...")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -905,6 +973,19 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                     'error': str(e),
                     'risk_score': 0
                 })
+        
+        # Cleanup worker thread Playwright resources
+        print("\nCleaning up worker resources...")
+        cleanup_futures = []
+        for _ in range(max_workers):
+            cleanup_futures.append(executor.submit(cleanup_worker_resources))
+        
+        # Wait for cleanup (with timeout)
+        for future in cleanup_futures:
+            try:
+                future.result(timeout=5)
+            except:
+                pass
     
     # PASS 2: Recalculate scores with enabler bonuses
     print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
