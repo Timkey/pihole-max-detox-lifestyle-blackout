@@ -29,3 +29,11 @@ dist/
 build/
 *.pyc
 __pycache__/
+# Test Mode Data (isolated from production)
+research/data/test/
+research/cache/test/
+research/reports/test/
+research/docs/test/
+
+# Playwright Testing Lists (for development testing only)
+lists/playwright-test.txt

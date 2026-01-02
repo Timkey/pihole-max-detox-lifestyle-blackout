@@ -154,11 +154,25 @@ python3 add_domain_variations.py
 - Creates interactive HTML reports with charts and filtering
 - Mobile-responsive reports with collapsible sections
 - Failed analysis tracking with error categorization
+- **Test mode** - Separate test directories to avoid affecting production data
 
 Usage:
 ```bash
 cd scripts
-python3 analyze_domains.py
+python3 analyze_domains.py                    # Production mode (default)
+python3 analyze_domains.py --test             # Test mode (uses research/data/test/)
+python3 analyze_domains.py --test --category food --sample-size 10
+```
+
+**Options:**
+```bash
+--sample-size N, -n N     # Analyze N domains per category (default: 5)
+--all, -a                 # Analyze ALL domains
+--force, -f               # Force reanalysis, ignore cache
+--category CATEGORY, -c   # Only analyze specific category
+--parallel, -p            # Run parallel analysis
+--workers N, -w N         # Number of parallel workers (default: 5)
+--test, -t                # Test mode (separate data/cache/reports)
 ```
 
 Output: Generates analysis reports for each category with:
@@ -176,23 +190,70 @@ Output: Generates analysis reports for each category with:
 - Recalculates enabler scores without re-scraping websites
 - Uses existing related_domains data from JSON files
 - Updates scores in seconds vs 80-minute full reanalysis
+- **Test mode** - Work with test data without affecting production
 
 Usage:
 ```bash
 cd scripts
-python3 recalculate_enabler_scores.py
+python3 recalculate_enabler_scores.py        # Production mode
+python3 recalculate_enabler_scores.py --test # Test mode
 ```
 
 **`regenerate_reports.py`** - Regenerate HTML/Markdown reports
 - Regenerates all analysis reports from existing JSON data
 - Updates HTML reports with latest data without re-analyzing
 - Useful after score recalculation or data updates
+- **Test mode** - Generate reports from test data
 
 Usage:
 ```bash
 cd scripts
-python3 regenerate_reports.py
+python3 regenerate_reports.py                # Production mode
+python3 regenerate_reports.py --test         # Test mode
 ```
+
+### Test Mode
+
+All analysis scripts support `--test` mode for safe experimentation:
+
+**Directory Structure:**
+```
+research/
+├── data/
+│   ├── food_delivery_data.json           # Production
+│   ├── cosmetics_beauty_data.json
+│   ├── conglomerates_data.json
+│   └── test/
+│       ├── food_delivery_data.json       # Test
+│       ├── cosmetics_beauty_data.json
+│       └── conglomerates_data.json
+├── cache/
+│   ├── analysis_cache.json               # Production cache
+│   └── test/
+│       └── analysis_cache.json           # Test cache
+└── reports/
+    ├── food & delivery_analysis.html     # Production reports
+    └── test/
+        └── food & delivery_analysis.html # Test reports
+```
+
+**Use test mode when:**
+- Testing fixes for analysis failures (threading errors, timeouts)
+- Experimenting with Playwright settings
+- Iterating on content access strategies
+- Testing User-Agent rotation or timeout adjustments
+- You don't want to affect production cache/results
+
+**Example workflow:**
+```bash
+# Test a fix on a small sample
+./exec/analyze.sh --test --category food --sample-size 10
+
+# If successful, run on more domains
+./exec/analyze.sh --test --category food --sample-size 50
+
+# Once confident, apply to production
+./exec/analyze.sh --category food --all
 
 ---
 

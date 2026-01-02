@@ -131,6 +131,49 @@
             color: white;
             opacity: 0.8;
         }
+        .stats-explainer {
+            background: rgba(255,255,255,0.15);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        .stats-explainer h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .stats-explainer ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .stats-explainer li {
+            margin-bottom: 5px;
+        }
+        .category-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .category-stat-box {
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .category-stat-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .category-stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 0.9em;
+        }
+        .category-stat-row strong {
+            opacity: 0.9;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +185,17 @@
 
         <div class="stats">
             <h3>Project Statistics</h3>
+            <div class="stats-explainer">
+                <h4>📖 Understanding the Metrics</h4>
+                <ul>
+                    <li><strong>Analyzed Domains:</strong> Total domains investigated for behavioral hazards</li>
+                    <li><strong>Average Risk Score:</strong> Weighted average (0-100) based on hazard counts across accessible sites</li>
+                    <li><strong>Access Success Rate:</strong> Percentage of domains successfully analyzed (36% is typical for blocklisted sites)</li>
+                    <li><strong>High Risk Domains:</strong> Sites scoring ≥50 points, indicating severe manipulation tactics</li>
+                    <li><strong>DNS Verified:</strong> Domains confirmed to resolve via DNS lookup</li>
+                    <li><strong>Total Blocklisted:</strong> Combined entries across all category blocklists</li>
+                </ul>
+            </div>
             <div id="loading-stats" class="loading">Loading statistics...</div>
             <div class="stats-grid" id="stats-grid" style="display: none;">
                 <div class="stat-item">
@@ -167,6 +221,68 @@
                 <div class="stat-item">
                     <div class="stat-value" id="blocklistTotal">-</div>
                     <div class="stat-label">Total Blocklisted</div>
+                </div>
+            </div>
+            
+            <div class="category-stats" id="category-stats" style="display: none;">
+                <div class="category-stat-box">
+                    <h4>🍔 Food & Delivery</h4>
+                    <div class="category-stat-row">
+                        <span>Total Analyzed:</span>
+                        <strong id="food-analyzed">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Accessible:</span>
+                        <strong id="food-accessible">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Avg Risk Score:</span>
+                        <strong id="food-risk">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>High Risk:</span>
+                        <strong id="food-high-risk">-</strong>
+                    </div>
+                </div>
+                
+                <div class="category-stat-box">
+                    <h4>💄 Cosmetics & Beauty</h4>
+                    <div class="category-stat-row">
+                        <span>Total Analyzed:</span>
+                        <strong id="cosmetics-analyzed">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Accessible:</span>
+                        <strong id="cosmetics-accessible">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Avg Risk Score:</span>
+                        <strong id="cosmetics-risk">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>High Risk:</span>
+                        <strong id="cosmetics-high-risk">-</strong>
+                    </div>
+                </div>
+                
+                <div class="category-stat-box">
+                    <h4>🏢 Conglomerates</h4>
+                    <div class="category-stat-row">
+                        <span>Total Analyzed:</span>
+                        <strong id="conglomerates-analyzed">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Accessible:</span>
+                        <strong id="conglomerates-accessible">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>Avg Risk Score:</span>
+                        <strong id="conglomerates-risk">-</strong>
+                    </div>
+                    <div class="category-stat-row">
+                        <span>High Risk:</span>
+                        <strong id="conglomerates-high-risk">-</strong>
+                    </div>
                 </div>
             </div>
         </div>
@@ -215,29 +331,53 @@
     <script>
         // Embedded statistics data (generated from research/data/summary.json)
         const statsData = {
-  "total_domains": 1101,
-  "accessible_count": 180,
-  "avg_risk_score": 8.1,
-  "access_rate": 16.0,
-  "high_risk_count": 4,
+  "total_domains": 1260,
+  "accessible_count": 455,
+  "avg_risk_score": 11.7,
+  "access_rate": 36.0,
+  "high_risk_count": 18,
   "categories": {
-    "cosmetics_beauty": 96,
+    "cosmetics_beauty": 184,
     "conglomerates": 199,
-    "food_delivery": 806
+    "food_delivery": 877
   },
   "dns_verification": {
-    "verified_domains": 1895,
-    "unverified_domains": 866,
-    "total_dns_checked": 2761,
-    "last_dns_check": "2025-12-30T19:42:30.058223"
+    "verified_domains": 2100,
+    "unverified_domains": 1006,
+    "total_dns_checked": 3106,
+    "last_dns_check": "2025-12-31T21:50:09.686590"
   },
   "blocklists": {
-    "food": 1585,
-    "cosmetics": 187,
+    "food": 1724,
+    "cosmetics": 356,
     "conglomerates": 385,
-    "blackout-ultra": 2157
+    "blackout-ultra": 2465
   },
-  "generated_at": "2025-12-31T17:09:56.322261"
+  "generated_at": "2026-01-02T01:39:41.496460"
+};
+
+        const categoryData = {
+  "food_delivery": {
+    "total": 877,
+    "accessible": 326,
+    "access_rate": 37.0,
+    "avg_risk": 11.9,
+    "high_risk": 10
+  },
+  "cosmetics_beauty": {
+    "total": 184,
+    "accessible": 63,
+    "access_rate": 34.0,
+    "avg_risk": 15.0,
+    "high_risk": 8
+  },
+  "conglomerates": {
+    "total": 199,
+    "accessible": 66,
+    "access_rate": 33.0,
+    "avg_risk": 7.5,
+    "high_risk": 0
+  }
 };
 
         function loadStatistics() {
@@ -262,7 +402,7 @@
                 document.getElementById('blocklistTotal').textContent = '-';
             }
 
-            // Update category counts
+            // Update category counts in cards
             const catMap = {
                 'food_delivery': 'food-count',
                 'cosmetics_beauty': 'cosmetics-count',
@@ -275,9 +415,103 @@
                 if (elem) elem.textContent = count + ' Domains';
             }
 
+            // Load category statistics from embedded data
+            loadCategoryDetails();
+
             // Show stats
             document.getElementById('loading-stats').style.display = 'none';
             document.getElementById('stats-grid').style.display = 'grid';
+        }
+
+        function loadCategoryDetails() {
+            // Try to load from JSON files first (for network access)
+            // Fall back to embedded categoryData if fetch fails (for file:// protocol)
+            
+            // Food & Delivery
+            fetch('research/data/food_delivery_data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const accessible = data.filter(d => d.accessible);
+                    const avgRisk = accessible.length ? 
+                        (accessible.reduce((sum, d) => sum + (d.risk_score || 0), 0) / accessible.length).toFixed(1) : '0.0';
+                    const highRisk = accessible.filter(d => d.risk_score >= 50).length;
+                    
+                    document.getElementById('food-analyzed').textContent = data.length;
+                    document.getElementById('food-accessible').textContent = accessible.length + ` (${((accessible.length/data.length)*100).toFixed(0)}%)`;
+                    document.getElementById('food-risk').textContent = avgRisk;
+                    document.getElementById('food-high-risk').textContent = highRisk;
+                })
+                .catch(() => {
+                    // Fallback to embedded data
+                    if (typeof categoryData !== 'undefined' && categoryData.food_delivery) {
+                        const fd = categoryData.food_delivery;
+                        document.getElementById('food-analyzed').textContent = fd.total;
+                        document.getElementById('food-accessible').textContent = fd.accessible + ` (${fd.access_rate}%)`;
+                        document.getElementById('food-risk').textContent = fd.avg_risk;
+                        document.getElementById('food-high-risk').textContent = fd.high_risk;
+                    } else {
+                        document.getElementById('food-analyzed').textContent = statsData.categories.food_delivery || '-';
+                    }
+                });
+
+            // Cosmetics & Beauty
+            fetch('research/data/cosmetics_beauty_data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const accessible = data.filter(d => d.accessible);
+                    const avgRisk = accessible.length ? 
+                        (accessible.reduce((sum, d) => sum + (d.risk_score || 0), 0) / accessible.length).toFixed(1) : '0.0';
+                    const highRisk = accessible.filter(d => d.risk_score >= 50).length;
+                    
+                    document.getElementById('cosmetics-analyzed').textContent = data.length;
+                    document.getElementById('cosmetics-accessible').textContent = accessible.length + ` (${((accessible.length/data.length)*100).toFixed(0)}%)`;
+                    document.getElementById('cosmetics-risk').textContent = avgRisk;
+                    document.getElementById('cosmetics-high-risk').textContent = highRisk;
+                })
+                .catch(() => {
+                    // Fallback to embedded data
+                    if (typeof categoryData !== 'undefined' && categoryData.cosmetics_beauty) {
+                        const cb = categoryData.cosmetics_beauty;
+                        document.getElementById('cosmetics-analyzed').textContent = cb.total;
+                        document.getElementById('cosmetics-accessible').textContent = cb.accessible + ` (${cb.access_rate}%)`;
+                        document.getElementById('cosmetics-risk').textContent = cb.avg_risk;
+                        document.getElementById('cosmetics-high-risk').textContent = cb.high_risk;
+                    } else {
+                        document.getElementById('cosmetics-analyzed').textContent = statsData.categories.cosmetics_beauty || '-';
+                    }
+                });
+
+            // Conglomerates
+            fetch('research/data/conglomerates_data.json')
+                .then(res => res.json())
+                .then(data => {
+                    const accessible = data.filter(d => d.accessible);
+                    const avgRisk = accessible.length ? 
+                        (accessible.reduce((sum, d) => sum + (d.risk_score || 0), 0) / accessible.length).toFixed(1) : '0.0';
+                    const highRisk = accessible.filter(d => d.risk_score >= 50).length;
+                    
+                    document.getElementById('conglomerates-analyzed').textContent = data.length;
+                    document.getElementById('conglomerates-accessible').textContent = accessible.length + ` (${((accessible.length/data.length)*100).toFixed(0)}%)`;
+                    document.getElementById('conglomerates-risk').textContent = avgRisk;
+                    document.getElementById('conglomerates-high-risk').textContent = highRisk;
+                    
+                    // Show category stats once data is loaded
+                    document.getElementById('category-stats').style.display = 'grid';
+                })
+                .catch(() => {
+                    // Fallback to embedded data
+                    if (typeof categoryData !== 'undefined' && categoryData.conglomerates) {
+                        const cg = categoryData.conglomerates;
+                        document.getElementById('conglomerates-analyzed').textContent = cg.total;
+                        document.getElementById('conglomerates-accessible').textContent = cg.accessible + ` (${cg.access_rate}%)`;
+                        document.getElementById('conglomerates-risk').textContent = cg.avg_risk;
+                        document.getElementById('conglomerates-high-risk').textContent = cg.high_risk;
+                    } else {
+                        document.getElementById('conglomerates-analyzed').textContent = statsData.categories.conglomerates || '-';
+                    }
+                    // Show category stats even with fallback
+                    document.getElementById('category-stats').style.display = 'grid';
+                });
         }
 
         // Load on page ready

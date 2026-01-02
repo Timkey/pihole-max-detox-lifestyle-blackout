@@ -4,6 +4,7 @@ Regenerate HTML and Markdown reports from existing JSON data.
 Use this after updating scores without re-scraping.
 """
 import json
+import argparse
 from pathlib import Path
 import sys
 
@@ -11,7 +12,14 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from analyze_domains import generate_html_report, generate_markdown_report
 
-DATA_DIR = Path('research/data')
+# Paths
+RESEARCH_DIR = Path(__file__).parent.parent / 'research'
+DATA_DIR = RESEARCH_DIR / 'data'
+TEST_DATA_DIR = DATA_DIR / 'test'
+REPORTS_DIR = RESEARCH_DIR / 'reports'
+TEST_REPORTS_DIR = REPORTS_DIR / 'test'
+DOCS_DIR = RESEARCH_DIR / 'docs'
+TEST_DOCS_DIR = DOCS_DIR / 'test'
 
 def regenerate_reports():
     """Regenerate all reports from JSON data."""
@@ -51,4 +59,31 @@ def regenerate_reports():
     print("="*70 + "\n")
 
 if __name__ == '__main__':
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(
+        description='Regenerate HTML and Markdown reports from existing JSON data'
+    )
+    parser.add_argument(
+        '--test', '-t',
+        action='store_true',
+        help='Test mode: use separate test directories for data/reports (doesn\'t affect production)'
+    )
+    
+    args = parser.parse_args()
+    
+    # Set directories based on test mode
+    if args.test:
+        TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_DOCS_DIR.mkdir(parents=True, exist_ok=True)
+        print(f"🧪 TEST MODE ENABLED")
+        print(f"   Data: {TEST_DATA_DIR}")
+        print(f"   Reports: {TEST_REPORTS_DIR}\n")
+        
+        # Update the analyze_domains module to use test directories
+        import analyze_domains
+        analyze_domains.DATA_DIR = TEST_DATA_DIR
+        analyze_domains.REPORTS_DIR = TEST_REPORTS_DIR
+        analyze_domains.DOCS_DIR = TEST_DOCS_DIR
+    
     regenerate_reports()

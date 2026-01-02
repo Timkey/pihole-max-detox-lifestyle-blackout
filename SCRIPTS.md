@@ -17,11 +17,34 @@ Convenient wrapper scripts that run Python code inside Docker with external DNS.
 ./check-variations.sh         # Check for TLD variations
 ./add-variations.sh           # Add verified variations
 ./apply-recommendations.sh    # Apply cached recommendations
-./recalculate-enablers.sh     # Recalculate enabler scores
+./recalculate-scores.sh       # Recalculate enabler scores
 ./regenerate-reports.sh       # Regenerate HTML/Markdown reports
 ./generate-ultra.sh           # Regenerate master blocklist
 ./shell.sh                    # Enter container shell
 ```
+
+### Test Mode
+
+All analysis and scoring scripts support `--test` mode to separate test/experimentation data from production:
+
+```bash
+# Test mode (uses research/data/test/, research/cache/test/)
+./analyze.sh --test --category food --sample-size 10
+./recalculate-scores.sh --test
+./regenerate-reports.sh --test
+
+# Production mode (default - uses research/data/, research/cache/)
+./analyze.sh --category food --sample-size 10
+./recalculate-scores.sh
+./regenerate-reports.sh
+```
+
+**Use test mode when:**
+- Testing fixes for analysis failures
+- Experimenting with different Playwright settings
+- Iterating on content access strategies
+- Testing timeout adjustments or User-Agent rotation
+- You don't want to affect production cache/results
 
 ### Full Workflow (Interactive)
 ```bash
@@ -81,8 +104,22 @@ Adds verified TLD variations to category lists
 ```bash
 docker exec -it pihole-blocklist-analyzer python3 scripts/analyze_domains.py
 # Or:
-./analyze.sh
+./analyze.sh                      # Production mode
+./analyze.sh --test               # Test mode (separate data)
 ```
+
+**Options:**
+```bash
+--sample-size N, -n N     # Analyze N domains per category (default: 5)
+--all, -a                 # Analyze ALL domains
+--force, -f               # Force reanalysis, ignore cache
+--category CATEGORY, -c   # Only analyze specific category (food/cosmetics/conglomerates)
+--no-cache                # Disable cache (same as --force)
+--parallel, -p            # Run parallel analysis (faster)
+--workers N, -w N         # Number of parallel workers (default: 5)
+--test, -t                # Test mode: use research/data/test/ (doesn't affect production)
+```
+
 Analyzes websites for:
 - Health hazards (ultra-processed foods, sugar, additives)
 - Behavioral manipulation tactics (urgency, FOMO, discounts)
@@ -102,8 +139,15 @@ Generates:
 ```bash
 docker exec -it pihole-blocklist-analyzer python3 scripts/recalculate_enabler_scores.py
 # Or:
-./recalculate-enablers.sh
+./recalculate-scores.sh           # Production mode
+./recalculate-scores.sh --test    # Test mode
 ```
+
+**Options:**
+```bash
+--test, -t    # Test mode: use research/data/test/ (doesn't affect production)
+```
+
 Fast recalculation of enabler scores without re-scraping:
 - Uses existing related_domains data
 - Bi-directional relationship detection
@@ -113,8 +157,15 @@ Fast recalculation of enabler scores without re-scraping:
 ```bash
 docker exec -it pihole-blocklist-analyzer python3 scripts/regenerate_reports.py
 # Or:
-./regenerate-reports.sh
+./regenerate-reports.sh           # Production mode
+./regenerate-reports.sh --test    # Test mode
 ```
+
+**Options:**
+```bash
+--test, -t    # Test mode: use research/data/test/ and research/reports/test/
+```
+
 Regenerates HTML and Markdown reports from existing JSON data:
 - Updates all category reports
 - Dynamic JSON loading with fallback

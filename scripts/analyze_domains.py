@@ -18,6 +18,7 @@ import random
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
+import threading
 
 # Configuration
 LISTS_DIR = Path(__file__).parent.parent / 'lists'
@@ -28,6 +29,13 @@ CACHE_DIR = RESEARCH_DIR / 'cache'
 DOCS_DIR = RESEARCH_DIR / 'docs'
 ANALYSIS_CACHE_FILE = 'analysis_cache.json'
 RECOMMENDATIONS_FILE = 'recommendations.json'
+
+# Test mode directories (separate from production)
+TEST_DATA_DIR = DATA_DIR / 'test'
+TEST_CACHE_DIR = CACHE_DIR / 'test'
+TEST_REPORTS_DIR = REPORTS_DIR / 'test'
+TEST_MODE = False  # Global flag set by command line args
+
 TIMEOUT = 10
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 USE_PLAYWRIGHT = True  # Enable Playwright fallback for JS-heavy sites
@@ -41,9 +49,18 @@ USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15',
 ]
 
-# Global Playwright instance (reused across requests for performance)
-PLAYWRIGHT_INSTANCE = None
-BROWSER_INSTANCE = None
+# Thread-local storage for Playwright instances (each thread gets its own)
+_thread_local = threading.local()
+
+def get_playwright_instances():
+    """Get or create thread-local Playwright instances."""
+    if not hasattr(_thread_local, 'playwright'):
+        _thread_local.playwright = sync_playwright().start()
+        _thread_local.browser = _thread_local.playwright.chromium.launch(
+            headless=True,
+            args=['--no-sandbox', '--disable-dev-shm-usage']
+        )
+    return _thread_local.playwright, _thread_local.browser
 
 # Hazard keyword categories
 HEALTH_HAZARDS = {
@@ -78,6 +95,8 @@ class AnalysisCache:
         self.cache_file = Path(cache_file)
         self.cache = self._load_cache()
         self._lock = Lock()  # Thread safety for concurrent writes
+        self._save_counter = 0  # Track domains since last save
+        self._save_interval = 10  # Save every N domains
     
     def _load_cache(self):
         """Load cache from file."""
@@ -91,12 +110,23 @@ class AnalysisCache:
                 print("⚠️  Cache file corrupted, starting fresh")
         return {'analyses': {}, 'last_updated': None}
     
-    def save_cache(self):
-        """Save cache to file (thread-safe)."""
+    def save_cache(self, force=False):
+        """Save cache to file (thread-safe).
+        
+        Args:
+            force: If True, always save. If False, only save after interval.
+        """
         with self._lock:
-            self.cache['last_updated'] = datetime.now().isoformat()
-            with open(self.cache_file, 'w') as f:
-                json.dump(self.cache, f, indent=2)
+            self._save_counter += 1
+            
+            # Save every N domains or if forced
+            if force or self._save_counter >= self._save_interval:
+                self.cache['last_updated'] = datetime.now().isoformat()
+                with open(self.cache_file, 'w') as f:
+                    json.dump(self.cache, f, indent=2)
+                self._save_counter = 0
+                return True
+            return False
     
     def get_analysis(self, domain):
         """Get cached analysis for domain."""
@@ -116,9 +146,16 @@ class AnalysisCache:
         return age.days < max_age_days
     
     def store_analysis(self, domain, analysis):
-        """Store analysis result (thread-safe)."""
+        """Store analysis result and trigger incremental save (thread-safe).
+        
+        Returns:
+            bool: True if cache was saved to disk, False otherwise
+        """
         with self._lock:
             self.cache['analyses'][domain] = analysis
+        
+        # Trigger incremental save (happens outside lock)
+        return self.save_cache(force=False)
 
 
 class RecommendationEngine:
@@ -217,11 +254,14 @@ class RecommendationEngine:
 class DomainAnalyzer:
     """Analyzes domain content for health and behavioral hazards."""
     
-    def __init__(self, domain):
+    def __init__(self, domain, cached_attempt_count=0, days_since_last_attempt=None):
         self.domain = domain
         self.url = f"https://{domain}" if not domain.startswith('http') else domain
         self.content = None
         self.soup = None
+        self.cached_attempt_count = cached_attempt_count
+        self.days_since_last_attempt = days_since_last_attempt
+        self.method_used = None  # Track which method succeeded
         self.analysis = {
             'domain': domain,
             'analyzed_at': datetime.now().isoformat(),
@@ -234,17 +274,41 @@ class DomainAnalyzer:
             'risk_score': 0,
             'enabler_risk_bonus': 0,
             'high_risk_links': [],
-            'justification': []
+            'justification': [],
+            'attempt_count': cached_attempt_count + 1,
+            'last_attempt_date': datetime.now().isoformat()
         }
     
-    def fetch_content(self):
-        """Fetch website content with hybrid approach: requests first, Playwright fallback."""
+    def fetch_content(self, cached_method=None):
+        """Fetch website content with hybrid approach: requests first, Playwright fallback.
+        
+        Args:
+            cached_method: Method used in previous attempt ('playwright', 'requests', or None)
+        """
         # Add random delay to avoid rate limiting
         time.sleep(random.uniform(1, 2))
+        
+        # Hybrid retry strategy: Try requests first if EITHER condition met:
+        # 1. Every 3 attempts (counter-based)
+        # 2. 10+ days since last attempt (time-based)
+        # Whichever triggers first gives domain a fresh chance
+        
+        should_try_requests_first = (
+            cached_method != 'playwright' or  # Never needed Playwright before
+            self.cached_attempt_count % 3 == 0 or  # Every 3rd attempt
+            (self.days_since_last_attempt is not None and self.days_since_last_attempt >= 10)  # 10+ days
+        )
+        
+        if not should_try_requests_first and USE_PLAYWRIGHT:
+            attempt_reason = "10+ days" if (self.days_since_last_attempt and self.days_since_last_attempt >= 10) else f"attempt #{self.cached_attempt_count + 1}"
+            print(f"  → Using Playwright ({attempt_reason}, skipping requests)...", end=' ')
+            return self._fetch_with_playwright()
         
         # Try fast method first (requests)
         success = self._fetch_with_requests()
         if success:
+            self.analysis['method'] = 'requests'
+            self.method_used = 'requests'
             return True
         
         # If requests failed or returned insufficient content, try Playwright
@@ -297,21 +361,17 @@ class DomainAnalyzer:
     
     def _fetch_with_playwright(self):
         """Fallback fetch using Playwright for JavaScript-heavy sites."""
-        global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
-        
+        context = None
         try:
-            # Initialize Playwright and Browser if needed (reuse for performance)
-            if PLAYWRIGHT_INSTANCE is None:
-                PLAYWRIGHT_INSTANCE = sync_playwright().start()
-                BROWSER_INSTANCE = PLAYWRIGHT_INSTANCE.chromium.launch(
-                    headless=True,
-                    args=['--no-sandbox', '--disable-dev-shm-usage']
-                )
+            # Get thread-local Playwright and Browser instances
+            playwright, browser = get_playwright_instances()
             
-            # Create new page
-            context = BROWSER_INSTANCE.new_context(
+            # Create new page with extra stealth settings
+            context = browser.new_context(
                 user_agent=random.choice(USER_AGENTS),
                 viewport={'width': 1920, 'height': 1080},
+                ignore_https_errors=True,  # Ignore SSL certificate errors
+                java_script_enabled=True,
             )
             page = context.new_page()
             
@@ -319,20 +379,45 @@ class DomainAnalyzer:
             page.route('**/*.{png,jpg,jpeg,gif,svg,webp,woff,woff2,ttf,mp4,webm,mp3}', 
                       lambda route: route.abort())
             
-            # Navigate and wait for content to load (increased timeout)
+            # Navigate and wait for content to load with multiple strategies
             try:
-                page.goto(self.url, wait_until='domcontentloaded', timeout=20000)
-                # Wait a bit for dynamic content (shorter wait)
-                page.wait_for_timeout(3000)
+                # First attempt: domcontentloaded (fast)
+                response = page.goto(self.url, wait_until='domcontentloaded', timeout=15000)
+                
+                # If we got a redirect or no content, wait for network to settle
+                if response and (response.status >= 300 or not page.content()):
+                    page.wait_for_load_state('networkidle', timeout=10000)
+                else:
+                    # Just wait a bit for any dynamic content
+                    page.wait_for_timeout(2000)
+                    
             except PlaywrightTimeout:
-                # If networkidle times out, try with just domcontentloaded
+                # Timeout is ok - try to get whatever content is there
+                pass
+            except Exception as nav_error:
+                # Handle navigation errors (redirects, cert errors, etc.)
+                if "ERR_CERT" in str(nav_error) or "ERR_CONNECTION" in str(nav_error):
+                    self.analysis['error'] = f'Playwright error: {str(nav_error)[:100]}'
+                    return False
+                # For other errors, try to continue
                 pass
             
-            # Extract HTML
-            html = page.content()
+            # Try to get content multiple times if navigating
+            html = None
+            for attempt in range(3):
+                try:
+                    html = page.content()
+                    if html and len(html) > 100:
+                        break
+                    page.wait_for_timeout(1000)
+                except Exception:
+                    if attempt == 2:
+                        raise
             
-            # Cleanup
-            context.close()
+            if not html or len(html) < 100:
+                self.analysis['error'] = 'Playwright: No content retrieved'
+                self.analysis['accessible'] = False
+                return False
             
             # Parse with BeautifulSoup
             self.content = html
@@ -350,14 +435,26 @@ class DomainAnalyzer:
             
             self.analysis['accessible'] = True
             self.analysis['method'] = 'playwright'
+            self.method_used = 'playwright'
             return True
             
         except PlaywrightTimeout:
             self.analysis['error'] = 'Playwright timeout (15s)'
             return False
         except Exception as e:
-            self.analysis['error'] = f'Playwright error: {str(e)}'
+            error_msg = str(e)
+            # Shorten very long error messages
+            if len(error_msg) > 200:
+                error_msg = error_msg[:200] + '...'
+            self.analysis['error'] = f'Playwright error: {error_msg}'
             return False
+        finally:
+            # ALWAYS cleanup context, even on exceptions
+            if context:
+                try:
+                    context.close()
+                except:
+                    pass
     
     def analyze_text_content(self):
         """Extract and analyze text content."""
@@ -568,15 +665,16 @@ class DomainAnalyzer:
         
         self.analysis['justification'] = reasons
     
-    def analyze(self, all_domain_scores=None):
+    def analyze(self, all_domain_scores=None, cached_method=None):
         """Run complete analysis.
         
         Args:
             all_domain_scores: Dict of {domain: risk_score} for enabler detection
+            cached_method: Method used in previous attempt (for smart retry)
         """
         print(f"Analyzing {self.domain}...", end=' ')
         
-        if not self.fetch_content():
+        if not self.fetch_content(cached_method=cached_method):
             print("❌ Failed to access")
             return self.analysis
         
@@ -614,8 +712,28 @@ def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recomm
         result = cache.get_analysis(domain)
         print(f"{domain}... ✓ Using cached analysis")
     else:
-        analyzer = DomainAnalyzer(domain)
-        result = analyzer.analyze()
+        # Get cached metadata for smart retries
+        cached_method = None
+        cached_attempt_count = 0
+        days_since_last_attempt = None
+        
+        if cache and cache.is_cached(domain):
+            cached_data = cache.get_analysis(domain)
+            cached_method = cached_data.get('method')
+            cached_attempt_count = cached_data.get('attempt_count', 0)
+            last_attempt_date = cached_data.get('last_attempt_date')
+            
+            # Calculate days since last attempt for hybrid retry logic
+            if last_attempt_date:
+                try:
+                    last_attempt = datetime.fromisoformat(last_attempt_date)
+                    days_since_last_attempt = (datetime.now() - last_attempt).days
+                except:
+                    pass  # Invalid date format
+        
+        analyzer = DomainAnalyzer(domain, cached_attempt_count=cached_attempt_count, 
+                                 days_since_last_attempt=days_since_last_attempt)
+        result = analyzer.analyze(cached_method=cached_method)
         
         if cache:
             cache.store_analysis(domain, result)  # Thread-safe
@@ -643,6 +761,74 @@ def analyze_domain_worker(domain, cache, force_reanalysis, category_name, recomm
                 )
     
     return result
+
+
+def prioritize_domains(domains, cache, force_reanalysis):
+    """Sort domains by analysis characteristics for optimal parallel throughput.
+    
+    Priority order (fastest to slowest):
+    1. Cached requests successes (fast, no Playwright needed)
+    2. Cached Playwright successes (slower but reliable)
+    3. New domains (unknown, will try requests first)
+    4. Failed with reset trigger ready (worth retrying with requests)
+    5. Failed without reset (will skip requests, likely to timeout)
+    
+    This minimizes queue blocking by processing fast domains first.
+    """
+    if force_reanalysis:
+        # When forcing reanalysis, still use cache metadata for sorting
+        pass
+    
+    categorized = {
+        'requests_success': [],
+        'playwright_success': [],
+        'new_domains': [],
+        'reset_ready': [],
+        'reset_not_ready': []
+    }
+    
+    for domain in domains:
+        if not cache.is_cached(domain):
+            categorized['new_domains'].append(domain)
+            continue
+        
+        cached = cache.get_analysis(domain)
+        method = cached.get('method')
+        accessible = cached.get('accessible', False)
+        attempt_count = cached.get('attempt_count', 0)
+        last_attempt_date = cached.get('last_attempt_date')
+        
+        # Calculate if reset trigger is ready (every 3 attempts OR 10+ days)
+        days_since = None
+        if last_attempt_date:
+            try:
+                from datetime import datetime
+                last_attempt = datetime.fromisoformat(last_attempt_date)
+                days_since = (datetime.now() - last_attempt).days
+            except:
+                pass
+        
+        reset_ready = (attempt_count % 3 == 0) or (days_since and days_since >= 10)
+        
+        if accessible and method == 'requests':
+            categorized['requests_success'].append(domain)
+        elif accessible and method == 'playwright':
+            categorized['playwright_success'].append(domain)
+        elif not accessible and reset_ready:
+            categorized['reset_ready'].append(domain)
+        else:
+            categorized['reset_not_ready'].append(domain)
+    
+    # Combine in priority order
+    prioritized = (
+        categorized['requests_success'] +
+        categorized['playwright_success'] +
+        categorized['new_domains'] +
+        categorized['reset_ready'] +
+        categorized['reset_not_ready']
+    )
+    
+    return prioritized
 
 
 def analyze_category(category_name, category_file, sample_size=5, cache=None, recommendations=None, existing_domains=None, force_reanalysis=False, parallel=False, max_workers=5):
@@ -678,6 +864,12 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
     else:
         print(f"Analyzing up to {sample_size} domains...\n")
     
+    # Smart domain prioritization for optimal throughput
+    # Sort domains by analysis characteristics to minimize blocking
+    if parallel and cache:
+        domains = prioritize_domains(domains, cache, force_reanalysis)
+        print("✓ Domains prioritized for optimal parallel processing")
+    
     # Limit to sample size
     domains_to_analyze = domains[:sample_size]
     
@@ -706,12 +898,12 @@ def analyze_category(category_name, category_file, sample_size=5, cache=None, re
 
 
 def analyze_sequential(domains, cache, force_reanalysis, category_name, recommendations, existing_domains):
-    """Sequential domain analysis with two-pass enabler scoring."""
+    """Sequential domain analysis with two-pass enabler scoring and incremental reports."""
     results = []
     
     # Pass 1: Get base scores
     print("Pass 1/2: Analyzing base risk scores...")
-    for domain in domains:
+    for i, domain in enumerate(domains, 1):
         result = analyze_domain_worker(
             domain,
             cache,
@@ -721,6 +913,11 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
             existing_domains
         )
         results.append(result)
+        
+        # Generate incremental report every 10 domains or at end
+        if i % 10 == 0 or i == len(domains):
+            print(f"  💾 Checkpoint: {i}/{len(domains)} domains - generating incremental report...")
+            generate_incremental_report(category_name, results, category_domains=domains)
     
     # Pass 2: Add enabler bonuses
     print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
@@ -778,11 +975,26 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
         
         # Apply bonus if any enabler relationship exists
         if enabler_bonus > 0:
-            old_score = result['risk_score']
+            # Recalculate base score from hazard counts (don't trust stored risk_score)
+            # This prevents accumulation if old enabler bonus was included
+            base_score = 0
+            
+            # Health hazards (30 points max)
+            health_count = sum(result.get('health_hazards', {}).values())
+            base_score += min(health_count * 3, 30)
+            
+            # Behavioral hazards (40 points max)
+            behavior_count = sum(result.get('behavioral_hazards', {}).values())
+            base_score += min(behavior_count * 4, 40)
+            
+            # Marketing tactics (30 points max)
+            marketing_count = sum(result.get('marketing_tactics', {}).values())
+            base_score += min(marketing_count * 3, 30)
+            
             result['enabler_risk_bonus'] = enabler_bonus
             result['high_risk_links'] = high_risk_links
             result['facilitated_domains'] = facilitated_domains
-            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            result['risk_score'] = min(base_score + enabler_bonus, 100)
             
             # Update justification
             if 'justification' not in result:
@@ -805,7 +1017,7 @@ def analyze_sequential(domains, cache, force_reanalysis, category_name, recommen
                 cache.store_analysis(result['domain'], result)
             
             enabler_updates += 1
-            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+            print(f"  {result['domain']}: {base_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
     
     if enabler_updates > 0:
         print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
@@ -820,6 +1032,21 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
     results = []
     completed = 0
     total = len(domains)
+    
+    def cleanup_worker_resources():
+        """Cleanup thread-local Playwright resources for this worker."""
+        if hasattr(_thread_local, 'browser'):
+            try:
+                _thread_local.browser.close()
+                delattr(_thread_local, 'browser')
+            except:
+                pass
+        if hasattr(_thread_local, 'playwright'):
+            try:
+                _thread_local.playwright.stop()
+                delattr(_thread_local, 'playwright')
+            except:
+                pass
     
     # PASS 1: Analyze all domains to get base scores
     print("Pass 1/2: Analyzing base risk scores...")
@@ -849,6 +1076,9 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                 # Progress indicator
                 if completed % 10 == 0 or completed == total:
                     print(f"Progress: {completed}/{total} domains analyzed ({completed/total*100:.1f}%)")
+                    # Generate incremental report at checkpoints
+                    print(f"  💾 Checkpoint: Generating incremental report...")
+                    generate_incremental_report(category_name, results, category_domains=domains)
                     
             except Exception as e:
                 print(f"❌ Error analyzing {domain}: {e}")
@@ -860,6 +1090,19 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                     'error': str(e),
                     'risk_score': 0
                 })
+        
+        # Cleanup worker thread Playwright resources
+        print("\nCleaning up worker resources...")
+        cleanup_futures = []
+        for _ in range(max_workers):
+            cleanup_futures.append(executor.submit(cleanup_worker_resources))
+        
+        # Wait for cleanup (with timeout)
+        for future in cleanup_futures:
+            try:
+                future.result(timeout=5)
+            except:
+                pass
     
     # PASS 2: Recalculate scores with enabler bonuses
     print("\nPass 2/2: Calculating enabler/facilitator bonuses...")
@@ -917,11 +1160,26 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
         
         # Apply bonus if any enabler relationship exists
         if enabler_bonus > 0:
-            old_score = result['risk_score']
+            # Recalculate base score from hazard counts (don't trust stored risk_score)
+            # This prevents accumulation if old enabler bonus was included
+            base_score = 0
+            
+            # Health hazards (30 points max)
+            health_count = sum(result.get('health_hazards', {}).values())
+            base_score += min(health_count * 3, 30)
+            
+            # Behavioral hazards (40 points max)
+            behavior_count = sum(result.get('behavioral_hazards', {}).values())
+            base_score += min(behavior_count * 4, 40)
+            
+            # Marketing tactics (30 points max)
+            marketing_count = sum(result.get('marketing_tactics', {}).values())
+            base_score += min(marketing_count * 3, 30)
+            
             result['enabler_risk_bonus'] = enabler_bonus
             result['high_risk_links'] = high_risk_links
             result['facilitated_domains'] = facilitated_domains
-            result['risk_score'] = min(old_score + enabler_bonus, 100)
+            result['risk_score'] = min(base_score + enabler_bonus, 100)
             
             # Update justification
             if 'justification' not in result:
@@ -945,7 +1203,7 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
                 cache.store_analysis(result['domain'], result)
             
             enabler_updates += 1
-            print(f"  {result['domain']}: {old_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
+            print(f"  {result['domain']}: {base_score} → {result['risk_score']} (+{enabler_bonus} enabler)")
     
     if enabler_updates > 0:
         print(f"✓ Updated {enabler_updates} domains with enabler risk bonuses\n")
@@ -953,6 +1211,70 @@ def analyze_parallel(domains, cache, force_reanalysis, category_name, recommenda
         print(f"✓ No enabler relationships detected\n")
     
     return results
+
+
+def generate_incremental_report(category_name, partial_results, category_domains=None):
+    """Generate reports with partial results merged with cached data FOR THIS CATEGORY ONLY.
+    
+    This allows viewing progress during long analyses. New results overwrite
+    cached ones, while domains not yet analyzed keep their cached data.
+    
+    Args:
+        category_name: Name of the category
+        partial_results: Results from current analysis run
+        category_domains: List of domains that belong to this category (for filtering)
+    """
+    # Load existing cache to get full dataset
+    cache_file = CACHE_DIR / 'analysis_cache.json'
+    full_results = []
+    
+    if cache_file.exists():
+        try:
+            with open(cache_file, 'r') as f:
+                cache_data = json.load(f)
+                cached_analyses = cache_data.get('analyses', {})
+                
+                # Create a map of new results by domain
+                new_results_map = {r['domain']: r for r in partial_results}
+                
+                # Get category domain set for filtering
+                if category_domains is None:
+                    # Fallback: just use partial results domains
+                    category_domain_set = set(r['domain'] for r in partial_results)
+                else:
+                    category_domain_set = set(category_domains)
+                
+                # Merge: ONLY include domains from this category
+                for domain, cached_result in cached_analyses.items():
+                    # Skip if not in this category
+                    if domain not in category_domain_set:
+                        continue
+                        
+                    if domain in new_results_map:
+                        # Use fresh result
+                        full_results.append(new_results_map[domain])
+                    else:
+                        # Keep cached result for domains not yet reanalyzed
+                        full_results.append(cached_result)
+                
+                # Add any new domains that weren't in cache (but are in category)
+                for result in partial_results:
+                    if result['domain'] not in cached_analyses:
+                        full_results.append(result)
+                        
+        except Exception as e:
+            # If cache load fails, just use partial results
+            full_results = partial_results
+    else:
+        full_results = partial_results
+    
+    # Generate reports with merged data
+    # Use try-except to not interrupt analysis if report generation fails
+    try:
+        generate_markdown_report(category_name, full_results)
+        generate_html_report(category_name, full_results)
+    except Exception as e:
+        print(f"  ⚠️  Report generation warning: {e}")
 
 
 def generate_html_report(category_name, results):
@@ -2217,13 +2539,44 @@ Examples:
         help='Enable parallel processing for faster analysis'
     )
     parser.add_argument(
+        '--parallel-categories',
+        action='store_true',
+        help='Run all categories in parallel (experimental - high memory usage)'
+    )
+    parser.add_argument(
         '--workers', '-w',
         type=int,
         default=5,
         help='Number of concurrent workers for parallel mode (default: 5)'
     )
+    parser.add_argument(
+        '--test', '-t',
+        action='store_true',
+        help='Test mode: use separate test directories for data/cache/reports (doesn\'t affect production)'
+    )
     
     args = parser.parse_args()
+    
+    # Set global test mode flag
+    global TEST_MODE, DATA_DIR, CACHE_DIR, REPORTS_DIR, DOCS_DIR
+    if args.test:
+        TEST_MODE = True
+        # Switch to test directories
+        DATA_DIR = TEST_DATA_DIR
+        CACHE_DIR = TEST_CACHE_DIR
+        REPORTS_DIR = TEST_REPORTS_DIR
+        DOCS_DIR = RESEARCH_DIR / 'docs' / 'test'
+        
+        # Create test directories if they don't exist
+        TEST_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        TEST_REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+        (RESEARCH_DIR / 'docs' / 'test').mkdir(parents=True, exist_ok=True)
+        
+        print(f"🧪 TEST MODE ENABLED")
+        print(f"   Data: {DATA_DIR}")
+        print(f"   Cache: {CACHE_DIR}")
+        print(f"   Reports: {REPORTS_DIR}\n")
     
     # Determine sample size
     sample_size = -1 if args.all else args.sample_size
@@ -2272,31 +2625,77 @@ Examples:
     else:
         categories = all_categories
     
-    for category_name, category_file, _ in categories:
-        results = analyze_category(
-            category_name, 
-            category_file, 
-            sample_size=sample_size,
-            cache=cache,
-            recommendations=recommendations,
-            existing_domains=all_existing_domains,
-            force_reanalysis=force_reanalysis,
-            parallel=parallel,
-            max_workers=max_workers
-        )
-        generate_markdown_report(category_name, results)
-        generate_html_report(category_name, results)
+    # Process categories
+    if args.parallel_categories and len(categories) > 1:
+        # Parallel category processing (experimental)
+        # Reduce per-category workers to avoid Playwright resource exhaustion
+        adjusted_workers = max(2, max_workers // len(categories))
+        print(f"⚡ PARALLEL CATEGORIES MODE: {len(categories)} categories × {adjusted_workers} workers each")
+        print(f"⚠️  High memory usage - monitoring recommended\n")
         
-        # Save JSON for programmatic access
-        json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
-        with open(json_path, 'w') as f:
-            json.dump(results, f, indent=2)
-        
-        print(f"✓ Data saved to: {json_path}")
+        all_results = {}
+        with ThreadPoolExecutor(max_workers=len(categories)) as executor:
+            future_to_category = {
+                executor.submit(
+                    analyze_category,
+                    category_name,
+                    category_file,
+                    sample_size=sample_size,
+                    cache=cache,
+                    recommendations=recommendations,
+                    existing_domains=all_existing_domains,
+                    force_reanalysis=force_reanalysis,
+                    parallel=parallel,
+                    max_workers=adjusted_workers
+                ): (category_name, category_file)
+                for category_name, category_file, _ in categories
+            }
+            
+            for future in as_completed(future_to_category):
+                category_name, category_file = future_to_category[future]
+                try:
+                    results = future.result()
+                    all_results[category_name] = results
+                    
+                    # Generate reports immediately
+                    generate_markdown_report(category_name, results)
+                    generate_html_report(category_name, results)
+                    
+                    # Save JSON
+                    json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
+                    with open(json_path, 'w') as f:
+                        json.dump(results, f, indent=2)
+                    print(f"✓ {category_name} complete - Data saved to: {json_path}")
+                    
+                except Exception as e:
+                    print(f"❌ Error processing {category_name}: {e}")
+    else:
+        # Sequential category processing (default)
+        for category_name, category_file, _ in categories:
+            results = analyze_category(
+                category_name, 
+                category_file, 
+                sample_size=sample_size,
+                cache=cache,
+                recommendations=recommendations,
+                existing_domains=all_existing_domains,
+                force_reanalysis=force_reanalysis,
+                parallel=parallel,
+                max_workers=max_workers
+            )
+            generate_markdown_report(category_name, results)
+            generate_html_report(category_name, results)
+            
+            # Save JSON for programmatic access
+            json_path = DATA_DIR / f"{category_name.lower().replace(' & ', '_').replace(' ', '_')}_data.json"
+            with open(json_path, 'w') as f:
+                json.dump(results, f, indent=2)
+            
+            print(f"✓ Data saved to: {json_path}")
     
     # Save cache and recommendations
     if cache:
-        cache.save_cache()
+        cache.save_cache(force=True)  # Force final save
     recommendations.save_recommendations()
     
     # Generate summary statistics for index page
@@ -2330,16 +2729,15 @@ Examples:
 
 
 def cleanup_playwright():
-    """Cleanup Playwright resources."""
-    global PLAYWRIGHT_INSTANCE, BROWSER_INSTANCE
-    if BROWSER_INSTANCE:
+    """Cleanup thread-local Playwright resources."""
+    if hasattr(_thread_local, 'browser'):
         try:
-            BROWSER_INSTANCE.close()
+            _thread_local.browser.close()
         except:
             pass
-    if PLAYWRIGHT_INSTANCE:
+    if hasattr(_thread_local, 'playwright'):
         try:
-            PLAYWRIGHT_INSTANCE.stop()
+            _thread_local.playwright.stop()
         except:
             pass
 
