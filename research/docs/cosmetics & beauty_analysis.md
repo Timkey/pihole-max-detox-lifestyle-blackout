@@ -1,13 +1,13 @@
 # Cosmetics & Beauty - Content Analysis Report
 
-**Generated:** 2026-01-01 07:27:28
+**Generated:** 2026-01-01 21:41:14
 
 **Domains Analyzed:** 184
 
 ## Summary
 
-- **Accessible domains:** 47/184
-- **Average Risk Score:** 16.4/100
+- **Accessible domains:** 63/184
+- **Average Risk Score:** 15.0/100
 
 ## Hazard Clusters
 
@@ -18,250 +18,24 @@
 
 ### Behavioral Hazards
 
-- **discounts**: 54 occurrences
-- **addiction_language**: 36 occurrences
-- **upselling**: 10 occurrences
-- **convenience**: 9 occurrences
-- **urgency**: 4 occurrences
+- **discounts**: 71 occurrences
+- **addiction_language**: 44 occurrences
+- **convenience**: 14 occurrences
+- **upselling**: 13 occurrences
+- **urgency**: 5 occurrences
 
 ### Marketing Tactics
 
-- **social_proof**: 22 occurrences
-- **scarcity**: 22 occurrences
-- **personalization**: 19 occurrences
-- **fomo**: 14 occurrences
+- **social_proof**: 31 occurrences
+- **scarcity**: 27 occurrences
+- **fomo**: 21 occurrences
+- **personalization**: 18 occurrences
 
 ## Individual Domain Analysis
 
-### sephora.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.co.uk
-
-**Risk Score:** 100/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 2 domain(s) (+14 points)
--   ← Enables: feelunique.com (risk: 66)
--   ← Enables: sephora.co.uk (risk: 83)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 83)
-- FACILITATOR (Inbound): Used by 2 domain(s) (+12 points)
--   ← Enables: feelunique.com (risk: 61)
--   ← Enables: sephora.co.uk (risk: 66)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 66)
-- ENABLER: Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 61)
-- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- My account
-- My orders
-- Catalogue
-- My offers
-- Make an appointment
-
-**Related Domains Found:**
-
-- `connect.studentbeans.com`
-- `facebook.com`
-- `instagram.com`
-- `lvmh.com`
-- `rangeme.com`
-- `sephora.co.uk`
-- `tiktok.com`
-- `youtube.com`
-
----
-
-### sephora.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.net
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### sephora.ca
-
-**Risk Score:** 0/100
-
----
-
-### sephora.com
-
-**Risk Score:** 0/100
-
----
-
-### sephora.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### sephora.co.ca
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://sephora.co.ca/
-Call log:
-  - navigating to "https://sephora.co.ca/", waiting until "domcontentloaded"
-
-
-### ulta.com
-
-**Risk Score:** 0/100
-
----
-
-### sephora.dev
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: personalization
-
-**Sample Products/Services:**
-
-- We also offer
-- Domain Backorders
-- Domain Registration
-- Business Phone Systems
-- Domain Name Reseller
-
-**Related Domains Found:**
-
-- `yay.com`
-
----
-
-### ulta.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.io
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: personalization
-
----
-
-### ulta.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### ulta.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### loreal.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### esteelauder.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### clinique.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### maccosmetics.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### lancomeusa.com
 
-**Risk Score:** 65/100
+**Risk Score:** 55/100
 
 **Justification for Blocking:**
 
@@ -329,181 +103,6 @@ ROUTINE
 
 ---
 
-### bobbibrowncosmetics.com
-
-❌ **Not accessible:** Playwright: Insufficient content (217 chars)
-
-### dior.com
-
-❌ **Not accessible:** Playwright: Insufficient content (137 chars)
-
-### chanel.com
-
-❌ **Not accessible:** Playwright: Insufficient content (200 chars)
-
-### yslbeauty.com
-
-**Risk Score:** 0/100
-
----
-
-### clinique.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### clinique.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### clinique.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### clinique.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### clinique.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### esteelauder.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### esteelauder.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### esteelauder.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### esteelauder.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### loreal.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### loreal.co
-
-**Risk Score:** 0/100
-
----
-
-### loreal.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### loreal.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### maccosmetics.ca
-
-**Risk Score:** 0/100
-
----
-
-### maccosmetics.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### maccosmetics.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### maccosmetics.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### maccosmetics.info
-
-**Risk Score:** 10/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: upselling
-- Employs aggressive marketing: social_proof, fomo
-
-**Sample Products/Services:**
-
-- Bitly LinksCustomize, share, and track links
-- Bitly CodesDynamic solutions to fit every business need
-- RetailEnhance customer engagement
-- Consumer Packaged GoodsConnect directly with consumers
-- Media & EntertainmentCreate interactive experiences
-
-**Related Domains Found:**
-
-- `bitly.com`
-- `dev.bitly.com`
-- `facebook.com`
-- `instagram.com`
-- `linkedin.com`
-- `mkt-static.bitly.com`
-- `security.bitly.com`
-- `support.bitly.com`
-- `twitter.com`
-
----
-
-### maccosmetics.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### bobbibrowncosmetics.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (210 chars)
-
-### bobbibrowncosmetics.co
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_CLOSED at https://bobbibrowncosmetics.co/
-Call log:
-  - navigating to
-
-### bobbibrowncosmetics.ai
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### bobbibrowncosmetics.ca
-
-❌ **Not accessible:** Playwright: Insufficient content (216 chars)
-
 ### chanel.dev
 
 **Risk Score:** 7/100
@@ -518,62 +117,6 @@ Call log:
 - `drive.google.com`
 
 ---
-
-### chanel.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.net
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.ca
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.co.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.co
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.co
-
-❌ **Not accessible:** Playwright: Insufficient content (10 chars)
-
-### chanel.us
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.ca
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### chanel.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.co.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.info
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.io
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### lancome.ai
-
-❌ **Not accessible:** Playwright: Insufficient content (341 chars)
 
 ### lancome.ca
 
@@ -608,9 +151,9 @@ Call log:
 
 ---
 
-### lancome.co.ca
+### lancome.io
 
-❌ **Not accessible:** Playwright: No content retrieved
+❌ **Not accessible:** Playwright: Insufficient content (308 chars)
 
 ### lancome.co.uk
 
@@ -651,44 +194,6 @@ ROUTINE
 
 ---
 
-### lancome.io
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- Get this domain
-
-**Related Domains Found:**
-
-- `trustpilot.com`
-
----
-
-### lancome.us
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.net
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### dior.us
-
-❌ **Not accessible:** Playwright: No content retrieved
-
 ### yslbeauty.co.uk
 
 **Risk Score:** 50/100
@@ -719,6 +224,991 @@ ROUTINE
 - `twitter.com`
 - `youtube.com`
 - `yslbeauty.co.uk`
+
+---
+
+### yslbeauty.ca
+
+**Risk Score:** 42/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: yslbeauty.ca (risk: 39)
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- LASH LATEX MASCARA
+- Libre Eau De Parfum
+- Y Eau de Parfum
+- MYSLF EAU DE PARFUM
+- Black Opium Eau De Parfum
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `onetrust.com`
+- `pinterest.fr`
+- `twitter.com`
+- `youtube.com`
+- `yslbeauty.ca`
+
+---
+
+### shein.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### zaful.app
+
+❌ **Not accessible:** Playwright: Insufficient content (9 chars)
+
+### yesstyle.co
+
+**Risk Score:** 46/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: urgency, discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Start Here
+- Featured
+- More Beauty
+- Brands
+- Makeup
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `asianbeautywholesale.com`
+- `facebook.com`
+- `instagram.com`
+- `pinterest.com`
+- `play.google.com`
+- `tiktok.com`
+- `yesasiaholdings.com`
+- `yesstyle.com`
+- `youtube.com`
+
+---
+
+### sephora.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.org
+
+❌ **Not accessible:** Playwright: Insufficient content (208 chars)
+
+### sephora.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sephora.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.app
+
+❌ **Not accessible:** Playwright: Insufficient content (238 chars)
+
+### ulta.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.org
+
+**Risk Score:** 0/100
+
+---
+
+### ulta.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ulta.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (478 chars)
+
+### loreal.com
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 4 domain(s) (+23 points)
+-   ← Enables: lancomeusa.com (risk: 55)
+-   ← Enables: lancome.co.uk (risk: 67)
+-   ← Enables: lancome.com (risk: 67)
+
+---
+
+### esteelauder.com
+
+❌ **Not accessible:** Playwright: Insufficient content (209 chars)
+
+### clinique.com
+
+**Risk Score:** 0/100
+
+---
+
+### maccosmetics.com
+
+**Risk Score:** 0/100
+
+---
+
+### bobbibrowncosmetics.com
+
+**Risk Score:** 0/100
+
+---
+
+### dior.com
+
+❌ **Not accessible:** Playwright: Insufficient content (137 chars)
+
+### chanel.com
+
+❌ **Not accessible:** Playwright: Insufficient content (200 chars)
+
+### clinique.ai
+
+**Risk Score:** 0/100
+
+---
+
+### clinique.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (205 chars)
+
+### clinique.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (208 chars)
+
+### clinique.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### clinique.io
+
+❌ **Not accessible:** Playwright: Insufficient content (302 chars)
+
+### esteelauder.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### esteelauder.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### esteelauder.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (208 chars)
+
+### esteelauder.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### loreal.ca
+
+**Risk Score:** 0/100
+
+---
+
+### loreal.io
+
+❌ **Not accessible:** Playwright: Insufficient content (70 chars)
+
+### maccosmetics.co
+
+❌ **Not accessible:** Playwright: Insufficient content (302 chars)
+
+### maccosmetics.us
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### maccosmetics.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### bobbibrowncosmetics.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### bobbibrowncosmetics.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (216 chars)
+
+### bobbibrowncosmetics.co
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_CLOSED at https://bobbibrowncosmetics.co/
+Call log:
+  - navigating to
+
+### bobbibrowncosmetics.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### chanel.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chanel.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.co
+
+❌ **Not accessible:** Playwright: Insufficient content (10 chars)
+
+### dior.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dior.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lancome.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (341 chars)
+
+### lancome.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lancome.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### yslbeauty.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### yslbeauty.org
+
+❌ **Not accessible:** Playwright: Insufficient content (413 chars)
+
+### yslbeauty.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### covergirl.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### covergirl.io
+
+❌ **Not accessible:** Playwright: Insufficient content (85 chars)
+
+### covergirl.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### covergirl.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### covergirl.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### covergirl.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### maybelline.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### maybelline.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### maybelline.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### revlon.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### covergirl.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### revlon.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### beautybay.com
+
+**Risk Score:** 0/100
+
+---
+
+### cultbeauty.com
+
+**Risk Score:** 64/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- COMING SOON:SKINCEUTICALS
+- COMING SOON:THE ORDINARY NEWNESS
+- IN YOUR VOLUME ERA
+- JUST LAUNCHED
+- JUST LAUNCHED
+
+**Related Domains Found:**
+
+- `cultbeauty.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `pinterest.com`
+- `s1.thcdn.com`
+- `t.lt02.net`
+- `thg.com`
+- `tiktok.com`
+- `twitter.com`
+
+---
+
+### beautybay.biz
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Help, Information & Legals
+- Help & Information
+- Legal
+- Languages
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `paypal.com`
+- `pinterest.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### beautybay.ca
+
+**Risk Score:** 0/100
+
+---
+
+### beautybay.co
+
+❌ **Not accessible:** Playwright: Insufficient content (71 chars)
+
+### beautybay.co.uk
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Help, Information & Legals
+- Help & Information
+- Legal
+- Languages
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `paypal.com`
+- `pinterest.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### beautybay.info
+
+❌ **Not accessible:** Playwright: Insufficient content (61 chars)
+
+### beautybay.io
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Help, Information & Legals
+- Help & Information
+- Legal
+- Languages
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `paypal.com`
+- `pinterest.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### beautybay.net
+
+❌ **Not accessible:** Playwright: Insufficient content (316 chars)
+
+### beautybay.org
+
+❌ **Not accessible:** Playwright: Insufficient content (61 chars)
+
+### revlon.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### beautybay.uk
+
+**Risk Score:** 40/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Help, Information & Legals
+- Low light. High glam.
+- Shop By BEAUTY BAY
+- What's the latest?
+- Help & Information
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `paypal.com`
+- `pinterest.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### beautybay.us
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Help, Information & Legals
+- Help & Information
+- Legal
+- Languages
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `paypal.com`
+- `pinterest.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### cultbeauty.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.co.uk
+
+**Risk Score:** 6/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)
+-   ← Enables: cultbeauty.com (risk: 64)
+
+---
+
+### cultbeauty.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cultbeauty.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.co
+
+❌ **Not accessible:** Playwright: Insufficient content (296 chars)
+
+### feelunique.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.us
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### lookfantastic.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lookfantastic.info
+
+❌ **Not accessible:** Playwright: Insufficient content (212 chars)
+
+### lookfantastic.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### feelunique.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lookfantastic.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (212 chars)
+
+### romwe.ca
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: urgency, discounts
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `atom.com`
+- `helpdesk.atom.com`
+
+---
+
+### romwe.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (100 chars)
+
+### romwe.net
+
+❌ **Not accessible:** Playwright: Insufficient content (356 chars)
+
+### romwe.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (94 chars)
+
+### romwe.us
+
+❌ **Not accessible:** Playwright: Insufficient content (62 chars)
+
+### shein.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### shein.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### shein.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### lookfantastic.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### shein.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### shein.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (305 chars)
+
+### shein.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (36 chars)
+
+### yesstyle.net
+
+❌ **Not accessible:** Playwright: Insufficient content (292 chars)
+
+### yesstyle.us
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://yesstyle.us/
+Call log:
+  - navigating to "https://
+
+### zaful.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (94 chars)
+
+### zaful.co
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### zaful.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (137 chars)
+
+### zaful.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (36 chars)
+
+### sephora.com
+
+**Risk Score:** 0/100
+
+---
+
+### ulta.com
+
+**Risk Score:** 0/100
+
+---
+
+### sephora.ca
+
+**Risk Score:** 0/100
+
+---
+
+### sephora.co.uk
+
+**Risk Score:** 78/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 2 domain(s) (+12 points)
+-   ← Enables: feelunique.com (risk: 61)
+-   ← Enables: sephora.co.uk (risk: 61)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: sephora.co.uk (risk: 61)
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- My account
+- My orders
+- Catalogue
+- My offers
+- Make an appointment
+
+**Related Domains Found:**
+
+- `connect.studentbeans.com`
+- `facebook.com`
+- `instagram.com`
+- `lvmh.com`
+- `rangeme.com`
+- `sephora.co.uk`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### sephora.dev
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- We also offer
+- Domain Backorders
+- Domain Registration
+- Business Phone Systems
+- Domain Name Reseller
+
+**Related Domains Found:**
+
+- `yay.com`
+
+---
+
+### ulta.io
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+---
+
+### yslbeauty.com
+
+**Risk Score:** 0/100
+
+---
+
+### loreal.co
+
+**Risk Score:** 0/100
+
+---
+
+### loreal.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### maccosmetics.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (205 chars)
+
+### maccosmetics.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (212 chars)
+
+### maccosmetics.info
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: upselling
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- Bitly LinksCustomize, share, and track links
+- Bitly CodesDynamic solutions to fit every business need
+- RetailEnhance customer engagement
+- Consumer Packaged GoodsConnect directly with consumers
+- Media & EntertainmentCreate interactive experiences
+
+**Related Domains Found:**
+
+- `bitly.com`
+- `dev.bitly.com`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `mkt-static.bitly.com`
+- `security.bitly.com`
+- `support.bitly.com`
+- `twitter.com`
 
 ---
 
@@ -771,12 +1261,6 @@ ROUTINE
 
 ---
 
-### covergirl.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### covergirl.ca
 
 **Risk Score:** 3/100
@@ -799,48 +1283,6 @@ ROUTINE
 
 ---
 
-### covergirl.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### covergirl.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### covergirl.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### covergirl.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### covergirl.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### covergirl.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### maybelline.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### maybelline.ca
 
 **Risk Score:** 0/100
@@ -853,41 +1295,15 @@ ROUTINE
 
 ---
 
-### maybelline.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### maybelline.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### maybelline.io
+### shein.org
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
 ### revlon.ca
 
@@ -895,76 +1311,20 @@ ROUTINE
 
 ---
 
-### revlon.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### revlon.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### revlon.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### revlon.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc406db500 (otid=0x7ddc492b7150) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
 ### feelunique.com
 
-**Risk Score:** 71/100
+**Risk Score:** 66/100
 
 **Justification for Blocking:**
 
 - ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 83)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: sephora.co.uk (risk: 66)
+-   → Facilitates: sephora.co.uk (risk: 61)
 - Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: social_proof, scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
@@ -996,198 +1356,11 @@ ROUTINE
 
 ---
 
-### beautybay.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### beautybay.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49353780 (otid=0x7ddc492b5dd0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49359f40 (otid=0x7ddc492b6640) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc405372c0 (otid=0x7ddc49377600) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49350e00 (otid=0x7ddc492b5530) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc49287880 (otid=0x7ddc492b6520) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### cultbeauty.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7ddc4946f600 (otid=0x7ddc49375410) current active started main>
-	Expected: <greenlet.greenlet object at 0x7ddc4932d080 (otid=0x7ddc493740f0) suspended active started main>
-
-### yslbeauty.ca
-
-**Risk Score:** 42/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
--   ← Enables: yslbeauty.ca (risk: 39)
-- Uses behavioral manipulation: discounts, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- LASH LATEX MASCARA
-- Libre Eau De Parfum
-- Y Eau de Parfum
-- MYSLF EAU DE PARFUM
-- Black Opium Eau De Parfum
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `onetrust.com`
-- `pinterest.fr`
-- `twitter.com`
-- `youtube.com`
-- `yslbeauty.ca`
-
----
-
-### yslbeauty.org
-
-❌ **Not accessible:** Playwright: Insufficient content (413 chars)
-
-### feelunique.co
-
-❌ **Not accessible:** Playwright: Insufficient content (116 chars)
-
-### feelunique.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### yslbeauty.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### feelunique.co.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### feelunique.info
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### feelunique.us
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
 ### lookfantastic.ca
 
 **Risk Score:** 0/100
 
 ---
-
-### lookfantastic.co.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### lookfantastic.info
-
-❌ **Not accessible:** Playwright: Insufficient content (212 chars)
-
-### feelunique.net
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### lookfantastic.net
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### lookfantastic.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (212 chars)
 
 ### lookfantastic.us
 
@@ -1209,12 +1382,12 @@ ROUTINE
 
 ### romwe.com
 
-**Risk Score:** 22/100
+**Risk Score:** 10/100
 
 **Justification for Blocking:**
 
 - Promotes health hazards: sugar
-- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Uses behavioral manipulation: addiction_language
 - Employs aggressive marketing: social_proof
 
 **Related Domains Found:**
@@ -1225,14 +1398,10 @@ ROUTINE
 
 ### zaful.com
 
-**Risk Score:** 76/100
+**Risk Score:** 65/100
 
 **Justification for Blocking:**
 
-- FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)
--   ← Enables: zaful.com (risk: 65)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: zaful.com (risk: 65)
 - FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
 -   ← Enables: zaful.com (risk: 55)
 - ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
@@ -1262,39 +1431,14 @@ ROUTINE
 
 ### yesstyle.com
 
-**Risk Score:** 9/100
+**Risk Score:** 4/100
 
 **Justification for Blocking:**
 
-- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
--   ← Enables: yesstyle.co (risk: 55)
-- Uses behavioral manipulation: discounts
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: yesstyle.co (risk: 46)
 
 ---
-
-### romwe.ca
-
-❌ **Not accessible:** Playwright: Insufficient content (432 chars)
-
-### romwe.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (100 chars)
-
-### feelunique.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### romwe.net
-
-❌ **Not accessible:** Playwright: Insufficient content (356 chars)
-
-### romwe.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (94 chars)
-
-### romwe.us
-
-❌ **Not accessible:** Playwright: Insufficient content (11 chars)
 
 ### shein.app
 
@@ -1307,6 +1451,12 @@ ROUTINE
 **Related Domains Found:**
 
 - `spaceship.com`
+
+---
+
+### shein.us
+
+**Risk Score:** 0/100
 
 ---
 
@@ -1324,58 +1474,6 @@ ROUTINE
 
 ---
 
-### feelunique.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### shein.co
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### shein.dev
-
-❌ **Not accessible:** Playwright: Insufficient content (305 chars)
-
-### shein.ca
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### shein.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### shein.io
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- Get this domain
-
-**Related Domains Found:**
-
-- `trustpilot.com`
-
----
-
-### shein.net
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### shein.us
-
-**Risk Score:** 0/100
-
----
-
-### shein.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (36 chars)
-
 ### yesstyle.ca
 
 **Risk Score:** 0/100
@@ -1387,93 +1485,4 @@ ROUTINE
 **Risk Score:** 0/100
 
 ---
-
-### yesstyle.net
-
-❌ **Not accessible:** Playwright: Insufficient content (292 chars)
-
-### yslbeauty.info
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### yesstyle.co
-
-**Risk Score:** 55/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: urgency, discounts, upselling, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Start Here
-- Featured
-- More Beauty
-- Brands
-- Makeup
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `asianbeautywholesale.com`
-- `facebook.com`
-- `instagram.com`
-- `pinterest.com`
-- `play.google.com`
-- `tiktok.com`
-- `yesasiaholdings.com`
-- `yesstyle.com`
-- `youtube.com`
-
----
-
-### zaful.app
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- Get this domain
-
-**Related Domains Found:**
-
-- `trustpilot.com`
-
----
-
-### zaful.ca
-
-❌ **Not accessible:** Playwright: Insufficient content (94 chars)
-
-### zaful.co
-
-❌ **Not accessible:** Playwright: Insufficient content (153 chars)
-
-### lookfantastic.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### zaful.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (137 chars)
-
-### zaful.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (94 chars)
-
-### yesstyle.us
-
-❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://yesstyle.us/
-Call log:
-  - navigating to "https://
-
-### shein.org
-
-❌ **Not accessible:** Playwright: No content retrieved
 

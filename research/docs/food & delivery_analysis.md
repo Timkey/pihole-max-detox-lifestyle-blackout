@@ -1,404 +1,2451 @@
 # Food & Delivery - Content Analysis Report
 
-**Generated:** 2026-01-01 07:13:40
+**Generated:** 2026-01-02 01:39:40
 
 **Domains Analyzed:** 877
 
 ## Summary
 
-- **Accessible domains:** 141/877
-- **Average Risk Score:** 9.7/100
+- **Accessible domains:** 326/877
+- **Average Risk Score:** 11.9/100
 
 ## Hazard Clusters
 
 ### Health Hazards
 
-- **sugar**: 22 occurrences
-- **addictive**: 11 occurrences
-- **fast_food**: 4 occurrences
-- **ultra_processed**: 2 occurrences
+- **sugar**: 66 occurrences
+- **addictive**: 28 occurrences
+- **fast_food**: 9 occurrences
+- **ultra_processed**: 9 occurrences
 
 ### Behavioral Hazards
 
-- **discounts**: 108 occurrences
-- **addiction_language**: 35 occurrences
-- **convenience**: 34 occurrences
-- **upselling**: 23 occurrences
-- **impulsive_ordering**: 11 occurrences
-- **urgency**: 6 occurrences
+- **discounts**: 303 occurrences
+- **convenience**: 107 occurrences
+- **addiction_language**: 106 occurrences
+- **upselling**: 52 occurrences
+- **impulsive_ordering**: 38 occurrences
+- **urgency**: 18 occurrences
 
 ### Marketing Tactics
 
-- **fomo**: 35 occurrences
-- **scarcity**: 27 occurrences
-- **personalization**: 22 occurrences
-- **social_proof**: 15 occurrences
+- **fomo**: 97 occurrences
+- **scarcity**: 80 occurrences
+- **personalization**: 71 occurrences
+- **social_proof**: 53 occurrences
 
 ## Individual Domain Analysis
 
-### in-n-out.net
+### littlecaesars.io
 
-❌ **Not accessible:** Playwright: Insufficient content (15 chars)
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### grubhub.co.uk
+### delivery.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 38/100
 
-### wendys.ai
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+
+**Sample Products/Services:**
+
+- Find Favorites and Discover New Ones
+- Free, Easy, and Essential
+- Connect with us
+- For Local Businesses
+- About Us
+
+**Related Domains Found:**
+
+- `adasitecompliancetools.com`
+- `blog.delivery.com`
+- `deliverycom.formstack.com`
+- `facebook.com`
+- `instagram.com`
+- `twitter.com`
+
+---
+
+### redbull.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+
+---
+
+### drpepper.com
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- HAPPY SHOPPING!
+- HAPPY SHOPPING!
+- HAPPY SHOPPING!
+- HAPPY SHOPPING!
+- HAPPY SHOPPING!
+
+**Related Domains Found:**
+
+- `drpepper.com`
+- `drpeppersnapplegroup.com`
+- `drpepperstore.com`
+- `facebook.com`
+- `instagram.com`
+- `keurig-dr-pepper.talentify.io`
+- `keurig.com`
+- `keurigdrpepper.com`
+- `letsplay.com`
+- `tiktok.com`
+
+---
+
+### mountaindew.com
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: addiction_language
+
+**Sample Products/Services:**
+
+- Instagram
+- Facebook
+- YouTube
+- X
+- TIKTOK
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicopartners.com`
+- `tastyrewards.com`
+- `tiktok.com`
+- `twitter.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### drpepper.co.uk
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `coca-cola.com`
+- `facebook.com`
+- `instagram.com`
+- `onetrust.com`
+- `play.google.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### mountaindew.co.uk
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `pepsicoprivacypolicy.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### doordash.com
+
+❌ **Not accessible:** Playwright: Insufficient content (332 chars)
+
+### grubhub.com
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: convenience, addiction_language
+
+---
+
+### seamless.com
+
+**Risk Score:** 52/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: seamless.com (risk: 48)
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Restaurants near you, delivered fast
+- Manage Consent Preferences
+- Performance Cookies
+- Get Perks in the app
+- Sign in
+
+**Related Domains Found:**
+
+- `app.appsflyer.com`
+- `careers.grubhub.com`
+- `cookiepedia.co.uk`
+- `corporate.grubhub.com`
+- `driver.grubhub.com`
+- `facebook.com`
+- `get.grubhub.com`
+- `instagram.com`
+- `investors.grubhub.com`
+- `onetrust.com`
+
+---
+
+### trycaviar.com
+
+❌ **Not accessible:** Playwright: Insufficient content (335 chars)
+
+### monsterenergy.ca
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### gopuff.com
+
+❌ **Not accessible:** Playwright: Insufficient content (152 chars)
+
+### just-eat.com
+
+**Risk Score:** 22/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### justeat.com
+
+**Risk Score:** 22/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### skipthedishes.com
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Order delivery or pickup from popular places.
+- Unlock a world of exclusive perks and VIP experiences.
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
+
+---
+
+### foodpanda.com
+
+❌ **Not accessible:** Playwright: Insufficient content (43 chars)
+
+### swiggy.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### zomato.com
 
 **Risk Score:** 0/100
 
 ---
 
-### slice.us
+### eatstreet.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 36/100
 
-### in-n-out.info
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo
 
-### grubhub.co
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Sign Up Your Restaurant
+- Join Our Team
+- Download The App
+- Alabama
+- Arizona
 
-### oreo.ca
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `facebook.com`
+- `geteatstreet.com`
+- `gethelp.eatstreet.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
 
-### hersheys.ca
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### bitesquad.com
 
-### slicelife.ca
+**Risk Score:** 0/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+---
 
-### in-n-out.co.uk
+### slice.com
 
 **Risk Score:** 26/100
 
 **Justification for Blocking:**
 
-- Uses behavioral manipulation: urgency, discounts, addiction_language
-- Employs aggressive marketing: social_proof, fomo
+- Uses behavioral manipulation: discounts, convenience, upselling
+- Employs aggressive marketing: fomo, personalization
 
 **Sample Products/Services:**
 
-- Servicing Made Simple
-- Sign up for our newsletter and future offers
+- Tab Content
+- Save thousands on pizza boxes.
+- Switch to the easiest pizzeria POS — ever!
+- Take orders from your own website.
+- Access big brand marketing — at small shop prices.
 
 **Related Domains Found:**
 
 - `facebook.com`
-- `inoautocentres.co.uk`
+- `instagram.com`
 - `linkedin.com`
-- `trustpilot.com`
-- `twitter.com`
-- `uk.trustpilot.com`
+- `owners.slicelife.com`
+- `podcasts.apple.com`
+- `privacy.slicelife.com`
+- `slice.careers`
+- `slice.link`
+- `slicelife.com`
+- `sliceregister.com`
 
 ---
 
-### m-ms.ca
+### slicelife.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 2/100
 
-### grubhub.ca
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: slice.com (risk: 26)
 
-### wendys.app
+---
+
+### menulog.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### caviar.ai
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### bitesquad.net
+
+❌ **Not accessible:** Playwright: Insufficient content (64 chars)
+
+### caviar.ca
+
+**Risk Score:** 73/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+- HIGH RISK: Multiple concerning patterns detected
+
+**Sample Products/Services:**
+
+- Sturgeon Caviar
+- Beluga Caviar
+- Osetra Caviar
+- Siberian Caviar
+- Kaluga Caviar
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `google.com`
+- `instagram.com`
+- `pinterest.ca`
+
+---
+
+### caviar.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### caviar.co.uk
+
+**Risk Score:** 25/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience
+- Employs aggressive marketing: social_proof, scarcity
+
+**Sample Products/Services:**
+
+- Caviar Royal Beluga – 500gRated5.00out of 5£1,890.00Add to cart
+- Caviar Acipenser – 500g£494.50Add to cart
+- Caviar Oscietra – 500g£625.00Add to cart
+- Caviar Royal Beluga – 500gRated5.00out of 5£1,890.00Add to cart
+- Scottish Smoked Salmon “Sliced” – 908gRated5.00out of 5£45.00Add to cart
+
+**Related Domains Found:**
+
+- `caviarsociety.com`
+- `facebook.com`
+- `firstcaviar.com`
+- `goo.gl`
+- `instagram.com`
+- `pinterest.co.uk`
+- `twitter.com`
+
+---
+
+### caviar.info
+
+❌ **Not accessible:** Playwright: Insufficient content (381 chars)
+
+### caviar.net
+
+❌ **Not accessible:** Playwright: Insufficient content (19 chars)
+
+### caviar.org
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: social_proof
+
+**Sample Products/Services:**
+
+- Join Us
+- Global Caviar Symposium Returns to Monaco
+- World Caviar Rankings Updated for 2024
+- New Certification Standards Announced
+- Sustainable Caviar Production Initiative Launched
+
+---
+
+### caviar.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### caviar.uk
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- Home
+- Business
+- Culture
+- Lifestyle
+- Niche
+
+**Related Domains Found:**
+
+- `caviar-uk.stackstaging.com`
+- `sites.generatepress.com`
+
+---
+
+### deliveroo.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### deliveroo.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### deliveroo.us
+
+❌ **Not accessible:** Playwright: Insufficient content (410 chars)
+
+### delivery.app
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### delivery.ca
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `bsky.app`
+- `calendly.com`
+- `cira.ca`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `locomotive.ca`
+- `mstdn.ca`
+- `threads.net`
+- `tiktok.com`
+
+---
+
+### delivery.co
+
+❌ **Not accessible:** Playwright: Insufficient content (496 chars)
+
+### delivery.info
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://delivery.info/
+Call log:
+  - navigating to "https:
+
+### delivery.io
+
+❌ **Not accessible:** Playwright: Insufficient content (62 chars)
+
+### delivery.org
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### deliveroo.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### delivery.uk
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: convenience
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### doordash.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### doordash.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### doordash.ca
 
 **Risk Score:** 0/100
 
 ---
 
-### bostonpizza.com
+### doordash.co
 
-**Risk Score:** 46/100
+❌ **Not accessible:** Playwright: Insufficient content (141 chars)
+
+### doordash.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### doordash.io
+
+**Risk Score:** 7/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Uses behavioral manipulation: addiction_language
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `about.meta.com`
+- `de-de.facebook.com`
+- `developers.facebook.com`
+- `es-la.facebook.com`
+- `facebook.com`
+- `fr-fr.facebook.com`
+- `it-it.facebook.com`
+- `l.facebook.com`
+- `lt-lt.facebook.com`
+- `messenger.com`
+
+---
+
+### doordash.net
+
+❌ **Not accessible:** Playwright: Insufficient content (205 chars)
+
+### doordash.uk
+
+**Risk Score:** 0/100
+
+---
+
+### doordash.us
+
+**Risk Score:** 26/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: fomo, personalization
+
+**Sample Products/Services:**
+
+- Work when you want
+- Set your own course
+- Start earning quickly
+- Age
+- Vehicle
+
+**Related Domains Found:**
+
+- `about.doordash.com`
+- `advertising.doordash.com`
+- `apps.apple.com`
+- `blog.doordash.com`
+- `business.doordash.com`
+- `careersatdoordash.com`
+- `dasher.doordash.com`
+- `doordash.com`
+- `doordashstore.com`
+- `facebook.com`
+
+---
+
+### eatstreet.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (224 chars)
+
+### eatstreet.info
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### eatstreet.net
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### eatstreet.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### eatstreet.uk
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### foodpanda.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### doordash.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### foodpanda.app
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### foodpanda.biz
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+- `support.cloudflare.com`
+
+---
+
+### foodpanda.co
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+- `support.cloudflare.com`
+
+---
+
+### foodpanda.info
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+- `support.cloudflare.com`
+
+---
+
+### foodpanda.net
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+- `support.cloudflare.com`
+
+---
+
+### foodpanda.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### foodpanda.org
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+- `support.cloudflare.com`
+
+---
+
+### foodpanda.us
+
+**Risk Score:** 0/100
+
+---
+
+### gopuff.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (314 chars)
+
+### gopuff.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### gopuff.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### grubhub.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### grubhub.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### grubhub.ca
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- ​Alchemy, Not Engineering
+- ​The First Spirit: Calculated Deception
+- ​The Second Spirit: The Cheat
+- ​The Third Spirit: The Sycophant
+- ​The Fourth Spirit: The Fake Friend
+
+**Related Domains Found:**
+
+- `cryptovot.com`
+- `facebook.com`
+- `funnyvot.com`
+- `gamesvot.com`
+- `healthvot.com`
+- `linkedin.com`
+- `newsvot.com`
+- `sportsvot.com`
+- `telegram.me`
+- `twitter.com`
+
+---
+
+### grubhub.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### grubhub.co.uk
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://grubhub.co.uk/
+Call log:
+  - navigating to "https:
+
+### grubhub.info
+
+**Risk Score:** 0/100
+
+---
+
+### grubhub.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### grubhub.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### grubhub.uk
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://grubhub.uk/
+Call log:
+  - navigating to "https://g
+
+### grubhub.us
+
+❌ **Not accessible:** Playwright: Insufficient content (64 chars)
+
+### instacart.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### instacart.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### instacart.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### gopuff.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### instacart.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (59 chars)
+
+### instacart.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.ca
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Order delivery or pickup from popular places.
+- Unlock a world of exclusive perks and VIP experiences.
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
+
+---
+
+### just-eat.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.co.uk
+
+**Risk Score:** 49/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 9 domain(s) (+27 points)
+-   ← Enables: dunkindonuts.co.uk (risk: 38)
+-   ← Enables: wendys.com (risk: 51)
+-   ← Enables: shakeshack.co.uk (risk: 55)
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### just-eat.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### just-eat.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### just-eat.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.ca
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Order delivery or pickup from popular places.
+- Unlock a world of exclusive perks and VIP experiences.
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
+
+---
+
+### justeat.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.co.uk
+
+**Risk Score:** 22/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### justeat.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### justeat.io
+
+❌ **Not accessible:** Playwright: Insufficient content (270 chars)
+
+### justeat.org
+
+❌ **Not accessible:** Playwright: Insufficient content (385 chars)
+
+### justeat.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### menulog.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### menulog.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### menulog.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### menulog.uk
+
+**Risk Score:** 22/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### postmates.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (412 chars)
+
+### postmates.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### postmates.biz
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
+- `postmates.com`
+- `privacy.uber.com`
+- `twitter.com`
+- `uber.com`
+
+---
+
+### postmates.ca
+
+**Risk Score:** 16/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- Your funds arekept safe
+- Your domain isdelivered quickly
+- Our specialists offer freeexpert guidance
+
+**Related Domains Found:**
+
+- `altcha.org`
+
+---
+
+### justeat.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### postmates.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (329 chars)
+
+### postmates.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### postmates.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### seamless.app
+
+❌ **Not accessible:** Playwright: Insufficient content (8 chars)
+
+### seamless.co
+
+❌ **Not accessible:** Playwright: Insufficient content (365 chars)
+
+### postmates.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### seamless.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### seamless.io
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### seamless.net
+
+**Risk Score:** 17/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- WAYS TO EARN
+- YOUR WALLET
+- WAYS TO SPEND
+- Stream Activity
+- Streamer Drops
+
+**Related Domains Found:**
+
+- `gambleaware.org`
+- `instagram.com`
+- `kick.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### seamless.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### seamless.uk
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### seamless.us
+
+❌ **Not accessible:** Playwright: Insufficient content (7 chars)
+
+### seamless.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### skipthedishes.ca
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: impulsive_ordering, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- More Choice
+- Seamless delivery
+- Take time back in your day
+- Order delivery or pickup from popular places.
+- Unlock a world of exclusive perks and VIP experiences.
+
+**Related Domains Found:**
+
+- `app.adjust.com`
+- `careers.justeattakeaway.com`
+- `couriers.skipthedishes.com`
+- `facebook.com`
+- `instagram.com`
+- `restaurants.skipthedishes.com`
+- `secretsauce.skipthedishes.com`
+- `tiktok.com`
+- `wghq.adj.st`
+- `x.com`
+
+---
+
+### skipthedishes.co
+
+❌ **Not accessible:** Playwright: Insufficient content (86 chars)
+
+### skipthedishes.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### skipthedishes.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### skipthedishes.org
+
+❌ **Not accessible:** Playwright: Insufficient content (404 chars)
+
+### skipthedishes.uk
+
+**Risk Score:** 22/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- How to order
+- Download the appClick, sit back, and enjoy.
+- Just EatYour time.
+- Loyalty programs
+- Our promise
+
+**Related Domains Found:**
+
+- `10bis.co.il`
+- `app.convercent.com`
+- `bistro.sk`
+- `business.just-eat.co.uk`
+- `careers.justeattakeaway.com`
+- `couriers.just-eat.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.ch`
+- `just-eat.co.uk`
+
+---
+
+### slice.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### slice.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### slice.ca
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Home
+- Shows
+- Where To Watch
+- Schedule
+- Home
+
+**Related Domains Found:**
+
+- `corusent.com`
+- `flavournetwork.ca`
+- `globalnews.ca`
+- `globaltv.com`
+- `homenetwork.ca`
+- `showcase.ca`
+- `slice.ca`
+- `stacktv.ca`
+- `wnetwork.com`
+
+---
+
+### slice.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### slice.info
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### slice.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### slice.net
+
+❌ **Not accessible:** Playwright: Insufficient content (15 chars)
+
+### slice.org
+
+❌ **Not accessible:** Playwright: Insufficient content (135 chars)
+
+### skipthedishes.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### slice.us
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### slicelife.ca
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Tell us whether you accept cookies
+
+**Related Domains Found:**
+
+- `accounts.google.com`
+- `docs.plesk.com`
+- `facebook.com`
+- `github.com`
+- `support.plesk.com`
+
+---
+
+### slicelife.co
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### slicelife.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### slicelife.org
+
+**Risk Score:** 0/100
+
+---
+
+### slice.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### swiggy.app
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### swiggy.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### swiggy.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### swiggy.info
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### swiggy.io
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://swiggy.io/
+Call log:
+  - navigating to "https://sw
+
+### swiggy.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### swiggy.org
+
+❌ **Not accessible:** Playwright: Insufficient content (382 chars)
+
+### swiggy.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### trycaviar.us
+
+❌ **Not accessible:** Playwright: Insufficient content (238 chars)
+
+### ubereats.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ubereats.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ubereats.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ubereats.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### zomato.app
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### zomato.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### zomato.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### zomato.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### zomato.org
+
+❌ **Not accessible:** Playwright: Insufficient content (70 chars)
+
+### zomato.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### zomato.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.com
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+
+**Sample Products/Services:**
+
+- Manage Consent Preferences
+- Cookie List
+- Strictly Necessary Cookies
+- Performance Cookies
+- Targeting Cookies
+
+**Related Domains Found:**
+
+- `burgerking.ca`
+- `onetrust.com`
+
+---
+
+### kfc.com
+
+**Risk Score:** 27/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+
+**Sample Products/Services:**
+
+- £0.00
+- Find a Restaurant & Order Online for Takeaway or Delivery
+- Quick links
+- OUR MENU
+- ORDER ONLINE
+
+**Related Domains Found:**
+
+- `careers.kfc.co.uk`
+- `facebook.com`
+- `help.kfc.co.uk`
+- `instagram.com`
+- `kfcshop.co.uk`
+- `privacy.kfc.co.uk`
+- `snapchat.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### pizzahut.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### subway.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chickfila.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### swiggy.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyeschicken.com
+
+❌ **Not accessible:** Playwright: Insufficient content (18 chars)
+
+### jackinthebox.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### whitecastle.com
+
+**Risk Score:** 44/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: whitecastle.com (risk: 40)
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Menu
+- Locations
+- Grocery
+- More
+
+**Related Domains Found:**
+
+- `careers.whitecastle.com`
+- `houseofcrave.com`
+- `whitecastle.com`
+
+---
+
+### innout.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- Open from
+
+**Related Domains Found:**
+
+- `associate.innout.com`
+- `facebook.com`
+- `instagram.com`
+- `shop.in-n-out.com`
+- `slave2nothing.org`
+
+---
+
+### in-n-out.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- Open from
+
+**Related Domains Found:**
+
+- `associate.innout.com`
+- `facebook.com`
+- `instagram.com`
+- `shop.in-n-out.com`
+- `slave2nothing.org`
+
+---
+
+### in-n-outburger.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- Open from
+
+**Related Domains Found:**
+
+- `associate.innout.com`
+- `facebook.com`
+- `instagram.com`
+- `shop.in-n-out.com`
+- `slave2nothing.org`
+
+---
+
+### sonicdriveinn.com
+
+❌ **Not accessible:** Playwright: Insufficient content (69 chars)
+
+### sonicdrivein.com
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### jimmyjohns.com
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: jimmyjohns.com (risk: 21)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Try Toasted Sandwiches
+- The Gift of Sandwich
+- Our Menu
+- About Us
+- More JJ's
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `bigidprivacy.cloud`
+- `careers.jimmyjohns.com`
+- `facebook.com`
+- `instagram.com`
+- `jimmyjohns.com`
+- `jimmyjohnsfranchising.com`
+- `locations.jimmyjohns.com`
+- `play.google.com`
+- `store.jimmyjohns.com`
+
+---
+
+### pandaexpress.com
+
+**Risk Score:** 47/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
 - Employs aggressive marketing: scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
 
 **Sample Products/Services:**
 
-- READY TO ENJOY SOME BP AT HOME?
-- Restaurants
-- about
-- legal
+- Order Now
+- Philosophy
+- Innovation
+- Family
+- Community
 
 **Related Domains Found:**
 
-- `bostonpizza.cashstar.com`
-- `bostonpizzafranchise.com`
-- `bostons.com`
-- `bostons.com.mx`
-- `bpincomefund.com`
-- `careers.bostonpizza.ca`
+- `apps.apple.com`
+- `community.pandaexpress.com`
 - `facebook.com`
 - `instagram.com`
-- `order.bostonpizza.com`
-- `pizzagravy.ca`
+- `pandacareers.com`
+- `pandacares.org`
+- `pandarg.com`
+- `play.google.com`
+- `privacyportal.onetrust.com`
+- `shop.pandaexpress.com`
 
 ---
 
-### in-n-out.co
+### chick-fil-a.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### grubhub.app
+### chipotle.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 11/100
 
-### lays.us
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: impulsive_ordering, convenience
+- Employs aggressive marketing: fomo
 
-### hersheys.ai
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- DOWNLOAD OUR APP
+- CONNECT WITH US
 
-### slicelife.co
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `chipotle.com`
+- `chipotlegoods.com`
+- `community.chipotle.com`
+- `facebook.com`
+- `instagram.com`
+- `ir.chipotle.com`
+- `itunes.apple.com`
+- `jobs.chipotle.com`
+- `locations.chipotle.com`
+- `newsroom.chipotle.com`
 
-### in-n-out.ca
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### grubhub.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### wendys.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzanova.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### gopuff.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slicelife.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.app
+### qdoba.com
 
 **Risk Score:** 0/100
 
+**Related Domains Found:**
+
+- `cloudflare.com`
+
 ---
 
-### gopuff.uk
+### moes.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (267 chars)
 
-### wendys.co
+### papajohns.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (210 chars)
 
-### pizzanova.com
+### littlecaesars.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
 
-### in-n-out.ai
+### papamurphys.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### gopuff.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slicelife.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hardees.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### gopuff.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hardees.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### gopuff.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### swiggy.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hardees.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### gopuff.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (341 chars)
 
 ### pizza73.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (101 chars)
 
-### hardees.net
+### pizzanova.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 23/100
 
-### gopuff.dev
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
+-   ← Enables: pizzanova.com (risk: 21)
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience
+- Employs aggressive marketing: scarcity, fomo
 
-### m-ms.co.uk
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Sign In
+- Enter promo code
 
-### swiggy.app
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `apps.apple.com`
+- `facebook.com`
+- `instagram.com`
+- `pizzanova.com`
+- `play.google.com`
+- `tiktok.com`
+- `twitter.com`
+- `youtube.com`
 
-### hardees.io
+---
+
+### dunkindonuts.com
+
+❌ **Not accessible:** Playwright: Insufficient content (129 chars)
+
+### dunkin.com
+
+❌ **Not accessible:** Playwright: Insufficient content (77 chars)
+
+### timhortons.com
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+- Uses behavioral manipulation: discounts, addiction_language
+
+**Sample Products/Services:**
+
+- Selling, Sharing, Targeted Advertising
+- Cookie List
+- Social Media Cookies
+- Functional Cookies
+- Performance Cookies
+
+**Related Domains Found:**
+
+- `onetrust.com`
+- `timhortons.com`
+
+---
+
+### krispykreme.com
+
+**Risk Score:** 45/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: krispykreme.com (risk: 41)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- $5 BONUS EGIFT CARD WITH $25 EGIFT CARD PURCHASE
+- CATER YOUR NEXT EVENT WITH DOUGHNUTS & COFFEE
+- Want free treats?
+- Services
+- Company
+
+**Related Domains Found:**
+
+- `apply.jobappnetwork.com`
+- `facebook.com`
+- `instagram.com`
+- `investors.krispykreme.com`
+- `krispykreme.com`
+- `onetrust.com`
+- `x.com`
+
+---
+
+### arbys.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (70 chars)
+
+### arbys.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### arbys.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### chipotlemexicangrill.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### arbys.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### bostonpizza.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### bostonpizza.biz
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://bostonpizza.biz/
+Call log:
+  - navigating to "http
+
+### bostonpizza.ca
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_CLOSED at https://bostonpizza.ca/
+Call log:
+  - navigating to "https:
+
+### bostonpizza.net
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://bostonpizza.net/
+Call log:
+  - navigating to "http
+
+### bostonpizza.org
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://bostonpizza.org/
+Call log:
+  - navigating to "http
+
+### bostonpizza.us
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://bostonpizza.us/
+Call log:
+  - navigating to "https
+
+### burgerking.ai
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+
+**Sample Products/Services:**
+
+- Manage Consent Preferences
+- Cookie List
+- Strictly Necessary Cookies
+- Performance Cookies
+- Targeting Cookies
+
+**Related Domains Found:**
+
+- `burgerking.ca`
+- `onetrust.com`
+
+---
+
+### burgerking.ca
+
+**Risk Score:** 40/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: burgerking.ca (risk: 37)
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Manage Consent Preferences
+- Cookie List
+- Strictly Necessary Cookies
+- Performance Cookies
+- Targeting Cookies
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `burgerking.ca`
+- `onetrust.com`
+- `play.google.com`
+
+---
+
+### arbys.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.io
+
+❌ **Not accessible:** Playwright: Insufficient content (362 chars)
+
+### burgerking.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### burgerking.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### carlsjr.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### carlsjr.app
+
+❌ **Not accessible:** Playwright: Insufficient content (312 chars)
+
+### carlsjr.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### carlsjr.ca
 
 **Risk Score:** 0/100
 
 ---
 
-### gopuff.co.uk
+### carlsjr.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 21/100
 
-### tacobell.app
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo
 
-### pizzanova.uk
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Quick Links
+- Help
+- Legal
 
-### hardees.info
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `carlsjr.app.pepperhq.com`
+- `facebook.com`
+- `feedback.sentimentsearch.com`
+- `harri.com`
+- `instagram.com`
+- `jackchristian.com.au`
+- `menus.tenkites.com`
+- `play.google.com`
+- `tiktok.com`
+
+---
+
+### carlsjr.info
 
 **Risk Score:** 10/100
 
@@ -429,1196 +2476,140 @@
 
 ---
 
-### pringles.biz
+### burgerking.us
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+❌ **Not accessible:** Playwright: No content retrieved
 
-### gopuff.co
+### carlsjr.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### mms.info
+### carlsjr.org
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### swiggy.ca
+### carlsjr.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### hardees.co.uk
+### carlsjr.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### gopuff.ca
+### chick-fil-a.ai
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### papamurphys.com
+### chick-fil-a.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### hardees.co
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### chick-fil-a.co.uk
 
-### gopuff.biz
+**Risk Score:** 0/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+---
 
-### starbucks.co.uk
+### chick-fil-a.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### swiggy.co.uk
+### chick-fil-a.app
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### hardees.ca
+### chick-fil-a.io
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### foodpanda.us
+### chick-fil-a.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### starbucks.info
+### chick-fil-a.org
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### fritos.us
+### chick-fil-a.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### hardees.biz
+### chickfila.ai
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### foodpanda.org
+### chick-fil-a.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### oreo.org
+### chickfila.biz
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### swiggy.info
+### chickfila.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### hardees.ai
+### chickfila.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### foodpanda.net
+### chickfila.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### starbucks.io
+### chickfila.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### marcos.com
+### chickfila.org
 
-**Risk Score:** 52/100
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chickfila.us
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### chipotle.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### chipotle.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (61 chars)
+
+### chipotle.ca
+
+**Risk Score:** 18/100
 
 **Justification for Blocking:**
 
-- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
--   ← Enables: marcos.com (risk: 48)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
--   ← Enables: marcos.com (risk: 44)
-- Uses behavioral manipulation: urgency, discounts, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
+- Uses behavioral manipulation: impulsive_ordering, urgency, convenience
+- Employs aggressive marketing: scarcity, fomo
 
 **Sample Products/Services:**
 
-- You Might Also Like...
-- Saved Cards:
-- THANK YOU, {{CUSTOMER_FIRST_NAME}}
-- ORDER SUMMARY
-- Order Number
+- DOWNLOAD OUR APP
+- CONNECT WITH US
 
 **Related Domains Found:**
 
-- `ciaonet.com`
+- `chipotle.com`
+- `chipotlegoods.com`
+- `community.chipotle.com`
 - `facebook.com`
 - `instagram.com`
+- `ir.chipotle.com`
 - `itunes.apple.com`
-- `marcos.com`
-- `marcossliceofsupport.com`
-- `nutritionix.com`
+- `jobs.chipotle.ca`
+- `newsroom.chipotle.com`
 - `play.google.com`
-- `twitter.com`
 
 ---
 
-### fiveguys.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### foodpanda.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### swiggy.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### foodpanda.info
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### starbucks.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### foodpanda.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### reeses.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### swiggy.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### foodpanda.ca
-
-**Risk Score:** 0/100
-
----
-
-### starbucks.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.info
-
-**Risk Score:** 0/100
-
----
-
-### foodpanda.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### swiggy.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### m-ms.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### foodpanda.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pringles.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.co.uk
-
-**Risk Score:** 6/100
-
-**Justification for Blocking:**
-
-- Employs aggressive marketing: scarcity
-
-**Sample Products/Services:**
-
-- Have a break, have a KitKat ®
-- Don't let life's interruptions get in the way. Have a quality break with KitKat®
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `nestle.co.uk`
-- `nestlecesomni.my.salesforce-sites.com`
-- `tiktok.com`
-- `twitter.com`
-
----
-
-### foodpanda.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### swiggy.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### eatstreet.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papajohns.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### eatstreet.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### trycaviar.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### eatstreet.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pringles.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### eatstreet.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### eatstreet.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.io
-
-**Risk Score:** 0/100
-
----
-
-### dunkindonuts.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkindonuts.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.us
-
-**Risk Score:** 0/100
-
----
-
-### dunkin.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doordash.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotlemexicangrill.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.us
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
-
-**Related Domains Found:**
-
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
-
----
-
-### delivery.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.org
-
-**Risk Score:** 0/100
-
----
-
-### pringles.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pandaexpress.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### delivery.ai
-
-**Risk Score:** 16/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Related Domains Found:**
-
-- `sudos.com`
-
----
-
-### coca-cola.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pizzahut.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.io
-
-**Risk Score:** 0/100
-
----
-
-### dominos.co.uk
-
-**Risk Score:** 15/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: scarcity
-
-**Sample Products/Services:**
-
-- Enter your postcode
-
-**Related Domains Found:**
-
-- `corporate.dominos.co.uk`
-- `dominos.co.uk`
-- `dominosuk.page.link`
-- `facebook.com`
-- `instagram.com`
-- `investors.dominos.co.uk`
-- `tiktok.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### deliveroo.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fritos.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.ca
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience
-
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
-
-**Related Domains Found:**
-
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
-
----
-
-### deliveroo.net
-
-**Risk Score:** 36/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, convenience, upselling
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- Discover Deliveroo
-- Legal
-- Help
-- Take Deliveroo with you
-
-**Related Domains Found:**
-
-- `careers.deliveroo.co.uk`
-- `corporate.deliveroo.co.uk`
-- `deliveroo.co.uk`
-- `deliveroo.design`
-- `deliveroo.engineering`
-- `deliveroo.onelink.me`
-- `deliveroostudents.co.uk`
-- `facebook.com`
-- `instagram.com`
-- `par.deliveroo.net`
-
----
-
-### hersheys.org
-
-**Risk Score:** 0/100
-
----
-
-### dominos.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### zomato.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.co.uk
-
-**Risk Score:** 61/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 3 domain(s) (+13 points)
--   ← Enables: deliveroo.com (risk: 33)
--   ← Enables: deliveroo.net (risk: 36)
--   ← Enables: wendys.com (risk: 66)
-- FACILITATOR (Inbound): Used by 3 domain(s) (+12 points)
--   ← Enables: deliveroo.com (risk: 33)
--   ← Enables: deliveroo.net (risk: 36)
--   ← Enables: wendys.com (risk: 56)
-- Uses behavioral manipulation: discounts, convenience, upselling
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- Discover Deliveroo
-- Legal
-- Help
-- Take Deliveroo with you
-
-**Related Domains Found:**
-
-- `careers.deliveroo.co.uk`
-- `corporate.deliveroo.co.uk`
-- `deliveroo.design`
-- `deliveroo.engineering`
-- `deliveroo.onelink.me`
-- `deliveroostudents.co.uk`
-- `facebook.com`
-- `instagram.com`
-- `par.deliveroo.net`
-- `restaurants.deliveroo.com`
-
----
-
-### oreo.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.ai
+### chipotle.co
 
 **Risk Score:** 8/100
 
@@ -1632,41 +2623,469 @@
 
 ---
 
-### deliveroo.co
+### chipotle.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 12/100
 
-### pringles.uk
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: impulsive_ordering, convenience
 
-### sonicdrivein.net
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+- CONNECT WITH US
 
-### zomato.us
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `facebook.com`
+- `instagram.com`
+- `ir.chipotle.com`
+- `jobs.chipotle.co.uk`
+- `newsroomeu.chipotle.com`
+- `twitter.com`
+
+---
+
+### chickfila.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotle.io
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### chipotle.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotle.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### chipotle.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotle.us
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### chipotle.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotlemexicangrill.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotlemexicangrill.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotlemexicangrill.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotlemexicangrill.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipotlemexicangrill.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dominos.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### dominos.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (361 chars)
+
+### dominos.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dominos.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dominos.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### dominos.net
+
+❌ **Not accessible:** Playwright: Insufficient content (114 chars)
 
 ### chipotlemexicangrill.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### deliveroo.ca
+### dominos.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### kitkat.io
+### dunkin.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### dunkin.app
+
+❌ **Not accessible:** Playwright: Insufficient content (171 chars)
+
+### dunkin.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### dominos.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkin.co.uk
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: dunkindonuts.co.uk (risk: 38)
+
+---
+
+### dunkin.net
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: addiction_language
+- Employs aggressive marketing: fomo, personalization
+
+**Sample Products/Services:**
+
+- Make it memorable
+- Keep it formal
+- Lock it down
+- Each email address
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `help.hover.com`
+- `hover.blog`
+- `hover.com`
+- `hoverstatus.com`
+- `linkedin.com`
+- `mail.hover.com`
+- `tiktok.com`
+- `tucows.com`
+- `twitter.com`
+
+---
+
+### dunkin.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkin.uk
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you are a visitor of this website:
+- If you are the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### dunkin.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkindonuts.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkindonuts.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkindonuts.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### dunkindonuts.co.uk
+
+**Risk Score:** 38/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- 03 Nov, 2025
+- Beverage, Donut
+- 03 Nov, 2025
+- Beverage, Donut
+- 25 Sep, 2025
+
+**Related Domains Found:**
+
+- `deliveroo.co.uk`
+- `dunkin.co.uk`
+- `facebook.com`
+- `help.dunkin.co.uk`
+- `instagram.com`
+- `just-eat.co.uk`
+- `tiktok.com`
+- `twitter.com`
+- `ubereats.com`
+
+---
+
+### dunkindonuts.io
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### dunkindonuts.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fiveguys.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### fiveguys.biz
+
+**Risk Score:** 0/100
+
+---
+
+### fiveguys.ca
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `careers.fiveguys.com`
+- `fiveguys-ca.cashstar.com`
+- `instagram.com`
+- `open.spotify.com`
+- `restaurants.fiveguys.ca`
+- `twitter.com`
+- `wbiprod.storedvalue.com`
+
+---
+
+### fiveguys.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### fiveguys.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fiveguys.org
+
+❌ **Not accessible:** Playwright: Insufficient content (388 chars)
+
+### fiveguys.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (414 chars)
+
+### dunkindonuts.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fiveguys.us
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hardees.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hardees.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hardees.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### in-n-out.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hardees.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### in-n-out.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### in-n-out.co
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- Open from
+
+**Related Domains Found:**
+
+- `associate.innout.com`
+- `facebook.com`
+- `instagram.com`
+- `shop.in-n-out.com`
+- `slave2nothing.org`
+
+---
+
+### in-n-out.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### in-n-out.net
+
+❌ **Not accessible:** Playwright: Insufficient content (81 chars)
+
+### in-n-out.org
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed
+
+**Sample Products/Services:**
+
+- Open from
+- Open from
+- Dining Room
+- Drive Thru
+
+**Related Domains Found:**
+
+- `associate.innout.com`
+- `facebook.com`
+- `instagram.com`
+- `shop.in-n-out.com`
+- `slave2nothing.org`
+
+---
+
+### in-n-out.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### in-n-out.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### innout.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### innout.app
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+
+---
+
+### innout.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### innout.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (479 chars)
+
+### innout.co
 
 **Risk Score:** 4/100
 
@@ -1676,877 +3095,3338 @@
 
 **Sample Products/Services:**
 
-- Contactez-nous pour une soumission
-- Consultation technologique
-- Développement sur mesure
+- Get this domain
 
 **Related Domains Found:**
 
-- `atelierhyper.com`
-- `google.ca`
-- `kitkat.io`
+- `trustpilot.com`
 
 ---
 
-### pizzahut.org
+### innout.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotlemexicangrill.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sonicdrivein.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mcdonalds.com
-
-**Risk Score:** 0/100
-
----
-
-### chipotlemexicangrill.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### deliveroo.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.ca
-
-**Risk Score:** 26/100
+**Risk Score:** 8/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: discounts, upselling
-- Employs aggressive marketing: scarcity, fomo
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### in-n-outburger.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### innout.io
+
+❌ **Not accessible:** Playwright: Insufficient content (379 chars)
+
+### innout.net
+
+❌ **Not accessible:** Playwright: Insufficient content (83 chars)
+
+### innout.org
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
 
 **Sample Products/Services:**
 
-- Be the first to know the latest Shake Shack Canada updates
-- Black Truffle Burger
-- Black Truffle Shack Stack
-- Black Truffle 'Shroom Burger
-- 'Shroom Burger™
+- Get this domain
 
 **Related Domains Found:**
 
-- `cdn.shakeshack.ca`
-- `facebook.com`
-- `instagram.com`
-- `linkedin.com`
-- `order.shakeshack.ca`
-- `tiktok.com`
-- `x.com`
+- `trustpilot.com`
 
 ---
 
-### sonicdriveinn.com
+### innout.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### chipotlemexicangrill.info
+### innout.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### poptarts.net
+### jackinthebox.ai
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### deliveroo.ai
+### jackinthebox.biz
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotlemexicangrill.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.us
-
-**Risk Score:** 67/100
+**Risk Score:** 30/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: urgency, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `assets.ctfassets.net`
+- `facebook.com`
+- `giftcards.com`
+- `heyjackbox.com`
+- `instagram.com`
+- `investors.jackinthebox.com`
+- `jackintheboxfranchising.com`
+- `jackintheboxjobs.com`
+- `linkedin.com`
+
+---
+
+### innout.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### jackinthebox.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### jackinthebox.co
+
+❌ **Not accessible:** Playwright: Insufficient content (64 chars)
+
+### jackinthebox.io
+
+❌ **Not accessible:** Playwright: Insufficient content (180 chars)
+
+### jackinthebox.info
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `assets.ctfassets.net`
+- `facebook.com`
+- `giftcards.com`
+- `heyjackbox.com`
+- `instagram.com`
+- `investors.jackinthebox.com`
+- `jackintheboxfranchising.com`
+- `jackintheboxjobs.com`
+- `linkedin.com`
+
+---
+
+### jackinthebox.net
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `assets.ctfassets.net`
+- `facebook.com`
+- `giftcards.com`
+- `heyjackbox.com`
+- `instagram.com`
+- `investors.jackinthebox.com`
+- `jackintheboxfranchising.com`
+- `jackintheboxjobs.com`
+- `linkedin.com`
+
+---
+
+### jackinthebox.org
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `assets.ctfassets.net`
+- `facebook.com`
+- `giftcards.com`
+- `heyjackbox.com`
+- `instagram.com`
+- `investors.jackinthebox.com`
+- `jackintheboxfranchising.com`
+- `jackintheboxjobs.com`
+- `linkedin.com`
+
+---
+
+### jimmyjohns.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### jimmyjohns.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### jackinthebox.us
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `assets.ctfassets.net`
+- `facebook.com`
+- `giftcards.com`
+- `heyjackbox.com`
+- `instagram.com`
+- `investors.jackinthebox.com`
+- `jackintheboxfranchising.com`
+- `jackintheboxjobs.com`
+- `linkedin.com`
+
+---
+
+### jimmyjohns.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (16 chars)
+
+### jimmyjohns.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### jimmyjohns.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kfc.ai
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### kfc.app
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### kfc.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kfc.biz
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+
+---
+
+### kfc.co
+
+❌ **Not accessible:** Playwright: Insufficient content (293 chars)
+
+### kfc.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (191 chars)
+
+### kfc.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kfc.io
+
+❌ **Not accessible:** Playwright: Insufficient content (475 chars)
+
+### kfc.net
+
+❌ **Not accessible:** Playwright: Insufficient content (334 chars)
+
+### kfc.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (302 chars)
+
+### krispykreme.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### krispykreme.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### krispykreme.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### krispykreme.net
+
+❌ **Not accessible:** Playwright: Insufficient content (15 chars)
+
+### krispykreme.co.uk
+
+**Risk Score:** 68/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
+-   ← Enables: krispykreme.co.uk (risk: 58)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: krispykreme.co.uk (risk: 58)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
 - MODERATE RISK: Several concerning patterns detected
 
 **Sample Products/Services:**
 
-- Beluga Fleur de Caviar, Pressed CaviarFROM$350
-- Beluga Fleur de Caviar, Pressed CaviarFROM$350
-- Beluga Fleur de Caviar, Pressed Caviar
-- SevrugaFROM$125
-- SevrugaFROM$125
+- 24 of our most loved flavours – hand-picked to put a smile on every face.
+- The Original and Best– 12 iconic Original Glazed™ doughnuts
+- 12 Assorted Ring Doughnuts
+- 24 Bites of our melt-in-your mouth, Original Glazed™ doughnut
+- Made Just for You – Create Your Own Dozen
 
 **Related Domains Found:**
 
+- `braintreegateway.com`
+- `careers.krispykreme.co.uk`
+- `cookiepedia.co.uk`
+- `facebook.com`
 - `instagram.com`
-- `markys.com`
-- `markyshelpdesk.com`
-- `resy.com`
-- `tiktok.com`
-- `wholesale.markys.com`
-- `youtube.com`
+- `investors.krispykreme.com`
+- `krispykreme.co.uk`
+- `onetrust.com`
+- `pinterest.co.uk`
+- `shops.krispykreme.co.uk`
 
 ---
 
-### doritos.app
+### krispykreme.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (197 chars)
 
-### chipotlemexicangrill.biz
+### littlecaesars.app
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_CLOSED at https://littlecaesars.app/
+Call log:
+  - navigating to "htt
 
-### caviar.uk
+### littlecaesars.biz
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
 
-### oreo.co.uk
+### littlecaesars.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
 
-### kfc.com
+### littlecaesars.co
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-outburger.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.com
-
-**Risk Score:** 0/100
-
----
-
-### chipotle.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doritos.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doritos.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dominos.com
-
-**Risk Score:** 12/100
+**Risk Score:** 8/100
 
 **Justification for Blocking:**
 
 - Uses behavioral manipulation: discounts, convenience
 
-**Sample Products/Services:**
-
-- North America
-- Latin America and Caribbean
-- Europe
-- Asia Pacific
-- Middle East and Africa
-
 **Related Domains Found:**
 
-- `dominos-ks.com`
-- `dominos-pizza.ro`
-- `dominos.ae`
-- `dominos.at`
-- `dominos.bg`
-- `dominos.bh`
-- `dominos.by`
-- `dominos.ca`
-- `dominos.ch`
-- `dominos.co.id`
+- `facebook.com`
+- `instagram.com`
 
 ---
 
-### chipotle.co.uk
+### littlecaesars.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
 
-### reeses.co
+### littlecaesars.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### caviar.biz
+### littlecaesars.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
 
-### qdoba.org
+### littlecaesars.org
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### caviar.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### poptarts.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bitesquad.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipotle.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slicelife.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doritos.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### wendys.com
-
-**Risk Score:** 77/100
+**Risk Score:** 4/100
 
 **Justification for Blocking:**
 
-- FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)
--   ← Enables: wendys.com (risk: 66)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: wendys.com (risk: 66)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
--   ← Enables: wendys.com (risk: 56)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: wendys.com (risk: 56)
-- ENABLER: Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: wendys.com (risk: 51)
-- Promotes health hazards: sugar, addictive
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### littlecaesars.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
+
+### littlecaesars.us
+
+❌ **Not accessible:** Playwright: Insufficient content (303 chars)
+
+### littlecaesars.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### marcos.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (131 chars)
+
+### marcos.co
+
+❌ **Not accessible:** Playwright: Insufficient content (63 chars)
+
+### marcos.info
+
+❌ **Not accessible:** Playwright: Insufficient content (288 chars)
+
+### marcos.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### marcos.us
+
+❌ **Not accessible:** Playwright: Insufficient content (282 chars)
+
+### marcos.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### moes.ai
+
+**Risk Score:** 0/100
+
+---
+
+### moes.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mcdonalds.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### moes.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### moes.co
+
+❌ **Not accessible:** Playwright: Insufficient content (300 chars)
+
+### moes.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (314 chars)
+
+### moes.info
+
+❌ **Not accessible:** Playwright: Insufficient content (282 chars)
+
+### moes.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### moes.net
+
+**Risk Score:** 0/100
+
+---
+
+### moes.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### moes.org
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- OUR SOLUTION
+- PARTNER EXPECTATIONS
+- MISSION
+- VISION
+- VALUES
+
+**Related Domains Found:**
+
+- `directories.onepercentfortheplanet.org`
+
+---
+
+### moes.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (479 chars)
+
+### moes.us
+
+❌ **Not accessible:** Playwright: Insufficient content (38 chars)
+
+### pandaexpress.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pandaexpress.ca
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Find Your Panda
+- Order NowOrder
+- Our FoodOur Philosophy
+- Our Philosophy
+- Our Locations
+
+**Related Domains Found:**
+
+- `community.pandaexpress.com`
+- `pandacareers.com`
+- `pandacares.org`
+- `pandaexpress.ca`
+- `pandaexpress.com`
+- `pandarg.com`
+- `privacyportal.onetrust.com`
+
+---
+
+### pandaexpress.biz
+
+❌ **Not accessible:** Playwright: Insufficient content (174 chars)
+
+### pandaexpress.co
+
+❌ **Not accessible:** Playwright: Insufficient content (302 chars)
+
+### pandaexpress.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (199 chars)
+
+### papajohns.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### papajohns.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### papajohns.ca
+
+**Risk Score:** 36/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: papajohns.ca (risk: 33)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, fomo
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `facebook.com`
+- `instagram.com`
+- `papajohns.ca`
+- `papajohns.com`
+- `papajohnsquebec.ca`
+- `play.google.com`
+- `tiktok.com`
+- `twitter.com`
+
+---
+
+### papajohns.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### papajohns.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (205 chars)
+
+### papajohns.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### papajohns.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### papajohns.us
+
+❌ **Not accessible:** Playwright: Insufficient content (205 chars)
+
+### papamurphys.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### papajohns.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizza73.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pizza73.app
+
+**Risk Score:** 27/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience
 - Employs aggressive marketing: scarcity
+
+**Sample Products/Services:**
+
+- Where are we delivering to ?
+- Sign in to see your saved addresses
+- Where are we delivering to ?
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `buyatab.com`
+- `facebook.com`
+- `instagram.com`
+- `play.google.com`
+- `policies.google.com`
+- `twitter.com`
+
+---
+
+### papamurphys.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizza73.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (101 chars)
+
+### pizza73.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizza73.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizza73.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pizza73.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizza73.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pizza73.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.info
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### pizzahut.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pizzahut.org
+
+**Risk Score:** 0/100
+
+---
+
+### pizzahut.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzahut.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzanova.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pizzanova.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (122 chars)
+
+### pizzanova.net
+
+**Risk Score:** 21/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: social_proof, personalization
+
+**Sample Products/Services:**
+
+- Theodore B:
+- Juice G:
+- Jenna S:
+- Lycan B:
+- Abigail G:
+
+**Related Domains Found:**
+
+- `catering.pizzanova.net`
+- `catersanmarcos.pizzanova.net`
+- `catersolanabeach.pizzanova.net`
+- `harbordrive.pizzanova.net`
+- `instagram.com`
+- `opentable.com`
+- `pizzanova.securetree.com`
+- `recruiting.paylocity.com`
+- `sanmarcos.pizzanova.net`
+- `solanabeach.pizzanova.net`
+
+---
+
+### pizzanova.uk
+
+**Risk Score:** 33/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling
+- Employs aggressive marketing: social_proof, personalization
+
+**Sample Products/Services:**
+
+- Pizza Nova Billingham
+- Strictly necessary cookies
+- Functional cookies
+- Performance cookies
+- Advertising cookies
+
+**Related Domains Found:**
+
+- `flipdish.com`
+- `google.com`
+- `play.google.com`
+
+---
+
+### pizzanova.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyes.co
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### popeyes.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (323 chars)
+
+### popeyes.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyes.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### popeyes.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### popeyes.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyes.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyeschicken.co
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### popeyeschicken.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (122 chars)
+
+### popeyeschicken.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyeschicken.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### popeyeschicken.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyeschicken.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### popeyeschicken.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### qdoba.biz
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### qdoba.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### qdoba.co
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### popeyeschicken.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### qdoba.dev
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### qdoba.info
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### qdoba.net
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### qdoba.org
+
+❌ **Not accessible:** Playwright: Insufficient content (306 chars)
+
+### shakeshack.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### qdoba.us
+
+**Risk Score:** 0/100
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+
+---
+
+### shakeshack.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### shakeshack.co
+
+❌ **Not accessible:** Playwright: Insufficient content (391 chars)
+
+### shakeshack.co.uk
+
+**Risk Score:** 65/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
+-   ← Enables: shakeshack.co.uk (risk: 55)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: shakeshack.co.uk (risk: 55)
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
 - MODERATE RISK: Several concerning patterns detected
 
 **Sample Products/Services:**
 
-- Find a Wendy'sFind
-- Order PickupOrder Pickup
-- Order DeliveryOrder Delivery
-- View our MenuMenu
-- Who We AreCompany
+- MenuMenuLimited Time Only MenuBreakfast Menu
+- Menu
+- Limited Time Only Menu
+- Breakfast Menu
+- Offers
 
 **Related Domains Found:**
 
+- `business.safety.google`
+- `cookiebot.com`
 - `deliveroo.co.uk`
+- `elfsight.com`
 - `facebook.com`
 - `instagram.com`
 - `just-eat.co.uk`
-- `letwendysknow.com`
 - `linkedin.com`
-- `m-wendys-ca.app.link`
-- `myunidays.com`
-- `order.withqikserve.com`
-- `tiktok.com`
-
----
-
-### chipotle.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slice.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chickfila.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bitesquad.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### arbys.com
-
-**Risk Score:** 0/100
-
----
-
-### chickfila.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### shakeshack.com
-
-**Risk Score:** 0/100
+- `newrelic.com`
+- `privacy.microsoft.com`
 
 ---
 
 ### shakeshack.app
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### eatstreet.com
+### shakeshack.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chickfila.org
+### shakeshack.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### doritos.ca
+### shakeshack.io
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chickfila.net
+### shakeshack.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 32/100
 
-### shakeshack.biz
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
 
-### chickfila.info
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `fruits.co`
+- `trustpilot.com`
 
-### poptarts.co.uk
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### shakeshack.org
 
-### chickfila.co.uk
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### shakeshack.us
 
-### skipthedishes.com
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### sonicdrivein.ai
 
-### swiggy.com
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### sonicdrivein.co
 
-### chickfila.ca
+❌ **Not accessible:** Playwright: Insufficient content (69 chars)
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### sonicdrivein.co.uk
 
-### justeat.com
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### sonicdrivein.ca
 
-### chipsahoy.co.uk
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sonicdrivein.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sonicdrivein.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sonicdrivein.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sonicdrivein.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### starbucks.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### starbucks.ca
+
+**Risk Score:** 42/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: starbucks.ca (risk: 39)
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling
+- Employs aggressive marketing: fomo, personalization
+
+**Related Domains Found:**
+
+- `careers.starbucks.ca`
+- `customerservice.starbucks.ca`
+- `facebook.com`
+- `fr.starbucks.ca`
+- `instagram.com`
+- `investor.starbucks.com`
+- `partner.starbucks.com`
+- `solutions.nestleprofessional.ca`
+- `starbucks.ca`
+- `starbucks.promo.eprize.com`
+
+---
+
+### starbucks.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### starbucks.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### starbucks.co.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### popeyeschicken.org
+### starbucks.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chickfila.biz
+### starbucks.co
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chickfila.com
+### starbucks.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### doritos.org
+### starbucks.io
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### just-eat.com
+### starbucks.org
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### popeyeschicken.uk
+### starbucks.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chickfila.ai
+### subway.biz
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### oreo.us
+### subway.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chick-fil-a.us
+### starbucks.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### popeyeschicken.us
+### subway.co.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chick-fil-a.uk
+### subway.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### menulog.com
+### subway.info
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (464 chars)
 
-### instacart.com
+### subway.io
+
+❌ **Not accessible:** Playwright: Insufficient content (31 chars)
+
+### subway.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### subway.net
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: ultra_processed, sugar
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- 1. A Bouquet of Lilies And Roses
+- 2. Gift of the Magi
+- 3. Whispers of Love
+- 4. Truth or Dare
+- 5. Love You Till Eternity
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `news.google.com`
+- `pinkvilla.com`
+- `pnkv.page.link`
+- `whatsapp.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### subway.org
+
+❌ **Not accessible:** Playwright: Insufficient content (322 chars)
+
+### tacobell.ai
 
 **Risk Score:** 0/100
 
 ---
 
-### chick-fil-a.org
+### tacobell.app
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-### zomato.com
+### tacobell.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 26/100
 
-### bagelbites.net
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity
 
-### gopuff.com
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) suspended active started main>
+- Explore Our Menu
 
-### mcdonalds.us
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `apps.apple.com`
+- `facebook.com`
+- `instagram.com`
+- `play.google.com`
+- `restaurant.nutritionix.com`
+- `spccard.ca`
+- `tacobell.checkyourcardbalance.com`
+- `twitter.com`
+- `youtube.com`
+- `yumcanada.talcura.com`
 
-### chick-fil-a.net
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.co
 
-### trycaviar.com
+❌ **Not accessible:** Playwright: Insufficient content (148 chars)
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+### tacobell.biz
 
-### foodpanda.com
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.info
 
-### fritos.co
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.io
 
-### chipsahoy.ca
+❌ **Not accessible:** Playwright: Insufficient content (237 chars)
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.co.uk
 
-### bagelbites.co.uk
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.org
 
-### mcdonalds.net
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+### tacobell.uk
 
-### chick-fil-a.io
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### tacobell.net
 
-### bagelbites.ca
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### timhortons.ai
 
-### qdoba.biz
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
+### tacobell.us
 
-### mcdonalds.io
+❌ **Not accessible:** Playwright: No content retrieved
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### timhortons.ca
 
-### chick-fil-a.info
+**Risk Score:** 4/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Justification for Blocking:**
 
-### ritz.co
+- Uses behavioral manipulation: convenience
+
+**Related Domains Found:**
+
+- `careers.timhortons.ca`
+- `help.timhortons.ca`
+- `news.timhortons.ca`
+- `rbixm.qualtrics.com`
+- `timhortons.ca`
+- `timsfinancial.ca`
+
+---
+
+### timhortons.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### timhortons.net
+
+❌ **Not accessible:** Playwright: Insufficient content (394 chars)
+
+### timhortons.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### timhortons.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### timhortons.us
+
+❌ **Not accessible:** Playwright: Insufficient content (44 chars)
+
+### wendys.ca
+
+**Risk Score:** 60/100
+
+**Justification for Blocking:**
+
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: wendys.com (risk: 51)
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- RewardsRewards
+- Find a Wendy'sFind
+- OrderPickupOrder Pickup
+- OrderDeliveryOrder Delivery
+- View Our MenuMenu
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `customer-care.wendys.com`
+- `facebook.com`
+- `instagram.com`
+- `irwendys.com`
+- `linkedin.com`
+- `menu.wendys.com`
+- `onetrust.com`
+- `order.wendys.com`
+- `play.google.com`
+
+---
+
+### wendys.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### wendys.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### timhortons.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### wendys.io
+
+❌ **Not accessible:** Playwright: Insufficient content (224 chars)
+
+### whitecastle.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### wendys.net
+
+❌ **Not accessible:** Playwright: Insufficient content (369 chars)
+
+### whitecastle.ca
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Contact Us
+- Pages
+- Social
+
+**Related Domains Found:**
+
+- `goo.gl`
+- `linkedin.com`
+- `twitter.com`
+
+---
+
+### whitecastle.co.uk
+
+**Risk Score:** 16/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, upselling
+
+**Sample Products/Services:**
+
+- Gardening in WHITECASTLE
+- All WHITECASTLE news
+- *
+
+**Related Domains Found:**
+
+- `any-web.uk`
+- `bbc.co.uk`
+- `bbc.com`
+- `bing.com`
+- `gbnews.com`
+- `itv.com`
+- `news.google.com`
+
+---
+
+### whitecastle.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (191 chars)
+
+### whitecastle.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### whitecastle.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### whitecastle.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### whitecastle.uk
 
 **Risk Score:** 0/100
 
 ---
 
-### mms.co.uk
+### whitecastle.us
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Need Help with City Services Schedule?
+- Town Hall New Offices Hours
+- No active alerts at this time.
+
+**Related Domains Found:**
+
+- `cdc.gov`
+- `clients.municipalimpact.com`
+- `coronavirus.gov`
+- `ibervilleparish.com`
+- `laworks.net`
+- `lla.la.gov`
+- `lma.org`
+- `municipalimpact.com`
+- `smalltownpapers.com`
+- `translate.google.com`
+
+---
+
+### doritos.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+
+**Sample Products/Services:**
+
+- Follow us
+- DORITOS®Nacho Cheese
+- DORITOS®COOL RANCH®
+- DORITOS®Spicy Sweet Chili
+- DORITOS®Spicy Nacho
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `curator.io`
+- `doritos.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicofoodsfsv.com`
+- `snapchat.com`
+- `tiktok.com`
+- `x.com`
+
+---
+
+### lays.com
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+
+**Sample Products/Services:**
+
+- LAY'S® Classic Potato Chips
+- LAY'S® All Dressed Potato Chips
+- LAY'S® Chesapeake Bay Crab Spice Flavored Potato Chips
+- LAY'S® BBQ Flavored Potato Chips
+- LAY'S® Sour Cream & Onion Flavored Potato Chips
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `cu1.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `laysfwc26countdown.com`
+- `pepsico.com`
+- `tiktok.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### chips-ahoy.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### whitecastle.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ritz.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### chipsahoy.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### poptarts.com
+
+❌ **Not accessible:** Playwright: Insufficient content (279 chars)
+
+### m-ms.com
+
+**Risk Score:** 34/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: urgency, discounts, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- chocolatechocolate
+- M&M'S Peanut
+- best sellers
+- merchandise
+- last chance
+
+**Related Domains Found:**
+
+- `careers.mars.com`
+- `cookiepedia.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `mars.com`
+- `marsmmsprod.a.bigcontent.io`
+- `onetrust.com`
+- `pinterest.com`
+- `privacyportal-eu.onetrust.com`
+- `trustpilot.com`
+
+---
+
+### mms.com
+
+**Risk Score:** 30/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: urgency, discounts
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- chocolatechocolate
+- M&M'S Peanut
+- best sellers
+- merchandise
+- last chance
+
+**Related Domains Found:**
+
+- `careers.mars.com`
+- `facebook.com`
+- `instagram.com`
+- `mars.com`
+- `marsmmsprod.a.bigcontent.io`
+- `pinterest.com`
+- `privacyportal-eu.onetrust.com`
+- `trustpilot.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### mars.com
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 2 domain(s) (+6 points)
+-   ← Enables: mms.com (risk: 30)
+-   ← Enables: m-ms.com (risk: 34)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### kitkat.com
 
 **Risk Score:** 0/100
 
 ---
+
+### cheetos.ca
+
+**Risk Score:** 13/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- CHEETOS CRUNCHY®FLAMIN' HOT®Wings
+- CHEETOS CRUNCHY®Sweet 'N' Spicy Chili Meatballs
+- Chester’s Best Pumpkin Pie
+- Tasty RewardsTMMembers!
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `tastyrewards.ca`
+- `tastyrewards.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### cheetos.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### triscuit.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cheetos.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### cheetos.org
+
+❌ **Not accessible:** Playwright: No content retrieved
 
 ### cheetos.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### mcdonalds.dev
+### chips-ahoy.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: No content retrieved
 
-### chick-fil-a.co.uk
+### doritos.ai
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### doritos.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### doritos.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### doritos.ca
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- DORITOS COLLISIONS®Pizza and Cool Ranch®Flavoured Tortilla Chips
+- Tasty RewardsTMMembers!
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `tastyrewards.com`
+- `tiktok.com`
+- `youtube.com`
+
+---
+
+### doritos.co.uk
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsicoprivacypolicy.com`
+- `twitter.com`
+- `walkers.co.uk`
+- `youtube.com`
+
+---
+
+### chipsahoy.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### doritos.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### doritos.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### doritos.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fritos.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fritos.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fritos.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fritos.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fritos.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hersheys.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hersheys.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kitkat.ai
+
+**Risk Score:** 0/100
+
+---
+
+### kitkat.ca
+
+**Risk Score:** 0/100
+
+---
+
+### kitkat.co
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### kitkat.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kitkat.info
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### fritos.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### kitkat.net
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### kitkat.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lays.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### lays.app
+
+❌ **Not accessible:** Playwright: Insufficient content (394 chars)
+
+### lays.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lays.co.uk
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_CLOSED at https://lays.co.uk/
+Call log:
+  - navigating to "https://la
+
+### kitkat.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lays.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### lays.net
+
+❌ **Not accessible:** Playwright: Insufficient content (131 chars)
+
+### lays.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### lays.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (479 chars)
+
+### lays.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### m-ms.ca
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### m-ms.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (488 chars)
+
+### lays.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### m-ms.info
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### m-ms.net
+
+❌ **Not accessible:** Playwright: Insufficient content (66 chars)
+
+### mars.ca
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Electronicien.ca
+- Hypotheque.ca
+- Plombier.ca
+- Meubles.ca
+- Assurance.ca
+
+**Related Domains Found:**
+
+- `Hypotheque.ca`
+- `Plombier.ca`
+- `assurance.ca`
+- `electronicien.ca`
+- `meubles.ca`
+
+---
+
+### mars.co.uk
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, upselling, addiction_language
+- Employs aggressive marketing: social_proof, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `careers.mars.com`
+- `cookiepedia.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `mars.com`
+- `onetrust.com`
+- `privacyportal-eu.onetrust.com`
+- `supplier.mars.com`
+- `youtube.com`
+
+---
+
+### mars.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (246 chars)
+
+### mars.org
+
+❌ **Not accessible:** Playwright: Insufficient content (33 chars)
+
+### mars.us
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### mms.ca
+
+**Risk Score:** 21/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo, personalization
+
+**Sample Products/Services:**
+
+- Lighting
+- LED Fixtures
+- LED Lamps
+- Emergency Lighting
+- Decorative Lighting
+
+---
+
+### mms.info
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### mms.io
+
+❌ **Not accessible:** Playwright: No content retrieved
 
 ### mms.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+❌ **Not accessible:** Playwright: Insufficient content (314 chars)
 
-### delivery.com
+### mms.us
 
-**Risk Score:** 38/100
+❌ **Not accessible:** Playwright: Insufficient content (476 chars)
+
+### mms.net
+
+**Risk Score:** 24/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Content Solutions
+- Digital Solutions
+- Audio Solutions
+- TV Solutions
+- MMS x Carolina Herrera Case Study Video
+
+**Related Domains Found:**
+
+- `cdn.prod.website-files.com`
+- `instagram.com`
+- `linkedin.com`
+- `maps.app.goo.gl`
+- `maps.google.com`
+- `mbc.egnyte.com`
+- `mmsworks.net`
+- `portal.mms.net`
+- `x.com`
+- `youtube.com`
+
+---
+
+### oreo.app
+
+❌ **Not accessible:** Playwright error: Page.goto: net::ERR_CONNECTION_REFUSED at https://oreo.app/
+Call log:
+  - navigating to "https://ore
+
+### oreo.ai
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: urgency, discounts, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo
+
+**Sample Products/Services:**
+
+- Secure & Trusted Transactions
+- Fast & Guaranteed Transfers
+- Easy & Flexible Payments
+- This domain name19
+- Other Purchase Options
+
+**Related Domains Found:**
+
+- `atom.com`
+- `facebook.com`
+- `helpdesk.atom.com`
+- `instagram.com`
+- `linkedin.com`
+- `trademark.io`
+- `trustpilot.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### oreo.co
+
+❌ **Not accessible:** Playwright: Insufficient content (476 chars)
+
+### oreo.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### oreo.dev
+
+**Risk Score:** 6/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: social_proof, fomo
+
+**Related Domains Found:**
+
+- `x.com`
+
+---
+
+### oreo.info
+
+❌ **Not accessible:** Playwright: Insufficient content (379 chars)
+
+### oreo.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### oreo.org
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### oreo.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### oreo.us
+
+❌ **Not accessible:** Playwright: Insufficient content (373 chars)
+
+### oreo.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### poptarts.co.uk
+
+**Risk Score:** 40/100
 
 **Justification for Blocking:**
 
 - Promotes health hazards: sugar, fast_food
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-
-**Sample Products/Services:**
-
-- Find Favorites and Discover New Ones
-- Free, Easy, and Essential
-- Earn Points and Get Rewards
-- Connect with us
-- For Local Businesses
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: social_proof
 
 **Related Domains Found:**
 
-- `adasitecompliancetools.com`
-- `blog.delivery.com`
-- `deliverycom.formstack.com`
-- `facebook.com`
-- `instagram.com`
-- `twitter.com`
+- `abebooks.co.uk`
+- `aboutamazon.co.uk`
+- `acx.com`
+- `advertising.amazon.co.uk`
+- `affiliate-program.amazon.co.uk`
+- `amazon.co.uk`
+- `amazon.jobs`
+- `amazon.science`
+- `audible.co.uk`
+- `aws.amazon.com`
+
+---
+
+### poptarts.net
+
+**Risk Score:** 0/100
+
+---
+
+### poptarts.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.co
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.co.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.net
+
+❌ **Not accessible:** Playwright: Insufficient content (67 chars)
+
+### pringles.org
+
+❌ **Not accessible:** Playwright: Insufficient content (313 chars)
+
+### pringles.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pringles.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### reeses.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### reeses.co
+
+❌ **Not accessible:** Playwright: Insufficient content (284 chars)
+
+### reeses.net
+
+❌ **Not accessible:** Playwright: Insufficient content (151 chars)
+
+### reeses.org
+
+❌ **Not accessible:** Playwright: Insufficient content (83 chars)
+
+### pringles.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ritz.dev
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ritz.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### ritz.net
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Home
+- Crystal Trophies
+- Contact Us
+
+**Related Domains Found:**
+
+- `ritz.net`
+- `wordpress.org`
+
+---
+
+### ritz.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ritz.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ruffles.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (323 chars)
+
+### ritz.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### ruffles.io
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
 
 ---
 
 ### ruffles.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 8/100
 
-### lays.ai
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: discounts
 
-### qdoba.ca
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### ruffles.uk
+
+**Risk Score:** 14/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: scarcity, personalization
+
+**Sample Products/Services:**
+
+- BUY DOMAIN NAMES .CO .UK
+- You are one step away from securing this premium domain name.
+
+**Related Domains Found:**
+
+- `buydomainnames.co.uk`
+- `google.co.uk`
+
+---
+
+### ruffles.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### skittles.ai
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### skittles.io
+
+❌ **Not accessible:** Playwright: Insufficient content (317 chars)
+
+### skittles.net
+
+❌ **Not accessible:** Playwright: Insufficient content (315 chars)
+
+### skittles.org
+
+❌ **Not accessible:** Playwright: Insufficient content (293 chars)
+
+### snickers.ai
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### snickers.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (104 chars)
+
+### snickers.info
+
+❌ **Not accessible:** Playwright: Insufficient content (294 chars)
+
+### snickers.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Get this domain
+
+**Related Domains Found:**
+
+- `trustpilot.com`
+
+---
+
+### snickers.net
+
+❌ **Not accessible:** Playwright: Insufficient content (103 chars)
+
+### ruffles.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### snickers.us
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### snickers.org
+
+❌ **Not accessible:** Playwright: Insufficient content (103 chars)
+
+### sunchips.ca
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- SUNCHIPS®Harvest Cheddar flavour multigrain snacks
+- SUNCHIPS®French Onion flavour multigrain snacks
+- SUNCHIPS®Garden Salsa flavour multigrain snacks
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `youtube.com`
+
+---
+
+### sunchips.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### sunchips.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### tostitos.ca
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- DELICIOUSRECIPES
+- Tasty RewardsTMMembers
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `pinterest.ca`
+- `shop.snackstoyoucanada.ca`
+- `tastyrewards.com`
+- `twitter.com`
+- `x.com`
+
+---
+
+### sunchips.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### tostitos.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### tostitos.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### tostitos.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### tostitos.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### twix.ai
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### twix.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### twix.dev
+
+❌ **Not accessible:** Playwright: Insufficient content (231 chars)
+
+### twix.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### twix.org
+
+❌ **Not accessible:** Playwright: Insufficient content (86 chars)
+
+### triscuit.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hotpockets.com
+
+**Risk Score:** 0/100
+
+---
+
+### twix.us
+
+**Risk Score:** 23/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, personalization
+
+**Sample Products/Services:**
+
+- Policies & Practices
+- Careers(Opens a new window)
+- Facebook(Opens a new window)
+- Instagram(Opens a new window)
+- LinkedIn(Opens a new window)
+
+**Related Domains Found:**
+
+- `arg.mars.com`
+- `aus.mars.com`
+- `aut.mars.com`
+- `bel.mars.com`
+- `bra.mars.com`
+- `can.mars.com`
+- `careers.mars.com`
+- `che.mars.com`
+- `chn.mars.com`
+- `cze.mars.com`
+
+---
+
+### stouffers.com
+
+**Risk Score:** 0/100
+
+---
+
+### leanpockets.com
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### bagelbites.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### bagelbites.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### bagelbites.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### hotpockets.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (80 chars)
+
+### hotpockets.info
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### hotpockets.net
+
+**Risk Score:** 0/100
+
+---
+
+### hungry-man.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### stouffers.ca
+
+**Risk Score:** 0/100
+
+---
+
+### stouffers.us
+
+❌ **Not accessible:** Playwright: Insufficient content (101 chars)
+
+### monsterenergy.com
+
+❌ **Not accessible:** Playwright: Insufficient content (157 chars)
+
+### coca-cola.com
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 3 domain(s) (+8 points)
+-   ← Enables: coca-cola.co.uk (risk: 29)
+-   ← Enables: coca-cola.com (risk: 29)
+-   ← Enables: drpepper.co.uk (risk: 29)
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `coca-cola.com`
+- `facebook.com`
+- `instagram.com`
+- `onetrust.com`
+- `play.google.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### sprite.com
+
+**Risk Score:** 0/100
+
+---
+
+### fanta.com
+
+**Risk Score:** 0/100
+
+---
+
+### bagelbites.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### coca-cola.ca
+
+**Risk Score:** 11/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- Flag Bearer Sweepstakes
+- Future Careers Academy
+- About us
+- Need help?
+- Legal
+
+**Related Domains Found:**
+
+- `coca-colacompany.com`
+- `facebook.com`
+- `instagram.com`
+- `privacyportal.onetrust.com`
+- `shop-cocacola.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### coca-cola.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### coca-cola.co.uk
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+- ‘Tis the Season for Holiday Refreshment
+- Score festive football treats with Coca‑Cola
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `coca-cola.com`
+- `facebook.com`
+- `instagram.com`
+- `onetrust.com`
+- `play.google.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### coca-cola.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### coca-cola.io
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### coca-cola.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### drpepper.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### coca-cola.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### drpepper.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### drpepper.us
+
+❌ **Not accessible:** Playwright: Insufficient content (108 chars)
+
+### fanta.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (189 chars)
+
+### drpepper.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### fanta.ca
+
+**Risk Score:** 19/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, addiction_language
+- Employs aggressive marketing: fomo
+
+**Sample Products/Services:**
+
+- Flag Bearer Sweepstakes
+- Future Careers Academy
+- Flag Bearer Sweepstakes
+- Future Careers Academy
+- Flag Bearer Sweepstakes
+
+**Related Domains Found:**
+
+- `coca-cola.com`
+- `coca-colacompany.com`
+- `facebook.com`
+- `instagram.com`
+- `onetrust.com`
+- `privacyportal.onetrust.com`
+- `shop-cocacola.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### fanta.co
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### fanta.net
+
+❌ **Not accessible:** Playwright: Insufficient content (72 chars)
+
+### fanta.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.app
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.co
+
+❌ **Not accessible:** Playwright: Insufficient content (51 chars)
+
+### monsterenergy.co.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (341 chars)
+
+### monsterenergy.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.uk
+
+❌ **Not accessible:** Playwright: Insufficient content (341 chars)
+
+### monsterenergy.us
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mountaindew.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### monsterenergy.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mountaindew.io
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### mountaindew.us
+
+❌ **Not accessible:** Playwright: Insufficient content (416 chars)
+
+### pepsi.ai
+
+❌ **Not accessible:** Playwright: Insufficient content (484 chars)
+
+### pepsi.app
+
+❌ **Not accessible:** Playwright: Insufficient content (0 chars)
+
+### pepsi.ca
+
+❌ **Not accessible:** Playwright: Insufficient content (448 chars)
+
+### pepsi.co.ca
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### mountaindew.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pepsi.io
+
+❌ **Not accessible:** Playwright: Insufficient content (47 chars)
+
+### pepsi.info
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pepsi.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### pepsi.us
+
+❌ **Not accessible:** Playwright: Insufficient content (364 chars)
+
+### pepsi.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### redbull.net
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### redbull.org
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### redbull.uk
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### rockstarenergy.us
+
+❌ **Not accessible:** Playwright: Insufficient content (425 chars)
+
+### sprite.co.uk
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### sprite.io
+
+❌ **Not accessible:** Playwright: Insufficient content (60 chars)
+
+### sprite.uk
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Browser
+- Cloudflare
+- Host
+- If you're a visitor of this website:
+- If you're the owner of this website:
+
+**Related Domains Found:**
+
+- `cloudflare.com`
+- `developers.cloudflare.com`
+
+---
+
+### ubereats.com
+
+**Risk Score:** 29/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 3 domain(s) (+14 points)
+-   ← Enables: dunkindonuts.co.uk (risk: 38)
+-   ← Enables: wendys.com (risk: 51)
+-   ← Enables: shakeshack.co.uk (risk: 55)
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `about.ubereats.com`
+- `apps.apple.com`
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `merchants.ubereats.com`
+- `play.google.com`
+- `policies.google.com`
+- `privacy.uber.com`
+- `twitter.com`
+
+---
+
+### postmates.com
+
+**Risk Score:** 18/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `help.uber.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `play.google.com`
+- `postmates.com`
+- `privacy.uber.com`
+- `twitter.com`
+- `uber.com`
+
+---
 
 ### deliveroo.com
 
@@ -2579,512 +6459,142 @@
 
 ---
 
-### cheetos.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mcdonalds.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### chick-fil-a.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fritos.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
 ### caviar.com
 
 **Risk Score:** 0/100
 
 ---
 
-### ruffles.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mcdonalds.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chick-fil-a.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### cheetos.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mcdonalds.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chick-fil-a.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### m-ms.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mcdonalds.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### popeyeschicken.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.com
+### instacart.com
 
 **Risk Score:** 0/100
 
 ---
 
-### mcdonalds.ai
+### caviar.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.ca
-
-**Risk Score:** 13/100
+**Risk Score:** 67/100
 
 **Justification for Blocking:**
 
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: scarcity, fomo
+- Promotes health hazards: sugar, fast_food
+- Uses behavioral manipulation: urgency, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: social_proof, scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
 
 **Sample Products/Services:**
 
-- Featured Products
-- Featured Products
-- Featured Products
-- Tasty RewardsTMMembers!
+- Beluga Fleur de Caviar, Pressed CaviarFROM$350
+- Beluga Fleur de Caviar, Pressed CaviarFROM$350
+- Beluga Fleur de Caviar, Pressed Caviar
+- SevrugaFROM$125
+- SevrugaFROM$125
 
 **Related Domains Found:**
 
-- `contact.pepsico.com`
-- `facebook.com`
 - `instagram.com`
-- `pepsico.ca`
-- `pepsico.com`
-- `pepsicojobs.com`
-- `shop.snackstoyoucanada.ca`
-- `shop.tastyrewards.ca`
-- `tastyrewards.com`
-- `x.com`
-
----
-
-### popeyeschicken.ca
-
-**Risk Score:** 0/100
-
----
-
-### ritz.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### marcos.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.biz
-
-**Risk Score:** 0/100
-
----
-
-### mms.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chipsahoy.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### marcos.uk
-
-**Risk Score:** 0/100
-
----
-
-### slice.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.ca
-
-**Risk Score:** 0/100
-
----
-
-### pringles.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chick-fil-a.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chips-ahoy.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### marcos.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slice.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.ca
-
-**Risk Score:** 10/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: fomo
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.ca`
-- `pepsicojobs.com`
-- `shop.snackstoyoucanada.ca`
-- `x.com`
-
----
-
-### doordash.com
-
-❌ **Not accessible:** Playwright: Insufficient content (332 chars)
-
-### arbys.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.com
-
-**Risk Score:** 0/100
-
----
-
-### marcos.io
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- ~
-
-**Related Domains Found:**
-
-- `linkedin.com`
-- `mailhide.io`
-- `twitter.com`
-
----
-
-### slice.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### ruffles.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ubereats.com
-
-**Risk Score:** 11/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+6 points)
--   ← Enables: wendys.com (risk: 66)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
--   ← Enables: wendys.com (risk: 56)
-
----
-
-### popeyes.com
-
-**Risk Score:** 0/100
-
----
-
-### tostitos.com
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- Want more? Connect with us.
-- Prep Time:
-- Cook Time:
-- Servings:
-- Prep Time:
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `curator.io`
-- `facebook.com`
-- `fritolay.com`
-- `instagram.com`
-- `pepsico.com`
-- `pepsicofoodsfsv.com`
-- `tostitos.com`
-- `twitter.com`
+- `markys.com`
+- `markyshelpdesk.com`
+- `resy.com`
+- `tiktok.com`
+- `wholesale.markys.com`
 - `youtube.com`
 
 ---
 
-### marcos.info
+### deliveroo.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 57/100
 
-### slice.io
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### chips-ahoy.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sunchips.com
-
-**Risk Score:** 0/100
+- FACILITATOR (Inbound): Used by 5 domain(s) (+21 points)
+-   ← Enables: dunkindonuts.co.uk (risk: 38)
+-   ← Enables: wendys.com (risk: 51)
+-   ← Enables: shakeshack.co.uk (risk: 55)
+- Uses behavioral manipulation: discounts, convenience, upselling
+- Employs aggressive marketing: scarcity, fomo, personalization
 
 **Sample Products/Services:**
 
-- SUNCHIPS®HARVEST CHEDDAR®View Product
-- SUNCHIPS®GARDEN SALSA®View Product
-- SUNCHIPS®OriginalView Product
-- SUNCHIPS®HONEY BBQView Product
-- SUNCHIPS®French OnionView Product
+- Discover Deliveroo
+- Legal
+- Help
+- Take Deliveroo with you
 
 **Related Domains Found:**
 
-- `contact.pepsico.com`
-- `curator.io`
+- `careers.deliveroo.co.uk`
+- `corporate.deliveroo.co.uk`
+- `deliveroo.design`
+- `deliveroo.engineering`
+- `deliveroo.onelink.me`
+- `deliveroostudents.co.uk`
 - `facebook.com`
 - `instagram.com`
-- `pepsico.com`
-- `pepsicofoodsfsv.com`
-- `sunchips.com`
-- `tiktok.com`
-- `x.com`
+- `par.deliveroo.net`
+- `restaurants.deliveroo.com`
 
 ---
 
-### marcos.dev
+### deliveroo.net
 
-**Risk Score:** 0/100
+**Risk Score:** 33/100
 
----
+**Justification for Blocking:**
 
-### slice.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyeschicken.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fritos.com
-
-**Risk Score:** 0/100
+- Uses behavioral manipulation: discounts, convenience, upselling
+- Employs aggressive marketing: fomo, personalization
 
 **Sample Products/Services:**
 
-- Fritos®Original Corn Chips
-- Fritos®Scoops!®Corn Chips
-- Fritos®Scoops!®Spicy Jalapeño Corn Chips
-- Fritos®Lightly Salted Corn Chips
-- Fritos®Flavor Twists®Honey BBQ Flavored Corn Chips
+- Discover Deliveroo
+- Legal
+- Help
+- Take Deliveroo with you
 
 **Related Domains Found:**
 
-- `contact.pepsico.com`
-- `curator.io`
+- `careers.deliveroo.co.uk`
+- `corporate.deliveroo.co.uk`
+- `deliveroo.co.uk`
+- `deliveroo.design`
+- `deliveroo.engineering`
+- `deliveroo.onelink.me`
+- `deliveroostudents.co.uk`
 - `facebook.com`
-- `fritolay.com`
 - `instagram.com`
-- `pepsico.com`
-- `pinterest.com`
-- `twitter.com`
+- `par.deliveroo.net`
 
 ---
 
-### marcos.co.uk
+### delivery.ai
+
+**Risk Score:** 16/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Related Domains Found:**
+
+- `sudos.com`
+
+---
+
+### foodpanda.ca
 
 **Risk Score:** 0/100
 
 ---
 
-### slice.co.uk
+### instacart.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### postmates.com
+---
+
+### postmates.net
 
 **Risk Score:** 18/100
 
@@ -3105,938 +6615,6 @@
 - `privacy.uber.com`
 - `twitter.com`
 - `uber.com`
-
----
-
-### ritz.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### arbys.ca
-
-**Risk Score:** 47/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Congrats! You have earnedpoints
-
----
-
-### pringles.com
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: scarcity
-
-**Sample Products/Services:**
-
-- North America
-- Central America
-- South America
-- Europe & Middle East
-- Africa
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `kelloggs.co.uk`
-- `kelloggs.ie`
-- `poptopia.pringles.com`
-- `pringles.bo`
-- `pringles.ca`
-- `pringles.cl`
-- `pringles.co.ve`
-- `pringles.com`
-
----
-
-### marcos.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slice.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.dev
-
-**Risk Score:** 0/100
-
----
-
-### jackinthebox.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.com
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- RUFFLES®PRODUCTSView Products
-- RUFFLES®PRODUCTS
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `curator.io`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.com`
-- `pepsicofoodsfsv.com`
-- `ruffles.com`
-- `tiktok.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### marcos.ca
-
-❌ **Not accessible:** Playwright: Insufficient content (131 chars)
-
-### grubhub.com
-
-❌ **Not accessible:** Playwright: Insufficient content (225 chars)
-
-### slice.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.ai
-
-**Risk Score:** 0/100
-
----
-
-### subway.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### cheetos.com
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- CRUNCHYCRUNCHY
-- PUFFSPUFFS
-- MAC 'N CHEESEMAC 'N CHEESE
-- FLAMIN' HOT®FLAMIN' HOT®
-- FANTASTIX®FANTASTIX®
-
-**Related Domains Found:**
-
-- `cheetos.com`
-- `contact.pepsico.com`
-- `curator.io`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.com`
-- `pepsicofoodsfsv.com`
-- `x.com`
-- `youtube.com`
-
----
-
-### marcos.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### slice.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skittles.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.com
-
-**Risk Score:** 44/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- FEATURED FLAVORS
-- Cali XL
-- Cali XL Combo
-- BYOB - Build Your Own Bag
-- Churro Hand-Scooped Ice-Cream Shake
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `buyatab.com`
-- `carlsjr-appinstall.onelink.me`
-- `carlsjrfranchising.com`
-- `ckefranchise.com`
-- `facebook.com`
-- `instagram.com`
-- `order.carlsjr.com`
-- `play.google.com`
-- `privacy.ckr.com`
-
----
-
-### lays.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### marcos.app
-
-**Risk Score:** 0/100
-
----
-
-### seamless.com
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### skipthedishes.uk
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### arbys.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doritos.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### marcos.ai
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### skipthedishes.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ruffles.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hardees.com
-
-**Risk Score:** 40/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
--   ← Enables: hardees.com (risk: 37)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
--   ← Enables: hardees.com (risk: 34)
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- FEATURED MENU
-- Cinnamon 'N' Raisin Biscuit 2 Pack
-- Homestyle Loaded Breakfast Burrito
-- Super Bacon Biscuit
-- Holly Jolly Sparkler
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `buyatab.com`
-- `facebook.com`
-- `hardees.com`
-- `hardeesfranchising.com`
-- `instagram.com`
-- `order.hardees.com`
-- `play.google.com`
-- `privacy.ckr.com`
-- `twitter.com`
-
----
-
-### whitecastle.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.net
-
-**Risk Score:** 3/100
-
-**Justification for Blocking:**
-
-- Employs aggressive marketing: social_proof
-
-**Related Domains Found:**
-
-- `namesilo.com`
-- `sedo.com`
-
----
-
-### doritos.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### whitecastle.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.app
-
-**Risk Score:** 0/100
-
----
-
-### reeses.com
-
-**Risk Score:** 0/100
-
----
-
-### whitecastle.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### whitecastle.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### arbys.ai
-
-**Risk Score:** 0/100
-
----
-
-### whitecastle.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fiveguys.com
-
-**Risk Score:** 0/100
-
----
-
-### whitecastle.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.io
-
-**Risk Score:** 32/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: ultra_processed
-- Uses behavioral manipulation: discounts, convenience, addiction_language
-- Employs aggressive marketing: social_proof, scarcity, personalization
-
-**Sample Products/Services:**
-
-- Search
-- SearchHounds
-- Topics
-- Company
-
-**Related Domains Found:**
-
-- `godaddy.com`
-
----
-
-### skipthedishes.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### cheetos.ai
-
-**Risk Score:** 0/100
-
----
-
-### arbys.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### wendys.uk
-
-**Risk Score:** 0/100
-
----
-
-### littlecaesars.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### m-ms.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### wendys.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### skipthedishes.ai
-
-**Risk Score:** 0/100
-
----
-
-### cheetos.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### arbys.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### wendys.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.app
-
-**Risk Score:** 14/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-- Employs aggressive marketing: social_proof
-
-**Sample Products/Services:**
-
-- We've got you covered!
-- Got questions?
-- Buy Now or Make Offer
-
-**Related Domains Found:**
-
-- `porkbun.com`
-- `trustpilot.com`
-
----
-
-### wendys.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### dunkin.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### arbys.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.com
-
-**Risk Score:** 0/100
-
----
-
-### lays.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.app
-
-**Risk Score:** 0/100
-
----
-
-### bostonpizza.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### littlecaesars.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.com
-
-**Risk Score:** 0/100
-
----
-
-### subway.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pringles.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bostonpizza.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (116 chars)
-
-### seamless.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### mars.ai
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### bostonpizza.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### snickers.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hersheys.com
-
-**Risk Score:** 0/100
-
----
-
-### subway.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### seamless.app
-
-❌ **Not accessible:** Playwright: Insufficient content (8 chars)
-
-### reeses.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bostonpizza.co
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `spaceship.com`
-
----
-
-### sunchips.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.ca
-
-**Risk Score:** 0/100
 
 ---
 
@@ -4073,13 +6651,356 @@
 
 ---
 
-### cheetos.info
+### seamless.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### pizzanova.co
+---
+
+### skipthedishes.ai
+
+**Risk Score:** 0/100
+
+---
+
+### skipthedishes.net
+
+**Risk Score:** 3/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: social_proof
+
+**Related Domains Found:**
+
+- `namesilo.com`
+- `sedo.com`
+
+---
+
+### ubereats.io
+
+**Risk Score:** 0/100
+
+---
+
+### ubereats.us
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- This domain
+- is for sale!
+- Buy domain
+- Get your domain with Sedo
+- 27
+
+---
+
+### zomato.io
+
+**Risk Score:** 0/100
+
+---
+
+### mcdonalds.com
+
+**Risk Score:** 0/100
+
+---
+
+### tacobell.com
+
+**Risk Score:** 0/100
+
+---
+
+### dominos.com
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### wendys.com
+
+**Risk Score:** 66/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 2 domain(s) (+10 points)
+-   ← Enables: wendys.com (risk: 51)
+-   ← Enables: wendys.ca (risk: 55)
+- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
+-   → Facilitates: wendys.com (risk: 51)
+- Promotes health hazards: sugar, addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Find a Wendy'sFind
+- Order PickupOrder Pickup
+- Order DeliveryOrder Delivery
+- View our MenuMenu
+- Who We AreCompany
+
+**Related Domains Found:**
+
+- `deliveroo.co.uk`
+- `facebook.com`
+- `instagram.com`
+- `just-eat.co.uk`
+- `letwendysknow.com`
+- `linkedin.com`
+- `m-wendys-ca.app.link`
+- `myunidays.com`
+- `order.withqikserve.com`
+- `tiktok.com`
+
+---
+
+### arbys.com
+
+**Risk Score:** 0/100
+
+---
+
+### popeyes.com
+
+**Risk Score:** 0/100
+
+---
+
+### carlsjr.com
+
+**Risk Score:** 44/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- FEATURED FLAVORS
+- Cali XL
+- Cali XL Combo
+- BYOB - Build Your Own Bag
+- Churro Hand-Scooped Ice-Cream Shake
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `buyatab.com`
+- `carlsjr-appinstall.onelink.me`
+- `carlsjrfranchising.com`
+- `ckefranchise.com`
+- `facebook.com`
+- `instagram.com`
+- `order.carlsjr.com`
+- `play.google.com`
+- `privacy.ckr.com`
+
+---
+
+### hardees.com
+
+**Risk Score:** 37/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+3 points)
+-   ← Enables: hardees.com (risk: 34)
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+
+**Sample Products/Services:**
+
+- FEATURED MENU
+- Cinnamon 'N' Raisin Biscuit 2 Pack
+- Homestyle Loaded Breakfast Burrito
+- Super Bacon Biscuit
+- Holly Jolly Sparkler
+
+**Related Domains Found:**
+
+- `apps.apple.com`
+- `buyatab.com`
+- `facebook.com`
+- `hardees.com`
+- `hardeesfranchising.com`
+- `instagram.com`
+- `order.hardees.com`
+- `play.google.com`
+- `privacy.ckr.com`
+- `twitter.com`
+
+---
+
+### fiveguys.com
+
+**Risk Score:** 0/100
+
+---
+
+### shakeshack.com
+
+**Risk Score:** 0/100
+
+---
+
+### marcos.com
+
+**Risk Score:** 48/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: marcos.com (risk: 44)
+- Uses behavioral manipulation: urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- You Might Also Like...
+- Saved Cards:
+- THANK YOU, {{CUSTOMER_FIRST_NAME}}
+- ORDER SUMMARY
+- Order Number
+
+**Related Domains Found:**
+
+- `ciaonet.com`
+- `facebook.com`
+- `instagram.com`
+- `itunes.apple.com`
+- `marcos.com`
+- `marcossliceofsupport.com`
+- `nutritionix.com`
+- `play.google.com`
+- `twitter.com`
+
+---
+
+### bostonpizza.com
+
+**Risk Score:** 46/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- READY TO ENJOY SOME BP AT HOME?
+- Restaurants
+- about
+- legal
+
+**Related Domains Found:**
+
+- `bostonpizza.cashstar.com`
+- `bostonpizzafranchise.com`
+- `bostons.com`
+- `bostons.com.mx`
+- `bpincomefund.com`
+- `careers.bostonpizza.ca`
+- `facebook.com`
+- `instagram.com`
+- `order.bostonpizza.com`
+- `pizzagravy.ca`
+
+---
+
+### starbucks.com
+
+**Risk Score:** 49/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: starbucks.com (risk: 45)
+- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
+- Employs aggressive marketing: fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Related Domains Found:**
+
+- `about.starbucks.com`
+- `alumni.starbucks.com`
+- `archive.starbucks.com`
+- `athome.starbucks.com`
+- `careers.starbucks.com`
+- `content-prod-live.cert.starbucks.com`
+- `customerservice.starbucks.com`
+- `facebook.com`
+- `instagram.com`
+- `investor.starbucks.com`
+
+---
+
+### arbys.ai
+
+**Risk Score:** 0/100
+
+---
+
+### arbys.ca
+
+**Risk Score:** 47/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Congrats! You have earnedpoints
+
+---
+
+### bostonpizza.co
 
 **Risk Score:** 4/100
 
@@ -4093,55 +7014,134 @@
 
 ---
 
-### oreo.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### postmates.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### m-ms.uk
+### burgerking.app
 
 **Risk Score:** 0/100
 
 ---
 
-### pizzanova.ca
+### burgerking.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### bostonpizza.net
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### dominos.ai
 
-### sunchips.ca
+**Risk Score:** 8/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Justification for Blocking:**
 
-### kfc.us
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### dominos.ca
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### dominos.co.uk
+
+**Risk Score:** 15/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+- Employs aggressive marketing: scarcity
+
+**Sample Products/Services:**
+
+- Enter your postcode
+
+**Related Domains Found:**
+
+- `corporate.dominos.co.uk`
+- `dominos.co.uk`
+- `dominosuk.page.link`
+- `facebook.com`
+- `instagram.com`
+- `investors.dominos.co.uk`
+- `tiktok.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### dominos.us
+
+**Risk Score:** 12/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts, convenience
+
+**Sample Products/Services:**
+
+- North America
+- Latin America and Caribbean
+- Europe
+- Asia Pacific
+- Middle East and Africa
+
+**Related Domains Found:**
+
+- `dominos-ks.com`
+- `dominos-pizza.ro`
+- `dominos.ae`
+- `dominos.at`
+- `dominos.bg`
+- `dominos.bh`
+- `dominos.by`
+- `dominos.ca`
+- `dominos.ch`
+- `dominos.co.id`
+
+---
+
+### fiveguys.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### fiveguys.info
+
+**Risk Score:** 0/100
+
+---
+
+### hardees.info
 
 **Risk Score:** 10/100
 
@@ -4172,77 +7172,149 @@
 
 ---
 
-### postmates.net
+### hardees.io
 
-**Risk Score:** 18/100
+**Risk Score:** 0/100
+
+---
+
+### rockstarenergy.biz
+
+❌ **Not accessible:** Playwright: No content retrieved
+
+### in-n-out.app
+
+**Risk Score:** 0/100
+
+---
+
+### in-n-out.us
+
+**Risk Score:** 37/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: discounts, convenience
-- Employs aggressive marketing: fomo
+- Promotes health hazards: fast_food, addictive
+- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Sample Products/Services:**
+
+- Home
+- menu
+- Kids menu
+- Recipescopycat recipeshomemade recipes
+- copycat recipes
 
 **Related Domains Found:**
 
 - `facebook.com`
-- `help.uber.com`
 - `instagram.com`
-- `itunes.apple.com`
-- `play.google.com`
-- `postmates.com`
-- `privacy.uber.com`
-- `twitter.com`
-- `uber.com`
+- `pinterest.com`
 
 ---
 
-### subway.ca
+### in-n-out.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 26/100
 
-### pizzanova.biz
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: urgency, discounts, addiction_language
+- Employs aggressive marketing: social_proof, fomo
 
-### kfc.uk
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Servicing Made Simple
+- Sign up for our newsletter and future offers
 
-### postmates.io
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `facebook.com`
+- `inoautocentres.co.uk`
+- `linkedin.com`
+- `trustpilot.com`
+- `twitter.com`
+- `uk.trustpilot.com`
 
-### sunchips.info
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### kfc.co.uk
 
-### triscuit.com
+**Risk Score:** 27/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Justification for Blocking:**
 
-### bostonpizza.org
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Sample Products/Services:**
 
-### pizzahut.co.ca
+- £0.00
+- Find a Restaurant & Order Online for Takeaway or Delivery
+- Quick links
+- OUR MENU
+- ORDER ONLINE
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Related Domains Found:**
+
+- `careers.kfc.co.uk`
+- `facebook.com`
+- `help.kfc.co.uk`
+- `instagram.com`
+- `kfcshop.co.uk`
+- `privacy.kfc.co.uk`
+- `snapchat.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### jimmyjohns.ca
+
+**Risk Score:** 51/100
+
+**Justification for Blocking:**
+
+- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
+-   ← Enables: jimmyjohns.ca (risk: 47)
+- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Employs aggressive marketing: scarcity, fomo, personalization
+- MODERATE RISK: Several concerning patterns detected
+
+**Sample Products/Services:**
+
+- Congrats! You have earnedpoints
+
+**Related Domains Found:**
+
+- `foodtastic.ca`
+- `jimmyjohns.ca`
+- `orders.jimmyjohns.ca`
+
+---
+
+### kfc.info
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- ð¨âð©âð§Kids Fun Club
+- ð°Key Financial Consulting
+- ðï¸Keen Fitness Community
+- ðKnowledge for Careers
+- ð¿Keep Future Clean
+
+**Related Domains Found:**
+
+- `telderi.ru`
+
+---
 
 ### kfc.org
 
@@ -4276,17 +7348,399 @@
 
 ---
 
-### postmates.co.uk
+### kfc.us
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 10/100
 
-### pringles.net
+**Justification for Blocking:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Uses behavioral manipulation: upselling
+- Employs aggressive marketing: social_proof, fomo
+
+**Sample Products/Services:**
+
+- Bitly LinksCustomize, share, and track links
+- Bitly CodesDynamic solutions to fit every business need
+- RetailEnhance customer engagement
+- Consumer Packaged GoodsConnect directly with consumers
+- Media & EntertainmentCreate interactive experiences
+
+**Related Domains Found:**
+
+- `bitly.com`
+- `dev.bitly.com`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `mkt-static.bitly.com`
+- `security.bitly.com`
+- `support.bitly.com`
+- `twitter.com`
+
+---
+
+### krispykreme.ca
+
+**Risk Score:** 0/100
+
+---
+
+### marcos.app
+
+**Risk Score:** 0/100
+
+---
+
+### marcos.ai
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### marcos.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### marcos.dev
+
+**Risk Score:** 0/100
+
+---
+
+### marcos.io
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- ~
+
+**Related Domains Found:**
+
+- `linkedin.com`
+- `mailhide.io`
+- `twitter.com`
+
+---
+
+### marcos.uk
+
+**Risk Score:** 0/100
+
+---
+
+### papamurphys.ca
+
+**Risk Score:** 21/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
+- Employs aggressive marketing: social_proof, fomo, personalization
+
+**Sample Products/Services:**
+
+- MENU
+- CATERING
+- FUNDRAISING
+- FAQS & MEDIA ENQUIRIES
+- CONTACT US
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `papamurphys.prod.speeddine.com`
+
+---
+
+### mcdonalds.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### pizzahut.ca
+
+**Risk Score:** 0/100
+
+---
+
+### pizzahut.ai
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### pizzanova.co
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### popeyeschicken.ca
+
+**Risk Score:** 0/100
+
+---
+
+### qdoba.app
+
+**Risk Score:** 0/100
+
+---
+
+### shakeshack.ca
+
+**Risk Score:** 26/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Uses behavioral manipulation: discounts, upselling
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Be the first to know the latest Shake Shack Canada updates
+- Black Truffle Burger
+- Black Truffle Shack Stack
+- Black Truffle 'Shroom Burger
+- 'Shroom Burger™
+
+**Related Domains Found:**
+
+- `cdn.shakeshack.ca`
+- `facebook.com`
+- `instagram.com`
+- `linkedin.com`
+- `order.shakeshack.ca`
+- `tiktok.com`
+- `x.com`
+
+---
+
+### timhortons.co.uk
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `joinourteam.timhortons.co.uk`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### wendys.ai
+
+**Risk Score:** 0/100
+
+---
+
+### wendys.app
+
+**Risk Score:** 0/100
+
+---
+
+### wendys.uk
+
+**Risk Score:** 0/100
+
+---
+
+### ruffles.com
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- RUFFLES®PRODUCTSView Products
+- RUFFLES®PRODUCTS
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `curator.io`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicofoodsfsv.com`
+- `ruffles.com`
+- `tiktok.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### cheetos.com
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- CRUNCHYCRUNCHY
+- PUFFSPUFFS
+- MAC 'N CHEESEMAC 'N CHEESE
+- FLAMIN' HOT®FLAMIN' HOT®
+- FANTASTIX®FANTASTIX®
+
+**Related Domains Found:**
+
+- `cheetos.com`
+- `contact.pepsico.com`
+- `curator.io`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicofoodsfsv.com`
+- `x.com`
+- `youtube.com`
+
+---
+
+### pringles.com
+
+**Risk Score:** 7/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: scarcity
+
+**Sample Products/Services:**
+
+- North America
+- Central America
+- South America
+- Europe & Middle East
+- Africa
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `kelloggs.co.uk`
+- `kelloggs.ie`
+- `poptopia.pringles.com`
+- `pringles.bo`
+- `pringles.ca`
+- `pringles.cl`
+- `pringles.co.ve`
+- `pringles.com`
+
+---
+
+### fritos.com
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Fritos®Original Corn Chips
+- Fritos®Scoops!®Corn Chips
+- Fritos®Scoops!®Spicy Jalapeño Corn Chips
+- Fritos®Lightly Salted Corn Chips
+- Fritos®Flavor Twists®Honey BBQ Flavored Corn Chips
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `curator.io`
+- `facebook.com`
+- `fritolay.com`
+- `instagram.com`
+- `pepsico.com`
+- `pinterest.com`
+- `twitter.com`
+
+---
+
+### sunchips.com
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- SUNCHIPS®HARVEST CHEDDAR®View Product
+- SUNCHIPS®GARDEN SALSA®View Product
+- SUNCHIPS®OriginalView Product
+- SUNCHIPS®HONEY BBQView Product
+- SUNCHIPS®French OnionView Product
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `curator.io`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicofoodsfsv.com`
+- `sunchips.com`
+- `tiktok.com`
+- `x.com`
+
+---
+
+### tostitos.com
+
+**Risk Score:** 0/100
+
+**Sample Products/Services:**
+
+- Want more? Connect with us.
+- Prep Time:
+- Cook Time:
+- Servings:
+- Prep Time:
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `curator.io`
+- `facebook.com`
+- `fritolay.com`
+- `instagram.com`
+- `pepsico.com`
+- `pepsicofoodsfsv.com`
+- `tostitos.com`
+- `twitter.com`
+- `youtube.com`
+
+---
 
 ### wheat-thins.com
 
@@ -4300,35 +7754,135 @@
 
 ---
 
-### mars.org
+### oreo.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### pizzahut.co
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### skittles.com
 
-### kfc.net
+**Risk Score:** 0/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+---
 
-### postmates.co
+### snickers.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### sunchips.us
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### twix.com
+
+**Risk Score:** 0/100
+
+---
+
+### hersheys.com
+
+**Risk Score:** 0/100
+
+---
+
+### reeses.com
+
+**Risk Score:** 0/100
+
+---
+
+### cheetos.ai
+
+**Risk Score:** 0/100
+
+---
+
+### chipsahoy.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### hersheys.org
+
+**Risk Score:** 0/100
+
+---
+
+### kitkat.co.uk
+
+**Risk Score:** 6/100
+
+**Justification for Blocking:**
+
+- Employs aggressive marketing: scarcity
+
+**Sample Products/Services:**
+
+- Have a break, have a KitKat ®
+- Don't let life's interruptions get in the way. Have a quality break with KitKat®
+
+**Related Domains Found:**
+
+- `facebook.com`
+- `instagram.com`
+- `nestle.co.uk`
+- `nestlecesomni.my.salesforce-sites.com`
+- `tiktok.com`
+- `twitter.com`
+
+---
+
+### kitkat.io
+
+**Risk Score:** 4/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Sample Products/Services:**
+
+- Contactez-nous pour une soumission
+- Consultation technologique
+- Développement sur mesure
+
+**Related Domains Found:**
+
+- `atelierhyper.com`
+- `google.ca`
+- `kitkat.io`
+
+---
+
+### kitkat.org
+
+**Risk Score:** 0/100
+
+---
+
+### m-ms.uk
+
+**Risk Score:** 0/100
+
+---
+
+### mars.ai
+
+**Risk Score:** 8/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+
+**Related Domains Found:**
+
+- `spaceship.com`
+
+---
+
+### mars.app
+
+❌ **Not accessible:** Playwright: Insufficient content (43 chars)
 
 ### mars.biz
 
@@ -4352,174 +7906,163 @@
 
 ---
 
-### bostonpizza.us
+### lays.ca
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 13/100
 
-### pizzahut.ca
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: scarcity, fomo
+
+**Sample Products/Services:**
+
+- Featured Products
+- Featured Products
+- Featured Products
+- Tasty RewardsTMMembers!
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsico.com`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `shop.tastyrewards.ca`
+- `tastyrewards.com`
+- `x.com`
+
+---
+
+### mms.ai
 
 **Risk Score:** 0/100
 
 ---
 
-### kfc.io
+### mars.net
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### postmates.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### poptarts.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.info
-
-**Risk Score:** 4/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Sample Products/Services:**
-
-- ð¨âð©âð§Kids Fun Club
-- ð°Key Financial Consulting
-- ðï¸Keen Fitness Community
-- ðKnowledge for Careers
-- ð¿Keep Future Clean
-
-**Related Domains Found:**
-
-- `telderi.ru`
+**Risk Score:** 0/100
 
 ---
 
-### postmates.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tostitos.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzahut.ai
+### mms.co
 
 **Risk Score:** 8/100
 
 **Justification for Blocking:**
 
-- Uses behavioral manipulation: discounts
+- Uses behavioral manipulation: discounts, upselling
 
 **Related Domains Found:**
 
-- `spaceship.com`
+- `mms.co`
 
 ---
 
-### kfc.dev
+### mms.co.uk
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### postmates.app
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### ritz.biz
 
-### whitecastle.dev
+**Risk Score:** 0/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+---
 
-### pizza73.org
+### ritz.app
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.co.uk
-
-**Risk Score:** 27/100
+**Risk Score:** 14/100
 
 **Justification for Blocking:**
 
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: social_proof
 
 **Sample Products/Services:**
 
-- £0.00
-- Find a Restaurant & Order Online for Takeaway or Delivery
-- Quick links
-- OUR MENU
-- ORDER ONLINE
+- We've got you covered!
+- Got questions?
+- Buy Now or Make Offer
 
 **Related Domains Found:**
 
-- `careers.kfc.co.uk`
-- `facebook.com`
-- `help.kfc.co.uk`
-- `instagram.com`
-- `kfcshop.co.uk`
-- `privacy.kfc.co.uk`
-- `snapchat.com`
-- `twitter.com`
-- `youtube.com`
+- `porkbun.com`
+- `trustpilot.com`
 
 ---
 
-### mars.dev
+### ritz.co
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### postmates.ai
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### ritz.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### ruffles.dev
+
+**Risk Score:** 0/100
+
+---
+
+### skittles.ca
+
+**Risk Score:** 0/100
+
+---
+
+### ruffles.ca
+
+**Risk Score:** 10/100
+
+**Justification for Blocking:**
+
+- Uses behavioral manipulation: discounts
+- Employs aggressive marketing: fomo
+
+**Related Domains Found:**
+
+- `contact.pepsico.com`
+- `facebook.com`
+- `instagram.com`
+- `pepsico.ca`
+- `pepsicojobs.com`
+- `shop.snackstoyoucanada.ca`
+- `x.com`
+
+---
+
+### skittles.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### snickers.app
+
+**Risk Score:** 0/100
+
+---
+
+### snickers.co.uk
+
+**Risk Score:** 0/100
+
+---
+
+### hungry-man.com
+
+❌ **Not accessible:** Playwright: Insufficient content (326 chars)
 
 ### tostitos.co.uk
 
@@ -4548,970 +8091,113 @@
 
 ---
 
-### whitecastle.info
+### totinos.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.app
-
-**Risk Score:** 0/100
-
----
-
-### pizza73.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### menulog.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pringles.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### menulog.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tostitos.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### whitecastle.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### lays.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### menulog.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.com
-
-**Risk Score:** 53/100
+**Risk Score:** 14/100
 
 **Justification for Blocking:**
 
-- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
--   ← Enables: starbucks.com (risk: 49)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
--   ← Enables: starbucks.com (risk: 45)
-- Uses behavioral manipulation: impulsive_ordering, urgency, discounts, convenience, addiction_language
-- Employs aggressive marketing: fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: personalization
 
 **Related Domains Found:**
 
-- `about.starbucks.com`
-- `alumni.starbucks.com`
-- `archive.starbucks.com`
-- `athome.starbucks.com`
-- `careers.starbucks.com`
-- `content-prod-live.cert.starbucks.com`
-- `customerservice.starbucks.com`
+- `contactus.generalmills.com`
 - `facebook.com`
+- `generalmills.com`
 - `instagram.com`
-- `investor.starbucks.com`
-
----
-
-### starbucks.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyes.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### menulog.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tostitos.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### whitecastle.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### reeses.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kfc.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tostitos.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### whitecastle.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### krispykreme.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### subway.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizza73.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tostitos.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.co.uk
-
-**Risk Score:** 0/100
-
----
-
-### papamurphys.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### kitkat.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papamurphys.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.ca
-
-**Risk Score:** 61/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+5 points)
--   ← Enables: jimmyjohns.ca (risk: 51)
-- ENABLER (Outbound): Links to 1 high-risk domain(s) (+5 points)
--   → Facilitates: jimmyjohns.ca (risk: 51)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+4 points)
--   ← Enables: jimmyjohns.ca (risk: 47)
-- Uses behavioral manipulation: impulsive_ordering, discounts, convenience, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-- MODERATE RISK: Several concerning patterns detected
-
-**Sample Products/Services:**
-
-- Congrats! You have earnedpoints
-
-**Related Domains Found:**
-
-- `foodtastic.ca`
-- `jimmyjohns.ca`
-- `orders.jimmyjohns.ca`
-
----
-
-### justeat.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### triscuit.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papamurphys.ca
-
-**Risk Score:** 21/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: impulsive_ordering, upselling, addiction_language
-- Employs aggressive marketing: social_proof, fomo, personalization
-
-**Sample Products/Services:**
-
-- MENU
-- CATERING
-- FUNDRAISING
-- FAQS & MEDIA ENQUIRIES
-- CONTACT US
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `papamurphys.prod.speeddine.com`
-
----
-
-### jimmyjohns.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### oreo.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### starbucks.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papajohns.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jimmyjohns.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papajohns.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### papajohns.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### papajohns.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### justeat.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### doritos.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### papajohns.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### papajohns.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.app
-
-**Risk Score:** 0/100
-
----
-
-### coca-cola.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### papajohns.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### rockstarenergy.com
-
-**Risk Score:** 0/100
-
----
-
-### papajohns.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### qdoba.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fanta.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### papajohns.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.dev
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### burgerking.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### sprite.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pandaexpress.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### jackinthebox.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fritos.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mountaindew.com
-
-**Risk Score:** 7/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: addiction_language
-
-**Sample Products/Services:**
-
-- Instagram
-- Facebook
-- YouTube
-- X
-- TIKTOK
-
-**Related Domains Found:**
-
-- `contact.pepsico.com`
-- `facebook.com`
-- `instagram.com`
-- `pepsico.com`
-- `pepsicopartners.com`
-- `tastyrewards.com`
+- `privacy.generalmills.com`
 - `tiktok.com`
-- `twitter.com`
-- `x.com`
-- `youtube.com`
-
----
-
-### pandaexpress.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### twix.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.co.uk
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `joinourteam.timhortons.co.uk`
+- `totinos.com`
 - `twitter.com`
 - `youtube.com`
 
 ---
 
-### burgerking.us
+### digiorno.com
 
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### drpepper.com
-
-**Risk Score:** 29/100
-
-**Justification for Blocking:**
-
-- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
--   ← Enables: drpepper.com (risk: 27)
-- FACILITATOR (Inbound): Used by 1 domain(s) (+2 points)
--   ← Enables: drpepper.com (risk: 25)
-- Promotes health hazards: sugar
-- Uses behavioral manipulation: addiction_language
-- Employs aggressive marketing: social_proof, scarcity, fomo
-
-**Sample Products/Services:**
-
-- HAPPY SHOPPING!
-- HAPPY SHOPPING!
-- HAPPY SHOPPING!
-- HAPPY SHOPPING!
-- HAPPY SHOPPING!
-
-**Related Domains Found:**
-
-- `drpepper.com`
-- `drpeppersnapplegroup.com`
-- `drpepperstore.com`
-- `facebook.com`
-- `instagram.com`
-- `keurig-dr-pepper.talentify.io`
-- `keurig.com`
-- `keurigdrpepper.com`
-- `letsplay.com`
-- `tiktok.com`
+**Risk Score:** 0/100
 
 ---
 
-### pandaexpress.ca
+### bagelbites.com
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+**Risk Score:** 0/100
 
-### innout.uk
+**Sample Products/Services:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- Country/Language
+- Bagel Bites
+- Kraft Heinz
+- Company
+- Follow Us
 
-### just-eat.ca
+**Related Domains Found:**
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+- `careers.kraftheinz.com`
+- `contactus.kraftheinz.com`
+- `facebook.com`
+- `instagram.com`
+- `ir.kraftheinzcompany.com`
+- `kraftheinzawayfromhome.com`
+- `kraftheinzcompany.com`
 
-### ritz.dev
+---
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+### hotpockets.org
 
-### popeyeschicken.io
+**Risk Score:** 0/100
 
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
+---
+
+### totinos.biz
+
+**Risk Score:** 14/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `contactus.generalmills.com`
+- `facebook.com`
+- `generalmills.com`
+- `instagram.com`
+- `privacy.generalmills.com`
+- `tiktok.com`
+- `totinos.com`
+- `twitter.com`
+- `youtube.com`
+
+---
+
+### totinos.info
+
+**Risk Score:** 14/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: addictive
+- Uses behavioral manipulation: upselling, addiction_language
+- Employs aggressive marketing: personalization
+
+**Related Domains Found:**
+
+- `contactus.generalmills.com`
+- `facebook.com`
+- `generalmills.com`
+- `instagram.com`
+- `privacy.generalmills.com`
+- `tiktok.com`
+- `totinos.com`
+- `twitter.com`
+- `youtube.com`
+
+---
 
 ### pepsi.com
 
@@ -5540,648 +8226,11 @@
 
 ---
 
-### pandaexpress.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pizzanova.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hotpockets.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### coca-cola.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pandaexpress.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.net
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### just-eat.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### pringles.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mms.co
-
-**Risk Score:** 8/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, upselling
-
-**Related Domains Found:**
-
-- `mms.co`
-
----
-
-### monsterenergy.com
-
-❌ **Not accessible:** Playwright: Insufficient content (157 chars)
-
-### moes.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### just-eat.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### stouffers.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### redbull.com
-
-**Risk Score:** 3/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-
----
-
-### moes.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### mars.net
+### rockstarenergy.com
 
 **Risk Score:** 0/100
 
 ---
-
-### dunkindonuts.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyeschicken.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### totinos.info
-
-**Risk Score:** 14/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Related Domains Found:**
-
-- `contactus.generalmills.com`
-- `facebook.com`
-- `generalmills.com`
-- `instagram.com`
-- `privacy.generalmills.com`
-- `tiktok.com`
-- `totinos.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### moes.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hungry-man.com
-
-**Risk Score:** 0/100
-
----
-
-### timhortons.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### totinos.biz
-
-**Risk Score:** 14/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Related Domains Found:**
-
-- `contactus.generalmills.com`
-- `facebook.com`
-- `generalmills.com`
-- `instagram.com`
-- `privacy.generalmills.com`
-- `tiktok.com`
-- `totinos.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### moes.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### fritos.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### stouffers.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### leanpockets.com
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### stouffers.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.ca
-
-**Risk Score:** 0/100
-
----
-
-### tacobell.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyeschicken.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hungry-man.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### instacart.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### totinos.com
-
-**Risk Score:** 14/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: addictive
-- Uses behavioral manipulation: upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Related Domains Found:**
-
-- `contactus.generalmills.com`
-- `facebook.com`
-- `generalmills.com`
-- `instagram.com`
-- `privacy.generalmills.com`
-- `tiktok.com`
-- `totinos.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### tacobell.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hotpockets.org
-
-**Risk Score:** 0/100
-
----
-
-### moes.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### innout.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### grubhub.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### tacobell.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hotpockets.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-outburger.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### grubhub.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### digiorno.com
-
-**Risk Score:** 12/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: convenience, upselling, addiction_language
-
-**Sample Products/Services:**
-
-- Supreme Speciale Pizza
-- Premium Pepperoni Pizza
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `goodnes.com`
-- `instagram.com`
-- `nestlecesomni.my.salesforce-sites.com`
-- `nestleusa.com`
-- `pinterest.com`
-- `shopdigiorno.goodnes.com`
-- `tiktok.com`
-- `youtube.com`
-
----
-
-### carlsjr.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hotpockets.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b683700 (otid=0x7e5f0b65c300) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.us
-
-**Risk Score:** 37/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: fast_food, addictive
-- Uses behavioral manipulation: discounts, convenience, upselling, addiction_language
-- Employs aggressive marketing: personalization
-
-**Sample Products/Services:**
-
-- Home
-- menu
-- Kids menu
-- Recipescopycat recipeshomemade recipes
-- copycat recipes
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `pinterest.com`
-
----
-
-### grubhub.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### timhortons.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### popeyeschicken.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### hotpockets.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.app
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### grubhub.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bagelbites.com
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- Country/Language
-- Bagel Bites
-- Kraft Heinz
-- Company
-- Follow Us
-
-**Related Domains Found:**
-
-- `careers.kraftheinz.com`
-- `contactus.kraftheinz.com`
-- `facebook.com`
-- `instagram.com`
-- `ir.kraftheinzcompany.com`
-- `kraftheinzawayfromhome.com`
-- `kraftheinzcompany.com`
-
----
-
-### ritz.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### carlsjr.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5851c0 (otid=0x7e5f0b6f4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### moes.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b5dbf40 (otid=0x7e5f0889e910) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### in-n-out.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6b0040 (otid=0x7e5f0b7f6100) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### bagelbites.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6a47c0 (otid=0x7e5f0b7f79c0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### grubhub.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b6751c0 (otid=0x7e5f0b7f5cb0) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
-
-### ritz.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x7e5f0b681840 (otid=0x7e5f0889e940) current active started main>
-	Expected: <greenlet.greenlet object at 0x7e5f0b663200 (otid=0x7e5f0b697270) suspended active started main>
 
 ### drpepper.ca
 
@@ -6195,177 +8244,11 @@
 
 ---
 
-### drpepper.app
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### fanta.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### fanta.biz
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### fanta.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### fanta.co
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### fanta.co.uk
 
 **Risk Score:** 0/100
 
 ---
-
-### fanta.net
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74269e00 (otid=0x741a742a6be0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### drpepper.us
-
-❌ **Not accessible:** Playwright: Insufficient content (108 chars)
-
-### drpepper.co.uk
-
-**Risk Score:** 29/100
-
-**Justification for Blocking:**
-
-- Uses behavioral manipulation: discounts, addiction_language
-- Employs aggressive marketing: scarcity, fomo, personalization
-
-**Sample Products/Services:**
-
-- Score festive football treats with Coca‑Cola
-- ‘Tis the Season for Holiday Refreshment
-- Score festive football treats with Coca‑Cola
-- ‘Tis the Season for Holiday Refreshment
-- Score festive football treats with Coca‑Cola
-
-**Related Domains Found:**
-
-- `apps.apple.com`
-- `coca-cola.com`
-- `facebook.com`
-- `instagram.com`
-- `onetrust.com`
-- `play.google.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### monsterenergy.ca
-
-**Risk Score:** 0/100
-
-**Sample Products/Services:**
-
-- Browser
-- Cloudflare
-- Host
-- If you're a visitor of this website:
-- If you're the owner of this website:
-
-**Related Domains Found:**
-
-- `cloudflare.com`
-- `developers.cloudflare.com`
-
----
-
-### monsterenergy.co
-
-❌ **Not accessible:** Playwright: Insufficient content (51 chars)
-
-### monsterenergy.co.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (341 chars)
-
-### drpepper.info
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### drpepper.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### monsterenergy.app
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### monsterenergy.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### monsterenergy.uk
-
-❌ **Not accessible:** Playwright: Insufficient content (341 chars)
-
-### monsterenergy.us
-
-❌ **Not accessible:** Playwright: Insufficient content (218 chars)
-
-### mountaindew.co.uk
-
-**Risk Score:** 3/100
-
-**Justification for Blocking:**
-
-- Employs aggressive marketing: personalization
-
-**Related Domains Found:**
-
-- `facebook.com`
-- `instagram.com`
-- `linkedin.com`
-- `pepsicoprivacypolicy.com`
-- `twitter.com`
-- `youtube.com`
-
----
-
-### monsterenergy.info
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### mountaindew.io
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### mountaindew.us
-
-❌ **Not accessible:** Playwright: Insufficient content (165 chars)
-
-### pepsi.ai
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.app
-
-❌ **Not accessible:** Playwright: Insufficient content (0 chars)
-
-### pepsi.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
 
 ### pepsi.co
 
@@ -6398,12 +8281,6 @@
 
 ---
 
-### pepsi.co.ca
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742d39c0 (otid=0x741a7425f090) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
 ### pepsi.co.uk
 
 **Risk Score:** 7/100
@@ -6431,57 +8308,6 @@
 
 ---
 
-### pepsi.info
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.net
-
-❌ **Not accessible:** Playwright error: Page.content: Unable to retrieve content because the page is navigating and changing the content.
-
-### pepsi.org
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a75e66300 (otid=0x741a7425f360) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### pepsi.us
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a742bc8c0 (otid=0x741a742a4690) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### monsterenergy.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### redbull.ca
-
-**Risk Score:** 6/100
-
-**Justification for Blocking:**
-
-- Promotes health hazards: sugar
-- Employs aggressive marketing: personalization
-
-**Related Domains Found:**
-
-- `redbull.com`
-
----
-
-### monsterenergy.net
-
-❌ **Not accessible:** Playwright: No content retrieved
-
 ### redbull.co
 
 **Risk Score:** 7/100
@@ -6494,6 +8320,17 @@
 **Related Domains Found:**
 
 - `redbull.com`
+
+---
+
+### redbull.ca
+
+**Risk Score:** 6/100
+
+**Justification for Blocking:**
+
+- Promotes health hazards: sugar
+- Employs aggressive marketing: personalization
 
 ---
 
@@ -6510,14 +8347,6 @@
 - `redbull.com`
 
 ---
-
-### mountaindew.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### mountaindew.info
-
-❌ **Not accessible:** Playwright: No content retrieved
 
 ### rockstarenergy.ca
 
@@ -6552,9 +8381,11 @@
 
 ---
 
-### redbull.net
+### sprite.net
 
-❌ **Not accessible:** Playwright: No content retrieved
+**Risk Score:** 0/100
+
+---
 
 ### sprite.ca
 
@@ -6584,49 +8415,9 @@
 
 ---
 
-### sprite.co.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50d71d80 (otid=0x741a742a5830) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### sprite.io
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a50b3be80 (otid=0x741a742a5a70) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### sprite.net
-
-**Risk Score:** 0/100
-
----
-
 ### sprite.org
 
 **Risk Score:** 0/100
 
 ---
-
-### sprite.uk
-
-❌ **Not accessible:** Playwright error: Cannot switch to a different thread
-	Current:  <greenlet.greenlet object at 0x741a74473200 (otid=0x741a7425def0) current active started main>
-	Expected: <greenlet.greenlet object at 0x741a74269980 (otid=0x741a7425ff60) suspended active started main>
-
-### redbull.org
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### rockstarenergy.us
-
-❌ **Not accessible:** Playwright: Insufficient content (425 chars)
-
-### redbull.uk
-
-❌ **Not accessible:** Playwright: No content retrieved
-
-### rockstarenergy.biz
-
-❌ **Not accessible:** Playwright: No content retrieved
 
